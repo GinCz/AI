@@ -197,3 +197,4 @@ Different models possess distinct architectural strengths. Optimize costs and pe
 3. **Code & Identifiers:** Code symbols, commit messages, file paths, and environment variables are strictly in English.
 4. **Clickable Hyperlinks:** Format all external links, documentation, and repository references with a trailing arrow `↗` (e.g., `[GitHub: AI ↗](https://github.com/GinCz/AI)`).
 5. **No Desktop Clutter:** Never write temporary scripts, logs, or project artifacts to the user's `Desktop`.
+6. **Short, Clear Titles:** Name topics and tasks with short, unambiguous English titles whenever appropriate. Highlight key information sparingly with **bold**, symbols, or emojis when it improves scanning.
