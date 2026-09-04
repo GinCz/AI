@@ -42,7 +42,7 @@ The **`AI`** repository is a battle-tested, open-source architectural blueprint 
                  │              📄 rules/AI_RULES.md                 │
                  │  • Zero-Waste Token Economy (Slice Reading)       │
                  │  • Full Agentic Autonomy (Do It Yourself First)   │
-                 │  • Monolithic Scripts (cls/clear execution)       │
+                 │  • Epistemic Honesty & Real Functional Testing    │
                  │  • Audio Chimes & Single-Line Status Footers      │
                  └─────────────────────────┬─────────────────────────┘
                                            │
@@ -91,18 +91,30 @@ All architectural components, rules, and scripts are categorized into clean, ded
 * If an agent possesses terminal or file-editing tools, it executes tasks end-to-end without offloading commands, diagnostics, or manual edits to the user.
 * Monolithic script execution: commands are batched into a single cohesive script starting with `clear` (Bash) or `cls` (CMD/PowerShell).
 
-### 3️⃣ Centralized Knowledge Base & Workspace Isolation
+### 3️⃣ Epistemic Honesty & Real Functional Verification
+* **Distinguish Facts from Assumptions:** Never hallucinate certainty. Clearly separate verified empirical data from hypotheses.
+* **Execution over Syntax:** Never declare success simply because a file was written. Success requires runtime testing, exit-code validation, and passing test assertions.
+
+### 4️⃣ Centralized Knowledge Base & Workspace Isolation
 * Sandboxed workspace folders (`C:\AI\<AGENT_NAME>\`) isolate active agents.
 * A shared, append-only knowledge base (`C:\AI\BASE\`) uses an ultra-compact router (`INDEX.md` < 40 lines) to load targeted topics on demand.
 
-### 4️⃣ Production Free IDE Stack (VS Code + Continue.dev)
+### 5️⃣ Strategic Multi-Model Workload Routing
+* Maximize cost-efficiency and performance by routing tasks to model specializations:
+  - **Gemini 2.0 / 1.5 Pro:** Massive context codebase analysis and multi-file architecture audits.
+  - **Claude 3.5 / 3.7 Sonnet:** Deep algorithmic refactoring and complex reasoning.
+  - **OpenAI Codex / GPT-4o:** Rapid system automation, shell scripts, and tool calling.
+  - **Groq LLaMA 3.3 70B:** Ultra-low latency autocomplete and inline diff inspections.
+  - **Perplexity AI:** Deep documentation lookup and factual source citation.
+
+### 6️⃣ Production Free IDE Stack (VS Code + Continue.dev)
 * Production-ready integration for free, high-speed LLMs:
   - **Groq Cloud:** LLaMA 3.3 70B (ultra-low latency tab autocomplete and agent mode).
   - **Google AI Studio:** Gemini 2.0 Flash / Pro (up to 2M context window).
   - **Mistral AI:** Mistral Large Latest.
   - **OpenRouter:** Free open-weights models (`:free`).
 
-### 5️⃣ Professional Status Footers & Audio Feedback
+### 7️⃣ Professional Status Footers & Audio Feedback
 * **Audio Completion Chimes:** Triggers `C:\Windows\Media\chimes.wav` silently upon 100% completion of background jobs.
 * **Single-Line Status Footers:** Clean, readable execution metrics at the end of every response:  
   `✅ Done: Started 14:00:00 • Finished 14:02:30 • Total: 00:02:30 (Tokens: ~1200 response / ~5400 session)`
