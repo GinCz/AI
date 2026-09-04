@@ -1,7 +1,7 @@
 # 📜 AI Master Rules & Architecture (Universal Standard)
 > **Единый свод правил, стандартов экономии токенов, автономности и архитектуры для всех систем ИИ**
 > 
-> *Репозиторий:* [AI ↗](https://github.com/GinCz/Linux_Server_Public/tree/main/AI) | *Владелец:* Владимир Буланцев (GinCz) | *Версия:* v2026-09-04
+> *Репозиторий:* [AI ↗](https://github.com/GinCz/AI) | *Владелец:* Владимир Буланцев (GinCz) | *Версия:* v2026-09-04
 
 ---
 

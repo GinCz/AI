@@ -1,7 +1,7 @@
 # 🤖 AI Architecture, Rules & Optimization Hub (`AI`)
 > **Единый каталог универсальных стандартов, правил для всех систем искусственного интеллекта, настройки VS Code и архитектуры экономии токенов**
 > 
-> *Репозиторий:* [GitHub: AI ↗](https://github.com/GinCz/Linux_Server_Public/tree/main/AI) | *Автор:* [Владимир Буланцев (GinCz) ↗](https://github.com/GinCz) | *Версия:* v2026-09-04
+> *Репозиторий:* [GitHub: AI ↗](https://github.com/GinCz/AI) | *Автор:* [Владимир Буланцев (GinCz) ↗](https://github.com/GinCz) | *Версия:* v2026-09-04
 
 ---
 
