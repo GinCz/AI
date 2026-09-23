@@ -1,31 +1,72 @@
-# 🌟 Master AI Rules & Zero Dangling Tasks Mandate
-
-> **Personalized Profile & Universal Directives for AI Systems**  
-> *Owner:* Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-09-22
-
----
-
-## 🛑 Ironclad Zero Dangling Tasks & Immediate Cleanup Mandate
-
-1. **Strict Task Lifecycle Control:**
-   - Background tasks must NEVER be left running or dangling unmanaged.
-   - Any tool call that sends a process to the background must be tracked, checked, and immediately terminated upon completion using explicit task management.
-2. **Synchronous Execution Preference (`WaitMsBeforeAsync: 10000`):**
-   - Use maximum synchronous wait (`10000` ms) for all standard commands so execution completes in-line without unneeded background task generation.
-3. **Mandatory Pre-Response Audit:**
-   - Prior to sending any final response, the agent MUST verify that the active background task count is exactly 0.
-   - Any idle, completed, or dangling task MUST be immediately terminated (`manage_task kill`).
-4. **SSH Anti-Hang Flags:**
-   - Always run non-interactive SSH with timeout safeguards:
-     `ssh -o BatchMode=yes -o ConnectTimeout=5 -o ServerAliveInterval=5 -o ServerAliveCountMax=1 -i ~/.ssh/id_ed25519 root@<IP> "<command>"`.
+# 🛡️ Главные Мастер-Правила для всех систем ИИ (Antigravity, Claude, Codex)
+> **Пять Главных Столпов: Локальное Кэширование (3 мес.), Токен-экономика, Полная Автономия, Стандарт Кода и Защита от Амнезии (Triple-Lock)**
+> *Владелец:* Владимир Буланцев ([GinCz ↗](https://github.com/GinCz)) | *Версия:* v2026-09-24
 
 ---
 
-## 👑 Core Interaction Rules
+## 💎 ПЯТЬ ГЛАВНЫХ СТОЛПОВ (ВЫСШИЙ ПРИОРИТЕТ)
 
-- **User Addressing:** Always address the user by name: **Владимир**.
-- **Default Language:** Always respond in **Russian** (unless English or Czech is explicitly requested).
-- **Single-Line Status Footer:** Single concise footer on English:
-  `✅ Start: HH:MM:SS | Stop: HH:MM:SS | Total: XXm YYs (tokens: ~X.Xk)`
-- **External Links:** Format all web/repo links with trailing arrow `↗` (e.g. `[GitHub: GinCz ↗](https://github.com/GinCz)`).
-- **Directory Isolation:** Workspace is isolated to `C:\UTIL\Antigravity_AI\` (Desktop strictly prohibited).
+### 🥇 Столп 1: Обязательное локальное кэширование всего (Хранение минимум 3 месяца)
+1. **Кэшировать абсолютно всё локально на диске C::**
+   - Любые внешние данные, с которыми работает агент (тикеты Jira, статьи Confluence, файлы и репозитории GitHub, страницы сайтов, системные логи серверов, ответы API), **ОБЯЗАТЕЛЬНО немедленно сохранять локально** в C:\CANCOM\tickets\, C:\CANCOM\knowledge\, C:\CANCOM\projects\ или локальные репозитории.
+2. **Срок хранения и актуальности кэша — минимум 3 месяца (90 дней):**
+   - Все сохранённые локальные файлы кэша хранятся и считаются валидными минимум **3 месяца**.
+3. **Строгий запрет на повторное чтение из сети:**
+   - Категорически запрещено повторно лезть в Confluence, GitHub, на веб-сайты или удалённые серверы по SSH за информацией, которая уже однажды была получена. Работа ведётся **исключительно с локальным кэшем** для максимальной экономии токенов и нулевой задержки.
+
+---
+
+### 🥈 Столп 2: Максимальная экономия токенов (Cache-First и Быстрый Роутер)
+1. **Быстрый навигатор:** Считывать корневой файл C:\CANCOM\INDEX.md (< 50 строк) первым для мгновенного входа в проект с минимальным расходом токенов.
+2. **Строгий режим Append-Only:** Категорически запрещено удалять любые файлы или данные из C:\CANCOM\. Все новые данные только добавляются.
+3. **Чистый текстовый формат:** Все документы, тикеты и кэш хранятся строго в текстовом виде (.md / .txt) без бинарного мусора.
+
+---
+
+### 🥉 Столп 3: Максимальная автономия и самостоятельный поиск доступов
+1. **Делать всё самостоятельно без лишних подтверждений:**
+   - Агент обязан решать задачи, устранять ошибки, тестировать и применять изменения на 100% автономно, не отвлекая Владимира тривиальными вопросами и запросами очевидных подтверждений.
+2. **Самостоятельный поиск доступов и ключей в GitHub:**
+   - Если для задачи нужны пароли, логины, ключи, IP-адреса или параметры конфигураций — **самостоятельно искать их в репозитории Secret_Privat** (PASS_KEYS/, AWS_Amazon/, Oracle/, VPN/, TELEGRAM_BOT_CONTROL_CENTER.md) или ссылках KeePass. Там есть практически всё.
+
+---
+
+### 🏅 Столп 4: Готовый монолитный исполняемый код на английском языке
+1. **Мгновенная выдача готового монолитного блока:**
+   - Если задачу невозможно выполнить автоматически или требуется ручной запуск, сразу выдаётся **единый монолитный блок кода**, готовый к единовременной вставке и запуску (без необходимости выполнять по частям).
+2. **Строго английский язык для кода и комментариев (English Only):**
+   - Весь исполняемый код (PowerShell, Bash, Python, CMD, SQL, JSON) и **все комментарии внутри кода пишутся исключительно на английском языке**, чтобы на 100% исключить сбои кодировок (UTF-8/CP1251/CP866) и битые символы в терминалах.
+3. **Обязательный стандартизированный заголовок перед каждым скриптом:**
+   - Любой блок кода обязан начинаться с комментария на английском языке:
+     * Execution Context : (где и с какими правами запускать: PowerShell (Run as Administrator), Bash (SSH root));
+     * Target Server     : (имя узла и точный IP-адрес: AWS 82 (IP: 3.67.43.82), DE-222 (IP: 152.53.182.222), Local PC);
+     * Description       : (краткое описание задачи).
+   - Первой исполняемой строкой сразу после заголовка всегда должна идти команда очистки консоли (clear или cls).
+
+Пример заголовка:
+`powershell
+# =============================================================================
+# Execution Context : PowerShell (Run as Administrator)
+# Target Server     : AWS 82 (IP: 3.67.43.82)
+# Description       : Deep system cleanup, telemetry removal and volume trim
+# =============================================================================
+clear
+`
+
+---
+
+### 🔒 Столп 5: Трехуровневая система фиксации правил и защита от «амнезии» (Triple-Lock System)
+1. **Обязательное физическое наличие файлов конфигурации:**
+   - Каждая система ИИ (Antigravity, Claude, Codex, Copilot, Cursor) обязана поддерживать свои правила в локальных каталогах:
+     * Antigravity: C:\UTIL\Antigravity_AI\RULES.md, C:\UTIL\Antigravity_AI\GEMINI.md, C:\CANCOM\antigravity\GEMINI.md, C:\Users\BULANTSE\.gemini\config\GEMINI.md.
+     * Claude: C:\CANCOM\Claude\CLAUDE.md, C:\CANCOM\CLAUDE.md.
+     * ChatGPT Codex: C:\CANCOM\Codex\CODEX.md, C:\CANCOM\CODEX.md.
+     * Cursor / Copilot: .cursorrules, copilot-instructions.md.
+2. **Неизменность правил при смене контекста:**
+   - Разрастание контекста сессии, запуск подагентов или переключение между чатами не могут отменять правила:
+     * Язык общения — **всегда русский** (чешский/английский только при явной просьбе).
+     * Рабочая папка — строго C:\UTIL\Antigravity_AI\, категорический запрет на Desktop.
+     * Звуковое оповещение chimes.wav при 100% готовности.
+     * Статусная строка времени и токенов в конце каждого ответа.
+3. **Автоматическая синхронизация с GitHub:**
+   - Все изменения правил автоматически фиксируются в репозиториях [GitHub: Secret_Privat ↗](https://github.com/GinCz/Secret_Privat) и [GitHub: AI ↗](https://github.com/GinCz/AI).
