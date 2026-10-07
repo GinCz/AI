@@ -145,14 +145,10 @@ Operate autonomously using the local cache for all subsequent tasks without re-q
 * **Repository:** [https://github.com/GinCz/AI ↗](https://github.com/GinCz/AI)
 * **License:** [MIT License](LICENSE)
 
-
 ---
 
 <div align="center">
 
-### 🤝 Связь и Профессиональные Профили
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Перейти-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gincz/)&nbsp;&nbsp;`https://www.linkedin.com/in/gincz/`&nbsp;&nbsp;&nbsp;&nbsp;**|||**&nbsp;&nbsp;&nbsp;&nbsp;[![Яндекс.Услуги](https://img.shields.io/badge/Яндекс.Услуги-Перейти-FC3F1D?style=for-the-badge&logo=yandex&logoColor=white)](https://uslugi.yandex.ru/profile/VladimirBulantsev-1756893)&nbsp;&nbsp;`https://uslugi.yandex.ru/profile/VladimirBulantsev-1756893`
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gincz/) `https://www.linkedin.com/in/gincz/` &nbsp;&nbsp;**|||**&nbsp;&nbsp; [![Яндекс.Услуги](https://img.shields.io/badge/Яндекс.Услуги-FC3F1D?style=flat&logo=yandex&logoColor=white)](https://uslugi.yandex.ru/profile/VladimirBulantsev-1756893) `https://uslugi.yandex.ru/profile/VladimirBulantsev-1756893`
 
 </div>
-
