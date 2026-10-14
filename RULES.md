@@ -86,13 +86,13 @@
   - **No Unicode 12 (🟢/🟡):** Avoid glyphs that render as empty boxes on Windows terminals. Use strictly universal icons: `✅` (Green/Normal), `⚠️` (Yellow/Warning), `🔴` (Red/Critical).
 * **Token Thresholds:**
   - **Single Response (`Tokens: ~XXXX`):**
-    - `✅` Normal: up to 2,500 tokens (concise)
-    - `⚠️` Warning: 2,500 to 7,000 tokens (long code/diffs)
-    - `🔴` Critical: > 7,000 tokens (step limit boundary)
+    - `✅` Normal: up to 1,500 tokens (concise, precise, optimal token economy)
+    - `⚠️` Warning: 1,500 to 6,000 tokens (detailed code/analysis, acceptable)
+    - `🔴` Critical: > 6,000 tokens (heavy response, signal to decompose into parts)
   - **Session Total (`Session: ~YYYY`):**
-    - `✅` Clean: up to 40,000 tokens
-    - `⚠️` Busy: 40,000 to 100,000 tokens
-    - `🔴` Overload: > 100,000 tokens (prompt user to restart with `Ctrl+N`)
+    - `✅` Clean: up to 50,000 tokens (fresh session, clear context)
+    - `⚠️` Busy: 50,000 to 80,000 tokens (context filling up, consider `/compact`)
+    - `🔴` Overload: > 80,000 tokens (critical, run `/compact` or fresh session via `Ctrl+N`)
 * A second timestamp in any other language is strictly prohibited.
 
 ### 9️⃣ RULE 9: COMPLETION SOUND NOTIFICATION
