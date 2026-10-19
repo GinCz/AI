@@ -38,21 +38,22 @@
 >    - Ask for confirmation ONLY for irreversible destructive actions (dropping production databases, `rm -rf /`, force-pushing).
 > 4. **No Unrequested Work (Zero Fluff):**
 >    - Strictly do NOT perform actions that were not requested: no unsolicited refactoring, no restyling of unrelated code, no unprompted file deletions, no verbose essays.
-> 5. **Check Credentials & Accesses BEFORE Answering:**
->    - Before responding or asking the user for access, the model **MUST ALWAYS search for required passwords, keys, tokens, endpoints, and configs first**:
->      * In the authorized GitHub repository ([Secret_Privat ↗](https://github.com/GinCz/Secret_Privat));
->      * In the local database / cache folder on the computer/server (`D:\AI\BASE\`, `/root/AI_157/knowledge/`, `/root/AI_157/repos/`, `.env`, SQLite, `~/.ssh/`, `~/.oci/`, `~/.aws/`).
->      * Bothering the user with access questions before checking these two sources is strictly prohibited!
-> 6. **Mandatory Protocol for AI Agents (Agentic Mode):**
->    - **Local Database & Cache:** To save tokens and eliminate network latency, agents must create or query the local database/cache (`D:\AI\BASE\` on Windows, `/root/AI_157/` on Linux server) and store all knowledge locally.
->    - **GitHub Connectivity:** Agents should be connected to GitHub (`git pull` / clone) for two-way synchronization and single-source-of-truth accuracy.
+> 5. **Check GitHub & Local Database BEFORE Answering:**
+>    - Before answering or requesting credentials/access from the user, the model **MUST ALWAYS check GitHub and the local database that exists on the computer**.
+>    - Never bother the user with access or credential questions before verifying whether they exist in connected GitHub repositories or in the local database.
+> 6. **Mandatory Local Database Architecture (Правила создания локальной базы данных):**
+>    - To minimize token usage, eliminate network delays, and enable full local autonomy, every AI agent must establish and maintain a structured workspace named `AI/` (e.g. `D:\AI\` on Windows, `~/AI/` or `/root/AI/` on Linux).
+>    - The workspace MUST contain the following dedicated structure:
+>      * **`AI/BASE/` (Local Database & Knowledge Base):** The central repository for all local documentation, domain knowledge, database files, and configuration profiles.
+>      * **`AI/GitHub/` (Synchronized GitHub Repositories):** The dedicated local directory where all connected GitHub repositories are cloned and kept **continuously up-to-date** (`git pull` at start of session, `git push` on completion).
+>      * **`AI/<EngineName>/` (Isolated Model Sandboxes):** Dedicated working folder per engine (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
 > 
-> ### 🎯 STEP 2: ROUTE TO YOUR DEDICATED MODEL PROFILE
+> ### 🎯 STEP 2: ROUTE TO YOUR DEDICATED MODEL WORKSPACE
 > After adopting the Step 1 universal baseline, navigate to your dedicated model workspace:
-> - **Google Gemini / Antigravity:** Work in `D:\AI\GEMINI\` (Oracle Server: `/root/AI_157/`). If private repo access is available, load: [`AI/Antigravity_Home/RULES.md ↗`](https://github.com/GinCz/Secret_Privat/blob/main/AI/Antigravity_Home/RULES.md).
-> - **OpenAI ChatGPT / Codex:** Work in `D:\AI\ChatGPT\`. If private repo access is available, load: [`AI/ChatGPT/RULES.md ↗`](https://github.com/GinCz/Secret_Privat/blob/main/AI/ChatGPT/RULES.md).
-> - **Anthropic Claude:** Work in `D:\AI\CLAUDE\`. If private repo access is available, load: [`AI/CLAUDE_Home/RULES.md ↗`](https://github.com/GinCz/Secret_Privat/blob/main/AI/CLAUDE_Home/RULES.md).
-> - **VS Code AI / Copilot / Cursor:** Work in `D:\AI\VSCode\` / `cursor/`. If private repo access is available, load: [`AI/VS_Code/RULES.md ↗`](https://github.com/GinCz/Secret_Privat/blob/main/AI/VS_Code/RULES.md) / [`cursor/RULES.md ↗`](https://github.com/GinCz/Secret_Privat/blob/main/cursor/RULES.md).
+> - **Google Gemini / Antigravity:** Work strictly in `AI/GEMINI/`.
+> - **OpenAI ChatGPT / Codex:** Work strictly in `AI/ChatGPT/`.
+> - **Anthropic Claude:** Work strictly in `AI/CLAUDE/`.
+> - **VS Code AI / Copilot / Cursor:** Work strictly in `AI/VSCode/` or project workspace.
 > 
 > Respond to the user confirming adoption, and end your response with the mandatory single-line status footer!
 
