@@ -1,22 +1,22 @@
 # 🧠 Репозиторий экспертных навыков и регламентов (AI Skills)
 
-> **Центральный каталог навыков для всех ИИ-моделей (Google Antigravity, ChatGPT, Claude, Cursor, Copilot)**  
+> **Центральный и единственный публичный каталог навыков для всех ИИ-моделей (Google Antigravity, ChatGPT, Claude, Cursor, Copilot)**  
 > **GitHub URL репозитория:** [https://github.com/GinCz/AI/tree/main/skills](https://github.com/GinCz/AI/tree/main/skills)  
-> **Единый файл для ИИ-агентов (Monolith):** [`ALL_SKILLS.md`](https://github.com/GinCz/AI/blob/main/skills/ALL_SKILLS.md) | [Raw URL](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md)  
+> **Единый файл для импорта в ИИ (Monolith):** [`ALL_SKILLS.md`](https://github.com/GinCz/AI/blob/main/skills/ALL_SKILLS.md) | [Raw URL](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md)  
 > **Владелец:** Владимир Буланцев (GinCz) | Актуализация: 2026 г.
 
 ---
 
 ## 🤖 Как передать эти скиллы любому ИИ-агенту (ChatGPT, Claude, Antigravity)
 
-Если вы хотите передать эти навыки другой нейросети или агенту (в ChatGPT, Claude Projects, Cursor или Antigravity), отправьте модели следующее сообщение:
+Чтобы передать эти навыки любой нейросети (ChatGPT, Claude, Cursor, Antigravity), отправьте ей одно простое сообщение:
 
 ```text
-Изучи репозиторий https://github.com/GinCz/AI/tree/main/skills и монолитный файл со всеми инструкциями https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
-Полностью добавь все эти экспертные навыки и нормативные регламенты себе в память (In-Context Knowledge) и строго руководствуйся ими при решении задач.
+Изучи репозиторий https://github.com/GinCz/AI/tree/main/skills и монолитный файл https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
+Добавь все эти экспертные навыки, правовые нормы (РФ, Чехия, ЕС, ВЭД), судебные регламенты, инженерные и медицинские стандарты в свою память и руководствуйся ими при решении моих задач.
 ```
 
-Модель перейдет по ссылке, прочитает файл [`ALL_SKILLS.md`](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md) и получит 100% знаний по всем направлениям без необходимости обходить десятки отдельных папок.
+Модель переходит по ссылке, считывает [`ALL_SKILLS.md`](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md) и мгновенно получает 100% знаний по всем направлениям в один клик.
 
 ---
 
@@ -50,7 +50,10 @@
 | **neurology-neurosurgery-triage** | [`neurology-neurosurgery-triage/SKILL.md`](neurology-neurosurgery-triage/SKILL.md) | Неврология, инсульт и нейрохирургия: Инсульт (FAST, NIHSS, тромболизис rtPA до 4.5ч, тромбэктомия до 24ч), аневризмы (САК, койлинг/клипирование), ЧМТ (эпидуральные/субдуральные гематомы, триада Кушинга), красные флаги SNOOP4. |
 | **proctology-colorectal-surgery** | [`proctology-colorectal-surgery/SKILL.md`](proctology-colorectal-surgery/SKILL.md) | Проктология и колоректальная хирургия: Зубчатая линия (граница боли), геморрой 1–4 ст. (Goligher), степлерная операция Лонго (PPH), HAL-RAR, лазер LHP, иссечение Миллигана-Моргана, тотальная колоноскопия, предоперационная подготовка. |
 | **allergology-clinical-immunology** | [`allergology-clinical-immunology/SKILL.md`](allergology-clinical-immunology/SKILL.md) | Аллергология и клиническая иммунология: IgE-сенсибилизация (травяные аллергены Bojínek 4 класс, береза), перекрест со злаками (рожь, пшеница), дефицит диаминоксидазы (DAO), aTPO аутоиммунитет, Mommox, Nestibil (биластин). |
-| **facebook-management** | [`facebook-management/SKILL.md`](facebook-management/SKILL.md) | Управление страницами Facebook: Автономный постинг, мониторинг и аналитика 64 бизнес-страниц Владимира через Meta Graph API CLI (`fb_cli.py`). |
+| **agent-browser** | [`agent-browser/SKILL.md`](agent-browser/SKILL.md) | Автономная веб-навигация и парсинг для ИИ-агентов. |
+| **code-review** | [`code-review/SKILL.md`](code-review/SKILL.md) | Экспертный статический аудит кода, поиск антипаттернов и рефакторинг. |
+| **systematic-debugging** | [`systematic-debugging/SKILL.md`](systematic-debugging/SKILL.md) | Методология системной отладки, изоляции багов и поиска корневой причины. |
+| **writing-plans** | [`writing-plans/SKILL.md`](writing-plans/SKILL.md) | Архитектурное и пошаговое планирование сложных инженерных задач. |
 
 ---
 
