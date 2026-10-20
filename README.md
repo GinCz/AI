@@ -119,6 +119,7 @@ All architectural components, rules, and scripts are categorized into clean, ded
 | ├── [`copilot-instructions.md ↗`](vscode/copilot-instructions.md) | Standard repository instruction template for GitHub Copilot | Instruction | [`vscode/copilot-instructions.md ↗`](vscode/copilot-instructions.md) |
 | └── [`ssh_config.example ↗`](vscode/ssh_config.example) | Hardened SSH configuration template for remote agent work | Networking | [`vscode/ssh_config.example ↗`](vscode/ssh_config.example) |
 | **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (20 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
+| **[`ALL_AI_RULES/ ↗`](ALL_AI_RULES/RULES.md)** | **Master Multi-AI Rules Manifest (Russian / Two-Step Pipeline)** | Master Blueprint | [`ALL_AI_RULES/RULES.md ↗`](ALL_AI_RULES/RULES.md) |
 | **[`RULES.md ↗`](RULES.md)** | Root executive rules overview & agent routing entry point | Quick Reference | [`RULES.md ↗`](RULES.md) |
 
 ---

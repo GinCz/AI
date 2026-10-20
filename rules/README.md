@@ -11,6 +11,7 @@ This directory houses the foundational operational standards required for autono
 | File | Scope | Purpose |
 | :--- | :--- | :--- |
 | **[`AI_RULES.md ↗`](AI_RULES.md)** | **Global Mandatory** | Core rules covering agent autonomy, sandbox isolation, monolithic execution, timeouts, and notification protocols. |
+| **[`ALL_AI_RULES/RULES.md ↗`](../ALL_AI_RULES/RULES.md)** | **Master Multi-AI Manifest** | Full Russian-language master manifest: Two-Step Pipeline, Token Economy, Auto-Routing, Zero Dangling Tasks, and Version Bump Mandate. |
 | **[`TOKEN_ECONOMY.md ↗`](TOKEN_ECONOMY.md)** | **Context Management** | Tactical rules for minimizing token consumption by 90%+ across CLI, IDE, and chat sessions. |
 
 ---
