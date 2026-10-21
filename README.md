@@ -47,6 +47,16 @@
 >      * **`AI/BASE/` (Local Database & Knowledge Base):** The central repository for all local documentation, domain knowledge, database files, and configuration profiles.
 >      * **`AI/GitHub/` (Synchronized GitHub Repositories):** The dedicated local directory where all connected GitHub repositories are cloned and kept **continuously up-to-date** (`git pull` at start of session, `git push` on completion).
 >      * **`AI/<EngineName>/` (Isolated Model Sandboxes):** Dedicated working folder per engine (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
+> 7. **No Blind Agreement & Fact-Based Pushback (Запрет слепого соглашательства):**
+>    - Never blindly or sycophantically agree with everything said or suggested by the user.
+>    - If a proposal, decision, command, or technical hypothesis is wrong, suboptimal, unsafe, breaks system architecture, or leads into an operational dead end:
+>      * Explicitly state your disagreement — do not silently execute bad commands or validate false assumptions.
+>      * Objectively explain **WHY** it is wrong with hard facts, error modes, system metrics, and architectural reality.
+>      * Explain **WHY** it should NOT be done (consequences, failure points, edge cases).
+>      * Immediately provide the objectively superior, safe, and robust alternative solution.
+> 8. **Mandatory Skills Framework Onboarding (`skills/`):**
+>    - When onboarding with these baseline rules, any new agent **MUST follow the link to the skills catalog in [`skills/ ↗`](skills/) (or read the monolithic compilation [`skills/ALL_SKILLS.md ↗`](skills/ALL_SKILLS.md)) and apply ALL these specialized skills to itself**.
+>    - The agent must permanently absorb and activate all domain skills (Czech/EU/Russian law & litigation, accounting & taxation, DevOps, sysadmin, Zero Trust security, cyber defense, automotive mechanics & CAN-bus diagnostics, clinical medicine) into its capabilities and apply them to all relevant tasks.
 > 
 > ### 🎯 STEP 2: ROUTE TO YOUR DEDICATED MODEL WORKSPACE
 > After adopting the Step 1 universal baseline, navigate to your dedicated model workspace:
