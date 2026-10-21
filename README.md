@@ -88,16 +88,14 @@ The **`AI`** repository is a battle-tested, open-source architectural blueprint 
                  │  • Audio Chimes & Single-Line Status Footers      │
                  └─────────────────────────┬─────────────────────────┘
                                            │
-                    ┌──────────────────────┴──────────────────────┐
-                    ▼                                             ▼
-┌───────────────────────────────────────┐   ┌───────────────────────────────────────┐
-│     STEP 2A: Context Economy          │   │      STEP 2B: IDE & Agent Stacks      │
-│     📁 context-economy/               │   │      📁 vscode/                       │
-│ • Cache-First Knowledge Layer         │   │ • Continue.dev Configuration          │
-│ • Jira/Confluence/NotebookLM Caching  │   │ • Free High-Speed Models (Groq/Gemini)│
-│ • Task Knowledge Packs (task.md)      │   │ • Remote-SSH Headless Infrastructure  │
-│ • SQLite FTS5 / Ripgrep Local Search  │   │ • GitHub Copilot Rule Templates       │
-└───────────────────────────────────────┘   └───────────────────────────────────────┘
+                                           ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           STEP 2: Context Economy                               │
+│                           📁 context-economy/                                   │
+│ • Cache-First Knowledge Layer (Jira / Confluence / NotebookLM)                  │
+│ • Task Knowledge Packs (task.md) & Local Search                                 │
+│ • SQLite FTS5 / Ripgrep / Zero-Waste Token Ops                                  │
+└─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -114,11 +112,7 @@ All architectural components, rules, and scripts are categorized into clean, ded
 | **[`context-economy/ ↗`](context-economy/)** | **Cache-First Knowledge Layer & DevOps Token Guide** | Engineering | [`context-economy/README.md ↗`](context-economy/README.md) |
 | ├── [`KNOWLEDGE_CACHE.md ↗`](context-economy/KNOWLEDGE_CACHE.md) | Local unified database specs (Jira, Confluence, NotebookLM) | Database | [`context-economy/KNOWLEDGE_CACHE.md ↗`](context-economy/KNOWLEDGE_CACHE.md) |
 | └── [`scripts/ ↗`](context-economy/scripts/) | Sync scripts for caching enterprise tickets (`sync-jira-cache.ps1`) | Automation | [`scripts/sync-jira-cache.ps1 ↗`](context-economy/scripts/sync-jira-cache.ps1) |
-| **[`vscode/ ↗`](vscode/)** | **VS Code + Continue.dev + Copilot Production Setup** | IDE / DevEnv | [`vscode/README.md ↗`](vscode/README.md) |
-| ├── [`config.yaml ↗`](vscode/config.yaml) | Production Continue.dev configuration with free AI API endpoints | Config | [`vscode/config.yaml ↗`](vscode/config.yaml) |
-| ├── [`copilot-instructions.md ↗`](vscode/copilot-instructions.md) | Standard repository instruction template for GitHub Copilot | Instruction | [`vscode/copilot-instructions.md ↗`](vscode/copilot-instructions.md) |
-| └── [`ssh_config.example ↗`](vscode/ssh_config.example) | Hardened SSH configuration template for remote agent work | Networking | [`vscode/ssh_config.example ↗`](vscode/ssh_config.example) |
-| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (20 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
+| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (30 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
 | **[`ALL_AI_RULES/ ↗`](ALL_AI_RULES/RULES.md)** | **Master Multi-AI Rules Manifest (Russian / Two-Step Pipeline)** | Master Blueprint | [`ALL_AI_RULES/RULES.md ↗`](ALL_AI_RULES/RULES.md) |
 | **[`RULES.md ↗`](RULES.md)** | Root executive rules overview & agent routing entry point | Quick Reference | [`RULES.md ↗`](RULES.md) |
 
