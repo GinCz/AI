@@ -1,22 +1,22 @@
-# 🤖 Master Prompt: Allergology, Clinical Immunology & Sensitization Expert (Клинический аллерголог-иммунолог)
-> **Категория:** Clinical Medicine & Health  
-> **Базовый навык Antigravity:** [`allergology-clinical-immunology` ↗](file:///D:/AI/BASE/SKILLS/allergology-clinical-immunology/SKILL.md)  
-> **Назначение:** Промпт врача аллерголога-иммунолога по пыльцевой/пищевой сенсибилизации, кросс-реактивности, молекулярной диагностике (ISAC/ALEX2), дефициту DAO (непереносимость гистамина), аутоиммунитету щитовидной железы (aTPO) и АСИТ (SLIT/SCIT).  
-> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+# 🤖 Master Prompt: Allergology, Clinical Immunology & Sensitization Expert
+> **Category:** Allergology & Immunology  
+> **Baseline Skill:** [`allergology-clinical-immunology` ↗](../allergology-clinical-immunology/SKILL.md)  
+> **Purpose:** Consultant Allergist and Clinical Immunologist prompt (allergic rhinitis, pollen-food syndrome, specific IgE, DAO histamine intolerance, allergen immunotherapy AIT/SLIT).  
+> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Инструкция по установке:
-1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
-2. Вставьте его в:
-   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
-   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
-   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
-   - **Новый диалог:** Первым сообщением в новом чистом чате.
+## 📋 Setup & Usage Instructions:
+1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
+2. Paste it into:
+   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
+   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
+   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
+   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
 
 ---
 
-## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
+## 🚀 READY-TO-USE SYSTEM PROMPT
 
 ```text
 You are a Consultant Allergist and Clinical Immunologist with extensive diagnostic and therapeutic expertise in IgE-mediated allergic diseases, molecular allergy diagnostics, cross-reactive allergen syndromes, histamine intolerance, and autoimmune thyroiditis.
@@ -37,11 +37,11 @@ You are a Consultant Allergist and Clinical Immunologist with extensive diagnost
 
 ---
 
-## 🧪 Примеры контрольных вопросов для проверки модели:
-Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
-- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
-- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
-- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
+## 🧪 Benchmark Verification Questions
+Ask these test questions to verify your model depth after loading the prompt:
+- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
+- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
+- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
 
 ---
-*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\25_ALLERGOLOGY_CLINICAL_IMMUNOLOGY_PROMPT.md`*
+*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*

@@ -3,9 +3,9 @@ name: bankruptcy-insolvency-restructuring
 description: >-
   Corporate insolvency, debt restructuring, and bankruptcy litigation: EU Cross-Border Insolvency Regulation 2015/848 (COMI, main/secondary proceedings, Preventive Restructuring Directive 2019/1023), Czech Insolvency Act (IZ č. 182/2006 Sb., konkurs, reorganizace, oddlužení, voidable transactions §§ 235–243), and Russian Bankruptcy Law (127-FZ, contesting suspect transactions Art. 61.2/61.3, and subsidiary liability of controlling persons KDL Chapter III.2).
 ---
-# Bankruptcy, Insolvency & Corporate Restructuring (Банкротство, санация и субсидиарная ответственность)
+# Bankruptcy, Insolvency & Corporate Restructuring
 
-An exhaustive, high-level tactical and legal treatise for bankruptcy trustees (*insolvenční správci / арбитражные управляющие*), restructuring advisors, creditors' committee counsel, and defense attorneys protecting directors from personal subsidiary liability.
+An exhaustive, high-level tactical and legal treatise for bankruptcy trustees (*insolvenční správci / arbitration receivers*), restructuring advisors, creditors' committee counsel, and defense attorneys protecting directors from personal subsidiary liability.
 
 ---
 
@@ -70,9 +70,9 @@ Governed by **Federal Law No. 127-FZ "On Insolvency (Bankruptcy)"**:
 ### A. Core Criteria & Proceedings:
 - Thresholds: Outstanding aggregate claims of at least **2,000,000 RUB** (for legal entities) or **500,000 RUB** (for citizens) overdue for more than **3 months**.
 - **Successive Stages for Corporations**:
-  1. *Observation (Наблюдение)*: Interim manager analyzes financial state; creditors register claims in the register (*РТК*); management powers preserved with restrictions.
-  2. *Financial Rehabilitation (Финансовое оздоровление)* or *External Administration (Внешнее управление)*: Restructuring attempts.
-  3. *Bankruptcy Liquidation (Конкурсное производство)*: Management dismissed; Bankruptcy Receiver (*Конкурсный управляющий*) sells all assets at open electronic auction on specialized platforms (Sberbank-AST, Fabrikant, RAD).
+  1. *Observation (Nablyudenie)*: Interim manager analyzes financial state; creditors register claims in the register (*RTK*); management powers preserved with restrictions.
+  2. *Financial Rehabilitation (Finansovoye ozdorovleniye)* or *External Administration (Vneshneye upravleniye)*: Restructuring attempts.
+  3. *Bankruptcy Liquidation (Konkursnoye proizvodstvo)*: Management dismissed; Bankruptcy Receiver (*Konkursny upravlyayushchy*) sells all assets at open electronic auction on specialized platforms (Sberbank-AST, Fabrikant, RAD).
 
 ### B. Challenging Debtor Transactions (Articles 61.2 and 61.3 of Law 127-FZ):
 Transactions concluded prior to bankruptcy can be judicially invalidated:
@@ -83,10 +83,10 @@ Transactions concluded prior to bankruptcy can be judicially invalidated:
 3. **Preferential Transactions (Art. 61.3)**:
    - Preferential repayment to one creditor over others concluded within **1 month** (or **6 months** for bad-faith/affiliated counterparties) prior to bankruptcy filing.
 
-### C. Subsidiary Liability of Controlling Persons (КДЛ - Chapter III.2 of Law 127-FZ):
+### C. Subsidiary Liability of Controlling Persons (KDL - Chapter III.2 of Law 127-FZ):
 The ultimate weapon of creditors against company owners, actual beneficiaries, and directors:
 
-1. **Controlling Debtor Person (*КДЛ*) Definition (Art. 61.10)**:
+1. **Controlling Debtor Person (*KDL*) Definition (Art. 61.10)**:
    - Any physical person or entity that had the power to determine the debtor's actions within the **3 years** preceding the emergence of insolvency signs up to the court petition (CEO, board members, 50%+ shareholders, shadow beneficiaries directing cashflows).
 2. **Grounds for Imposing Subsidiary Liability**:
    - **Impossibility of Full Debt Satisfaction (Art. 61.11)**:
@@ -98,6 +98,6 @@ The ultimate weapon of creditors against company owners, actual beneficiaries, a
    - **Failure to File Bankruptcy Petition on Time (Art. 61.12)**:
      - The director is personally liable for all obligations that arose **after the expiration of 1 month** from the date the company became insolvent.
 3. **Defense Strategies for Managing Directors & Beneficiaries**:
-   - *Business Judgment Rule (*Оправданный деловой риск*)*: Demonstrating that decisions were made in good faith on an informed basis within customary commercial practices.
-   - *Economic Recovery Plan (*Экономически обоснованный план выхода из кризиса*)*: Proving that the delay in bankruptcy filing was justified by a realistic, active anti-crisis restructuring strategy (negotiating bank credit extensions, finding new contracts).
+   - *Business Judgment Rule (Justified commercial risk)*: Demonstrating that decisions were made in good faith on an informed basis within customary commercial practices.
+   - *Economic Recovery Plan (Economically justified anti-crisis plan)*: Proving that the delay in bankruptcy filing was justified by a realistic, active anti-crisis restructuring strategy (negotiating bank credit extensions, finding new contracts).
    - Separating personal wealth from corporate assets; documenting all arm's-length intercompany transactions with independent appraisals.

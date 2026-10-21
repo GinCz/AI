@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🪙 Экономия токенов для работы AI-агентов (Token Economy for AI Agents)
+# 🪙 Zero-Waste Token Economy & Master AI Engineering Framework
 
-**Главная задача: максимальная экономия токенов, сжатие контекста, протоколы Zero-Waste Token Economy, полная агентская автономия и единые операционные стандарты.**  
+**Primary Objective: 90%+ Context Window Optimization, Zero-Waste Token Protocols, Full Agentic Autonomy, and Multi-Model Governance.**  
 *Universal Operational Standards, Zero-Waste Token Economy Protocols, Multi-Agent Governance, and Free Production IDE Stacks.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -13,7 +13,7 @@
 
 [Architecture](#-system-architecture) •
 [Directory Structure](#-repository-structure) •
-[🧠 Skills Framework (20 Skills)](skills/) •
+[🧠 Skills Framework (32 Production Skills)](skills/) •
 [Core Pillars](#-core-engineering-pillars) •
 [Quickstart](#-quickstart--agent-onboarding) •
 [Topics & Tags](#-hashtags--topics)
@@ -41,13 +41,13 @@
 > 5. **Check GitHub & Local Database BEFORE Answering:**
 >    - Before answering or requesting credentials/access from the user, the model **MUST ALWAYS check GitHub and the local database that exists on the computer**.
 >    - Never bother the user with access or credential questions before verifying whether they exist in connected GitHub repositories or in the local database.
-> 6. **Mandatory Local Database Architecture (Правила создания локальной базы данных):**
+> 6. **Mandatory Local Database Architecture (Structured Local Caching):**
 >    - To minimize token usage, eliminate network delays, and enable full local autonomy, every AI agent must establish and maintain a structured workspace named `AI/` (e.g. `D:\AI\` on Windows, `~/AI/` or `/root/AI/` on Linux).
 >    - The workspace MUST contain the following dedicated structure:
 >      * **`AI/BASE/` (Local Database & Knowledge Base):** The central repository for all local documentation, domain knowledge, database files, and configuration profiles.
 >      * **`AI/GitHub/` (Synchronized GitHub Repositories):** The dedicated local directory where all connected GitHub repositories are cloned and kept **continuously up-to-date** (`git pull` at start of session, `git push` on completion).
 >      * **`AI/<EngineName>/` (Isolated Model Sandboxes):** Dedicated working folder per engine (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
-> 7. **No Blind Agreement & Fact-Based Pushback (Запрет слепого соглашательства):**
+> 7. **No Blind Agreement & Fact-Based Pushback (Truth Over Sycophancy):**
 >    - Never blindly or sycophantically agree with everything said or suggested by the user.
 >    - If a proposal, decision, command, or technical hypothesis is wrong, suboptimal, unsafe, breaks system architecture, or leads into an operational dead end:
 >      * Explicitly state your disagreement — do not silently execute bad commands or validate false assumptions.
@@ -56,7 +56,7 @@
 >      * Immediately provide the objectively superior, safe, and robust alternative solution.
 > 8. **Mandatory Skills Framework Onboarding (`skills/`):**
 >    - When onboarding with these baseline rules, any new agent **MUST follow the link to the skills catalog in [`skills/ ↗`](skills/) (or read the monolithic compilation [`skills/ALL_SKILLS.md ↗`](skills/ALL_SKILLS.md)) and apply ALL these specialized skills to itself**.
->    - The agent must permanently absorb and activate all domain skills (Czech/EU/Russian law & litigation, accounting & taxation, DevOps, sysadmin, Zero Trust security, cyber defense, automotive mechanics & CAN-bus diagnostics, clinical medicine) into its capabilities and apply them to all relevant tasks.
+>    - The agent must permanently absorb and activate all domain skills (Czech/EU/international law & compliance, accounting & taxation, DevOps, sysadmin, Zero Trust security, cyber defense, automotive mechanics & CAN-bus diagnostics, clinical medicine) into its capabilities and apply them to all relevant tasks.
 > 
 > ### 🎯 STEP 2: ROUTE TO YOUR DEDICATED MODEL WORKSPACE
 > After adopting the Step 1 universal baseline, navigate to your dedicated model workspace:
@@ -71,15 +71,15 @@
 
 ## 📖 Overview
 
-🎯 **Самая главная задача репозитория — Экономия токенов для работы AI-агентов.**  
-Любая модель, подключаемая к проекту или репозиторию, обязана **одноразово обучиться** правилам экономии токенов (кэширование, срезы файлов, отсутствие воды, сессии `Ctrl+N`), навсегда зафиксировать их в локальной конфигурации и в дальнейшем работать автономно без повторного расходования токенов на перечитывание правил.
+🎯 **Core Mission: Zero-Waste Token Economy & Agentic Autonomy.**  
+Any AI model or autonomous agent interacting with a project must **absorb token economy rules once** (local caching, line-slice reading, zero filler, session resets via `Ctrl+N`), permanently store them in its local configuration, and subsequently execute autonomously without consuming tokens re-reading guidelines.
 
 The **`AI`** repository is a battle-tested, open-source architectural blueprint designed to elevate AI coding assistants—including **Google Antigravity & Gemini**, **Anthropic Claude**, **OpenAI Codex & ChatGPT**, **Cursor IDE**, and **GitHub Copilot**—from basic conversational bots into **highly disciplined, context-efficient, autonomous software engineering agents**.
 
 ### The Problem It Solves
-1. **Context Exhaustion & Token Waste (Экономия токенов):** Unconstrained agents flood context windows with entire files and repetitive API requests, driving up costs and degrading model reasoning.
-2. **Interactive Friction (Полная автономия):** Agents frequently stop to ask users to run commands or perform trivial diagnostics they could execute themselves. The model must execute tasks autonomously without asking for unnecessary confirmations.
-3. **Workspace Chaos & Secrets Discovery (Поиск доступов):** Multiple AI agents clobbering one another's temporary scripts. Agents must discover credentials in GitHub / local DB without user intervention.
+1. **Context Exhaustion & Token Waste:** Unconstrained agents flood context windows with entire files and repetitive API requests, driving up costs and degrading model reasoning.
+2. **Interactive Friction:** Agents frequently stop to ask users to run commands or perform trivial diagnostics they could execute themselves. Agents must solve tasks turnkey without soliciting unnecessary confirmations.
+3. **Workspace Chaos & Secrets Discovery:** Multiple AI agents clobbering one another's temporary scripts. Agents must discover credentials in connected repositories / local vaults without human intervention.
 
 ---
 
@@ -118,12 +118,15 @@ All architectural components, rules, and scripts are categorized into clean, ded
 | :--- | :--- | :---: | :--- |
 | **[`rules/ ↗`](rules/)** | **Universal AI Master Rules & Governance** | All AI Agents | [`rules/README.md ↗`](rules/README.md) |
 | ├── [`AI_RULES.md ↗`](rules/AI_RULES.md) | Master governance protocol (Autonomy, Timeouts, Chimes, Status Footers) | Universal | [`rules/AI_RULES.md ↗`](rules/AI_RULES.md) |
-| ├── [`ALL_AI_RULES.md ↗`](rules/ALL_AI_RULES.md) | Master Multi-AI Rules Manifest (Russian / Two-Step Pipeline) | Master Blueprint | [`rules/ALL_AI_RULES.md ↗`](rules/ALL_AI_RULES.md) |
+| ├── [`ALL_AI_RULES.md ↗`](rules/ALL_AI_RULES.md) | Master Multi-AI Rules Manifest (Two-Step Pipeline & Routing) | Master Blueprint | [`rules/ALL_AI_RULES.md ↗`](rules/ALL_AI_RULES.md) |
 | └── [`TOKEN_ECONOMY.md ↗`](rules/TOKEN_ECONOMY.md) | Practical token optimization rules (Turn limits, slice reading) | Context Ops | [`rules/TOKEN_ECONOMY.md ↗`](rules/TOKEN_ECONOMY.md) |
 | **[`context-economy/ ↗`](context-economy/)** | **Cache-First Knowledge Layer & DevOps Token Guide** | Engineering | [`context-economy/README.md ↗`](context-economy/README.md) |
 | ├── [`KNOWLEDGE_CACHE.md ↗`](context-economy/KNOWLEDGE_CACHE.md) | Local unified database specs (Jira, Confluence, NotebookLM) | Database | [`context-economy/KNOWLEDGE_CACHE.md ↗`](context-economy/KNOWLEDGE_CACHE.md) |
 | └── [`scripts/ ↗`](context-economy/scripts/) | Sync scripts for caching enterprise tickets (`sync-jira-cache.ps1`) | Automation | [`scripts/sync-jira-cache.ps1 ↗`](context-economy/scripts/sync-jira-cache.ps1) |
-| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (30 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
+| **[`vscode/ ↗`](vscode/)** | **VS Code + Continue.dev, Copilot & Remote-SSH Stack** | Local IDE AI | [`vscode/README.md ↗`](vscode/README.md) |
+| ├── [`config.yaml ↗`](vscode/config.yaml) | Production model configuration (Groq, Mistral, Gemini Flash, Nemotron) | Config | [`vscode/config.yaml ↗`](vscode/config.yaml) |
+| └── [`copilot-instructions.md ↗`](vscode/copilot-instructions.md) | GitHub Copilot in-editor instruction profile | Profile | [`vscode/copilot-instructions.md ↗`](vscode/copilot-instructions.md) |
+| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (32 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
 | **[`RULES.md ↗`](RULES.md)** | Root executive rules overview & agent routing entry point | Quick Reference | [`RULES.md ↗`](RULES.md) |
 
 ---
@@ -208,8 +211,6 @@ Operate autonomously using the local cache for all subsequent tasks without re-q
 <a href="https://github.com/GinCz" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
 &nbsp;&nbsp;<b>|||</b>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/gincz/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-&nbsp;&nbsp;<b>|||</b>&nbsp;&nbsp;
-<a href="https://uslugi.yandex.ru/profile/VladimirBulantsev-1756893" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Яндекс.Услуги-FC3F1D?style=flat&logo=yandex&logoColor=white" alt="Яндекс.Услуги" /></a>
 
 <br/><br/>
 

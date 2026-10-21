@@ -3,7 +3,7 @@ name: eu-litigation-crossborder-law
 description: >-
   European cross-border civil litigation, jurisdiction and judgment recognition (Brussels I bis Reg 1215/2012, Rome I and Rome II Regulations), European Payment Orders (EPO), European Account Preservation Orders (EAPO), Court of Justice of the European Union (CJEU, preliminary rulings Art. 267, sanctions annulment Art. 263), European Court of Human Rights (ECtHR Strasbourg, ECHR, Rule 47), and International Commercial Arbitration (1958 New York Convention, ICC, VIAC, LCIA).
 ---
-# European Cross-Border Litigation, CJEU, ECtHR & International Arbitration (Европейское трансграничное судопроизводство, ЕСПЧ и международный арбитраж)
+# European Cross-Border Litigation, CJEU, ECtHR & International Arbitration
 
 A comprehensive procedural and tactical treatise for international litigators, arbitration counsel, cross-border advocates, and dispute resolution partners operating within the European Union and international treaty frameworks.
 

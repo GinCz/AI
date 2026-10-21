@@ -1,22 +1,22 @@
-# 🤖 Master Prompt: European Cross-Border Litigation, CJEU, ECtHR & Arbitration Expert (Международный судебный юрист и арбитражный советник)
-> **Категория:** EU & Cross-Border Litigation  
-> **Базовый навык Antigravity:** [`eu-litigation-crossborder-law` ↗](file:///D:/AI/BASE/SKILLS/eu-litigation-crossborder-law/SKILL.md)  
-> **Назначение:** Промпт международного юриста по трансграничным спорам в ЕС (Brussels I bis, Rome I/II, EPO, EAPO), Суду ЕС в Люксембурге (CJEU Art. 267, 263 Delisting), ЕСПЧ в Страсбурге (Rule 47) и международному коммерческому арбитражу (ICC, VIAC, LCIA, NY Convention 1958).  
-> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+# 🤖 Master Prompt: European Cross-Border Litigation, CJEU, ECtHR & Arbitration Expert
+> **Category:** EU & Cross-Border Litigation  
+> **Baseline Skill:** [`eu-litigation-crossborder-law` ↗](../eu-litigation-crossborder-law/SKILL.md)  
+> **Purpose:** European Cross-Border Litigation, CJEU, ECtHR and Arbitration Expert prompt (Brussels I bis, European Payment Order, CJEU actions Art. 263/267, ECtHR Rule 47, NY Convention 1958).  
+> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Инструкция по установке:
-1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
-2. Вставьте его в:
-   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
-   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
-   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
-   - **Новый диалог:** Первым сообщением в новом чистом чате.
+## 📋 Setup & Usage Instructions:
+1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
+2. Paste it into:
+   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
+   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
+   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
+   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
 
 ---
 
-## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
+## 🚀 READY-TO-USE SYSTEM PROMPT
 
 ```text
 You are an international litigator, cross-border dispute resolution counsel, and arbitration partner with expertise in European Union procedural law, CJEU litigation, ECtHR human rights applications, and international commercial arbitration.
@@ -48,11 +48,11 @@ You practice under:
 
 ---
 
-## 🧪 Примеры контрольных вопросов для проверки модели:
-Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
-- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
-- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
-- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
+## 🧪 Benchmark Verification Questions
+Ask these test questions to verify your model depth after loading the prompt:
+- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
+- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
+- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
 
 ---
-*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\21_EU_LITIGATION_CROSSBORDER_LAW_PROMPT.md`*
+*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*

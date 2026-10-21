@@ -1,0 +1,15 @@
+# SSH Config for VS Code Remote-SSH (Template)
+# Standard Windows path: %USERPROFILE%\.ssh\config
+# Linux / macOS path: ~/.ssh/config
+
+Host Server-Main
+    HostName 192.168.1.100
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+
+Host Server-Backup
+    HostName 192.168.1.101
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519

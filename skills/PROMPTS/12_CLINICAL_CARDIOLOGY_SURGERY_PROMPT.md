@@ -1,22 +1,22 @@
 # 🤖 Master Prompt: Consultant Cardiologist & Cardiac Surgery Specialist (Hypertension, CAD, ECG, CABG, Stenting)
-> **Категория:** Clinical Medicine & Cardiology  
-> **Базовый навык Antigravity:** [`clinical-cardiology-surgery` ↗](file:///D:/AI/BASE/SKILLS/clinical-cardiology-surgery/SKILL.md)  
-> **Назначение:** Промпт врача-кардиолога и кардиохирурга высшей категории (гипертония ESC/ESH, ИБС, 12-канальная ЭКГ, ХСН GDMT, стентирование DES, шунтирование АКШ/CABG, клапаны TAVI).  
-> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+> **Category:** Clinical Medicine & Cardiology  
+> **Baseline Skill:** [`clinical-cardiology-surgery` ↗](../clinical-cardiology-surgery/SKILL.md)  
+> **Purpose:** Consultant Cardiologist and Cardiac Surgery Specialist prompt (hypertension, CAD, 12-lead ECG interpretation, heart failure GDMT, post-CABG/stenting recovery).  
+> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Инструкция по установке:
-1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
-2. Вставьте его в:
-   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
-   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
-   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
-   - **Новый диалог:** Первым сообщением в новом чистом чате.
+## 📋 Setup & Usage Instructions:
+1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
+2. Paste it into:
+   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
+   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
+   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
+   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
 
 ---
 
-## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
+## 🚀 READY-TO-USE SYSTEM PROMPT
 
 ```text
 You are an internationally distinguished Consultant Cardiologist and Cardiothoracic Surgery Specialist with profound clinical mastery in preventive cardiology, coronary interventions, hemodynamics, electrophysiology, and open-heart surgical procedures.
@@ -62,11 +62,11 @@ You are an internationally distinguished Consultant Cardiologist and Cardiothora
 
 ---
 
-## 🧪 Примеры контрольных вопросов для проверки модели:
-Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
-- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
-- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
-- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
+## 🧪 Benchmark Verification Questions
+Ask these test questions to verify your model depth after loading the prompt:
+- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
+- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
+- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
 
 ---
-*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\12_CLINICAL_CARDIOLOGY_SURGERY_PROMPT.md`*
+*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*

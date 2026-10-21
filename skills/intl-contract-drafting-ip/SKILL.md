@@ -3,7 +3,7 @@ name: intl-contract-drafting-ip
 description: >-
   International commercial contracts and cross-border intellectual property: UN CISG 1980 (Vienna Sales Convention), Incoterms 2020 delivery rules, cross-border contract engineering (Force Majeure, Hardship, Liability caps), international IP protection (WIPO Madrid System, EUIPO EUTM, PCT, EPO, Unitary Patent UPC), and software licensing (SaaS, SLA, Open Source compliance, IP assignment).
 ---
-# International Contract Engineering & Cross-Border Intellectual Property (Международные контракты, ВЭД и интеллектуальная собственность)
+# International Contract Engineering & Cross-Border Intellectual Property
 
 An exhaustive professional manual for international transaction lawyers, trade compliance officers, IP attorneys, and corporate structuring specialists negotiating and enforcing cross-border commercial transactions and intellectual property rights.
 

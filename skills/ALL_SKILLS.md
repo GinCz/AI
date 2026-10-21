@@ -1,48 +1,55 @@
-# 🧠 Полная база всех экспертных навыков (All Skills Monolith)
+# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 32 Skills)
 
-> **Единый файл со всеми экспертными навыками для мгновенного импорта любым ИИ-агентом (ChatGPT, Claude, Antigravity, Cursor, Perplexity).**
-> **GitHub URL:** https://github.com/GinCz/AI/blob/main/skills/ALL_SKILLS.md
-> **Raw URL для ИИ:** https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md
+> **Single consolidated reference file containing all 32 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
+> *GitHub Repository:* https://github.com/GinCz/AI/tree/main/skills  
+> *Raw URL for Direct Fetch:* https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md  
+> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-21
+
+---
+
+## 🧭 Table of Contents
+
+
+1. [agent-browser](#agent-browser) — *Web & Documentation*
+2. [agy-customizations](#agy-customizations) — *Antigravity Engineering*
+3. [allergology-clinical-immunology](#allergology-clinical-immunology) — *Clinical Medicine*
+4. [antigravity-guide](#antigravity-guide) — *Antigravity Platform*
+5. [auto-electronics-diagnostics](#auto-electronics-diagnostics) — *Automotive & EV*
+6. [auto-mechanics-powertrain](#auto-mechanics-powertrain) — *Automotive & Powertrain*
+7. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
+8. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
+9. [code-review](#code-review) — *Software Engineering*
+10. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
+11. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
+12. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
+13. [czech-business-law](#czech-business-law) — *Czech Business Law*
+14. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
+15. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
+16. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
+17. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
+18. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
+19. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
+20. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
+21. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
+22. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine*
+23. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine*
+24. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
+25. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine*
+26. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
+27. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
+28. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
+29. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
+30. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
+31. [systematic-debugging](#systematic-debugging) — *Software Engineering*
+32. [writing-plans](#writing-plans) — *Software Engineering*
+
 
 ---
 
-## 🧭 Оглавление навыков
-
-1. [agent-browser](#agent-browser)
-2. [allergology-clinical-immunology](#allergology-clinical-immunology)
-3. [auto-electronics-diagnostics](#auto-electronics-diagnostics)
-4. [auto-mechanics-powertrain](#auto-mechanics-powertrain)
-5. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring)
-6. [clinical-cardiology-surgery](#clinical-cardiology-surgery)
-7. [code-review](#code-review)
-8. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml)
-9. [cyber-defense-pentest](#cyber-defense-pentest)
-10. [czech-accounting-tax](#czech-accounting-tax)
-11. [czech-business-law](#czech-business-law)
-12. [czech-litigation-advocacy](#czech-litigation-advocacy)
-13. [devops-cloud-engineering](#devops-cloud-engineering)
-14. [endpoint-mobile-security](#endpoint-mobile-security)
-15. [eu-business-law-compliance](#eu-business-law-compliance)
-16. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law)
-17. [eu-vat-accounting](#eu-vat-accounting)
-18. [internal-medicine-hematology](#internal-medicine-hematology)
-19. [intl-contract-drafting-ip](#intl-contract-drafting-ip)
-20. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage)
-21. [ophthalmology-vision-care](#ophthalmology-vision-care)
-22. [orthopedics-knee-rehab](#orthopedics-knee-rehab)
-23. [proctology-colorectal-surgery](#proctology-colorectal-surgery)
-24. [ru-accounting-tax](#ru-accounting-tax)
-25. [ru-civil-corporate-law](#ru-civil-corporate-law)
-26. [ru-litigation-advocacy](#ru-litigation-advocacy)
-27. [server-hardening-zerotrust](#server-hardening-zerotrust)
-28. [sysadmin-network-engineering](#sysadmin-network-engineering)
-29. [systematic-debugging](#systematic-debugging)
-30. [writing-plans](#writing-plans)
-
----
 
 <a name="agent-browser"></a>
-# 📦 НАВЫК: agent-browser
+# 📦 SKILL: agent-browser
+*Domain:* **Web & Documentation**
 
 ---
 name: agent-browser
@@ -57,11 +64,126 @@ When writing system scripts, never hallucinate parameters or flags. If unsure, u
 2. **For Bash / Linux**: Search for the official man pages (e.g., "man [command] linux") or specific distribution docs (Ubuntu, Debian, RHEL).
 3. **Extraction**: Only extract the relevant flags and syntax. Do not copy generic examples without understanding them.
 
+---
+
+
+<a name="agy-customizations"></a>
+# 📦 SKILL: agy-customizations
+*Domain:* **Antigravity Engineering**
+
+---
+name: agy-customizations
+description: >-
+  Comprehensive guide and reference for the Antigravity Customization System.
+  Use to explain how customizations work, their loading priority, discovery mechanisms,
+  and to guide the creation of skills, rules, plugins, hooks, and MCP servers.
+---
+
+# Antigravity Customization System Guide
+
+The Antigravity Customization System allows you to tailor the agent's behavior,
+teach it new workflows, enforce guidelines, and integrate it with external
+tools. By customizing the agent, you can transition it from a general-purpose
+assistant to an expert pair programmer specialized in your project's codebase
+and processes.
+
+--------------------------------------------------------------------------------
+
+## Customization Types: Quick Reference
+
+Choose the right customization type based on your goal:
+
+Type            | Config File/Folder           | Scope                     | Best For                                                                                | Learn More
+:-------------- | :--------------------------- | :------------------------ | :-------------------------------------------------------------------------------------- | :---------
+**Rules**       | `GEMINI.md`, `AGENTS.md`     | Contextual / Hierarchical | Enforcing coding styles, API restrictions, and local guidelines.                        | [Rules Guide](./docs/rules.md)
+**Skills**      | `skills/<name>/SKILL.md`     | On-Demand (Progressive)   | Teaching the agent multi-step procedures, runbooks, and tool workflows.                 | [Skills Guide](./docs/skills.md)
+**Plugins**     | `plugins/<name>/plugin.json` | Bundle                    | Packaging related skills, rules, and MCP configs into a single unit.                    | [Plugins Guide](./docs/plugins.md)
+**Hooks**       | `hooks.json`                 | Lifecycle Event           | Running scripts/commands at specific agent lifecycle points (e.g., pre-tool execution). | [Hooks Guide](./docs/hooks.md)
+**MCP Servers** | `mcp_config.json`            | Tool Integration          | Connecting the agent to external services and custom tool providers.                    | [MCP Guide](./docs/mcp_servers.md)
+
+--------------------------------------------------------------------------------
+
+## Customization Discovery and Locations
+
+Antigravity automatically discovers your own customizations by traversing
+specific directories. Built-in customizations are not found this way: the agent
+config names the ones it mounts.
+
+### Discovery Locations
+
+1.  **Workspace Customizations** (Project-Specific):
+    *   Path: `.agents/` (or `.agent/`, `_agents/`, `_agent/`) at the root of
+        your project.
+    *   Use this to share customizations with your team by checking them into
+        version control (VCS).
+    *   The agent walks from your current working directory up to the repository
+        root (e.g., the folder containing `.git`) to find these directories.
+2.  **Directory & Project Rules** (Hierarchical):
+    *   Paths: `GEMINI.md`, `AGENTS.md`, `.agents/rules/*.md`
+    *   As you open or edit files, the agent walks up from the file's directory
+        to the repository root, loading all rules it finds.
+3.  **Global Configuration** (Machine-Local):
+    *   Path: `~/.gemini/config/`
+    *   Applies to all projects and workspaces run on your machine.
+
+--------------------------------------------------------------------------------
+
+## Loading Priority and Precedence
+
+When multiple customizations are discovered, they are loaded and applied in a
+specific order. If there are naming conflicts (e.g., two skills with the same
+name), the higher-priority customization overrides the lower-priority one.
+
+The priority order (from highest to lowest) is:
+
+1.  **Workspace Project**: Hierarchical discovery walking up from the CWD to the
+    repository root.
+2.  **Declared Configurations**: Customizations explicitly listed in
+    `skills.json` or `plugins.json` in your workspace.
+3.  **Global Discovery**: `~/.gemini/config/`
+4.  **Built-in Customizations**: Default skills bundled with the application,
+    mounted by name rather than discovered.
+5.  **Global Declared Configurations**: Explicitly listed in global JSON
+    configs.
+
+--------------------------------------------------------------------------------
+
+## How Customizations are Applied
+
+### Progressive Disclosure (Skills and Rules)
+
+To prevent overwhelming the model's context window, Antigravity uses
+**progressive disclosure**:
+
+*   **Skills** are not loaded into the context window by default. Only their
+    names and descriptions are injected. The full content of a skill is only
+    loaded if the model (or the user) explicitly decides to activate it.
+*   **Rules** with `trigger: model_decision` behave similarly. Only `always_on`
+    rules are loaded unconditionally.
+
+### Deduplication
+
+All customizations (especially rules) are deduplicated by their resolved file
+paths. A rule file will never be injected more than once in a single
+conversation turn, even if it matches multiple trigger conditions.
+
+--------------------------------------------------------------------------------
+
+## Advanced Management: JSON Configs
+
+For customizations stored in non-standard locations, you can use `skills.json`
+and `plugins.json` to explicitly register them and inherit from shared
+configurations.
+
+*   Learn how to configure these in the
+    [JSON Configurations Guide](./docs/json_configs.md).
 
 ---
 
+
 <a name="allergology-clinical-immunology"></a>
-# 📦 НАВЫК: allergology-clinical-immunology
+# 📦 SKILL: allergology-clinical-immunology
+*Domain:* **Clinical Medicine**
 
 ---
 name: allergology-clinical-immunology
@@ -163,11 +285,75 @@ A master clinical and diagnostic reference for evaluating allergic rhinitis, aer
 - Mechanism: Repeated controlled allergen exposure induces regulatory T-cells ($T_{reg}$), suppresses Th2 responses, and triggers class-switching to protective **IgG4 blocking antibodies**.
 - Regimen: 3 consecutive years of continuous or pre-coseasonal sublingual tablets/drops (e.g. *Grazax* for grass pollen).
 
+---
+
+
+<a name="antigravity-guide"></a>
+# 📦 SKILL: antigravity-guide
+*Domain:* **Antigravity Platform**
+
+---
+name: antigravity-guide
+description: Provides a comprehensive guide, quick reference, and sitemap for Google Antigravity (AGY), including the Antigravity CLI (agy), Antigravity 2.0, Antigravity IDE, Python SDK, slash commands, keybindings, and customizations (skills, rules, MCP, sidecars). Activate this skill when the user asks questions about how to use, configure, or customize Antigravity, AGY, the agy CLI, the Antigravity IDE, or Antigravity 2.0.
+---
+
+# Google Antigravity (AGY) Guide & Sitemap
+
+Google Antigravity is an AI-first development platform. Depending on which
+surface the user is asking about, you **MUST** read the corresponding
+subdocumentation in the `references/` directory of this skill:
+
+## 1. Surfaces Sitemap (Offline Subdocs)
+
+-   **Antigravity CLI (`agy`)**: [references/cli.md](references/cli.md)
+    -   Pointers to the authoritative public CLI docs for slash commands,
+        features, settings, and best practices.
+-   **Antigravity IDE**: [references/ide.md](references/ide.md)
+    -   Covers the standalone AI-first IDE, sidebar chat panels, and inline code
+        lenses.
+-   **Antigravity 2.0**: [references/app.md](references/app.md)
+    -   Covers the parallel desktop application, left-hand sidebar, chat canvas,
+        and the HTML Auxiliary Pane (Subagents, Background Tasks, Artifacts,
+        Files Changed, Terminals).
+-   **Antigravity SDK**: [references/sdk.md](references/sdk.md)
+    -   Covers the public Python SDK
+        (https://github.com/google-antigravity/antigravity-sdk-python) for
+        programmatic agent leasing, orchestration APIs, and custom tool
+        exposing.
+
+--------------------------------------------------------------------------------
+
+## 2. Smart Hybrid Retrieval: When to Fetch Live Docs
+
+The offline subdocs provide excellent quick references. However, if the user
+asks for the latest updates, advanced Vertex AI integrations, or complex setups
+not covered here, you **MUST** dynamically fetch the live page from the official
+sitemap:
+
+<!-- LINT.IfChange(sitemap) -->
+
+-   **Main Documentation Home**: `https://antigravity.google/docs`
+-   **Skills**: `https://antigravity.google/docs/skills`
+-   **Rules**: `https://antigravity.google/docs/rules-workflows`
+-   **Hooks**: `https://antigravity.google/docs/hooks`
+-   **Plugins**: `https://antigravity.google/docs/plugins`
+-   **Sidecars**: `https://antigravity.google/docs/sidecars`
+-   **Model Context Protocol (MCP)**: `https://antigravity.google/docs/mcp`
+-   **Browser Automation & Testing**:
+    `https://antigravity.google/docs/ide/browser`
+-   **Agent Permissions & Security**:
+    `https://antigravity.google/docs/permissions`
+-   **Terminal Sandbox**: `https://antigravity.google/docs/sandbox`
+-   **Changelog & Release Notes**: `https://antigravity.google/changelog`
+-   **Troubleshooting & Support**: `https://antigravity.google/support`
+    <!-- LINT.ThenChange(//depot/google3/third_party/gemini_coder/agent_ui_toolkit/dev/appVariant/externalAppVariant.ts:custom_links) -->
 
 ---
 
+
 <a name="auto-electronics-diagnostics"></a>
-# 📦 НАВЫК: auto-electronics-diagnostics
+# 📦 SKILL: auto-electronics-diagnostics
+*Domain:* **Automotive & EV**
 
 ---
 name: auto-electronics-diagnostics
@@ -309,11 +495,12 @@ Working on electric (BEV) and hybrid (HEV/PHEV) vehicles requires certified High
   - Three-phase AC drive generation via IGBT or SiC MOSFET bridges.
   - Bidirectional DC-DC converter stepping 400V/800V pack voltage down to 12V/14V to charge auxiliary battery.
 
-
 ---
 
+
 <a name="auto-mechanics-powertrain"></a>
-# 📦 НАВЫК: auto-mechanics-powertrain
+# 📦 SKILL: auto-mechanics-powertrain
+*Domain:* **Automotive & Powertrain**
 
 ---
 name: auto-mechanics-powertrain
@@ -338,7 +525,7 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 ### B. Diesel Engines (Common Rail & Pumpe-Düse):
 - **Common Rail (CR) Architecture**:
   - High-pressure pump (Bosch CP1/CP3/CP4, Delphi, Denso) reaching 1,600 to 2,500 bar.
-  - Fuel return flow test (*přepadová zkouška vstřikovačів*): Measuring return line volume across all cylinders via graduated vials to detect leaking injector valves causing hard hot start or rail pressure drop (DTC P0087).
+  - Fuel return flow test (*přepadová zkouška vstřikovačů*): Measuring return line volume across all cylinders via graduated vials to detect leaking injector valves causing hard hot start or rail pressure drop (DTC P0087).
   - High-pressure pump CP4 failure warning: Swarf/metal particles in fuel filter housing requiring complete fuel system replacement (tank, lines, rails, injectors).
 - **Pumpe-Düse (PD / Unit Injector)**:
   - Camshaft-driven individual unit injectors; adjusting pre-load rocker lash (turn bottom out, back off 180°–225°).
@@ -408,7 +595,7 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 - Complete fluid exchange using automated ATF flushing machines (dynamic exchange under running engine) vs. static drain/fill; monitoring transmission oil temperature during level check.
 
 ### D. Differentials & Drivetrain Components:
-- Setting ring and pinion gear backlash (*zubová vůle*) and tooth contact pattern using marking compound (*inženýрská modř*).
+- Setting ring and pinion gear backlash (*zubová vůle*) and tooth contact pattern using marking compound (*inženýrská modř*).
 - CV joint (*homokinetický kloub*) boot replacement and grease repacking; propshaft center support bearing alignment.
 
 ---
@@ -432,20 +619,21 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 - Hydraulic pressure bleeding with automated brake bleeder (1.5–2.0 bar); ABS pump cycling procedure to evacuate air trapped in internal accumulator valves.
 - Electronic Parking Brake (EPB): Driving caliper pistons into service mode via diagnostics prior to rear pad replacement; zero-point thickness calibration upon completion.
 
-
 ---
 
+
 <a name="bankruptcy-insolvency-restructuring"></a>
-# 📦 НАВЫК: bankruptcy-insolvency-restructuring
+# 📦 SKILL: bankruptcy-insolvency-restructuring
+*Domain:* **Insolvency & Restructuring**
 
 ---
 name: bankruptcy-insolvency-restructuring
 description: >-
   Corporate insolvency, debt restructuring, and bankruptcy litigation: EU Cross-Border Insolvency Regulation 2015/848 (COMI, main/secondary proceedings, Preventive Restructuring Directive 2019/1023), Czech Insolvency Act (IZ č. 182/2006 Sb., konkurs, reorganizace, oddlužení, voidable transactions §§ 235–243), and Russian Bankruptcy Law (127-FZ, contesting suspect transactions Art. 61.2/61.3, and subsidiary liability of controlling persons KDL Chapter III.2).
 ---
-# Bankruptcy, Insolvency & Corporate Restructuring (Банкротство, санация и субсидиарная ответственность)
+# Bankruptcy, Insolvency & Corporate Restructuring
 
-An exhaustive, high-level tactical and legal treatise for bankruptcy trustees (*insolvenční správci / арбитражные управляющие*), restructuring advisors, creditors' committee counsel, and defense attorneys protecting directors from personal subsidiary liability.
+An exhaustive, high-level tactical and legal treatise for bankruptcy trustees (*insolvenční správci / arbitration receivers*), restructuring advisors, creditors' committee counsel, and defense attorneys protecting directors from personal subsidiary liability.
 
 ---
 
@@ -510,9 +698,9 @@ Governed by **Federal Law No. 127-FZ "On Insolvency (Bankruptcy)"**:
 ### A. Core Criteria & Proceedings:
 - Thresholds: Outstanding aggregate claims of at least **2,000,000 RUB** (for legal entities) or **500,000 RUB** (for citizens) overdue for more than **3 months**.
 - **Successive Stages for Corporations**:
-  1. *Observation (Наблюдение)*: Interim manager analyzes financial state; creditors register claims in the register (*РТК*); management powers preserved with restrictions.
-  2. *Financial Rehabilitation (Финансовое оздоровление)* or *External Administration (Внешнее управление)*: Restructuring attempts.
-  3. *Bankruptcy Liquidation (Конкурсное производство)*: Management dismissed; Bankruptcy Receiver (*Конкурсный управляющий*) sells all assets at open electronic auction on specialized platforms (Sberbank-AST, Fabrikant, RAD).
+  1. *Observation (Nablyudenie)*: Interim manager analyzes financial state; creditors register claims in the register (*RTK*); management powers preserved with restrictions.
+  2. *Financial Rehabilitation (Finansovoye ozdorovleniye)* or *External Administration (Vneshneye upravleniye)*: Restructuring attempts.
+  3. *Bankruptcy Liquidation (Konkursnoye proizvodstvo)*: Management dismissed; Bankruptcy Receiver (*Konkursny upravlyayushchy*) sells all assets at open electronic auction on specialized platforms (Sberbank-AST, Fabrikant, RAD).
 
 ### B. Challenging Debtor Transactions (Articles 61.2 and 61.3 of Law 127-FZ):
 Transactions concluded prior to bankruptcy can be judicially invalidated:
@@ -523,10 +711,10 @@ Transactions concluded prior to bankruptcy can be judicially invalidated:
 3. **Preferential Transactions (Art. 61.3)**:
    - Preferential repayment to one creditor over others concluded within **1 month** (or **6 months** for bad-faith/affiliated counterparties) prior to bankruptcy filing.
 
-### C. Subsidiary Liability of Controlling Persons (КДЛ - Chapter III.2 of Law 127-FZ):
+### C. Subsidiary Liability of Controlling Persons (KDL - Chapter III.2 of Law 127-FZ):
 The ultimate weapon of creditors against company owners, actual beneficiaries, and directors:
 
-1. **Controlling Debtor Person (*КДЛ*) Definition (Art. 61.10)**:
+1. **Controlling Debtor Person (*KDL*) Definition (Art. 61.10)**:
    - Any physical person or entity that had the power to determine the debtor's actions within the **3 years** preceding the emergence of insolvency signs up to the court petition (CEO, board members, 50%+ shareholders, shadow beneficiaries directing cashflows).
 2. **Grounds for Imposing Subsidiary Liability**:
    - **Impossibility of Full Debt Satisfaction (Art. 61.11)**:
@@ -538,15 +726,16 @@ The ultimate weapon of creditors against company owners, actual beneficiaries, a
    - **Failure to File Bankruptcy Petition on Time (Art. 61.12)**:
      - The director is personally liable for all obligations that arose **after the expiration of 1 month** from the date the company became insolvent.
 3. **Defense Strategies for Managing Directors & Beneficiaries**:
-   - *Business Judgment Rule (*Оправданный деловой риск*)*: Demonstrating that decisions were made in good faith on an informed basis within customary commercial practices.
-   - *Economic Recovery Plan (*Экономически обоснованный план выхода из кризиса*)*: Proving that the delay in bankruptcy filing was justified by a realistic, active anti-crisis restructuring strategy (negotiating bank credit extensions, finding new contracts).
+   - *Business Judgment Rule (Justified commercial risk)*: Demonstrating that decisions were made in good faith on an informed basis within customary commercial practices.
+   - *Economic Recovery Plan (Economically justified anti-crisis plan)*: Proving that the delay in bankruptcy filing was justified by a realistic, active anti-crisis restructuring strategy (negotiating bank credit extensions, finding new contracts).
    - Separating personal wealth from corporate assets; documenting all arm's-length intercompany transactions with independent appraisals.
-
 
 ---
 
+
 <a name="clinical-cardiology-surgery"></a>
-# 📦 НАВЫК: clinical-cardiology-surgery
+# 📦 SKILL: clinical-cardiology-surgery
+*Domain:* **Clinical Medicine**
 
 ---
 name: clinical-cardiology-surgery
@@ -669,11 +858,12 @@ Heart failure is categorized by Left Ventricular Ejection Fraction (LVEF):
   - Mechanical: Highly durable (> 25 years), but requires lifelong anticoagulation with Vitamin K antagonists (Warfarin) with strict target INR (2.5–3.5 depending on position).
   - Biological (Bovine/Porcine pericardium): Low thrombogenicity (aspirin only), but subject to structural valve deterioration over 10–15 years.
 
-
 ---
 
+
 <a name="code-review"></a>
-# 📦 НАВЫК: code-review
+# 📦 SKILL: code-review
+*Domain:* **Software Engineering**
 
 ---
 name: code-review
@@ -696,18 +886,19 @@ When reviewing code, evaluate it against the following criteria:
 
 Provide a structured report with [High], [Medium], and [Low] priority fixes.
 
-
 ---
 
+
 <a name="compliance-anti-sanctions-aml"></a>
-# 📦 НАВЫК: compliance-anti-sanctions-aml
+# 📦 SKILL: compliance-anti-sanctions-aml
+*Domain:* **Compliance & Sanctions**
 
 ---
 name: compliance-anti-sanctions-aml
 description: >-
   International sanctions compliance (EU Council Regulations 833/2014 & 269/2014, US OFAC SDN/SSI lists, UK OFSI, 50-Percent Rule), Dual-Use export controls (Regulation 2021/821, EAR), Anti-Money Laundering and Counter-Terrorist Financing (AMLD5, AMLD6, AMLA, KYC/CDD, UBO registers), and cryptocurrency regulatory compliance (MiCA, CASP licensing, Travel Rule Regulation 2023/1113).
 ---
-# Sanctions Compliance, Anti-Money Laundering (AML/CFT) & Crypto Regulation (Санкционный комплаенс, ПОД/ФТ и крипторегулирование)
+# Sanctions Compliance, Anti-Money Laundering (AML/CFT) & Crypto Regulation
 
 An authoritative operational and regulatory reference for Chief Compliance Officers (CCO), Money Laundering Reporting Officers (MLRO), international trade lawyers, and financial institution risk managers.
 
@@ -789,7 +980,7 @@ Operating under the **Financial Action Task Force (FATF)** recommendations and t
 
 ### B. Obliged Entities & Reporting Obligations:
 - Banks, payment institutions, crypto-asset providers, auditors, tax advisors, real estate brokers, and lawyers.
-- Mandatory filing of **Suspicious Transaction Reports (STR / SAR)** to the national Financial Intelligence Unit (**FIU** / *FAÚ v ČR*, *Росфинмониторинг в РФ*).
+- Mandatory filing of **Suspicious Transaction Reports (STR / SAR)** to the national Financial Intelligence Unit (**FIU** / *FAU in Czechia*, *Rosfinmonitoring in RF*).
 - **Prohibition of Tipping-Off**: Obliged entities and their employees are strictly prohibited from disclosing to the customer or third parties that a report has been filed or that a money laundering investigation is underway.
 
 ---
@@ -815,11 +1006,12 @@ The European Union has established the world's first comprehensive regulatory fr
   - Name of the beneficiary (recipient) and beneficiary's wallet address.
 - **Self-Hosted Wallets (Unhosted Wallets)**: For transfers exceeding **1,000 EUR** to/from unhosted wallets, CASPs are mandated to verify whether the wallet is effectively owned or controlled by the customer.
 
-
 ---
 
+
 <a name="cyber-defense-pentest"></a>
-# 📦 НАВЫК: cyber-defense-pentest
+# 📦 SKILL: cyber-defense-pentest
+*Domain:* **Cybersecurity**
 
 ---
 name: cyber-defense-pentest
@@ -950,11 +1142,12 @@ When an unauthorized intrusion or breach is confirmed:
 4. **Post-Incident Remediation**:
    - Rotate all SSH keys, database passwords, API tokens, and service credentials.
 
-
 ---
 
+
 <a name="czech-accounting-tax"></a>
-# 📦 НАВЫК: czech-accounting-tax
+# 📦 SKILL: czech-accounting-tax
+*Domain:* **Czech Accounting & Tax**
 
 ---
 name: czech-accounting-tax
@@ -1127,11 +1320,12 @@ Electronic filing is **mandatory by law** for all Czech legal entities and regis
 - **Health Insurance Portals**:
   - VZP Point / Vitakarta OZP: Annual *Přehled*, employee registration (*Hromadné oznámení zaměstnavatele*).
 
-
 ---
 
+
 <a name="czech-business-law"></a>
-# 📦 НАВЫК: czech-business-law
+# 📦 SKILL: czech-business-law
+*Domain:* **Czech Business Law**
 
 ---
 name: czech-business-law
@@ -1270,11 +1464,12 @@ The illegal practice of contracting an individual as an independent contractor (
     - Over-indebtedness (*Předlužení*): Sum of the debtor's liabilities exceeds the fair value of their assets.
   - **Statutory Duty to File**: The executive must file a debtor's insolvency petition without undue delay upon becoming aware (or when they ought to have become aware) of insolvency. Delay creates direct personal tort liability for damages caused to creditors.
 
-
 ---
 
+
 <a name="czech-litigation-advocacy"></a>
-# 📦 НАВЫК: czech-litigation-advocacy
+# 📦 SKILL: czech-litigation-advocacy
+*Domain:* **Czech Litigation**
 
 ---
 name: czech-litigation-advocacy
@@ -1422,11 +1617,12 @@ Governs non-contractual attorney remuneration (*mimosmluvní odměna*) and the s
   - Participation in court hearing (each commenced 2 hours counts as 1 act).
 - **Lump-sum Outlay Allowance (*Režijní paušál* - § 13 odst. 4)**: Flat statutory fee of **300 CZK** per legal act to cover administrative and postal expenses, plus VAT (21%) if the advocate is a registered VAT payer.
 
-
 ---
 
+
 <a name="devops-cloud-engineering"></a>
-# 📦 НАВЫК: devops-cloud-engineering
+# 📦 SKILL: devops-cloud-engineering
+*Domain:* **DevOps & Cloud**
 
 ---
 name: devops-cloud-engineering
@@ -1558,11 +1754,12 @@ net.ipv4.ip_local_port_range = 10240 65535
 ```
 Apply immediately without reboot: `sysctl --system`.
 
-
 ---
 
+
 <a name="endpoint-mobile-security"></a>
-# 📦 НАВЫК: endpoint-mobile-security
+# 📦 SKILL: endpoint-mobile-security
+*Domain:* **Endpoint & Mobile Security**
 
 ---
 name: endpoint-mobile-security
@@ -1668,11 +1865,12 @@ As an Android developer and administrator, maintain rigorous device and applicat
 - **Android Keystore & BiometricPrompt**:
   - In custom Android apps, always store cryptographic secrets inside the hardware-backed **Android Keystore** (`KeyGenParameterSpec.Builder(..., KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT).setUserAuthenticationRequired(true)`).
 
-
 ---
 
+
 <a name="eu-business-law-compliance"></a>
-# 📦 НАВЫК: eu-business-law-compliance
+# 📦 SKILL: eu-business-law-compliance
+*Domain:* **EU Business Law**
 
 ---
 name: eu-business-law-compliance
@@ -1807,18 +2005,19 @@ Governed by the Consumer Rights Directive (2011/83/EU) and the **Omnibus Directi
   - Mandatory statutory 2-year guarantee for consumer goods.
   - Any defect that becomes apparent within **1 year** (in many states extended to 2 years) of delivery is legally presumed to have existed at the time of delivery unless proven otherwise by the seller.
 
-
 ---
 
+
 <a name="eu-litigation-crossborder-law"></a>
-# 📦 НАВЫК: eu-litigation-crossborder-law
+# 📦 SKILL: eu-litigation-crossborder-law
+*Domain:* **EU Cross-Border Litigation**
 
 ---
 name: eu-litigation-crossborder-law
 description: >-
   European cross-border civil litigation, jurisdiction and judgment recognition (Brussels I bis Reg 1215/2012, Rome I and Rome II Regulations), European Payment Orders (EPO), European Account Preservation Orders (EAPO), Court of Justice of the European Union (CJEU, preliminary rulings Art. 267, sanctions annulment Art. 263), European Court of Human Rights (ECtHR Strasbourg, ECHR, Rule 47), and International Commercial Arbitration (1958 New York Convention, ICC, VIAC, LCIA).
 ---
-# European Cross-Border Litigation, CJEU, ECtHR & International Arbitration (Европейское трансграничное судопроизводство, ЕСПЧ и международный арбитраж)
+# European Cross-Border Litigation, CJEU, ECtHR & International Arbitration
 
 A comprehensive procedural and tactical treatise for international litigators, arbitration counsel, cross-border advocates, and dispute resolution partners operating within the European Union and international treaty frameworks.
 
@@ -1937,11 +2136,12 @@ The preeminent global mechanism for resolving cross-border commercial disputes o
   - Non-arbitrability of dispute under enforcing state's law.
   - Enforcement contrary to the **Public Policy (*ordre public*)** of the country where enforcement is sought.
 
-
 ---
 
+
 <a name="eu-vat-accounting"></a>
-# 📦 НАВЫК: eu-vat-accounting
+# 📦 SKILL: eu-vat-accounting
+*Domain:* **EU VAT & Cross-Border Tax**
 
 ---
 name: eu-vat-accounting
@@ -2071,11 +2271,12 @@ Under **Council Directive (EU) 2021/514 (DAC7)**:
   - **Local File**: Detailed transactional analysis of local entity, functional and risk analysis (*funkční a riziková analýza*), selection of transfer pricing method (CUP, Cost Plus, Resale Price, TNMM).
   - Penalty for non-compliance: Unilateral retroactive tax base adjustments by tax authorities with 20% penalty and statutory interest on arrears.
 
-
 ---
 
+
 <a name="internal-medicine-hematology"></a>
-# 📦 НАВЫК: internal-medicine-hematology
+# 📦 SKILL: internal-medicine-hematology
+*Domain:* **Clinical Medicine**
 
 ---
 name: internal-medicine-hematology
@@ -2204,18 +2405,19 @@ A master clinical manual for interpreting hematological profiles, serum biochemi
   - Prohormone produced by thyroid C-cells and ubiquitous parenchymal tissues in response to bacterial endotoxins.
   - Normal: $< 0.1\ \mu\text{g/L}$. Values $> 0.5–2.0\ \mu\text{g/L}$ strongly support severe systemic bacterial infection/sepsis and guide initiation and de-escalation of antibacterial therapy.
 
-
 ---
 
+
 <a name="intl-contract-drafting-ip"></a>
-# 📦 НАВЫК: intl-contract-drafting-ip
+# 📦 SKILL: intl-contract-drafting-ip
+*Domain:* **International Law & IP**
 
 ---
 name: intl-contract-drafting-ip
 description: >-
   International commercial contracts and cross-border intellectual property: UN CISG 1980 (Vienna Sales Convention), Incoterms 2020 delivery rules, cross-border contract engineering (Force Majeure, Hardship, Liability caps), international IP protection (WIPO Madrid System, EUIPO EUTM, PCT, EPO, Unitary Patent UPC), and software licensing (SaaS, SLA, Open Source compliance, IP assignment).
 ---
-# International Contract Engineering & Cross-Border Intellectual Property (Международные контракты, ВЭД и интеллектуальная собственность)
+# International Contract Engineering & Cross-Border Intellectual Property
 
 An exhaustive professional manual for international transaction lawyers, trade compliance officers, IP attorneys, and corporate structuring specialists negotiating and enforcing cross-border commercial transactions and intellectual property rights.
 
@@ -2304,11 +2506,12 @@ When drafting international commercial agreements (IT outsourcing, wholesale, di
   - If proprietary corporate software statically links or incorporates GPL code, the entire combined derivative work must be disclosed in open source under GPL.
   - AGPLv3 triggers copyleft obligations over network interactions (SaaS/Cloud), requiring disclosure of server source code. Commercial audits require strict automated OSS dependency scanning (Black Duck, Snyk, FOSSA).
 
-
 ---
 
+
 <a name="neurology-neurosurgery-triage"></a>
-# 📦 НАВЫК: neurology-neurosurgery-triage
+# 📦 SKILL: neurology-neurosurgery-triage
+*Domain:* **Clinical Medicine**
 
 ---
 name: neurology-neurosurgery-triage
@@ -2415,11 +2618,12 @@ When evaluating any headache, systematically check the **SNOOP4** criteria. A po
   - **Papilledema**: Swollen optic discs indicating elevated intracranial pressure.
   - **Precipitated by Valsalva**: Triggered by coughing, sneezing, bending over, or strenuous exercise (rule out Chiari malformation or posterior fossa lesion).
 
-
 ---
 
+
 <a name="ophthalmology-vision-care"></a>
-# 📦 НАВЫК: ophthalmology-vision-care
+# 📦 SKILL: ophthalmology-vision-care
+*Domain:* **Clinical Medicine**
 
 ---
 name: ophthalmology-vision-care
@@ -2526,11 +2730,12 @@ Reflects systemic damage occurring simultaneously in cerebral, coronary, and ren
   - Eyelid hygiene: Warm compresses (10 minutes) followed by gentle eyelid margin massage to melt inspissated meibomian wax.
   - Ergonomics: The **20-20-20 Rule** (every 20 minutes, look at an object 20 feet / 6 meters away for at least 20 seconds).
 
-
 ---
 
+
 <a name="orthopedics-knee-rehab"></a>
-# 📦 НАВЫК: orthopedics-knee-rehab
+# 📦 SKILL: orthopedics-knee-rehab
+*Domain:* **Clinical Medicine**
 
 ---
 name: orthopedics-knee-rehab
@@ -2658,11 +2863,12 @@ Perform systematically with the patient relaxed in supine position:
 - **Phase 4 (Months 3–6+)**:
   - Plyometrics, agility drills, running progression, sport-specific functional testing.
 
-
 ---
 
+
 <a name="proctology-colorectal-surgery"></a>
-# 📦 НАВЫК: proctology-colorectal-surgery
+# 📦 SKILL: proctology-colorectal-surgery
+*Domain:* **Clinical Medicine**
 
 ---
 name: proctology-colorectal-surgery
@@ -2806,18 +3012,19 @@ Prior to performing elective proctological surgery in adult patients, thorough e
    - Stool Management: Osmotic laxative (**Macrogol / Lactulose**) starting postoperative day 1 to ensure soft, formed stool; avoid both severe constipation and high-frequency liquid diarrhea.
    - Hygiene: Warm sitz baths (*sedací koupele* with chamomile or oak bark / *dubová kůra*) 2–3 times daily after bowel movements.
 
-
 ---
 
+
 <a name="ru-accounting-tax"></a>
-# 📦 НАВЫК: ru-accounting-tax
+# 📦 SKILL: ru-accounting-tax
+*Domain:* **Russian Accounting & Tax**
 
 ---
 name: ru-accounting-tax
 description: >-
   Russian accounting (RSBU/FSBU), corporate and personal taxation (OSNO, USN, PSN, AUSN, NPD), VAT, profit tax, progressive PIT, unified insurance premiums, Single Tax Account (ENS/ENP), reporting (6-NDFL, RSV, EFS-1), tax audits, fines, and Article 54.1 NK RF compliance.
 ---
-# Russian Accounting, Taxation & Tax Audit Defense (Бухгалтерский учет и налогообложение РФ)
+# Russian Accounting, Taxation & Tax Audit Defense 
 
 A comprehensive operational manual and regulatory reference for corporate accountants, chief financial officers (CFO), tax advisors, and auditors operating under the statutory legislation of the Russian Federation.
 
@@ -2826,59 +3033,59 @@ A comprehensive operational manual and regulatory reference for corporate accoun
 ## 1. Statutory Architecture & Primary Regulatory Framework
 
 Russian accounting and tax law is strictly formalized under federal codifications:
-- **Tax Code of the Russian Federation (*Налоговый кодекс РФ - НК РФ*)**:
-  - *Part I*: General principles of taxation, taxpayer rights and duties, tax control, inspections, Single Tax Account (*ЕНС*), and tax offenses (Articles 1–142).
+- **Tax Code of the Russian Federation (Tax Code of the Russian Federation - NK RF)**:
+  - *Part I*: General principles of taxation, taxpayer rights and duties, tax control, inspections, Single Tax Account (ENS), and tax offenses (Articles 1–142).
   - *Part II*: Specific taxes and special tax regimes (Articles 143–346.53).
-- **Federal Law No. 402-FZ "On Accounting" (*Федеральный закон от 06.12.2011 № 402-ФЗ «О бухгалтерском учете»*)**: Mandatory bookkeeping standards, primary documentation (*первичные учетные документы*), electronic signatures, and annual financial statements.
-- **Federal Accounting Standards (*Федеральные стандарты бухгалтерского учета - ФСБУ*)**:
-  - `ФСБУ 5/2019` "Запасы" (Inventories, valuation, net realizable value).
-  - `ФСБУ 6/2020` "Основные средства" (Fixed assets, depreciation, revaluation, component depreciation).
-  - `ФСБУ 26/2020` "Капитальные вложения" (Capital investments, acquisition, commissioning, R&D).
-  - `ФСБУ 14/2022` "Нематериальные активы" (Intangible assets, goodwill, software, licenses).
-  - `ФСБУ 25/2018` "Бухгалтерский учет аренды" (Lease accounting, Right-of-Use assets, lease liability).
-  - `ФСБУ 27/2021` "Документы и документооборот в бухгалтерском учете" (Electronic document flow, storage, corrections).
-  - `ФСБУ 28/2023` "Инвентаризация" (Mandatory physical inventory audit rules).
+- **Federal Law No. 402-FZ "On Accounting" (Federal Law No. 402-FZ On Accounting)**: Mandatory bookkeeping standards, primary documentation (primary accounting documents), electronic signatures, and annual financial statements.
+- **Federal Accounting Standards (Federal Accounting Standards - FSBU)**:
+  - `FSBU 5/2019` "Inventories" (Inventories, valuation, net realizable value).
+  - `FSBU 6/2020` "Fixed Assets" (Fixed assets, depreciation, revaluation, component depreciation).
+  - `FSBU 26/2020` "Capital Investments" (Capital investments, acquisition, commissioning, R&D).
+  - `FSBU 14/2022` "Intangible Assets" (Intangible assets, goodwill, software, licenses).
+  - `FSBU 25/2018` "Lease Accounting" (Lease accounting, Right-of-Use assets, lease liability).
+  - `FSBU 27/2021` "Documents and Document Flow" (Electronic document flow, storage, corrections).
+  - `FSBU 28/2023` "Inventory Auditing" (Mandatory physical inventory audit rules).
 
 ---
 
 ## 2. Tax Regimes & Strategic Decision Matrix
 
-Entities and Individual Entrepreneurs (*Индивидуальные предприниматели - ИП*) choose among five statutory tax regimes:
+Entities and Individual Entrepreneurs (Individual Entrepreneurs - IP) choose among five statutory tax regimes:
 
 | Tax Regime | Who Can Apply | Revenue Cap | Staff Limit | Key Tax Rates | Tax Invoicing (VAT) |
 |---|---|---|---|---|---|
-| **ОСНО** (General Regime) | Any legal entity / IP without restrictions | Unlimited | Unlimited | Profit: **20%** (25% from 2025); VAT: **20%** / **10%** / **0%**; PIT for IP: **13%–22%** | Full VAT invoices (*Счет-фактура*, ЭДО, книга покупок/продаж) |
-| **УСН Доходы** (Simplified 6%) | LLC (*ООО*), IP meeting criteria | Up to 450M RUB (indexed) | Up to 130 employees | **6%** on gross revenue (regional rate may be 1%–6%) | VAT-exempt below 60M RUB; over 60M RUB: **5%** VAT (no deduction) or **20%** (with deduction) |
-| **УСН Доходы минус Расходы** (15%) | LLC, IP with substantial documented costs (>65-70%) | Up to 450M RUB (indexed) | Up to 130 employees | **15%** on net taxable profit (regional rate 5%–15%); Minimum tax **1%** of gross revenue | Same VAT rules as USN 6% (mandatory VAT registration when exceeding 60M RUB threshold) |
-| **АУСН** (Automated Simplified) | Micro-businesses in pilot regions (Moscow, MO, Kaluga, Tatarstan) | Up to 60M RUB | Up to 5 employees; No bank loans | **8%** ("Income") or **20%** ("Income minus Expense"). Zero insurance premiums (except fixed injury fee) | No VAT; fully calculated by FNS via authorized banks |
-| **ПСН** (Patent System) | Sole proprietors (ИП) only; strictly listed activities (retail, craft, transport) | Up to 60M RUB across all patents | Up to 15 employees | **6%** on potential annual income (*потенциально возможный доход* set by regional law) | No VAT; No annual tax return |
-| **НПД** (Self-employed / *Самозанятые*) | Physical persons and IP without employees or employer relations | Up to 2.4M RUB / year | 0 employees | **4%** (B2C sales) / **6%** (B2B sales to legal entities/IP) | Invoices via *Мой налог* app; No insurance premiums required |
+| **OSNO** (General Regime) | Any legal entity / IP without restrictions | Unlimited | Unlimited | Profit: **20%** (25% from 2025); VAT: **20%** / **10%** / **0%**; PIT for IP: **13%–22%** | Full VAT invoices (VAT invoices, electronic document flow EDO, sales/purchases ledgers) |
+| **USN Income** (Simplified 6%) | LLC, IP meeting criteria | Up to 450M RUB (indexed) | Up to 130 employees | **6%** on gross revenue (regional rate may be 1%–6%) | VAT-exempt below 60M RUB; over 60M RUB: **5%** VAT (no deduction) or **20%** (with deduction) |
+| **USN Income minus Expenses** (15%) | LLC, IP with substantial documented costs (>65-70%) | Up to 450M RUB (indexed) | Up to 130 employees | **15%** on net taxable profit (regional rate 5%–15%); Minimum tax **1%** of gross revenue | Same VAT rules as USN 6% (mandatory VAT registration when exceeding 60M RUB threshold) |
+| **AUSN** (Automated Simplified) | Micro-businesses in pilot regions (Moscow, MO, Kaluga, Tatarstan) | Up to 60M RUB | Up to 5 employees; No bank loans | **8%** ("Income") or **20%** ("Income minus Expense"). Zero insurance premiums (except fixed injury fee) | No VAT; fully calculated by FNS via authorized banks |
+| **PSN** (Patent System) | Sole proprietors (IP) only; strictly listed activities (retail, craft, transport) | Up to 60M RUB across all patents | Up to 15 employees | **6%** on potential annual income (potential annual imputed income set by regional law) | No VAT; No annual tax return |
+| **NPD** (Self-employed) | Physical persons and IP without employees or employer relations | Up to 2.4M RUB / year | 0 employees | **4%** (B2C sales) / **6%** (B2B sales to legal entities/IP) | Invoices via My Tax state mobile application; No insurance premiums required |
 
 ---
 
-## 3. The Single Tax Account (*Единый налоговый счет - ЕНС*) & Payment System (*ЕНП*)
+## 3. The Single Tax Account (Single Tax Account - ENS) & Payment System (ENP)
 
 All federal, regional, and municipal taxes, penalties, and contributions are paid into a single unified account at the Federal Treasury (Article 11.3, 45, 58 NK RF).
 
 ### A. Operational Mechanics of ENS:
-- **Unified Payment (*ЕНП*)**: One payment order with a single treasury account (Tula Treasury regardless of company registration location).
-- **Mandatory Notification of Calculated Taxes (*Уведомление об исчисленных суммах налогов*, КНД 1110355)**:
+- **Unified Payment (ENP)**: One payment order with a single treasury account (Tula Treasury regardless of company registration location).
+- **Mandatory Notification of Calculated Taxes (Notification of Calculated Tax Sums, KND 1110355)**:
   - Required for advance payments when tax returns are not yet filed (e.g., monthly personal income tax, insurance premiums, quarterly USN advances, transport and property taxes).
   - **Filing Deadline**: Strictly on or before the **25th day** of the month of payment.
   - **Payment Deadline**: Strictly on or before the **28th day** of the respective month.
-- **Statutory Distribution Order (*Очередность списания сальдо ЕНС* - Art. 45 para. 8 NK RF)**:
-  1. Arrears of Personal Income Tax (*Недоимка по НДФЛ* - chronological priority).
-  2. Current Personal Income Tax obligations (*Текущий НДФЛ*).
-  3. Arrears of other taxes, fees, and insurance contributions (*Недоимка по налогам и взносам*).
-  4. Current taxes, advance payments, and insurance contributions (*Текущие налоги и взносы*).
-  5. Interest (*Пени*).
-  6. Fines and penalties (*Штрафы*).
+- **Statutory Distribution Order (Statutory ENS Debit Priority - Art. 45 para. 8 NK RF)**:
+  1. Arrears of Personal Income Tax (Personal Income Tax Arrears - chronological priority).
+  2. Current Personal Income Tax obligations (Current Personal Income Tax obligations).
+  3. Arrears of other taxes, fees, and insurance contributions (Tax and contribution arrears).
+  4. Current taxes, advance payments, and insurance contributions (Current taxes and contributions).
+  5. Interest (Late payment interest - Peni).
+  6. Fines and penalties (Fines and statutory penalties).
 
 ---
 
 ## 4. Labor Taxation, Payroll & Mandatory Insurance Contributions
 
-### A. Progressive Personal Income Tax (*Прогрессивная шкала НДФЛ* - Art. 224 NK RF):
+### A. Progressive Personal Income Tax (Progressive PIT Scale - Art. 224 NK RF):
 From 2025, personal income tax operates under a five-bracket progressive scale:
 - Up to **2.4 million RUB** per year: **13%**.
 - Over **2.4 million** to **5.0 million RUB**: **15%**.
@@ -2887,38 +3094,38 @@ From 2025, personal income tax operates under a five-bracket progressive scale:
 - Over **50.0 million RUB** per year: **22%**.
 *Withholding and filing*: Tax agents withhold PIT on every payout date (advances and final payroll). Deadlines: payouts from 1st to 22nd day paid by 28th of current month; payouts from 23rd to last day paid by 5th of next month.
 
-### B. Mandatory Social Insurance Contributions (*Страховые взносы* - Chapter 34 NK RF):
+### B. Mandatory Social Insurance Contributions (Mandatory Insurance Contributions - Chapter 34 NK RF):
 Contributions cover Pension (OPS), Medical (OMS), and Social Disability/Maternity (OSS):
-- **Base Standard Unified Tariff**: **30%** up to the statutory marginal limit (*Предельная величина базы*); **15.1%** on excess amounts.
-- **SME Reduced Tariff (*Льготный тариф для субъектов МСП*)**:
-  - Standard **30%** calculated on monthly salary within the Federal Minimum Wage (*МРОТ*).
-  - Reduced **15%** on the entire portion of salary exceeding federal МРОТ.
+- **Base Standard Unified Tariff**: **30%** up to the statutory marginal limit (Statutory Base Cap); **15.1%** on excess amounts.
+- **SME Reduced Tariff (Reduced SME Tariff)**:
+  - Standard **30%** calculated on monthly salary within the Federal Minimum Wage (MROT minimum wage).
+  - Reduced **15%** on the entire portion of salary exceeding federal minimum wage (MROT).
 - **Accredited IT Companies Tariff**: **7.6%** unified rate (within marginal base) and 0% on excess amounts (Art. 427 NK RF).
-- **Industrial Injury Insurance (*Взносы на травматизм в СФР*, Federal Law No. 125-FZ)**: Separate non-ENS contribution paid to Social Fund of Russia (*СФР*) based on professional risk class (0.2% to 8.5%).
+- **Industrial Injury Insurance (Occupational injury insurance contributions to SFR, Federal Law No. 125-FZ)**: Separate non-ENS contribution paid to Social Fund of Russia (SFR) based on professional risk class (0.2% to 8.5%).
 
 ---
 
 ## 5. Mandatory Tax & Accounting Reporting Calendar
 
 1. **Quarterly / Annual Filings**:
-   - **Form 6-NDFL (*Расчет 6-НДФЛ*)**: Quarterly by 25th of the month following the quarter (April 25, July 25, October 25, February 25 for annual).
-   - **RSV (*Расчет по страховым взносам*)**: Quarterly by 25th of the month following the quarter.
-   - **Form EFS-1 (*ЕФС-1*)**:
+   - **Form 6-NDFL (Form 6-NDFL)**: Quarterly by 25th of the month following the quarter (April 25, July 25, October 25, February 25 for annual).
+   - **RSV (RSV insurance calculation)**: Quarterly by 25th of the month following the quarter.
+   - **Form EFS-1 (Unified Reporting Form EFS-1)**:
      - *Subsection 1.1 (Labor movement / employment / dismissal / GPH contracts)*: Next working day after contract conclusion/termination or order issuance.
-     - *Subsection 1.2 (Insurance record / стаж)*: Annually by January 25.
-     - *Section 2 (Injury contributions / травматизм)*: Quarterly by 25th of following month.
-   - **VAT Declaration (*Декларация по НДС*)**: Quarterly by 25th in electronic format via accredited EDO operator.
-   - **Profit Tax Declaration (*Декларация по налогу на прибыль*)**: Quarterly/monthly by 25th; annual by March 25.
-   - **USN Declaration (*Декларация по УСН*)**: Annual by March 25 for LLCs, April 25 for Sole Proprietors.
-   - **Annual Financial Statements (*Бухгалтерская отчетность - Баланс и Отчет о финансовых результатах*)**: Annual by March 31 uploaded to state database GIPBO (*ГИР БО*).
+     - *Subsection 1.2 (Insurance record / record)*: Annually by January 25.
+     - *Section 2 (Injury contributions / injury)*: Quarterly by 25th of following month.
+   - **VAT Declaration (VAT Declaration)**: Quarterly by 25th in electronic format via accredited EDO operator.
+   - **Profit Tax Declaration (Profit Tax Declaration)**: Quarterly/monthly by 25th; annual by March 25.
+   - **USN Declaration (USN Declaration)**: Annual by March 25 for LLCs, April 25 for Sole Proprietors.
+   - **Annual Financial Statements (Annual Balance Sheet and Financial Results Report)**: Annual by March 31 uploaded to state database GIPBO (GIR BO state registry).
 
 ---
 
 ## 6. Tax Control, Desk & Field Audits, Fines & Article 54.1 Defense
 
 ### A. Tax Audits Architecture:
-- **Desk Audit (*Камеральная налоговая проверка* - Art. 88 NK RF)**: Automated 3-month review (2 months for VAT) of submitted returns. Tax authorities cross-check VAT via automated risk-tracking systems (*АСК НДС-2 / АСК НДС-3*).
-- **Field Audit (*Выездная налоговая проверка* - Art. 89 NK RF)**: Comprehensive audit covering up to 3 preceding calendar years. Triggers: high tax gap, low tax burden compared to industry average, repeated operations with high-risk counterparties (*технические компании / однодневки*), unexplainable losses.
+- **Desk Audit (Desk Tax Audit - Art. 88 NK RF)**: Automated 3-month review (2 months for VAT) of submitted returns. Tax authorities cross-check VAT via automated risk-tracking systems (ASK NDS-2 / ASK NDS-3 automated VAT risk cross-checking).
+- **Field Audit (On-Site Field Tax Audit - Art. 89 NK RF)**: Comprehensive audit covering up to 3 preceding calendar years. Triggers: high tax gap, low tax burden compared to industry average, repeated operations with high-risk counterparties (shell companies / conduit entities), unexplainable losses.
 
 ### B. Statutory Tax Penalties & Sanctions (Chapter 16 NK RF):
 - **Failure to File Tax Return on Time (Art. 119 NK RF)**: 5% of unpaid tax per month of delay (min. 1,000 RUB, max. 30% of tax amount).
@@ -2927,28 +3134,29 @@ Contributions cover Pension (OPS), Medical (OMS), and Social Disability/Maternit
   - Unintentional underpayment (miscalculation, error): **20%** of unpaid tax amount.
   - Intentional evasion (tax fraud, artificial schemes, shell companies): **40%** of unpaid tax amount.
 - **Failure of Tax Agent to Withhold/Transfer PIT (Art. 123 NK RF)**: **20%** of amount due.
-- **Failure to Provide Documents / Clarifications upon FNS Request (Art. 126, 129.1 NK RF)**: 200 RUB per missing document under Art. 93; 5,000 to 20,000 RUB under Art. 93.1 (cross-audits / *встречные проверки*).
+- **Failure to Provide Documents / Clarifications upon FNS Request (Art. 126, 129.1 NK RF)**: 200 RUB per missing document under Art. 93; 5,000 to 20,000 RUB under Art. 93.1 (counterparty cross-audits).
 
 ### C. Article 54.1 NK RF Defense (Unjustified Tax Benefit & Business Splitting):
 - **Prohibition of Tax Base Distortions**: Art. 54.1 NK RF prohibits reduction of tax base resulting from distortion of business facts or fictitious transactions.
 - **Two Cumulative Tests for Expense/VAT Deductions**:
-  1. The primary purpose of the transaction was not tax avoidance (*Деловая цель - Business Purpose Test*).
-  2. The contractual obligation was executed by the party named in the contract or authorized assignee (*Реальность сделки и надлежащий контрагент*).
-- **Business Splitting Defense (*Защита от обвинений в дроблении бизнеса*)**:
+  1. The primary purpose of the transaction was not tax avoidance (Business Purpose Test).
+  2. The contractual obligation was executed by the party named in the contract or authorized assignee (Reality of transaction and verified counterparty).
+- **Business Splitting Defense (Business splitting defense)**:
   - Independent economic viability, separate management, separate staff, distinct material assets, absence of intercompany loans without commercial interest, absence of shared IP addresses and bank access keys.
-
 
 ---
 
+
 <a name="ru-civil-corporate-law"></a>
-# 📦 НАВЫК: ru-civil-corporate-law
+# 📦 SKILL: ru-civil-corporate-law
+*Domain:* **Russian Business Law**
 
 ---
 name: ru-civil-corporate-law
 description: >-
   Russian civil and commercial law (GK RF Parts 1–4), corporate law (14-FZ LLC, 208-FZ JSC, corporate agreements Art. 67.2, major and interested transactions), commercial contract drafting and enforcement, intellectual property protection (Rospatent, Russian Software Registry, licenses), and real estate legal due diligence (218-FZ).
 ---
-# Russian Civil, Commercial & Corporate Law (Гражданское и корпоративное право РФ)
+# Russian Civil, Commercial & Corporate Law 
 
 A comprehensive legal and tactical guide for corporate counsels, in-house legal teams, managing directors, and investors operating in the jurisdiction of the Russian Federation.
 
@@ -2957,94 +3165,94 @@ A comprehensive legal and tactical guide for corporate counsels, in-house legal 
 ## 1. Statutory Architecture & Hierarchy of Civil Legislation
 
 The civil law system of the Russian Federation is strictly codification-based:
-- **Civil Code of the Russian Federation (*Гражданский кодекс РФ - ГК РФ*)**:
+- **Civil Code of the Russian Federation (Civil Code of the Russian Federation - GK RF)**:
   - *Part 1*: Basic provisions, persons, objects of civil rights, deals, representation, statute of limitations, ownership, general law of obligations and contracts (Articles 1–453).
   - *Part 2*: Specific types of contractual obligations (sale, lease, contractor work, transportation, loan, bank account, agency, storage, insurance, tort liability) (Articles 454–1109).
-  - *Part 3*: Inheritance law and Private International Law / Conflict of Laws (*Международное частное право*) (Articles 1110–1224).
+  - *Part 3*: Inheritance law and Private International Law / Conflict of Laws (Conflict of Laws) (Articles 1110–1224).
   - *Part 4*: Intellectual property, copyright, patent law, trademarks, commercial designations, trade secrets (Articles 1225–1551).
-- **Federal Law No. 14-FZ "On Limited Liability Companies" (*Федеральный закон «Об обществах с ограниченной ответственностью»*)**.
-- **Federal Law No. 208-FZ "On Joint Stock Companies" (*Федеральный закон «Об акционерных обществах»*)**.
-- **Federal Law No. 98-FZ "On Commercial Secrets" (*ФЗ «О коммерческой тайне»*)**.
-- **Federal Law No. 218-FZ "On State Registration of Real Estate" (*ФЗ «О государственной регистрации недвижимости»*)**.
+- **Federal Law No. 14-FZ "On Limited Liability Companies" (Federal Law On Limited Liability Companies)**.
+- **Federal Law No. 208-FZ "On Joint Stock Companies" (Federal Law On Joint Stock Companies)**.
+- **Federal Law No. 98-FZ "On Commercial Secrets" (Federal Law On Commercial Secrets)**.
+- **Federal Law No. 218-FZ "On State Registration of Real Estate" (Federal Law On State Registration of Real Estate)**.
 
 ---
 
 ## 2. Commercial Contract Drafting & Risk Engineering
 
 ### A. Essential Contract Types & Statutory Regimes:
-1. **Supply Agreement (*Договор поставки* - Articles 506–524 GK RF)**:
+1. **Supply Agreement (Supply Agreement - Articles 506–524 GK RF)**:
    - Primary B2B sale of goods framework.
    - Crucial terms: Clear specification of goods (nomenclature, quantity, GOST/TU technical standards), delivery conditions (delivery schedules, transport allocation, acceptance protocols, notification of defects under Art. 513 GK RF).
-   - Retention of title clause (*Сохранение права собственности за поставщиком* - Art. 491 GK RF).
-2. **Contract for Work & Construction (*Договор подряда / строительного подряда* - Articles 702–768 GK RF)**:
-   - Crucial terms: Precise scope of work, technical assignments (*ТЗ*), initial and completion deadlines (mandatory essential terms under Art. 708 GK RF; absence voids contract), acceptance certificates (KS-2, KS-3 for construction), hidden defect warranties (Art. 724 GK RF).
-3. **Lease Agreement (*Договор аренды коммерческой недвижимости* - Articles 606–625, 650–655 GK RF)**:
+   - Retention of title clause (Retention of title - Art. 491 GK RF).
+2. **Contract for Work & Construction (Contract for Work & Construction - Articles 702–768 GK RF)**:
+   - Crucial terms: Precise scope of work, technical assignments (technical specifications), initial and completion deadlines (mandatory essential terms under Art. 708 GK RF; absence voids contract), acceptance certificates (KS-2, KS-3 for construction), hidden defect warranties (Art. 724 GK RF).
+3. **Lease Agreement (Commercial Lease Agreement - Articles 606–625, 650–655 GK RF)**:
    - Real estate leases for 1 year or longer **require mandatory state registration in the Unified State Register of Real Estate (EGRN)** to possess legal validity against third parties (Art. 651 GK RF).
    - Short-term leases (up to 364 days) take effect upon execution without state registration.
-   - Essential provisions: Handover act (*Акт приема-передачи*), utility expenses allocation, unilateral termination terms, permanent improvements ownership (*неотделимые улучшения*).
-4. **Service Agreement (*Договор возмездного оказания услуг* - Articles 779–783 GK RF)**:
+   - Essential provisions: Handover act (Handover and Acceptance Act), utility expenses allocation, unilateral termination terms, permanent improvements ownership (inseparable improvements).
+4. **Service Agreement (Paid Service Agreement - Articles 779–783 GK RF)**:
    - Governs consulting, marketing, IT administration, legal services.
    - **Key Statutory Vulnerability (Art. 782 GK RF)**: Either party has a mandatory non-waivable statutory right to unilaterally terminate the contract at any time: the customer by paying actual incurred expenses, the contractor by compensating full damages.
 
 ### B. Breach of Contract, Liability & Damage Recovery:
-- **Contractual Penalty (*Неустойка* - Articles 330–333 GK RF)**:
-  - Fines (*Штраф*) and late interest penalties (*Пени*). Must be stipulated in **written form** (Art. 331).
+- **Contractual Penalty (Contractual Penalty - Articles 330–333 GK RF)**:
+  - Fines (Fixed fine) and late interest penalties (Late payment penalty). Must be stipulated in **written form** (Art. 331).
   - **Judicial Penalty Reduction (Art. 333 GK RF)**: In B2B contracts, reduction of penalty by court is permitted **only upon explicit motion of the debtor** and only if disproportion is objectively proven compared to creditor losses (Resolution of Plenum of the Supreme Court of the Russian Federation No. 7).
-- **Damages (*Убытки* - Articles 15, 393 GK RF)**:
-  - Composed of actual damage (*Реальный ущерб*) and lost profits (*Упущенная выгода*). Requires proof of: (1) fact of breach, (2) existence and exact quantum of loss, (3) direct causal link, (4) fault of the breaching party (fault presumed in B2B under Art. 401 GK RF).
-- **Statutory Interest for Use of Money (*Проценты по ст. 395 ГК РФ*)**:
-  - Calculated based on the key rate (*Ключевая ставка ЦБ РФ*) prevailing in the relevant period, unless contract establishes higher late payment rates.
-- **Statute of Limitations (*Срок исковой давности* - Articles 195–208 GK RF)**:
+- **Damages (Damages - Articles 15, 393 GK RF)**:
+  - Composed of actual damage (Actual damages) and lost profits (Lost profits). Requires proof of: (1) fact of breach, (2) existence and exact quantum of loss, (3) direct causal link, (4) fault of the breaching party (fault presumed in B2B under Art. 401 GK RF).
+- **Statutory Interest for Use of Money (Statutory Interest for Use of Money - Art. 395 GK RF)**:
+  - Calculated based on the key rate (Central Bank of Russia Key Rate) prevailing in the relevant period, unless contract establishes higher late payment rates.
+- **Statute of Limitations (Statute of Limitations - Articles 195–208 GK RF)**:
   - General limitation period is **3 years** from when the party knew or should have known of the infringement. Maximum objective limit is **10 years**. Parties cannot shorten or extend limitation periods by agreement (Art. 198 GK RF).
 
 ---
 
-## 3. Russian Corporate Law: LLC (ООО) & Corporate Governance
+## 3. Russian Corporate Law: LLC (Limited Liability Company) & Corporate Governance
 
 ### A. Formation and Capital Architecture:
-- Minimum charter capital (*Уставный капитал*): **10,000 RUB**, payable in cash within 4 months from registration.
-- **Charter (*Устав*)**: Supreme corporate foundation document. Can be customized or selected from 36 standard model charters (*Типовые уставы*).
+- Minimum charter capital (charter capital): **10,000 RUB**, payable in cash within 4 months from registration.
+- **Charter (Articles of Association / Charter)**: Supreme corporate foundation document. Can be customized or selected from 36 standard model charters (Standard Model Charters).
 - **Mandatory Notarization**:
   - Decision to increase charter capital must be certified by a notary.
-  - Transactions selling shares (*доли в ООО*) to third parties require **mandatory notarial certification** (Art. 21 14-FZ), except internal pre-emption rights exercising.
+  - Transactions selling shares (LLC membership shares) to third parties require **mandatory notarial certification** (Art. 21 14-FZ), except internal pre-emption rights exercising.
   - Notarial certification of General Meeting decisions and participant attendance is mandatory unless the charter explicitly provides an alternative mechanism (signed protocol by all participants).
 
 ### B. Management Bodies & Executive Liability:
-- **Sole Executive Body (*Генеральный директор*)**: Represents the company without power of attorney, concludes contracts, manages bank accounts.
+- **Sole Executive Body (General Director / CEO)**: Represents the company without power of attorney, concludes contracts, manages bank accounts.
 - **Fiduciary Duties (Art. 53.1 GK RF)**: Must act reasonably and in good faith in the interests of the legal entity.
 - **Personal Tort Liability of Director**:
   - The company or its participants holding at least 1% of shares may file a derivative lawsuit against the director for compensation of losses caused by bad faith or unreasonable conduct (Plenum of the Supreme Arbitration Court No. 62).
-- **Major Transactions (*Крупные сделки* - Art. 46 14-FZ)**:
+- **Major Transactions (Major Transactions - Art. 46 14-FZ)**:
   - Deals exceeding **25%** of the book value of the company's balance sheet assets require prior approval of the General Meeting or Board of Directors.
-- **Transactions with Interested Parties (*Сделки с заинтересованностью* - Art. 45 14-FZ)**:
+- **Transactions with Interested Parties (Interested Party Transactions - Art. 45 14-FZ)**:
   - Transactions where the director, controlling participant, or their close relatives hold an economic interest. Require notification and potential approval.
 
-### C. Shareholder Disputes & Expulsion of a Participant (*Исключение из ООО*):
+### C. Shareholder Disputes & Expulsion of a Participant (Expulsion of a Participant):
 - Under **Article 10 of Law No. 14-FZ**, participants holding in aggregate at least **10%** of charter capital may judicially demand the expulsion of a participant who grossly violates duties or substantially obstructs the activity of the company (e.g. systematic voting boycott blocking mandatory management appointments).
 
-### D. Corporate Agreements (*Корпоративный договор* - Art. 67.2 GK RF):
+### D. Corporate Agreements (Corporate Shareholders Agreement - Art. 67.2 GK RF):
 - Enables shareholders to agree upon:
   - Voting coordination and deadlock resolution mechanisms (Russian roulette, Texas shootout).
   - Restrictions on share alienation (Tag-along, Drag-along rights).
-  - Option contracts for share buyouts (*Опцион на заключение договора* Art. 429.2 GK RF).
+  - Option contracts for share buyouts (Option Agreement Art. 429.2 GK RF).
 
 ---
 
 ## 4. Intellectual Property, IT Protection & Software Licensing (Part 4 GK RF)
 
 ### A. Protection of Software & Databases:
-- Software programs (*Программы для ЭВМ*) are protected as literary works under copyright law (Art. 1261 GK RF). Registration with Rospatent (*Роспатент*) is optional but creates a public evidentiary presumption of copyright ownership.
-- **Register of Russian Software (*Единый реестр российских программ Минцифры*)**:
+- Software programs (Computer software programs) are protected as literary works under copyright law (Art. 1261 GK RF). Registration with Rospatent (Rospatent) is optional but creates a public evidentiary presumption of copyright ownership.
+- **Register of Russian Software (Unified Register of Russian Software)**:
   - Qualification requirements: Exclusive IP rights held by Russian citizens or Russian organizations (>50% Russian ownership), total royalty payments abroad < 30%, software runs on domestic OS (Astra Linux, RED OS, Alt Linux).
   - Benefits: Zero VAT exemption on software sales and SaaS subscriptions (subclause 26 clause 2 Art. 149 NK RF) and preferential access to public procurement (Federal Law 44-FZ/223-FZ).
 
 ### B. Intellectual Property Contracts:
-- **Alienation of Exclusive Rights (*Договор об отчуждении исключительного права* - Art. 1234 GK RF)**: Complete transfer of economic copyright; must be in writing; non-payment gives right to judicial termination and recovery of damages.
-- **License Agreement (*Лицензионный договор* - Art. 1235 GK RF)**: Exclusive (*Исключительная*) vs Non-exclusive (*Простая/неисключительная*). Must define territory, permitted ways of use, term, and remuneration.
-- **Works Made for Hire (*Служебные произведения* - Art. 1295 GK RF)**:
-  - To secure IP created by employees, the employer must have: (1) labor contract with IP clause, (2) formal job description (*должностная инструкция*), (3) written technical task (*служебное задание*), (4) formal acceptance act (*акт передачи служебного произведения*), (5) separate documented author's remuneration (*авторское вознаграждение*), which cannot be embedded in base salary.
+- **Alienation of Exclusive Rights (Assignment of Exclusive Rights - Art. 1234 GK RF)**: Complete transfer of economic copyright; must be in writing; non-payment gives right to judicial termination and recovery of damages.
+- **License Agreement (License Agreement - Art. 1235 GK RF)**: Exclusive (Exclusive) vs Non-exclusive (Simple / non-exclusive). Must define territory, permitted ways of use, term, and remuneration.
+- **Works Made for Hire (Works Made for Hire - Art. 1295 GK RF)**:
+  - To secure IP created by employees, the employer must have: (1) labor contract with IP clause, (2) formal job description (job description), (3) written technical task (written technical assignment), (4) formal acceptance act (acceptance act of work made for hire), (5) separate documented author's remuneration (author remuneration), which cannot be embedded in base salary.
 
-### C. Trademarks (*Товарные знаки* - Art. 1477–1515 GK RF):
+### C. Trademarks (Trademarks - Art. 1477–1515 GK RF):
 - Acquired solely through state registration with Rospatent under Nice Classification (MKTU). Protection lasts 10 years (renewable).
 - Statutory damages for infringement (Art. 1515 GK RF): Compensation up to **5,000,000 RUB** or double the cost of counterfeit goods or double the license value, without proving actual damages.
 
@@ -3053,118 +3261,119 @@ The civil law system of the Russian Federation is strictly codification-based:
 ## 5. Real Estate Legal Due Diligence (Federal Law No. 218-FZ)
 
 Before acquiring real estate or commercial facilities:
-1. **Title Verification**: Extract from EGRN (*Выписка из ЕГРН*) confirming registered owner, cadastral boundaries, encumbrances (*обременения*), pledges, ongoing judicial arrests.
+1. **Title Verification**: Extract from EGRN (Extract from Unified State Real Estate Register EGRN) confirming registered owner, cadastral boundaries, encumbrances (encumbrances), pledges, ongoing judicial arrests.
 2. **Chain of Title Review**: Tracing transitions of ownership for the last 3–5 years to eliminate bankruptcy avoidance risks (Art. 61.2 of Bankruptcy Law) or fraudulent signatures.
-3. **Land & Permitted Use (*ВРИ - Вид разрешенного использования*)**: Ensuring the building conforms to statutory zoning and land category (*Категория земель*).
-
+3. **Land & Permitted Use (Permitted Land Use Category VRI)**: Ensuring the building conforms to statutory zoning and land category (Land Category).
 
 ---
 
+
 <a name="ru-litigation-advocacy"></a>
-# 📦 НАВЫК: ru-litigation-advocacy
+# 📦 SKILL: ru-litigation-advocacy
+*Domain:* **Russian Litigation**
 
 ---
 name: ru-litigation-advocacy
 description: >-
   Russian litigation and judicial practice: commercial arbitration courts (APK RF, mandatory 30-day pre-trial claims, interim measures), civil courts (GPK RF, consumer protection), administrative justice (KAS RF), criminal defense in white-collar economic crimes (UPK RF, Art. 159, 199 UK RF, Art. 108 Part 1.1 detention ban), Federal Bar Act (63-FZ, attorney privilege, warrants, inquiries), and debt enforcement (229-FZ, FSSP, bank account attachments).
 ---
-# Russian Litigation, Advocacy & Enforcement Practice (Судебный процесс, адвокатура и исполнительное производство РФ)
+# Russian Litigation, Advocacy & Enforcement Practice 
 
-An exhaustive, high-level tactical and procedural reference for trial attorneys (*адвокаты*), litigation partners, corporate counsel, and forensic specialists litigating before the commercial and general jurisdiction courts of the Russian Federation.
+An exhaustive, high-level tactical and procedural reference for trial attorneys (advocates), litigation partners, corporate counsel, and forensic specialists litigating before the commercial and general jurisdiction courts of the Russian Federation.
 
 ---
 
 ## 1. Russian Judicial Hierarchy & Court Architecture
 
-The judicial system of the Russian Federation operates under two primary court branches unified under the **Supreme Court of the Russian Federation (*Верховный Суд РФ - ВС РФ*)**:
+The judicial system of the Russian Federation operates under two primary court branches unified under the **Supreme Court of the Russian Federation (Supreme Court of the Russian Federation)**:
 
 ```
-                       [ Верховный Суд РФ (ВС РФ) ]
+                       [ Supreme Court of the Russian Federation ]
                                     |
       +-----------------------------+-----------------------------+
       |                                                           |
-[ Арбитражные суды (Экономика/Бизнес) ]          [ Суды общей юрисдикции (Граждане/Уголовные) ]
-  - Кассация (10 Арбитражных округов + СИП)       - Кассационные суды общей юрисдикции (1–9 КСОЮ)
-  - Апелляция (21 Арбитражный апелляционный суд)  - Апелляционные суды общей юрисдикции (1–5 АСОЮ)
-  - Первая инстанция (Арбитражные суды субъектов)   - Областные/Краевые/Республиканские/Городские (Мосгорсуд)
-                                                  - Районные / Городские суды
-                                                  - Мировые судьи
+[ Commercial Courts (Arbitrazh - Business) ]       [ Courts of General Jurisdiction (Civil/Criminal) ]
+  - Cassation (10 District Courts + IP Court SIP)  - Cassation Courts of General Jurisdiction (District Cassation Courts)
+  - Appeals (21 Commercial Appellate Courts)      - Appellate Courts of General Jurisdiction (Appellate Courts)
+  - First Instance (Regional Commercial Courts)    - Regional / Provincial / Supreme Republic / City Courts
+                                                  - District / City Courts
+                                                  - Magistrate Judges
 ```
 
 ---
 
-## 2. Commercial Arbitration Proceedings (АПК РФ - Арбитражный процессуальный кодекс РФ)
+## 2. Commercial Arbitration Proceedings (Commercial Procedure Code - APK RF)
 
 Arbitration courts resolve disputes arising from entrepreneurial and economic activities between legal entities, individual entrepreneurs, and public authorities.
 
-### A. Pre-trial Claim Procedure (*Обязательный претензионный порядок* - Art. 4 Part 5 APK RF):
-- **Statutory Rule**: Civil law disputes concerning monetary claims arising from contracts and unjust enrichment can be submitted to arbitration **only after 30 calendar days** from the date of sending a formal written pre-trial claim (*претензия*) to the counterparty, unless other terms or procedures are established by federal statute or contract.
-- **Evidence of Dispatch**: Registered mail with declared value and postal inventory list (*ценное письмо с описью вложения*) and postal tracking receipt. Premature filing or lack of proper evidence of dispatch results in the statement of claim being left without consideration (*оставление иска без рассмотрения* - Art. 148 APK RF).
+### A. Pre-trial Claim Procedure (Mandatory Pre-Trial Claim Procedure - Art. 4 Part 5 APK RF):
+- **Statutory Rule**: Civil law disputes concerning monetary claims arising from contracts and unjust enrichment can be submitted to arbitration **only after 30 calendar days** from the date of sending a formal written pre-trial claim (pre-trial claim) to the counterparty, unless other terms or procedures are established by federal statute or contract.
+- **Evidence of Dispatch**: Registered mail with declared value and postal inventory list (registered letter with inventory list) and postal tracking receipt. Premature filing or lack of proper evidence of dispatch results in the statement of claim being left without consideration (claim left without consideration - Art. 148 APK RF).
 
-### B. Interim Protective Measures (*Обеспечительные меры* - Articles 90–100 APK RF):
+### B. Interim Protective Measures (Interim Protective Measures - Articles 90–100 APK RF):
 - **Statutory Criteria**: Imposed if failure to grant measures could make execution of the judicial act impossible or difficult, or to prevent substantial damage to the applicant.
-- **Types**: Attachment of bank accounts (*наложение ареста на денежные средства* within claim amount), prohibition from performing certain actions (e.g., prohibition to state registers against registering real estate transfer or corporate share alienation), transfer of disputed asset to storage.
-- **Counter-securing (*Встречное обеспечение* - Art. 94 APK RF)**: Depositing monetary funds onto the court's deposit account in the amount of the requested claim dramatically increases the probability of granting interim measures.
+- **Types**: Attachment of bank accounts (attachment of bank accounts within claim amount), prohibition from performing certain actions (e.g., prohibition to state registers against registering real estate transfer or corporate share alienation), transfer of disputed asset to storage.
+- **Counter-securing (Counter-Securing Deposit - Art. 94 APK RF)**: Depositing monetary funds onto the court's deposit account in the amount of the requested claim dramatically increases the probability of granting interim measures.
 
 ### C. Burden of Proof & Evidence Rules (Articles 64–75, 82 APK RF):
 - **Burden of Proof (Art. 65 APK RF)**: Each party must prove the circumstances upon which it bases its claims or objections.
 - **Electronic Evidence**: Printouts of emails, WhatsApp/Telegram messenger correspondence, electronic document management systems (EDO) are admissible when verified by notarial protocol or when the underlying contract establishes electronic communications as legally binding.
-- **Forensic Expertise (*Судебная экспертиза* - Art. 82 APK RF)**:
-  - Appointed upon party motion or court initiative (construction, financial-economic, forensic handwriting / *почерковедческая*, computer-technical).
+- **Forensic Expertise (Court-Appointed Forensic Expertise - Art. 82 APK RF)**:
+  - Appointed upon party motion or court initiative (construction, financial-economic, forensic handwriting examination, computer-technical).
   - Crucial tactics: Drafting precise questions, selecting licensed expert organizations with immaculate reputation, depositing expert fees onto court deposit account prior to motion.
 
 ### D. Appellate, Cassation & Supreme Court Appeals:
 1. **First Instance**: Examination of facts, witnesses, documents, expert testimonies.
-2. **Court of Appeals (*Апелляция* - Articles 257–272 APK RF)**:
+2. **Court of Appeals (Court of Appeals - Articles 257–272 APK RF)**:
    - Deadline: **1 month** from the date of manufacturing the full text of the decision.
    - De novo review of facts and law; new evidence admitted only upon proving impossibility of earlier submission for valid reasons.
-3. **First Cassation (*Кассация округа* - Articles 273–291 APK RF)**:
+3. **First Cassation (District Cassation Court - Articles 273–291 APK RF)**:
    - Deadline: **2 months** from entry of appellate judgment into legal force.
    - Examines only legality and application of substantive/procedural law; cannot re-evaluate factual evidence.
-4. **Second Cassation (*Экономическая коллегия ВС РФ* - Articles 291.1–291.15 APK RF)**:
+4. **Second Cassation (Supreme Court Economic Panel - Articles 291.1–291.15 APK RF)**:
    - Deadline: **2 months**; initial filtration by single judge of Supreme Court; hearing granted only upon substantial systemic legal errors.
 
 ---
 
-## 3. Civil Courts of General Jurisdiction (ГПК РФ) & Administrative Justice (КАС РФ)
+## 3. Civil Courts of General Jurisdiction (Civil Procedure Code GPK RF) & Administrative Justice (KAS RF)
 
-### A. Civil Procedure Code (*ГПК РФ*):
+### A. Civil Procedure Code (GPK RF):
 - Resolves disputes with physical persons (consumers, labor, family, inheritance, property damage).
-- **Consumer Protection Law (*Закон РФ «О защите прав потребителей»* № 2300-1)**:
+- **Consumer Protection Law (Law on Protection of Consumer Rights No. 2300-1)**:
   - Unprecedented leverage for consumer-plaintiffs: exemption from state duty, choice of alternative jurisdiction (residence of consumer), statutory forfeit of **1% per day** for delayed goods replacement or **3% per day** for delayed services.
   - **Mandatory 50% Judicial Fine**: Under Art. 13 Part 6, the court awards a mandatory fine of 50% of the entire awarded amount in favor of the consumer for failure of the business to satisfy demands voluntarily in pre-trial order.
 
-### B. Code of Administrative Judicial Procedure (*КАС РФ*):
+### B. Code of Administrative Judicial Procedure (KAS RF):
 - Used to contest illegal decisions, actions, or omissions of government bodies:
-  - Challenging unlawful tax decisions and asset blocks by the Federal Tax Service (*ФНС*).
-  - Challenging actions and unlawful inaction of bailiffs (*ФССП*).
+  - Challenging unlawful tax decisions and asset blocks by the Federal Tax Service (FNS).
+  - Challenging actions and unlawful inaction of bailiffs (FSSP).
   - Challenging denials of cadastral registration and registration of rights by Rosreestr.
   - Strict limitation periods: Generally **3 months** from the day the applicant learned of the violation of rights.
 
 ---
 
-## 4. White-Collar Criminal Defense & Economic Crimes (УК РФ & УПК РФ)
+## 4. White-Collar Criminal Defense & Economic Crimes (Criminal Code UK RF & Criminal Procedure Code UPK RF)
 
 Defense of business executives, owners, and chief accountants against corporate criminal prosecution:
 
-### A. Key Economic Crime Articles of the Criminal Code (*УК РФ*):
-- **Article 159 (Fraud / *Мошенничество*)**:
+### A. Key Economic Crime Articles of the Criminal Code (UK RF):
+- **Article 159 (Fraud)**:
   - Parts 5–7 specifically penalize intentional non-fulfillment of contractual obligations in entrepreneurial activities resulting in significant or large-scale damage.
-  - Defense strategy: Proving civil law nature of dispute (*гражданско-правовой спор*), lack of prior fraudulent intent, economic impossibility of fulfillment due to market collapse or force majeure.
-- **Article 160 (Embezzlement / *Присвоение или растрата*)**: Accusations against directors for bonus payouts, corporate property transfers, or affiliate transactions.
-- **Articles 198, 199, 199.1, 199.2 (Tax Evasion / *Уклонение от уплаты налогов*)**:
+  - Defense strategy: Proving civil law nature of dispute (civil-law dispute nature), lack of prior fraudulent intent, economic impossibility of fulfillment due to market collapse or force majeure.
+- **Article 160 (Embezzlement / Misappropriation)**: Accusations against directors for bonus payouts, corporate property transfers, or affiliate transactions.
+- **Articles 198, 199, 199.1, 199.2 (Tax Evasion)**:
   - Full payment of tax arrears, penalties, and fines prior to court hearing grants mandatory statutory exemption from criminal liability for first-time offenders (Art. 76.1 UK RF).
 
-### B. Entrepreneurial Detention Ban (*Запрет заключения под стражу* - Art. 108 Part 1.1 UPK RF):
-- Direct statutory prohibition on remanding into custody (pre-trial detention / *СИЗО*) suspects accused of economic crimes (Articles 159 parts 5–7, 160, 199 UK RF) committed by individual entrepreneurs or members of commercial management bodies in connection with their entrepreneurial activity.
+### B. Entrepreneurial Detention Ban (Prohibition of Pre-Trial Detention for Entrepreneurs - Art. 108 Part 1.1 UPK RF):
+- Direct statutory prohibition on remanding into custody (pre-trial detention) suspects accused of economic crimes (Articles 159 parts 5–7, 160, 199 UK RF) committed by individual entrepreneurs or members of commercial management bodies in connection with their entrepreneurial activity.
 - Defense tactics: Submitting corporate charters, orders of appointment, commercial contracts, and tax filings to establish the undisputed entrepreneurial status of the transaction.
 
 ### C. Tactical Guidelines during Search, Seizure & Interrogation:
-- **Searches and Seizures (*Обыск и выемка* - Articles 182, 183 UPK RF)**:
+- **Searches and Seizures (Searches and Seizures - Articles 182, 183 UPK RF)**:
   - Right to presence of defense attorney.
   - Verification of judicial warrant (or investigator's decree in urgent cases).
   - Prohibition of unnecessary damage to property; mandatory inclusion of all seized documents, servers, flash drives, and tokens into the search protocol with specific serialized markings.
-- **Interrogation (*Допрос* - Articles 187–190 UPK RF)**:
+- **Interrogation (Interrogation - Articles 187–190 UPK RF)**:
   - Absolute constitutional right to remain silent under **Article 51 of the Constitution of the Russian Federation**.
   - Right to private consultation with attorney prior to first interrogation.
 
@@ -3172,18 +3381,18 @@ Defense of business executives, owners, and chief accountants against corporate 
 
 ## 5. The Bar & Legal Status of Advocates (Federal Law No. 63-FZ)
 
-The legal status of a licensed attorney (*Адвокат*) provides statutory legal protections under **Federal Law No. 63-FZ "On Advocacy and the Bar in the Russian Federation"**:
+The legal status of a licensed attorney (Licensed Advocate) provides statutory legal protections under **Federal Law No. 63-FZ "On Advocacy and the Bar in the Russian Federation"**:
 
-1. **Advocate's Privilege / Attorney-Client Privilege (*Адвокатская тайна* - Art. 8 63-FZ)**:
+1. **Advocate's Privilege / Attorney-Client Privilege (Attorney-Client Privilege - Art. 8 63-FZ)**:
    - Encompasses any information connected with the rendering of legal assistance to a client.
    - An advocate cannot be summoned, subpoenaed, or interrogated as a witness regarding circumstances that became known to him in connection with rendering legal aid.
-   - Conducting searches, inspections, or seizures in an advocate's office or home requires a **special judicial warrant** and can be carried out only in the presence of an authorized representative of the regional Bar Chamber (*Адвокатская палата* - Art. 450.1 UPK RF).
-2. **Advocate's Inquiry (*Адвокатский запрос* - Art. 6.1 63-FZ)**:
+   - Conducting searches, inspections, or seizures in an advocate's office or home requires a **special judicial warrant** and can be carried out only in the presence of an authorized representative of the regional Bar Chamber (Art. 450.1 UPK RF).
+2. **Advocate's Inquiry (Advocate Official Inquiry - Art. 6.1 63-FZ)**:
    - Mandatory statutory inquiry sent to state authorities, municipal bodies, and public organizations to collect documents and certificates.
-   - Failure to respond within 30 days entails administrative liability under **Article 5.39 of the Administrative Offenses Code (*КоАП РФ*)**.
+   - Failure to respond within 30 days entails administrative liability under **Article 5.39 of the Administrative Offenses Code (Administrative Code KoAP RF)**.
 3. **Representation Instruments**:
-   - Criminal defense: Attorney warrant (*Ордер*) issued by the legal entity of the bar (Bureau, College, Consultation).
-   - Civil and arbitration proceedings: Power of attorney (*Доверенность*) with explicit procedural powers (signing of statement of claim, changing claim subject, conclusion of amicable settlement).
+   - Criminal defense: Attorney warrant (Advocate Warrant - Order) issued by the legal entity of the bar (Bureau, College, Consultation).
+   - Civil and arbitration proceedings: Power of attorney (Power of Attorney) with explicit procedural powers (signing of statement of claim, changing claim subject, conclusion of amicable settlement).
 
 ---
 
@@ -3192,23 +3401,24 @@ The legal status of a licensed attorney (*Адвокат*) provides statutory le
 Obtaining a court judgment is only the first stage; recovery of funds is governed by **Federal Law No. 229-FZ "On Enforcement Proceedings"**:
 
 ### A. Direct Execution via Commercial Banks (Art. 8 229-FZ):
-- **Fast-Track Recovery**: If the creditor knows the debtor's bank accounts, the original Executive Writ (*Исполнительный лист*) along with an application can be delivered directly to the debtor's commercial bank.
+- **Fast-Track Recovery**: If the creditor knows the debtor's bank accounts, the original Executive Writ (Writ of Execution / Enforcement Order) along with an application can be delivered directly to the debtor's commercial bank.
 - The bank is statutorily mandated to freeze funds and execute write-off within **3 banking days**, entirely bypassing bailiff delays.
-- Creditors have the legal right under Art. 69 part 8 of Law 229-FZ to submit the court writ to any branch of the Federal Tax Service (*ФНС*) to obtain a list of all active bank accounts opened in the debtor's name across all credit institutions.
+- Creditors have the legal right under Art. 69 part 8 of Law 229-FZ to submit the court writ to any branch of the Federal Tax Service (FNS) to obtain a list of all active bank accounts opened in the debtor's name across all credit institutions.
 
-### B. Bailiff Operations (*ФССП России*):
+### B. Bailiff Operations (Federal Bailiff Service FSSP):
 - If accounts are empty or assets unknown, enforcement is initiated via the Federal Bailiff Service:
-  - Imposition of ban on registration actions for vehicles and real estate (*запрет регистрационных действий в ГИБДД и Росреестре*).
+  - Imposition of ban on registration actions for vehicles and real estate (ban on registration actions in vehicle and land registries).
   - Seizure and sale of corporate property and warehouse inventories at public auction.
-  - Imposition of temporary restriction on international travel (*ограничение выезда из РФ*) on individual debtors and managing directors.
-  - Foreclosure on accounts receivable (*обращение взыскания на дебиторскую задолженность* - Art. 76 229-FZ).
+  - Imposition of temporary restriction on international travel (temporary international travel ban) on individual debtors and managing directors.
+  - Foreclosure on accounts receivable (foreclosure on accounts receivable - Art. 76 229-FZ).
   - Challenging unlawful inaction of the bailiff via administrative complaints to higher bailiffs or through the court under Chapter 22 KAS RF.
-
 
 ---
 
+
 <a name="server-hardening-zerotrust"></a>
-# 📦 НАВЫК: server-hardening-zerotrust
+# 📦 SKILL: server-hardening-zerotrust
+*Domain:* **Server Hardening**
 
 ---
 name: server-hardening-zerotrust
@@ -3343,11 +3553,12 @@ For systems processing, transmitting, or storing cardholder or sensitive financi
 - **Requirement 10**: Log all user access to system components; synchronize clocks via secure NTP; retain audit trail history for at least 12 months (with 3 months immediately available).
 - **Requirement 11.5**: Deploy **File Integrity Monitoring (FIM)** (e.g. AIDE, OSSEC, Wazuh) to monitor system binaries and critical configuration files against unauthorized modifications.
 
-
 ---
 
+
 <a name="sysadmin-network-engineering"></a>
-# 📦 НАВЫК: sysadmin-network-engineering
+# 📦 SKILL: sysadmin-network-engineering
+*Domain:* **SysAdmin & Networking**
 
 ---
 name: sysadmin-network-engineering
@@ -3466,11 +3677,12 @@ Operational management of secure tunnels capable of bypassing deep packet inspec
   - Syncing encrypted directory trees to 40+ cloud backends (Mega, S3, OCI, Google Drive, SFTP, WebDAV).
 - **Automated Recovery Testing**: A backup that hasn't been tested for restoration is legally and operationally deemed nonexistent. Automated weekly restoration tests into an isolated test container.
 
-
 ---
 
+
 <a name="systematic-debugging"></a>
-# 📦 НАВЫК: systematic-debugging
+# 📦 SKILL: systematic-debugging
+*Domain:* **Software Engineering**
 
 ---
 name: systematic-debugging
@@ -3489,11 +3701,12 @@ When asked to debug a script or system issue, follow this strict protocol:
 4. **Hypothesize & Test**: Propose one single hypothesis at a time. Do not make multiple unrelated changes.
 5. **Verify**: Once a fix is applied, verify it solves the specific error without introducing new ones.
 
-
 ---
 
+
 <a name="writing-plans"></a>
-# 📦 НАВЫК: writing-plans
+# 📦 SKILL: writing-plans
+*Domain:* **Software Engineering**
 
 ---
 name: writing-plans
@@ -3509,6 +3722,5 @@ Before writing any complex Bash or PowerShell script, you MUST create a plan and
 3. **Error Handling Strategy**: Explicitly state how errors will be handled (e.g., `set -e` in bash, `Try/Catch` or `ErrorAction Stop` in PowerShell).
 4. **Rollback Strategy**: If the script modifies system state, describe how to revert changes if it fails halfway.
 5. **Wait for Approval**: Do not write the full code until the user approves the plan.
-
 
 ---

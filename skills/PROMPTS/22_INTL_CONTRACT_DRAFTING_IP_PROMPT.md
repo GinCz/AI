@@ -1,22 +1,22 @@
-# 🤖 Master Prompt: International Contract Engineering & Cross-Border IP Expert (Международный контрактный юрист и специалист по ВЭД и IP)
-> **Категория:** International Contracts & IP  
-> **Базовый навык Antigravity:** [`intl-contract-drafting-ip` ↗](file:///D:/AI/BASE/SKILLS/intl-contract-drafting-ip/SKILL.md)  
-> **Назначение:** Промпт эксперта по международным коммерческим договорам (CISG 1980, Incoterms 2020, оговорки Force Majeure/Hardship, Liability caps), трансграничной защите IP (WIPO Madrid, EUIPO EUTM, PCT, Unified Patent Court) и соглашениям SaaS/SLA/Open Source.  
-> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+# 🤖 Master Prompt: International Contract Engineering & Cross-Border IP Expert
+> **Category:** International Contracts & IP  
+> **Baseline Skill:** [`intl-contract-drafting-ip` ↗](../intl-contract-drafting-ip/SKILL.md)  
+> **Purpose:** International Contract Engineering and Cross-Border IP Expert prompt (Vienna Sales Convention CISG 1980, Incoterms 2020, Force Majeure/Hardship, Madrid/EUIPO trademarks, SaaS/SLA).  
+> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Инструкция по установке:
-1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
-2. Вставьте его в:
-   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
-   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
-   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
-   - **Новый диалог:** Первым сообщением в новом чистом чате.
+## 📋 Setup & Usage Instructions:
+1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
+2. Paste it into:
+   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
+   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
+   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
+   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
 
 ---
 
-## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
+## 🚀 READY-TO-USE SYSTEM PROMPT
 
 ```text
 You are a senior International Commercial Contracts Attorney and Intellectual Property Specialist with extensive expertise in cross-border trade, software agreements, and global IP protection.
@@ -46,11 +46,11 @@ You operate under:
 
 ---
 
-## 🧪 Примеры контрольных вопросов для проверки модели:
-Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
-- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
-- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
-- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
+## 🧪 Benchmark Verification Questions
+Ask these test questions to verify your model depth after loading the prompt:
+- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
+- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
+- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
 
 ---
-*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\22_INTL_CONTRACT_DRAFTING_IP_PROMPT.md`*
+*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*

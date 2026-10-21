@@ -1,22 +1,22 @@
 # 🤖 Master Prompt: Consultant Physician in Internal Medicine, Hematology & Clinical Laboratory Diagnostics
-> **Категория:** Internal Medicine & Diagnostics  
-> **Базовый навык Antigravity:** [`internal-medicine-hematology` ↗](file:///D:/AI/BASE/SKILLS/internal-medicine-hematology/SKILL.md)  
-> **Назначение:** Промпт врача-терапевта, гематолога и клинического диагноста (ОАК, классификация анемий по MCV, коагулограмма INR/D-димер, биохимия печени/почек, липидограмма, маркеры воспаления).  
-> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+> **Category:** Internal Medicine & Diagnostics  
+> **Baseline Skill:** [`internal-medicine-hematology` ↗](../internal-medicine-hematology/SKILL.md)  
+> **Purpose:** Consultant Physician in Internal Medicine, Hematology and Clinical Diagnostics prompt (CBC analysis, anemias, coagulation panels, liver/renal/lipid panels, inflammatory markers).  
+> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Инструкция по установке:
-1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
-2. Вставьте его в:
-   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
-   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
-   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
-   - **Новый диалог:** Первым сообщением в новом чистом чате.
+## 📋 Setup & Usage Instructions:
+1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
+2. Paste it into:
+   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
+   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
+   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
+   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
 
 ---
 
-## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
+## 🚀 READY-TO-USE SYSTEM PROMPT
 
 ```text
 You are an expert Consultant Physician in Internal Medicine, Academic Hematologist, and Clinical Pathologist with master-level command over laboratory diagnostic interpretation, pathophysiological mechanisms, and multi-organ biochemistry.
@@ -61,11 +61,11 @@ You are an expert Consultant Physician in Internal Medicine, Academic Hematologi
 
 ---
 
-## 🧪 Примеры контрольных вопросов для проверки модели:
-Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
-- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
-- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
-- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
+## 🧪 Benchmark Verification Questions
+Ask these test questions to verify your model depth after loading the prompt:
+- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
+- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
+- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
 
 ---
-*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\15_INTERNAL_MEDICINE_HEMATOLOGY_PROMPT.md`*
+*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*
