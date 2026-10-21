@@ -118,12 +118,12 @@ All architectural components, rules, and scripts are categorized into clean, ded
 | :--- | :--- | :---: | :--- |
 | **[`rules/ ↗`](rules/)** | **Universal AI Master Rules & Governance** | All AI Agents | [`rules/README.md ↗`](rules/README.md) |
 | ├── [`AI_RULES.md ↗`](rules/AI_RULES.md) | Master governance protocol (Autonomy, Timeouts, Chimes, Status Footers) | Universal | [`rules/AI_RULES.md ↗`](rules/AI_RULES.md) |
+| ├── [`ALL_AI_RULES.md ↗`](rules/ALL_AI_RULES.md) | Master Multi-AI Rules Manifest (Russian / Two-Step Pipeline) | Master Blueprint | [`rules/ALL_AI_RULES.md ↗`](rules/ALL_AI_RULES.md) |
 | └── [`TOKEN_ECONOMY.md ↗`](rules/TOKEN_ECONOMY.md) | Practical token optimization rules (Turn limits, slice reading) | Context Ops | [`rules/TOKEN_ECONOMY.md ↗`](rules/TOKEN_ECONOMY.md) |
 | **[`context-economy/ ↗`](context-economy/)** | **Cache-First Knowledge Layer & DevOps Token Guide** | Engineering | [`context-economy/README.md ↗`](context-economy/README.md) |
 | ├── [`KNOWLEDGE_CACHE.md ↗`](context-economy/KNOWLEDGE_CACHE.md) | Local unified database specs (Jira, Confluence, NotebookLM) | Database | [`context-economy/KNOWLEDGE_CACHE.md ↗`](context-economy/KNOWLEDGE_CACHE.md) |
 | └── [`scripts/ ↗`](context-economy/scripts/) | Sync scripts for caching enterprise tickets (`sync-jira-cache.ps1`) | Automation | [`scripts/sync-jira-cache.ps1 ↗`](context-economy/scripts/sync-jira-cache.ps1) |
 | **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (30 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
-| **[`ALL_AI_RULES/ ↗`](ALL_AI_RULES/RULES.md)** | **Master Multi-AI Rules Manifest (Russian / Two-Step Pipeline)** | Master Blueprint | [`ALL_AI_RULES/RULES.md ↗`](ALL_AI_RULES/RULES.md) |
 | **[`RULES.md ↗`](RULES.md)** | Root executive rules overview & agent routing entry point | Quick Reference | [`RULES.md ↗`](RULES.md) |
 
 ---
