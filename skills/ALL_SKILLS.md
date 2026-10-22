@@ -1,9 +1,9 @@
-# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 35 Skills)
+# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 38 Skills)
 
-> **Single consolidated reference file containing all 35 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
+> **Single consolidated reference file containing all 38 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
 > *GitHub Repository:* https://github.com/GinCz/AI/tree/main/skills  
 > *Raw URL for Direct Fetch:* https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md  
-> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-22
+> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-23
 
 ---
 
@@ -24,26 +24,29 @@
 13. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
 14. [czech-business-law](#czech-business-law) — *Czech Business Law*
 15. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
-16. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
-17. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
-18. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
-19. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
-20. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
-21. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
-22. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
-23. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
-24. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine*
-25. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine*
-26. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
-27. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine*
-28. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
-29. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
-30. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
-31. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
-32. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
-33. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
-34. [systematic-debugging](#systematic-debugging) — *Software Engineering*
-35. [writing-plans](#writing-plans) — *Software Engineering*
+16. [dermatology-skin-diseases](#dermatology-skin-diseases) — *Clinical Medicine & Dermatology*
+17. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
+18. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
+19. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
+20. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
+21. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
+22. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
+23. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
+24. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
+25. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
+26. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
+27. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
+28. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
+29. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
+30. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
+31. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
+32. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
+33. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
+34. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
+35. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
+36. [systematic-debugging](#systematic-debugging) — *Software Engineering*
+37. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
+38. [writing-plans](#writing-plans) — *Software Engineering*
 
 ---
 
@@ -1780,6 +1783,157 @@ Governs non-contractual attorney remuneration (*mimosmluvní odměna*) and the s
 
 ---
 
+<a name="dermatology-skin-diseases"></a>
+# 📦 SKILL: dermatology-skin-diseases
+*Domain:* **Clinical Medicine & Dermatology**
+
+---
+name: dermatology-skin-diseases
+description: >-
+  Clinical dermatology, cutaneous diagnostics, treatment of acute and chronic skin disorders (eczema, psoriasis, acne, rosacea, dermatitis, prickly heat/miliaria, intertrigo, hives), infectious dermatoses (fungal, viral, bacterial), dermoscopy (ABCDE criteria), cryotherapy, biopsy techniques, and dermatosurgical excisions.
+---
+# Clinical Dermatology, Cutaneous Diagnostics & Dermatosurgery
+
+A comprehensive medical and surgical guide for assessing, diagnosing, and managing the full spectrum of dermatological pathology — from common minor cutaneous irritations and inflammatory dermatoses to oncological dermoscopy and surgical excisions.
+
+---
+
+## 1. Minor Cutaneous Irritations, Prickly Heat & Superficial Dermatitis
+
+### A. Prickly Heat (Miliaria / Потничка):
+- **Pathophysiology**: Occlusion of eccrine sweat ducts causing sweat extravasation into skin layers under heat, humidity, and occlusive clothing.
+- **Classification & Clinical Presentation**:
+  - *Miliaria Crystallina*: Obstruction in stratum corneum. Tiny (1–2 mm), superficial, clear, thin-walled vesicles without erythema ("dew drops"). Asymptomatic, ruptures easily.
+  - *Miliaria Rubra* (Classic "потничка"): Obstruction in mid-epidermis. Intensely pruritic, erythematous papules and tiny vesicles on neck, upper trunk, skin folds, and flexural creases. Stinging sensation.
+  - *Miliaria Profunda*: Obstruction at dermo-epidermal junction. Flesh-colored, firm papules, typically occurring after recurrent bouts of miliaria rubra.
+- **Evidence-Based Therapy & Prevention**:
+  - *Environmental Control*: Rapid cooling, air conditioning, loose breathable cotton clothing, avoiding heavy occlusive ointments.
+  - *Topical Regimens*: Calamine lotion or zinc oxide suspension (suspensio zinci oxydati) for drying and soothing; topical low-potency hydrocortisone 1% cream applied twice daily for 3–5 days to extinguish severe inflammation.
+  - *Secondary Bacterial Prophylaxis*: Chlorhexidine 0.5% or octenidine wash if pustules appear (Miliaria pustulosa).
+
+### B. Intertrigo & Friction Dermatitis:
+- **Pathophysiology**: Mechanical friction, moisture, and maceration in skin-on-skin apposition sites (inframammary, groin, axillae, abdominal pannus).
+- **Secondary Superinfections**:
+  - *Candida albicans*: Satellite pustules, fiery red erythema, collarette of scale. **Rx**: Topical nystatin, clotrimazole 1%, or ciclopirox olamine BID for 14 days. Avoid high-potency fluorinated steroids.
+  - *Corynebacterium minutissimum (Erythrasma)*: Coral-red fluorescence under Wood’s lamp. **Rx**: Topical erythromycin 2% or clindamycin gel; oral clarithromycin 1g single dose for refractory cases.
+- **Barrier Restoration**: Zinc oxide paste (20–40%), silicone-based anti-chafing barrier gels, keeping intertriginous zones dry.
+
+---
+
+## 2. Chronic Inflammatory & Papulosquamous Dermatoses
+
+### A. Eczema & Atopic Dermatitis (AD):
+- **Pathophysiology**: Epidermal barrier defect (Filaggrin - *FLG* mutation), Th2-skewed immune response, transepidermal water loss (TEWL), and *Staphylococcus aureus* colonization.
+- **Stepwise Management Ladder**:
+  1. *Baseline*: Liberal application of lipid-rich emollients (ceramides, urea 5–10%) within 3 minutes post-bathing ("soak and seal").
+  2. *Mild-to-Moderate Flares*:
+     - Topical Corticosteroids (TCS): Class IV–V (hydrocortisone butyrate 0.1%, aclometasone) for face/flexures; Class II–III (mometasone furoate 0.1%, betamethasone dipropionate) for trunk/extremities. Pulse therapy (BID during flares, then twice-weekly proactive maintenance).
+     - Topical Calcineurin Inhibitors (TCI): Tacrolimus ointment 0.03%–0.1% or pimecrolimus 1% cream. Sparing steroids on eyelids, perioral, and intertriginous skin (zero cutaneous atrophy risk).
+     - Topical PDE4 Inhibitor: Crisaborole 2% ointment.
+  3. *Moderate-to-Severe Refractory AD*:
+     - Phototherapy: Narrowband UVB (NB-UVB 311 nm) 3 times weekly.
+     - Biologic Therapy: Dupilumab (anti-IL-4R$\alpha$ blocking IL-4 and IL-13 signaling; loading dose 600 mg SC, then 300 mg q2w) or Tralokinumab (anti-IL-13).
+     - Oral JAK Inhibitors: Upadacitinib (15–30 mg daily) or Abrocitinib (100–200 mg daily) with routine CBC, lipid, and hepatic monitoring.
+
+### B. Psoriasis Vulgaris:
+- **Pathophysiology**: Th17/IL-23 axis hyperactivation causing keratinocyte hyperproliferation (epidermal turnover shortened from 28 to 3–5 days), Munro microabscesses, parakeratosis.
+- **Clinical Hallmarks**: Well-demarcated erythematous plaques topped with silvery micaceous scales on extensor surfaces (elbows, knees, scalp, lumbosacral). Auspitz sign (pinpoint bleeding on scraping scale), Koebner phenomenon.
+- **Therapeutic Regimen**:
+  - *Topical*: Fixed-combination Calcipotriol 50 mcg/g + Betamethasone dipropionate 0.5 mg/g foam or gel once daily for 4 weeks.
+  - *Systemic Conventional*: Methotrexate (15–25 mg/week + folic acid 5 mg), Acitretin (retinoid for pustular/erythrodermic), Cyclosporine A (rapid control of severe flares, max 1 year).
+  - *Targeted Biologics*:
+    - IL-23 Inhibitors: Risankizumab, Guselkumab, Tildrakizumab.
+    - IL-17A Inhibitors: Secukinumab, Ixekizumab, Bimekizumab (dual IL-17A/F).
+    - TNF-$\alpha$ Inhibitors: Adalimumab, Infliximab.
+
+### C. Acne Vulgaris & Rosacea:
+- **Acne Algorithm**:
+  - *Comedonal*: Topical retinoids (Adapalene 0.1%–0.3% or Tretinoin 0.05%) applied at night.
+  - *Mild-to-Moderate Papulopustular*: Fixed combination Adapalene 0.1% + Benzoyl Peroxide (BPO) 2.5% gel (Epiduo) + topical Clindamycin 1%.
+  - *Moderate-to-Severe / Nodulocystic*: Oral Doxycycline 100 mg/day (max 12 weeks) combined with topical BPO; or definitive therapy with Oral Isotretinoin (0.5–1.0 mg/kg/day to cumulative dose of 120–150 mg/kg; mandatory teratogenicity prevention, lipid and LFT monitoring).
+- **Rosacea (Erythematotelangiectatic & Papulopustular)**:
+  - *Topical*: Ivermectin 1% cream once daily (eradicates *Demodex folliculorum* mites); Metronidazole 0.75% gel; Azelaic acid 15% gel.
+  - *Erythema / Flushing*: Topical Brimonidine tartrate 0.33% gel (selective $\alpha_2$-adrenergic vasoconstriction).
+  - *Systemic*: Sub-antimicrobial dose Doxycycline (40 mg modified-release daily: anti-inflammatory action without selecting bacterial resistance).
+  - *Vascular Laser*: Pulsed Dye Laser (PDL 595 nm) or Nd:YAG 1064 nm for telangiectasias.
+
+---
+
+## 3. Infectious Dermatoses (Bacterial, Fungal, Viral)
+
+### A. Bacterial Infections:
+1. **Impetigo Contagiosa**:
+   - Etiology: *Staphylococcus aureus*, *Streptococcus pyogenes*. Honey-colored ("meliceric") crusts on face and perioral region.
+   - Rx: Topical mupirocin 2% or retapamulin 1% TID for 5–7 days. Extensive lesions: oral cephalexin 500 mg QID or amoxicillin-clavulanate.
+2. **Erysipelas vs Cellulitis**:
+   - *Erysipelas*: Superficially demarcated, raised, fiery-red fiery plaque with rapid onset and fever (predominantly Group A Strep). Rx: Penicillin V oral or Penicillin G IV.
+   - *Cellulitis*: Deep dermis and subcutaneous fat involvement, indistinct borders, warmth, tenderness (*S. aureus* / MRSA). Rx: Cefazolin, Oxacillin, or Vancomycin/Daptomycin if MRSA suspected.
+3. **Abscess & Furunculosis**:
+   - **Primary Treatment**: Incision and Drainage (I&D) with cavity irrigation and loose packing. Systemic antibiotics indicated only if systemic toxicity, facial location ("danger triangle"), or surrounding cellulitis $> 5$ cm.
+
+### B. Fungal Dermatoses:
+1. **Dermatophytosis (Tinea Corporis, Pedis, Cruris, Unguium)**:
+   - Potassium hydroxide (KOH 10–20%) preparation: branching hyphae under microscopy.
+   - *Tinea Corporis/Pedis*: Topical terbinafine 1% cream BID for 1–2 weeks or ciclopirox olamine.
+   - *Tinea Unguium (Onychomycosis)*: Requires systemic therapy if $> 50\%$ plate or matrix involved: Oral Terbinafine 250 mg/day for 6 weeks (fingernails) or 12 weeks (toenails). Alternative: Itraconazole pulse therapy.
+2. **Pityriasis (Tinea) Versicolor**:
+   - Etiology: *Malassezia furfur*. Hyper- or hypopigmented macules with fine scale ("spaghetti and meatballs" on KOH).
+   - Rx: Selenium sulfide 2.5% lotion or Ketoconazole 2% shampoo applied for 10 minutes daily for 7 days; refractory: single-dose oral Fluconazole 300–400 mg.
+
+### C. Viral Dermatoses:
+- **Herpes Zoster (Shingles)**: Unilateral dermatomal painful vesicular eruption. Initiate oral Valacyclovir 1000 mg TID or Famciclovir 500 mg TID within 72 hours of rash onset to prevent Postherpetic Neuralgia (PHN).
+- **Molluscum Contagiosum**: Poxvirus; umbilicated pearly papules. Rx: Curettage, cryotherapy, or topical potassium hydroxide 5%.
+
+---
+
+## 4. Cutaneous Oncology & Dermoscopy (ABCDE Criteria)
+
+### A. Dermoscopic Evaluation of Pigmented Lesions:
+- **ABCDE Clinical Rules**:
+  - **A (Asymmetry)**: Contour, color, or structural asymmetry in 1 or 2 perpendicular axes.
+  - **B (Border)**: Irregular, scalloped, notched, or poorly defined margins.
+  - **C (Color Variation)**: $\ge 3$ colors (light brown, dark brown, black, slate blue, red, depigmented white).
+  - **D (Diameter)**: $> 6$ mm (though early melanomas may be smaller).
+  - **E (Evolution)**: Dynamic change in size, shape, elevation, bleeding, or itching ("Ugly Duckling" sign).
+- **Dermoscopic High-Risk Features for Melanoma**:
+  - Atypical pigment network (thickened, branched lines with irregular meshes).
+  - Asymmetric irregular globules, streaks, or pseudopods (radial streaming).
+  - Blue-white veil, atypical vascular patterns (dotted, hairpin, polymorphous vessels).
+
+### B. Non-Melanoma Skin Cancer (NMSC):
+- **Basal Cell Carcinoma (BCC)**: Pearly translucent nodule with rolled borders and arborizing ("tree-like") telangiectasias; central ulceration (*ulcus rodens*).
+- **Squamous Cell Carcinoma (SCC)**: Hyperkeratotic, indurated, crusted papule or nodule arising often from Actinic Keratosis (AK - treatable with 5-Fluorouracil 5% cream, Imiquimod 5%, or Cryotherapy).
+
+---
+
+## 5. Dermatosurgery, Biopsies & Operative Techniques
+
+### A. Local Anesthesia Protocol:
+- Standard Infiltration: **Lidocaine 1% with Epinephrine 1:100,000** buffered with 8.4% Sodium Bicarbonate (10:1 ratio) to eliminate injection stinging and provide immediate hemostasis.
+- Note on Extremities: Epinephrine can be safely used in fingers and toes when evaluated against contraindications (wide consensus, eliminating ischemic dogma).
+
+### B. Biopsy Modalities:
+1. **Punch Biopsy (3–4 mm)**: Indicated for inflammatory dermatoses and deep dermal lesions. Twisting perpendicular motion, lifting with tissue forceps, transecting base with scissors, single nylon 4-0 or 5-0 suture.
+2. **Shave / Tangential Biopsy**: Indicated for superficial lesions (seborrheic keratosis, superficial BCC, actinic keratosis). Uses DermaBlade or razor curved to shave dermal plane.
+3. **Excisional Biopsy**: Gold standard for suspected melanoma. Performed with a **1–2 mm safety margin** oriented along Langer's relaxed skin tension lines (RSTL). Avoid wide margins on initial biopsy to preserve lymphatic drainage maps for potential Sentinel Lymph Node Biopsy (SLNB).
+
+### C. Formal Surgical Excision & Margin Standards:
+| Pathology | Recommended Surgical Margin |
+| :--- | :--- |
+| **Melanoma in situ** | 5 mm clean surgical margin |
+| **Invasive Melanoma (Breslow $\le 1.0$ mm)** | 10 mm (1 cm) clean margin down to deep fascia |
+| **Invasive Melanoma (Breslow $1.01$–$2.0$ mm)** | 10–20 mm (1–2 cm) margin + evaluate SLNB |
+| **Invasive Melanoma (Breslow $> 2.0$ mm)** | 20 mm (2 cm) margin + SLNB |
+| **Low-Risk Basal Cell Carcinoma (BCC)** | 4 mm surgical margin |
+| **High-Risk / Recurrent BCC or Facial SCC** | Mohs Micrographic Surgery (100% margin evaluation) or 6–10 mm |
+
+### D. Wound Closure & Suture Techniques:
+- **Deep Dermal Layer**: Inverted buried interrupted sutures using absorbable 4-0 or 5-0 Monocryl (poliglecaprone 25) or Vicryl to relieve wound tension.
+- **Epidermal Layer**: Simple interrupted or running subcuticular sutures using non-absorbable 5-0 or 6-0 Prolene / Nylon.
+- **Suture Removal Timeline**: Face: 5–7 days; Scalp/Neck: 7–10 days; Trunk & Extremities: 12–14 days; Over Joints: 14–18 days.
+
+---
+
 <a name="devops-cloud-engineering"></a>
 # 📦 SKILL: devops-cloud-engineering
 *Domain:* **DevOps & Cloud**
@@ -3063,7 +3217,7 @@ New-NetFirewallRule -DisplayName "MGMT-Inbound-WinRM-Hardened" -Direction Inboun
 
 <a name="neurology-neurosurgery-triage"></a>
 # 📦 SKILL: neurology-neurosurgery-triage
-*Domain:* **Clinical Medicine**
+*Domain:* **Clinical Medicine & Neurosurgery**
 
 ---
 name: neurology-neurosurgery-triage
@@ -3172,114 +3326,163 @@ When evaluating any headache, systematically check the **SNOOP4** criteria. A po
 
 ---
 
+## 5. Intracranial Pressure Crises, Pseudotumor Cerebri & Cephalalgia Protocols ("Головное давление")
+
+### A. Intracranial Hypertension Syndromes (IIH / Pseudotumor Cerebri):
+- **Etiology & Demographics**:
+  - *Idiopathic Intracranial Hypertension (IIH)*: Predominantly affects young women with obesity (BMI $\ge 30\text{ kg/m}^2$). Associated with vitamin A derivatives (isotretinoin), tetracyclines, and withdrawal of systemic steroids.
+  - *Secondary Intracranial Hypertension*: Cerebral Venous Sinus Thrombosis (CVST - sagittal/transverse sinus occlusion), space-occupying lesions, hydrocephalus, or severe hypercapnia.
+- **Classic Clinical Tetrad**:
+  1. *Holocranial / Retro-orbital Headache*: Dull, throbbing, characteristically worse upon awakening in the morning, exacerbated by lying flat, coughing, or Valsalva maneuvers.
+  2. *Transient Visual Obscurations (TVOs)*: Brief (seconds-long) darkening, blurring, or dimming of vision, often triggered by standing up or bending over.
+  3. *Pulsatile Tinnitus*: Rhythmic whooshing sound synchronous with the arterial pulse (originates from turbulent venous flow across stenosed transverse sinuses).
+  4. *Diplopia*: Horizontal double vision on lateral gaze secondary to non-localizing uncal traction on Cranial Nerve VI (Abducens palsy).
+- **Diagnostic Criteria (Modified Dandy Criteria)**:
+  - *Dilated Fundoscopy*: Bilateral papilledema (graded 1 to 5 on the Frisén scale: hyperemic disc, blurred margins, loss of physiological venous pulsation, flame hemorrhages, cotton-wool spots).
+  - *Humphrey Visual Field*: Enlarged blind spot, peripheral nasal constriction; untreated cases risk irreversible optic atrophy and blindness!
+  - *Neuroimaging (Brain MRI + MR Venography)*:
+    - Normal brain parenchyma and ventricles (rules out mass lesion or hydrocephalus).
+    - Signs of elevated ICP: **Partially empty sella turcica**, distension of the perioptic subarachnoid space (optic nerve sheath widening $> 5.8\text{ mm}$), flattening of the posterior globe, bilateral transverse venous sinus stenosis.
+  - *Lumbar Puncture (LP)*: **Opening pressure $> 250\text{ mm } H_2O$** (measured in lateral decubitus position with legs extended) with normal CSF cytobiochemical analysis.
+
+### B. Pharmacotherapy & Surgical Interventions for IIH:
+1. **First-Line Medical Therapy**:
+   - **Acetazolamide (Diamox)**: Carbonic anhydrase inhibitor reducing choroid plexus CSF production by 50%. Dosage: Start at 500 mg BID, titrate up to **1000–4000 mg/day** in divided doses. Monitor for metabolic acidosis, hypokalemia, and paresthesias.
+   - **Topiramate**: Weak carbonic anhydrase inhibitor with appetite suppressant action aiding weight loss; 50–100 mg BID.
+   - **Weight Loss**: 10%–15% body weight reduction can induce full clinical remission of IIH.
+2. **Neurosurgical & Endovascular Interventions (for Progressive Visual Loss)**:
+   - **Optic Nerve Sheath Fenestration (ONSF)**: Decompressive micro-incisions in the retrobulbar dural optic nerve sheath allowing local CSF egress, relieving pressure directly at the optic disc to preserve vision.
+   - **Cerebrospinal Fluid Shunting**: Ventriculoperitoneal (VP) or Lumboperitoneal (LP) shunt with programmable adjustable valves to drain excess CSF into the peritoneal cavity.
+   - **Venous Sinus Stenting (VSS)**: Transfemoral placement of self-expanding metallic stent across stenosed transverse dural sinus when a trans-stenotic pressure gradient $\ge 8\text{ mmHg}$ is confirmed on catheter manometry.
+
+### C. Differential Diagnosis & Primary Cephalalgia Protocols:
+- **Migraine with/without Aura**:
+  - *Acute / Abortive*: **Triptans** (Sumatriptan 50–100 mg PO or 6 mg SC; Zolmitriptan 2.5–5 mg) taken at onset of headache (contraindicated in ischemic coronary disease or uncontrolled hypertension); or CGRP receptor antagonists (**Gepants**: Rimegepant 75 mg).
+  - *Preventive*: Monoclonal antibodies targeting CGRP (Erenumab, Fremanezumab, Galcanezumab SC monthly); Beta-blockers (Propranolol, Metoprolol); Anticonvulsants (Topiramate); Tricyclic antidepressants (Amitriptyline).
+- **Tension-Type Headache (TTH)**:
+  - Bilateral, pressing, band-like dull headache without nausea or photophobia. Rx: Paracetamol 1000 mg, Ibuprofen 400 mg, stress reduction; chronic TTH: Amitriptyline 10–25 mg QHS.
+- **Cluster Headache (Trigeminal Autonomic Cephalalgia)**:
+  - Agonizing strictly unilateral periorbital pain accompanied by autonomic signs (ipsilateral lacrimation, conjunctival injection, nasal congestion, miosis/ptosis).
+  - *Abortive Protocol*: **100% Normobaric Oxygen** via non-rebreather mask at **12–15 L/min** for 15–20 minutes + Subcutaneous Sumatriptan 6 mg.
+  - *Prophylaxis*: **Verapamil 240–480 mg/day** (mandatory baseline and dose-titration ECGs monitoring PR interval).
+
+---
+
 <a name="ophthalmology-vision-care"></a>
 # 📦 SKILL: ophthalmology-vision-care
-*Domain:* **Clinical Medicine**
+*Domain:* **Clinical Medicine & Ophthalmology**
 
 ---
 name: ophthalmology-vision-care
 description: >-
-  Ophthalmology, vision diagnostics, glaucoma, intraocular pressure management, retinal diseases (hypertensive/diabetic retinopathy, retinal detachment), macular degeneration, cataracts, and dry eye syndrome.
+  Comprehensive clinical and surgical ophthalmology, vision diagnostics, glaucoma (SLT, trabeculectomy, MIGS), retinal diseases (anti-VEGF, vitrectomy, retinal detachment), cataract surgery (phacoemulsification, premium IOLs), refractive surgery (LASIK, PRK, SMILE), pediatric myopia control, and ocular surface diseases.
 ---
-# Clinical Ophthalmology, Vision Disorders & Retinal Pathologies
+# Comprehensive Clinical & Surgical Ophthalmology, Vision Care & Prevention
 
-A comprehensive clinical manual for evaluating ocular complaints, measuring intraocular pressure, screening for sight-threatening retinal and vascular emergencies, and managing common anterior and posterior segment pathologies.
-
----
-
-## 1. Anatomy of the Eye & Optical Pathway
-
-Key anatomical structures and their clinical significance:
-- **Cornea**: Main refractive element of the eye ($\approx 43\text{ diopters}$); completely avascular, nourished by tears and anterior chamber aqueous humor.
-- **Anterior Chamber & Trabecular Meshwork**: The iridocorneal angle contains the trabecular meshwork draining aqueous humor into Schlemm's canal to maintain Intraocular Pressure (IOP).
-- **Crystalline Lens**: Provides dynamic optical accommodation ($\approx 15–20\text{ diopters}$).
-- **Vitreous Body**: Gel filling the posterior segment; liquefies and detaches with age (Posterior Vitreous Detachment - PVD).
-- **Retina & Macula Lutea**: High-resolution neural sensory layer. The **Fovea centralis** (center of the macula) contains only high-density cones for fine detail and color vision.
-- **Optic Disc**: Exit point of retinal ganglion cell axons forming the optic nerve (CN II). Contains no photoreceptors (physiological blind spot).
+A master clinical manual for diagnosing ocular pathology, performing advanced vision diagnostics, administering medical and laser therapies, managing surgical cases (cataracts, glaucoma, retinal detachment, refractive errors), and implementing proactive ocular disease prevention.
 
 ---
 
-## 2. Intraocular Pressure (IOP) & Glaucoma (*Zelený zákal*)
+## 1. Ocular Diagnostic Modalities & Preventive Screening
 
-Glaucoma is an optic neuropathy characterized by progressive loss of retinal ganglion cells, characteristic optic nerve cupping, and irreversible visual field deficits.
+### A. Advanced Diagnostic Technologies:
+1. **Optical Coherence Tomography (OCT)**:
+   - *Macular OCT*: High-resolution cross-sectional retinal visualization. Differentiates intraretinal fluid (cystoid macular edema), subretinal fluid (central serous chorioretinopathy / wet AMD), and sub-retinal pigment epithelium (RPE) deposits (drusen).
+   - *Retinal Nerve Fiber Layer (RNFL) & Ganglion Cell Complex (GCC) OCT*: Micron-level measurement of peripapillary nerve thickness for early glaucoma detection years before visual field deficits emerge.
+2. **Humphrey Visual Field Automated Perimetry (SITA-Standard 24-2 / 30-2)**:
+   - Measures retinal sensitivity threshold in decibels (dB).
+   - Assesses Mean Deviation (MD), Pattern Standard Deviation (PSD), and Visual Field Index (VFI). Detects arcuate nerve fiber bundle defects, nasal steps, and central scotomas.
+3. **Corneal Pachymetry & Applanation Tonometry**:
+   - Central Corneal Thickness (CCT): Goldmann applanation tonometry is calibrated for a CCT of $520\text{–}545\ \mu\text{m}$.
+   - Thinner corneas ($< 500\ \mu\text{m}$) cause artificial underestimation of true intraocular pressure (IOP); thick corneas ($> 580\ \mu\text{m}$) overestimate IOP.
+4. **Fluorescein Angiography (FA) & OCT-Angiography (OCTA)**:
+   - Dynamic evaluation of retinal and choroidal circulation without dye injection (OCTA) or via intravenous sodium fluorescein (FA) to detect capillary non-perfusion, neovascularization, microaneurysms, and blood-retina barrier leakage.
 
-### A. Tonometry & Clinical Parameters:
-- **Normal Intraocular Pressure**: **$10–21\text{ mmHg}$** (measured via Goldmann applanation tonometry - the gold standard).
-- **Cup-to-Disc Ratio (C/D Ratio)**:
-  - Normal: $\le 0.3–0.4$.
-  - Pathological: $> 0.5–0.6$ or asymmetry $> 0.2$ between eyes suggests glaucomatous optic nerve atrophy.
-  - Thinning of the neuroretinal rim obeys the ISNT rule (Inferior $\ge$ Superior $\ge$ Nasal $\ge$ Temporal in healthy eyes; violation of ISNT indicates rim loss).
-
-### B. Primary Open-Angle Glaucoma (POAG):
-- The "Silent Thief of Sight": Completely painless, normal anterior chamber angle, insidious progression.
-- Progressive visual field loss: Begins with arcuate scotomas and nasal step; progresses to severe peripheral constriction (**tunnel vision**). Central vision is preserved until terminal stages.
-
-### C. Acute Angle-Closure Glaucoma (Ophthalmic Emergency):
-- **Pathophysiology**: Pupillary block causes the iris root to bow forward, completely obstructing the trabecular meshwork. IOP spikes acutely to **$40–80\text{ mmHg}$**.
-- **Clinical Symptoms**:
-  - Severe unilateral deep ocular pain and ipsilateral headache.
-  - Nausea and vomiting (often misdiagnosed as acute migraine or abdominal crisis).
-  - Blurred vision with characteristic **rainbow-colored halos around lights**.
-  - Ocular examination: Red injected conjunctiva, cloudy steamy cornea, mid-dilated non-reactive pupil, eyeball feels **stony hard** on digital palpation.
-- **Emergency Medical Management**:
-  1. IV Mannitol 20% (1–2 g/kg) to draw fluid osmotically from the vitreous.
-  2. Oral/IV Acetazolamide (Diamox 500 mg) to inhibit aqueous humor secretion.
-  3. Topical eye drops: Pilocarpine 2% (miotic to pull iris away from angle), Timolol 0.5%, Apraclonidine 1%.
-  4. Definitive surgical intervention: Laser Peripheral Iridotomy (LPI) in both affected and contralateral fellow eye.
-
-### D. Glaucoma Pharmacotherapy:
-- **Prostaglandin Analogs** (*Latanoprost, Bimatoprost, Travoprost*): First-line; increases uveoscleral outflow. Once daily at bedtime. (Side effects: iris darkening, eyelash lengthening).
-- **Beta-Blockers** (*Timolol 0.25%–0.5%*): Decreases aqueous humor production. (Contraindicated in bronchial asthma, severe COPD, bradycardia, or 2nd/3rd degree AV block).
-- **Carbonic Anhydrase Inhibitors** (*Dorzolamide, Brinzolamide*): Inhibits active secretion of bicarbonate into aqueous humor.
-- **Alpha-2 Agonists** (*Brimonidine*): Dual action (reduces production and increases uveoscleral outflow).
+### B. Vision Care & Preventive Protocols:
+- **Pediatric Myopia Control Protocol**:
+  - Progressive juvenile myopia increases lifetime risk of retinal detachment, myopic maculopathy, and glaucoma.
+  - *Interventions*: Low-dose Atropine eye drops (0.01%–0.05% nightly reduces progression by 50–60%); Orthokeratology (Ortho-K overnight rigid gas-permeable lenses reshaping corneal epithelium); Dual-focus / DIMS spectacle lenses; Outdoor daylight exposure $\ge 2\text{ hours/day}$.
+- **Digital Eye Strain & Computer Vision Syndrome (CVS)**:
+  - 20-20-20 Rule (every 20 minutes, gaze at an object 20 feet away for 20 seconds); preservative-free artificial tears (sodium hyaluronate 0.15%–0.3%); optimizing monitor ergonomics and blue-light filtration.
 
 ---
 
-## 3. Retinal & Systemic Vascular Pathologies
+## 2. Cataract Pathology & Advanced Microsurgical Phacoemulsification
 
-The retina is the only place in the human body where microvasculature can be visualized directly and non-invasively.
+### A. Cataract Staging & Morphology:
+1. **Nuclear Sclerotic**: Gradual yellowing/browning (brunescent) of the lens nucleus; causes lenticular myopia ("second sight").
+2. **Cortical**: Radial spoke-like opacities extending from periphery toward the pupillary center; causes severe glare and light scattering.
+3. **Posterior Subcapsular (PSC)**: Granular opacities located beneath the posterior capsule in the visual axis; rapidly impairs reading vision; frequently induced by systemic/topical corticosteroid therapy or diabetes.
 
-### A. Hypertensive Retinopathy (Keith-Wagener-Barker Classification):
-Reflects systemic damage occurring simultaneously in cerebral, coronary, and renal microcirculation:
-- **Grade 1**: Generalized, mild arteriolar attenuation and tortuosity ("silver/copper wiring").
-- **Grade 2**: Definite focal arteriolar narrowing and arteriovenous (AV) crossing changes (*Salus-Gunn sign* - vein deflection and compression at crossings).
-- **Grade 3**: Flame-shaped retinal hemorrhages, hard lipid exudates (macular star), and **cotton-wool spots** (microinfarcts of the nerve fiber layer).
-- **Grade 4**: All of Grade 3 plus **Papilledema (bilateral optic disc swelling)**. Indicates malignant / accelerated hypertension requiring immediate ICU admission!
-
-### B. Retinal Detachment (*Odchlípení sítnice* - Emergency):
-- Separation of the neurosensory retina from the underlying retinal pigment epithelium (RPE).
-- **The Classical Warning Triad**:
-  1. **Photopsia**: Sudden persistent flashes of light in peripheral vision.
-  2. **Sudden shower of floaters**: New onset of dense black spots, webs, or "soot shower" (vitreous hemorrhage).
-  3. **Visual field defect**: A dark, painless "curtain" or shadow spreading from the periphery toward the center.
-- **Immediate Action**: Patient must remain quiet; emergency referral to vitreoretinal surgery (Pneumatic retinopexy, Pars Plana Vitrectomy - PPV, or Scleral Buckle).
-
-### C. Age-Related Macular Degeneration (AMD / *Makulární degenerace*):
-- Leading cause of irreversible central blindness in individuals $> 60$ years.
-- **Dry (Non-neovascular) AMD (85–90%)**:
-  - Deposition of yellowish metabolic waste products (**Drusen**) beneath the RPE.
-  - Slow progressive loss of central vision; metamorphopsia (straight lines appear wavy on an **Amsler grid**).
-- **Wet (Neovascular / Exudative) AMD (10–15%)**:
-  - Growth of abnormal choroidal neovascular membranes (CNV) breaking through Bruch's membrane, leaking blood and lipid.
-  - Sudden, rapid loss of central vision.
-  - Treatment: Immediate **anti-VEGF intravitreal injections** (*Aflibercept / Eylea, Ranibizumab / Lucentis, Faricimab*) administered directly into the vitreous cavity under sterile conditions to halt neovascularization.
+### B. Surgical Phacoemulsification Protocol (Modern Phaco):
+1. **Anesthesia**: Topical tetracaine/proparacaine + intracameral preservative-free lidocaine 1%.
+2. **Incisions**: Clear corneal main incision ($2.2\text{–}2.4\text{ mm}$) at temporal limbus + 1.0 mm paracentesis.
+3. **Continuous Curvilinear Capsulorhexis (CCC)**: Circular 5.0–5.5 mm tear of anterior lens capsule ensuring stable 360-degree overlap of the intraocular lens optic.
+4. **Hydrodissection & Hydrodelineation**: Balanced Salt Solution (BSS) fluid wave separating lens cortex from capsule and nucleus.
+5. **Ultrasonic Phacoemulsification**: Divide-and-conquer or phaco-chop technique emulsifying and aspirating the hard nuclear fragments while protecting the thin ($4\ \mu\text{m}$) posterior capsule.
+6. **Bimanual Irrigation/Aspiration (I/A)**: Complete cortex removal.
+7. **Intraocular Lens (IOL) Implantation**: Foldable acrylic IOL injected into the capsular bag:
+   - *Monofocal*: Excellent sharp distance vision; requires reading glasses for near tasks.
+   - *Toric*: Corrects pre-existing corneal astigmatism ($\ge 0.75\text{ D}$).
+   - *Extended Depth of Focus (EDOF) & Multifocal*: Trifocal or diffractive optics providing functional spectacle independence across distance, intermediate (computer), and near ranges.
 
 ---
 
-## 4. Anterior Segment & Refractive Conditions
+## 3. Glaucoma: Medical, Laser & Micro-Invasive Surgery (MIGS)
 
-### A. Cataracts (*Šedý zákal*):
-- Progressive clouding and opacification of the natural crystalline lens (nuclear sclerosis, cortical, or posterior subcapsular).
-- Symptoms: Gradual painless blurring, glare and halos around headlights at night, loss of color contrast.
-- Definitive Treatment: **Phacoemulsification** with ultrasound breakdown of the cloudy lens through a micro-incision ($< 2.2\text{ mm}$), followed by folding and implantation of an artificial Intraocular Lens (IOL - Monofocal, Toric for astigmatism, or Multifocal).
+### A. Evidence-Based Topical Medical Algorithm:
+1. **First-Line**: Prostaglandin Analogs (PGA: Latanoprost 0.005%, Bimatoprost 0.01%, Travoprost) once daily QHS. Increases uveoscleral outflow; reduces IOP by 25–35%.
+2. **Second-Line / Add-on**:
+   - Beta-Blockers (Timolol maleate 0.5% BID): Suppresses aqueous production. *Contraindicated in asthma, severe COPD, bradycardia, heart block*.
+   - Alpha-2 Adrenergic Agonists (Brimonidine 0.2% BID/TID): Dual action (decreases production, increases uveoscleral outflow).
+   - Carbonic Anhydrase Inhibitors (Dorzolamide 2%, Brinzolamide 1% BID/TID): Inhibits bicarbonate formation in ciliary processes.
+   - Rho-Kinase Inhibitors (Netarsudil 0.02%): Enhances trabecular meshwork outflow directly.
 
-### B. Dry Eye Syndrome & Computer Vision Syndrome:
-- Etiology: Evaporative dry eye due to **Meibomian Gland Dysfunction (MGD)** (poor lipid layer causes rapid tear evaporation) or Aqueous-deficient dry eye (Sjögren's syndrome, aging).
-- Diagnosis: **Tear Break-Up Time (TBUT)**: Fluorescein instilled; TBUT $< 10\text{ seconds}$ indicates unstable tear film.
-- Management:
-  - Preservative-free artificial tears containing high-concentration **Hyaluronic Acid (0.15%–0.3%)** or lipid-containing emulsions.
-  - Eyelid hygiene: Warm compresses (10 minutes) followed by gentle eyelid margin massage to melt inspissated meibomian wax.
-  - Ergonomics: The **20-20-20 Rule** (every 20 minutes, look at an object 20 feet / 6 meters away for at least 20 seconds).
+### B. Laser & Surgical Interventions:
+1. **Selective Laser Trabeculoplasty (SLT)**:
+   - Frequency-doubled Q-switched Nd:YAG laser (532 nm) applied to 360 degrees of trabecular meshwork. Selectively targets pigmented cells without thermal coagulation damage. Lowers IOP by 20–30%, proven equivalent or superior to first-line eye drops in the LiGHT trial.
+2. **Minimally Invasive Glaucoma Surgery (MIGS)**:
+   - Trabecular micro-bypass stents (iStent inject, Hydrus microstent) or subconjunctival filtration (XEN gel stent, PreserFlo microshunt). Ab-interno approach with rapid recovery, performed in conjunction with cataract surgery.
+3. **Filtering Trabeculectomy (Gold Standard for Advanced Glaucoma)**:
+   - Creates a guarded partial-thickness scleral flap and fistula draining aqueous humor into the subconjunctival space, forming a filtration bleb. Application of antimetabolite **Mitomycin C (MMC 0.2–0.4 mg/mL)** prevents scarring.
+
+---
+
+## 4. Retinal Pathologies, Macular Degeneration & Vitreoretinal Surgery
+
+### A. Age-Related Macular Degeneration (AMD):
+- **Dry (Non-Exudative) AMD**: Extracellular drusen deposits between RPE and Bruch's membrane; progresses to geographic atrophy.
+  - *Intervention*: AREDS2 formulation (Vitamin C 500 mg, Vitamin E 400 IU, Lutein 10 mg, Zeaxanthin 2 mg, Zinc 80 mg, Copper 2 mg); Complement inhibitors (Pegcetacoplan, Avacincaptad pegol) slowing geographic atrophy.
+- **Wet (Neovascular / Exudative) AMD**: Choroidal neovascularization (CNV) penetrating Bruch's membrane with subretinal hemorrhage, lipid exudation, and disciform fibrotic scarring.
+  - *Gold Standard Intravitreal Anti-VEGF Therapy*:
+    - **Aflibercept (Eylea 2 mg / 8 mg)**: Binds VEGF-A, VEGF-B, and PlGF.
+    - **Faricimab (Vabysmo)**: Dual VEGF-A and Angiopoietin-2 (Ang-2) bispecific inhibitor stabilizing vascular endothelium (dosing interval extended up to every 16 weeks).
+    - **Ranibizumab (Lucentis)**: Monthly or treat-and-extend protocol.
+
+### B. Rhegmatogenous Retinal Detachment (RRD):
+- **Pathogenesis**: Retinal tear (horseshoe tear) allows liquefied vitreous to dissect beneath the neurosensory retina, separating it from the RPE.
+- **Symptoms**: Sudden shower of floaters (entopsias), photopsias (flashes of light), and a progressive dark "curtain" advancing over the visual field.
+- **Urgent Surgical Repair**:
+  - *Pneumatic Retinopexy*: Intravitreal gas bubble injection ($SF_6$ or $C_3F_8$) + laser/cryopexy.
+  - *Pars Plana Vitrectomy (PPV - 23G/25G/27G)*: Core vitrectomy, relief of vitreoretinal traction, fluid-air exchange, endolaser photocoagulation around tear margins, and long-acting gas or silicone oil tamponade.
+
+---
+
+## 5. Refractive Corneal Surgery & Dry Eye Disease
+
+### A. Refractive Surgery Modalities:
+1. **Femto-LASIK**: Femtosecond laser creates a 100–110 $\mu\text{m}$ corneal flap; Excimer laser (193 nm) photoablates stroma; flap repositioned. Painless, rapid vision recovery within 24 hours.
+2. **PRK / TransPRK**: Surface ablation removing epithelium before stromal photoablation. Indicated for thin corneas or high-impact athletic occupations; healing requires 3–5 days with a bandage contact lens.
+3. **SMILE (Small Incision Lenticule Extraction)**: Femtosecond laser cuts an intrastromal lenticule removed through a 2 mm micro-incision without creating a flap. Preserves anterior corneal biomechanical strength and corneal nerve plexus (lower risk of post-op dry eye).
+
+### B. Dry Eye Disease (TFOS DEWS II Management):
+- Evaporative Dry Eye (Meibomian Gland Dysfunction - MGD) vs Aqueous-Deficient Dry Eye (Sjögren syndrome).
+- Diagnostic testing: Tear Break-Up Time (TBUT $< 10\text{ seconds}$), Schirmer I test ($< 5\text{ mm/5 min}$), corneal fluorescein staining.
+- *Therapeutic Escalation*:
+  - Warm compresses, lipid-containing artificial tears, oral Omega-3 fatty acids.
+  - Intense Pulsed Light (IPL) & thermal pulsation (LipiFlow) for MGD.
+  - Topical Cyclosporine A 0.05%–0.1% or Lifitegrast 5% for chronic surface inflammation.
+  - Punctal plugs (silicone or collagen) occluding lacrimal puncta to retain natural tears.
 
 ---
 
@@ -3417,7 +3620,7 @@ Perform systematically with the patient relaxed in supine position:
 
 <a name="proctology-colorectal-surgery"></a>
 # 📦 SKILL: proctology-colorectal-surgery
-*Domain:* **Clinical Medicine**
+*Domain:* **Clinical Medicine & Proctology**
 
 ---
 name: proctology-colorectal-surgery
@@ -3464,6 +3667,16 @@ Hemorrhoidal cushions (*corpus cavernosum recti*) are normal physiological vascu
 - **Acute Hemorrhoidal Thrombosis**: Sudden severe perianal pain associated with a firm, tender, bluish-purple subcutaneous nodule.
   - **Management within $\le 72$ hours of onset**: Immediate surgical excision (*trombektomie*) under local anesthesia provides rapid pain relief.
   - **Management after $> 72$ hours**: Clot organization has begun; conservative therapy (ice packs, topical lidocaine, flavonoids, stool softeners) is preferred as spontaneous resolution occurs in 2–3 weeks.
+
+### C. Master Hemorrhoidal Treatment Decision Matrix:
+
+| Stage / Classification | Clinical Hallmarks | First-Line Conservative Therapy | Office-Based & Surgical Modalities |
+| :--- | :--- | :--- | :--- |
+| **Grade I** | Painless rectorrhagia, zero prolapse | High-fiber diet (25–35 g/d), MPFF (*Detralex* 1000 mg/d), topical bioflavonoids | Infrared Photocoagulation (IRC), Sclerotherapy (polidocanol 2–3%) |
+| **Grade II** | Prolapse during defecation, spontaneous reduction | MPFF acute dosing ($3000\rightarrow 2000\rightarrow 1000\text{ mg}$), osmotic laxatives (*Macrogol*) | **Rubber Band Ligation (Barron)**, Laser Hemorrhoidoplasty (LHP), DG-HAL |
+| **Grade III** | Prolapse requiring manual digital reduction | MPFF, stool softening, bridging pre-op preparation | **Longo Stapled Hemorrhoidopexy (PPH)**, DG-HAL/RAR, Laser LHP, Ferguson |
+| **Grade IV** | Permanent irreducible prolapse, mucus discharge | Pain control, local hygiene, reduction of edema | **Excisional Hemorrhoidectomy** (Milligan-Morgan open or Ferguson closed) |
+| **Thrombosed External** | Acute excruciating pain, firm bluish-purple nodule | If $> 72$ hrs: Ice, topical lidocaine/heparin, analgesics, flavonoids | If $\le 72$ hrs: **Immediate surgical excision (thrombectomy)** under 1% lidocaine |
 
 ---
 
@@ -4401,6 +4614,124 @@ For systems processing, transmitting, or storing cardholder or sensitive financi
 
 ---
 
+<a name="somnology-sleep-apnea-snoring"></a>
+# 📦 SKILL: somnology-sleep-apnea-snoring
+*Domain:* **Clinical Medicine & Somnology**
+
+---
+name: somnology-sleep-apnea-snoring
+description: >-
+  Clinical somnology, sleep-disordered breathing, diagnostics of rhonchopathy (snoring) and Obstructive Sleep Apnea (OSA), polysomnography (AHI, ODI), Drug-Induced Sleep Endoscopy (DISE), CPAP/BiPAP titration, mandibular advancement splints, and surgical airway interventions (UPPP, coblation, MMA, hypoglossal stimulation).
+---
+# Clinical Somnology, Sleep-Disordered Breathing & Rhonchopathy Surgery
+
+A comprehensive medical and surgical guide for the clinical assessment, polysomnographic diagnostics, non-invasive therapies, and operative airway interventions for snoring (rhonchopathy) and Obstructive Sleep Apnea (OSA).
+
+---
+
+## 1. Pathophysiology of Sleep-Disordered Breathing
+
+### A. The Spectrum of Sleep-Disordered Breathing:
+1. **Primary (Simple) Rhonchopathy / Snoring**: Inspiratory acoustic vibration of pharyngeal soft tissue structures (soft palate, uvula, posterior pharyngeal wall, base of tongue) during sleep **without** recurrent apneas, significant arterial oxyhemoglobin desaturations, or sleep architecture fragmentation.
+2. **Upper Airway Resistance Syndrome (UARS)**: Increased airway resistance leading to repetitive respiratory effort-related arousals (RERAs) and daytime fatigue without frank apneas or desaturations.
+3. **Obstructive Sleep Apnea (OSA)**: Repetitive partial (hypopnea) or complete (apnea) collapse of the pharyngeal airway during sleep despite continuous diaphragmatic and thoracic respiratory effort.
+   - *Biomechanical Principles*:
+     - *Starling Resistor Model*: Upstream nasal resistance increases downstream pharyngeal suction pressure.
+     - *Bernoulli Principle*: High airflow velocity through a narrowed pharyngeal lumen generates negative lateral wall pressure, pulling collapsible tissues inward.
+4. **Central Sleep Apnea (CSA)**: Cessation of airflow accompanied by an absence of diaphragmatic effort due to transient loss of respiratory neural drive from the brainstem (e.g. Cheyne-Stokes breathing in congestive heart failure).
+
+---
+
+## 2. Diagnostic Protocols & Polysomnography
+
+### A. Clinical Screening Tools:
+- **STOP-Bang Screening Questionnaire** (High Risk: Score $\ge 5$):
+  - **S**: Snoring loud enough to be heard through closed doors.
+  - **T**: Tired, fatigued, or sleepy during daytime.
+  - **O**: Observed stopping breathing during sleep.
+  - **P**: High blood Pressure.
+  - **B**: BMI $> 35\text{ kg/m}^2$.
+  - **A**: Age $> 50$ years.
+  - **N**: Neck circumference ($> 43\text{ cm}$ in men, $> 40\text{ cm}$ in women).
+  - **G**: Gender (Male).
+- **Epworth Sleepiness Scale (ESS)**: 8-item self-administered scale evaluating likelihood of dozing off in daytime situations ($0\text{–}24$ scale; $> 10$ indicates excessive daytime sleepiness).
+
+### B. Standard Polysomnography (Level 1 In-Laboratory PSG):
+- **Diagnostic Indices & Metrics**:
+  - **Apnea**: Drop in peak thermal sensor airflow $\ge 90\%$ from baseline lasting $\ge 10\text{ seconds}$.
+  - **Hypopnea**: Drop in nasal pressure cannula airflow $\ge 30\%$ lasting $\ge 10\text{ seconds}$ associated with an arterial oxyhemoglobin desaturation of $\ge 3\%$ (or $\ge 4\%$ depending on CMS/AASM criteria) or an electroencephalographic (EEG) arousal.
+  - **Apnea-Hypopnea Index (AHI)**: Total number of apneas and hypopneas per hour of sleep:
+    - *Normal*: $\text{AHI} < 5/\text{hour}$.
+    - *Mild OSA*: $\text{AHI } 5\text{–}14.9/\text{hour}$.
+    - *Moderate OSA*: $\text{AHI } 15\text{–}29.9/\text{hour}$.
+    - *Severe OSA*: $\text{AHI } \ge 30/\text{hour}$.
+  - **Oxygen Desaturation Index (ODI)**: Frequency of oxyhemoglobin desaturations $\ge 3\%$ or $\ge 4\%$ per hour.
+  - **Minimum Nadir $SpO_2$**: Lowest arterial saturation recorded during REM or NREM sleep.
+
+---
+
+## 3. Drug-Induced Sleep Endoscopy (DISE) & Anatomical Mapping
+
+### A. Operative Protocol:
+- Performed in the operating theater under controlled pharmacologically induced sleep using **target-controlled infusion (TCI) of Propofol or Dexmedetomidine** to replicate natural NREM sleep without abolishing muscle tone.
+- Flexible fiberoptic video-rhinopharyngoscope passed through the nasal cavity to evaluate airway collapse under negative inspiratory suction.
+
+### B. The VOTE Classification System:
+Anatomical levels of pharyngeal obstruction graded by degree ($0 = \text{none } < 50\%$, $1 = \text{partial } 50\text{–}75\%$, $2 = \text{complete } > 75\%$) and configuration:
+1. **V (Velum / Soft Palate)**: Anteroposterior (AP), lateral, or concentric collapse.
+   - *Critical Surgical Caveat*: **Complete Concentric Collapse (CCC)** at the velum level is a strict contraindication for isolated UPPP and hypoglossal nerve stimulation!
+2. **O (Oropharynx / Lateral Pharyngeal Walls & Tonsils)**: Lateral wall collapse vs tonsillar hypertrophy (Friedman tonsil grade I–IV).
+3. **T (Tongue Base)**: Anteroposterior collapse (retroglossal narrowing against posterior pharyngeal wall).
+4. **E (Epiglottis)**: Anteroposterior collapse (floppy epiglottis folding over laryngeal inlet) vs lateral folding (omega epiglottis).
+
+---
+
+## 4. Conservative & Non-Surgical Treatment Modalities
+
+### A. Positive Airway Pressure (PAP) Therapy (Gold Standard):
+1. **Continuous Positive Airway Pressure (CPAP / APAP)**:
+   - Pneumatic splinting of the upper airway. Auto-titrating positive airway pressure (APAP) dynamically adjusts pressure between 4 and $20\text{ cm } H_2O$ in response to airflow limitation, snoring vibrations, and hypopneas.
+   - *Adherence Threshold*: $\ge 4\text{ hours/night}$ on $\ge 70\%$ of nights. Heated humidification and well-fitted nasal or oronasal (full-face) masks reduce mucosal drying and compliance dropout.
+2. **Bilevel Positive Airway Pressure (BiPAP)**:
+   - Sets independent inspiratory (IPAP) and expiratory (EPAP) pressures. Indicated for patients intolerant to high continuous expiratory pressure or those with concurrent obesity-hypoventilation syndrome (OHS) or COPD.
+
+### B. Mandibular Advancement Devices (MAD):
+- Custom-fabricated, dual-arch titratable dental splint that mechanically advances the mandible and attached tongue base anteriorly by 5–10 mm.
+- *Indications*: Primary snoring, mild-to-moderate OSA ($\text{AHI } < 30$), or severe OSA patients completely intolerant to CPAP.
+- *Contraindications*: Insufficient dentition ($< 10$ stable teeth per arch), active temporomandibular joint (TMJ) arthropathy, active severe periodontitis.
+
+### C. Positional & Behavioral Therapies:
+- *Positional Therapy (for Positional OSA with supine-dependent AHI)*: Vibratory positional trainers (NightBalance, SlumberBump) preventing supine sleep.
+- *Weight Loss & Metabolic Management*: 10% reduction in total body weight decreases AHI by up to 26–30%. Use of GLP-1/GIP receptor agonists (Tirzepatide, Semaglutide) demonstrated marked reduction in OSA severity.
+- *Nasal Decongestion*: Intranasal corticosteroids (fluticasone, mometasone furoate) and saline irrigations for allergic rhinitis to reduce upstream Starling resistor resistance.
+
+---
+
+## 5. Surgical Interventions for Snoring & OSA
+
+### A. Nasal Airway Optimization (Nasal Surgery):
+- *Procedures*: Septoplasty + Bilateral Radiofrequency Coblation / Submucosal Resection of Inferior Turbinates + Endoscopic Sinus Surgery (if chronic rhinosinusitis with polyps).
+- *Clinical Reality*: Nasal surgery alone rarely cures OSA (mean AHI reduction only ~10%), but drastically reduces daytime nasal resistance and reduces required therapeutic CPAP titration pressure by $2\text{–}3\text{ cm } H_2O$, significantly improving CPAP compliance.
+
+### B. Palatal & Oropharyngeal Surgical Techniques:
+1. **Radiofrequency Palatoplasty / Somnoplasty (Coblation)**:
+   - Indicated for primary snoring and mild palate vibration without significant desaturations. Low-temperature radiofrequency ablation needle inserted at 3–4 submucosal sites of the soft palate to induce controlled fibrosis and stiffening, eliminating fluttering.
+2. **Expansion Sphincter Pharyngoplasty (ESP)**:
+   - Transposition of the palatopharyngeus muscle flaps superolaterally into the soft palate to splint lateral pharyngeal walls outward, expanding lateral oropharyngeal dimensions.
+3. **Uvulopalatopharyngoplasty (UPPP)**:
+   - Tonsillectomy combined with resection of redundant posterior tonsillar pillar mucosal folds and partial uvular reshaping. Avoid aggressive uvular amputations to prevent velopharyngeal insufficiency (VPI) and nasal regurgitation.
+
+### C. Hypopharyngeal & Skeletal Surgeries:
+1. **Transoral Robotic Surgery (TORS) / Coblation Tongue Base Reduction**:
+   - Partial midline glossectomy / lingual tonsillectomy for severe retroglossal collapse.
+2. **Maxillomandibular Advancement (MMA)**:
+   - Most effective skeletal surgical intervention for refractory severe OSA (cure rate $> 85–90\%$). Le Fort I osteotomy of maxilla and sagittal split osteotomy of mandible with anterior advancement of 10–12 mm, dramatically widening retropalatal and retroglossal airway spaces.
+3. **Hypoglossal Nerve Stimulation (HNS - Inspire System)**:
+   - Implantable neurostimulator sensing respiratory effort and delivering synchronized electrical pulses to the medial branch of the hypoglossal nerve (CN XII), selectively protruding the genioglossus muscle during inspiration to open the airway.
+   - *Prerequisites*: $\text{AHI } 15\text{–}65$, $\text{BMI } < 35\text{ kg/m}^2$, absence of complete concentric collapse on DISE.
+
+---
+
 <a name="sysadmin-network-engineering"></a>
 # 📦 SKILL: sysadmin-network-engineering
 *Domain:* **SysAdmin & Networking**
@@ -4544,6 +4875,137 @@ When asked to debug a script or system issue, follow this strict protocol:
 3. **Isolate the Fault**: Do not rewrite the entire script. Add verbose logging (`set -x` in Bash, `Write-Debug` or `Set-PSDebug` in PowerShell) to isolate the exact line failing.
 4. **Hypothesize & Test**: Propose one single hypothesis at a time. Do not make multiple unrelated changes.
 5. **Verify**: Once a fix is applied, verify it solves the specific error without introducing new ones.
+
+---
+
+<a name="urology-nephrology-cholelithiasis"></a>
+# 📦 SKILL: urology-nephrology-cholelithiasis
+*Domain:* **Clinical Medicine & Urology**
+
+---
+name: urology-nephrology-cholelithiasis
+description: >-
+  Urological surgery, nephrology, management of urolithiasis (kidney & ureteral stones, laser lithotripsy, URS/RIRS, PCNL, JJ-stenting), prostatitis (NIH categories I-IV, diagnostics, pharmacotherapy), and hepatobiliary lithiasis (gallstones, cholelithiasis, laparoscopic cholecystectomy, ERCP stone extraction).
+---
+# Urology, Nephrology & Hepatobiliary Lithiasis Surgery
+
+A comprehensive surgical and clinical manual for the diagnosis, emergency triage, medical dissolution, and advanced operative management of ureteral and renal calculi, prostatic inflammatory disorders, and gallbladder/biliary duct stones.
+
+---
+
+## 1. Gallbladder Lithiasis (Cholelithiasis) & Biliary Tract Pathology
+
+### A. Pathophysiology & Stone Classification:
+1. **Cholesterol Stones (80%)**: Supersaturation of bile with cholesterol, gallbladder hypomotility, hypersecretion of mucus, accelerated cholesterol nucleation.
+2. **Black Pigment Stones**: Polymerized calcium bilirubinate associated with chronic hemolysis (sickle cell, spherocytosis) and liver cirrhosis. Non-dissolvable.
+3. **Brown Pigment Stones**: Associated with bacterial or parasitic infection of the biliary tree (*E. coli*, *Klebsiella* secreting $\beta$-glucuronidase). Formed primarily inside the common bile duct (CBD).
+
+### B. Clinical Syndromes & Diagnostic Workflows:
+- **Biliary Colic**: Postprandial episodic epigastric or right upper quadrant (RUQ) visceral pain radiating to the right scapula/shoulder (Boas sign), lasting 30 minutes to 6 hours. Caused by transient cystic duct impaction.
+- **Acute Cholecystitis (Tokyo Guidelines TG18 Criteria)**:
+  - *Local signs*: Murphy's sign (inspiratory arrest on RUQ palpation), RUQ tenderness/mass.
+  - *Systemic signs*: Fever, leukocytosis ($> 10,000/\mu\text{L}$), elevated CRP.
+  - *Imaging (Ultrasound)*: Gallbladder wall thickening ($> 4\text{ mm}$), pericholecystic fluid halo, sonographic Murphy's sign, impacted stone in cystic duct/neck.
+- **Choledocholithiasis & Acute Cholangitis**:
+  - Stone migration into the Common Bile Duct (CBD) $\rightarrow$ obstructive jaundice, elevated conjugated bilirubin, alkaline phosphatase, and GGT.
+  - *Charcot’s Triad*: RUQ pain + Jaundice + Spiking Fevers with Chills.
+  - *Reynolds' Pentad* (Suppurative Cholangitis Emergency): Charcot's triad + Hypotension (Septic Shock) + Altered Mental Status.
+
+### C. Conservative & Medical Dissolution:
+- **Ursodeoxycholic Acid (UDCA / Ursofalk)**:
+  - *Indications*: Small ($< 5\text{–}10\text{ mm}$), non-calcified, radiolucent cholesterol stones in a functioning gallbladder with a patent cystic duct; patients with high surgical contraindications.
+  - *Dosage*: 8–10 mg/kg/day taken orally in divided doses with meals, continued for 6–24 months. Ultrasound check every 6 months. High recurrence rate ($> 50\%$ within 5 years) once discontinued.
+
+### D. Surgical & Endoscopic Standards of Care:
+1. **Laparoscopic Cholecystectomy (Gold Standard)**:
+   - *Timing*: Early cholecystectomy within 72 hours of symptom onset for acute cholecystitis reduces overall complications and hospital stay compared to delayed surgery.
+   - *Critical View of Safety (CVS - Strasberg Standard)*:
+     1. Dissect hepatocystic triangle clear of fat and fibrous tissue.
+     2. Separate the lowest part of the gallbladder from the cystic plate.
+     3. Ensure only two, and only two, structures enter the gallbladder (Cystic Artery and Cystic Duct). Never clip or cut before achieving 100% CVS.
+   - *Intraoperative Cholangiography (IOC)*: Indicated if anatomy is ambiguous, suspected CBD stone, or dilated bile duct.
+2. **Endoscopic Retrograde Cholangiopancreatography (ERCP)**:
+   - Primary therapeutic intervention for choledocholithiasis: Endoscopic Sphincterotomy (EST) of the Papilla of Vater followed by balloon or Dormia basket stone extraction.
+   - Pre-cut papillotomy, mechanical lithotripsy for stones $> 15\text{ mm}$, or plastic/metallic biliary stent placement for biliary drainage.
+
+---
+
+## 2. Urolithiasis: Ureteral & Renal Calculi (Камни в почках и мочеточниках)
+
+### A. Renal Colic Emergency Triage & Analgesia:
+- **Clinical Presentation**: Sudden-onset, agonizing flank pain radiating along the course of the ureter to the ipsilateral groin, testicle (males), or labia majora (females), microscopic or gross hematuria, nausea, vomiting.
+- **First-Line Analgesic Protocol**:
+  - **Nonsteroidal Anti-Inflammatory Drugs (NSAIDs)**: Gold standard over opioids (reduces ureteral smooth muscle tone and renal pelvic pressure by inhibiting prostaglandin-mediated renal blood flow).
+    - *Diclofenac*: 75 mg IM or 50–100 mg PR.
+    - *Ketorolac*: 30 mg IV/IM.
+    - *Metamizole (Novaminsulfon)*: 1–2.5 g IV infusion.
+  - *Opioids*: Reserved for contraindications to NSAIDs (renal impairment, active peptic ulcer): Morphine 0.1 mg/kg IV or Piritramide.
+- **Red Flag Emergency Criteria (Requires Immediate Decompression)**:
+  - Obstructive urolithiasis with concurrent urinary tract infection/fever (Hydronephrosis + Sepsis / Pyonephrosis).
+  - Anuria or single functioning kidney obstruction.
+  - Intractable pain refractory to intravenous analgesia.
+
+### B. Imaging Diagnostics:
+- **Low-Dose Non-Contrast CT KUB (Kidney, Ureter, Bladder)**: Gold standard modality (sensitivity $> 98\%$, specificity $> 97\%$). Accurately measures stone size (longest axis), exact location (UPJ, mid-ureter, UVJ), Hounsfield Units (HU density: uric acid 300–500 HU vs calcium oxalate 1000–1500 HU), and skin-to-stone distance (SSD).
+- **Renal Ultrasound**: Evaluates degree of hydronephrosis (Grades 1–4) and acoustic shadowing in the renal pelvis, but poor sensitivity for mid-ureteral stones.
+
+### C. Conservative Management & Medical Expulsive Therapy (MET):
+- *Criteria*: Uncomplicated ureteral stone $< 10\text{ mm}$ (highest efficacy for distal ureteral stones $\le 6\text{ mm}$ with spontaneous passage rate up to 80%).
+- *Protocol*:
+  - **Alpha-1 Adrenergic Receptor Blocker**: Tamsulosin 0.4 mg once daily orally for up to 4 weeks (relaxes distal ureteral smooth muscle without inhibiting peristalsis).
+  - Urine straining with fine mesh to catch stone for infrared spectroscopy / crystallographic analysis.
+  - Follow-up imaging within 14–28 days to confirm expulsion and rule out silent hydronephrotic loss of renal function.
+
+### D. Interventional & Surgical Procedures:
+1. **Double-J (JJ) Stenting & Percutaneous Nephrostomy (PCN)**:
+   - Emergent placement of retrograde JJ stent or antegrade PCN tube to decompress the obstructed infected collecting system. Stone extraction is strictly postponed until sepsis has resolved.
+2. **Extracorporeal Shock Wave Lithotripsy (ESWL)**:
+   - *Indications*: Renal stones $< 20\text{ mm}$ (except lower pole $< 10\text{ mm}$), non-obstructive proximal ureteral stones $< 10\text{ mm}$.
+   - *Contraindications*: Pregnancy, uncorrected bleeding disorders, untreated UTI, severe skeletal malformations, aortic/renal artery aneurysm.
+3. **Ureteroscopy (URS) & Retrograde Intrarenal Surgery (RIRS)**:
+   - *Semi-Rigid URS*: Standard for middle and distal (lower) ureteral stones.
+   - *Flexible URS / RIRS*: For proximal ureteral and intrarenal caliceal stones. Access sheath ($10/12\text{ Fr}$ or $11/13\text{ Fr}$) placed over guide wire.
+   - *Holmium:YAG / Thulium Fiber Laser (TFL)*:
+     - **Dusting Mode**: High frequency (30–80 Hz), low pulse energy (0.2–0.5 J) $\rightarrow$ pulverizes stone into fine sand $< 1\text{ mm}$.
+     - **Fragmentation Mode**: Low frequency (5–15 Hz), high pulse energy (1.0–2.0 J) $\rightarrow$ breaks stone into discrete chunks for basket extraction.
+4. **Percutaneous Nephrolithotomy (PCNL & Mini-PCNL)**:
+   - Gold standard for renal stones $> 20\text{ mm}$, staghorn calculi, or lower pole stones $> 15\text{ mm}$. Direct fluoroscopic or ultrasound-guided tract puncture into renal calyx.
+
+---
+
+## 3. Prostatitis & Men's Pelvic Health
+
+### A. NIH Classification of Prostatitis Syndromes:
+1. **Category I: Acute Bacterial Prostatitis (ABP)**: Acute systemic infection with fever, chills, perineal and suprapubic pain, dysuria, obstructive voiding, leukocyturia.
+   - *Critical Warning*: **Vigorous digital rectal examination (DRE) is strictly contraindicated** due to high risk of triggering bacteremia, urosepsis, or prostatic abscess rupture.
+2. **Category II: Chronic Bacterial Prostatitis (CBP)**: Recurrent documented UTIs caused by the same bacterial strain (*E. coli*, *Klebsiella*, *Proteus*, *Enterococcus faecalis*) with intervals of mild pelvic discomfort and irritative LUTS.
+3. **Category III: Chronic Pelvic Pain Syndrome (CPPS)**: Persistent pelvic/perineal pain for $\ge 3$ of the preceding 6 months without identifiable bacterial pathogen on routine cultures.
+   - *Category IIIa (Inflammatory)*: Leukocytes present in expressed prostatic secretion (EPS) or post-massage urine (VB3).
+   - *Category IIIb (Non-Inflammatory)*: No leukocytes present.
+4. **Category IV: Asymptomatic Inflammatory Prostatitis**: Incidental finding of leukocytes in semen or prostate biopsy without clinical complaints. Requires no treatment unless undergoing invasive urologic surgery.
+
+### B. Diagnostic Workflows:
+- **Meares-Stamey 4-Glass Test**:
+  - VB1: First 10 mL voided urine (urethral flora).
+  - VB2: Midstream urine (bladder status).
+  - EPS: Expressed Prostatic Secretion obtained via gentle DRE massage.
+  - VB3: First 10 mL urine immediately following prostatic massage.
+  - *Diagnosis of CBP*: $\ge 10$-fold increase in colony-forming units (CFU/mL) in EPS or VB3 compared to VB1/VB2.
+- **Transrectal Ultrasound (TRUS)**: Performed if suspecting prostatic abscess (hypoechoic fluctuating cavity with thick irregular walls).
+
+### C. Evidence-Based Pharmacotherapy & Interventions:
+1. **Antimicrobial Regimen for Bacterial Prostatitis (Categories I & II)**:
+   - Due to the blood-prostate lipid barrier, only lipid-soluble antibiotics with a favorable pKa effectively penetrate the uninflamed prostatic stroma:
+     - *Fluoroquinolones*: **Ciprofloxacin 500 mg BID** or **Levofloxacin 500 mg once daily** orally. Duration: Category I: 2–4 weeks; Category II: **4–6 weeks continuous course**.
+     - *Alternatives*: Trimethoprim-sulfamethoxazole (TMP-SMX 160/800 mg BID) for 6 weeks; Doxycycline 100 mg BID (especially if *Chlamydia trachomatis* or *Ureaplasma*).
+2. **Symptom-Targeted Therapy for CPPS (Category III - The UPOINT Phenotype)**:
+   - *Urinary*: Alpha-blockers (Tamsulosin 0.4 mg, Alfuzosin 10 mg) for $\ge 12$ weeks to reduce bladder neck dyssynergia.
+   - *Organ-Specific (Prostate)*: Phytotherapy with Pollen extract (Cernilton) or Quercetin 500 mg BID; Saw Palmetto (*Serenoa repens*).
+   - *Psychosocial*: Cognitive Behavioral Therapy (CBT), stress reduction.
+   - *Neurological/Systemic*: Pregabalin, Gabapentin, or Amitriptyline 10–25 mg QHS for central neuropathic sensitization.
+   - *Tenderness / Pelvic Muscle Spasm*: Pelvic floor physical therapy, myofascial trigger-point release (avoid Kegel exercises which increase hypertonic pelvic floor tone).
+3. **Prostatic Abscess Drainage**:
+   - Transurethral unroofing (resection) or transrectal ultrasound-guided needle aspiration under local anesthesia and antibiotic coverage.
 
 ---
 

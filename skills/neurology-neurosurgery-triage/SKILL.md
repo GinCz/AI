@@ -102,3 +102,46 @@ When evaluating any headache, systematically check the **SNOOP4** criteria. A po
   - **Positional**: Worsens markedly when recumbent / lying flat (suggests elevated ICP or mass lesion) or worsens upright (suggests spontaneous intracranial hypotension / low CSF leak).
   - **Papilledema**: Swollen optic discs indicating elevated intracranial pressure.
   - **Precipitated by Valsalva**: Triggered by coughing, sneezing, bending over, or strenuous exercise (rule out Chiari malformation or posterior fossa lesion).
+
+---
+
+## 5. Intracranial Pressure Crises, Pseudotumor Cerebri & Cephalalgia Protocols ("Головное давление")
+
+### A. Intracranial Hypertension Syndromes (IIH / Pseudotumor Cerebri):
+- **Etiology & Demographics**:
+  - *Idiopathic Intracranial Hypertension (IIH)*: Predominantly affects young women with obesity (BMI $\ge 30\text{ kg/m}^2$). Associated with vitamin A derivatives (isotretinoin), tetracyclines, and withdrawal of systemic steroids.
+  - *Secondary Intracranial Hypertension*: Cerebral Venous Sinus Thrombosis (CVST - sagittal/transverse sinus occlusion), space-occupying lesions, hydrocephalus, or severe hypercapnia.
+- **Classic Clinical Tetrad**:
+  1. *Holocranial / Retro-orbital Headache*: Dull, throbbing, characteristically worse upon awakening in the morning, exacerbated by lying flat, coughing, or Valsalva maneuvers.
+  2. *Transient Visual Obscurations (TVOs)*: Brief (seconds-long) darkening, blurring, or dimming of vision, often triggered by standing up or bending over.
+  3. *Pulsatile Tinnitus*: Rhythmic whooshing sound synchronous with the arterial pulse (originates from turbulent venous flow across stenosed transverse sinuses).
+  4. *Diplopia*: Horizontal double vision on lateral gaze secondary to non-localizing uncal traction on Cranial Nerve VI (Abducens palsy).
+- **Diagnostic Criteria (Modified Dandy Criteria)**:
+  - *Dilated Fundoscopy*: Bilateral papilledema (graded 1 to 5 on the Frisén scale: hyperemic disc, blurred margins, loss of physiological venous pulsation, flame hemorrhages, cotton-wool spots).
+  - *Humphrey Visual Field*: Enlarged blind spot, peripheral nasal constriction; untreated cases risk irreversible optic atrophy and blindness!
+  - *Neuroimaging (Brain MRI + MR Venography)*:
+    - Normal brain parenchyma and ventricles (rules out mass lesion or hydrocephalus).
+    - Signs of elevated ICP: **Partially empty sella turcica**, distension of the perioptic subarachnoid space (optic nerve sheath widening $> 5.8\text{ mm}$), flattening of the posterior globe, bilateral transverse venous sinus stenosis.
+  - *Lumbar Puncture (LP)*: **Opening pressure $> 250\text{ mm } H_2O$** (measured in lateral decubitus position with legs extended) with normal CSF cytobiochemical analysis.
+
+### B. Pharmacotherapy & Surgical Interventions for IIH:
+1. **First-Line Medical Therapy**:
+   - **Acetazolamide (Diamox)**: Carbonic anhydrase inhibitor reducing choroid plexus CSF production by 50%. Dosage: Start at 500 mg BID, titrate up to **1000–4000 mg/day** in divided doses. Monitor for metabolic acidosis, hypokalemia, and paresthesias.
+   - **Topiramate**: Weak carbonic anhydrase inhibitor with appetite suppressant action aiding weight loss; 50–100 mg BID.
+   - **Weight Loss**: 10%–15% body weight reduction can induce full clinical remission of IIH.
+2. **Neurosurgical & Endovascular Interventions (for Progressive Visual Loss)**:
+   - **Optic Nerve Sheath Fenestration (ONSF)**: Decompressive micro-incisions in the retrobulbar dural optic nerve sheath allowing local CSF egress, relieving pressure directly at the optic disc to preserve vision.
+   - **Cerebrospinal Fluid Shunting**: Ventriculoperitoneal (VP) or Lumboperitoneal (LP) shunt with programmable adjustable valves to drain excess CSF into the peritoneal cavity.
+   - **Venous Sinus Stenting (VSS)**: Transfemoral placement of self-expanding metallic stent across stenosed transverse dural sinus when a trans-stenotic pressure gradient $\ge 8\text{ mmHg}$ is confirmed on catheter manometry.
+
+### C. Differential Diagnosis & Primary Cephalalgia Protocols:
+- **Migraine with/without Aura**:
+  - *Acute / Abortive*: **Triptans** (Sumatriptan 50–100 mg PO or 6 mg SC; Zolmitriptan 2.5–5 mg) taken at onset of headache (contraindicated in ischemic coronary disease or uncontrolled hypertension); or CGRP receptor antagonists (**Gepants**: Rimegepant 75 mg).
+  - *Preventive*: Monoclonal antibodies targeting CGRP (Erenumab, Fremanezumab, Galcanezumab SC monthly); Beta-blockers (Propranolol, Metoprolol); Anticonvulsants (Topiramate); Tricyclic antidepressants (Amitriptyline).
+- **Tension-Type Headache (TTH)**:
+  - Bilateral, pressing, band-like dull headache without nausea or photophobia. Rx: Paracetamol 1000 mg, Ibuprofen 400 mg, stress reduction; chronic TTH: Amitriptyline 10–25 mg QHS.
+- **Cluster Headache (Trigeminal Autonomic Cephalalgia)**:
+  - Agonizing strictly unilateral periorbital pain accompanied by autonomic signs (ipsilateral lacrimation, conjunctival injection, nasal congestion, miosis/ptosis).
+  - *Abortive Protocol*: **100% Normobaric Oxygen** via non-rebreather mask at **12–15 L/min** for 15–20 minutes + Subcutaneous Sumatriptan 6 mg.
+  - *Prophylaxis*: **Verapamil 240–480 mg/day** (mandatory baseline and dose-titration ECGs monitoring PR interval).
+

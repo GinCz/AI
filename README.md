@@ -13,7 +13,7 @@
 
 [Architecture](#-system-architecture) •
 [Directory Structure](#-repository-structure) •
-[🧠 Skills Framework (35 Production Skills)](skills/) •
+[🧠 Skills Framework (38 Production Skills)](skills/) •
 [Core Pillars](#-core-engineering-pillars) •
 [Quickstart](#-quickstart--agent-onboarding) •
 [Topics & Tags](#-hashtags--topics)
@@ -126,7 +126,7 @@ All architectural components, rules, and scripts are categorized into clean, ded
 | **[`vscode/ ↗`](vscode/)** | **VS Code + Continue.dev, Copilot & Remote-SSH Stack** | Local IDE AI | [`vscode/README.md ↗`](vscode/README.md) |
 | ├── [`config.yaml ↗`](vscode/config.yaml) | Production model configuration (Groq, Mistral, Gemini Flash, Nemotron) | Config | [`vscode/config.yaml ↗`](vscode/config.yaml) |
 | └── [`copilot-instructions.md ↗`](vscode/copilot-instructions.md) | GitHub Copilot in-editor instruction profile | Profile | [`vscode/copilot-instructions.md ↗`](vscode/copilot-instructions.md) |
-| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (35 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
+| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (38 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
 | **[`RULES.md ↗`](RULES.md)** | Root executive rules overview & agent routing entry point | Quick Reference | [`RULES.md ↗`](RULES.md) |
 
 ---

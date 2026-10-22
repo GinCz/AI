@@ -1,14 +1,14 @@
 # 🧠 Master AI Skills & Domain Capabilities Framework
 
 > **Universal public skills library for autonomous AI coding agents, IDEs, and LLMs (Google Antigravity, Cursor, Claude Code, OpenAI Codex, VS Code Continue, GitHub Copilot).**  
-> *Repository:* [GitHub: GinCz/AI/skills ↗](https://github.com/GinCz/AI/tree/main/skills) | *Author:* [Vladimir Bulantsev (@GinCz) ↗](https://github.com/GinCz) | *Version:* v2026-10-22  
+> *Repository:* [GitHub: GinCz/AI/skills ↗](https://github.com/GinCz/AI/tree/main/skills) | *Author:* [Vladimir Bulantsev (@GinCz) ↗](https://github.com/GinCz) | *Version:* v2026-10-23  
 > **Unified Monolith File for Instant Import:** [`ALL_SKILLS.md ↗`](ALL_SKILLS.md) | [Raw URL](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md)
 
 ---
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 35 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 38 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,7 +17,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 35 Battle-Tested Production Skills
+## 🗂️ Catalog of 38 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
@@ -36,6 +36,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`czech-accounting-tax`** | [`czech-accounting-tax/SKILL.md ↗`](czech-accounting-tax/SKILL.md) | **Czech Accounting & Tax** | Czech taxation (DPFO 15/23%, DPPO 21%, DPH 21/12%), flat-rate tax (Paušální daň), ČSSZ, VZP, s.r.o., OSVČ, ISDS. |
 | **`czech-business-law`** | [`czech-business-law/SKILL.md ↗`](czech-business-law/SKILL.md) | **Czech Business Law** | Czech corporate and civil law (ZOK - s.r.o., jednatel duties, insolvency test, dividends; NOZ - contracts, penalties). |
 | **`czech-litigation-advocacy`** | [`czech-litigation-advocacy/SKILL.md ↗`](czech-litigation-advocacy/SKILL.md) | **Czech Litigation** | Czech civil litigation (OSŘ, electronic payment order EPR, appeals, appellate cassation, enforcement). |
+| **`dermatology-skin-diseases`** | [`dermatology-skin-diseases/SKILL.md ↗`](dermatology-skin-diseases/SKILL.md) | **Clinical Medicine & Dermatology** | Dermatology: miliaria/prickly heat, intertrigo, eczema, psoriasis, acne, rosacea, dermoscopy ABCDE, dermatosurgery. |
 | **`devops-cloud-engineering`** | [`devops-cloud-engineering/SKILL.md ↗`](devops-cloud-engineering/SKILL.md) | **DevOps & Cloud** | CI/CD pipelines (GitHub Actions), IaC (Terraform, Ansible), Docker, OCI, NetCup, Prometheus, Grafana, BBR tuning. |
 | **`endpoint-mobile-security`** | [`endpoint-mobile-security/SKILL.md ↗`](endpoint-mobile-security/SKILL.md) | **Endpoint & Mobile Security** | UEFI Secure Boot, BitLocker/LUKS2, HVCI, Wi-Fi kill-switch, Android APK audit (jadx, apksigner), spyware defense. |
 | **`eu-business-law-compliance`** | [`eu-business-law-compliance/SKILL.md ↗`](eu-business-law-compliance/SKILL.md) | **EU Business Law** | EU Single Market, GDPR, EU AI Act, NIS2 cybersecurity, DSA/DMA, commercial contracts, cross-border consumer rules. |
@@ -53,8 +54,10 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`ru-litigation-advocacy`** | [`ru-litigation-advocacy/SKILL.md ↗`](ru-litigation-advocacy/SKILL.md) | **Russian Litigation** | Russian commercial litigation: Commercial Procedure Code APK RF, Civil Procedure GPK RF, interim measures, enforcement. |
 | **`secure-software-engineering`** | [`secure-software-engineering/SKILL.md ↗`](secure-software-engineering/SKILL.md) | **DevOps & Bulletproof Software Engineering** | Bulletproof coding: Windows PowerShell 7+/C# .NET 8/9, Android Kotlin/Compose/Keystore/R8, Linux Server Bash/Go/Rust. |
 | **`server-hardening-zerotrust`** | [`server-hardening-zerotrust/SKILL.md ↗`](server-hardening-zerotrust/SKILL.md) | **Server Hardening** | CIS Benchmarks, SSH ed25519, UFW/Nftables, CrowdSec, WAF, Windows Credential Guard, BitLocker, mTLS, PCI DSS v4.0. |
+| **`somnology-sleep-apnea-snoring`** | [`somnology-sleep-apnea-snoring/SKILL.md ↗`](somnology-sleep-apnea-snoring/SKILL.md) | **Clinical Medicine & Somnology** | Somnology: rhonchopathy/snoring, obstructive sleep apnea (OSA), polysomnography (AHI), CPAP, MAD splints, UPPP/coblation. |
 | **`sysadmin-network-engineering`** | [`sysadmin-network-engineering/SKILL.md ↗`](sysadmin-network-engineering/SKILL.md) | **SysAdmin & Networking** | Linux & Windows Server, PowerShell 7, PBR, VLAN, DoH/DoT, Nginx, obfuscated VPN (Xray Reality, WireGuard), 3-2-1 backup. |
 | **`systematic-debugging`** | [`systematic-debugging/SKILL.md ↗`](systematic-debugging/SKILL.md) | **Software Engineering** | Root-cause isolation, scientific debugging method, hypothesis testing, log analysis, regression prevention. |
+| **`urology-nephrology-cholelithiasis`** | [`urology-nephrology-cholelithiasis/SKILL.md ↗`](urology-nephrology-cholelithiasis/SKILL.md) | **Clinical Medicine & Urology** | Urology & cholelithiasis: gallstones, lap cholecystectomy, ERCP, ureteral stones, URS/RIRS laser, JJ-stenting, prostatitis. |
 | **`writing-plans`** | [`writing-plans/SKILL.md ↗`](writing-plans/SKILL.md) | **Software Engineering** | Step-by-step engineering plan drafting, architecture blueprints, acceptance criteria, milestone verification. |
 
 ---

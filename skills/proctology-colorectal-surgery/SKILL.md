@@ -44,6 +44,16 @@ Hemorrhoidal cushions (*corpus cavernosum recti*) are normal physiological vascu
   - **Management within $\le 72$ hours of onset**: Immediate surgical excision (*trombektomie*) under local anesthesia provides rapid pain relief.
   - **Management after $> 72$ hours**: Clot organization has begun; conservative therapy (ice packs, topical lidocaine, flavonoids, stool softeners) is preferred as spontaneous resolution occurs in 2–3 weeks.
 
+### C. Master Hemorrhoidal Treatment Decision Matrix:
+
+| Stage / Classification | Clinical Hallmarks | First-Line Conservative Therapy | Office-Based & Surgical Modalities |
+| :--- | :--- | :--- | :--- |
+| **Grade I** | Painless rectorrhagia, zero prolapse | High-fiber diet (25–35 g/d), MPFF (*Detralex* 1000 mg/d), topical bioflavonoids | Infrared Photocoagulation (IRC), Sclerotherapy (polidocanol 2–3%) |
+| **Grade II** | Prolapse during defecation, spontaneous reduction | MPFF acute dosing ($3000\rightarrow 2000\rightarrow 1000\text{ mg}$), osmotic laxatives (*Macrogol*) | **Rubber Band Ligation (Barron)**, Laser Hemorrhoidoplasty (LHP), DG-HAL |
+| **Grade III** | Prolapse requiring manual digital reduction | MPFF, stool softening, bridging pre-op preparation | **Longo Stapled Hemorrhoidopexy (PPH)**, DG-HAL/RAR, Laser LHP, Ferguson |
+| **Grade IV** | Permanent irreducible prolapse, mucus discharge | Pain control, local hygiene, reduction of edema | **Excisional Hemorrhoidectomy** (Milligan-Morgan open or Ferguson closed) |
+| **Thrombosed External** | Acute excruciating pain, firm bluish-purple nodule | If $> 72$ hrs: Ice, topical lidocaine/heparin, analgesics, flavonoids | If $\le 72$ hrs: **Immediate surgical excision (thrombectomy)** under 1% lidocaine |
+
 ---
 
 ## 3. Conservative & Pharmacological Management

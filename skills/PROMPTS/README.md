@@ -1,6 +1,6 @@
 # 🤖 Каталог готовых мастер-промптов для сторонних ИИ
 
-> **Библиотека системных промптов (System Prompts):** 29 специализированных направлений
+> **Библиотека системных промптов (System Prompts):** 32 специализированных направлений
 > **Назначение:** Мгновенный перенос экспертных компетенций в ChatGPT (Custom GPTs / Projects), Claude (Projects), DeepSeek, Llama.
 > **Формат:** Чистый автономный текст инструкций без привязки к локальным скриптам и путям Antigravity.
 > **Владелец:** Владимир Буланцев (GinCz) | Актуализация: Октябрь 2026 г.
@@ -40,6 +40,9 @@
 | 27 | **Infrastructure, Network & Firewalls** | Enterprise Network Hardware, Routing & Firewall Specialist (Cisco, UniFi, TP-Link, Next-Gen Firewalls) | [`27_NETWORK_HARDWARE_FIREWALLS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/27_NETWORK_HARDWARE_FIREWALLS_PROMPT.md) | [`network-hardware-firewalls` ↗](file:///D:/AI/BASE/SKILLS/network-hardware-firewalls/SKILL.md) |
 | 28 | **Software Engineering & DevOps** | Secure Software Engineering & DevOps Development Expert (Windows, Android, Linux Server) | [`28_SECURE_SOFTWARE_ENGINEERING_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/28_SECURE_SOFTWARE_ENGINEERING_PROMPT.md) | [`secure-software-engineering` ↗](file:///D:/AI/BASE/SKILLS/secure-software-engineering/SKILL.md) |
 | 29 | **Cybersecurity & Host Defense** | Antivirus, EDR & Host Intrusion Defense Specialist (Windows Defender, Wazuh, EDR, Anti-Ransomware) | [`29_ANTIVIRUS_EDR_THREAT_DEFENSE_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/29_ANTIVIRUS_EDR_THREAT_DEFENSE_PROMPT.md) | [`antivirus-edr-threat-defense` ↗](file:///D:/AI/BASE/SKILLS/antivirus-edr-threat-defense/SKILL.md) |
+| 30 | **Clinical Medicine & Surgery** | Clinical Dermatology & Cutaneous Surgery Specialist (Дерматолог и дерматохирург) | [`30_DERMATOLOGY_SKIN_DISEASES_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/30_DERMATOLOGY_SKIN_DISEASES_PROMPT.md) | [`dermatology-skin-diseases` ↗](file:///D:/AI/BASE/SKILLS/dermatology-skin-diseases/SKILL.md) |
+| 31 | **Clinical Medicine & Surgery** | Urology, Nephrology & Hepatobiliary Lithiasis Specialist (Уролог, нефролог и гепатобилиарный хирург) | [`31_UROLOGY_NEPHROLOGY_CHOLELITHIASIS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/31_UROLOGY_NEPHROLOGY_CHOLELITHIASIS_PROMPT.md) | [`urology-nephrology-cholelithiasis` ↗](file:///D:/AI/BASE/SKILLS/urology-nephrology-cholelithiasis/SKILL.md) |
+| 32 | **Clinical Medicine & Surgery** | Clinical Somnology, Sleep Apnea & Rhonchopathy Specialist (Сомнолог и хирург дыхательных путей) | [`32_SOMNOLOGY_SLEEP_APNEA_SNORING_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/32_SOMNOLOGY_SLEEP_APNEA_SNORING_PROMPT.md) | [`somnology-sleep-apnea-snoring` ↗](file:///D:/AI/BASE/SKILLS/somnology-sleep-apnea-snoring/SKILL.md) |
 
 ---
 ### 💾 Зеркала каталога на диске:
