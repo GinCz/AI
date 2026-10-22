@@ -1,6 +1,6 @@
 # 🤖 Каталог готовых мастер-промптов для сторонних ИИ
 
-> **Библиотека системных промптов (System Prompts):** 32 специализированных направлений
+> **Библиотека системных промптов (System Prompts):** 33 специализированных направлений
 > **Назначение:** Мгновенный перенос экспертных компетенций в ChatGPT (Custom GPTs / Projects), Claude (Projects), DeepSeek, Llama.
 > **Формат:** Чистый автономный текст инструкций без привязки к локальным скриптам и путям Antigravity.
 > **Владелец:** Владимир Буланцев (GinCz) | Актуализация: Октябрь 2026 г.
@@ -43,6 +43,7 @@
 | 30 | **Clinical Medicine & Surgery** | Clinical Dermatology & Cutaneous Surgery Specialist (Дерматолог и дерматохирург) | [`30_DERMATOLOGY_SKIN_DISEASES_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/30_DERMATOLOGY_SKIN_DISEASES_PROMPT.md) | [`dermatology-skin-diseases` ↗](file:///D:/AI/BASE/SKILLS/dermatology-skin-diseases/SKILL.md) |
 | 31 | **Clinical Medicine & Surgery** | Urology, Nephrology & Hepatobiliary Lithiasis Specialist (Уролог, нефролог и гепатобилиарный хирург) | [`31_UROLOGY_NEPHROLOGY_CHOLELITHIASIS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/31_UROLOGY_NEPHROLOGY_CHOLELITHIASIS_PROMPT.md) | [`urology-nephrology-cholelithiasis` ↗](file:///D:/AI/BASE/SKILLS/urology-nephrology-cholelithiasis/SKILL.md) |
 | 32 | **Clinical Medicine & Surgery** | Clinical Somnology, Sleep Apnea & Rhonchopathy Specialist (Сомнолог и хирург дыхательных путей) | [`32_SOMNOLOGY_SLEEP_APNEA_SNORING_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/32_SOMNOLOGY_SLEEP_APNEA_SNORING_PROMPT.md) | [`somnology-sleep-apnea-snoring` ↗](file:///D:/AI/BASE/SKILLS/somnology-sleep-apnea-snoring/SKILL.md) |
+| 33 | **Law, Tax & Financial Liability** | White-Collar Crime, Tax Evasion & Accounting Liability Specialist (CZ, EU, RU) | [`33_WHITE_COLLAR_CRIME_TAX_LIABILITY_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/33_WHITE_COLLAR_CRIME_TAX_LIABILITY_PROMPT.md) | [`white-collar-crime-tax-liability` ↗](file:///D:/AI/BASE/SKILLS/white-collar-crime-tax-liability/SKILL.md) |
 
 ---
 ### 💾 Зеркала каталога на диске:

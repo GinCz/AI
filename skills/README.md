@@ -8,7 +8,7 @@
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 38 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 39 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,7 +17,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 38 Battle-Tested Production Skills
+## 🗂️ Catalog of 39 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
@@ -58,6 +58,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`sysadmin-network-engineering`** | [`sysadmin-network-engineering/SKILL.md ↗`](sysadmin-network-engineering/SKILL.md) | **SysAdmin & Networking** | Linux & Windows Server, PowerShell 7, PBR, VLAN, DoH/DoT, Nginx, obfuscated VPN (Xray Reality, WireGuard), 3-2-1 backup. |
 | **`systematic-debugging`** | [`systematic-debugging/SKILL.md ↗`](systematic-debugging/SKILL.md) | **Software Engineering** | Root-cause isolation, scientific debugging method, hypothesis testing, log analysis, regression prevention. |
 | **`urology-nephrology-cholelithiasis`** | [`urology-nephrology-cholelithiasis/SKILL.md ↗`](urology-nephrology-cholelithiasis/SKILL.md) | **Clinical Medicine & Urology** | Urology & cholelithiasis: gallstones, lap cholecystectomy, ERCP, ureteral stones, URS/RIRS laser, JJ-stenting, prostatitis. |
+| **`white-collar-crime-tax-liability`** | [`white-collar-crime-tax-liability/SKILL.md ↗`](white-collar-crime-tax-liability/SKILL.md) | **Criminal Law & Financial Liability** | White-collar crime, tax evasion (§ 240/241 TZ, Arts. 198/199 UK RF), accounting fraud, corporate criminal liability, EPPO. |
 | **`writing-plans`** | [`writing-plans/SKILL.md ↗`](writing-plans/SKILL.md) | **Software Engineering** | Step-by-step engineering plan drafting, architecture blueprints, acceptance criteria, milestone verification. |
 
 ---
