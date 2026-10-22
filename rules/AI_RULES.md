@@ -145,8 +145,10 @@
 ### 1️⃣5️⃣ RULE 15: AI SANDBOX & DIRECTORY ISOLATION
 * Models must reside strictly within their designated workspace root (e.g. `D:\AI\BASE\` for shared knowledge, with isolated subfolders for each AI engine). Models are strictly prohibited from touching neighboring engines' directories.
 
-### 1️⃣6️⃣ RULE 16: CLICKABLE EXTERNAL LINKS
-* All references to repositories, external documentation, or issue trackers must be formatted as clickable markdown links with an arrow: `[Resource ↗](URL)` (opening in a new tab).
+### 1️⃣6️⃣ RULE 16: DIRECT GITHUB WEB UI LINKS & MANDATORY EDIT-ENABLED REPO LINKS
+* **Strict Web UI Links (Edit Button Mandate):** All references to GitHub files must point directly to the standard GitHub web UI (`https://github.com/<owner>/<repo>/blob/main/<filepath> ↗`). This guarantees Vladimir immediate access to web controls (the "Edit this file" button, commit history, blame).
+* **Strict Prohibition on `raw.githubusercontent.com` and Local `file:///` for Repo Files:** Never provide `raw.githubusercontent.com` links (which display raw unformatted text without GitHub edit controls) or local `file:///` URIs when referencing GitHub files or synchronization results.
+* **Mandatory Clickable Links on Any Change:** Every important response that introduces commits, pushes, or file modifications in any GitHub repository MUST include direct clickable markdown links with an arrow `↗` leading to the modified GitHub files and repository.
 
 ### 1️⃣7️⃣ RULE 17: MANDATORY DOMAIN SKILLS ADOPTION (`skills/`)
 * **Immediate Bootstrap Integration:** When an agent is pointed to this repository or these baseline rules, it is **MANDATORY** to follow the link to [`skills/ ↗`](../skills/) (or read the monolithic compilation [`skills/ALL_SKILLS.md ↗`](../skills/ALL_SKILLS.md)).

@@ -107,8 +107,10 @@ When instructed to read or adopt rules, respond with a concise confirmation (< 3
 * **Technical Code & Comments:** All source code, commit messages, variable names, database schemas, and configuration keys must be strictly in **English**.
 * **Communication Language:** Respect the user's conversational language while keeping technical artifacts in English.
 
-### 2.4. Clickable Links with Arrow Indicator
-* Every reference to external repositories, websites, or documentation must be rendered as a markdown link ending with an arrow: `[Resource Name ↗](URL)`.
+### 2.4. Clickable Links with Arrow Indicator & Direct GitHub Web UI
+* **Strict Web UI Links (Edit Button Mandate):** Every reference to a GitHub repository or file must be rendered as a markdown link ending with an arrow: `[Resource Name ↗](URL)` and point directly to the standard GitHub web UI (`https://github.com/<owner>/<repo>/blob/main/<filepath> ↗`). This guarantees Vladimir immediate access to web controls (the "Edit this file" button, commit history, blame).
+* **Strict Prohibition on `raw.githubusercontent.com` and Local `file:///`:** Never provide `raw.githubusercontent.com` links (which open raw text without GitHub edit controls) or local `file:///` URIs when referencing GitHub files or synchronization results.
+* **Mandatory Clickable Links on Any Change:** Every important response that introduces commits, pushes, or file modifications in any GitHub repository MUST include direct clickable markdown links with an arrow `↗` leading to the modified GitHub files and repository.
 
 ### 2.5. Strict Secrets Policy
 * Credentials, tokens, and private keys must be stored in isolated private vaults (`.env`, private git submodules, or OS credential managers).
