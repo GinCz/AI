@@ -1,6 +1,6 @@
 # 🤖 Каталог готовых мастер-промптов для сторонних ИИ
 
-> **Библиотека системных промптов (System Prompts):** 33 специализированных направлений
+> **Библиотека системных промптов (System Prompts):** 39 специализированных направлений
 > **Назначение:** Мгновенный перенос экспертных компетенций в ChatGPT (Custom GPTs / Projects), Claude (Projects), DeepSeek, Llama.
 > **Формат:** Чистый автономный текст инструкций без привязки к локальным скриптам и путям Antigravity.
 > **Владелец:** Владимир Буланцев (GinCz) | Актуализация: Октябрь 2026 г.
@@ -44,6 +44,12 @@
 | 31 | **Clinical Medicine & Surgery** | Urology, Nephrology & Hepatobiliary Lithiasis Specialist (Уролог, нефролог и гепатобилиарный хирург) | [`31_UROLOGY_NEPHROLOGY_CHOLELITHIASIS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/31_UROLOGY_NEPHROLOGY_CHOLELITHIASIS_PROMPT.md) | [`urology-nephrology-cholelithiasis` ↗](file:///D:/AI/BASE/SKILLS/urology-nephrology-cholelithiasis/SKILL.md) |
 | 32 | **Clinical Medicine & Surgery** | Clinical Somnology, Sleep Apnea & Rhonchopathy Specialist (Сомнолог и хирург дыхательных путей) | [`32_SOMNOLOGY_SLEEP_APNEA_SNORING_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/32_SOMNOLOGY_SLEEP_APNEA_SNORING_PROMPT.md) | [`somnology-sleep-apnea-snoring` ↗](file:///D:/AI/BASE/SKILLS/somnology-sleep-apnea-snoring/SKILL.md) |
 | 33 | **Law, Tax & Financial Liability** | White-Collar Crime, Tax Evasion & Accounting Liability Specialist (CZ, EU, RU) | [`33_WHITE_COLLAR_CRIME_TAX_LIABILITY_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/33_WHITE_COLLAR_CRIME_TAX_LIABILITY_PROMPT.md) | [`white-collar-crime-tax-liability` ↗](file:///D:/AI/BASE/SKILLS/white-collar-crime-tax-liability/SKILL.md) |
+| 34 | **Czech Real Estate & Utilities** | Czech Real Estate, Energy Utilities & SVJ Specialist (Nemovitosti, ČEZ, SVJ a Katastr) | [`34_CZECH_REAL_ESTATE_UTILITIES_PROPERTY_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/34_CZECH_REAL_ESTATE_UTILITIES_PROPERTY_PROMPT.md) | [`czech-real-estate-utilities-property` ↗](file:///D:/AI/BASE/SKILLS/czech-real-estate-utilities-property/SKILL.md) |
+| 35 | **Czech Accounting & ERP Systems** | Stormware POHODA ERP & Operations Specialist (Účetní systém POHODA) | [`35_CZECH_POHODA_ACCOUNTING_OPERATIONS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/35_CZECH_POHODA_ACCOUNTING_OPERATIONS_PROMPT.md) | [`czech-pohoda-accounting-operations` ↗](file:///D:/AI/BASE/SKILLS/czech-pohoda-accounting-operations/SKILL.md) |
+| 36 | **Czech E-Government & Digital Tax** | Czech E-Government, ISDS Data Boxes & DIS+ Specialist (Datové schránky a portál MOJE daně) | [`36_CZECH_E_GOVERNMENT_ISDS_PORTALS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/36_CZECH_E_GOVERNMENT_ISDS_PORTALS_PROMPT.md) | [`czech-e-government-isds-portals` ↗](file:///D:/AI/BASE/SKILLS/czech-e-government-isds-portals/SKILL.md) |
+| 37 | **Czech Immigration & Labor Law** | Czech Permanent Residency & Labor Office Specialist (Trvalý pobyt, OAMP MV ČR a Úřad práce) | [`37_CZECH_IMMIGRATION_RESIDENCY_LABOR_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/37_CZECH_IMMIGRATION_RESIDENCY_LABOR_PROMPT.md) | [`czech-immigration-residency-labor` ↗](file:///D:/AI/BASE/SKILLS/czech-immigration-residency-labor/SKILL.md) |
+| 38 | **Automotive & EU Transport Law** | Automotive Fleet, Insurance & EU Cross-Border Logistics Specialist (Registr vozidel, STK a pojištění) | [`38_AUTOMOTIVE_FLEET_LOGISTICS_CZECH_EU_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/38_AUTOMOTIVE_FLEET_LOGISTICS_CZECH_EU_PROMPT.md) | [`automotive-fleet-logistics-czech-eu` ↗](file:///D:/AI/BASE/SKILLS/automotive-fleet-logistics-czech-eu/SKILL.md) |
+| 39 | **Crypto Assets & Financial Regulation** | Crypto-Asset Taxation, Accounting & MiCA Compliance Specialist (Kryptoměny a daně v ČR) | [`39_CRYPTO_ASSET_ACCOUNTING_TAXATION_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/39_CRYPTO_ASSET_ACCOUNTING_TAXATION_PROMPT.md) | [`crypto-asset-accounting-taxation` ↗](file:///D:/AI/BASE/SKILLS/crypto-asset-accounting-taxation/SKILL.md) |
 
 ---
 ### 💾 Зеркала каталога на диске:

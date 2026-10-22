@@ -8,7 +8,7 @@
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 39 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 45 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,7 +17,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 39 Battle-Tested Production Skills
+## 🗂️ Catalog of 45 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
@@ -28,14 +28,20 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`antivirus-edr-threat-defense`** | [`antivirus-edr-threat-defense/SKILL.md ↗`](antivirus-edr-threat-defense/SKILL.md) | **Antivirus & Host EDR Defense** | Enterprise antivirus, EDR, Windows Defender ASR/WDAC/Sysmon, Linux Wazuh/Falco/ClamAV/AppArmor, anti-ransomware. |
 | **`auto-electronics-diagnostics`** | [`auto-electronics-diagnostics/SKILL.md ↗`](auto-electronics-diagnostics/SKILL.md) | **Automotive & EV** | CAN/LIN bus oscilloscope diagnostics, OBD-II/UDS, parasitics, ECU tuning, EV high-voltage safety. |
 | **`auto-mechanics-powertrain`** | [`auto-mechanics-powertrain/SKILL.md ↗`](auto-mechanics-powertrain/SKILL.md) | **Automotive & Powertrain** | ICE overhaul, Common Rail diesel, DSG/transmissions, heavy commercial trucks, pneumatics, carbs. |
+| **`automotive-fleet-logistics-czech-eu`** | [`automotive-fleet-logistics-czech-eu/SKILL.md ↗`](automotive-fleet-logistics-czech-eu/SKILL.md) | **Automotive & Fleet Logistics** | Portál dopravy, eTechničák, Act 30/2024 Sb. POV, green card abolition, STK inspection categories, Edalnice.cz, cross-border CBE fines. |
 | **`bankruptcy-insolvency-restructuring`** | [`bankruptcy-insolvency-restructuring/SKILL.md ↗`](bankruptcy-insolvency-restructuring/SKILL.md) | **Insolvency & Restructuring** | EU 2015/848, Czech 182/2006 Sb., Russian 127-FZ, subsidiary liability defense, fraudulent conveyance. |
 | **`clinical-cardiology-surgery`** | [`clinical-cardiology-surgery/SKILL.md ↗`](clinical-cardiology-surgery/SKILL.md) | **Clinical Medicine** | Cardiology, cardiac surgery, hypertension guidelines, CAD, 12-lead ECG, GDMT, post-CABG recovery. |
 | **`code-review`** | [`code-review/SKILL.md ↗`](code-review/SKILL.md) | **Software Engineering** | Rigorous code review heuristics, static analysis, performance, concurrency, security, maintainability. |
 | **`compliance-anti-sanctions-aml`** | [`compliance-anti-sanctions-aml/SKILL.md ↗`](compliance-anti-sanctions-aml/SKILL.md) | **Compliance & Sanctions** | EU/US sanctions (OFAC SDN, 50% rule), AMLD5/6, AMLA, KYC, export control, MiCA crypto regulation. |
+| **`crypto-asset-accounting-taxation`** | [`crypto-asset-accounting-taxation/SKILL.md ↗`](crypto-asset-accounting-taxation/SKILL.md) | **Crypto Assets & Taxation** | Czech crypto taxation § 10 ZDP, FIFO/weighted average, no time test, corporate crypto accounting, Bybit/Binance CSV/API, MiCA 2023/1114, DAC8. |
 | **`cyber-defense-pentest`** | [`cyber-defense-pentest/SKILL.md ↗`](cyber-defense-pentest/SKILL.md) | **Cybersecurity** | Offensive security, penetration testing, MITRE ATT&CK, Nmap, Nuclei, Linux/Windows privilege escalation, DFIR. |
 | **`czech-accounting-tax`** | [`czech-accounting-tax/SKILL.md ↗`](czech-accounting-tax/SKILL.md) | **Czech Accounting & Tax** | Czech taxation (DPFO 15/23%, DPPO 21%, DPH 21/12%), flat-rate tax (Paušální daň), ČSSZ, VZP, s.r.o., OSVČ, ISDS. |
 | **`czech-business-law`** | [`czech-business-law/SKILL.md ↗`](czech-business-law/SKILL.md) | **Czech Business Law** | Czech corporate and civil law (ZOK - s.r.o., jednatel duties, insolvency test, dividends; NOZ - contracts, penalties). |
+| **`czech-e-government-isds-portals`** | [`czech-e-government-isds-portals/SKILL.md ↗`](czech-e-government-isds-portals/SKILL.md) | **Czech E-Government & Portals** | Datové schránky ISDS, 10-day delivery fiction, DIS+ MOJE daně electronic submissions § 72 DŘ, e-Portál ČSSZ, VZP Point, BankID authentication. |
+| **`czech-immigration-residency-labor`** | [`czech-immigration-residency-labor/SKILL.md ↗`](czech-immigration-residency-labor/SKILL.md) | **Czech Immigration & Labor** | Trvalý pobyt permanent residency, BioPass 10-year validity, OAMP MV ČR, Úřad práce unemployment benefits, jednatel 0 Kč compatibility, health insurance. |
 | **`czech-litigation-advocacy`** | [`czech-litigation-advocacy/SKILL.md ↗`](czech-litigation-advocacy/SKILL.md) | **Czech Litigation** | Czech civil litigation (OSŘ, electronic payment order EPR, appeals, appellate cassation, enforcement). |
+| **`czech-pohoda-accounting-operations`** | [`czech-pohoda-accounting-operations/SKILL.md ↗`](czech-pohoda-accounting-operations/SKILL.md) | **Czech POHODA Accounting ERP** | Stormware POHODA ERP operations, XML dataPack automation, chart of accounts 0xx–6xx, Fio/ABO pairing, DPH/Kontrolní hlášení, bank reconciliations. |
+| **`czech-real-estate-utilities-property`** | [`czech-real-estate-utilities-property/SKILL.md ↗`](czech-real-estate-utilities-property/SKILL.md) | **Czech Real Estate & Utilities** | ČEZ electricity/gas contracts EAN/EIC, SVJ bylaw governance, Katastr nemovitostí LV, property tax, mortgage interest-only hardship deferral. |
 | **`dermatology-skin-diseases`** | [`dermatology-skin-diseases/SKILL.md ↗`](dermatology-skin-diseases/SKILL.md) | **Clinical Medicine & Dermatology** | Dermatology: miliaria/prickly heat, intertrigo, eczema, psoriasis, acne, rosacea, dermoscopy ABCDE, dermatosurgery. |
 | **`devops-cloud-engineering`** | [`devops-cloud-engineering/SKILL.md ↗`](devops-cloud-engineering/SKILL.md) | **DevOps & Cloud** | CI/CD pipelines (GitHub Actions), IaC (Terraform, Ansible), Docker, OCI, NetCup, Prometheus, Grafana, BBR tuning. |
 | **`endpoint-mobile-security`** | [`endpoint-mobile-security/SKILL.md ↗`](endpoint-mobile-security/SKILL.md) | **Endpoint & Mobile Security** | UEFI Secure Boot, BitLocker/LUKS2, HVCI, Wi-Fi kill-switch, Android APK audit (jadx, apksigner), spyware defense. |
@@ -66,7 +72,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 ## 📁 Standalone System Prompts for External Models (`PROMPTS/`)
 
 If you are configuring Custom GPTs, Claude Projects, or standalone LLMs without filesystem tools, use our dedicated ready-to-copy prompts in [`PROMPTS/ ↗`](PROMPTS/):
-* 26 specialized system prompts pre-compiled for instant deployment.
+* 39 specialized system prompts pre-compiled for instant deployment.
 * Completely self-contained and formatted for 1-click copy-pasting.
 * See [`PROMPTS/README.md ↗`](PROMPTS/README.md) for the complete directory.
 

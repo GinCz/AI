@@ -1,6 +1,6 @@
-# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 39 Skills)
+# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 45 Skills)
 
-> **Single consolidated reference file containing all 39 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
+> **Single consolidated reference file containing all 45 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
 > *GitHub Repository:* https://github.com/GinCz/AI/tree/main/skills  
 > *Raw URL for Direct Fetch:* https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md  
 > *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-23
@@ -16,38 +16,44 @@
 5. [antivirus-edr-threat-defense](#antivirus-edr-threat-defense) — *Antivirus & Host EDR Defense*
 6. [auto-electronics-diagnostics](#auto-electronics-diagnostics) — *Automotive & EV*
 7. [auto-mechanics-powertrain](#auto-mechanics-powertrain) — *Automotive & Powertrain*
-8. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
-9. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
-10. [code-review](#code-review) — *Software Engineering*
-11. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
-12. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
-13. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
-14. [czech-business-law](#czech-business-law) — *Czech Business Law*
-15. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
-16. [dermatology-skin-diseases](#dermatology-skin-diseases) — *Clinical Medicine & Dermatology*
-17. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
-18. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
-19. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
-20. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
-21. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
-22. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
-23. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
-24. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
-25. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
-26. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
-27. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
-28. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
-29. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
-30. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
-31. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
-32. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
-33. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
-34. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
-35. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
-36. [systematic-debugging](#systematic-debugging) — *Software Engineering*
-37. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
-38. [white-collar-crime-tax-liability](#white-collar-crime-tax-liability) — *Criminal Law & Financial Liability*
-39. [writing-plans](#writing-plans) — *Software Engineering*
+8. [automotive-fleet-logistics-czech-eu](#automotive-fleet-logistics-czech-eu) — *Automotive & EU Transport Law*
+9. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
+10. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
+11. [code-review](#code-review) — *Software Engineering*
+12. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
+13. [crypto-asset-accounting-taxation](#crypto-asset-accounting-taxation) — *Crypto Assets & Financial Regulation*
+14. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
+15. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
+16. [czech-business-law](#czech-business-law) — *Czech Business Law*
+17. [czech-e-government-isds-portals](#czech-e-government-isds-portals) — *Czech E-Government & Digital Tax*
+18. [czech-immigration-residency-labor](#czech-immigration-residency-labor) — *Czech Immigration & Labor Law*
+19. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
+20. [czech-pohoda-accounting-operations](#czech-pohoda-accounting-operations) — *Czech Accounting & ERP Systems*
+21. [czech-real-estate-utilities-property](#czech-real-estate-utilities-property) — *Czech Real Estate & Utilities*
+22. [dermatology-skin-diseases](#dermatology-skin-diseases) — *Clinical Medicine & Dermatology*
+23. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
+24. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
+25. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
+26. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
+27. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
+28. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
+29. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
+30. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
+31. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
+32. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
+33. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
+34. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
+35. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
+36. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
+37. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
+38. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
+39. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
+40. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
+41. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
+42. [systematic-debugging](#systematic-debugging) — *Software Engineering*
+43. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
+44. [white-collar-crime-tax-liability](#white-collar-crime-tax-liability) — *Criminal Law & Financial Liability*
+45. [writing-plans](#writing-plans) — *Software Engineering*
 
 ---
 
@@ -794,6 +800,98 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 
 ---
 
+<a name="automotive-fleet-logistics-czech-eu"></a>
+# 📦 SKILL: automotive-fleet-logistics-czech-eu
+*Domain:* **Automotive & EU Transport Law**
+
+---
+name: automotive-fleet-logistics-czech-eu
+description: >-
+  Operational and legal management of vehicles in the Czech Republic and EU: Vehicle Registry (Portál dopravy, eTechničák), mandatory insurance Act 30/2024 Sb., STK inspections, electronic highway vignettes, and cross-border traffic fine defense.
+---
+# Automotive Fleet Management, Insurance & EU Cross-Border Logistics
+
+A comprehensive operational and legal manual for vehicle ownership, registration, mandatory insurance compliance, technical inspections (STK), highway toll systems, and cross-border traffic enforcement across the Czech Republic and the European Union.
+
+---
+
+## 1. Czech Vehicle Registry (Registr silničních vozidel & Portál dopravy)
+
+### A. Digital Vehicle Records & Abolition of Paper Documents (2024+ Reform):
+- **Abolition of the "Large Technical Certificate" (*Velký technický průkaz - TP*)**:
+  - Since January 1, 2024, physical large technical certificates are no longer issued or re-issued. During any registry action (ownership transfer, change of data), the physical large TP is permanently revoked and archived by the municipal authority.
+  - The small certificate (*Osvědčení o registraci vozidla - ORV*) remains the sole document required inside the vehicle.
+- **Digital Access via Portál dopravy & eTechničák**:
+  - Full technical specifications, approved wheel/tire combinations, historical STK inspection records, emissions protocols, and recorded mileage are verified digitally via the **eTechničák** mobile application or web portal ([dataovozidlech.cz ↗](https://dataovozidlech.cz)).
+
+### B. Vehicle Ownership Transfer Protocol (*Přepis vozidla*):
+1. **Mandatory 10-Day Statutory Deadline**:
+   - The transfer of ownership must be registered at any municipal authority with extended competence (*obecní úřad obce s rozšířenou působností - ORP*) within **10 business days** from the signing of the purchase contract (§ 8 Act No. 56/2001 Sb.).
+   - Failure to meet the 10-day deadline: statutory administrative fine of up to **50 000 CZK** on the seller.
+2. **Technical Inspection Check (*Evidenční kontrola*)**:
+   - Compulsory verification that vehicle chassis VIN, engine code, color, and technical parameters match registry data.
+   - **Extended Validity**: Valid for **1 year (365 days)** from the inspection date (previously only 30 days). A regular STK protocol less than 1 year old fully replaces a standalone evidenční kontrola.
+
+---
+
+## 2. Mandatory Vehicle Insurance (Zákon č. 30/2024 Sb. o pojištění odpovědnosti)
+
+### A. The 2024+ Insurance Reform:
+1. **Increased Statutory Minimum Coverage Limits**:
+   - Minimum statutory limit raised to **50 000 000 CZK** for bodily injury per victim and **50 000 000 CZK** for property damage per event.
+2. **Abolition of Paper Green Cards (*Zelená karta*) in the Czech Republic**:
+   - Domestic drivers are **no longer required to carry a paper green card** when driving in the Czech Republic. Police patrols verify active insurance status online in real time against the central database of the Czech Insurers' Bureau (*Česká kancelář pojistitelů - ČKP*).
+   - *Note for Foreign Travel*: When traveling outside the Czech Republic (including Poland, Slovakia, Austria, Germany), carrying a physical printed Green Card (or international insurance card) remains mandatory!
+3. **Pay-as-You-Drive Telematics & Contract Rules**:
+   - Policies based on declared annual mileage (e.g. Pillango, Allianz): Submit annual odometer photo 1 month prior to contract anniversary to avoid retro-billing.
+
+### B. Uninsured Vehicle Penalties (ČKP Sanctions):
+- Every day a registered vehicle remains uninsured incurs statutory daily penalty contributions to the ČKP guarantee fund (ranging from 30 to 300+ CZK/day depending on engine displacement).
+- If an uninsured vehicle causes an accident, the ČKP pays the victim and pursues 100% full regress against the vehicle owner.
+
+---
+
+## 3. Technical Inspection (STK) & Emissions Standards
+
+- **Inspection Cycles**:
+  - New passenger cars (M1): First inspection after **4 years**, then every **2 years**.
+- **Defect Classification**:
+  - **Category A (Minor / Lehká)**: Does not impair safety (e.g. minor surface rust, license plate bulb out). Vehicle passes STK for standard 2-year period.
+  - **Category B (Serious / Vážná)**: Impairs safety or environmental standards (e.g. worn brake pads, excessive play in ball joints, illegal tire size). Temporary pass granted for **30 calendar days**; repeat inspection (*opakovaná STK*) mandatory within 30 days.
+  - **Category C (Dangerous / Nebezpečná)**: Direct threat to life (e.g. brake failure, steering failure, structural chassis corrosion). Immediate **prohibition of operation**; vehicle cannot leave on its own wheels.
+
+---
+
+## 4. Electronic Highway Toll Systems (Edalnice.cz & EU Tolls)
+
+- **Czech Republic (Edalnice.cz)**:
+  - 100% digital vignette tied to license plate (SPZ). Automated enforcement via high-speed overhead ANPR camera gantries and Police/Customs patrol vehicles.
+  - Penalty for driving without active vignette: on-the-spot fine up to **5 000 CZK**, administrative proceedings up to **20 000 CZK**.
+- **Cross-Border Tolls in Central Europe**:
+  - *Austria*: ASFINAG digital vignette (purchased $\ge 18\text{ days}$ in advance for consumer protection withdrawal rule, or immediate activation for businesses) + Section tolls (Brenner, Tauern).
+  - *Poland*: e-TOLL system on state motorways (A2, A4) or automated videotolling via Autopay (AmberOne A1).
+  - *Germany*: Motorways free for passenger cars $< 3.5\text{t}$; mandatory green environmental badge (*Umweltplakette*) for city centers.
+
+---
+
+## 5. Cross-Border Traffic Fines & Defense (Directive (EU) 2015/413 - CBE)
+
+- **Cross-Border Exchange Framework (Cross-Border Enforcement Directive)**:
+  - Allows EU member states (e.g. Poland, Austria, Germany, Italy) automated access to the Czech vehicle register to identify and mail fine notices directly to the vehicle owner for 8 major traffic offenses:
+    1. Speeding.
+    2. Failing to use seat belts.
+    3. Running a red light.
+    4. Driving under the influence of alcohol or drugs.
+    5. Failing to wear safety helmets.
+    6. Illegal use of emergency lanes.
+    7. Illegal use of mobile phones while driving.
+- **Legal Defense & Fine Verification**:
+  - Verify compliance with formal requirements: must be delivered in an official language of the registered owner or in a language the owner understands.
+  - Check photo evidence: clear identification of front/rear license plate and calibration certificates of radar equipment.
+  - Financial settlement: Pay strictly via SEPA credit transfer quoting the exact foreign reference number (*Aktenzeichen / Numer sprawy*) to prevent judicial enforcement abroad.
+
+---
+
 <a name="bankruptcy-insolvency-restructuring"></a>
 # 📦 SKILL: bankruptcy-insolvency-restructuring
 *Domain:* **Insolvency & Restructuring**
@@ -1174,6 +1272,96 @@ The European Union has established the world's first comprehensive regulatory fr
   - Name of the originator (sender), originator's crypto wallet address, account number, physical address, national identity number or date/place of birth.
   - Name of the beneficiary (recipient) and beneficiary's wallet address.
 - **Self-Hosted Wallets (Unhosted Wallets)**: For transfers exceeding **1,000 EUR** to/from unhosted wallets, CASPs are mandated to verify whether the wallet is effectively owned or controlled by the customer.
+
+---
+
+<a name="crypto-asset-accounting-taxation"></a>
+# 📦 SKILL: crypto-asset-accounting-taxation
+*Domain:* **Crypto Assets & Financial Regulation**
+
+---
+name: crypto-asset-accounting-taxation
+description: >-
+  Taxation, accounting, and regulatory compliance for crypto-assets in the Czech Republic and EU: § 10 ZDP rules, FIFO vs weighted average, MiCA regulation (2023/1114), DAC8 reporting, and algorithmic trading tax strategies.
+---
+# Crypto-Asset Taxation, Accounting & MiCA Regulatory Framework (CZ & EU)
+
+A comprehensive legal and financial manual for the tax treatment, accounting classification, and regulatory compliance of cryptocurrencies, stablecoins, decentralized finance (DeFi), algorithmic trading bots, and exchange reporting across the Czech Republic and the European Union.
+
+---
+
+## 1. Statutory Tax Regime in the Czech Republic (Zákon o daních z příjmů - ZDP)
+
+### A. Legal Classification of Crypto-Assets:
+- Under Czech civil and tax law, cryptocurrencies (Bitcoin, Ethereum, USDT) are **not recognized as legal currency or financial instruments**.
+- They are legally classified as **intangible movable assets (*nehmotná movitá věc*)**.
+
+### B. Taxation of Natural Persons (Fyzické osoby - § 10 ZDP):
+1. **Taxable Event (*Zdanitelný moment*)**:
+   - Holding or buying cryptocurrency is **never taxable**.
+   - Tax liability arises exclusively at the moment of **realization (disposition)**:
+     1. Crypto-to-Fiat exchange (e.g. BTC to CZK or EUR).
+     2. **Crypto-to-Crypto exchange** (e.g. BTC to ETH or BTC to USDT): Under current General Financial Directorate (*GFŘ*) interpretations, exchanging one crypto asset for another constitutes a taxable exchange of assets (*směna*) based on the fair market fiat value at the time of the transaction.
+     3. Purchase of goods or services using crypto (paying for electronics, hosting, or cars).
+2. **Tax Rates & Base Calculation**:
+   - Progressive tax rate: **15%** for income up to the progressive threshold (36 times the average wage, ~1.58M CZK), and **23%** for income exceeding this threshold.
+   - **Cost Valuation Methods**:
+     - **FIFO (First-In, First-Out)**: First purchased crypto unit is sold first.
+     - **Weighted Arithmetic Average (*Vážený aritmetický průměr*)**: Recomputed upon every purchase. Must be consistently applied for the entire tax period.
+3. **Critical Czech Tax Specifics (Key Risks)**:
+   - **Zero Time Test (*Žádný časový test*)**: Unlike publicly traded securities (which enjoy a complete tax exemption after a 3-year holding period under § 4 odst. 1 písm. u) ZDP), **cryptocurrencies enjoy ZERO statutory time test** in the Czech Republic. Even holding Bitcoin for 10 years requires paying 15%/23% tax upon realization!
+   - **No Loss Offset Across Categories**: A net loss from cryptocurrency trading under § 10 ZDP **cannot be offset** against income from employment (§ 6), business activity (§ 7), or rental income (§ 9). Unutilized crypto losses cannot be carried forward to future years!
+
+---
+
+## 2. Taxation of Corporate Entities (s.r.o. - § 21 ZDP) & Accounting
+
+### A. Corporate Accounting Rules (Czech Accounting Standards - ČÚS):
+- Crypto assets must be tracked in stock inventory (`132 - Zboží na skladě`) if held for trading, or as other financial assets (`069 - Ostatní dlouhodobý finanční majetek`) if held long-term.
+- **Corporate Income Tax (DPPO)**: Net realized profits taxed at the standard corporate rate of **21%**.
+- **Year-End Valuation**: Under accounting conservatism, crypto assets cannot be revalued upward above acquisition cost, but an impairment allowance (*opravná položka*) must be booked if market value on December 31 falls below acquisition cost.
+
+### B. Value Added Tax (DPH / VAT Status):
+- **Court of Justice of the European Union (CJEU) Precedent**: *Skatteverket v. David Hedqvist* (Case C-264/14).
+- The exchange of fiat currency for virtual currency (and vice versa) constitutes a financial service **exempt from VAT without credit (*osvobozené plnění bez nároku na odpočet daně*)** under § 54 odst. 1 písm. a) of the Czech VAT Act (č. 235/2004 Sb.) and Article 135(1)(e) of the EU VAT Directive.
+
+---
+
+## 3. Algorithmic Trading Bots & High-Frequency Operations
+
+### A. Tax Auditing & Evidence Requirements:
+- Trading bots (e.g. `Crypto_BOT`) executing hundreds or thousands of micro-transactions per month on exchanges (Bybit, Binance, OKX) generate massive transaction histories.
+- **Mandatory Audit Trail**:
+  - The taxpayer carries the statutory burden of proof (§ 92 Daňový řád).
+  - Must export and permanently preserve raw API trading logs (CSV / JSON) containing:
+    1. Transaction timestamp (UTC).
+    2. Pair traded (e.g. BTC/USDT).
+    3. Order type (Limit, Market).
+    4. Exact executed price, volume, and trading fee paid.
+    5. Equivalent CZK value at the Czech National Bank (ČNB) fixing rate for that date.
+
+---
+
+## 4. European Regulatory Framework: MiCA & DAC8
+
+### A. The MiCA Regulation (Markets in Crypto-Assets - Regulation (EU) 2023/1114):
+1. **Scope & Asset Classification**:
+   - *Asset-Referenced Tokens (ARTs)*: Stablecoins pegged to multiple fiat currencies, commodities, or baskets.
+   - *Electronic Money Tokens (EMTs)*: Stablecoins pegged to a single official fiat currency (e.g. EURC, USDC). Must maintain 1:1 liquid reserve backed in commercial bank deposits.
+   - *Utility Tokens*: Tokens providing digital access to an application.
+2. **Crypto-Asset Service Providers (CASPs)**:
+   - Mandatory authorization by national competent authorities (Czech National Bank - ČNB in the Czech Republic).
+   - Strict capital requirements, custody segregation, and ban on algorithmic uncollateralized stablecoins.
+
+### B. The DAC8 Directive (Automated Tax Reporting by Exchanges):
+- **EU Council Directive 2023/2226 (DAC8)**:
+  - Mandates all CASPs (including centralized exchanges operating inside or targeting users in the EU: Bybit, Binance, Kraken, Coinbase) to **automatically report all user transactions, balances, and gross realization proceeds to national tax authorities**.
+  - Direct automatic exchange of data between EU member states and the Czech Financial Administration (*Finanční správa ČR*).
+  - *Operational Conclusion*: Concealing exchange trading volumes is mathematically impossible under DAC8. All balances and transactions are transparent to tax auditors.
+
+### C. Anti-Money Laundering (AML) & The Travel Rule:
+- Under Regulation (EU) 2023/1113 (Transfer of Funds Regulation), every crypto transfer exceeding **€1 000** between CASPs and self-hosted wallets must include originator and beneficiary identifying data (full name, account number, residential address / ID number).
+- High-value or unverified source-of-funds deposits face immediate automatic freezes by exchange compliance engines.
 
 ---
 
@@ -1632,6 +1820,174 @@ The illegal practice of contracting an individual as an independent contractor (
 
 ---
 
+<a name="czech-e-government-isds-portals"></a>
+# 📦 SKILL: czech-e-government-isds-portals
+*Domain:* **Czech E-Government & Digital Tax**
+
+---
+name: czech-e-government-isds-portals
+description: >-
+  Operational workflows, legal rules, and filing standards for Czech electronic public administration: Data Boxes (ISDS), Tax Portal MOJE daně (DIS+), e-Portál ČSSZ, health insurance portals (VZP, OZP), and BankID.
+---
+# Czech E-Government: ISDS Data Boxes, DIS+ & State Portals
+
+A comprehensive operational manual for navigating electronic public administration in the Czech Republic, managing official Data Box (ISDS) communications, submitting mandatory tax filings via DIS+, and auditing social and health insurance portals.
+
+---
+
+## 1. Data Boxes (Datové schránky / ISDS - Act No. 300/2008 Sb.)
+
+### A. Legal Nature & Mandatory Allocation:
+- **Mandatory Creation by Law**:
+  - All legal entities (*právnické osoby* - s.r.o., a.s.) and registered sole proprietors (*podnikající fyzické osoby - OSVČ*).
+  - Private individuals (*fyzické osoby nepodnikající*) can activate optionally or automatically upon logging into public administration via BankID.
+- **Statutory Delivery Rule (*Fikce doručení* - § 17 odst. 4 Act 300/2008 Sb.)**:
+  - A message sent by a public authority is legally delivered the moment the authorized user logs into the Data Box.
+  - **Fictional Delivery after 10 Days**: If the user does not log into the Data Box within **10 days** from the day the message was deposited, the message is considered **legally delivered on the 10th day**, even if never opened or read. Procedural appeal deadlines (typically 15 or 30 days) start running immediately from day 10.
+  - *Exclusion of Delivery Fiction*: Only if the document is explicitly designated for personal delivery (*do vlastních rukou*) and law excludes fictional delivery.
+
+### B. Technical Formats, Signatures & Message Retention:
+- **Statutory Formats**: Official filings to authorities must be in `PDF/A`, `XML` (prescribed schemas for tax and social security), or `ZFO` (digitally signed data message container).
+- **Automated Electronic Signature**: Messages sent from the user's Data Box to a public authority do not require a separate qualified electronic signature (QES / *uznávaný elektronický podpis*); delivery via the authenticated Data Box serves as statutory personal signature (§ 18 odst. 2).
+- **Standard 90-Day Deletion Window**:
+  - By default, messages are permanently erased from the ISDS portal after **90 days**.
+  - *Operational Defense*: Download and archive all incoming/outgoing messages in `.zfo` format (includes the complete cryptographic timestamp and digital certificate chain for court evidence) or activate the paid *Datový trezor* service.
+
+---
+
+## 2. Tax Portal MOJE daně & Daňová informační schránka plus (DIS+)
+
+### A. Mandatory Electronic Filing (§ 72 & § 247a Daňový řád - DŘ):
+- **Statutory Form Requirement**: Any taxpayer who has a statutory Data Box (*ze zákona zřízená datová schránka*) is **strictly obligated** to submit tax returns, supplementary returns, and notifications electronically in XML format via:
+  1. Datová schránka (uploading XML generated from accounting software or EPO).
+  2. The DIS+ portal (authenticated via BankID, MojeID, or eObčanka).
+- **Penalty for Paper or Invalid Format (§ 247a odst. 2 DŘ)**:
+  - If a tax return is filed in paper format or sent via email without a qualified electronic signature, the Tax Authority automatically issues a statutory penalty of **1 000 CZK**.
+  - If the taxpayer fails to remedy the defect after official notice, the penalty can reach up to **50 000 CZK**.
+
+### B. DIS+ Operational Capabilities:
+- View real-time **Personal Tax Accounts (*Osobní daňové účty*)**: check overpayments, underpayments, and accrued interest (*úroky z prodlení*) across individual taxes (DPH, DPFO, DPPO, srážková daň).
+- Automatic generation of payment QR codes (**SPAYD standard**) with correct bank accounts, prefix codes, and Variabilní symbol (Birth number for individuals, IČO for legal entities).
+
+---
+
+## 3. Social Security Administration (e-Portál ČSSZ)
+
+### A. Mandatory Electronic Submissions:
+- All filings for employers and OSVČ must be executed electronically via the VREP framework or authenticated via e-Portál ČSSZ:
+  - **Přehled o příjmech a výdajích OSVČ**: Annual overview of income and expenses.
+  - **Evidenční list důchodového pojištění (ELDP)**: Annual pension insurance record per employee.
+  - **Oznámení o nástupu do zaměstnání (ONZ)**: Reporting commencement/termination of employment within 8 calendar days.
+
+### B. Verification of Insurance Periods (*Konto pojištěnce*):
+- Audit personal pension insurance history (*Informativní osobní list důchodového pojištění - IOLDP*): verify all registered years of employment, substitute insurance periods (*náhradní doby pojištění* - studies, care of children), and wage assessment bases (*vyměřovací základy*).
+
+---
+
+## 4. Health Insurance Portals (VZP Point & Vitakarta OZP)
+
+### A. Employer & OSVČ Obligations:
+- Annual filing of **Přehled OSVČ pro zdravotní pojišťovnu** within 1 month following the tax return deadline.
+- Mass reporting of insured persons: 8-day deadline to report changes (hiring, termination, commencement of unpaid leave).
+- Account balance verification: Real-time monitoring of monthly prepayment allocations (*přehled plateb a záloh*).
+
+### B. Digital Identity Ecosystem (Identita občana & BankID):
+- National identity gateway (*Národní bod pro identifikaci a autentizaci - NIA*).
+- **BankID (Bankovní identita)**: Primary zero-cost authentication tool for all Czech e-government portals, signing PDF documents, and verifying identity across banks, utilities (ČEZ ON-LINE), and state registries.
+
+---
+
+<a name="czech-immigration-residency-labor"></a>
+# 📦 SKILL: czech-immigration-residency-labor
+*Domain:* **Czech Immigration & Labor Law**
+
+---
+name: czech-immigration-residency-labor
+description: >-
+  Legal and procedural workflows for Czech permanent residency (Trvalý pobyt), Foreigners Residence Act (326/1999 Sb.), Ministry of Interior (OAMP MV ČR), Labor Office (Úřad práce), and social insurance continuity.
+---
+# Czech Immigration, Permanent Residency (Trvalý pobyt) & Labor Office
+
+A master operational and legal manual for maintaining permanent resident status, interacting with the Ministry of the Interior (OAMP MV ČR), complying with foreigners' residence regulations, and managing employment transitions via the Labor Office (Úřad práce) in the Czech Republic.
+
+---
+
+## 1. Permanent Residency Governance (Zákon č. 326/1999 Sb., o pobytu cizinců)
+
+### A. Legal Nature of Permanent Residence (*Trvalý pobyt*):
+- Grants foreign nationals equal status with Czech citizens in the social security system, public health insurance, free access to the labor market (zero work permit requirements), and educational systems (excluding voting rights in national elections and military service).
+- **Biometric Residence Card (*Biometrický průkaz / BioPass*)**:
+  - Standard validity: **10 years** for adults (extendable repeatedly).
+  - Extension application window: File for renewal at OAMP MV ČR within **90 days prior to the expiration date**.
+
+### B. Grounds for Revocation of Permanent Residence (§ 77 Act 326/1999 Sb.):
+A permanent residence permit **cannot be arbitrarily revoked**, but statutory grounds exist and must be strictly guarded against:
+1. **Absence from the Territory of EU Member States**:
+   - Continuous physical absence from the territory of the European Union for a period exceeding **12 consecutive months** (unless justified by serious reasons: military service, pregnancy, serious illness, studies).
+2. **Absence from the Territory of the Czech Republic**:
+   - Continuous physical absence from the territory of the Czech Republic for a period exceeding **6 consecutive years**.
+3. **Public Order & National Security (§ 77 odst. 2)**:
+   - Final conviction for an intentional criminal offense with an unconditional prison sentence exceeding 3 years.
+   - Fraudulent acquisition of permanent residence (false documents, sham marriage, fictitious fatherhood).
+
+---
+
+## 2. Interaction with the Ministry of the Interior (OAMP MV ČR)
+
+### A. Reporting Obligations & Deadlines:
+- **Change of Residential Address (*Změna místa pobytu*)**:
+  - Permanent residents must report a change of address within **30 business days** of the change if the new stay exceeds 180 days.
+  - Required documents: Completed form, proof of accommodation (*Doklad o zajištění ubytování* signed with verified signature of owner, or lease contract).
+- **Change of Personal Data**:
+  - Name, marital status, nationality, or passport renewal must be reported within **3 business days**.
+
+### B. Travel Freedom & EU Long-Term Resident Status:
+- The biometric card bearing the mark **"Povolení k trvalému pobytu / Platný v EU jako dlouhodobě pobývající rezident"** allows visa-free entry and stay in other Schengen Area countries for up to **90 days in any 180-day period** for tourism or business visits.
+
+---
+
+## 3. Labor Office Governance (Úřad práce ČR) & Unemployment Rights
+
+### A. Registration as Job Seeker (*Evidence uchazečů o zaměstnání*):
+- Permanent residents possess unconditional legal entitlement to register at the Labor Office upon termination of employment, business cessation, or bankruptcy.
+- **Registration Deadline**: File the application within **3 business days** following the termination of employment or business to ensure seamless social and health insurance continuity without a single uncovered day.
+
+### B. Unemployment Benefits (*Podpora v nezaměstnanosti* - Act No. 435/2004 Sb.):
+1. **Qualifying Condition**:
+   - Acquisition of at least **12 months of pension insurance (*doba důchodového pojištění*)** within the preceding 2 years (earned through employment, active OSVČ paying pension insurance, or substitute periods).
+2. **Support Period Duration (*Podpůrčí doba*)**:
+   - Under 50 years of age: **5 months**.
+   - 50 to 55 years of age: **8 months**.
+   - Over 55 years of age: **11 months**.
+3. **Calculation Percentages**:
+   - Months 1–2: **65%** of the average net monthly wage (or assessment base for OSVČ).
+   - Months 3–4: **50%**.
+   - Remaining months: **45%**.
+   - Statutory ceiling applies (maximum support capped at approx. 0.58 times the national average wage, ~24 000 CZK/month).
+   - *If employment was terminated by employee without serious cause*: Capped at 45% for the entire period.
+
+---
+
+## 4. Corporate Executives & Úřad práce (Jednatel s.r.o. Compatibility)
+
+### A. Holding Executive Function while Registered at the Labor Office:
+- **Legal Rule**: Under § 25 odst. 1 písm. h) of the Employment Act (č. 435/2004 Sb.), a person who is an executive (*jednatel*) of an s.r.o. **CAN be registered as a job seeker** at the Labor Office ONLY IF:
+  - The executive receives **zero remuneration (*výkon funkce bez odměny / 0 Kč*)**, confirmed by an official declaration and General Meeting resolution.
+  - If the executive receives even 1 CZK in remuneration, registration at the Labor Office is canceled by law.
+- **Benefit Entitlement for Unpaid Executives**:
+  - While an unpaid jednatel can remain registered (ensuring state-paid health insurance), they are **not entitled to unemployment financial benefits (*nemá nárok na podporu v nezaměstnanosti*)** while holding the executive post.
+  - To receive cash unemployment benefits, the executive function must be formally resigned and recorded in the Commercial Register (*Obchodní rejstřík*).
+
+---
+
+## 5. Health Insurance Coverage During Transitions (VZP / OZP)
+
+- **State-Paid Category (*Státní pojištěnec*)**:
+  - The moment an individual is successfully registered in the register of job seekers at Úřad práce, the **Czech state pays public health insurance contributions directly** to their insurance fund (VZP or OZP) under § 7 odst. 1 písm. b) of Act No. 48/1997 Sb.
+  - Eliminates the mandatory minimum health insurance contribution (~2 968 CZK/month in 2024–2026 for persons without taxable income - OBZP).
+
+---
+
 <a name="czech-litigation-advocacy"></a>
 # 📦 SKILL: czech-litigation-advocacy
 *Domain:* **Czech Litigation**
@@ -1781,6 +2137,241 @@ Governs non-contractual attorney remuneration (*mimosmluvní odměna*) and the s
   - Drafting of appellate brief (*odvolání*) or cassation (*dovolání*).
   - Participation in court hearing (each commenced 2 hours counts as 1 act).
 - **Lump-sum Outlay Allowance (*Režijní paušál* - § 13 odst. 4)**: Flat statutory fee of **300 CZK** per legal act to cover administrative and postal expenses, plus VAT (21%) if the advocate is a registered VAT payer.
+
+---
+
+<a name="czech-pohoda-accounting-operations"></a>
+# 📦 SKILL: czech-pohoda-accounting-operations
+*Domain:* **Czech Accounting & ERP Systems**
+
+---
+name: czech-pohoda-accounting-operations
+description: >-
+  Operational workflows, XML automation, chart of accounts, VAT control statement reconciliation, and financial closing procedures for the Czech Stormware POHODA accounting software.
+---
+# Stormware POHODA ERP: Operational Bookkeeping & Automation
+
+A specialized operational manual for executing bookkeeping, invoicing, XML data transformations, bank reconciliation, VAT reporting, and year-end closing within the Czech Stormware POHODA accounting ecosystem.
+
+---
+
+## 1. POHODA Architecture & Data Exchange (XML Interface)
+
+### A. Core Directory Structure & Windows Environment:
+- Standard paths on dedicated accounting servers:
+  - Database root: `C:\Program Files (x86)\Stormware\Pohoda\Data\` (MDB file for POHODA Standard/Profi, Microsoft SQL Server for POHODA SQL/E1).
+  - XML Exchange folders: `...\Data\XML\Input\` and `...\Data\XML\Output\`.
+- **Command-Line Silent Automation (`pohoda.exe`)**:
+  ```powershell
+  # Run automated XML import of invoices into POHODA in batch mode
+  & "C:\Program Files (x86)\Stormware\Pohoda\Pohoda.exe" /XML "C:\Accounting\Batch\invoice_import.xml" /CONFIG "C:\Accounting\Batch\pohoda_config.ini"
+  ```
+
+### B. Standard POHODA XML Invoicing Structure:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<dat:dataPack id="PACK_2026_001" ico="12345678" application="CustomERP" version="2.0" 
+              note="Import Issued Invoices" xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd" 
+              xmlns:inv="http://www.stormware.cz/schema/version_2/invoice.xsd" 
+              xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd">
+  <dat:dataPackItem id="INV_1079" version="2.0">
+    <inv:invoice version="2.0">
+      <inv:invoiceHeader>
+        <inv:invoiceType>issuedInvoice</inv:invoiceType>
+        <inv:number>
+          <typ:numberRequested>2026001079</typ:numberRequested>
+        </inv:number>
+        <inv:symVar>2026001079</inv:symVar>
+        <inv:date>2026-10-07</inv:date>
+        <inv:dateTax>2026-10-07</inv:dateTax>
+        <inv:dateDue>2026-10-21</inv:dateDue>
+        <inv:text>IT Consultancy & Infrastructure Engineering</inv:text>
+        <inv:partnerIdentity>
+          <typ:address>
+            <typ:company>EU Partner S.r.l.</typ:company>
+            <typ:country>
+              <typ:ids>ITA</typ:ids>
+            </typ:country>
+            <typ:vatId>IT12345678901</typ:vatId>
+          </typ:address>
+        </inv:partnerIdentity>
+        <inv:classificationVAT>
+          <!-- Reverse Charge EU services § 24a / Souhrnné hlášení code 3 -->
+          <typ:ids>UDslEU</typ:ids>
+        </inv:classificationVAT>
+      </inv:invoiceHeader>
+      <inv:invoiceDetail>
+        <inv:invoiceItem>
+          <inv:text>DevOps & Cloud Engineering Services</inv:text>
+          <inv:quantity>1</inv:quantity>
+          <inv:unit>hours</inv:unit>
+          <inv:homeCurrency>
+            <typ:unitPrice>25000</typ:unitPrice>
+          </inv:homeCurrency>
+        </inv:invoiceItem>
+      </inv:invoiceDetail>
+    </inv:invoice>
+  </dat:dataPackItem>
+</dat:dataPack>
+```
+
+---
+
+## 2. Chart of Accounts (*Účtový rozvrh*) & Posting Rules for s.r.o.
+
+### Standard Account Classes & Typical Journal Entries:
+| Class | Account | Description | Debit (MD) | Credit (D) | Business Context |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **0** | `022 / 082` | Tangible Assets & Depreciation | `551` | `082` | Monthly asset depreciation ($> 80\text{k CZK}$) |
+| **2** | `221` | Bank Account (Fio, ČSOB) | `221` | `311` | Client invoice payment received |
+| **2** | `221` | Bank Account | `321` | `221` | Supplier invoice payment sent |
+| **3** | `311` | Trade Receivables (*Odběratelé*) | `311` | `602` | Issued invoice for services |
+| **3** | `321` | Trade Payables (*Dodavatelé*) | `518 / 501`| `321` | Received invoice for hosting / software |
+| **3** | `343` | Value Added Tax (DPH) | `343` | `321` | Input VAT on domestic purchases |
+| **3** | `343` | Value Added Tax (DPH) | `311` | `343` | Output VAT on domestic sales (21%) |
+| **3** | `331 / 336`| Wages & Social/Health Insurance | `521 / 524`| `331 / 336`| Monthly payroll obligations |
+| **5** | `563` | Foreign Exchange Loss | `563` | `311 / 321`| Negative exchange difference at settlement |
+| **6** | `663` | Foreign Exchange Gain | `311 / 321`| `663` | Positive exchange difference at settlement |
+
+---
+
+## 3. Bank Statement Automation & Pairing (*Homebanking*)
+
+1. **Format Standards**:
+   - ABO format (`.gpc`) or Fio XML bank statement format.
+2. **Automated Pairing Algorithm in POHODA**:
+   - POHODA pairs incoming and outgoing transactions against open invoices based on:
+     1. **Variabilní symbol (VS)**: Primary unique key. Must strictly match invoice number.
+     2. **Amount**: Currency and exact sum matching.
+     3. **Counterparty Bank Account**: Pairing against saved Address Book accounts.
+3. **Internal Transfers & Transit Account (`261 - Peníze na cestě`)**:
+   - Never post cash withdrawals or bank-to-bank transfers directly between two bank accounts (`221_1` to `221_2`). Always route through transit account `261`:
+     - Bank 1 outflow: `MD 261 / D 221_1`
+     - Bank 2 inflow: `MD 221_2 / D 261`
+   - Balance on account `261` must equal zero at closing.
+
+---
+
+## 4. VAT & Control Statement Audit (*Členění DPH a Kontrolní hlášení*)
+
+### POHODA VAT Classification Codes Matrix:
+- `UD`: Domestic supply with standard VAT 21% $\rightarrow$ DPH return line 1, Kontrolní hlášení section **A.4** (if $> 10,000\text{ CZK}$) or **A.5** (if $\le 10,000\text{ CZK}$).
+- `PD`: Domestic purchase with VAT credit $\rightarrow$ DPH return line 40, Kontrolní hlášení section **B.2** ($> 10,000\text{ CZK}$) or **B.3** ($\le 10,000\text{ CZK}$).
+- `UDslEU`: Supply of service to an EU VAT-registered business under Reverse Charge (§ 24a ZDPH) $\rightarrow$ DPH return line 21, **Souhrnné hlášení code 3**. Zero domestic VAT.
+- `PDP`: Local Reverse Charge in the Czech Republic (§ 92a ZDPH: construction work, IT hardware wholesale $> 100\text{k CZK}$) $\rightarrow$ DPH return line 25, Kontrolní hlášení section **A.1 / B.1**.
+
+---
+
+## 5. Month-End & Year-End Closing Protocol (*Účetní uzávěrka*)
+
+1. **Foreign Exchange Revaluation as of December 31**:
+   - All foreign currency accounts (EUR, USD in Fio banka) and unpaid foreign receivables/payables must be revalued using the Czech National Bank (ČNB) fixing rate published on December 31 (§ 24 odst. 6 Act on Accounting).
+2. **Accruals & Deferrals (*Časové rozlišení*)**:
+   - Costs of future periods (`381 - Náklady příštích období`): Annual software licenses, domain hosting, or insurance paid in advance for the next year.
+   - Accrued revenue (`385 - Příjmy příštích období`): Work delivered in current year but invoiced in January.
+3. **Inventory & Fixed Asset Depreciation**:
+   - Execute annual tax depreciation run (*Daňové odpisy*) and compare against accounting depreciation (*Účetní odpisy*). Difference booked as tax adjustment in the Corporate Tax Return (DPPO).
+
+---
+
+<a name="czech-real-estate-utilities-property"></a>
+# 📦 SKILL: czech-real-estate-utilities-property
+*Domain:* **Czech Real Estate & Utilities**
+
+---
+name: czech-real-estate-utilities-property
+description: >-
+  Operational workflows and legal reference for Czech real estate, property management, energy utilities (ČEZ, Innogy), SVJ governance, land registry (Katastr nemovitostí), property taxation (Daň z nemovitých věcí), and mortgage administration.
+---
+# Czech Real Estate, Energy Utilities, SVJ & Property Governance
+
+A master operational and legal manual for managing residential and commercial real estate in the Czech Republic, navigating utility contracts (ČEZ, gas, water), governing homeowners' associations (SVJ), securing rights in the Land Registry (Katastr nemovitostí), and complying with property taxation.
+
+---
+
+## 1. Energy Utilities Management (ČEZ, Plyn, Elektřina)
+
+### A. Core Technical & Contractual Identifiers:
+- **EAN (European Article Number for Electricity)**: 18-digit unique code identifying the electricity consumption point (*odběrné místo - OM*).
+- **EIC (Energy Identification Code for Gas)**: 16-character alphanumeric code identifying the gas consumption point.
+- **Zákaznické číslo & Variabilní symbol (VS)**: Account pairing identifiers for billing and monthly prepayments (*zálohy*).
+- **Distribution Rate (*Distribuční sazba*)**:
+  - `D02d`: Standard residential rate for lighting, appliances, without electric heating/boiler.
+  - `D25d / D57d`: Dual-tariff rates (high tariff VT / low tariff NT - *noční proud*) for electric water heating (boiler) or heat pumps (*tepelné čerpadlo*). Requires ripple control receiver (*HDO - hromadné dálkové ovládání*).
+
+### B. Bill Auditing & Prepayment Optimization (*Vyúčtování a zálohy*):
+1. **Annual Reconciliation (*Roční vyúčtování*)**:
+   - Check invoiced meter readings (*počáteční a koncový stav měřidla*) against physical meter photos.
+   - Differentiate between **regulated prices** set by the Energy Regulatory Office (*Energetický regulační úřad - ERÚ*: distribution fee, system services, OZE renewables surcharge) and **unregulated commodity prices** set by the supplier (MWh price + fixed monthly fee).
+2. **Prepayment Adjustments (*Optimalizace záloh*)**:
+   - In periods of reduced income or vacancy, immediately lower monthly prepayments via the ČEZ ON-LINE portal to the statutory minimum required by historical consumption.
+3. **Supplier Switching & Fixed vs Spot Contracts**:
+   - Notice period for indefinite contracts: 3 months starting from the 1st day of the next calendar month (§ 11a Energetický zákon č. 458/2000 Sb.).
+   - Fixed-term contracts (*smlouva na dobu určitou*): Termination before term incurs contractual penalties unless exiting upon price increase (§ 11a odst. 4).
+
+---
+
+## 2. SVJ Governance & Community Living (NOZ §§ 1158–1222)
+
+### A. Legal Structure of Společenství vlastníků jednotek (SVJ):
+- **Statutory Bodies**: Committee (*Výbor SVJ*) or Professional Chairman (*Předseda SVJ*). Highest body is the General Assembly (*Shromáždění vlastníků*).
+- **Bylaws (*Stanovy SVJ*)**: Primary governing document defining common parts of the building, quorum rules, and voting shares based on unit floor area ratio (*podlahová plocha jednotky*).
+- **Voting Mechanism**:
+  - Standard decisions: Absolute majority of votes of present owners at a quorate assembly ($\ge 50\%$ of all shares present).
+  - Voting outside meeting (*Per rollam* - § 1210 NOZ): Written ballot within a statutory deadline (typically 15–30 days). Non-response is considered a negative vote.
+
+### B. Financial Obligations & Service Billing (*Vyúčtování služeb*):
+1. **Long-Term Advance / Repair Fund (*Fond oprav / Dlouhodobá záloha*)**:
+   - Contributions per square meter. Non-refundable upon unit sale; transfers to the new owner.
+   - Right to audit: Every owner has the enforceable right under § 1179 NOZ to inspect SVJ bank statements, accounting books, and contractor invoices.
+2. **Annual Service Cost Allocation (Act No. 67/2013 Sb. & Decree No. 269/2015 Sb.)**:
+   - Delivery deadline: Landlord/SVJ must deliver annual service reconciliation by **April 30** of the following year.
+   - Financial settlement deadline: Payment of surpluses or arrears (*přeplatky/nedoplatky*) is due by **August 31**.
+   - Heating allocation: Split into basic component (*základní složka* 30–50% by area) and consumption component (*spotřební složka* 50–70% by heat cost allocators / RTN). Penalty for late delivery: **50 CZK per day of delay** (§ 13 Act 67/2013 Sb.).
+
+---
+
+## 3. Land Registry Administration (Katastr nemovitostí - Act No. 256/2013 Sb.)
+
+### A. Ownership Verification & Encumbrances (List vlastnictví - LV):
+- **Part A**: Property owners and ownership share ratios.
+- **Part B**: Real estate descriptions (land parcel number, building number, apartment unit number).
+- **Part C (Encumbrances / Omezení vlastnického práva)**:
+  - *Zástavní právo smluvní*: Bank mortgage lien.
+  - *Věcné břemeno / Služebnost*: Easements (utility passage, right of way *právo cesty*, lifelong dwelling rights *výměnek*).
+  - *Zákaz zcizení a zatížení*: Negative pledge prohibiting sale or encumbrance without bank consent.
+- **Part D**: Notes and ongoing proceedings (*Plomba* - indicates active pending registry change).
+
+### B. Registry Filings (Návrh na vklad do katastru):
+- Administrative filing fee: **2 000 CZK** per proposal via official electronic form or paper.
+- Mandatory 20-day statutory protection period (*ochranná lhůta*): Katastrální úřad cannot register rights earlier than 20 days after notifying the registered owner, preventing fraudulent conveyances.
+
+---
+
+## 4. Property Taxation (Daň z nemovitých věcí - Act No. 338/1992 Sb.)
+
+### A. Annual Tax Filing & Deadlines:
+- **Tax Return Deadline**: **January 31** of the tax year following the year of acquisition or alteration of parameters (e.g. extension, change of land type).
+- **Payment Deadline**: **May 31** (or split in two equal installments due May 31 and November 30 if tax exceeds 5 000 CZK).
+- **Calculation Mechanism**:
+  $$\text{Tax} = \text{Base Area } (m^2) \times \text{Statutory Rate} \times \text{Municipality Coefficient } (1.0–4.5) \times \text{Local Municipal Coefficient } (1–5)$$
+  (Municipalities like Nupaky set specific local coefficients determining the final bill).
+
+---
+
+## 5. Mortgage Restructuring & Financial Distress Defense
+
+### A. Consumer Credit Act Protections (Act No. 257/2016 Sb. o spotřebitelském úvěru):
+1. **End of Fixation Period (*Konec fixace*)**:
+   - The bank must communicate new interest rates and conditions at least 3 months prior to the end of the fixation period.
+   - Right to repay in full or refinance to another bank **completely free of charge** within the refixation window.
+2. **Extraordinary Prepayments (*Mimořádné splátky*)**:
+   - Every borrower has the statutory right to repay up to **25% of the total loan principal free of penalties** within one month prior to each anniversary of the credit agreement.
+   - In difficult life situations (death, permanent disability, or severe illness of borrower or spouse), full early repayment without penalty is guaranteed by law.
+3. **Hardship Restructuring with the Bank**:
+   - If faced with job loss, proactively submit a formal request for loan restructuring *before* missing payments:
+     - Request temporary deferral of principal (*odklad splátek jistiny*) paying only interest for 3–6 months.
+     - Request loan term extension (e.g. extending from 20 to 30 years to minimize monthly cash outflow).
 
 ---
 
