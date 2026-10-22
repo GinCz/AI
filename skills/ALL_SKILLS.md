@@ -1,48 +1,49 @@
-# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 32 Skills)
+# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 35 Skills)
 
-> **Single consolidated reference file containing all 32 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
+> **Single consolidated reference file containing all 35 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
 > *GitHub Repository:* https://github.com/GinCz/AI/tree/main/skills  
 > *Raw URL for Direct Fetch:* https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md  
-> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-21
+> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-22
 
 ---
 
 ## 🧭 Table of Contents
 
-
 1. [agent-browser](#agent-browser) — *Web & Documentation*
 2. [agy-customizations](#agy-customizations) — *Antigravity Engineering*
 3. [allergology-clinical-immunology](#allergology-clinical-immunology) — *Clinical Medicine*
 4. [antigravity-guide](#antigravity-guide) — *Antigravity Platform*
-5. [auto-electronics-diagnostics](#auto-electronics-diagnostics) — *Automotive & EV*
-6. [auto-mechanics-powertrain](#auto-mechanics-powertrain) — *Automotive & Powertrain*
-7. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
-8. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
-9. [code-review](#code-review) — *Software Engineering*
-10. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
-11. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
-12. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
-13. [czech-business-law](#czech-business-law) — *Czech Business Law*
-14. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
-15. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
-16. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
-17. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
-18. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
-19. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
-20. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
-21. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
-22. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine*
-23. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine*
-24. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
-25. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine*
-26. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
-27. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
-28. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
-29. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
-30. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
-31. [systematic-debugging](#systematic-debugging) — *Software Engineering*
-32. [writing-plans](#writing-plans) — *Software Engineering*
-
+5. [antivirus-edr-threat-defense](#antivirus-edr-threat-defense) — *Antivirus & Host EDR Defense*
+6. [auto-electronics-diagnostics](#auto-electronics-diagnostics) — *Automotive & EV*
+7. [auto-mechanics-powertrain](#auto-mechanics-powertrain) — *Automotive & Powertrain*
+8. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
+9. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
+10. [code-review](#code-review) — *Software Engineering*
+11. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
+12. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
+13. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
+14. [czech-business-law](#czech-business-law) — *Czech Business Law*
+15. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
+16. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
+17. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
+18. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
+19. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
+20. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
+21. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
+22. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
+23. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
+24. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine*
+25. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine*
+26. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
+27. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine*
+28. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
+29. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
+30. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
+31. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
+32. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
+33. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
+34. [systematic-debugging](#systematic-debugging) — *Software Engineering*
+35. [writing-plans](#writing-plans) — *Software Engineering*
 
 ---
 
@@ -65,7 +66,6 @@ When writing system scripts, never hallucinate parameters or flags. If unsure, u
 3. **Extraction**: Only extract the relevant flags and syntax. Do not copy generic examples without understanding them.
 
 ---
-
 
 <a name="agy-customizations"></a>
 # 📦 SKILL: agy-customizations
@@ -180,7 +180,6 @@ configurations.
 
 ---
 
-
 <a name="allergology-clinical-immunology"></a>
 # 📦 SKILL: allergology-clinical-immunology
 *Domain:* **Clinical Medicine**
@@ -287,7 +286,6 @@ A master clinical and diagnostic reference for evaluating allergic rhinitis, aer
 
 ---
 
-
 <a name="antigravity-guide"></a>
 # 📦 SKILL: antigravity-guide
 *Domain:* **Antigravity Platform**
@@ -350,6 +348,178 @@ sitemap:
 
 ---
 
+<a name="antivirus-edr-threat-defense"></a>
+# 📦 SKILL: antivirus-edr-threat-defense
+*Domain:* **Antivirus & Host EDR Defense**
+
+---
+name: antivirus-edr-threat-defense
+description: >-
+  Enterprise antivirus management, Endpoint Detection & Response (EDR), Windows Defender hardening (ASR rules, WDAC, AppLocker, Sysmon), Linux host security (Wazuh, ClamAV, Lynis, Falco, eBPF Tetragon, AppArmor/SELinux), anti-ransomware protection, memory injection mitigation, and live incident triage.
+---
+# Antivirus, EDR & Host Intrusion Defense Engineering
+
+A specialized operations guide for architecting, enforcing, and operating enterprise-grade antivirus systems, Endpoint Detection and Response (EDR) agents, host-level intrusion prevention, anti-ransomware tripwires, and live incident forensics across Windows and Linux platforms.
+
+---
+
+## 1. Antivirus & EDR Architecture Mechanics
+
+### Detection Engines Taxonomy:
+1. **Signature & Hash Matching**: Instant static lookup (SHA-256 / Authenticode). High speed, zero overhead, but vulnerable to trivial byte polymorphism.
+2. **Heuristic Analysis**: Static code decompilation scanning for suspicious API import tables (e.g. `VirtualAllocEx`, `WriteProcessMemory`, `CreateRemoteThread`).
+3. **Behavioral & Dynamic Sandboxing**: Monitoring runtime actions in real time (e.g. mass file renames, shadow copy deletions, unauthorized registry persistence).
+4. **Machine Learning / Cloud Telemetry**: Analyzing telemetry against global threat intelligence models to detect zero-day malware patterns.
+5. **Antimalware Scan Interface (AMSI)**: In-memory runtime buffer scanning for scripts (PowerShell, VBScript, JScript, Office VBA, .NET assembly loads) before execution.
+
+---
+
+## 2. Enterprise Windows Defender & Host Hardening
+
+### PowerShell Script for Full Attack Surface Reduction (ASR) Deployment:
+Microsoft Defender ASR rules block malware vectors (malicious Office macros, script-based downloaders, child process spawning, LSASS credential theft):
+
+```powershell
+<#
+.SYNOPSIS
+    Enforce maximum enterprise Attack Surface Reduction (ASR) rules on Windows.
+#>
+# Enable Windows Defender Real-Time and Cloud Protection
+Set-MpPreference -DisableRealtimeMonitoring $false
+Set-MpPreference -MAPSReporting Advanced
+Set-MpPreference -SubmitSamplesConsent SendSafeSamples
+Set-MpPreference -HighThreatDefaultAction Clean
+Set-MpPreference -SevereThreatDefaultAction Clean
+
+# ASR Rule GUIDs Matrix
+$ASRRules = @{
+    "Block executable content from email client and webmail"          = "be9b3d45-6107-4742-bb57-1521107c476f"
+    "Block Office applications from creating child processes"          = "d4f940ab-401b-4efc-aadc-ad5f3c50688a"
+    "Block Office applications from creating executable content"       = "3b5764aa-aed0-4df4-bb3e-815702e4d142"
+    "Block Office applications from injecting code into processes"     = "756346d7-3953-435a-9c9c-0f92860502b0"
+    "Block JavaScript or VBScript from launching downloaded executable"= "d3e037e1-3eb8-44c8-a917-57927947596d"
+    "Block execution of potentially obfuscated scripts"                = "5beb7efe-fd9a-4556-801d-275e5ffc04cc"
+    "Block Win32 API calls from Office macros"                         = "92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b"
+    "Block credential stealing from Windows Local Security Authority"  = "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
+    "Block process creations originating from PSExec and WMI commands" = "d1e49aac-8f56-4280-b9ba-993a6d77406c"
+    "Block untrusted and unsigned processes that run from USB"         = "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4"
+    "Block persistence through WMI event subscription"                 = "e6db77e5-3e12-4247-81d7-0e0e5fe2b0d4"
+    "Use advanced protection against ransomware"                       = "c1db55ab-c21a-4637-bb3f-a12568109d35"
+}
+
+foreach ($RuleName in $ASRRules.Keys) {
+    $RuleGuid = $ASRRules[$RuleName]
+    Add-MpPreference -AttackSurfaceReductionRules_Ids $RuleGuid -AttackSurfaceReductionRules_Actions Enabled
+    Write-Output "ASR Rule Enforced: $RuleName ($RuleGuid)"
+}
+
+# Enforce Controlled Folder Access (Anti-Ransomware Shield)
+Set-MpPreference -EnableControlledFolderAccess Enabled
+```
+
+### Windows Event Telemetry & Sysmon Deployment:
+- Deploy Sysmon with SwiftOnSecurity configuration (`sysmon.exe -i sysmonconfig-export.xml`).
+- Crucial Event IDs to monitor in SIEM:
+  - **Event ID 1**: Process Creation (Command line, hashes, parent process).
+  - **Event ID 7**: Image Loaded (DLL hijacking detection).
+  - **Event ID 8**: CreateRemoteThread (Process injection indicator).
+  - **Event ID 10**: ProcessAccess (LSASS access attempts).
+  - **Event ID 11**: FileCreate (Ransomware staging, drop of executables).
+  - **Event ID 12/13/14**: RegistryEvent (Persistence modifications).
+
+---
+
+## 3. Linux Host Intrusion Prevention & EDR (Wazuh & Falco)
+
+### Wazuh Agent Deployment & Configuration:
+Install and configure Wazuh agent to monitor log integrity, rootkits, and active response:
+```bash
+# Register agent with manager securely
+WAZUH_MANAGER="manager.internal.gincz.com"
+/var/ossec/bin/agent-auth -m "${WAZUH_MANAGER}" -P "AgentEnrollmentSecret123"
+
+# Start and enable Wazuh agent
+systemctl enable --now wazuh-agent
+```
+
+### Falco Runtime Syscall Monitoring (`/etc/falco/rules.d/custom_rules.yaml`):
+```yaml
+- rule: Shell Spawned by Ingress Container
+  desc: Detect when a shell is launched inside a web-facing or production container
+  condition: container.id != host and proc.name in (bash, sh, zsh, ksh) and evt.type = execve and not proc.pname in (entrypoint, docker-init)
+  output: "CRITICAL: Suspicious shell spawned in container (user=%user.name container_id=%container.id container_name=%container.name cmdline=%proc.cmdline)"
+  priority: CRITICAL
+  tags: [mitre_execution, container]
+
+- rule: Sensitive File Read (/etc/shadow)
+  desc: Detect unauthorized access to password database
+  condition: open_read and fd.name = "/etc/shadow" and not user.name in (root)
+  output: "ALERT: Unauthorized attempt to read /etc/shadow (user=%user.name process=%proc.name cmdline=%proc.cmdline)"
+  priority: WARNING
+```
+
+### ClamAV Real-Time On-Access Daemon (`/etc/clamav/clamd.conf`):
+```ini
+# Enforce On-Access scanning on high-risk directories
+OnAccessMountPath /tmp
+OnAccessMountPath /var/www/uploads
+OnAccessIncludePath /home
+OnAccessPrevention yes
+OnAccessExtraScanning yes
+OnAccessExcludeUname clamav
+```
+
+---
+
+## 4. Anti-Ransomware Defenses & Tripwires
+
+1. **Volume Shadow Copy Protection**:
+   - Deny `vssadmin.exe delete shadows` and `wmic shadowcopy delete` via AppLocker and ASR rules.
+2. **Canary Honeypot Files**:
+   - Place hidden decoy files (e.g. `C:\Users\Public\Documents\!decoy_financial_statement.xlsx` or `/var/www/!canary.docx`) with strict auditing enabled.
+   - Any write, rename, or delete event immediately triggers a high-priority alert and network isolation script.
+3. **Immutable 3-2-1-1-0 Backup Standard**:
+   - 3 copies of data, 2 different media types, 1 offsite, 1 offline (air-gapped or immutable S3 Object Lock), 0 errors after automated restore verification.
+
+---
+
+## 5. Live Incident Response & Triage Workflows
+
+### Windows Live Triage Script:
+```powershell
+# Gather volatile evidence into triage artifact directory
+$TriageDir = "C:\Triage_$(Get-Date -Format 'yyyyMMdd_HHmmss')"
+New-Item -ItemType Directory -Path $TriageDir -Force | Out-Null
+
+# 1. Active Network Connections with Process IDs
+Get-NetTCPConnection | Select-Object LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess | 
+    Export-Csv -Path "$TriageDir\Active_TCP_Connections.csv" -NoTypeInformation
+
+# 2. Running Processes with Command Lines and Parent PIDs
+Get-CimInstance Win32_Process | Select-Object ProcessId,ParentProcessId,Name,CommandLine,ExecutablePath |
+    Export-Csv -Path "$TriageDir\Running_Processes.csv" -NoTypeInformation
+
+# 3. Scheduled Tasks & Persistence Keys
+Get-ScheduledTask | Where-Object { $_.State -ne 'Disabled' } | Select-Object TaskName,TaskPath |
+    Export-Csv -Path "$TriageDir\ScheduledTasks.csv" -NoTypeInformation
+
+Get-ItemProperty "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" | Out-File "$TriageDir\Registry_HKLM_Run.txt"
+Get-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" | Out-File "$TriageDir\Registry_HKCU_Run.txt"
+```
+
+### Linux Live Triage Commands:
+```bash
+# Memory and running socket inspection
+ss -tunap > /tmp/triage_sockets.txt
+ps auxfww > /tmp/triage_processes.txt
+
+# Audit open files of suspicious processes
+lsof -i -P -n > /tmp/triage_network_files.txt
+
+# Inspect recent persistence modifications
+find /etc/cron* /etc/systemd/system /var/spool/cron -mtime -2 -ls > /tmp/recent_persistence.txt
+
+---
 
 <a name="auto-electronics-diagnostics"></a>
 # 📦 SKILL: auto-electronics-diagnostics
@@ -497,7 +667,6 @@ Working on electric (BEV) and hybrid (HEV/PHEV) vehicles requires certified High
 
 ---
 
-
 <a name="auto-mechanics-powertrain"></a>
 # 📦 SKILL: auto-mechanics-powertrain
 *Domain:* **Automotive & Powertrain**
@@ -621,7 +790,6 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 
 ---
 
-
 <a name="bankruptcy-insolvency-restructuring"></a>
 # 📦 SKILL: bankruptcy-insolvency-restructuring
 *Domain:* **Insolvency & Restructuring**
@@ -731,7 +899,6 @@ The ultimate weapon of creditors against company owners, actual beneficiaries, a
    - Separating personal wealth from corporate assets; documenting all arm's-length intercompany transactions with independent appraisals.
 
 ---
-
 
 <a name="clinical-cardiology-surgery"></a>
 # 📦 SKILL: clinical-cardiology-surgery
@@ -860,7 +1027,6 @@ Heart failure is categorized by Left Ventricular Ejection Fraction (LVEF):
 
 ---
 
-
 <a name="code-review"></a>
 # 📦 SKILL: code-review
 *Domain:* **Software Engineering**
@@ -887,7 +1053,6 @@ When reviewing code, evaluate it against the following criteria:
 Provide a structured report with [High], [Medium], and [Low] priority fixes.
 
 ---
-
 
 <a name="compliance-anti-sanctions-aml"></a>
 # 📦 SKILL: compliance-anti-sanctions-aml
@@ -1007,7 +1172,6 @@ The European Union has established the world's first comprehensive regulatory fr
 - **Self-Hosted Wallets (Unhosted Wallets)**: For transfers exceeding **1,000 EUR** to/from unhosted wallets, CASPs are mandated to verify whether the wallet is effectively owned or controlled by the customer.
 
 ---
-
 
 <a name="cyber-defense-pentest"></a>
 # 📦 SKILL: cyber-defense-pentest
@@ -1143,7 +1307,6 @@ When an unauthorized intrusion or breach is confirmed:
    - Rotate all SSH keys, database passwords, API tokens, and service credentials.
 
 ---
-
 
 <a name="czech-accounting-tax"></a>
 # 📦 SKILL: czech-accounting-tax
@@ -1322,7 +1485,6 @@ Electronic filing is **mandatory by law** for all Czech legal entities and regis
 
 ---
 
-
 <a name="czech-business-law"></a>
 # 📦 SKILL: czech-business-law
 *Domain:* **Czech Business Law**
@@ -1465,7 +1627,6 @@ The illegal practice of contracting an individual as an independent contractor (
   - **Statutory Duty to File**: The executive must file a debtor's insolvency petition without undue delay upon becoming aware (or when they ought to have become aware) of insolvency. Delay creates direct personal tort liability for damages caused to creditors.
 
 ---
-
 
 <a name="czech-litigation-advocacy"></a>
 # 📦 SKILL: czech-litigation-advocacy
@@ -1619,7 +1780,6 @@ Governs non-contractual attorney remuneration (*mimosmluvní odměna*) and the s
 
 ---
 
-
 <a name="devops-cloud-engineering"></a>
 # 📦 SKILL: devops-cloud-engineering
 *Domain:* **DevOps & Cloud**
@@ -1637,15 +1797,62 @@ A comprehensive operational guide for architecting, deploying, automating, and m
 
 ## 1. Continuous Integration & Deployment (CI/CD)
 
-### GitHub Actions Production Patterns:
-- **Pipeline Architecture**: Linting -> Unit Tests -> SAST/Security Scan -> Multi-arch Build -> Container Push -> Deploy via SSH / Webhook.
-- **Self-Hosted Runners vs. GitHub Runners**:
-  - Secure runner isolation: Use ephemeral runners or dedicated unprivileged service users.
-  - Runner environment variables and secrets must be injected via GitHub Secrets / HashiCorp Vault.
-- **Workflow Optimization**:
-  - Aggressive caching: `actions/cache` for package dependencies (npm, pip, go mod, cargo).
-  - Multi-stage concurrency controls (`concurrency: group: ${{ github.ref }}, cancel-in-progress: true`).
-  - Strict step timeouts (`timeout-minutes: 15`) to prevent hanging jobs and token/credit burns.
+### GitHub Actions Hardened Production Pipeline:
+```yaml
+name: Production Hardened CI/CD
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Principle of least privilege for GITHUB_TOKEN
+permissions:
+  contents: read
+  packages: write
+  id-token: write # Required for OIDC cloud authentication
+  security-events: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # Pin to exact commit SHA v4.2.2
+
+      - name: Security Scan (SAST & Vulnerabilities)
+        uses: aquasecurity/trivy-action@18f2510ee396bbf400402947b394f2dd8c87dbb0
+        with:
+          scan-type: 'fs'
+          ignore-unfixed: true
+          severity: 'CRITICAL,HIGH'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Set up QEMU & Docker Buildx
+        uses: docker/setup-qemu-action@49b3bc8e6bdd4480e8226f5bf2164930cc65ee1e
+      - uses: docker/setup-buildx-action@c47758b77c9736f4b2ef4073d4d51994fabfe349
+
+      - name: Build Multi-Arch Container Image
+        uses: docker/build-push-action@4f58ea79222b3b9dc2c8bbdd6debcef730109a75
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: false
+          tags: app:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+```
+
+### Self-Hosted Runners Security & Isolation:
+- Use ephemeral runners (e.g. GitHub Actions Runner Controller on Kubernetes) destroyed immediately after a single job execution.
+- Strictly isolate runner networks using dedicated VLANs/Security Groups. Runners must never possess direct write access to production database subnets.
+- Use OpenID Connect (OIDC) token exchange with AWS IAM / OCI / GCP to acquire short-lived STS tokens instead of storing long-lived credentials in GitHub Secrets.
 
 ---
 
@@ -1655,6 +1862,7 @@ A comprehensive operational guide for architecting, deploying, automating, and m
 - **Remote State**: S3-compatible backend (e.g. OCI Object Storage, AWS S3) with state locking (DynamoDB or native object locking).
 - **Module Architecture**: Reusable modules for VPC/VCN, security lists, compute instances, DNS records.
 - **Drift Detection**: Automated scheduled runs to detect unauthorized out-of-band infrastructure modifications.
+- **Pre-commit Checks**: Run `tflint`, `tfsec`, and `terraform fmt -check` in CI to prevent insecure infrastructure commits.
 
 ### Ansible Playbooks & Idempotency:
 - Structure: Roles (`tasks`, `handlers`, `templates`, `vars`, `defaults`).
@@ -1663,36 +1871,70 @@ A comprehensive operational guide for architecting, deploying, automating, and m
 
 ---
 
-## 3. Containerization (Docker, Compose & OCI)
+## 3. Containerization (Docker, Rootless & Kubernetes Hardening)
 
-### Production Dockerfile Standards:
-1. **Minimal Base Images**: Alpine, Debian-slim, or Google Distroless.
-2. **Multi-Stage Builds**: Separate build-time dependencies (compilers, SDKs) from the runtime environment.
-3. **Non-Root Execution**: Always declare `USER nonroot` or create dedicated UID/GID inside the container.
-4. **Cache Optimization**: Copy package manifests (`package.json`, `go.mod`, `requirements.txt`) before application source code.
-5. **Security Scanning**: Scan images with `Trivy` or `Grype` during CI builds.
+### Production Distroless Dockerfile Standard:
+```dockerfile
+# Multi-stage build pattern
+FROM golang:1.23-bookworm AS builder
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o /bin/app ./cmd/server
 
-### Docker Compose Production Patterns:
-- Use explicit healthchecks (`test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]`).
-- Resource limits per container:
-  ```yaml
-  deploy:
-    resources:
-      limits:
-        cpus: '1.5'
-        memory: 1024M
-      reservations:
-        memory: 256M
-  ```
-- Logging drivers with rotation:
-  ```yaml
-  logging:
-    driver: "json-file"
-    options:
-      max-size: "50m"
-      max-file: "5"
-  ```
-- Automated restarts: `restart: unless-stopped`.
+# Final minimal runtime container (Google Distroless non-root)
+FROM gcr.io/distroless/static-debian12:nonroot
+WORKDIR /app
+COPY --from=builder /bin/app /app/server
+USER nonroot:nonroot
+EXPOSE 8080
+ENTRYPOINT ["/app/server"]
+```
+
+### Hardened Production Docker Compose (`compose.yaml`):
+```yaml
+services:
+  app:
+    image: ghcr.io/gincz/app:v2.1.0
+    restart: unless-stopped
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    user: "10001:10001"
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "127.0.0.1:8080:8080" # Bind to loopback only, never 0.0.0.0
+    healthcheck:
+      test: ["CMD", "/app/server", "-healthcheck"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 1024M
+        reservations:
+          memory: 256M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+```
+
+### Kubernetes Pod Security Standards (Restricted Profile):
+- Disallow privileged containers (`privileged: false`).
+- Enforce read-only root filesystems (`readOnlyRootFilesystem: true`).
+- Restrict Linux capabilities to none (`drop: ["ALL"]`).
+- Deny root execution (`runAsNonRoot: true`, `runAsUser: 10001`).
+- Enforce strict `NetworkPolicy` denying all ingress by default, whitelisting only designated microservice ports.
 
 ---
 
@@ -1755,7 +1997,6 @@ net.ipv4.ip_local_port_range = 10240 65535
 Apply immediately without reboot: `sysctl --system`.
 
 ---
-
 
 <a name="endpoint-mobile-security"></a>
 # 📦 SKILL: endpoint-mobile-security
@@ -1866,7 +2107,6 @@ As an Android developer and administrator, maintain rigorous device and applicat
   - In custom Android apps, always store cryptographic secrets inside the hardware-backed **Android Keystore** (`KeyGenParameterSpec.Builder(..., KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT).setUserAuthenticationRequired(true)`).
 
 ---
-
 
 <a name="eu-business-law-compliance"></a>
 # 📦 SKILL: eu-business-law-compliance
@@ -2007,7 +2247,6 @@ Governed by the Consumer Rights Directive (2011/83/EU) and the **Omnibus Directi
 
 ---
 
-
 <a name="eu-litigation-crossborder-law"></a>
 # 📦 SKILL: eu-litigation-crossborder-law
 *Domain:* **EU Cross-Border Litigation**
@@ -2137,7 +2376,6 @@ The preeminent global mechanism for resolving cross-border commercial disputes o
   - Enforcement contrary to the **Public Policy (*ordre public*)** of the country where enforcement is sought.
 
 ---
-
 
 <a name="eu-vat-accounting"></a>
 # 📦 SKILL: eu-vat-accounting
@@ -2273,7 +2511,6 @@ Under **Council Directive (EU) 2021/514 (DAC7)**:
 
 ---
 
-
 <a name="internal-medicine-hematology"></a>
 # 📦 SKILL: internal-medicine-hematology
 *Domain:* **Clinical Medicine**
@@ -2407,7 +2644,6 @@ A master clinical manual for interpreting hematological profiles, serum biochemi
 
 ---
 
-
 <a name="intl-contract-drafting-ip"></a>
 # 📦 SKILL: intl-contract-drafting-ip
 *Domain:* **International Law & IP**
@@ -2508,6 +2744,322 @@ When drafting international commercial agreements (IT outsourcing, wholesale, di
 
 ---
 
+<a name="network-hardware-firewalls"></a>
+# 📦 SKILL: network-hardware-firewalls
+*Domain:* **Enterprise Network & Firewalls**
+
+---
+name: network-hardware-firewalls
+description: >-
+  Enterprise network engineering, routing and switching for Cisco (IOS-XE, ASA, Firepower), Ubiquiti UniFi (UDM, switches, VLAN isolation, traffic rules), TP-Link Omada SDN, physical/virtual firewalls (FortiGate, pfSense/OPNsense, MikroTik RouterOS v7), Linux nftables/iptables, and Windows Advanced Firewall.
+---
+# Enterprise Network Hardware, Routing & Firewall Engineering
+
+A comprehensive operational guide for designing, deploying, hardening, and troubleshooting enterprise and branch network infrastructure across physical appliances, SDN ecosystems, next-generation firewalls, and host-level packet filters.
+
+---
+
+## 1. Cisco Enterprise Routing, Switching & Edge Security
+
+### Core IOS-XE Switching & VLAN Segmentation:
+```ios
+! Configure VLANs with standard naming and security isolation
+vlan 10
+ name CORPORATE_DATA
+vlan 20
+ name MANAGEMENT_INFRA
+vlan 30
+ name IOT_ISOLATED
+vlan 99
+ name NATIVE_UNUSED
+exit
+
+! Trunk Port Configuration (802.1Q) to Upstream Firewall / Core Switch
+interface GigabitEthernet0/0/1
+ description TRUNK-TO-FIREWALL
+ switchport mode trunk
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30
+ switchport nonegotiate
+ no shutdown
+exit
+
+! Hardened Access Port with Port Security
+interface GigabitEthernet0/0/2
+ description WORKSTATION-SECURE
+ switchport mode access
+ switchport access vlan 10
+ switchport port-security
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+exit
+```
+
+### Layer 2 Infrastructure Protection (DHCP Snooping & DAI):
+```ios
+! Prevent rogue DHCP servers and ARP spoofing
+ip dhcp snooping
+ip dhcp snooping vlan 10,20,30
+no ip dhcp snooping information option
+
+! Set uplink trunk as trusted DHCP port
+interface GigabitEthernet0/0/1
+ ip dhcp snooping trust
+ ip arp inspection trust
+exit
+
+! Enable Dynamic ARP Inspection (DAI)
+ip arp inspection vlan 10,20,30
+ip arp inspection validate src-mac dst-mac ip
+```
+
+### Cisco IOS-XE Routing & Access Control Lists (ACLs):
+```ios
+! Standard Named Extended Access Control List
+ip access-list extended BLOCK_IOT_TO_LAN
+ remark Allow established return traffic
+ permit tcp 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255 established
+ remark Allow DNS to local resolver only
+ permit udp 192.168.30.0 0.0.0.255 host 192.168.10.5 eq 53
+ remark Block all other cross-VLAN traffic
+ deny ip 192.168.30.0 0.0.0.255 192.168.0.0 0.0.255.255
+ remark Allow IoT outbound to WAN
+ permit ip 192.168.30.0 0.0.0.255 any
+exit
+
+! IPsec Site-to-Site Tunnel Interface (VTI) on IOS-XE
+crypto ikev2 proposal IKEV2-AES-GCM
+ encryption aes-gcm-256
+ prf sha384
+ group 19 20
+exit
+
+crypto ikev2 policy IKEV2-POLICY
+ proposal IKEV2-AES-GCM
+exit
+
+crypto ikev2 profile IKEV2-PROFILE
+ match identity remote address <REMOTE_PEER_IP> 255.255.255.255
+ identity local address <LOCAL_PUBLIC_IP>
+ authentication remote pre-share key <PRE_SHARED_KEY>
+ authentication local pre-share key <PRE_SHARED_KEY>
+ lifetime 86400
+exit
+
+crypto ipsec transform-set TS-AES-GCM esp-gcm 256
+ mode tunnel
+exit
+
+crypto ipsec profile IPSEC-PROFILE
+ set transform-set TS-AES-GCM
+ set ikev2-profile IKEV2-PROFILE
+exit
+
+interface Tunnel100
+ description SECURE-VTI-TUNNEL-BRANCH
+ ip address 10.255.255.1 255.255.255.252
+ tunnel source GigabitEthernet0/0/0
+ tunnel mode ipsec ipv4
+ tunnel destination <REMOTE_PEER_IP>
+ tunnel protection ipsec profile IPSEC-PROFILE
+ ip mtu 1400
+ ip tcp adjust-mss 1360
+exit
+```
+
+---
+
+## 2. Ubiquiti UniFi Ecosystem & Enterprise Gateway Architecture
+
+### Network Architecture & Architecture Matrix:
+- **Topology Hierarchy**: UniFi Dream Machine (UDM Pro / SE) -> USW Enterprise/Pro Switch (10G SFP+ DAC / Optical trunk) -> U6/U7 Enterprise Access Points.
+- **VLAN Isolation Model**:
+  - `Default (VLAN 1)`: UniFi management plane only (Gateways, Switches, APs). Client access strictly prohibited.
+  - `VLAN 10 (Corporate)`: Trusted corporate laptops and workstations. Full outbound WAN, managed inter-VLAN access.
+  - `VLAN 20 (Servers/DMZ)`: Internal services, reverse proxies, NAS. Isolated with selective port forwarding.
+  - `VLAN 30 (IoT)`: Smart devices, cameras, appliances. Total isolation from RFC1918 subnets, WAN access only.
+  - `VLAN 40 (Guest)`: Isolated via Client Device Isolation (L2 isolation), captive portal or voucher system, bandwidth throttling.
+
+### UniFi Firewall Rules Architecture (Rule Order & Execution):
+UniFi processes firewall rules in strict order: **WAN / LAN / Guest** -> **In / Out / Local**.
+1. **Rule 2000 (Drop Invalid State)**:
+   - Type: `LAN In` | Action: `Drop` | Protocol: `All` | State: `Invalid`
+2. **Rule 2001 (Allow Established & Related)**:
+   - Type: `LAN In` | Action: `Accept` | Protocol: `All` | State: `Established`, `Related`
+3. **Rule 2002 (Allow Inter-VLAN DNS/NTP to Core Server)**:
+   - Type: `LAN In` | Action: `Accept` | Protocol: `UDP` | Source: `Any` | Destination: `Port Group: DNS_NTP (53, 123)` on Core Server IP.
+4. **Rule 2003 (Block IoT to Private Subnets RFC1918)**:
+   - Type: `LAN In` | Action: `Drop` | Source: `Network: IoT` | Destination: `Port/IP Group: RFC1918_ALL (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)`
+5. **Rule 2004 (Block Gateway Web/SSH Access from Untrusted VLANs)**:
+   - Type: `LAN Local` | Action: `Drop` | Source: `Networks: IoT, Guest` | Destination: `Port Group: MGMT_PORTS (22, 443, 80, 8443)`
+
+### UniFi Edge Features & Advanced Services:
+- **Deep Packet Inspection (DPI) & Traffic Rules**: Enforce application blocking (P2P, malicious domains, specific cloud apps) at wire speed.
+- **Teleport & WireGuard VPN**: Native zero-configuration remote access using WireGuard protocol with ChaCha20-Poly1305 encryption.
+- **mDNS Repeater / Reflector**: Enable selectively on IoT VLAN to allow Chromecast/AirPlay discovery from Corporate VLAN without opening full L2/L3 access.
+
+---
+
+## 3. TP-Link Omada SDN Infrastructure
+
+### Omada Architecture & Deployment:
+- **Centralized Controller**: Hardware (OC200, OC300), Software (Docker / Linux VM), or Omada Cloud-Based Controller.
+- **Hardware Integration**: Multi-Gigabit VPN Gateways (ER605, ER7206, ER8411) + JetStream L2+/L3 Managed Switches + Omada EAP600/700 APs.
+
+### Multi-WAN Load Balancing & Failover:
+1. **Link Backup / Failover**: Primary WAN (High-speed Fiber) + Secondary WAN (Backup 5G/LTE or VDSL). Failover detection interval set to 3 seconds with DNS probe targets (`1.1.1.1`, `8.8.8.8`).
+2. **Policy Routing**: Force critical server and administrative traffic through static IP on WAN1; offload streaming and general guest traffic to WAN2.
+
+### Omada ACL Hierarchy & Rule Execution:
+- **Gateway ACLs**: Apply at the router level for WAN and inter-network routing decisions.
+- **Switch ACLs**: Hardware-enforced on JetStream switch ASICs. Eliminates inter-port communication at Layer 2 wire speed before packets even reach the gateway.
+- **EAP ACLs**: Applied directly at wireless APs to isolate Wi-Fi clients from wired infrastructure.
+- **Omada Isolation Matrix**:
+  - Create IP Group: `RFC1918_Subnets` (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`).
+  - Rule `LAN_Isolate_IoT`: Policy: `Deny` | Source: `Subnet_IoT` | Destination: `RFC1918_Subnets`.
+  - Direction: Bidirectional isolation with allow established state.
+
+---
+
+## 4. Next-Generation Physical & Virtual Firewalls
+
+### Fortinet FortiGate (FortiOS):
+```fortios
+# Configure Security Zones and VLAN Interface
+config system interface
+    edit "VLAN_CORP"
+        set vdom "root"
+        set ip 192.168.10.1 255.255.255.0
+        set allowaccess ping
+        set interface "port1"
+        set vlanid 10
+    next
+end
+
+# Hardened Firewall Policy with UTM Inspection
+config firewall policy
+    edit 10
+        set name "CORP_TO_WAN_SECURE"
+        set srcintf "VLAN_CORP"
+        set dstintf "wan1"
+        set action accept
+        set srcaddr "all"
+        set dstaddr "all"
+        set schedule "always"
+        set service "ALL"
+        set utm-status enable
+        set ssl-ssh-profile "deep-inspection"
+        set av-profile "default"
+        set ips-sensor "high_security"
+        set application-list "default"
+        set nat enable
+    next
+end
+```
+
+### pfSense & OPNsense (Packet Filter - pf):
+- **Aliases**: Centralize IP, port, and URL table aliases for dynamic firewall rules (e.g., `Spamhaus_DROP`, `Emerging_Threats`).
+- **pf Rules Processing**: First match wins for rules with `quick` keyword.
+- **High Availability (CARP & XMLRPC Sync)**:
+  - Configure redundant master/backup nodes sharing Virtual IPs via CARP (Common Address Redundancy Protocol).
+  - PFSYNC synchronizes state tables in real time over a dedicated crossover link. Node failover causes zero dropped TCP connections.
+- **Intrusion Detection (Suricata / Snort)**:
+  - Run in Inline IPS Mode using Netmap driver.
+  - Automatically drop malicious signatures (ET Open, Snort Community, Abuse.ch SSLBL).
+
+### MikroTik RouterOS v7:
+```routeros
+# FastTrack & State Tracking Hardening
+/ip firewall filter
+add chain=input action=accept connection-state=established,related,untracked comment="Accept established, related"
+add chain=input action=drop connection-state=invalid comment="Drop invalid"
+add chain=input action=accept protocol=icmp comment="Allow ICMP"
+add chain=input action=accept protocol=udp dst-port=13231 comment="Allow WireGuard"
+add chain=input action=drop in-interface-list=WAN comment="Drop all other WAN traffic"
+
+add chain=forward action=fasttrack-connection connection-state=established,related hw-offload=yes comment="FastTrack Hardware Offload"
+add chain=forward action=accept connection-state=established,related,untracked
+add chain=forward action=drop connection-state=invalid
+
+# Raw Pre-routing Table for SYN-Flood and Port Scan Mitigation
+/ip firewall raw
+add chain=prerouting action=drop tcp-flags=fin,syn,rst,psh,ack,urg,!fin,!syn,!rst,!psh,!ack,!urg comment="Drop NULL packets"
+add chain=prerouting action=drop tcp-flags=fin,syn,!rst,!psh,!ack,!urg comment="Drop SYN-FIN packets"
+add chain=prerouting action=drop in-interface-list=WAN src-address-list=black_list comment="Drop blacklisted IPs"
+```
+
+---
+
+## 5. Modern Host-Level Firewalls (Linux & Windows)
+
+### Linux `nftables` Enterprise Ruleset (`/etc/nftables.conf`):
+```nftables
+#!/usr/sbin/nft -f
+flush ruleset
+
+table inet filter {
+    # Dynamic set for rate limiting and brute-force banning
+    set ban_list {
+        type ipv4_addr
+        flags timeout
+    }
+
+    chain input {
+        type filter hook input priority filter; policy drop;
+
+        # Connection state tracking
+        ct state established,related accept
+        ct state invalid drop
+
+        # Loopback interface
+        iif "lo" accept
+
+        # Rate-limited ICMP
+        ip protocol icmp icmp type { echo-request, echo-reply } limit rate 5/second accept
+        ip6 nexthdr ipv6-icmp accept
+
+        # Drop and ban SSH brute-force attackers (>5 attempts in 1 minute -> ban 1 hour)
+        tcp dport 22 ct state new,untracked meter ssh_meter { ip saddr limit rate over 5/minute } add @ban_list { ip saddr timeout 1h } drop
+        ip saddr @ban_list drop
+
+        # Hardened management access
+        tcp dport 22 accept
+        tcp dport { 80, 443 } accept
+    }
+
+    chain forward {
+        type filter hook forward priority filter; policy drop;
+    }
+
+    chain output {
+        type filter hook output priority filter; policy accept;
+    }
+}
+```
+
+### Windows Advanced Firewall Hardening via PowerShell:
+```powershell
+# Enforce Outbound and Inbound Drop by Default on all profiles
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
+Set-NetFirewallProfile -Profile Domain,Public,Private -DefaultInboundAction Block
+Set-NetFirewallProfile -Profile Public -DefaultOutboundAction Block
+
+# Enable logging of dropped packets
+Set-NetFirewallProfile -Profile Domain,Public,Private -LogFileName "%SystemRoot%\system32\LogFiles\Firewall\pfirewall.log" -LogMaxSizeKilobytes 32768 -LogDroppedConnections True
+
+# Allow Outbound DNS, HTTP, HTTPS for system updates only
+New-NetFirewallRule -DisplayName "Outbound-Core-DNS" -Direction Outbound -Action Allow -Protocol UDP -RemotePort 53
+New-NetFirewallRule -DisplayName "Outbound-Core-HTTP-HTTPS" -Direction Outbound -Action Allow -Protocol TCP -RemotePort 80,443
+
+# Allow Inbound Hardened Management from Specific Administrative Subnet
+New-NetFirewallRule -DisplayName "MGMT-Inbound-WinRM-Hardened" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 5986 -RemoteAddress 192.168.20.0/24
+
+---
 
 <a name="neurology-neurosurgery-triage"></a>
 # 📦 SKILL: neurology-neurosurgery-triage
@@ -2620,7 +3172,6 @@ When evaluating any headache, systematically check the **SNOOP4** criteria. A po
 
 ---
 
-
 <a name="ophthalmology-vision-care"></a>
 # 📦 SKILL: ophthalmology-vision-care
 *Domain:* **Clinical Medicine**
@@ -2731,7 +3282,6 @@ Reflects systemic damage occurring simultaneously in cerebral, coronary, and ren
   - Ergonomics: The **20-20-20 Rule** (every 20 minutes, look at an object 20 feet / 6 meters away for at least 20 seconds).
 
 ---
-
 
 <a name="orthopedics-knee-rehab"></a>
 # 📦 SKILL: orthopedics-knee-rehab
@@ -2864,7 +3414,6 @@ Perform systematically with the patient relaxed in supine position:
   - Plyometrics, agility drills, running progression, sport-specific functional testing.
 
 ---
-
 
 <a name="proctology-colorectal-surgery"></a>
 # 📦 SKILL: proctology-colorectal-surgery
@@ -3014,7 +3563,6 @@ Prior to performing elective proctological surgery in adult patients, thorough e
 
 ---
 
-
 <a name="ru-accounting-tax"></a>
 # 📦 SKILL: ru-accounting-tax
 *Domain:* **Russian Accounting & Tax**
@@ -3146,7 +3694,6 @@ Contributions cover Pension (OPS), Medical (OMS), and Social Disability/Maternit
 
 ---
 
-
 <a name="ru-civil-corporate-law"></a>
 # 📦 SKILL: ru-civil-corporate-law
 *Domain:* **Russian Business Law**
@@ -3266,7 +3813,6 @@ Before acquiring real estate or commercial facilities:
 3. **Land & Permitted Use (Permitted Land Use Category VRI)**: Ensuring the building conforms to statutory zoning and land category (Land Category).
 
 ---
-
 
 <a name="ru-litigation-advocacy"></a>
 # 📦 SKILL: ru-litigation-advocacy
@@ -3415,6 +3961,306 @@ Obtaining a court judgment is only the first stage; recovery of funds is governe
 
 ---
 
+<a name="secure-software-engineering"></a>
+# 📦 SKILL: secure-software-engineering
+*Domain:* **DevOps & Bulletproof Software Engineering**
+
+---
+name: secure-software-engineering
+description: >-
+  DevOps-grade secure software engineering, modern multi-language practices (Windows PowerShell, C#/.NET 8/9, Android Kotlin/Compose, Linux Server Bash/Python 3.12+/Go/Rust), bulletproof defensive programming, zero-injection standards, cryptographic integrity, performance optimization, and clean architecture.
+---
+# Secure Software Engineering & Bulletproof DevOps Development
+
+An operational handbook for writing ultra-secure, unhackable, high-performance, and maintainable software across Windows, Android, and Linux environments.
+
+---
+
+## 1. Core Architectural Tenets & Secure Coding Principles
+
+1. **Simplicity Over Cleverness (KISS)**: Complex code hides vulnerabilities. Write straightforward, deterministic logic with single-responsibility components.
+2. **Fail-Closed by Default**: If an operation fails, error handling must deny access, revoke tokens, roll back transactions, and terminate execution cleanly.
+3. **Defense in Depth**: Never rely on a single layer of validation. Validate inputs at the API perimeter, controller boundary, domain logic, and data layer.
+4. **Zero-Trust Memory & Secrets**: Overwrite sensitive cryptographic keys and passwords in memory immediately after use (`Array.Clear`, `sodium_memzero`, `memset_s`). Never write secrets to disk or logs.
+5. **Strict Input Sanitization & Parameterization**: Never concatenate external strings into shell commands, SQL queries, LDAP lookups, or file paths. Use parameter binding and typed AST validators.
+
+---
+
+## 2. Bulletproof Bash for Linux Production Servers
+
+### The Unbreakable Bash Header:
+Every production Bash script must start with strict safety flags, restricted field separators, and comprehensive error trapping:
+
+```bash
+#!/usr/bin/env bash
+# ==============================================================================
+# Script Name: hardened_service_deploy.sh
+# Standard: POSIX Hardened Bash (Strict-Mode, Zero-Eval, Safe-Trap)
+# ==============================================================================
+set -euo pipefail
+IFS=$'\n\t'
+umask 077
+
+# Trap unexpected errors with line number and command context
+trap 'error_exit $? $LINENO' ERR
+trap cleanup EXIT INT TERM
+
+cleanup() {
+    local exit_code=$?
+    # Clean temporary files securely
+    if [[ -n "${TEMP_DIR:-}" && -d "${TEMP_DIR:-}" ]]; then
+        rm -rf "${TEMP_DIR}"
+    fi
+    exit "${exit_code}"
+}
+
+error_exit() {
+    local code="$1"
+    local line="$2"
+    printf '{"status":"FATAL","line":%d,"exit_code":%d,"timestamp":"%s"}\n' \
+        "${line}" "${code}" "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >&2
+    exit "${code}"
+}
+
+# Enforce non-root execution unless explicitly required
+if [[ "${EUID}" -eq 0 ]]; then
+    printf 'Error: Running as root is forbidden for security.\n' >&2
+    exit 1
+fi
+```
+
+### Atomic File Operations & Process Locking:
+```bash
+# Process singleton locking via flock (prevents race conditions)
+LOCK_FILE="/tmp/service_process.lock"
+exec 200>"${LOCK_FILE}"
+if ! flock -n 200; then
+    printf 'Error: Another instance is already running.\n' >&2
+    exit 1
+fi
+
+# Atomic file update pattern (prevents corrupted state on crash)
+TEMP_DIR="$(mktemp -d -t secure_op_XXXXXX)"
+target_config="/etc/app/config.json"
+temp_output="${TEMP_DIR}/config.tmp"
+
+# Generate new state safely into temp file
+cat <<EOF > "${temp_output}"
+{"version":"2.0.0","status":"active","updated":"$(date -u +%s)"}
+EOF
+
+# Atomically replace target file using rename syscall (mv)
+mv -f "${temp_output}" "${target_config}"
+chmod 0600 "${target_config}"
+```
+
+---
+
+## 3. Hardened Windows PowerShell & C# / .NET 8/9
+
+### Production PowerShell Strict Standard:
+```powershell
+<#
+.SYNOPSIS
+    Hardened enterprise task automation template.
+.NOTES
+    Standards: PowerShell 7+, StrictMode Latest, No-Eval, Typed AST validation.
+#>
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [ValidatePattern('^[a-zA-Z0-9\._\-]{3,64}$')]
+    [string]$TargetIdentifier,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateRange(1, 65535)]
+    [int]$Port = 443
+)
+
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
+
+try {
+    # Secure credential handling via Windows DPAPI / PSCredential
+    $SecureKeyPath = "$PSScriptRoot\secrets\token.enc"
+    if (Test-Path -LiteralPath $SecureKeyPath) {
+        $Encrypted = Get-Content -LiteralPath $SecureKeyPath -Raw
+        $SecretBytes = [System.Security.Cryptography.ProtectedData]::Unprotect(
+            [System.Convert]::FromBase64String($Encrypted),
+            $null,
+            [System.Security.Cryptography.DataProtectionScope]::CurrentUser
+        )
+        $SecureToken = [System.Text.Encoding]::UTF8.GetString($SecretBytes)
+        # Clear secret array immediately
+        [System.Array]::Clear($SecretBytes, 0, $SecretBytes.Length)
+    }
+
+    # Execute deterministic logic with explicit path escaping
+    Write-Output "Processing identifier: $TargetIdentifier on port $Port"
+}
+catch {
+    Write-Error "Execution aborted due to security failure: $($_.Exception.Message)"
+    exit 1
+}
+```
+
+### C# / .NET 8/9 High-Performance, Zero-Allocation & Memory Safety:
+- **Memory Optimization via Spans & Memory Pools**:
+```csharp
+using System;
+using System.Buffers;
+using System.Security.Cryptography;
+
+public sealed class SecureTokenValidator
+{
+    // Constant-time comparison to prevent timing attacks
+    public static bool VerifyTokenConstantTime(ReadOnlySpan<byte> expected, ReadOnlySpan<byte> actual)
+    {
+        return CryptographicOperations.FixedTimeEquals(expected, actual);
+    }
+
+    // Zero-allocation buffer slicing with ArrayPool
+    public static void ProcessDataBuffer(ReadOnlySpan<byte> incomingPayload)
+    {
+        byte[] rentedBuffer = ArrayPool<byte>.Shared.Rent(incomingPayload.Length);
+        try
+        {
+            Span<byte> workSpan = rentedBuffer.AsSpan(0, incomingPayload.Length);
+            incomingPayload.CopyTo(workSpan);
+            // Perform high-throughput parsing on workSpan without GC pressure
+        }
+        finally
+        {
+            // Always clear sensitive data before returning to shared pool
+            Array.Clear(rentedBuffer, 0, incomingPayload.Length);
+            ArrayPool<byte>.Shared.Return(rentedBuffer);
+        }
+    }
+}
+```
+
+---
+
+## 4. Unhackable Android Engineering (Kotlin + Jetpack)
+
+### 1. Hardware-Backed Android Keystore Integration:
+```kotlin
+import android.security.keystore.KeyGenParameterSpec
+import android.security.keystore.KeyProperties
+import java.security.KeyStore
+import javax.crypto.Cipher
+import javax.crypto.KeyGenerator
+import javax.crypto.SecretKey
+import javax.crypto.spec.GCMParameterSpec
+
+object SecureKeyStoreManager {
+    private const val ANDROID_KEYSTORE = "AndroidKeyStore"
+    private const val KEY_ALIAS = "EnterpriseAuthKeyMaster"
+
+    init {
+        val keyStore = KeyStore.getInstance(ANDROID_KEYSTORE).apply { load(null) }
+        if (!keyStore.containsAlias(KEY_ALIAS)) {
+            val keyGenerator = KeyGenerator.getInstance(KeyProperties.KEY_ALGORITHM_AES, ANDROID_KEYSTORE)
+            val spec = KeyGenParameterSpec.Builder(
+                KEY_ALIAS,
+                KeyProperties.PURPOSE_ENCRYPT or KeyProperties.PURPOSE_DECRYPT
+            )
+                .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
+                .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
+                .setKeySize(256)
+                .setUserAuthenticationRequired(false) // Set to true if biometric auth is required
+                .setIsStrongBoxBacked(true) // Enforce hardware security module (StrongBox) if available
+                .build()
+            keyGenerator.init(spec)
+            keyGenerator.generateKey()
+        }
+    }
+
+    fun encryptPayload(plainText: ByteArray): Pair<ByteArray, ByteArray> {
+        val keyStore = KeyStore.getInstance(ANDROID_KEYSTORE).apply { load(null) }
+        val secretKey = keyStore.getKey(KEY_ALIAS, null) as SecretKey
+        val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+        cipher.init(Cipher.ENCRYPT_MODE, secretKey)
+        val iv = cipher.iv
+        val encryptedData = cipher.doFinal(plainText)
+        return Pair(iv, encryptedData)
+    }
+
+    fun decryptPayload(iv: ByteArray, encryptedData: ByteArray): ByteArray {
+        val keyStore = KeyStore.getInstance(ANDROID_KEYSTORE).apply { load(null) }
+        val secretKey = keyStore.getKey(KEY_ALIAS, null) as SecretKey
+        val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+        val spec = GCMParameterSpec(128, iv)
+        cipher.init(Cipher.DECRYPT_MODE, secretKey, spec)
+        return cipher.doFinal(encryptedData)
+    }
+}
+```
+
+### 2. Android Manifest & Network Security Hardening:
+- **Component Protection**: Set all activities, services, receivers, and providers to `android:exported="false"` unless explicitly designed for external intent invocation.
+- **Certificate Pinning via `res/xml/network_security_config.xml`**:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">api.gincz.com</domain>
+        <pin-set expiration="2027-12-31">
+            <!-- SHA-256 hash of Subject Public Key Info (SPKI) -->
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+            <!-- Backup pin for disaster recovery -->
+            <pin digest="SHA-256">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>
+```
+
+### 3. Anti-Tampering, Root & Frida Detection:
+- Check for test-keys build tags (`Build.TAGS != null && Build.TAGS.contains("test-keys")`).
+- Detect suspicious binaries (`/system/app/Superuser.apk`, `/system/xbin/su`, `/system/bin/magisk`).
+- Scan `/proc/self/maps` for injected hooking libraries (`frida-agent.so`, `substrate.so`).
+- Enforce ProGuard / R8 full obfuscation rules (`minifyEnabled true`, `shrinkResources true`).
+
+---
+
+## 5. Modern High-Performance Backend Languages (Go & Rust)
+
+### Go Concurrency Safety & Memory Integrity:
+- **Race Detector**: Always run and test with `-race` (`go test -race ./...`).
+- **Context Propagation**: Pass `context.Context` to every blocking call for explicit cancellation and timeout deadlines.
+- **Timing Safe Comparisons**:
+```go
+package security
+
+import (
+	"crypto/subtle"
+)
+
+// CompareSecrets performs constant-time comparison to prevent timing attacks
+func CompareSecrets(a, b []byte) bool {
+	return subtle.ConstantTimeCompare(a, b) == 1
+}
+```
+
+### Rust Memory Safety & Fearless Concurrency:
+- Leverage the ownership model to eliminate null pointer dereferences, use-after-free, and data races at compile time.
+- Enforce `#![forbid(unsafe_code)]` in all application modules.
+- Use `Zeroize` trait from the `zeroize` crate to securely scrub cryptographic keys from RAM upon drop.
+
+---
+
+## 6. Cryptographic Standards Checklist
+
+| Primitive | Recommended Standard | Deprecated / Forbidden |
+| :--- | :--- | :--- |
+| **Symmetric Encryption** | AES-256-GCM, ChaCha20-Poly1305 | DES, 3DES, RC4, AES-CBC, AES-ECB |
+| **Asymmetric Keys** | Ed25519 (signatures), X25519 (ECDH), RSA-4096 | RSA < 3072, DSA |
+| **Hash Functions** | SHA-256, SHA-384, SHA-512, BLAKE3 | MD5, SHA-1 |
+| **Password Hashing** | Argon2id (`m=64MB, t=3, p=4`), bcrypt (`cost >= 12`) | Plain SHA, PBKDF2 with low iterations |
+| **RNG** | Cryptographically Secure PRNG (`/dev/urandom`, `CryptoRandom`) | `Math.random()`, `rand()` |
+
+---
 
 <a name="server-hardening-zerotrust"></a>
 # 📦 SKILL: server-hardening-zerotrust
@@ -3555,7 +4401,6 @@ For systems processing, transmitting, or storing cardholder or sensitive financi
 
 ---
 
-
 <a name="sysadmin-network-engineering"></a>
 # 📦 SKILL: sysadmin-network-engineering
 *Domain:* **SysAdmin & Networking**
@@ -3679,7 +4524,6 @@ Operational management of secure tunnels capable of bypassing deep packet inspec
 
 ---
 
-
 <a name="systematic-debugging"></a>
 # 📦 SKILL: systematic-debugging
 *Domain:* **Software Engineering**
@@ -3702,7 +4546,6 @@ When asked to debug a script or system issue, follow this strict protocol:
 5. **Verify**: Once a fix is applied, verify it solves the specific error without introducing new ones.
 
 ---
-
 
 <a name="writing-plans"></a>
 # 📦 SKILL: writing-plans

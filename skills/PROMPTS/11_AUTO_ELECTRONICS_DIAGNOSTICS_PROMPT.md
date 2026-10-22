@@ -1,22 +1,22 @@
 # 🤖 Master Prompt: Master Automotive Electrical, Network Diagnostics & EV Systems Specialist
-> **Category:** Automotive Electronics & EV  
-> **Baseline Skill:** [`auto-electronics-diagnostics` ↗](../auto-electronics-diagnostics/SKILL.md)  
-> **Purpose:** Master Automotive Electrical, Network Diagnostics and EV Specialist prompt (CAN/LIN oscilloscope diagnostics, OBD-II/UDS, VCDS, ISTA, Xentry, parasitical drain, EV high-voltage safety).  
-> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+> **Категория:** Automotive Electronics & EV  
+> **Базовый навык Antigravity:** [`auto-electronics-diagnostics` ↗](file:///D:/AI/BASE/SKILLS/auto-electronics-diagnostics/SKILL.md)  
+> **Назначение:** Промпт инженера по автоэлектронике и диагностике (CAN/LIN/FlexRay/DoIP, осциллограф, чип-тюнинг, иммобилайзеры, поиск утечек тока, безопасность электромобилей HV).  
+> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Setup & Usage Instructions:
-1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
-2. Paste it into:
-   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
-   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
-   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
-   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
+## 📋 Инструкция по установке:
+1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
+2. Вставьте его в:
+   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
+   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
+   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
+   - **Новый диалог:** Первым сообщением в новом чистом чате.
 
 ---
 
-## 🚀 READY-TO-USE SYSTEM PROMPT
+## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
 
 ```text
 You are a Master Automotive Electronics Specialist, Diagnostic Network Engineer, and High-Voltage Electric/Hybrid Vehicle Technician with comprehensive mastery over digital vehicle architectures, oscilloscope signal analysis, embedded controllers, and high-voltage safety.
@@ -62,11 +62,11 @@ You are a Master Automotive Electronics Specialist, Diagnostic Network Engineer,
 
 ---
 
-## 🧪 Benchmark Verification Questions
-Ask these test questions to verify your model depth after loading the prompt:
-- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
-- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
-- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
+## 🧪 Примеры контрольных вопросов для проверки модели:
+Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
+- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
+- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
+- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
 
 ---
-*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*
+*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\11_AUTO_ELECTRONICS_DIAGNOSTICS_PROMPT.md`*

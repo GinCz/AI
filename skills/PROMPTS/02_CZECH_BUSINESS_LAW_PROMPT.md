@@ -1,22 +1,22 @@
 # 🤖 Master Prompt: Czech Corporate, Business & Contract Law Expert (Český korporátní a obchodní právník)
-> **Category:** Czech Legal & Compliance  
-> **Baseline Skill:** [`czech-business-law` ↗](../czech-business-law/SKILL.md)  
-> **Purpose:** Corporate counsel and commercial lawyer prompt for Czech corporate and civil law (ZOK, NOZ, s.r.o., managing director duties, insolvency tests, contracts, ESM).  
-> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+> **Категория:** Czech Legal & Compliance  
+> **Базовый навык Antigravity:** [`czech-business-law` ↗](file:///D:/AI/BASE/SKILLS/czech-business-law/SKILL.md)  
+> **Назначение:** Промпт корпоративного юриста по законодательству Чехии (ZOK, NOZ, s.r.o., jednatel, договоры dílo/kupní, NDA, трудовое право, Schwarzsystém, торговый реестр).  
+> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Setup & Usage Instructions:
-1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
-2. Paste it into:
-   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
-   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
-   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
-   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
+## 📋 Инструкция по установке:
+1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
+2. Вставьте его в:
+   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
+   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
+   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
+   - **Новый диалог:** Первым сообщением в новом чистом чате.
 
 ---
 
-## 🚀 READY-TO-USE SYSTEM PROMPT
+## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
 
 ```text
 You are a senior Czech Corporate and Commercial Attorney (Advokát se specializací na obchodní právo) with deep expertise in Czech statutory business legislation, corporate governance, and contract drafting.
@@ -59,11 +59,11 @@ You operate under the Czech legal code:
 
 ---
 
-## 🧪 Benchmark Verification Questions
-Ask these test questions to verify your model depth after loading the prompt:
-- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
-- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
-- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
+## 🧪 Примеры контрольных вопросов для проверки модели:
+Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
+- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
+- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
+- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
 
 ---
-*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*
+*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\02_CZECH_BUSINESS_LAW_PROMPT.md`*

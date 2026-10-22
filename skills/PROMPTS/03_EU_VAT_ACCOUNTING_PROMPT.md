@@ -1,22 +1,22 @@
 # 🤖 Master Prompt: EU VAT, Cross-Border Taxation & Pan-European Accounting Expert
-> **Category:** EU VAT & Pan-European Tax  
-> **Baseline Skill:** [`eu-vat-accounting` ↗](../eu-vat-accounting/SKILL.md)  
-> **Purpose:** Pan-European VAT specialist and cross-border accounting prompt (EU VAT Directives, Reverse Charge, OSS/IOSS, Identifikovana osoba, VIES, DAC7).  
-> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+> **Категория:** EU VAT & Pan-European Tax  
+> **Базовый навык Antigravity:** [`eu-vat-accounting` ↗](file:///D:/AI/BASE/SKILLS/eu-vat-accounting/SKILL.md)  
+> **Назначение:** Промпт международного эксперта по европейскому НДС (Директива 2006/112/EC, Reverse Charge, OSS/IOSS, B2B/B2C, VIES, DAC7, трансфертное ценообразование).  
+> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Setup & Usage Instructions:
-1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
-2. Paste it into:
-   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
-   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
-   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
-   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
+## 📋 Инструкция по установке:
+1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
+2. Вставьте его в:
+   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
+   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
+   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
+   - **Новый диалог:** Первым сообщением в новом чистом чате.
 
 ---
 
-## 🚀 READY-TO-USE SYSTEM PROMPT
+## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
 
 ```text
 You are a Principal European Indirect Tax & Cross-Border Accounting Specialist with authoritative expertise in the European Union VAT Directive (Directive 2006/112/EC), Court of Justice of the European Union (CJEU) jurisprudence, and cross-border digital and physical commerce.
@@ -61,11 +61,11 @@ You are a Principal European Indirect Tax & Cross-Border Accounting Specialist w
 
 ---
 
-## 🧪 Benchmark Verification Questions
-Ask these test questions to verify your model depth after loading the prompt:
-- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
-- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
-- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
+## 🧪 Примеры контрольных вопросов для проверки модели:
+Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
+- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
+- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
+- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
 
 ---
-*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*
+*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\03_EU_VAT_ACCOUNTING_PROMPT.md`*

@@ -1,14 +1,14 @@
 # 🧠 Master AI Skills & Domain Capabilities Framework
 
 > **Universal public skills library for autonomous AI coding agents, IDEs, and LLMs (Google Antigravity, Cursor, Claude Code, OpenAI Codex, VS Code Continue, GitHub Copilot).**  
-> *Repository:* [GitHub: GinCz/AI/skills ↗](https://github.com/GinCz/AI/tree/main/skills) | *Author:* [Vladimir Bulantsev (@GinCz) ↗](https://github.com/GinCz) | *Version:* v2026-10-21  
+> *Repository:* [GitHub: GinCz/AI/skills ↗](https://github.com/GinCz/AI/tree/main/skills) | *Author:* [Vladimir Bulantsev (@GinCz) ↗](https://github.com/GinCz) | *Version:* v2026-10-22  
 > **Unified Monolith File for Instant Import:** [`ALL_SKILLS.md ↗`](ALL_SKILLS.md) | [Raw URL](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md)
 
 ---
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 32 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 35 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,7 +17,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 32 Battle-Tested Production Skills
+## 🗂️ Catalog of 35 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
@@ -25,6 +25,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`agy-customizations`** | [`agy-customizations/SKILL.md ↗`](agy-customizations/SKILL.md) | **Antigravity Engineering** | Comprehensive guide to Antigravity Customization System: skills, rules, plugins, hooks, MCP. |
 | **`allergology-clinical-immunology`** | [`allergology-clinical-immunology/SKILL.md ↗`](allergology-clinical-immunology/SKILL.md) | **Clinical Medicine** | Allergology, clinical immunology, allergic rhinitis, pollen-food syndrome, IgE, DAO, AIT/SLIT. |
 | **`antigravity-guide`** | [`antigravity-guide/SKILL.md ↗`](antigravity-guide/SKILL.md) | **Antigravity Platform** | Comprehensive guide and sitemap for Google Antigravity CLI (agy), IDE, App 2.0, and Python SDK. |
+| **`antivirus-edr-threat-defense`** | [`antivirus-edr-threat-defense/SKILL.md ↗`](antivirus-edr-threat-defense/SKILL.md) | **Antivirus & Host EDR Defense** | Enterprise antivirus, EDR, Windows Defender ASR/WDAC/Sysmon, Linux Wazuh/Falco/ClamAV/AppArmor, anti-ransomware. |
 | **`auto-electronics-diagnostics`** | [`auto-electronics-diagnostics/SKILL.md ↗`](auto-electronics-diagnostics/SKILL.md) | **Automotive & EV** | CAN/LIN bus oscilloscope diagnostics, OBD-II/UDS, parasitics, ECU tuning, EV high-voltage safety. |
 | **`auto-mechanics-powertrain`** | [`auto-mechanics-powertrain/SKILL.md ↗`](auto-mechanics-powertrain/SKILL.md) | **Automotive & Powertrain** | ICE overhaul, Common Rail diesel, DSG/transmissions, heavy commercial trucks, pneumatics, carbs. |
 | **`bankruptcy-insolvency-restructuring`** | [`bankruptcy-insolvency-restructuring/SKILL.md ↗`](bankruptcy-insolvency-restructuring/SKILL.md) | **Insolvency & Restructuring** | EU 2015/848, Czech 182/2006 Sb., Russian 127-FZ, subsidiary liability defense, fraudulent conveyance. |
@@ -42,6 +43,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`eu-vat-accounting`** | [`eu-vat-accounting/SKILL.md ↗`](eu-vat-accounting/SKILL.md) | **EU VAT & Cross-Border Tax** | EU VAT Directives, Reverse Charge, One Stop Shop (OSS/IOSS), Identifikovaná osoba, VIES validation, DAC7 reporting. |
 | **`internal-medicine-hematology`** | [`internal-medicine-hematology/SKILL.md ↗`](internal-medicine-hematology/SKILL.md) | **Clinical Medicine** | Internal medicine, hematology, CBC interpretation, anemias, coagulation profiles, liver/renal/lipid panels. |
 | **`intl-contract-drafting-ip`** | [`intl-contract-drafting-ip/SKILL.md ↗`](intl-contract-drafting-ip/SKILL.md) | **International Law & IP** | Vienna Convention CISG 1980, Incoterms 2020, Force Majeure/Hardship, Madrid/EUIPO trademarks, SaaS/SLA agreements. |
+| **`network-hardware-firewalls`** | [`network-hardware-firewalls/SKILL.md ↗`](network-hardware-firewalls/SKILL.md) | **Enterprise Network & Firewalls** | Cisco IOS-XE/ASA, Ubiquiti UniFi OS/UDM, TP-Link Omada SDN, FortiGate, pfSense/OPNsense, MikroTik RouterOS v7, nftables. |
 | **`neurology-neurosurgery-triage`** | [`neurology-neurosurgery-triage/SKILL.md ↗`](neurology-neurosurgery-triage/SKILL.md) | **Clinical Medicine** | Neurology, neurosurgery, stroke fast-track, intracranial pressure, hematomas, cranial nerves, SNOOP4 triage. |
 | **`ophthalmology-vision-care`** | [`ophthalmology-vision-care/SKILL.md ↗`](ophthalmology-vision-care/SKILL.md) | **Clinical Medicine** | Ophthalmology, intraocular pressure management, glaucoma, retinal diseases, macular degeneration, cataracts. |
 | **`orthopedics-knee-rehab`** | [`orthopedics-knee-rehab/SKILL.md ↗`](orthopedics-knee-rehab/SKILL.md) | **Clinical Medicine** | Orthopedics, knee joint anatomy, meniscus/ACL/PCL pathology, provocative tests, PRP/hyaluronic injections, rehab. |
@@ -49,6 +51,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`ru-accounting-tax`** | [`ru-accounting-tax/SKILL.md ↗`](ru-accounting-tax/SKILL.md) | **Russian Accounting & Tax** | Russian accounting (RSBU/FSBU), corporate and personal taxes (OSNO, USN, PSN, NPD), Single Tax Account ENS/ENP, audits. |
 | **`ru-civil-corporate-law`** | [`ru-civil-corporate-law/SKILL.md ↗`](ru-civil-corporate-law/SKILL.md) | **Russian Business Law** | Russian civil and corporate law: Civil Code GK RF, corporate governance 14-FZ/208-FZ, contracts, IP registration. |
 | **`ru-litigation-advocacy`** | [`ru-litigation-advocacy/SKILL.md ↗`](ru-litigation-advocacy/SKILL.md) | **Russian Litigation** | Russian commercial litigation: Commercial Procedure Code APK RF, Civil Procedure GPK RF, interim measures, enforcement. |
+| **`secure-software-engineering`** | [`secure-software-engineering/SKILL.md ↗`](secure-software-engineering/SKILL.md) | **DevOps & Bulletproof Software Engineering** | Bulletproof coding: Windows PowerShell 7+/C# .NET 8/9, Android Kotlin/Compose/Keystore/R8, Linux Server Bash/Go/Rust. |
 | **`server-hardening-zerotrust`** | [`server-hardening-zerotrust/SKILL.md ↗`](server-hardening-zerotrust/SKILL.md) | **Server Hardening** | CIS Benchmarks, SSH ed25519, UFW/Nftables, CrowdSec, WAF, Windows Credential Guard, BitLocker, mTLS, PCI DSS v4.0. |
 | **`sysadmin-network-engineering`** | [`sysadmin-network-engineering/SKILL.md ↗`](sysadmin-network-engineering/SKILL.md) | **SysAdmin & Networking** | Linux & Windows Server, PowerShell 7, PBR, VLAN, DoH/DoT, Nginx, obfuscated VPN (Xray Reality, WireGuard), 3-2-1 backup. |
 | **`systematic-debugging`** | [`systematic-debugging/SKILL.md ↗`](systematic-debugging/SKILL.md) | **Software Engineering** | Root-cause isolation, scientific debugging method, hypothesis testing, log analysis, regression prevention. |

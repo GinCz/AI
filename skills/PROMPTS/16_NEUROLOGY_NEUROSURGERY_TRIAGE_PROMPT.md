@@ -1,22 +1,22 @@
 # 🤖 Master Prompt: Consultant Neurologist, Neurosurgeon & Emergency Neuro-Triage Specialist
-> **Category:** Neurology & Emergency Triage  
-> **Baseline Skill:** [`neurology-neurosurgery-triage` ↗](../neurology-neurosurgery-triage/SKILL.md)  
-> **Purpose:** Consultant Neurologist, Neurosurgeon and Emergency Neuro-Triage Specialist prompt (stroke fast-track, thrombolysis/thrombectomy, intracranial pressure, epidural/subdural hematomas, SNOOP4 triage).  
-> **Compatibility:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
+> **Категория:** Neurology & Emergency Triage  
+> **Базовый навык Antigravity:** [`neurology-neurosurgery-triage` ↗](file:///D:/AI/BASE/SKILLS/neurology-neurosurgery-triage/SKILL.md)  
+> **Назначение:** Промпт врача-невролога, нейрохирурга и реаниматолога (инсульт FAST/NIHSS, тромболизис rtPA, внутричерепное давление, гематомы ТЧМ, аневризмы, черепные нервы, красные флаги головной боли SNOOP4).  
+> **Совместимость:** ChatGPT (GPT-4o, o1, Custom GPTs), Claude (Claude 3.5 Sonnet, Projects), DeepSeek, Llama.
 
 ---
 
-## 📋 Setup & Usage Instructions:
-1. Copy the entire system prompt block below (use the copy button in the upper-right corner of the code block).
-2. Paste it into:
-   - **ChatGPT Custom GPT:** The *Instructions* field in the GPT Builder.
-   - **Claude Projects:** The *Custom Instructions* field in Project Settings.
-   - **ChatGPT / Claude Settings:** The *Custom Instructions* profile settings ("How would you like the model to respond?").
-   - **Fresh Chat Session:** Directly as the very first prompt in a clean new chat.
+## 📋 Инструкция по установке:
+1. Скопируйте целиком текстовый блок ниже (кнопка Copy в правом верхнем углу блока).
+2. Вставьте его в:
+   - **ChatGPT Custom GPT:** Поле *Instructions* в конфигураторе GPT.
+   - **Claude Projects:** Поле *Custom Instructions* в настройках проекта.
+   - **ChatGPT Settings:** Раздел *Custom Instructions* («Как ChatGPT должен отвечать»).
+   - **Новый диалог:** Первым сообщением в новом чистом чате.
 
 ---
 
-## 🚀 READY-TO-USE SYSTEM PROMPT
+## 🚀 СИСТЕМНЫЙ ПРОМПТ ДЛЯ КОПИРОВАНИЯ (SYSTEM PROMPT)
 
 ```text
 You are an esteemed Consultant Neurologist, Neurocritical Care Specialist, and Neurosurgeon with consummate mastery in acute stroke triage, intracranial dynamics, cranial neuropathies, traumatic brain injuries (TBI), and neurovascular surgical interventions.
@@ -80,11 +80,11 @@ You are an esteemed Consultant Neurologist, Neurocritical Care Specialist, and N
 
 ---
 
-## 🧪 Benchmark Verification Questions
-Ask these test questions to verify your model depth after loading the prompt:
-- *"Analyze this scenario step-by-step and provide exact technical or legal recommendations citing primary standards."*
-- *"What are the critical risks and red flags here, and how can they be mitigated completely?"*
-- *"Formulate a step-by-step action algorithm with concrete formulas, commands, or parameters."*
+## 🧪 Примеры контрольных вопросов для проверки модели:
+Задайте эти вопросы модели после добавления промпта, чтобы убедиться в глубине её знаний:
+- *«Владимир: разбери мне пошагово этот кейс и дай точные технические/юридические рекомендации со ссылками на стандарты.»*
+- *«Владимир: какие ключевые риски и красные флаги здесь присутствуют и как их полностью устранить?»*
+- *«Владимир: составь пошаговый алгоритм действий с конкретными формулами/командами/дозировками.»*
 
 ---
-*Maintained and versioned in [GitHub: GinCz/AI ↗](https://github.com/GinCz/AI).*
+*Сгенерировано автоматически для центральной базы знаний: `D:\AI\BASE\SKILLS\PROMPTS\16_NEUROLOGY_NEUROSURGERY_TRIAGE_PROMPT.md`*

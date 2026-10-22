@@ -11,15 +11,62 @@ A comprehensive operational guide for architecting, deploying, automating, and m
 
 ## 1. Continuous Integration & Deployment (CI/CD)
 
-### GitHub Actions Production Patterns:
-- **Pipeline Architecture**: Linting -> Unit Tests -> SAST/Security Scan -> Multi-arch Build -> Container Push -> Deploy via SSH / Webhook.
-- **Self-Hosted Runners vs. GitHub Runners**:
-  - Secure runner isolation: Use ephemeral runners or dedicated unprivileged service users.
-  - Runner environment variables and secrets must be injected via GitHub Secrets / HashiCorp Vault.
-- **Workflow Optimization**:
-  - Aggressive caching: `actions/cache` for package dependencies (npm, pip, go mod, cargo).
-  - Multi-stage concurrency controls (`concurrency: group: ${{ github.ref }}, cancel-in-progress: true`).
-  - Strict step timeouts (`timeout-minutes: 15`) to prevent hanging jobs and token/credit burns.
+### GitHub Actions Hardened Production Pipeline:
+```yaml
+name: Production Hardened CI/CD
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Principle of least privilege for GITHUB_TOKEN
+permissions:
+  contents: read
+  packages: write
+  id-token: write # Required for OIDC cloud authentication
+  security-events: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # Pin to exact commit SHA v4.2.2
+
+      - name: Security Scan (SAST & Vulnerabilities)
+        uses: aquasecurity/trivy-action@18f2510ee396bbf400402947b394f2dd8c87dbb0
+        with:
+          scan-type: 'fs'
+          ignore-unfixed: true
+          severity: 'CRITICAL,HIGH'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Set up QEMU & Docker Buildx
+        uses: docker/setup-qemu-action@49b3bc8e6bdd4480e8226f5bf2164930cc65ee1e
+      - uses: docker/setup-buildx-action@c47758b77c9736f4b2ef4073d4d51994fabfe349
+
+      - name: Build Multi-Arch Container Image
+        uses: docker/build-push-action@4f58ea79222b3b9dc2c8bbdd6debcef730109a75
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: false
+          tags: app:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+```
+
+### Self-Hosted Runners Security & Isolation:
+- Use ephemeral runners (e.g. GitHub Actions Runner Controller on Kubernetes) destroyed immediately after a single job execution.
+- Strictly isolate runner networks using dedicated VLANs/Security Groups. Runners must never possess direct write access to production database subnets.
+- Use OpenID Connect (OIDC) token exchange with AWS IAM / OCI / GCP to acquire short-lived STS tokens instead of storing long-lived credentials in GitHub Secrets.
 
 ---
 
@@ -29,6 +76,7 @@ A comprehensive operational guide for architecting, deploying, automating, and m
 - **Remote State**: S3-compatible backend (e.g. OCI Object Storage, AWS S3) with state locking (DynamoDB or native object locking).
 - **Module Architecture**: Reusable modules for VPC/VCN, security lists, compute instances, DNS records.
 - **Drift Detection**: Automated scheduled runs to detect unauthorized out-of-band infrastructure modifications.
+- **Pre-commit Checks**: Run `tflint`, `tfsec`, and `terraform fmt -check` in CI to prevent insecure infrastructure commits.
 
 ### Ansible Playbooks & Idempotency:
 - Structure: Roles (`tasks`, `handlers`, `templates`, `vars`, `defaults`).
@@ -37,36 +85,70 @@ A comprehensive operational guide for architecting, deploying, automating, and m
 
 ---
 
-## 3. Containerization (Docker, Compose & OCI)
+## 3. Containerization (Docker, Rootless & Kubernetes Hardening)
 
-### Production Dockerfile Standards:
-1. **Minimal Base Images**: Alpine, Debian-slim, or Google Distroless.
-2. **Multi-Stage Builds**: Separate build-time dependencies (compilers, SDKs) from the runtime environment.
-3. **Non-Root Execution**: Always declare `USER nonroot` or create dedicated UID/GID inside the container.
-4. **Cache Optimization**: Copy package manifests (`package.json`, `go.mod`, `requirements.txt`) before application source code.
-5. **Security Scanning**: Scan images with `Trivy` or `Grype` during CI builds.
+### Production Distroless Dockerfile Standard:
+```dockerfile
+# Multi-stage build pattern
+FROM golang:1.23-bookworm AS builder
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o /bin/app ./cmd/server
 
-### Docker Compose Production Patterns:
-- Use explicit healthchecks (`test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]`).
-- Resource limits per container:
-  ```yaml
-  deploy:
-    resources:
-      limits:
-        cpus: '1.5'
-        memory: 1024M
-      reservations:
-        memory: 256M
-  ```
-- Logging drivers with rotation:
-  ```yaml
-  logging:
-    driver: "json-file"
-    options:
-      max-size: "50m"
-      max-file: "5"
-  ```
-- Automated restarts: `restart: unless-stopped`.
+# Final minimal runtime container (Google Distroless non-root)
+FROM gcr.io/distroless/static-debian12:nonroot
+WORKDIR /app
+COPY --from=builder /bin/app /app/server
+USER nonroot:nonroot
+EXPOSE 8080
+ENTRYPOINT ["/app/server"]
+```
+
+### Hardened Production Docker Compose (`compose.yaml`):
+```yaml
+services:
+  app:
+    image: ghcr.io/gincz/app:v2.1.0
+    restart: unless-stopped
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    user: "10001:10001"
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "127.0.0.1:8080:8080" # Bind to loopback only, never 0.0.0.0
+    healthcheck:
+      test: ["CMD", "/app/server", "-healthcheck"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 1024M
+        reservations:
+          memory: 256M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+```
+
+### Kubernetes Pod Security Standards (Restricted Profile):
+- Disallow privileged containers (`privileged: false`).
+- Enforce read-only root filesystems (`readOnlyRootFilesystem: true`).
+- Restrict Linux capabilities to none (`drop: ["ALL"]`).
+- Deny root execution (`runAsNonRoot: true`, `runAsUser: 10001`).
+- Enforce strict `NetworkPolicy` denying all ingress by default, whitelisting only designated microservice ports.
 
 ---
 
