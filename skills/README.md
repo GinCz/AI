@@ -8,7 +8,7 @@
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 45 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 51 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,19 +17,22 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 45 Battle-Tested Production Skills
+## 🗂️ Catalog of 51 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
+| **`advertising-banner-marketing-design`** | [`advertising-banner-marketing-design/SKILL.md ↗`](advertising-banner-marketing-design/SKILL.md) | **Advertising & Marketing Creatives** | Google Display Network & social ad creatives, 3-sec visual hierarchy, animated HTML5 banners, CTR optimization. |
 | **`agent-browser`** | [`agent-browser/SKILL.md ↗`](agent-browser/SKILL.md) | **Web & Documentation** | Official documentation browsing for PowerShell, Linux man pages, cloud APIs, and system commands. |
 | **`agy-customizations`** | [`agy-customizations/SKILL.md ↗`](agy-customizations/SKILL.md) | **Antigravity Engineering** | Comprehensive guide to Antigravity Customization System: skills, rules, plugins, hooks, MCP. |
 | **`allergology-clinical-immunology`** | [`allergology-clinical-immunology/SKILL.md ↗`](allergology-clinical-immunology/SKILL.md) | **Clinical Medicine** | Allergology, clinical immunology, allergic rhinitis, pollen-food syndrome, IgE, DAO, AIT/SLIT. |
 | **`antigravity-guide`** | [`antigravity-guide/SKILL.md ↗`](antigravity-guide/SKILL.md) | **Antigravity Platform** | Comprehensive guide and sitemap for Google Antigravity CLI (agy), IDE, App 2.0, and Python SDK. |
 | **`antivirus-edr-threat-defense`** | [`antivirus-edr-threat-defense/SKILL.md ↗`](antivirus-edr-threat-defense/SKILL.md) | **Antivirus & Host EDR Defense** | Enterprise antivirus, EDR, Windows Defender ASR/WDAC/Sysmon, Linux Wazuh/Falco/ClamAV/AppArmor, anti-ransomware. |
+| **`audio-engineering-sound-design`** | [`audio-engineering-sound-design/SKILL.md ↗`](audio-engineering-sound-design/SKILL.md) | **Audio Engineering & Sound Design** | Vocal post-production, dynamic compression, surgical EQ, EBU R128 loudness mastering (-16/-14 LUFS), FFmpeg audio filters. |
 | **`auto-electronics-diagnostics`** | [`auto-electronics-diagnostics/SKILL.md ↗`](auto-electronics-diagnostics/SKILL.md) | **Automotive & EV** | CAN/LIN bus oscilloscope diagnostics, OBD-II/UDS, parasitics, ECU tuning, EV high-voltage safety. |
 | **`auto-mechanics-powertrain`** | [`auto-mechanics-powertrain/SKILL.md ↗`](auto-mechanics-powertrain/SKILL.md) | **Automotive & Powertrain** | ICE overhaul, Common Rail diesel, DSG/transmissions, heavy commercial trucks, pneumatics, carbs. |
 | **`automotive-fleet-logistics-czech-eu`** | [`automotive-fleet-logistics-czech-eu/SKILL.md ↗`](automotive-fleet-logistics-czech-eu/SKILL.md) | **Automotive & Fleet Logistics** | Portál dopravy, eTechničák, Act 30/2024 Sb. POV, green card abolition, STK inspection categories, Edalnice.cz, cross-border CBE fines. |
 | **`bankruptcy-insolvency-restructuring`** | [`bankruptcy-insolvency-restructuring/SKILL.md ↗`](bankruptcy-insolvency-restructuring/SKILL.md) | **Insolvency & Restructuring** | EU 2015/848, Czech 182/2006 Sb., Russian 127-FZ, subsidiary liability defense, fraudulent conveyance. |
+| **`branding-logo-vector-graphics`** | [`branding-logo-vector-graphics/SKILL.md ↗`](branding-logo-vector-graphics/SKILL.md) | **Branding & Vector Graphics** | Brand identity, logo engineering, bezier curve geometry, corporate brand books, Pantone/CMYK/RGB color systems, clean SVG. |
 | **`clinical-cardiology-surgery`** | [`clinical-cardiology-surgery/SKILL.md ↗`](clinical-cardiology-surgery/SKILL.md) | **Clinical Medicine** | Cardiology, cardiac surgery, hypertension guidelines, CAD, 12-lead ECG, GDMT, post-CABG recovery. |
 | **`code-review`** | [`code-review/SKILL.md ↗`](code-review/SKILL.md) | **Software Engineering** | Rigorous code review heuristics, static analysis, performance, concurrency, security, maintainability. |
 | **`compliance-anti-sanctions-aml`** | [`compliance-anti-sanctions-aml/SKILL.md ↗`](compliance-anti-sanctions-aml/SKILL.md) | **Compliance & Sanctions** | EU/US sanctions (OFAC SDN, 50% rule), AMLD5/6, AMLA, KYC, export control, MiCA crypto regulation. |
@@ -50,6 +53,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`eu-vat-accounting`** | [`eu-vat-accounting/SKILL.md ↗`](eu-vat-accounting/SKILL.md) | **EU VAT & Cross-Border Tax** | EU VAT Directives, Reverse Charge, One Stop Shop (OSS/IOSS), Identifikovaná osoba, VIES validation, DAC7 reporting. |
 | **`internal-medicine-hematology`** | [`internal-medicine-hematology/SKILL.md ↗`](internal-medicine-hematology/SKILL.md) | **Clinical Medicine** | Internal medicine, hematology, CBC interpretation, anemias, coagulation profiles, liver/renal/lipid panels. |
 | **`intl-contract-drafting-ip`** | [`intl-contract-drafting-ip/SKILL.md ↗`](intl-contract-drafting-ip/SKILL.md) | **International Law & IP** | Vienna Convention CISG 1980, Incoterms 2020, Force Majeure/Hardship, Madrid/EUIPO trademarks, SaaS/SLA agreements. |
+| **`landscape-interior-exterior-design`** | [`landscape-interior-exterior-design/SKILL.md ↗`](landscape-interior-exterior-design/SKILL.md) | **Architecture & Spatial Design** | Residential interior flow, ergonomic kitchen triangles, lighting engineering (Lux/Lumens/Kelvin), exterior facades, landscape zoning, Blender Cycles. |
 | **`network-hardware-firewalls`** | [`network-hardware-firewalls/SKILL.md ↗`](network-hardware-firewalls/SKILL.md) | **Enterprise Network & Firewalls** | Cisco IOS-XE/ASA, Ubiquiti UniFi OS/UDM, TP-Link Omada SDN, FortiGate, pfSense/OPNsense, MikroTik RouterOS v7, nftables. |
 | **`neurology-neurosurgery-triage`** | [`neurology-neurosurgery-triage/SKILL.md ↗`](neurology-neurosurgery-triage/SKILL.md) | **Clinical Medicine** | Neurology, neurosurgery, stroke fast-track, intracranial pressure, hematomas, cranial nerves, SNOOP4 triage. |
 | **`ophthalmology-vision-care`** | [`ophthalmology-vision-care/SKILL.md ↗`](ophthalmology-vision-care/SKILL.md) | **Clinical Medicine** | Ophthalmology, intraocular pressure management, glaucoma, retinal diseases, macular degeneration, cataracts. |
@@ -63,7 +67,9 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`somnology-sleep-apnea-snoring`** | [`somnology-sleep-apnea-snoring/SKILL.md ↗`](somnology-sleep-apnea-snoring/SKILL.md) | **Clinical Medicine & Somnology** | Somnology: rhonchopathy/snoring, obstructive sleep apnea (OSA), polysomnography (AHI), CPAP, MAD splints, UPPP/coblation. |
 | **`sysadmin-network-engineering`** | [`sysadmin-network-engineering/SKILL.md ↗`](sysadmin-network-engineering/SKILL.md) | **SysAdmin & Networking** | Linux & Windows Server, PowerShell 7, PBR, VLAN, DoH/DoT, Nginx, obfuscated VPN (Xray Reality, WireGuard), 3-2-1 backup. |
 | **`systematic-debugging`** | [`systematic-debugging/SKILL.md ↗`](systematic-debugging/SKILL.md) | **Software Engineering** | Root-cause isolation, scientific debugging method, hypothesis testing, log analysis, regression prevention. |
+| **`ui-ux-gui-design-systems`** | [`ui-ux-gui-design-systems/SKILL.md ↗`](ui-ux-gui-design-systems/SKILL.md) | **UI/UX & Design Systems** | Enterprise GUI design systems, atomic design tokens (DTCG), 8-pt spatial grids, WCAG 2.2 AAA accessibility, React/Tailwind/Compose. |
 | **`urology-nephrology-cholelithiasis`** | [`urology-nephrology-cholelithiasis/SKILL.md ↗`](urology-nephrology-cholelithiasis/SKILL.md) | **Clinical Medicine & Urology** | Urology & cholelithiasis: gallstones, lap cholecystectomy, ERCP, ureteral stones, URS/RIRS laser, JJ-stenting, prostatitis. |
+| **`video-editing-motion-production`** | [`video-editing-motion-production/SKILL.md ↗`](video-editing-motion-production/SKILL.md) | **Video Editing & Motion Graphics** | Nonlinear narrative video editing, J/L-cuts, Rec.709/ACES color grading, Remotion code-based React video generation, FFmpeg encoding. |
 | **`white-collar-crime-tax-liability`** | [`white-collar-crime-tax-liability/SKILL.md ↗`](white-collar-crime-tax-liability/SKILL.md) | **Criminal Law & Financial Liability** | White-collar crime, tax evasion (§ 240/241 TZ, Arts. 198/199 UK RF), accounting fraud, corporate criminal liability, EPPO. |
 | **`writing-plans`** | [`writing-plans/SKILL.md ↗`](writing-plans/SKILL.md) | **Software Engineering** | Step-by-step engineering plan drafting, architecture blueprints, acceptance criteria, milestone verification. |
 
@@ -72,7 +78,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 ## 📁 Standalone System Prompts for External Models (`PROMPTS/`)
 
 If you are configuring Custom GPTs, Claude Projects, or standalone LLMs without filesystem tools, use our dedicated ready-to-copy prompts in [`PROMPTS/ ↗`](PROMPTS/):
-* 39 specialized system prompts pre-compiled for instant deployment.
+* 45 specialized system prompts pre-compiled for instant deployment.
 * Completely self-contained and formatted for 1-click copy-pasting.
 * See [`PROMPTS/README.md ↗`](PROMPTS/README.md) for the complete directory.
 

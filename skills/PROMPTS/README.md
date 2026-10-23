@@ -1,6 +1,6 @@
 # 🤖 Каталог готовых мастер-промптов для сторонних ИИ
 
-> **Библиотека системных промптов (System Prompts):** 39 специализированных направлений
+> **Библиотека системных промптов (System Prompts):** 45 специализированных направлений
 > **Назначение:** Мгновенный перенос экспертных компетенций в ChatGPT (Custom GPTs / Projects), Claude (Projects), DeepSeek, Llama.
 > **Формат:** Чистый автономный текст инструкций без привязки к локальным скриптам и путям Antigravity.
 > **Владелец:** Владимир Буланцев (GinCz) | Актуализация: Октябрь 2026 г.
@@ -50,6 +50,12 @@
 | 37 | **Czech Immigration & Labor Law** | Czech Permanent Residency & Labor Office Specialist (Trvalý pobyt, OAMP MV ČR a Úřad práce) | [`37_CZECH_IMMIGRATION_RESIDENCY_LABOR_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/37_CZECH_IMMIGRATION_RESIDENCY_LABOR_PROMPT.md) | [`czech-immigration-residency-labor` ↗](file:///D:/AI/BASE/SKILLS/czech-immigration-residency-labor/SKILL.md) |
 | 38 | **Automotive & EU Transport Law** | Automotive Fleet, Insurance & EU Cross-Border Logistics Specialist (Registr vozidel, STK a pojištění) | [`38_AUTOMOTIVE_FLEET_LOGISTICS_CZECH_EU_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/38_AUTOMOTIVE_FLEET_LOGISTICS_CZECH_EU_PROMPT.md) | [`automotive-fleet-logistics-czech-eu` ↗](file:///D:/AI/BASE/SKILLS/automotive-fleet-logistics-czech-eu/SKILL.md) |
 | 39 | **Crypto Assets & Financial Regulation** | Crypto-Asset Taxation, Accounting & MiCA Compliance Specialist (Kryptoměny a daně v ČR) | [`39_CRYPTO_ASSET_ACCOUNTING_TAXATION_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/39_CRYPTO_ASSET_ACCOUNTING_TAXATION_PROMPT.md) | [`crypto-asset-accounting-taxation` ↗](file:///D:/AI/BASE/SKILLS/crypto-asset-accounting-taxation/SKILL.md) |
+| 40 | **UI/UX & Design Systems** | Principal UI/UX Designer & Cross-Platform GUI Systems Architect | [`40_UI_UX_GUI_DESIGN_SYSTEMS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/40_UI_UX_GUI_DESIGN_SYSTEMS_PROMPT.md) | [`ui-ux-gui-design-systems` ↗](file:///D:/AI/BASE/SKILLS/ui-ux-gui-design-systems/SKILL.md) |
+| 41 | **Architecture & Spatial Design** | Architectural Spatial Planning, Landscape, Interior & Exterior Visualization Expert | [`41_LANDSCAPE_INTERIOR_EXTERIOR_DESIGN_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/41_LANDSCAPE_INTERIOR_EXTERIOR_DESIGN_PROMPT.md) | [`landscape-interior-exterior-design` ↗](file:///D:/AI/BASE/SKILLS/landscape-interior-exterior-design/SKILL.md) |
+| 42 | **Branding & Vector Graphics** | Brand Identity Designer, Logo Engineer & Vector Systems Specialist | [`42_BRANDING_LOGO_VECTOR_GRAPHICS_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/42_BRANDING_LOGO_VECTOR_GRAPHICS_PROMPT.md) | [`branding-logo-vector-graphics` ↗](file:///D:/AI/BASE/SKILLS/branding-logo-vector-graphics/SKILL.md) |
+| 43 | **Audio Engineering & Sound Design** | Professional Audio Engineer, Sound Designer & Vocal Post-Production Specialist | [`43_AUDIO_ENGINEERING_SOUND_DESIGN_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/43_AUDIO_ENGINEERING_SOUND_DESIGN_PROMPT.md) | [`audio-engineering-sound-design` ↗](file:///D:/AI/BASE/SKILLS/audio-engineering-sound-design/SKILL.md) |
+| 44 | **Video Editing & Motion Graphics** | Senior Video Editor, Motion Graphics Designer & Remotion Code-Based Video Architect | [`44_VIDEO_EDITING_MOTION_PRODUCTION_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/44_VIDEO_EDITING_MOTION_PRODUCTION_PROMPT.md) | [`video-editing-motion-production` ↗](file:///D:/AI/BASE/SKILLS/video-editing-motion-production/SKILL.md) |
+| 45 | **Advertising & Marketing Creatives** | Digital Advertising Designer & High-Conversion Marketing Creative Engineer | [`45_ADVERTISING_BANNER_MARKETING_DESIGN_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/45_ADVERTISING_BANNER_MARKETING_DESIGN_PROMPT.md) | [`advertising-banner-marketing-design` ↗](file:///D:/AI/BASE/SKILLS/advertising-banner-marketing-design/SKILL.md) |
 
 ---
 ### 💾 Зеркала каталога на диске:

@@ -1,6 +1,6 @@
-# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 45 Skills)
+# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 51 Skills)
 
-> **Single consolidated reference file containing all 45 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
+> **Single consolidated reference file containing all 51 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
 > *GitHub Repository:* https://github.com/GinCz/AI/tree/main/skills  
 > *Raw URL for Direct Fetch:* https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md  
 > *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-23
@@ -9,54 +9,124 @@
 
 ## 🧭 Table of Contents
 
-1. [agent-browser](#agent-browser) — *Web & Documentation*
-2. [agy-customizations](#agy-customizations) — *Antigravity Engineering*
-3. [allergology-clinical-immunology](#allergology-clinical-immunology) — *Clinical Medicine*
-4. [antigravity-guide](#antigravity-guide) — *Antigravity Platform*
-5. [antivirus-edr-threat-defense](#antivirus-edr-threat-defense) — *Antivirus & Host EDR Defense*
-6. [auto-electronics-diagnostics](#auto-electronics-diagnostics) — *Automotive & EV*
-7. [auto-mechanics-powertrain](#auto-mechanics-powertrain) — *Automotive & Powertrain*
-8. [automotive-fleet-logistics-czech-eu](#automotive-fleet-logistics-czech-eu) — *Automotive & EU Transport Law*
-9. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
-10. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
-11. [code-review](#code-review) — *Software Engineering*
-12. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
-13. [crypto-asset-accounting-taxation](#crypto-asset-accounting-taxation) — *Crypto Assets & Financial Regulation*
-14. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
-15. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
-16. [czech-business-law](#czech-business-law) — *Czech Business Law*
-17. [czech-e-government-isds-portals](#czech-e-government-isds-portals) — *Czech E-Government & Digital Tax*
-18. [czech-immigration-residency-labor](#czech-immigration-residency-labor) — *Czech Immigration & Labor Law*
-19. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
-20. [czech-pohoda-accounting-operations](#czech-pohoda-accounting-operations) — *Czech Accounting & ERP Systems*
-21. [czech-real-estate-utilities-property](#czech-real-estate-utilities-property) — *Czech Real Estate & Utilities*
-22. [dermatology-skin-diseases](#dermatology-skin-diseases) — *Clinical Medicine & Dermatology*
-23. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
-24. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
-25. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
-26. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
-27. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
-28. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
-29. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
-30. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
-31. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
-32. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
-33. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
-34. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
-35. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
-36. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
-37. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
-38. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
-39. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
-40. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
-41. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
-42. [systematic-debugging](#systematic-debugging) — *Software Engineering*
-43. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
-44. [white-collar-crime-tax-liability](#white-collar-crime-tax-liability) — *Criminal Law & Financial Liability*
-45. [writing-plans](#writing-plans) — *Software Engineering*
+1. [advertising-banner-marketing-design](#advertising-banner-marketing-design) — *Advertising & Marketing Creatives*
+2. [agent-browser](#agent-browser) — *Web & Documentation*
+3. [agy-customizations](#agy-customizations) — *Antigravity Engineering*
+4. [allergology-clinical-immunology](#allergology-clinical-immunology) — *Clinical Medicine*
+5. [antigravity-guide](#antigravity-guide) — *Antigravity Platform*
+6. [antivirus-edr-threat-defense](#antivirus-edr-threat-defense) — *Antivirus & Host EDR Defense*
+7. [audio-engineering-sound-design](#audio-engineering-sound-design) — *Audio Engineering & Sound Design*
+8. [auto-electronics-diagnostics](#auto-electronics-diagnostics) — *Automotive & EV*
+9. [auto-mechanics-powertrain](#auto-mechanics-powertrain) — *Automotive & Powertrain*
+10. [automotive-fleet-logistics-czech-eu](#automotive-fleet-logistics-czech-eu) — *Automotive & EU Transport Law*
+11. [bankruptcy-insolvency-restructuring](#bankruptcy-insolvency-restructuring) — *Insolvency & Restructuring*
+12. [branding-logo-vector-graphics](#branding-logo-vector-graphics) — *Branding & Vector Graphics*
+13. [clinical-cardiology-surgery](#clinical-cardiology-surgery) — *Clinical Medicine*
+14. [code-review](#code-review) — *Software Engineering*
+15. [compliance-anti-sanctions-aml](#compliance-anti-sanctions-aml) — *Compliance & Sanctions*
+16. [crypto-asset-accounting-taxation](#crypto-asset-accounting-taxation) — *Crypto Assets & Financial Regulation*
+17. [cyber-defense-pentest](#cyber-defense-pentest) — *Cybersecurity*
+18. [czech-accounting-tax](#czech-accounting-tax) — *Czech Accounting & Tax*
+19. [czech-business-law](#czech-business-law) — *Czech Business Law*
+20. [czech-e-government-isds-portals](#czech-e-government-isds-portals) — *Czech E-Government & Digital Tax*
+21. [czech-immigration-residency-labor](#czech-immigration-residency-labor) — *Czech Immigration & Labor Law*
+22. [czech-litigation-advocacy](#czech-litigation-advocacy) — *Czech Litigation*
+23. [czech-pohoda-accounting-operations](#czech-pohoda-accounting-operations) — *Czech Accounting & ERP Systems*
+24. [czech-real-estate-utilities-property](#czech-real-estate-utilities-property) — *Czech Real Estate & Utilities*
+25. [dermatology-skin-diseases](#dermatology-skin-diseases) — *Clinical Medicine & Dermatology*
+26. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
+27. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
+28. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
+29. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
+30. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
+31. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
+32. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
+33. [landscape-interior-exterior-design](#landscape-interior-exterior-design) — *Architecture & Spatial Design*
+34. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
+35. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
+36. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
+37. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
+38. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
+39. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
+40. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
+41. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
+42. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
+43. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
+44. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
+45. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
+46. [systematic-debugging](#systematic-debugging) — *Software Engineering*
+47. [ui-ux-gui-design-systems](#ui-ux-gui-design-systems) — *UI/UX & Design Systems*
+48. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
+49. [video-editing-motion-production](#video-editing-motion-production) — *Video Editing & Motion Graphics*
+50. [white-collar-crime-tax-liability](#white-collar-crime-tax-liability) — *Criminal Law & Financial Liability*
+51. [writing-plans](#writing-plans) — *Software Engineering*
 
 ---
 
+
+<a name="advertising-banner-marketing-design"></a>
+# 📦 SKILL: advertising-banner-marketing-design
+*Domain:* **Advertising & Marketing Creatives**
+
+---
+name: advertising-banner-marketing-design
+description: >-
+  Digital advertising design, marketing banner production, conversion rate optimization (CTR), visual hierarchy, ad formats for Google Display Network, Meta, LinkedIn, animated HTML5 banners, and A/B test creative engineering.
+---
+# Digital Advertising Design, Marketing Banners & Visual Conversion Engineering
+
+A production manual for designing high-converting digital ad creatives, Google Display banners, social media marketing assets (Meta, Instagram, LinkedIn), animated HTML5 banners, visual hierarchy, and programmatic ad export workflows.
+
+---
+
+## 1. Visual Hierarchy & The 3-Second Conversion Rule
+
+### A. The Three-Second Cognitive Filter:
+Users scrolling social media or browsing websites scan ad creatives in under 1.5–3 seconds. The design must communicate value instantaneously through a strict visual hierarchy:
+1. **The Hook / Primary Visual (40%–50% area)**: High-contrast product hero render, human emotional face, or bold pattern capturing eye saccades.
+2. **The Headline / Core Value Proposition (30% area)**: Concise text (maximum 5–7 words) addressing a concrete pain point or quantifiable benefit (e.g., "Cut Cloud Costs by 45%").
+3. **The Call-to-Action (CTA) Button (15%–20% area)**: Distinct button styling with high-contrast color differing from the background; action-oriented copy ("Start Free Audit", "Deploy in 60s").
+4. **Trust Anchor / Social Proof (5% area)**: Subtle star ratings, security badges (ISO 27001, PCI DSS), or partner logos boosting credibility.
+
+### B. The F-Pattern & Z-Pattern Scanning Paths:
+- **Display Banners (Horizontal 728x90, 970x250)**: Left-to-right Z-pattern: Logo top-left -> Value proposition center -> CTA button far-right.
+- **Feed Creatives (1080x1080, 1080x1350, 9:16 Stories/Reels)**: Vertical top-down scan: Headline Hook at eye level -> Hero demonstration center -> Floating sticky CTA bottom third.
+
+---
+
+## 2. Standardized Dimensional Specifications
+
+### A. Google Display Network (GDN) Standard Sizes:
+- **Leaderboard**: `728 x 90 px` (Desktop top banner).
+- **Medium Rectangle (MPU)**: `300 x 250 px` (Universal high-CTR inventory for both mobile and desktop).
+- **Large Rectangle**: `336 x 280 px`.
+- **Half Page / Double Billboard**: `300 x 600 px` (Dominant vertical desktop real estate).
+- **Billboard**: `970 x 250 px` (Premium desktop masthead).
+- **Mobile Leaderboard**: `320 x 50 px` and `320 x 100 px` (Mobile sticky banner).
+- *Technical Constraint*: Maximum file size for GDN static/HTML5 assets is strictly **150 KB**.
+
+### B. Social Media Ad Inventory (Meta, LinkedIn, X):
+- **Square (1:1)**: `1080 x 1080 px` (Universal feed format across Instagram, Facebook, LinkedIn).
+- **Portrait (4:5)**: `1080 x 1350 px` (Maximum vertical feed real estate in mobile app feeds without truncation).
+- **Vertical Fullscreen (9:16)**: `1080 x 1920 px` (Instagram Stories, Reels, YouTube Shorts, TikTok). Safe zones: Keep critical text 250px away from top and bottom to avoid native UI overlays (username, caption, share buttons).
+
+---
+
+## 3. High-Performance HTML5 Animated Banners
+
+### A. Technical Architecture & Constraints:
+- Lightweight CSS3 animations and GreenSock Animation Platform (GSAP) over heavy animated GIFs.
+- Maximum 15-second loop duration; animation must stop completely after 30 seconds (IAB standards).
+- Zero external CDN dependencies that fail offline ad validation: Fonts embedded as WOFF2 base64 or converted into vector SVG paths.
+- Mandatory 1px solid gray/dark border (`#CCCCCC` or `#333333`) around banners with white or light backgrounds to separate creative from publisher page content.
+
+### B. Automated Asset Generation via Sharp / ImageMagick:
+```bash
+# Resize and compress hero product image to exact 300x250 web asset under 150KB
+magick hero_render.png -resize 300x250^ -gravity center -extent 300x250 -quality 85 -strip banner_300x250.webp
+```
+
+---
 
 <a name="agent-browser"></a>
 # 📦 SKILL: agent-browser
@@ -531,6 +601,86 @@ find /etc/cron* /etc/systemd/system /var/spool/cron -mtime -2 -ls > /tmp/recent_
 
 ---
 
+<a name="audio-engineering-sound-design"></a>
+# 📦 SKILL: audio-engineering-sound-design
+*Domain:* **Audio Engineering & Sound Design**
+
+---
+name: audio-engineering-sound-design
+description: >-
+  Professional audio engineering, sound design, podcast and vocal post-production, mixing, mastering, dynamic processing (compression, limiting, gating), equalization (parametric EQ), FFmpeg audio filter automation, and acoustic loudness compliance (LUFS EBU R128).
+---
+# Professional Audio Engineering, Sound Design & Acoustic Post-Production
+
+A comprehensive studio reference manual for vocal recording, podcast production, acoustic sound design, spectral cleaning, mixing, mastering, dynamic processing, and automated programmatic audio workflows via FFmpeg.
+
+---
+
+## 1. Acoustic Signal Chain & Vocal Capture
+
+### A. Microphone Physics & Transducer Types:
+- **Dynamic Microphones (e.g., Shure SM7B, Electro-Voice RE20)**:
+  - Low sensitivity, high SPL tolerance, cardioid polar pattern.
+  - Ideal for untreated rooms due to superior rejection of off-axis room reverberation.
+  - Requires clean high-gain preamplification (+55dB to +60dB clean gain or inline boosters like Cloudlifter/FetHead).
+- **Condenser Microphones (e.g., Neumann U87, Rode NT1-A)**:
+  - High sensitivity, rapid transient response, wide frequency spectrum.
+  - Requires dedicated acoustic room treatment (absorption coefficients NRC >= 0.75) to prevent hollow room flutter.
+- **Proximity Effect & Polar Patterns**:
+  - Bass boost occurs as the vocal source moves closer to directional (cardioid) capsules. Controlled at 10–15 cm with pop-filter at 45° angle to prevent plosives ('P', 'B' air bursts).
+
+---
+
+## 2. Dynamic Processing & Signal Processing Pipeline
+
+### A. Core Vocal Post-Production Chain:
+1. **High-Pass Filtering (Low Cut)**:
+   - 18dB/octave slope steep cut at 75–85 Hz to eliminate HVAC rumble, footstep vibrations, and sub-audible mic stand handling noise.
+2. **Subtractive / Surgical Parametric EQ**:
+   - Narrow Q notch cuts (Q = 5 to 10) targeting harsh room resonances, comb-filtering artifacts, or nasal boxiness (typically 300–500 Hz for boxiness, 2.5–4.5 kHz for harsh sibilance).
+3. **De-Essing (Frequency-Specific Dynamic Compression)**:
+   - Split-band compression focused on 5 kHz – 8 kHz to tame aggressive dental sibilance ('S', 'Sh', 'Ch') without dulling overall vocal air.
+4. **Compression (Two-Stage Serial Compression)**:
+   - *Stage 1 (Peak Tamer)*: Fast attack (0.5–2 ms), fast release (50–100 ms), high ratio (4:1 to 6:1) catching only the loudest sudden peaks (2–3 dB gain reduction).
+   - *Stage 2 (Level Smoothing / Optical)*: Slow attack (10–30 ms), smooth auto-release (e.g., LA-2A style optical model), mild ratio (2:1 to 3:1) providing 2–4 dB of gentle RMS glue.
+5. **Additive EQ (Tonal Shaping)**:
+   - Broad high-shelf boost (Q = 0.7) above 10–12 kHz for high-end "air" and perceived clarity; subtle wide bell boost at 1.5–2.0 kHz for intelligibility.
+6. **Limiting**:
+   - Brickwall peak limiter set to True Peak ceiling of -1.0 dBTP to prevent inter-sample clipping during lossy MP3/AAC compression encoding.
+
+---
+
+## 3. Loudness Standards & Delivery Formats (LUFS / EBU R128)
+
+### A. Target Loudness Metrics:
+- **Streaming Platforms (Spotify, YouTube, Apple Podcasts, Tidal)**:
+  - Integrated Loudness: **-14 LUFS** (music / streaming audio) or **-16 LUFS** (podcasts and spoken word).
+  - Maximum True Peak: **-1.0 dBTP** (leaves headroom for codec transcoding).
+  - Maximum Loudness Range (LRA): 4 to 8 LU for podcasts (tightly controlled consistency).
+- **Broadcast Standards**:
+  - European Television: EBU R128 (-23.0 LUFS ±0.5 LU, max True Peak -1.0 dBTP).
+  - US Television: ATSC A/85 (-24.0 LUFS).
+
+---
+
+## 4. Automated Audio Post-Production via FFmpeg
+
+### A. Programmatic Audio Processing Scripts:
+- **Two-Pass EBU R128 Loudness Normalization**:
+```bash
+# Pass 1: Measure loudness statistics
+ffmpeg -i input.wav -af loudnorm=I=-16:TP=-1.0:LRA=7:print_format=json -f null -
+
+# Pass 2: Apply measured normalization with exact linear parameters
+ffmpeg -i input.wav -af loudnorm=I=-16:TP=-1.0:LRA=7:measured_I=-22.4:measured_TP=-2.1:measured_LRA=10.2:measured_thresh=-33.0:offset=0.2 -ar 48000 -c:a pcm_s24le output_mastered.wav
+```
+- **Vocal Gate, EQ and Compression Filtergraph**:
+```bash
+ffmpeg -i raw_voice.wav -af "highpass=f=80,agate=threshold=-36dB:ratio=2:attack=10:release=100,acompressor=threshold=-20dB:ratio=3:attack=15:release=120:makeup=4dB,deesser=i=0.5:m=0.5:f=0.6" -c:a flac cleaned_voice.flac
+```
+
+---
+
 <a name="auto-electronics-diagnostics"></a>
 # 📦 SKILL: auto-electronics-diagnostics
 *Domain:* **Automotive & EV**
@@ -999,6 +1149,74 @@ The ultimate weapon of creditors against company owners, actual beneficiaries, a
    - *Business Judgment Rule (Justified commercial risk)*: Demonstrating that decisions were made in good faith on an informed basis within customary commercial practices.
    - *Economic Recovery Plan (Economically justified anti-crisis plan)*: Proving that the delay in bankruptcy filing was justified by a realistic, active anti-crisis restructuring strategy (negotiating bank credit extensions, finding new contracts).
    - Separating personal wealth from corporate assets; documenting all arm's-length intercompany transactions with independent appraisals.
+
+---
+
+<a name="branding-logo-vector-graphics"></a>
+# 📦 SKILL: branding-logo-vector-graphics
+*Domain:* **Branding & Vector Graphics**
+
+---
+name: branding-logo-vector-graphics
+description: >-
+  Brand identity design, logo engineering, vector graphic standards (SVG, AI, EPS), mathematical bezier curve geometry, typography pairing, color theory (Pantone, CMYK, RGB), and comprehensive corporate brand manuals.
+---
+# Brand Identity Design, Logo Engineering & Vector Graphic Systems
+
+A master manual for architecting iconic brand marks, geometric vector logos, mathematical bezier curve construction, corporate identity systems, brand guideline manuals, and production-ready vector assets.
+
+---
+
+## 1. Logo Anatomy & Archetype Selection
+
+### A. Structural Logo Archetypes:
+1. **Wordmark / Logotype**: Custom typographic rendering of the company name (e.g., Google, Braun, Sony). Focus on letter-spacing (kerning), custom ligatures, and distinctive terminal curves.
+2. **Lettermark / Monogram**: Typographic abbreviation or initials (e.g., IBM, HP, CNN). Ideal for multi-word or international corporate entities.
+3. **Brandmark / Symbol**: Abstract or pictorial symbol functioning without text (e.g., Apple, Nike, Twitter/X). Requires intense geometric simplicity for micro-scale recognizability.
+4. **Combination Mark**: Symbol coupled with a wordmark; must function both lock-stepped together and separated.
+5. **Emblem / Crest**: Text encased inside a badge or geometric container (e.g., Porsche, Starbucks, Harley-Davidson).
+
+### B. Golden Ratio & Geometric Grid Construction:
+- Construction lines based on Fibonacci ratios (1:1.618), concentric circles, and strict angular constraints (30°, 45°, 60°).
+- Optical balance vs Mathematical perfection: Correcting optical illusions (e.g., a triangle placed inside a square must be slightly enlarged and offset to appear centered to the human eye).
+- Tangent and curve continuity: Ensuring smooth transitions between curves (G2 curvature continuity) without jagged anchor points or inflection breaks.
+
+---
+
+## 2. Vector Engineering Standards (SVG / EPS / AI)
+
+### A. Anchor Point Optimization & Clean Path Rules:
+- Minimum necessary anchor points: Curves should be defined using extreme point anchors (top, bottom, leftmost, rightmost - nodes at extents) with horizontal/vertical control handles whenever possible.
+- Closed paths: Zero unjoined endpoints or stray anchor nodes.
+- Path boolean operations: Flatten all overlapping strokes into unified solid vectors (Stroke to Outline / Expand Stroke). Remove redundant hidden nodes and coincident paths.
+
+### B. SVG Production Code Standards:
+- Clean SVG markup: Removal of proprietary editor metadata (Adobe Illustrator, Inkscape namespace tags).
+- ViewBox definition: Always set `viewBox="0 0 W H"` without hardcoded `width` and `height` to ensure fluid scalability.
+- Semantic paths and IDs: Grouping logical elements with `<g id="...">` and reusing repetitive vectors with `<defs>` and `<use>`.
+- Optimization: Processing through SVGO (precision set to 2-3 decimal places, stripping comments, minifying path data).
+
+---
+
+## 3. Color Space Engineering & Chromatic Systems
+
+### A. Multi-Media Color Mapping:
+- **RGB / HEX (Digital Screens)**: sRGB and Display P3 color gamut specifications for web and mobile interfaces.
+- **CMYK (Offset & Digital Printing)**: Process ink limits (Total Area Coverage - TAC maximum 300%–320% to prevent ink smearing on coated paper).
+- **Pantone Matching System (PMS)**: Spot colors for absolute corporate brand consistency across merchandise, packaging, and fleet livery (e.g., Pantone Formula Guide Coated / Uncoated).
+- **Monochrome & High-Contrast Fallbacks**: Every logo MUST render flawlessly in 100% pure black (`#000000`) on white and 100% pure white (`#FFFFFF`) on dark backgrounds without losing structural identity.
+
+---
+
+## 4. Corporate Brand Manual Architecture (Brand Guidelines)
+
+### A. Mandatory Brand Book Sections:
+1. **Brand Story & Core Mission**: Vision, values, tone of voice (formal, technical, approachable, disruptive).
+2. **Primary Logo Lockup**: Definitive arrangement of symbol and logotype.
+3. **Clear Space & Exclusion Zone**: Minimum protective boundary around the logo (typically defined by the height of an element from the logo, e.g., "X-height") where no text or graphics may encroach.
+4. **Minimum Reproduction Size**: Smallest permissible dimensions for digital (e.g., 24px height) and print (e.g., 10mm width) ensuring legibility.
+5. **Unacceptable Usage / Misuse Matrix**: Visual rules forbidding stretching, skewing, rotating, recoloring outside the palette, applying drop shadows, or placing over busy photo backgrounds.
+6. **Typography System**: Primary brand font (headlines), secondary font (body copy), and system fallback font (web-safe stack: Arial, Roboto, Inter).
 
 ---
 
@@ -3490,6 +3708,90 @@ When drafting international commercial agreements (IT outsourcing, wholesale, di
 
 ---
 
+<a name="landscape-interior-exterior-design"></a>
+# 📦 SKILL: landscape-interior-exterior-design
+*Domain:* **Architecture & Spatial Design**
+
+---
+name: landscape-interior-exterior-design
+description: >-
+  Architectural spatial planning, landscape architecture, interior and exterior design, 3D photorealistic rendering (Blender, Cycles, Unreal Engine, SketchUp), lighting calculation (Lux/Lumens), ergonomics, and Czech building code zoning standards.
+---
+# Architectural Spatial Planning, Landscape, Interior & Exterior Design
+
+A master design, architectural visualization, and spatial planning manual covering residential interior ergonomics, exterior facade engineering, outdoor landscape zoning, lighting simulation, and 3D CAD/rendering pipelines.
+
+---
+
+## 1. Residential Interior Architecture & Ergonomics
+
+### A. Spatial Flow & Circulation:
+- **Minimum Clear Passages**:
+  - Main corridors and hallways: Minimum 900 mm (recommended 1100–1200 mm for dual passage).
+  - Kitchen working triangle: Distance between Refrigerator, Sink, and Cooktop should sum to 4.0 m – 7.0 m; minimum clearance between opposing counters is 1200 mm.
+  - Door swings: Doors must never swing into main circulation corridors or collide with opposing cabinet doors; 800 mm minimum interior door width.
+- **Zoning (Day vs Night Zones)**:
+  - Day zone (Kitchen, Dining, Living, Guest WC): Oriented South/West for maximum natural sunlight.
+  - Night zone (Bedrooms, Master Bath, Dressing): Oriented East/North for cool sleeping conditions and morning light.
+  - Acoustic buffer: Bathrooms, technical rooms, and staircases placed between living areas and master bedrooms.
+
+### B. Material Selection & Tactile Durability:
+- **Flooring**:
+  - High-traffic / moisture areas (entry hall, kitchen, bathrooms): Porcelain stoneware tile (gres) with R10/R11 slip resistance rating.
+  - Living spaces: Engineered hardwood (multi-layer oak with UV oil/matte lacquer finish) or heavy-duty SPC vinyl (0.55 mm wear layer, AC5 rating).
+- **Wall Surfaces**:
+  - High-durability washable latex paints (Class 1 wet scrub resistance according to EN 13300).
+  - Acoustic paneling: Slatted oak/walnut acoustic felt panels (NRC rating >= 0.85) to eliminate reverberation in open-plan spaces.
+
+---
+
+## 2. Lighting Engineering (Lux, Lumens & Color Temperature)
+
+### A. Photometric Standards by Space Type:
+- **Workspaces & Kitchen Countertops**: 500 – 750 Lux | CRI (Color Rendering Index) >= 90 | Color Temp: 4000K (Neutral White).
+- **Living Rooms & Lounges**: 150 – 300 Lux | CRI >= 85 | Color Temp: 2700K – 3000K (Warm White) for relaxation and melatonin maintenance.
+- **Bathrooms**: 300 – 500 Lux general | 500 Lux at mirror (shadowless bilateral facial illumination) | IP44/IP65 ingress protection in wet zones.
+- **Bedrooms**: 100 – 200 Lux general ambient | 300 Lux directional reading lamps | Dimmable down to 10% with circadian rhythm modulation.
+
+### B. Layered Lighting Hierarchy:
+1. **Ambient / General**: Recessed downlights, magnetic low-voltage track systems (48V), or indirect ceiling cove LED strips (COB LED without visible dots).
+2. **Task / Functional**: Under-cabinet LED profiles, pendant fixtures directly above dining tables (750–850 mm above tabletop).
+3. **Accent / Decorative**: Narrow-beam spotlights (15°–24° beam angle) highlighting art, textured stone walls, or architectural niches.
+
+---
+
+## 3. Exterior Architecture & Facade Design
+
+### A. Facade Composition & Insulation Standards:
+- Thermal envelope (ETICS - External Thermal Insulation Composite System): Mineral wool or graphite EPS (lambda 0.031 W/mK) minimum 160–200 mm thickness.
+- Ventilated facade systems: Fiber-cement boards, porcelain slabs, or thermo-wood (Thermo-Ash/Pine) mounted on aluminum substructure with vapor-permeable wind barrier membrane.
+- Window systems: Triple-glazed insulated glass units (Ug <= 0.5–0.6 W/m²K), aluminum or wood-aluminum frames, external concealed venetian blinds (*venkovní žaluzie Z-90*) for solar heat gain mitigation.
+
+---
+
+## 4. Landscape Architecture & Outdoor Zoning
+
+### A. Site Planning & Functional Zones:
+- **Terrace & Outdoor Living**: Direct flush connection between interior living floor and exterior deck (hidden trench drain channels to prevent water ingress).
+- **Private Green Lawn**: Automated underground irrigation (pop-up rotors with rain/soil moisture sensors), robotic mower perimeter planning.
+- **Utility / Parking Zone**: Permeable pavers with crushed aggregate joints allowing rainwater infiltration, EV charging station infrastructure (3-phase 11kW/22kW).
+
+### B. Planting Palettes & Microclimate Engineering:
+- Windbreak planting on northern perimeter (evergreen conifers: Pinus nigra, Taxus baccata).
+- Deciduous shade trees on southern terrace exposure (Carpinus betulus, Acer palmatum) providing shade in summer while allowing low winter sun to penetrate indoors.
+- Drought-tolerant perennial borders (Lavandula angustifolia, Salvia nemorosa, ornamental grasses like Calamagrostis and Stipa).
+
+---
+
+## 5. 3D CAD & Visualization Pipeline (Blender / Cycles)
+
+### A. Realistic Scene Construction:
+- Photorealistic physically-based rendering (PBR) workflows: Albedo, Roughness, Normal (OpenGL), Metallic, and Displacement maps.
+- Lighting setup: Calibrated HDRIs with sun lamp matching exact solar angle, lux-based intensity values, and filmic / AgX tone mapping.
+- Camera calibration: Real-world focal lengths (24mm–35mm for interiors, 50mm–85mm for exteriors), two-point perspective with corrected vertical shifts.
+
+---
+
 <a name="network-hardware-firewalls"></a>
 # 📦 SKILL: network-hardware-firewalls
 *Domain:* **Enterprise Network & Firewalls**
@@ -5470,6 +5772,87 @@ When asked to debug a script or system issue, follow this strict protocol:
 
 ---
 
+<a name="ui-ux-gui-design-systems"></a>
+# 📦 SKILL: ui-ux-gui-design-systems
+*Domain:* **UI/UX & Design Systems**
+
+---
+name: ui-ux-gui-design-systems
+description: >-
+  Enterprise UI/UX design, cross-platform GUI architecture (Web, Desktop WPF/WinUI/Qt, Mobile Android/iOS), design systems, atomic design tokens, accessibility (WCAG 2.2 AAA), typography scales, layout grids, and interactive prototyping.
+---
+# Enterprise UI/UX & GUI Design Systems Engineering
+
+A master engineering and aesthetic manual for architecting high-performance, accessible, and scalable graphical user interfaces (GUI), modern design systems, cross-platform user experience (UX) flows, and production-ready component libraries.
+
+---
+
+## 1. Design System Architecture & Atomic Design
+
+### A. Token Hierarchy (Design Tokens):
+- **Global / Primitive Tokens**: Base values for colors, typography, spacing, shadows, and radii (e.g., `color-blue-500: #0066FF`, `spacing-4: 16px`, `radius-md: 8px`).
+- **Semantic / Alias Tokens**: Purpose-driven tokens mapping primitives to systemic roles (e.g., `surface-primary: {color-neutral-900}`, `text-interactive: {color-blue-500}`, `border-focus: {color-cyan-400}`).
+- **Component-Specific Tokens**: Scoped to discrete UI elements (e.g., `button-primary-bg: {surface-interactive}`, `card-elevation-hover: {shadow-lg}`).
+- **Format Delivery**: Tokens defined in JSON format compliant with Design Tokens Community Group (DTCG) specification; compiled via Style Dictionary into CSS variables, SCSS, Android Compose XML/Themes, and TypeScript theme interfaces.
+
+### B. Atomic Component Taxonomy:
+1. **Atoms**: Fundamental HTML/native elements (Buttons, Inputs, Checkboxes, Icons, Badges, Typography primitives).
+2. **Molecules**: Simple groups of atoms functioning as a single unit (Search input with submit button, Form field with label and helper text, Notification toast).
+3. **Organisms**: Distinct UI sections composed of molecules (Global navigation bar, Data table with sorting/filtering headers, Modal dialog).
+4. **Templates**: Page-level wireframe skeletons defining content placement and responsive layout grids.
+5. **Pages**: Instantiated templates populated with real data, handling empty, loading, error, and populated states.
+
+---
+
+## 2. Layout Grids, Responsive Breakpoints & Spatial Systems
+
+### A. 8-Point Spatial Grid:
+- All dimensions, paddings, margins, and line heights follow strict multiples of 8px (with 4px half-grid for dense components like badges, icons, and toolbars).
+- Prevents sub-pixel rendering blur on high-DPI displays (Retina, 4K).
+- Vertical rhythm: Line heights aligned to baseline grid of 4px/8px to eliminate layout shift during async font loading.
+
+### B. Responsive Viewport Strategy:
+- **Mobile First (`< 640px`)**: Single-column layout, bottom sheets instead of modals, touch target sizes minimum `48x48px` (WCAG 2.5.5).
+- **Tablet (`640px - 1024px`)**: Fluid 8-column grid, responsive sidebars collapsible into drawer panels.
+- **Desktop (`1024px - 1440px`)**: 12-column grid, 24px gutters, max-width container constraints (`1280px` or fluid with fixed max).
+- **Ultra-Wide (`> 1440px`)**: Content clamping (`clamp()`), side rail navigation, multi-column dashboard widgets to avoid excessive horizontal eye strain.
+
+---
+
+## 3. Typography Scales & Visual Hierarchy
+
+### A. Modular Typography Scale (Major Third - 1.250 or Perfect Fourth - 1.333):
+- **Display / H1**: 32px – 48px | Line Height: 1.15 – 1.25 | Bold / Extra Bold (Page hero titles).
+- **Heading H2 / H3**: 20px – 28px | Line Height: 1.3 | Semi-Bold (Section dividers, modal headers).
+- **Body Large**: 16px – 18px | Line Height: 1.5 – 1.6 | Regular / Medium (Lead paragraphs, article text).
+- **Body Regular**: 14px – 15px | Line Height: 1.5 | Regular (Standard UI text, tables, form fields).
+- **Caption / Microcopy**: 12px – 13px | Line Height: 1.4 | Medium (Timestamps, helper hints, badges).
+
+### B. Contrast & Accessibility Standards (WCAG 2.2):
+- **Level AA**: Minimum 4.5:1 for regular text (< 18px), 3:1 for large text (>= 18px bold or >= 24px) and UI components/borders.
+- **Level AAA**: Minimum 7:1 for normal text, 4.5:1 for large text.
+- Focus Indicators: Unambiguous focus ring minimum 2px solid with 3:1 contrast ratio against adjacent background, never disabled with `outline: none` without replacement.
+
+---
+
+## 4. Cross-Platform Framework Implementation
+
+### A. Web (React / Vue / Next.js / Tailwind CSS):
+- Strict semantic HTML (`<nav>`, `<main>`, `<article>`, `<dialog>`, `<section>`).
+- Headless accessible components (Radix UI, Headless UI, Ark UI) coupled with Tailwind CSS design tokens.
+- Light/Dark theme switching via CSS variables and `prefers-color-scheme` media query.
+
+### B. Modern Android GUI (Jetpack Compose):
+- Single source of truth Theme utilizing `MaterialTheme` with custom color schemes and typography shapes.
+- Modifiers chaining order: `Modifier.clickable().padding().background()` vs `Modifier.background().padding().clickable()`.
+- Dynamic color support (Material You Monet engine) with fallback to custom brand palette.
+
+### C. Desktop GUI (WPF / WinUI 3 / Qt):
+- Hardware accelerated rendering, DPI awareness per monitor (`PerMonitorV2`).
+- Asynchronous UI binding (MVVM architecture), avoiding UI thread blocking on data retrieval.
+
+---
+
 <a name="urology-nephrology-cholelithiasis"></a>
 # 📦 SKILL: urology-nephrology-cholelithiasis
 *Domain:* **Clinical Medicine & Urology**
@@ -5598,6 +5981,101 @@ A comprehensive surgical and clinical manual for the diagnosis, emergency triage
    - *Tenderness / Pelvic Muscle Spasm*: Pelvic floor physical therapy, myofascial trigger-point release (avoid Kegel exercises which increase hypertonic pelvic floor tone).
 3. **Prostatic Abscess Drainage**:
    - Transurethral unroofing (resection) or transrectal ultrasound-guided needle aspiration under local anesthesia and antibiotic coverage.
+
+---
+
+<a name="video-editing-motion-production"></a>
+# 📦 SKILL: video-editing-motion-production
+*Domain:* **Video Editing & Motion Graphics**
+
+---
+name: video-editing-motion-production
+description: >-
+  Professional video editing, motion graphics, programmatic video rendering (Remotion, FFmpeg), color grading (LUTs, ACES, Rec.709), timeline pacing, multi-camera synchronization, subtitle animation, and broadcast video codecs.
+---
+# Professional Video Editing, Motion Graphics & Programmatic Video Production
+
+A master engineering manual for nonlinear video editing, motion graphics design, color grading science, subtitle animation pipelines, programmatic code-based video generation via Remotion, and high-performance FFmpeg rendering.
+
+---
+
+## 1. Timeline Editing Mechanics & Narrative Pacing
+
+### A. Core Cut Taxonomy & Pacing Rules:
+- **J-Cut & L-Cut**:
+  - *J-Cut*: Audio of the incoming scene precedes the visual cut by 0.5–1.5 seconds. Pulls viewer curiosity forward and creates smooth conversational transitions.
+  - *L-Cut*: Visual cuts to the next clip while the audio of the previous scene continues underneath. Essential for reaction shots and environmental continuity.
+- **Match Cut**: Transitioning between two scenes that share similar visual compositions, geometric shapes, or directional movements.
+- **Pacing to Cadence**: Edit rhythm matched to speech cadence and music beats without becoming predictable. Crucial moments require temporal breathing room (0.5s pause after impactful statements).
+- **Jump Cut Elimination**: Disguising audio pauses and retakes in talking-head videos using punch-in zoom scaling (100% to 112% on key statements), B-roll overlays, or dynamic motion graphic text.
+
+---
+
+## 2. Color Science & Grading (LUTs, Rec.709 & HDR)
+
+### A. Color Pipeline Stages:
+1. **Normalization & Input Color Space Transform (CST)**:
+   - Converting raw camera log profiles (Sony S-Log3, Canon C-Log, Apple ProRes Log, Blackmagic Film) to working intermediate space (ACEScc or DaVinci Wide Gamut).
+2. **Primary Correction (Technical Balance)**:
+   - Exposure adjustment using Waveform monitor (Blacks at 0 IRE, Middle Gray at 40–45 IRE, Whites peaking below 95 IRE).
+   - White balance correction using RGB Parade (aligning Red, Green, and Blue channels on neutral reference whites and grays).
+   - Contrast and pivot curve shaping.
+3. **Secondary Correction (Selective Isolation)**:
+   - Skin tone line alignment on Vectorscope (human skin pigmentation universally sits on the exact I-line regardless of ethnicity).
+   - Hue vs Hue, Hue vs Saturation curves for selective sky or foliage refinement.
+4. **Creative Look & Output CST**:
+   - Applying creative Look-Up Tables (LUTs) with film emulation (Kodak 2383 / Fuji 3513 print stock).
+   - Output transform mapped strictly to Rec.709 / Gamma 2.4 (SDR web and TV standard).
+
+---
+
+## 3. Programmatic Video Generation with Remotion
+
+### A. Architecture & Core Concepts:
+- Render videos programmatically using standard React components, TypeScript, and CSS.
+- **Frame-based Time**: Time is calculated strictly in frames rather than seconds (`frame / fps`), guaranteeing zero audio/video desynchronization across renders.
+- Interpolation functions: `interpolate(frame, [start, end], [valueA, valueB], { extrapolateRight: 'clamp' })`.
+- Spring physics: `spring({ frame, fps, config: { damping: 12, mass: 0.5, stiffness: 100 } })` for organic motion graphics.
+
+### B. Scalable Dynamic Template Architecture:
+```tsx
+import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+
+export const AnimatedLowerThird = ({ title, subtitle }: { title: string; subtitle: string }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const entrance = spring({ frame, fps, config: { damping: 14 } });
+  const opacity = interpolate(frame, [0, 10], [0, 1]);
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'flex-end', padding: 80 }}>
+      <div style={{ transform: `translateY(${(1 - entrance) * 60}px)`, opacity }}>
+        <h1 style={{ color: '#FFFFFF', fontSize: 48, fontWeight: 800, margin: 0 }}>{title}</h1>
+        <p style={{ color: '#00D2FF', fontSize: 24, fontWeight: 500, margin: '8px 0 0' }}>{subtitle}</p>
+      </div>
+    </AbsoluteFill>
+  );
+};
+```
+
+---
+
+## 4. High-Performance Video Rendering via FFmpeg
+
+### A. Broadcast-Grade Encoding Commands:
+- **Ultra-Quality H.264 Web Master (Rec.709)**:
+```bash
+ffmpeg -i input_raw.mov -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -color_primaries 1 -color_trc 1 -colorspace 1 -movflags +faststart -c:a aac -b:a 320k output_web.mp4
+```
+- **H.265 / HEVC 4K Archival Compression**:
+```bash
+ffmpeg -i master.mov -c:v libx265 -preset medium -crf 20 -tag:v hvc1 -pix_fmt yuv420p10le -c:a copy master_hevc.mp4
+```
+- **Automated Burn-in Subtitles with Styling**:
+```bash
+ffmpeg -i input.mp4 -vf "subtitles=subtitles.srt:force_style='FontName=Montserrat,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BorderStyle=3,Outline=2,Shadow=0,MarginV=35'" -c:a copy output_subtitled.mp4
+```
 
 ---
 
