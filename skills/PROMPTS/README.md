@@ -1,6 +1,6 @@
 # 🤖 Каталог готовых мастер-промптов для сторонних ИИ
 
-> **Библиотека системных промптов (System Prompts):** 45 специализированных направлений
+> **Библиотека системных промптов (System Prompts):** 51 специализированное направление
 > **Назначение:** Мгновенный перенос экспертных компетенций в ChatGPT (Custom GPTs / Projects), Claude (Projects), DeepSeek, Llama.
 > **Формат:** Чистый автономный текст инструкций без привязки к локальным скриптам и путям Antigravity.
 > **Владелец:** Владимир Буланцев (GinCz) | Актуализация: Октябрь 2026 г.
@@ -56,6 +56,12 @@
 | 43 | **Audio Engineering & Sound Design** | Professional Audio Engineer, Sound Designer & Vocal Post-Production Specialist | [`43_AUDIO_ENGINEERING_SOUND_DESIGN_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/43_AUDIO_ENGINEERING_SOUND_DESIGN_PROMPT.md) | [`audio-engineering-sound-design` ↗](file:///D:/AI/BASE/SKILLS/audio-engineering-sound-design/SKILL.md) |
 | 44 | **Video Editing & Motion Graphics** | Senior Video Editor, Motion Graphics Designer & Remotion Code-Based Video Architect | [`44_VIDEO_EDITING_MOTION_PRODUCTION_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/44_VIDEO_EDITING_MOTION_PRODUCTION_PROMPT.md) | [`video-editing-motion-production` ↗](file:///D:/AI/BASE/SKILLS/video-editing-motion-production/SKILL.md) |
 | 45 | **Advertising & Marketing Creatives** | Digital Advertising Designer & High-Conversion Marketing Creative Engineer | [`45_ADVERTISING_BANNER_MARKETING_DESIGN_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/45_ADVERTISING_BANNER_MARKETING_DESIGN_PROMPT.md) | [`advertising-banner-marketing-design` ↗](file:///D:/AI/BASE/SKILLS/advertising-banner-marketing-design/SKILL.md) |
+| 46 | **Clinical Medicine & Endocrinology** | Consultant Endocrinologist, Metabolic Health & Evidence-Based Biohacking Specialist | [`46_ENDOCRINOLOGY_METABOLISM_BIOHACKING_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/46_ENDOCRINOLOGY_METABOLISM_BIOHACKING_PROMPT.md) | [`endocrinology-metabolism-biohacking` ↗](file:///D:/AI/BASE/SKILLS/endocrinology-metabolism-biohacking/SKILL.md) |
+| 47 | **Clinical Medicine & Gastroenterology** | Consultant Gastroenterologist & Hepatologist (GI, PCES, MASLD, Gastritis, GERD, IBS) | [`47_GASTROENTEROLOGY_HEPATOLOGY_GI_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/47_GASTROENTEROLOGY_HEPATOLOGY_GI_PROMPT.md) | [`gastroenterology-hepatology-gi` ↗](file:///D:/AI/BASE/SKILLS/gastroenterology-hepatology-gi/SKILL.md) |
+| 48 | **Clinical Medicine & Otorhinolaryngology** | Consultant Otorhinolaryngologist & Neurotologist (ENT, Vertigo, Tinnitus, Sinusitis) | [`48_OTORHINOLARYNGOLOGY_ENT_MEDICINE_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/48_OTORHINOLARYNGOLOGY_ENT_MEDICINE_PROMPT.md) | [`otorhinolaryngology-ent-medicine` ↗](file:///D:/AI/BASE/SKILLS/otorhinolaryngology-ent-medicine/SKILL.md) |
+| 49 | **Clinical Medicine & Psychosomatics** | Consultant Psychosomaticist & Neuro-Autonomic Specialist (VVD, Panic, Hyperventilation) | [`49_PSYCHOSOMATICS_AUTONOMIC_DYSFUNCTION_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/49_PSYCHOSOMATICS_AUTONOMIC_DYSFUNCTION_PROMPT.md) | [`psychosomatics-autonomic-dysfunction` ↗](file:///D:/AI/BASE/SKILLS/psychosomatics-autonomic-dysfunction/SKILL.md) |
+| 50 | **Clinical Medicine & Rheumatology** | Consultant Rheumatologist & Autoimmune Specialist (PMR, GCA, RA, Lupus, Gout) | [`50_RHEUMATOLOGY_AUTOIMMUNE_MUSCULOSKELETAL_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/50_RHEUMATOLOGY_AUTOIMMUNE_MUSCULOSKELETAL_PROMPT.md) | [`rheumatology-autoimmune-musculoskeletal` ↗](file:///D:/AI/BASE/SKILLS/rheumatology-autoimmune-musculoskeletal/SKILL.md) |
+| 51 | **Clinical Medicine & Longevity** | Consultant Geriatrician, Geroscience & Longevity Medicine Specialist | [`51_GERIATRICS_GERONTOLOGY_LONGEVITY_PROMPT.md` ↗](file:///D:/AI/BASE/SKILLS/PROMPTS/51_GERIATRICS_GERONTOLOGY_LONGEVITY_PROMPT.md) | [`geriatrics-gerontology-longevity` ↗](file:///D:/AI/BASE/SKILLS/geriatrics-gerontology-longevity/SKILL.md) |
 
 ---
 ### 💾 Зеркала каталога на диске:
