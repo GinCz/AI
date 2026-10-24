@@ -49,17 +49,19 @@
 >      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories.
 >      * **`AI/<EngineName>/`**: Dedicated isolated sandbox for the specific model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
 >    - Before every new response in a new chat, the model must know the database and follow these rules.
-> 10. **Mandatory Skills Framework Onboarding (`skills/`):**
->     - The model must permanently absorb and activate all 57 domain skills from [`skills/ ↗`](../skills/) (or [`skills/ALL_SKILLS.md ↗`](ALL_../skills/)) into its capabilities.
-> 
-> ### 🎯 STEP 2: ROUTE TO YOUR DEDICATED MODEL WORKSPACE
-> After adopting the Step 1 universal baseline, navigate to your dedicated model workspace:
-> - **Google Gemini / Antigravity:** Work strictly in `AI/GEMINI/`.
-> - **OpenAI ChatGPT / Codex:** Work strictly in `AI/ChatGPT/`.
-> - **Anthropic Claude:** Work strictly in `AI/CLAUDE/`.
-> - **VS Code AI / Copilot / Cursor:** Work strictly in `AI/VSCode/` or project workspace.
-> 
-> Respond to the user confirming adoption, and end your response with the mandatory single-line status footer!
+> 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
+>     - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
+>     - The model **MUST present all core categories of skills as a clearly structured, numbered list**:
+>       1. **Legal, Litigation & Compliance** (Czech corporate & civil law, EU litigation & single market, Russian law, international IP & contracts, white-collar crime & liability)
+>       2. **Accounting, Taxes, ERP & Crypto** (Czech taxes, EU VAT, Russian accounting, Stormware POHODA, ISDS datové schránky, crypto-asset taxation & MiCA)
+>       3. **DevOps, Cloud Engineering & Systems Administration** (CI/CD, Docker, IaC, Linux, Windows Server, network routing, enterprise firewalls & hardware)
+>       4. **Cybersecurity, Zero Trust & Endpoint Defense** (CIS Benchmarks, EDR, Wazuh, Sysmon, penetration testing, host intrusion defense, anti-ransomware)
+>       5. **Automotive Engineering, Powertrain & Diagnostics** (ICE overhaul, Common Rail diesel, heavy trucks, CAN/LIN bus oscilloscope, fleet logistics & STK)
+>       6. **Clinical Medicine, Biohacking & Longevity** (Cardiology, Endocrinology/Prediabetes, GI/PCES/MASLD/IBS, ENT, Psychosomatics/ANS, Rheumatology/PMR, Dermatology, Geriatrics, Ophthalmology, Orthopedics, Urology, Somnology, Allergology)
+>       7. **Media, Architecture & Creative Design Systems** (UI/UX systems, architectural landscape/interior, branding, audio engineering, video production, digital advertising)
+>       8. **All Skills Combined (Apply all 57 production skills at once)**
+>     - The user responds with the corresponding numbers (e.g., `1, 3, 6` or `8` to apply all).
+>     - **What "Applying Skills" Means:** Applying selected skills means the model **MUST write and persist them to its local working directory (`AI/BASE/skills/` or local model config) AND ensure 100% two-way synchronization with the remote GitHub repository**.
 
 ---
 
@@ -176,16 +178,19 @@
 * **Strict Prohibition on `raw.githubusercontent.com` and Local `file:///` for Repo Files:** Never provide `raw.githubusercontent.com` links or local `file:///` URIs when referencing GitHub files or synchronization results.
 * **Mandatory Clickable Links on Any Change:** Every important response that introduces commits, pushes, or file modifications in any GitHub repository MUST include direct clickable markdown links with an arrow `↗` leading to the modified GitHub files and repository.
 
-### 1️⃣8️⃣ RULE 18: MANDATORY DOMAIN SKILLS ADOPTION (`skills/`)
-* **Immediate Bootstrap Integration:** When an agent is pointed to this repository or these baseline rules, it is **MANDATORY** to follow the link to [`skills/ ↗`](../skills/) (or read the monolithic compilation [`skills/ALL_SKILLS.md ↗`](ALL_../skills/)).
-* **Comprehensive Capability Uplift:** The agent must adopt, cache, and apply all 57 domain skills across:
-  - **Legal & Litigation:** Czech corporate & civil law (ZOK/NOZ), litigation (OSŘ, EPR), EU Single Market & GDPR/AI Act, EU cross-border litigation (Brussels I bis), Russian corporate law & litigation, white-collar crime & tax liability;
-  - **Tax & Accounting:** Czech taxation (DPFO, DPPO, DPH, Paušální daň), EU VAT Directives (Reverse charge, OSS/IOSS), POHODA ERP operations, crypto-asset taxation, Russian accounting & taxation (RSBU, USN, ENS);
-  - **Infrastructure & Security:** DevOps & Cloud (CI/CD, IaC, Docker), Sysadmin & Networking (Linux, Windows Server, Xray, WireGuard), Enterprise Network Hardware & Firewalls, Secure Software Engineering, Server Hardening & Zero Trust (CIS Benchmarks, mTLS), Antivirus & EDR Threat Defense, Cyber Defense & Pentest (MITRE ATT&CK), Mobile & Endpoint Security;
-  - **Automotive & Diagnostics:** Mechanics & Powertrain (ICE, Common Rail, Heavy Trucks, DSG), Electronics & Diagnostics (CAN/LIN bus oscilloscope, UDS, EV high-voltage safety), fleet logistics;
-  - **Clinical Medicine & Biohacking:** Cardiology & cardiac surgery, Neurology & triage, Endocrinology, metabolic syndrome & biohacking, Gastroenterology, hepatology & GI (PCES, MASLD, IBS, GERD), Otorhinolaryngology (ENT, vertigo, HINTS), Psychosomatics, ANS & panic disorders, Rheumatology & autoimmune (PMR, GCA, RA), Dermatology (atopic dermatitis, seborrhea, eczema), Geriatrics, geroscience & longevity, Ophthalmology & neuro-ophthalmology (optic nerve, visual field perimetry), Orthopedics & knee rehab, Proctology & colorectal surgery, Allergology & clinical immunology, Somnology & sleep apnea, Urology & nephrology;
-  - **Creative & Design Systems:** UI/UX & design systems, landscape/interior/exterior design, branding & vector graphics, audio engineering & sound design, video editing & motion production, advertising & marketing creatives.
-* **Persistent Utilization:** All subsequent engineering, architectural, and advisory work must strictly follow the codified protocols from these skill files.
+### 1️⃣8️⃣ RULE 18: INTERACTIVE DOMAIN SKILLS ONBOARDING & SELECTION (`skills/`)
+* **Interactive Pre-Activation Requirement:** Before adopting and executing skills, the agent **MUST prompt the user with a numbered list of all core skill categories** available in the repository.
+* **Numbered Categories for User Selection:**
+  1. **Legal, Litigation & Compliance** (Czech corporate & civil law, EU litigation & single market, Russian law, international contracts, white-collar crime);
+  2. **Accounting, Taxation, ERP & Crypto** (Czech taxes, EU VAT, Russian accounting, Stormware POHODA, ISDS, crypto-asset taxation);
+  3. **DevOps, Cloud Engineering & SysAdmin** (CI/CD pipelines, Docker, IaC, Linux, Windows Server, networking, enterprise firewalls);
+  4. **Cybersecurity, Zero Trust & Host Defense** (CIS Benchmarks, EDR, Sysmon, pentesting, anti-ransomware);
+  5. **Automotive Engineering & Diagnostics** (ICE, Common Rail, heavy trucks, CAN/LIN oscilloscope, fleet logistics);
+  6. **Clinical Medicine, Biohacking & Longevity** (Cardiology, Endocrinology/Prediabetes, GI/PCES, ENT, Psychosomatics/ANS, Rheumatology/PMR, Dermatology, Geriatrics, Ophthalmology, Orthopedics, Urology, Somnology, Allergology);
+  7. **Media, Architecture & Design Systems** (UI/UX, Landscape/Interior, Branding, Audio, Video, Advertising);
+  8. **All Skills Combined** (Full Monolithic 57-Skill Production Suite).
+* **Execution of Selected Skills:** Once the user responds with their selection (numbers or all), the model **MUST write the corresponding skill files into its local working folder (`AI/BASE/skills/`) AND ensure 100% two-way synchronization with the remote GitHub repository**.
+
 
 ---
 

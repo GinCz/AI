@@ -49,8 +49,19 @@
      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories.
      * **`AI/<EngineName>/`**: Dedicated isolated sandbox per model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
    - Before every new response in a new chat, the model must know the database and follow these rules.
-10. **Mandatory Skills Framework Onboarding (`skills/`):**
-    - The model must permanently absorb and activate all 57 domain skills from [`skills/ ↗`](../skills/) (or [`skills/ALL_SKILLS.md ↗`](../skills/ALL_SKILLS.md)) into its capabilities.
+10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
+    - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
+    - The model **MUST present all core categories of skills as a clearly structured, numbered list**:
+      1. **Legal, Litigation & Compliance** (Czech corporate & civil law, EU litigation & single market, Russian law, international IP & contracts, white-collar crime & liability)
+      2. **Accounting, Taxes, ERP & Crypto** (Czech taxes, EU VAT, Russian accounting, Stormware POHODA, ISDS datové schránky, crypto-asset taxation & MiCA)
+      3. **DevOps, Cloud Engineering & Systems Administration** (CI/CD, Docker, IaC, Linux, Windows Server, network routing, enterprise firewalls & hardware)
+      4. **Cybersecurity, Zero Trust & Endpoint Defense** (CIS Benchmarks, EDR, Wazuh, Sysmon, penetration testing, host intrusion defense, anti-ransomware)
+      5. **Automotive Engineering, Powertrain & Diagnostics** (ICE overhaul, Common Rail diesel, heavy trucks, CAN/LIN bus oscilloscope, fleet logistics & STK)
+      6. **Clinical Medicine, Biohacking & Longevity** (Cardiology, Endocrinology/Prediabetes, GI/PCES/MASLD/IBS, ENT, Psychosomatics/ANS, Rheumatology/PMR, Dermatology, Geriatrics, Ophthalmology, Orthopedics, Urology, Somnology, Allergology)
+      7. **Media, Architecture & Creative Design Systems** (UI/UX systems, architectural landscape/interior, branding, audio engineering, video production, digital advertising)
+      8. **All Skills Combined (Apply all 57 production skills at once)**
+    - The user responds with the corresponding numbers (e.g., `1, 3, 6` or `8` to apply all).
+    - **What "Applying Skills" Means:** Applying selected skills means the model **MUST write and persist them to its local working directory (`AI/BASE/skills/` or local model config) AND ensure 100% two-way synchronization with the remote GitHub repository**.
 
 ---
 
