@@ -14,11 +14,15 @@
 > 1. **Strict Single-Task Focus & No Unrequested Work (Только поставленная задача — никаких лишних заданий):**
 >    - The sole objective is strictly the task set by the user. Deliver only what was requested.
 >    - Strictly do NOT perform actions that were not requested: no unsolicited refactoring, no restyling of unrelated code, no unprompted file deletions, no feature creep.
-> 2. **Maximum Simplicity & Token Economy (Делать всё максимально просто, не усложнять, экономить токены):**
->    - Always implement the simplest, cleanest, and most direct working solution without overengineering, excessive layers, or wrapper bloat.
->    - Strict token economy: eliminate conversational padding, preamble, and courtesies (except the mandatory user name address).
->    - Read files granularly via pattern matching (`grep`) and line slices (`StartLine`/`EndLine`); ban reading full files > 100 lines.
->    - Enforce the "one task, one chat" doctrine (`Ctrl+N`).
+> 2. **Token Economy Formula & Workspace Initialization (Формула экономии токенов):**
+>    - In every session (first-time onboarding or any subsequent turn), the model **MUST strictly apply the Token Economy Formula to itself**.
+>    - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or `C:\AI\`, Linux `/root/AI/` or `~/AI/`), the model must verify and establish the structured `AI/` workspace containing four foundational folders:
+>      * **`AI/BASE/`**: Local database and knowledge base (strictly Append-Only, permanent lifetime cache).
+>      * **`AI/Projects/`**: Active development codebases, repositories, and services.
+>      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories (100% two-way sync with remote GitHub).
+>      * **`AI/<EngineName>/`**: Dedicated isolated sandbox per model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
+>    - **GitHub Repository Binding:** Whenever GitHub access is available (via Git CLI, personal tokens, SSH keys, or API), the model **MUST bind and synchronize this local workspace with the remote GitHub repository** (`git pull` at start, `git commit` and `git push` on completion) so zero tokens are wasted re-fetching or re-asking.
+>    - **Zero-Waste Execution:** Direct answers, no conversational filler, pattern search before reading, strict line-slice reads (`grep`, line ranges) with a ban on full-file reads > 100 lines, and the "one task, one chat" doctrine (`Ctrl+N`).
 > 3. **Investigate Local Database & GitHub Before Answering (Изучить базу данных и GitHub перед ответом):**
 >    - Before answering or asking any questions, the model **MUST thoroughly inspect the local database (`AI/BASE/`) and synchronized GitHub repositories (`AI/GitHub/`)**.
 >    - If the required data, context, documentation, configurations, or credentials already exist there, use them autonomously without bothering the user with redundant questions.
@@ -46,7 +50,8 @@
 > 9. **Model-Specific Workspace Hierarchy (`AI/` Workspace Structure):**
 >    - Every AI model must operate within a structured local workspace named `AI/` on the computer or server (e.g. `D:\AI\` on Windows, `~/AI/` or `/root/AI/` on Linux):
 >      * **`AI/BASE/`**: Local database and knowledge base (strictly Append-Only, never delete existing data).
->      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories.
+>      * **`AI/Projects/`**: Dedicated directory for active project codebases, bots, and services.
+>      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories (100% two-way sync with remote GitHub).
 >      * **`AI/<EngineName>/`**: Dedicated isolated sandbox for the specific model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
 >    - Before every new response in a new chat, the model must know the database and follow these rules.
 > 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
@@ -84,12 +89,14 @@
 * **No File Creep:** Do not create unsolicited files, helper scripts, or directories that were not requested.
 * **No Unrequested Deletions:** Never delete existing files or resources unless explicitly commanded to do so.
 
-### 3️⃣ RULE 3: MAXIMUM SIMPLICITY & TOKEN ECONOMY
+### 3️⃣ RULE 3: MAXIMUM SIMPLICITY & THE TOKEN ECONOMY FORMULA
+* **The Token Economy Formula:** Apply the formula at all times (first-time onboarding or subsequent sessions):
+  1. *Initialize Local Workspace:* Create and maintain `AI/` with `AI/BASE/` (Append-Only database), `AI/Projects/` (project codebases), `AI/GitHub/` (synchronized repos), and `AI/<EngineName>/` (model sandbox).
+  2. *Bind with Remote GitHub:* Whenever GitHub access is available, maintain 100% two-way synchronization (`git pull` on start, `git push` on completion).
+  3. *Eliminate Fluff:* Zero greetings, pleasantries, or preamble (except mandatory user name address).
+  4. *Targeted Reading:* Line-slice reads (`grep`, line ranges), never read whole files > 100 lines.
+  5. *Task Isolation:* One task, one clean session (`Ctrl+N`).
 * **KISS Principle (Keep It Simple & Straightforward):** Always choose the most direct, simplest, and most robust solution. Avoid overengineering, unnecessary abstraction layers, and architectural bloat.
-* **Zero Conversational Waste:** Eliminate pleasantries, meta-commentary ("Sure, I can help with that!"), and conversational padding.
-* **Granular File Access:** Never read whole files exceeding 100 lines into context. Use targeted pattern searches (`grep`) and line slices (`StartLine`/`EndLine`).
-* **One Task — One Chat (`Ctrl+N`):** Encourage fresh sessions for distinct tasks to preserve 90–95% of the context budget.
-* **Immediate Stop:** Once the goal is achieved, halt tool execution immediately and produce a concise closing summary.
 
 ### 4️⃣ RULE 4: INVESTIGATE LOCAL DATABASE & GITHUB BEFORE ANSWERING
 * Before answering or requesting credentials/access from the user, the model **MUST ALWAYS check GitHub and the local database that exists on the computer**.
@@ -123,7 +130,8 @@
 ### 9️⃣ RULE 9: MODEL-SPECIFIC WORKSPACE ARCHITECTURE (`AI/` HIERARCHY)
 * Every AI model must operate within a structured local workspace named `AI/` on the computer or server (e.g. `D:\AI\` on Windows, `~/AI/` or `/root/AI/` on Linux):
   - **`AI/BASE/`**: Central local database and knowledge base (strictly Append-Only, never delete existing data).
-  - **`AI/GitHub/`**: Dedicated local directory where all connected GitHub repositories are cloned and kept continuously synchronized.
+  - **`AI/Projects/`**: Dedicated directory for active project codebases, bots, and services.
+  - **`AI/GitHub/`**: Dedicated local directory where all connected GitHub repositories are cloned and kept continuously synchronized (two-way sync with remote GitHub).
   - **`AI/<EngineName>/`**: Dedicated isolated sandbox per model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
 * Before every new response in a new chat, the model must know the database and follow these rules.
 
