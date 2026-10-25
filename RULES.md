@@ -1,7 +1,7 @@
 # 🤖 Master AI Engineering & Interaction Manifest (`rules.ai` / `RULES.md`)
 > **Universal standard for AI agents, LLMs, and IDEs: maximum autonomy, token economy, deterministic execution, and zero-hallucination DevOps workflows.**
 > 
-> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-24
+> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-25
 
 ---
 
@@ -67,6 +67,12 @@
 >       8. **All Skills Combined (Apply all 57 production skills at once)**
 >     - The user responds with the corresponding numbers (e.g., `1, 3, 6` or `8` to apply all).
 >     - **What "Applying Skills" Means:** Applying selected skills means the model **MUST write and persist them to its local working directory (`AI/BASE/skills/` or local model config) AND ensure 100% two-way synchronization with the remote GitHub repository**.
+
+> 11. **Universal Task Execution Timeouts, Watchdog & Anti-Hang Policy (Контроль времени выполнения задач и защита от зависаний):**
+>     - Every background command, subagent, process, or script must have an estimated execution duration plus a reasonable, strictly bounded safety buffer for latency and system load.
+>     - **Categorical Ban on Hanging Tasks:** Under NO circumstances may any task hang unattended for 10–15 minutes, 30 minutes, or an hour.
+>     - **Automatic Hang Recognition & Termination:** Tasks must be actively monitored (heartbeat/watchdog). If a task freezes, stops producing progress, or exceeds its timeout ceiling, it MUST be automatically detected as hung and immediately terminated/killed (`manage_task Action='kill'`, `kill -9`, `Stop-Process`, subagent cancel).
+>     - **Zero Dangling Tasks:** Before delivering the final response, the agent must verify that exactly **0 running tasks** remain in the environment.
 
 ---
 
@@ -198,6 +204,25 @@
   7. **Media, Architecture & Design Systems** (UI/UX, Landscape/Interior, Branding, Audio, Video, Advertising);
   8. **All Skills Combined** (Full Monolithic 57-Skill Production Suite).
 * **Execution of Selected Skills:** Once the user responds with their selection (numbers or all), the model **MUST write the corresponding skill files into its local working folder (`AI/BASE/skills/`) AND ensure 100% two-way synchronization with the remote GitHub repository**.
+
+### 1️⃣9️⃣ RULE 19: UNIVERSAL TASK EXECUTION TIMEOUTS, WATCHDOG & STRICT ANTI-HANG POLICY
+* **Realistic Duration Assessment & Bounded Safety Buffer:**
+  - Before launching any command, script, build process, subagent, or background task, the AI model MUST evaluate its realistic completion time.
+  - A sensible safety buffer may be added for network jitter, disk I/O, and CPU load, **but always within strict, deterministic boundaries**.
+* **Zero Tolerance for Hanging Tasks:**
+  - It is **STRICTLY FORBIDDEN** for any task to hang unattended for 10–15 minutes, 30 minutes, or an hour. No process may ever be left in infinite limbo.
+* **Automatic Hang Detection & Mandatory Termination:**
+  - Every running task must be monitored via watchdog or periodic heartbeat.
+  - If a process hangs on unbuffered standard input (`stdin`), locks on a frozen network connection/SSH without timeouts, enters a deadlock loop, or exceeds its allocated time budget, the agent **MUST automatically recognize the freeze and forcefully terminate (kill) it immediately** (`manage_task Action='kill'`, `kill -9`, `Stop-Process`, subagent cancellation).
+* **Execution Timeout Ceiling Matrix:**
+  - **Fast commands (10–60 seconds):** Git status/pull/commit/push, file reads/edits, system inspection. Must execute synchronously (`WaitMsBeforeAsync: 10000`) or finish within 60s.
+  - **Medium operations (2–5 minutes):** Package manager installs (`npm`, `pip`), test suite runs, lightweight builds, single-step API queries.
+  - **Heavy compilation & media tasks (10–12 minutes max, strictly with active progress):** Android APK compilation (`gradlew assembleRelease`), Remotion video rendering, large database dumps. Must show ongoing log output.
+  - **Hard Ceiling (10–15 minutes):** If any heavy process runs without progress logs for > 2–3 minutes or exceeds 10–15 minutes, it must be killed immediately, failure diagnosed from logs, and root cause reported to the user instead of hanging forever.
+* **Mandatory Zero Dangling Tasks (0 Running Tasks Before Final Turn):**
+  - Before delivering the final user response and sounding the completion chime, the agent must check all active tasks and guarantee that exactly **0 background tasks are running**.
+* **Root Cause Reporting on Hang:**
+  - Upon terminating a hung task, immediately analyze captured logs, identify the root cause (e.g. interactive prompt, missing `-y` flag, locked port, SSH timeout), and present an autonomous 1-click resolution.
 
 
 ---

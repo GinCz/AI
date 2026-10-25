@@ -1,7 +1,7 @@
 # 🤖 Master AI Rules & Routing Manifest (`rules.ai` / `AGENTS.md` / `GEMINI.md` / `RULES.md`)
 
 > **Universal standard for AI agents, LLMs, and IDEs: maximum autonomy, token economy, deterministic execution, and zero-hallucination DevOps workflows.**  
-> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-24
+> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-25
 
 ---
 
@@ -66,6 +66,12 @@
       8. **All Skills Combined (Apply all 57 production skills at once)**
     - The user responds with the corresponding numbers (e.g., `1, 3, 6` or `8` to apply all).
     - **What "Applying Skills" Means:** Applying selected skills means the model **MUST write and persist them to its local working directory (`AI/BASE/skills/` or local model config) AND ensure 100% two-way synchronization with the remote GitHub repository**.
+
+11. **Universal Task Execution Timeouts, Watchdog & Anti-Hang Policy (Контроль времени выполнения задач и защита от зависаний):**
+    - Every background command, subagent, process, or script must have an estimated execution duration plus a reasonable, strictly bounded safety buffer for latency and system load.
+    - **Categorical Ban on Hanging Tasks:** Under NO circumstances may any task hang unattended for 10–15 minutes, 30 minutes, or an hour.
+    - **Automatic Hang Recognition & Termination:** Tasks must be actively monitored (heartbeat/watchdog). If a task freezes, stops producing progress, or exceeds its timeout ceiling, it MUST be automatically detected as hung and immediately terminated/killed (`manage_task Action='kill'`, `kill -9`, `Stop-Process`, subagent cancel).
+    - **Zero Dangling Tasks:** Before delivering the final response, the agent must verify that exactly **0 running tasks** remain in the environment.
 
 ---
 
@@ -134,6 +140,13 @@ After assimilating Step 1, the AI agent identifies its execution environment and
 * Indicator thresholds:
   - **Single Answer:** `✅` <= 1,500 tokens | `⚠️` 1,500–6,000 tokens | `🔴` > 6,000 tokens
   - **Session Total:** `✅` <= 50,000 tokens | `⚠️` 50,000–80,000 tokens | `🔴` > 80,000 tokens
+
+### 1️⃣2️⃣ PILLAR 12: UNIVERSAL TASK EXECUTION TIMEOUTS, WATCHDOG & STRICT ANTI-HANG POLICY
+* **Realistic Duration Assessment & Safety Buffer:** The agent must evaluate expected execution duration in advance and allocate a modest, deterministic buffer for network, I/O, and CPU load.
+* **Strict Ban on Hanging Tasks:** Tasks left running unmonitored for 10–15 minutes, 30 minutes, or an hour are categorically prohibited.
+* **Automatic Hang Detection & Mandatory Kill:** Unresponsive commands (deadlocks, unbuffered interactive `stdin` waits, frozen SSH/network connections) must be recognized autonomously and forcefully killed immediately (`manage_task Action='kill'`, `kill -9`, `Stop-Process`).
+* **Execution Timeout Matrix:** Fast commands: <= 60s (synchronous); Medium scripts/installs: 2–5 min; Heavy compilation: 10–12 min max (with live progress output). Tasks exceeding 10–15 min or stalling for > 2–3 min without output must be killed immediately.
+* **Zero Dangling Tasks:** Exactly 0 background tasks must remain active upon completing any response.
 
 ---
 
