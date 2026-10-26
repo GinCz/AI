@@ -1,7 +1,7 @@
 # 🤖 Master AI Engineering & Interaction Manifest (`rules.ai` / `RULES.md`)
 > **Universal standard for AI agents, LLMs, and IDEs: maximum autonomy, token economy, deterministic execution, and zero-hallucination DevOps workflows.**
 > 
-> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-25
+> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-26 (v5)
 
 ---
 
@@ -21,6 +21,7 @@
 >      * **`AI/Projects/`**: Active development codebases, repositories, and services.
 >      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories (100% two-way sync with remote GitHub).
 >      * **`AI/<EngineName>/`**: Dedicated isolated sandbox per model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
+>      * **Root Sibling Standard (`BASE/` & `GitHub/` Co-Equality):** `AI/BASE/` and `AI/GitHub/` are strict, co-equal root siblings in `AI/`. `BASE/` is NEVER placed inside the service folder `.github/` (which is reserved exclusively for GitHub Actions and platform configurations) nor nested under `GitHub/`. They operate as equal, independent root pillars.
 >    - **GitHub Repository Binding:** Whenever GitHub access is available (via Git CLI, personal tokens, SSH keys, or API), the model **MUST bind and synchronize this local workspace with the remote GitHub repository** (`git pull` at start, `git commit` and `git push` on completion) so zero tokens are wasted re-fetching or re-asking.
 >    - **Zero-Waste Execution:** Direct answers, no conversational filler, pattern search before reading, strict line-slice reads (`grep`, line ranges) with a ban on full-file reads > 100 lines, and the "one task, one chat" doctrine (`Ctrl+N`).
 > 3. **Investigate Local Database & GitHub Before Answering (Изучить базу данных и GitHub перед ответом):**
@@ -53,6 +54,7 @@
 >      * **`AI/Projects/`**: Dedicated directory for active project codebases, bots, and services.
 >      * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories (100% two-way sync with remote GitHub).
 >      * **`AI/<EngineName>/`**: Dedicated isolated sandbox for the specific model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
+>      * **Root Sibling Equality (`BASE/` & `GitHub/`):** `BASE/` and `GitHub/` are strictly equal, parallel root folders. `BASE/` is never placed inside `.github/` (which is reserved exclusively for GitHub Actions and platform configs) nor inside `GitHub/`.
 >    - Before every new response in a new chat, the model must know the database and follow these rules.
 > 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
 >     - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
@@ -85,9 +87,12 @@
 
 ## ⭐️ TIER 1: UNIVERSAL CORE RULES (FOR ALL AI MODELS WORLDWIDE)
 
-### 1️⃣ RULE 1: OWNER & USER ADDRESSING MANDATE
-* Always address the user directly by their designated name in every response (Default for Vladimir's workspace: **"Владимир"** / **"Vladimir"**; for other users/clients: their respective preferred name).
-* Never omit the greeting or provide impersonal, robotic openings.
+### 1️⃣ RULE 1: DYNAMIC OWNER & USER ADDRESSING MANDATE
+* **Universal Name Discovery:** Different owners and users have different names. If the user's name is not yet defined in the profile/memory:
+  - On the very first turn / first chat, the model **MUST ASK: "How may I address you?" ("Как я могу к вам обращаться?")**.
+  - The provided name is permanently recorded as the primary user address.
+* **Mandatory Opening:** In every subsequent response across all chats, the model **MUST ALWAYS address the user directly by their designated name at the very beginning** (Default for Vladimir's workspace: **"Владимир"** / **"Vladimir"**; for other users: their respective preferred name). Never omit this opening or start with robotic pleasantries.
+
 
 ### 2️⃣ RULE 2: STRICT SINGLE-TASK FOCUS & NO UNREQUESTED WORK
 * **Strict Single Goal:** Focus solely and strictly on the exact assignment given by the user. Do not invent collateral tasks or embark on side quests.
@@ -139,6 +144,7 @@
   - **`AI/Projects/`**: Dedicated directory for active project codebases, bots, and services.
   - **`AI/GitHub/`**: Dedicated local directory where all connected GitHub repositories are cloned and kept continuously synchronized (two-way sync with remote GitHub).
   - **`AI/<EngineName>/`**: Dedicated isolated sandbox per model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
+* **Root Sibling Equality (`BASE/` & `GitHub/` Co-Equality):** `AI/BASE/` and `AI/GitHub/` are strictly equal, parallel root siblings in the `AI/` workspace. `BASE/` is NEVER nested inside `.github/` (which is reserved for GitHub Actions and platform configs) nor inside `GitHub/`. They function as co-equal root pillars.
 * Before every new response in a new chat, the model must know the database and follow these rules.
 
 ### 🔟 RULE 10: SINGLE-LINE STATUS FOOTER WITH TOKEN INDICATORS
