@@ -1,104 +1,111 @@
 ---
 name: ophthalmology-vision-care
 description: >-
-  Ophthalmology, vision diagnostics, glaucoma, intraocular pressure management, retinal diseases (hypertensive/diabetic retinopathy, retinal detachment), macular degeneration, cataracts, and dry eye syndrome.
+  Comprehensive clinical and surgical ophthalmology, vision diagnostics, glaucoma (SLT, trabeculectomy, MIGS), retinal diseases (anti-VEGF, vitrectomy, retinal detachment), cataract surgery (phacoemulsification, premium IOLs), refractive surgery (LASIK, PRK, SMILE), pediatric myopia control, and ocular surface diseases.
 ---
-# Clinical Ophthalmology, Vision Disorders & Retinal Pathologies
+# Comprehensive Clinical & Surgical Ophthalmology, Vision Care & Prevention
 
-A comprehensive clinical manual for evaluating ocular complaints, measuring intraocular pressure, screening for sight-threatening retinal and vascular emergencies, and managing common anterior and posterior segment pathologies.
-
----
-
-## 1. Anatomy of the Eye & Optical Pathway
-
-Key anatomical structures and their clinical significance:
-- **Cornea**: Main refractive element of the eye ($\approx 43\text{ diopters}$); completely avascular, nourished by tears and anterior chamber aqueous humor.
-- **Anterior Chamber & Trabecular Meshwork**: The iridocorneal angle contains the trabecular meshwork draining aqueous humor into Schlemm's canal to maintain Intraocular Pressure (IOP).
-- **Crystalline Lens**: Provides dynamic optical accommodation ($\approx 15–20\text{ diopters}$).
-- **Vitreous Body**: Gel filling the posterior segment; liquefies and detaches with age (Posterior Vitreous Detachment - PVD).
-- **Retina & Macula Lutea**: High-resolution neural sensory layer. The **Fovea centralis** (center of the macula) contains only high-density cones for fine detail and color vision.
-- **Optic Disc**: Exit point of retinal ganglion cell axons forming the optic nerve (CN II). Contains no photoreceptors (physiological blind spot).
+A master clinical manual for diagnosing ocular pathology, performing advanced vision diagnostics, administering medical and laser therapies, managing surgical cases (cataracts, glaucoma, retinal detachment, refractive errors), and implementing proactive ocular disease prevention.
 
 ---
 
-## 2. Intraocular Pressure (IOP) & Glaucoma (*Zelený zákal*)
+## 1. Ocular Diagnostic Modalities & Preventive Screening
 
-Glaucoma is an optic neuropathy characterized by progressive loss of retinal ganglion cells, characteristic optic nerve cupping, and irreversible visual field deficits.
+### A. Advanced Diagnostic Technologies:
+1. **Optical Coherence Tomography (OCT)**:
+   - *Macular OCT*: High-resolution cross-sectional retinal visualization. Differentiates intraretinal fluid (cystoid macular edema), subretinal fluid (central serous chorioretinopathy / wet AMD), and sub-retinal pigment epithelium (RPE) deposits (drusen).
+   - *Retinal Nerve Fiber Layer (RNFL) & Ganglion Cell Complex (GCC) OCT*: Micron-level measurement of peripapillary nerve thickness for early glaucoma detection years before visual field deficits emerge.
+2. **Humphrey Visual Field Automated Perimetry (SITA-Standard 24-2 / 30-2)**:
+   - Measures retinal sensitivity threshold in decibels (dB).
+   - Assesses Mean Deviation (MD), Pattern Standard Deviation (PSD), and Visual Field Index (VFI). Detects arcuate nerve fiber bundle defects, nasal steps, and central scotomas.
+3. **Corneal Pachymetry & Applanation Tonometry**:
+   - Central Corneal Thickness (CCT): Goldmann applanation tonometry is calibrated for a CCT of $520\text{–}545\ \mu\text{m}$.
+   - Thinner corneas ($< 500\ \mu\text{m}$) cause artificial underestimation of true intraocular pressure (IOP); thick corneas ($> 580\ \mu\text{m}$) overestimate IOP.
+4. **Fluorescein Angiography (FA) & OCT-Angiography (OCTA)**:
+   - Dynamic evaluation of retinal and choroidal circulation without dye injection (OCTA) or via intravenous sodium fluorescein (FA) to detect capillary non-perfusion, neovascularization, microaneurysms, and blood-retina barrier leakage.
 
-### A. Tonometry & Clinical Parameters:
-- **Normal Intraocular Pressure**: **$10–21\text{ mmHg}$** (measured via Goldmann applanation tonometry - the gold standard).
-- **Cup-to-Disc Ratio (C/D Ratio)**:
-  - Normal: $\le 0.3–0.4$.
-  - Pathological: $> 0.5–0.6$ or asymmetry $> 0.2$ between eyes suggests glaucomatous optic nerve atrophy.
-  - Thinning of the neuroretinal rim obeys the ISNT rule (Inferior $\ge$ Superior $\ge$ Nasal $\ge$ Temporal in healthy eyes; violation of ISNT indicates rim loss).
-
-### B. Primary Open-Angle Glaucoma (POAG):
-- The "Silent Thief of Sight": Completely painless, normal anterior chamber angle, insidious progression.
-- Progressive visual field loss: Begins with arcuate scotomas and nasal step; progresses to severe peripheral constriction (**tunnel vision**). Central vision is preserved until terminal stages.
-
-### C. Acute Angle-Closure Glaucoma (Ophthalmic Emergency):
-- **Pathophysiology**: Pupillary block causes the iris root to bow forward, completely obstructing the trabecular meshwork. IOP spikes acutely to **$40–80\text{ mmHg}$**.
-- **Clinical Symptoms**:
-  - Severe unilateral deep ocular pain and ipsilateral headache.
-  - Nausea and vomiting (often misdiagnosed as acute migraine or abdominal crisis).
-  - Blurred vision with characteristic **rainbow-colored halos around lights**.
-  - Ocular examination: Red injected conjunctiva, cloudy steamy cornea, mid-dilated non-reactive pupil, eyeball feels **stony hard** on digital palpation.
-- **Emergency Medical Management**:
-  1. IV Mannitol 20% (1–2 g/kg) to draw fluid osmotically from the vitreous.
-  2. Oral/IV Acetazolamide (Diamox 500 mg) to inhibit aqueous humor secretion.
-  3. Topical eye drops: Pilocarpine 2% (miotic to pull iris away from angle), Timolol 0.5%, Apraclonidine 1%.
-  4. Definitive surgical intervention: Laser Peripheral Iridotomy (LPI) in both affected and contralateral fellow eye.
-
-### D. Glaucoma Pharmacotherapy:
-- **Prostaglandin Analogs** (*Latanoprost, Bimatoprost, Travoprost*): First-line; increases uveoscleral outflow. Once daily at bedtime. (Side effects: iris darkening, eyelash lengthening).
-- **Beta-Blockers** (*Timolol 0.25%–0.5%*): Decreases aqueous humor production. (Contraindicated in bronchial asthma, severe COPD, bradycardia, or 2nd/3rd degree AV block).
-- **Carbonic Anhydrase Inhibitors** (*Dorzolamide, Brinzolamide*): Inhibits active secretion of bicarbonate into aqueous humor.
-- **Alpha-2 Agonists** (*Brimonidine*): Dual action (reduces production and increases uveoscleral outflow).
+### B. Vision Care & Preventive Protocols:
+- **Pediatric Myopia Control Protocol**:
+  - Progressive juvenile myopia increases lifetime risk of retinal detachment, myopic maculopathy, and glaucoma.
+  - *Interventions*: Low-dose Atropine eye drops (0.01%–0.05% nightly reduces progression by 50–60%); Orthokeratology (Ortho-K overnight rigid gas-permeable lenses reshaping corneal epithelium); Dual-focus / DIMS spectacle lenses; Outdoor daylight exposure $\ge 2\text{ hours/day}$.
+- **Digital Eye Strain & Computer Vision Syndrome (CVS)**:
+  - 20-20-20 Rule (every 20 minutes, gaze at an object 20 feet away for 20 seconds); preservative-free artificial tears (sodium hyaluronate 0.15%–0.3%); optimizing monitor ergonomics and blue-light filtration.
 
 ---
 
-## 3. Retinal & Systemic Vascular Pathologies
+## 2. Cataract Pathology & Advanced Microsurgical Phacoemulsification
 
-The retina is the only place in the human body where microvasculature can be visualized directly and non-invasively.
+### A. Cataract Staging & Morphology:
+1. **Nuclear Sclerotic**: Gradual yellowing/browning (brunescent) of the lens nucleus; causes lenticular myopia ("second sight").
+2. **Cortical**: Radial spoke-like opacities extending from periphery toward the pupillary center; causes severe glare and light scattering.
+3. **Posterior Subcapsular (PSC)**: Granular opacities located beneath the posterior capsule in the visual axis; rapidly impairs reading vision; frequently induced by systemic/topical corticosteroid therapy or diabetes.
 
-### A. Hypertensive Retinopathy (Keith-Wagener-Barker Classification):
-Reflects systemic damage occurring simultaneously in cerebral, coronary, and renal microcirculation:
-- **Grade 1**: Generalized, mild arteriolar attenuation and tortuosity ("silver/copper wiring").
-- **Grade 2**: Definite focal arteriolar narrowing and arteriovenous (AV) crossing changes (*Salus-Gunn sign* - vein deflection and compression at crossings).
-- **Grade 3**: Flame-shaped retinal hemorrhages, hard lipid exudates (macular star), and **cotton-wool spots** (microinfarcts of the nerve fiber layer).
-- **Grade 4**: All of Grade 3 plus **Papilledema (bilateral optic disc swelling)**. Indicates malignant / accelerated hypertension requiring immediate ICU admission!
-
-### B. Retinal Detachment (*Odchlípení sítnice* - Emergency):
-- Separation of the neurosensory retina from the underlying retinal pigment epithelium (RPE).
-- **The Classical Warning Triad**:
-  1. **Photopsia**: Sudden persistent flashes of light in peripheral vision.
-  2. **Sudden shower of floaters**: New onset of dense black spots, webs, or "soot shower" (vitreous hemorrhage).
-  3. **Visual field defect**: A dark, painless "curtain" or shadow spreading from the periphery toward the center.
-- **Immediate Action**: Patient must remain quiet; emergency referral to vitreoretinal surgery (Pneumatic retinopexy, Pars Plana Vitrectomy - PPV, or Scleral Buckle).
-
-### C. Age-Related Macular Degeneration (AMD / *Makulární degenerace*):
-- Leading cause of irreversible central blindness in individuals $> 60$ years.
-- **Dry (Non-neovascular) AMD (85–90%)**:
-  - Deposition of yellowish metabolic waste products (**Drusen**) beneath the RPE.
-  - Slow progressive loss of central vision; metamorphopsia (straight lines appear wavy on an **Amsler grid**).
-- **Wet (Neovascular / Exudative) AMD (10–15%)**:
-  - Growth of abnormal choroidal neovascular membranes (CNV) breaking through Bruch's membrane, leaking blood and lipid.
-  - Sudden, rapid loss of central vision.
-  - Treatment: Immediate **anti-VEGF intravitreal injections** (*Aflibercept / Eylea, Ranibizumab / Lucentis, Faricimab*) administered directly into the vitreous cavity under sterile conditions to halt neovascularization.
+### B. Surgical Phacoemulsification Protocol (Modern Phaco):
+1. **Anesthesia**: Topical tetracaine/proparacaine + intracameral preservative-free lidocaine 1%.
+2. **Incisions**: Clear corneal main incision ($2.2\text{–}2.4\text{ mm}$) at temporal limbus + 1.0 mm paracentesis.
+3. **Continuous Curvilinear Capsulorhexis (CCC)**: Circular 5.0–5.5 mm tear of anterior lens capsule ensuring stable 360-degree overlap of the intraocular lens optic.
+4. **Hydrodissection & Hydrodelineation**: Balanced Salt Solution (BSS) fluid wave separating lens cortex from capsule and nucleus.
+5. **Ultrasonic Phacoemulsification**: Divide-and-conquer or phaco-chop technique emulsifying and aspirating the hard nuclear fragments while protecting the thin ($4\ \mu\text{m}$) posterior capsule.
+6. **Bimanual Irrigation/Aspiration (I/A)**: Complete cortex removal.
+7. **Intraocular Lens (IOL) Implantation**: Foldable acrylic IOL injected into the capsular bag:
+   - *Monofocal*: Excellent sharp distance vision; requires reading glasses for near tasks.
+   - *Toric*: Corrects pre-existing corneal astigmatism ($\ge 0.75\text{ D}$).
+   - *Extended Depth of Focus (EDOF) & Multifocal*: Trifocal or diffractive optics providing functional spectacle independence across distance, intermediate (computer), and near ranges.
 
 ---
 
-## 4. Anterior Segment & Refractive Conditions
+## 3. Glaucoma: Medical, Laser & Micro-Invasive Surgery (MIGS)
 
-### A. Cataracts (*Šedý zákal*):
-- Progressive clouding and opacification of the natural crystalline lens (nuclear sclerosis, cortical, or posterior subcapsular).
-- Symptoms: Gradual painless blurring, glare and halos around headlights at night, loss of color contrast.
-- Definitive Treatment: **Phacoemulsification** with ultrasound breakdown of the cloudy lens through a micro-incision ($< 2.2\text{ mm}$), followed by folding and implantation of an artificial Intraocular Lens (IOL - Monofocal, Toric for astigmatism, or Multifocal).
+### A. Evidence-Based Topical Medical Algorithm:
+1. **First-Line**: Prostaglandin Analogs (PGA: Latanoprost 0.005%, Bimatoprost 0.01%, Travoprost) once daily QHS. Increases uveoscleral outflow; reduces IOP by 25–35%.
+2. **Second-Line / Add-on**:
+   - Beta-Blockers (Timolol maleate 0.5% BID): Suppresses aqueous production. *Contraindicated in asthma, severe COPD, bradycardia, heart block*.
+   - Alpha-2 Adrenergic Agonists (Brimonidine 0.2% BID/TID): Dual action (decreases production, increases uveoscleral outflow).
+   - Carbonic Anhydrase Inhibitors (Dorzolamide 2%, Brinzolamide 1% BID/TID): Inhibits bicarbonate formation in ciliary processes.
+   - Rho-Kinase Inhibitors (Netarsudil 0.02%): Enhances trabecular meshwork outflow directly.
 
-### B. Dry Eye Syndrome & Computer Vision Syndrome:
-- Etiology: Evaporative dry eye due to **Meibomian Gland Dysfunction (MGD)** (poor lipid layer causes rapid tear evaporation) or Aqueous-deficient dry eye (Sjögren's syndrome, aging).
-- Diagnosis: **Tear Break-Up Time (TBUT)**: Fluorescein instilled; TBUT $< 10\text{ seconds}$ indicates unstable tear film.
-- Management:
-  - Preservative-free artificial tears containing high-concentration **Hyaluronic Acid (0.15%–0.3%)** or lipid-containing emulsions.
-  - Eyelid hygiene: Warm compresses (10 minutes) followed by gentle eyelid margin massage to melt inspissated meibomian wax.
-  - Ergonomics: The **20-20-20 Rule** (every 20 minutes, look at an object 20 feet / 6 meters away for at least 20 seconds).
+### B. Laser & Surgical Interventions:
+1. **Selective Laser Trabeculoplasty (SLT)**:
+   - Frequency-doubled Q-switched Nd:YAG laser (532 nm) applied to 360 degrees of trabecular meshwork. Selectively targets pigmented cells without thermal coagulation damage. Lowers IOP by 20–30%, proven equivalent or superior to first-line eye drops in the LiGHT trial.
+2. **Minimally Invasive Glaucoma Surgery (MIGS)**:
+   - Trabecular micro-bypass stents (iStent inject, Hydrus microstent) or subconjunctival filtration (XEN gel stent, PreserFlo microshunt). Ab-interno approach with rapid recovery, performed in conjunction with cataract surgery.
+3. **Filtering Trabeculectomy (Gold Standard for Advanced Glaucoma)**:
+   - Creates a guarded partial-thickness scleral flap and fistula draining aqueous humor into the subconjunctival space, forming a filtration bleb. Application of antimetabolite **Mitomycin C (MMC 0.2–0.4 mg/mL)** prevents scarring.
+
+---
+
+## 4. Retinal Pathologies, Macular Degeneration & Vitreoretinal Surgery
+
+### A. Age-Related Macular Degeneration (AMD):
+- **Dry (Non-Exudative) AMD**: Extracellular drusen deposits between RPE and Bruch's membrane; progresses to geographic atrophy.
+  - *Intervention*: AREDS2 formulation (Vitamin C 500 mg, Vitamin E 400 IU, Lutein 10 mg, Zeaxanthin 2 mg, Zinc 80 mg, Copper 2 mg); Complement inhibitors (Pegcetacoplan, Avacincaptad pegol) slowing geographic atrophy.
+- **Wet (Neovascular / Exudative) AMD**: Choroidal neovascularization (CNV) penetrating Bruch's membrane with subretinal hemorrhage, lipid exudation, and disciform fibrotic scarring.
+  - *Gold Standard Intravitreal Anti-VEGF Therapy*:
+    - **Aflibercept (Eylea 2 mg / 8 mg)**: Binds VEGF-A, VEGF-B, and PlGF.
+    - **Faricimab (Vabysmo)**: Dual VEGF-A and Angiopoietin-2 (Ang-2) bispecific inhibitor stabilizing vascular endothelium (dosing interval extended up to every 16 weeks).
+    - **Ranibizumab (Lucentis)**: Monthly or treat-and-extend protocol.
+
+### B. Rhegmatogenous Retinal Detachment (RRD):
+- **Pathogenesis**: Retinal tear (horseshoe tear) allows liquefied vitreous to dissect beneath the neurosensory retina, separating it from the RPE.
+- **Symptoms**: Sudden shower of floaters (entopsias), photopsias (flashes of light), and a progressive dark "curtain" advancing over the visual field.
+- **Urgent Surgical Repair**:
+  - *Pneumatic Retinopexy*: Intravitreal gas bubble injection ($SF_6$ or $C_3F_8$) + laser/cryopexy.
+  - *Pars Plana Vitrectomy (PPV - 23G/25G/27G)*: Core vitrectomy, relief of vitreoretinal traction, fluid-air exchange, endolaser photocoagulation around tear margins, and long-acting gas or silicone oil tamponade.
+
+---
+
+## 5. Refractive Corneal Surgery & Dry Eye Disease
+
+### A. Refractive Surgery Modalities:
+1. **Femto-LASIK**: Femtosecond laser creates a 100–110 $\mu\text{m}$ corneal flap; Excimer laser (193 nm) photoablates stroma; flap repositioned. Painless, rapid vision recovery within 24 hours.
+2. **PRK / TransPRK**: Surface ablation removing epithelium before stromal photoablation. Indicated for thin corneas or high-impact athletic occupations; healing requires 3–5 days with a bandage contact lens.
+3. **SMILE (Small Incision Lenticule Extraction)**: Femtosecond laser cuts an intrastromal lenticule removed through a 2 mm micro-incision without creating a flap. Preserves anterior corneal biomechanical strength and corneal nerve plexus (lower risk of post-op dry eye).
+
+### B. Dry Eye Disease (TFOS DEWS II Management):
+- Evaporative Dry Eye (Meibomian Gland Dysfunction - MGD) vs Aqueous-Deficient Dry Eye (Sjögren syndrome).
+- Diagnostic testing: Tear Break-Up Time (TBUT $< 10\text{ seconds}$), Schirmer I test ($< 5\text{ mm/5 min}$), corneal fluorescein staining.
+- *Therapeutic Escalation*:
+  - Warm compresses, lipid-containing artificial tears, oral Omega-3 fatty acids.
+  - Intense Pulsed Light (IPL) & thermal pulsation (LipiFlow) for MGD.
+  - Topical Cyclosporine A 0.05%–0.1% or Lifitegrast 5% for chronic surface inflammation.
+  - Punctal plugs (silicone or collagen) occluding lacrimal puncta to retain natural tears.
