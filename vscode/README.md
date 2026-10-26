@@ -96,7 +96,7 @@ Edit your local SSH configuration file:
 Insert hosts following our [`ssh_config.example ↗`](ssh_config.example) template:
 ```ssh-config
 Host de-master
-    HostName 152.53.182.222
+    HostName 198.51.100.10
     User root
     IdentityFile ~/.ssh/id_ed25519
     ServerAliveInterval 30

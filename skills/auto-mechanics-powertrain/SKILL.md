@@ -21,7 +21,7 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 ### B. Diesel Engines (Common Rail & Pumpe-Düse):
 - **Common Rail (CR) Architecture**:
   - High-pressure pump (Bosch CP1/CP3/CP4, Delphi, Denso) reaching 1,600 to 2,500 bar.
-  - Fuel return flow test (*přepadová zkouška vstřikovačів*): Measuring return line volume across all cylinders via graduated vials to detect leaking injector valves causing hard hot start or rail pressure drop (DTC P0087).
+  - Fuel return flow test (*přepadová zkouška vstřikovačů*): Measuring return line volume across all cylinders via graduated vials to detect leaking injector valves causing hard hot start or rail pressure drop (DTC P0087).
   - High-pressure pump CP4 failure warning: Swarf/metal particles in fuel filter housing requiring complete fuel system replacement (tank, lines, rails, injectors).
 - **Pumpe-Düse (PD / Unit Injector)**:
   - Camshaft-driven individual unit injectors; adjusting pre-load rocker lash (turn bottom out, back off 180°–225°).
@@ -91,7 +91,7 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 - Complete fluid exchange using automated ATF flushing machines (dynamic exchange under running engine) vs. static drain/fill; monitoring transmission oil temperature during level check.
 
 ### D. Differentials & Drivetrain Components:
-- Setting ring and pinion gear backlash (*zubová vůle*) and tooth contact pattern using marking compound (*inženýрská modř*).
+- Setting ring and pinion gear backlash (*zubová vůle*) and tooth contact pattern using marking compound (*inženýrská modř*).
 - CV joint (*homokinetický kloub*) boot replacement and grease repacking; propshaft center support bearing alignment.
 
 ---

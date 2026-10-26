@@ -3,7 +3,7 @@ name: compliance-anti-sanctions-aml
 description: >-
   International sanctions compliance (EU Council Regulations 833/2014 & 269/2014, US OFAC SDN/SSI lists, UK OFSI, 50-Percent Rule), Dual-Use export controls (Regulation 2021/821, EAR), Anti-Money Laundering and Counter-Terrorist Financing (AMLD5, AMLD6, AMLA, KYC/CDD, UBO registers), and cryptocurrency regulatory compliance (MiCA, CASP licensing, Travel Rule Regulation 2023/1113).
 ---
-# Sanctions Compliance, Anti-Money Laundering (AML/CFT) & Crypto Regulation (Санкционный комплаенс, ПОД/ФТ и крипторегулирование)
+# Sanctions Compliance, Anti-Money Laundering (AML/CFT) & Crypto Regulation
 
 An authoritative operational and regulatory reference for Chief Compliance Officers (CCO), Money Laundering Reporting Officers (MLRO), international trade lawyers, and financial institution risk managers.
 
@@ -85,7 +85,7 @@ Operating under the **Financial Action Task Force (FATF)** recommendations and t
 
 ### B. Obliged Entities & Reporting Obligations:
 - Banks, payment institutions, crypto-asset providers, auditors, tax advisors, real estate brokers, and lawyers.
-- Mandatory filing of **Suspicious Transaction Reports (STR / SAR)** to the national Financial Intelligence Unit (**FIU** / *FAÚ v ČR*, *Росфинмониторинг в РФ*).
+- Mandatory filing of **Suspicious Transaction Reports (STR / SAR)** to the national Financial Intelligence Unit (**FIU** / *FAU in Czechia*, *Rosfinmonitoring in RF*).
 - **Prohibition of Tipping-Off**: Obliged entities and their employees are strictly prohibited from disclosing to the customer or third parties that a report has been filed or that a money laundering investigation is underway.
 
 ---

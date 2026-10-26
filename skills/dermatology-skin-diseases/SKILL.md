@@ -68,6 +68,20 @@ A comprehensive medical and surgical guide for assessing, diagnosing, and managi
   - *Systemic*: Sub-antimicrobial dose Doxycycline (40 mg modified-release daily: anti-inflammatory action without selecting bacterial resistance).
   - *Vascular Laser*: Pulsed Dye Laser (PDL 595 nm) or Nd:YAG 1064 nm for telangiectasias.
 
+### D. Seborrheic Dermatitis & Malassezia Proliferation:
+- **Pathophysiology**: Hyperproliferation of lipophilic yeasts (*Malassezia restricta, M. globosa*) in sebaceous-rich zones. Fungal lipases break down sebum triglycerides into irritant unsaturated free fatty acids (oleic/arachidonic acid), triggering epidermal parakeratosis and inflammation.
+- **Predilection Sites**: Scalp (severe greasy dandruff), eyebrows, glabella, nasolabial folds, retroauricular folds, beard area, presternal chest.
+- **Topical Pharmacotherapy**:
+  - *Scalp*: Ketoconazole 2% shampoo (leave on wet scalp for **5 minutes** before rinsing, 2–3x/week for 4 weeks; maintenance 1x/week). Alternatives: Ciclopirox olamine 1%–1.5%, Zinc Pyrithione 1%–2%, Selenium Sulfide 2.5%. Keratolytics (Salicylic acid 3%, Urea 5–10%) to de-scale thick plaques.
+  - *Face & Flexures*: Ketoconazole 2% cream; topical calcineurin inhibitors (**Tacrolimus 0.1% or Pimecrolimus 1%**) as steroid-sparing first-line avoiding facial steroid rosacea/atrophy; short-term mild TCS (Hydrocortisone 1% $\le 5–7\text{ days}$) during acute flaming erythema.
+
+### E. Eczema Spectrum Variants:
+1. **Dyshidrotic Eczema (Pompholyx / Cheiropompholyx)**:
+   - Deeply situated, intensely pruritic "tapioca-pudding" clear vesicles on lateral fingers, palms, and soles. Associated with emotional stress, nickel contact allergy, hyperhidrosis. High-potency TCS under occlusion, astringent potassium permanganate ($1:10{,}000$) soaks for acute weeping.
+2. **Nummular (Discoid) Eczema**: Coin-shaped, sharply demarcated itchy crusted plaques on extensor extremities.
+3. **Asteatotic Eczema (Eczema Craquelé)**: "Cracked porcelain" superficial red fissuring on pretibial shins in elderly xerosis; high-lipid ceramide ointments, avoiding hot soapy water.
+4. **Stasis Dermatitis**: Lower extremity venous hypertension, hemosiderin brown pigmentation, ascending lipodermatosclerosis.
+
 ---
 
 ## 3. Infectious Dermatoses (Bacterial, Fungal, Viral)
@@ -142,3 +156,13 @@ A comprehensive medical and surgical guide for assessing, diagnosing, and managi
 - **Deep Dermal Layer**: Inverted buried interrupted sutures using absorbable 4-0 or 5-0 Monocryl (poliglecaprone 25) or Vicryl to relieve wound tension.
 - **Epidermal Layer**: Simple interrupted or running subcuticular sutures using non-absorbable 5-0 or 6-0 Prolene / Nylon.
 - **Suture Removal Timeline**: Face: 5–7 days; Scalp/Neck: 7–10 days; Trunk & Extremities: 12–14 days; Over Joints: 14–18 days.
+
+---
+
+## 6. Pruritus Sine Materia & Systemic Itch
+
+When intractable generalized pruritus occurs **without** primary cutaneous rash (only secondary excoriations, scratch marks, or prurigo nodules):
+- **Cholestatic Pruritus**: Accumulation of pruritogenic bile acids, lysophosphatidic acid (LPA), and autotaxin in cholestasis, MASLD/MASH, postcholecystectomy biliary stasis, or primary biliary cholangitis (PBC). Typically involves palms and soles, worse at night. (Treatment: Colestyramine, Rifampicin, Naltrexone).
+- **Uremic Pruritus**: Chronic Kidney Disease (elevated urea, hyperparathyroidism, microinflammation). (Treatment: Gabapentin/Pregabalin, NB-UVB phototherapy).
+- **Hematological / Malignant Pruritus**: Polycythemia Vera (aquagenic pruritus triggered within minutes of warm water contact; JAK2 mutation), Hodgkin Lymphoma (severe B-symptom pruritus).
+- **Endocrine Pruritus**: Hyperthyroidism (increased skin perfusion and metabolic turnover), uncontrolled Diabetes Mellitus (xerosis, neuropathic itch).

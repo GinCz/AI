@@ -1,14 +1,14 @@
 # 🧠 Master AI Skills & Domain Capabilities Framework
 
 > **Universal public skills library for autonomous AI coding agents, IDEs, and LLMs (Google Antigravity, Cursor, Claude Code, OpenAI Codex, VS Code Continue, GitHub Copilot).**  
-> *Repository:* [GitHub: GinCz/AI/skills ↗](https://github.com/GinCz/AI/tree/main/skills) | *Author:* [Vladimir Bulantsev (@GinCz) ↗](https://github.com/GinCz) | *Version:* v2026-10-23  
+> *Repository:* [GitHub: GinCz/AI/skills ↗](https://github.com/GinCz/AI/tree/main/skills) | *Author:* [Vladimir Bulantsev (@GinCz) ↗](https://github.com/GinCz) | *Version:* v2026-10-24  
 > **Unified Monolith File for Instant Import:** [`ALL_SKILLS.md ↗`](ALL_SKILLS.md) | [Raw URL](https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md)
 
 ---
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 51 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 57 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,7 +17,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 51 Battle-Tested Production Skills
+## 🗂️ Catalog of 57 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
@@ -47,10 +47,13 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`czech-real-estate-utilities-property`** | [`czech-real-estate-utilities-property/SKILL.md ↗`](czech-real-estate-utilities-property/SKILL.md) | **Czech Real Estate & Utilities** | ČEZ electricity/gas contracts EAN/EIC, SVJ bylaw governance, Katastr nemovitostí LV, property tax, mortgage interest-only hardship deferral. |
 | **`dermatology-skin-diseases`** | [`dermatology-skin-diseases/SKILL.md ↗`](dermatology-skin-diseases/SKILL.md) | **Clinical Medicine & Dermatology** | Dermatology: miliaria/prickly heat, intertrigo, eczema, psoriasis, acne, rosacea, dermoscopy ABCDE, dermatosurgery. |
 | **`devops-cloud-engineering`** | [`devops-cloud-engineering/SKILL.md ↗`](devops-cloud-engineering/SKILL.md) | **DevOps & Cloud** | CI/CD pipelines (GitHub Actions), IaC (Terraform, Ansible), Docker, OCI, NetCup, Prometheus, Grafana, BBR tuning. |
+| **`endocrinology-metabolism-biohacking`** | [`endocrinology-metabolism-biohacking/SKILL.md ↗`](endocrinology-metabolism-biohacking/SKILL.md) | **Clinical Medicine & Endocrinology** | Prediabetes, insulin resistance (HOMA-IR), metabolic syndrome, atherogenic dyslipidemia (ApoB, Lp(a), PCSK9), biohacking, LCHF. |
 | **`endpoint-mobile-security`** | [`endpoint-mobile-security/SKILL.md ↗`](endpoint-mobile-security/SKILL.md) | **Endpoint & Mobile Security** | UEFI Secure Boot, BitLocker/LUKS2, HVCI, Wi-Fi kill-switch, Android APK audit (jadx, apksigner), spyware defense. |
 | **`eu-business-law-compliance`** | [`eu-business-law-compliance/SKILL.md ↗`](eu-business-law-compliance/SKILL.md) | **EU Business Law** | EU Single Market, GDPR, EU AI Act, NIS2 cybersecurity, DSA/DMA, commercial contracts, cross-border consumer rules. |
 | **`eu-litigation-crossborder-law`** | [`eu-litigation-crossborder-law/SKILL.md ↗`](eu-litigation-crossborder-law/SKILL.md) | **EU Cross-Border Litigation** | Cross-border litigation in EU (Brussels I bis, European Payment Order), CJEU actions (Art. 263/267), ECtHR, arbitration. |
 | **`eu-vat-accounting`** | [`eu-vat-accounting/SKILL.md ↗`](eu-vat-accounting/SKILL.md) | **EU VAT & Cross-Border Tax** | EU VAT Directives, Reverse Charge, One Stop Shop (OSS/IOSS), Identifikovaná osoba, VIES validation, DAC7 reporting. |
+| **`gastroenterology-hepatology-gi`** | [`gastroenterology-hepatology-gi/SKILL.md ↗`](gastroenterology-hepatology-gi/SKILL.md) | **Clinical Medicine & Gastroenterology** | Postcholecystectomy syndrome (PCES, SOD, chologenic diarrhea), MASLD/MASH, gastritis (H. pylori, autoimmune), GERD, Barrett, IBS, SIBO, Low-FODMAP. |
+| **`geriatrics-gerontology-longevity`** | [`geriatrics-gerontology-longevity/SKILL.md ↗`](geriatrics-gerontology-longevity/SKILL.md) | **Clinical Medicine & Longevity** | 12 Hallmarks of Aging, mTOR/AMPK/NAD+ longevity biochemistry, frailty syndrome (Fried, CFS), sarcopenia (EWGSOP2), osteoporosis (DEXA, FRAX, K2), Beers. |
 | **`internal-medicine-hematology`** | [`internal-medicine-hematology/SKILL.md ↗`](internal-medicine-hematology/SKILL.md) | **Clinical Medicine** | Internal medicine, hematology, CBC interpretation, anemias, coagulation profiles, liver/renal/lipid panels. |
 | **`intl-contract-drafting-ip`** | [`intl-contract-drafting-ip/SKILL.md ↗`](intl-contract-drafting-ip/SKILL.md) | **International Law & IP** | Vienna Convention CISG 1980, Incoterms 2020, Force Majeure/Hardship, Madrid/EUIPO trademarks, SaaS/SLA agreements. |
 | **`landscape-interior-exterior-design`** | [`landscape-interior-exterior-design/SKILL.md ↗`](landscape-interior-exterior-design/SKILL.md) | **Architecture & Spatial Design** | Residential interior flow, ergonomic kitchen triangles, lighting engineering (Lux/Lumens/Kelvin), exterior facades, landscape zoning, Blender Cycles. |
@@ -58,7 +61,10 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`neurology-neurosurgery-triage`** | [`neurology-neurosurgery-triage/SKILL.md ↗`](neurology-neurosurgery-triage/SKILL.md) | **Clinical Medicine** | Neurology, neurosurgery, stroke fast-track, intracranial pressure, hematomas, cranial nerves, SNOOP4 triage. |
 | **`ophthalmology-vision-care`** | [`ophthalmology-vision-care/SKILL.md ↗`](ophthalmology-vision-care/SKILL.md) | **Clinical Medicine** | Ophthalmology, intraocular pressure management, glaucoma, retinal diseases, macular degeneration, cataracts. |
 | **`orthopedics-knee-rehab`** | [`orthopedics-knee-rehab/SKILL.md ↗`](orthopedics-knee-rehab/SKILL.md) | **Clinical Medicine** | Orthopedics, knee joint anatomy, meniscus/ACL/PCL pathology, provocative tests, PRP/hyaluronic injections, rehab. |
+| **`otorhinolaryngology-ent-medicine`** | [`otorhinolaryngology-ent-medicine/SKILL.md ↗`](otorhinolaryngology-ent-medicine/SKILL.md) | **Clinical Medicine & Otorhinolaryngology** | EPOS 2020 sinusitis, vasomotor rhinitis, post-nasal drip (UACS), otitis, sudden hearing loss (SSNHL 72h), tinnitus, HINTS stroke triage, BPPV Epley, Meniere. |
 | **`proctology-colorectal-surgery`** | [`proctology-colorectal-surgery/SKILL.md ↗`](proctology-colorectal-surgery/SKILL.md) | **Clinical Medicine** | Proctology, hemorrhoidal disease Goligher 1-4, HAL-RAR, laser LHP, Milligan-Morgan, anal fissures, fistulas, colonoscopy. |
+| **`psychosomatics-autonomic-dysfunction`** | [`psychosomatics-autonomic-dysfunction/SKILL.md ↗`](psychosomatics-autonomic-dysfunction/SKILL.md) | **Clinical Medicine & Psychosomatics** | VVD / somatoform autonomic dysfunction, panic attacks, hyperventilation hypocapnic alkalosis, HRV biofeedback, CBT, non-habit-forming anxiolytics (etifoxine). |
+| **`rheumatology-autoimmune-musculoskeletal`** | [`rheumatology-autoimmune-musculoskeletal/SKILL.md ↗`](rheumatology-autoimmune-musculoskeletal/SKILL.md) | **Clinical Medicine & Rheumatology** | Polymyalgia rheumatica (PMR), giant cell arteritis (GCA / blindness risk), rheumatoid arthritis (anti-CCP), lupus, gout (allopurinol), osteoarthritis, fibromyalgia. |
 | **`ru-accounting-tax`** | [`ru-accounting-tax/SKILL.md ↗`](ru-accounting-tax/SKILL.md) | **Russian Accounting & Tax** | Russian accounting (RSBU/FSBU), corporate and personal taxes (OSNO, USN, PSN, NPD), Single Tax Account ENS/ENP, audits. |
 | **`ru-civil-corporate-law`** | [`ru-civil-corporate-law/SKILL.md ↗`](ru-civil-corporate-law/SKILL.md) | **Russian Business Law** | Russian civil and corporate law: Civil Code GK RF, corporate governance 14-FZ/208-FZ, contracts, IP registration. |
 | **`ru-litigation-advocacy`** | [`ru-litigation-advocacy/SKILL.md ↗`](ru-litigation-advocacy/SKILL.md) | **Russian Litigation** | Russian commercial litigation: Commercial Procedure Code APK RF, Civil Procedure GPK RF, interim measures, enforcement. |
@@ -78,7 +84,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 ## 📁 Standalone System Prompts for External Models (`PROMPTS/`)
 
 If you are configuring Custom GPTs, Claude Projects, or standalone LLMs without filesystem tools, use our dedicated ready-to-copy prompts in [`PROMPTS/ ↗`](PROMPTS/):
-* 45 specialized system prompts pre-compiled for instant deployment.
+* 51 specialized system prompts pre-compiled for instant deployment.
 * Completely self-contained and formatted for 1-click copy-pasting.
 * See [`PROMPTS/README.md ↗`](PROMPTS/README.md) for the complete directory.
 

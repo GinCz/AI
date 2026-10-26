@@ -1,9 +1,9 @@
-# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 51 Skills)
+# 🧠 Master AI Skills Framework: Unified Monolithic Compilation (All 57 Skills)
 
-> **Single consolidated reference file containing all 51 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
+> **Single consolidated reference file containing all 57 domain skills for instant 1-click import into any AI engine (Google Antigravity, Claude, ChatGPT, Cursor, DeepSeek).**  
 > *GitHub Repository:* https://github.com/GinCz/AI/tree/main/skills  
 > *Raw URL for Direct Fetch:* https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md  
-> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-23
+> *Author:* Vladimir Bulantsev (@GinCz) | *Version:* v2026-10-24
 
 ---
 
@@ -35,31 +35,37 @@
 24. [czech-real-estate-utilities-property](#czech-real-estate-utilities-property) — *Czech Real Estate & Utilities*
 25. [dermatology-skin-diseases](#dermatology-skin-diseases) — *Clinical Medicine & Dermatology*
 26. [devops-cloud-engineering](#devops-cloud-engineering) — *DevOps & Cloud*
-27. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
-28. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
-29. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
-30. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
-31. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
-32. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
-33. [landscape-interior-exterior-design](#landscape-interior-exterior-design) — *Architecture & Spatial Design*
-34. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
-35. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
-36. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
-37. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
-38. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
-39. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
-40. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
-41. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
-42. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
-43. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
-44. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
-45. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
-46. [systematic-debugging](#systematic-debugging) — *Software Engineering*
-47. [ui-ux-gui-design-systems](#ui-ux-gui-design-systems) — *UI/UX & Design Systems*
-48. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
-49. [video-editing-motion-production](#video-editing-motion-production) — *Video Editing & Motion Graphics*
-50. [white-collar-crime-tax-liability](#white-collar-crime-tax-liability) — *Criminal Law & Financial Liability*
-51. [writing-plans](#writing-plans) — *Software Engineering*
+27. [endocrinology-metabolism-biohacking](#endocrinology-metabolism-biohacking) — *Clinical Medicine & Endocrinology*
+28. [endpoint-mobile-security](#endpoint-mobile-security) — *Endpoint & Mobile Security*
+29. [eu-business-law-compliance](#eu-business-law-compliance) — *EU Business Law*
+30. [eu-litigation-crossborder-law](#eu-litigation-crossborder-law) — *EU Cross-Border Litigation*
+31. [eu-vat-accounting](#eu-vat-accounting) — *EU VAT & Cross-Border Tax*
+32. [gastroenterology-hepatology-gi](#gastroenterology-hepatology-gi) — *Clinical Medicine & Gastroenterology*
+33. [geriatrics-gerontology-longevity](#geriatrics-gerontology-longevity) — *Clinical Medicine & Longevity*
+34. [internal-medicine-hematology](#internal-medicine-hematology) — *Clinical Medicine*
+35. [intl-contract-drafting-ip](#intl-contract-drafting-ip) — *International Law & IP*
+36. [landscape-interior-exterior-design](#landscape-interior-exterior-design) — *Architecture & Spatial Design*
+37. [network-hardware-firewalls](#network-hardware-firewalls) — *Enterprise Network & Firewalls*
+38. [neurology-neurosurgery-triage](#neurology-neurosurgery-triage) — *Clinical Medicine & Neurosurgery*
+39. [ophthalmology-vision-care](#ophthalmology-vision-care) — *Clinical Medicine & Ophthalmology*
+40. [orthopedics-knee-rehab](#orthopedics-knee-rehab) — *Clinical Medicine*
+41. [otorhinolaryngology-ent-medicine](#otorhinolaryngology-ent-medicine) — *Clinical Medicine & Otorhinolaryngology*
+42. [proctology-colorectal-surgery](#proctology-colorectal-surgery) — *Clinical Medicine & Proctology*
+43. [psychosomatics-autonomic-dysfunction](#psychosomatics-autonomic-dysfunction) — *Clinical Medicine & Psychosomatics*
+44. [rheumatology-autoimmune-musculoskeletal](#rheumatology-autoimmune-musculoskeletal) — *Clinical Medicine & Rheumatology*
+45. [ru-accounting-tax](#ru-accounting-tax) — *Russian Accounting & Tax*
+46. [ru-civil-corporate-law](#ru-civil-corporate-law) — *Russian Business Law*
+47. [ru-litigation-advocacy](#ru-litigation-advocacy) — *Russian Litigation*
+48. [secure-software-engineering](#secure-software-engineering) — *DevOps & Bulletproof Software Engineering*
+49. [server-hardening-zerotrust](#server-hardening-zerotrust) — *Server Hardening*
+50. [somnology-sleep-apnea-snoring](#somnology-sleep-apnea-snoring) — *Clinical Medicine & Somnology*
+51. [sysadmin-network-engineering](#sysadmin-network-engineering) — *SysAdmin & Networking*
+52. [systematic-debugging](#systematic-debugging) — *Software Engineering*
+53. [ui-ux-gui-design-systems](#ui-ux-gui-design-systems) — *UI/UX & Design Systems*
+54. [urology-nephrology-cholelithiasis](#urology-nephrology-cholelithiasis) — *Clinical Medicine & Urology*
+55. [video-editing-motion-production](#video-editing-motion-production) — *Video Editing & Motion Graphics*
+56. [white-collar-crime-tax-liability](#white-collar-crime-tax-liability) — *Criminal Law & Financial Liability*
+57. [writing-plans](#writing-plans) — *Software Engineering*
 
 ---
 
@@ -128,6 +134,7 @@ magick hero_render.png -resize 300x250^ -gravity center -extent 300x250 -quality
 
 ---
 
+
 <a name="agent-browser"></a>
 # 📦 SKILL: agent-browser
 *Domain:* **Web & Documentation**
@@ -146,6 +153,7 @@ When writing system scripts, never hallucinate parameters or flags. If unsure, u
 3. **Extraction**: Only extract the relevant flags and syntax. Do not copy generic examples without understanding them.
 
 ---
+
 
 <a name="agy-customizations"></a>
 # 📦 SKILL: agy-customizations
@@ -260,6 +268,7 @@ configurations.
 
 ---
 
+
 <a name="allergology-clinical-immunology"></a>
 # 📦 SKILL: allergology-clinical-immunology
 *Domain:* **Clinical Medicine**
@@ -366,6 +375,7 @@ A master clinical and diagnostic reference for evaluating allergic rhinitis, aer
 
 ---
 
+
 <a name="antigravity-guide"></a>
 # 📦 SKILL: antigravity-guide
 *Domain:* **Antigravity Platform**
@@ -427,6 +437,7 @@ sitemap:
     <!-- LINT.ThenChange(//depot/google3/third_party/gemini_coder/agent_ui_toolkit/dev/appVariant/externalAppVariant.ts:custom_links) -->
 
 ---
+
 
 <a name="antivirus-edr-threat-defense"></a>
 # 📦 SKILL: antivirus-edr-threat-defense
@@ -601,6 +612,7 @@ find /etc/cron* /etc/systemd/system /var/spool/cron -mtime -2 -ls > /tmp/recent_
 
 ---
 
+
 <a name="audio-engineering-sound-design"></a>
 # 📦 SKILL: audio-engineering-sound-design
 *Domain:* **Audio Engineering & Sound Design**
@@ -680,6 +692,7 @@ ffmpeg -i raw_voice.wav -af "highpass=f=80,agate=threshold=-36dB:ratio=2:attack=
 ```
 
 ---
+
 
 <a name="auto-electronics-diagnostics"></a>
 # 📦 SKILL: auto-electronics-diagnostics
@@ -827,6 +840,7 @@ Working on electric (BEV) and hybrid (HEV/PHEV) vehicles requires certified High
 
 ---
 
+
 <a name="auto-mechanics-powertrain"></a>
 # 📦 SKILL: auto-mechanics-powertrain
 *Domain:* **Automotive & Powertrain**
@@ -950,6 +964,7 @@ A master operational engineering manual for automotive mechanics, engine rebuild
 
 ---
 
+
 <a name="automotive-fleet-logistics-czech-eu"></a>
 # 📦 SKILL: automotive-fleet-logistics-czech-eu
 *Domain:* **Automotive & EU Transport Law**
@@ -1041,6 +1056,7 @@ A comprehensive operational and legal manual for vehicle ownership, registration
   - Financial settlement: Pay strictly via SEPA credit transfer quoting the exact foreign reference number (*Aktenzeichen / Numer sprawy*) to prevent judicial enforcement abroad.
 
 ---
+
 
 <a name="bankruptcy-insolvency-restructuring"></a>
 # 📦 SKILL: bankruptcy-insolvency-restructuring
@@ -1152,6 +1168,7 @@ The ultimate weapon of creditors against company owners, actual beneficiaries, a
 
 ---
 
+
 <a name="branding-logo-vector-graphics"></a>
 # 📦 SKILL: branding-logo-vector-graphics
 *Domain:* **Branding & Vector Graphics**
@@ -1219,6 +1236,7 @@ A master manual for architecting iconic brand marks, geometric vector logos, mat
 6. **Typography System**: Primary brand font (headlines), secondary font (body copy), and system fallback font (web-safe stack: Arial, Roboto, Inter).
 
 ---
+
 
 <a name="clinical-cardiology-surgery"></a>
 # 📦 SKILL: clinical-cardiology-surgery
@@ -1347,6 +1365,7 @@ Heart failure is categorized by Left Ventricular Ejection Fraction (LVEF):
 
 ---
 
+
 <a name="code-review"></a>
 # 📦 SKILL: code-review
 *Domain:* **Software Engineering**
@@ -1373,6 +1392,7 @@ When reviewing code, evaluate it against the following criteria:
 Provide a structured report with [High], [Medium], and [Low] priority fixes.
 
 ---
+
 
 <a name="compliance-anti-sanctions-aml"></a>
 # 📦 SKILL: compliance-anti-sanctions-aml
@@ -1493,6 +1513,7 @@ The European Union has established the world's first comprehensive regulatory fr
 
 ---
 
+
 <a name="crypto-asset-accounting-taxation"></a>
 # 📦 SKILL: crypto-asset-accounting-taxation
 *Domain:* **Crypto Assets & Financial Regulation**
@@ -1582,6 +1603,7 @@ A comprehensive legal and financial manual for the tax treatment, accounting cla
 - High-value or unverified source-of-funds deposits face immediate automatic freezes by exchange compliance engines.
 
 ---
+
 
 <a name="cyber-defense-pentest"></a>
 # 📦 SKILL: cyber-defense-pentest
@@ -1717,6 +1739,7 @@ When an unauthorized intrusion or breach is confirmed:
    - Rotate all SSH keys, database passwords, API tokens, and service credentials.
 
 ---
+
 
 <a name="czech-accounting-tax"></a>
 # 📦 SKILL: czech-accounting-tax
@@ -1895,6 +1918,7 @@ Electronic filing is **mandatory by law** for all Czech legal entities and regis
 
 ---
 
+
 <a name="czech-business-law"></a>
 # 📦 SKILL: czech-business-law
 *Domain:* **Czech Business Law**
@@ -2038,6 +2062,7 @@ The illegal practice of contracting an individual as an independent contractor (
 
 ---
 
+
 <a name="czech-e-government-isds-portals"></a>
 # 📦 SKILL: czech-e-government-isds-portals
 *Domain:* **Czech E-Government & Digital Tax**
@@ -2114,6 +2139,7 @@ A comprehensive operational manual for navigating electronic public administrati
 - **BankID (Bankovní identita)**: Primary zero-cost authentication tool for all Czech e-government portals, signing PDF documents, and verifying identity across banks, utilities (ČEZ ON-LINE), and state registries.
 
 ---
+
 
 <a name="czech-immigration-residency-labor"></a>
 # 📦 SKILL: czech-immigration-residency-labor
@@ -2205,6 +2231,7 @@ A permanent residence permit **cannot be arbitrarily revoked**, but statutory gr
   - Eliminates the mandatory minimum health insurance contribution (~2 968 CZK/month in 2024–2026 for persons without taxable income - OBZP).
 
 ---
+
 
 <a name="czech-litigation-advocacy"></a>
 # 📦 SKILL: czech-litigation-advocacy
@@ -2358,6 +2385,7 @@ Governs non-contractual attorney remuneration (*mimosmluvní odměna*) and the s
 
 ---
 
+
 <a name="czech-pohoda-accounting-operations"></a>
 # 📦 SKILL: czech-pohoda-accounting-operations
 *Domain:* **Czech Accounting & ERP Systems**
@@ -2492,6 +2520,7 @@ A specialized operational manual for executing bookkeeping, invoicing, XML data 
 
 ---
 
+
 <a name="czech-real-estate-utilities-property"></a>
 # 📦 SKILL: czech-real-estate-utilities-property
 *Domain:* **Czech Real Estate & Utilities**
@@ -2593,6 +2622,7 @@ A master operational and legal manual for managing residential and commercial re
 
 ---
 
+
 <a name="dermatology-skin-diseases"></a>
 # 📦 SKILL: dermatology-skin-diseases
 *Domain:* **Clinical Medicine & Dermatology**
@@ -2666,6 +2696,20 @@ A comprehensive medical and surgical guide for assessing, diagnosing, and managi
   - *Erythema / Flushing*: Topical Brimonidine tartrate 0.33% gel (selective $\alpha_2$-adrenergic vasoconstriction).
   - *Systemic*: Sub-antimicrobial dose Doxycycline (40 mg modified-release daily: anti-inflammatory action without selecting bacterial resistance).
   - *Vascular Laser*: Pulsed Dye Laser (PDL 595 nm) or Nd:YAG 1064 nm for telangiectasias.
+
+### D. Seborrheic Dermatitis & Malassezia Proliferation:
+- **Pathophysiology**: Hyperproliferation of lipophilic yeasts (*Malassezia restricta, M. globosa*) in sebaceous-rich zones. Fungal lipases break down sebum triglycerides into irritant unsaturated free fatty acids (oleic/arachidonic acid), triggering epidermal parakeratosis and inflammation.
+- **Predilection Sites**: Scalp (severe greasy dandruff), eyebrows, glabella, nasolabial folds, retroauricular folds, beard area, presternal chest.
+- **Topical Pharmacotherapy**:
+  - *Scalp*: Ketoconazole 2% shampoo (leave on wet scalp for **5 minutes** before rinsing, 2–3x/week for 4 weeks; maintenance 1x/week). Alternatives: Ciclopirox olamine 1%–1.5%, Zinc Pyrithione 1%–2%, Selenium Sulfide 2.5%. Keratolytics (Salicylic acid 3%, Urea 5–10%) to de-scale thick plaques.
+  - *Face & Flexures*: Ketoconazole 2% cream; topical calcineurin inhibitors (**Tacrolimus 0.1% or Pimecrolimus 1%**) as steroid-sparing first-line avoiding facial steroid rosacea/atrophy; short-term mild TCS (Hydrocortisone 1% $\le 5–7\text{ days}$) during acute flaming erythema.
+
+### E. Eczema Spectrum Variants:
+1. **Dyshidrotic Eczema (Pompholyx / Cheiropompholyx)**:
+   - Deeply situated, intensely pruritic "tapioca-pudding" clear vesicles on lateral fingers, palms, and soles. Associated with emotional stress, nickel contact allergy, hyperhidrosis. High-potency TCS under occlusion, astringent potassium permanganate ($1:10{,}000$) soaks for acute weeping.
+2. **Nummular (Discoid) Eczema**: Coin-shaped, sharply demarcated itchy crusted plaques on extensor extremities.
+3. **Asteatotic Eczema (Eczema Craquelé)**: "Cracked porcelain" superficial red fissuring on pretibial shins in elderly xerosis; high-lipid ceramide ointments, avoiding hot soapy water.
+4. **Stasis Dermatitis**: Lower extremity venous hypertension, hemosiderin brown pigmentation, ascending lipodermatosclerosis.
 
 ---
 
@@ -2743,6 +2787,17 @@ A comprehensive medical and surgical guide for assessing, diagnosing, and managi
 - **Suture Removal Timeline**: Face: 5–7 days; Scalp/Neck: 7–10 days; Trunk & Extremities: 12–14 days; Over Joints: 14–18 days.
 
 ---
+
+## 6. Pruritus Sine Materia & Systemic Itch
+
+When intractable generalized pruritus occurs **without** primary cutaneous rash (only secondary excoriations, scratch marks, or prurigo nodules):
+- **Cholestatic Pruritus**: Accumulation of pruritogenic bile acids, lysophosphatidic acid (LPA), and autotaxin in cholestasis, MASLD/MASH, postcholecystectomy biliary stasis, or primary biliary cholangitis (PBC). Typically involves palms and soles, worse at night. (Treatment: Colestyramine, Rifampicin, Naltrexone).
+- **Uremic Pruritus**: Chronic Kidney Disease (elevated urea, hyperparathyroidism, microinflammation). (Treatment: Gabapentin/Pregabalin, NB-UVB phototherapy).
+- **Hematological / Malignant Pruritus**: Polycythemia Vera (aquagenic pruritus triggered within minutes of warm water contact; JAK2 mutation), Hodgkin Lymphoma (severe B-symptom pruritus).
+- **Endocrine Pruritus**: Hyperthyroidism (increased skin perfusion and metabolic turnover), uncontrolled Diabetes Mellitus (xerosis, neuropathic itch).
+
+---
+
 
 <a name="devops-cloud-engineering"></a>
 # 📦 SKILL: devops-cloud-engineering
@@ -2962,6 +3017,143 @@ Apply immediately without reboot: `sysctl --system`.
 
 ---
 
+
+<a name="endocrinology-metabolism-biohacking"></a>
+# 📦 SKILL: endocrinology-metabolism-biohacking
+*Domain:* **Clinical Medicine & Endocrinology**
+
+---
+name: endocrinology-metabolism-biohacking
+description: >-
+  Clinical endocrinology, prediabetes, insulin resistance (HOMA-IR), metabolic syndrome, dyslipidemia (ApoB, Lp(a), LDL-C, statins/PCSK9), thyroid and adrenal function, clinical nutrition, and evidence-based biohacking.
+---
+# Clinical Endocrinology, Metabolic Health & Evidence-Based Biohacking
+
+A master clinical, laboratory, and longevity reference covering glycemic regulation, insulin resistance, atherogenic dyslipidemia, hormonal axes (thyroid, adrenal, gonadal), evidence-based biohacking, and therapeutic nutritional interventions.
+
+---
+
+## 1. Glucose Metabolism, Insulin Resistance & Prediabetes
+
+### A. Diagnostic Criteria for Glycemic Disorders (ADA Guidelines):
+| Parameter | Normal | Prediabetes (Impaired) | Diabetes Mellitus |
+| :--- | :--- | :--- | :--- |
+| **Fasting Plasma Glucose (FPG)** | $< 5.6\text{ mmol/L}$ ($< 100\text{ mg/dL}$) | $5.6–6.9\text{ mmol/L}$ ($100–125\text{ mg/dL}$) | $\ge 7.0\text{ mmol/L}$ ($\ge 126\text{ mg/dL}$) |
+| **2-hour 75g OGTT Glucose** | $< 7.8\text{ mmol/L}$ ($< 140\text{ mg/dL}$) | $7.8–11.0\text{ mmol/L}$ ($140–199\text{ mg/dL}$) | $\ge 11.1\text{ mmol/L}$ ($\ge 200\text{ mg/dL}$) |
+| **Glycated Hemoglobin ($HbA_{1c}$)** | $< 5.7\%$ ($< 39\text{ mmol/mol}$) | $5.7–6.4\%$ ($39–47\text{ mmol/mol}$) | $\ge 6.5\%$ ($\ge 48\text{ mmol/mol}$) |
+
+### B. Insulin Resistance & Biomarkers:
+- **HOMA-IR (Homeostatic Model Assessment of Insulin Resistance)**:
+  $$\text{HOMA-IR} = \frac{\text{Fasting Insulin } (\mu\text{IU/mL}) \times \text{Fasting Glucose } (\text{mmol/L})}{22.5}$$
+  - **Optimal**: $< 1.4$
+  - **Early Insulin Resistance**: $1.5–2.5$
+  - **Significant Insulin Resistance**: $> 2.5$
+- **Fasting Insulin**: Ideal longevity/metabolic range is **$2.0–6.0\text{ }\mu\text{IU/mL}$** (values $> 10\text{ }\mu\text{IU/mL}$ indicate compensatory hyperinsulinemia years before blood glucose rises).
+- **Continuous Glucose Monitoring (CGM)**:
+  - Longevity Targets: Time in Range ($3.9–7.8\text{ mmol/L}$) $> 95\%$; postprandial glucose spike $< 7.8\text{ mmol/L}$; glycemic standard deviation (SD) $< 1.1\text{ mmol/L}$; Mean Amplitude of Glycemic Excursions (MAGE) minimized.
+
+### C. Metabolic Syndrome (IDF / NCEP ATP III Consensus Criteria):
+Diagnosed when $\ge 3$ of the following 5 criteria are present:
+1. **Central (Abdominal) Obesity**: Waist circumference $\ge 94\text{ cm}$ (men) or $\ge 80\text{ cm}$ (women) in Europid populations.
+2. **Elevated Triglycerides**: $\ge 1.7\text{ mmol/L}$ ($\ge 150\text{ mg/dL}$) or drug treatment for elevated triglycerides.
+3. **Reduced HDL Cholesterol**: $< 1.0\text{ mmol/L}$ ($< 40\text{ mg/dL}$) in men; $< 1.3\text{ mmol/L}$ ($< 50\text{ mg/dL}$) in women.
+4. **Elevated Blood Pressure**: Systolic $\ge 130\text{ mmHg}$ and/or Diastolic $\ge 85\text{ mmHg}$, or anti-hypertensive therapy.
+5. **Elevated Fasting Glucose**: $\ge 5.6\text{ mmol/L}$ ($\ge 100\text{ mg/dL}$) or previously diagnosed type 2 diabetes.
+
+---
+
+## 2. Atherogenic Dyslipidemia & Advanced Lipidology
+
+### A. Complete Lipid Panel Interpretation:
+- **Total Cholesterol**: Gross screening parameter; limited prognostic value alone.
+- **LDL-C (Low-Density Lipoprotein Cholesterol)**:
+  - Very High Cardiovascular Risk Target: **$< 1.4\text{ mmol/L}$ ($< 55\text{ mg/dL}$)** and $\ge 50\%$ reduction from baseline.
+  - High Risk Target: **$< 1.8\text{ mmol/L}$ ($< 70\text{ mg/dL}$)**.
+  - Moderate Risk Target: **$< 2.6\text{ mmol/L}$ ($< 100\text{ mg/dL}$)**.
+- **Triglycerides (TG)**: Fasting $< 1.7\text{ mmol/L}$; optimal metabolic health $< 1.1\text{ mmol/L}$.
+- **Triglyceride-to-HDL Ratio (TG/HDL)** (in mg/dL or converted):
+  - $< 2.0$ (in mg/dL): Surrogate marker for low small-dense LDL (sdLDL) and high insulin sensitivity.
+  - $> 3.5$: Strongly indicates dense atherogenic phenotype B particles and severe insulin resistance.
+- **Apolipoprotein B (ApoB)**:
+  - Gold standard marker of total atherogenic particle number (one ApoB per particle of LDL, VLDL, IDL, and Lp(a)).
+  - Target in high/very-high risk: **$< 65–80\text{ mg/dL}$**.
+- **Lipoprotein(a) [Lp(a)]**:
+  - Genetically determined, highly atherogenic and prothrombotic independent risk factor.
+  - Normal: $< 30\text{ mg/dL}$ ($< 75\text{ nmol/L}$).
+  - High Risk: $> 50\text{ mg/dL}$ ($> 125\text{ nmol/L}$). Check at least once in a lifetime.
+
+### B. Pharmacotherapy of Dyslipidemia:
+1. **HMG-CoA Reductase Inhibitors (Statins)**:
+   - High-intensity: Atorvastatin $40–80\text{ mg}$, Rosuvastatin $20–40\text{ mg}$ (lowers LDL-C by $\ge 50\%$).
+   - Moderate-intensity: Rosuvastatin $5–10\text{ mg}$, Atorvastatin $10–20\text{ mg}$.
+   - Side effect management: Statin-associated muscle symptoms (SAMS); assess serum CK, co-administer CoQ10 (Ubiquinol $100–200\text{ mg}$).
+2. **Cholesterol Absorption Inhibitor**:
+   - Ezetimibe $10\text{ mg}$ daily: Blocks NPC1L1 transporter in the brush border of the small intestine. Synergistic with statins (+15–20% additional LDL-C lowering).
+3. **PCSK9 Inhibitors (Monoclonal Antibodies)**:
+   - Evolocumab ($140\text{ mg}$ SC q2w) or Alirocumab ($75/150\text{ mg}$ SC q2w): Halts PCSK9-mediated LDL receptor degradation, increasing hepatic LDL clearance. Reduces LDL-C by $50–60\%$, also lowers Lp(a) by $20–30\%$.
+4. **Bempedoic Acid**:
+   - Inhibits ATP-citrate lyase upstream of HMG-CoA reductase in the liver; does not enter skeletal muscle (zero muscle toxicity).
+
+---
+
+## 3. Endocrine Axes: Thyroid, Adrenal & Hormonal Homeostasis
+
+### A. Thyroid Function (Hypothalamic-Pituitary-Thyroid Axis):
+- **TSH (Thyroid-Stimulating Hormone)**: Reference $0.4–4.0\text{ mIU/L}$. Functional optimal longevity range: **$1.0–2.2\text{ mIU/L}$**.
+- **Free T4 (FT4)**: Unbound thyroxine. Reference $12.0–22.0\text{ pmol/L}$.
+- **Free T3 (FT3)**: Active metabolic hormone. Reference $3.1–6.8\text{ pmol/L}$.
+- **Reverse T3 (rT3)**: Inactive metabolite produced during severe caloric restriction, systemic inflammation, or high cortisol. Ideal FT3/rT3 ratio $> 20$.
+- **Thyroid Autoantibodies**:
+  - Anti-TPO (Thyroid Peroxidase Ab): Hallmarks Hashimoto's autoimmune thyroiditis.
+  - Anti-Tg (Thyroglobulin Ab): Secondary autoimmune marker.
+  - TRAb (TSH Receptor Ab): Pathognomonic for Graves' disease (hyperthyroidism).
+
+### B. Adrenal Axis & Cortisol Dynamics (HPA Axis):
+- **Circadian Cortisol Curve**: Highest 30–45 min post-waking (Cortisol Awakening Response - CAR), steadily declining throughout the afternoon, nadir around midnight.
+- **Chronic Stress & Burnout Phenotypes**:
+  - Phase 1 (Hyper-reactivity): Elevated diurnal cortisol, high nighttime cortisol $\rightarrow$ sleep fragmentation, central fat deposition, hyperglycemia.
+  - Phase 2 (Flattened / Hypocortisolism): Low flat cortisol curve, blunted CAR $\rightarrow$ severe morning fatigue, orthostatic hypotension, brain fog.
+- **DHEA-S**: Anabolic counter-regulatory hormone to cortisol; age-dependent decline.
+
+---
+
+## 4. Clinical Nutrition & Metabolic Protocols
+
+### A. Dietary Interventions:
+- **Low-Carbohydrate / Ketogenic Nutrition (LCHF)**:
+  - Decreases postprandial glucose surges, reduces fasting insulin, depletes hepatic glycogen, and stimulates beta-oxidation and ketogenesis ($\beta$-hydroxybutyrate).
+  - Indicated in metabolic syndrome, MASLD, and type 2 diabetes.
+- **Intermittent Fasting & Time-Restricted Eating (TRE)**:
+  - 16:8 Protocol (16 hours fasting, 8 hours feeding window): Promotes cellular autophagy, improves insulin sensitivity, enhances mitochondrial mitophagy.
+- **Mediterranean Diet (PREDIMED Standard)**:
+  - High in extra virgin olive oil (EVOO, polyphenol-rich), wild-caught fatty fish (EPA/DHA), leafy vegetables, nuts, legumes; lowers high-sensitivity CRP (hs-CRP) and cardiovascular events.
+
+---
+
+## 5. Evidence-Based Biohacking & Longevity Protocols
+
+### A. Metabolic & Glycemic Nutrients:
+- **Berberine HCl** ($500\text{ mg}$ 2–3x/day before meals): Activates AMPK (AMP-activated protein kinase), upregulates GLUT4 translocation, inhibits mitochondrial complex I (metformin-like efficacy).
+- **Alpha-Lipoic Acid (R-ALA)** ($300–600\text{ mg}$/day): Potent antioxidant, restores intracellular glutathione, improves peripheral insulin sensitivity and diabetic neuropathy.
+- **Myo-Inositol & D-Chiro-Inositol** ($2000–4000\text{ mg}$/day, 40:1 ratio): Second messenger for insulin signaling.
+- **Chromium Picolinate** ($200–500\text{ }\mu\text{g}$/day): Enhances insulin receptor kinase activity.
+
+### B. Mitochondrial & Cellular Energy Optimization:
+- **Coenzyme Q10 / Ubiquinol** ($100–300\text{ mg}$/day with fat): Essential electron carrier in Complex I/II $\rightarrow$ III of the electron transport chain; essential for statin users.
+- **Acetyl-L-Carnitine (ALCAR)** ($500–1500\text{ mg}$/day): Shuttles long-chain fatty acids into mitochondria for $\beta$-oxidation; crosses the blood-brain barrier.
+- **Magnesium Complexes** ($300–500\text{ mg}$ elemental):
+  - Magnesium Bisglycinate: Muscle relaxation, sleep quality, high GI tolerance.
+  - Magnesium Malate: Cellular ATP production, fatigue mitigation.
+  - Magnesium L-Threonate: Highest cerebrospinal fluid penetration, cognitive enhancement.
+
+### C. Circadian & Sleep Architecture:
+- Morning blue-light exposure ($10{,}000\text{ lux}$ daylight within 30 min of waking) to anchor the suprachiasmatic nucleus (SCN).
+- Evening blue-light mitigation ($< 480\text{ nm}$ blocked 2 hours before bed) to prevent melatonin suppression.
+- Heart Rate Variability (HRV) tracking for autonomic nervous balance and parasympathetic recovery.
+
+---
+
+
 <a name="endpoint-mobile-security"></a>
 # 📦 SKILL: endpoint-mobile-security
 *Domain:* **Endpoint & Mobile Security**
@@ -3071,6 +3263,7 @@ As an Android developer and administrator, maintain rigorous device and applicat
   - In custom Android apps, always store cryptographic secrets inside the hardware-backed **Android Keystore** (`KeyGenParameterSpec.Builder(..., KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT).setUserAuthenticationRequired(true)`).
 
 ---
+
 
 <a name="eu-business-law-compliance"></a>
 # 📦 SKILL: eu-business-law-compliance
@@ -3211,6 +3404,7 @@ Governed by the Consumer Rights Directive (2011/83/EU) and the **Omnibus Directi
 
 ---
 
+
 <a name="eu-litigation-crossborder-law"></a>
 # 📦 SKILL: eu-litigation-crossborder-law
 *Domain:* **EU Cross-Border Litigation**
@@ -3340,6 +3534,7 @@ The preeminent global mechanism for resolving cross-border commercial disputes o
   - Enforcement contrary to the **Public Policy (*ordre public*)** of the country where enforcement is sought.
 
 ---
+
 
 <a name="eu-vat-accounting"></a>
 # 📦 SKILL: eu-vat-accounting
@@ -3475,6 +3670,281 @@ Under **Council Directive (EU) 2021/514 (DAC7)**:
 
 ---
 
+
+<a name="gastroenterology-hepatology-gi"></a>
+# 📦 SKILL: gastroenterology-hepatology-gi
+*Domain:* **Clinical Medicine & Gastroenterology**
+
+---
+name: gastroenterology-hepatology-gi
+description: >-
+  Clinical gastroenterology and hepatology: postcholecystectomy syndrome (PCES, sphincter of Oddi dysfunction, bile acid diarrhea), MASLD/MASH fatty liver disease, gastritis etiologies (H. pylori, autoimmune Type A, bile reflux), GERD & Barrett's esophagus, IBS (Rome IV), SIBO, Low-FODMAP, and GI pharmacotherapy.
+---
+# Clinical Gastroenterology, Hepatology & Digestive Pathologies
+
+A master clinical, endoscopic, and pharmacological guide covering upper and lower gastrointestinal disorders, hepatobiliary physiology, postcholecystectomy dynamics, hepatic steatosis, gastric mucosal diseases, and functional bowel syndromes.
+
+---
+
+## 1. Postcholecystectomy Syndrome (PCES) & Biliary Dynamics
+
+### A. Pathophysiology After Gallbladder Removal:
+- **Loss of Bile Reservoir**: Continuous unbuffered trickling of dilute hepatic bile into the duodenum, decoupled from meal ingestion.
+- **Biliary Dyskinesia & Sphincter of Oddi Dysfunction (SOD)**:
+  - Spasm or stenosis of the choledochoduodenal junction leading to biliary colic (epigastric/right upper quadrant pain radiating to the back/scapula).
+  - Milwaukee / Rome IV classification: Type I (pain + elevated liver enzymes + dilated common bile duct $> 8\text{ mm}$), Type II (pain + 1 criterion), Type III (pain alone, functional).
+- **Alkaline / Bile Reflux Gastritis**: Retrograde duodenogastric reflux of bile acids (cholic, deoxycholic) destroying the gastric mucosal barrier (mucus-bicarbonate layer).
+- **Bile Acid Malabsorption / Chologenic Diarrhea (Type 3 BAD)**:
+  - Excess bile salts overwhelm the terminal ileal active transport capacity and enter the colon, stimulating secretin-mediated water secretion and hypermotility.
+
+### B. Therapeutic Management:
+1. **Ursodeoxycholic Acid (UDCA / Ursosan)** ($10–15\text{ mg/kg/day}$):
+   - Hydrophilic, cytoprotective bile acid. Displaces toxic hydrophobic endogenous bile acids from the mucosal surface and bile pool.
+2. **Biliary Selective Spasmolytics**:
+   - **Hymecromone** ($200–400\text{ mg}$ 3x/day before meals): Selective spasmolytic for the sphincter of Oddi; promotes physiological choleresis without altering arterial blood pressure.
+   - **Mebeverine** ($200\text{ mg}$ 2x/day): Musculotropic spasmolytic.
+3. **Bile Acid Sequestrants** (for chologenic diarrhea):
+   - **Colestyramine** ($4–8\text{ g}$/day) or **Colesevelam**: Binds luminal bile acids into non-absorbable complexes excreted safely.
+4. **Digestive Enzyme Replacement**:
+   - Enteric-coated **Pancreatin micro-granules/minimicrospheres** ($10{,}000–25{,}000\text{ Ph.Eur.U}$ Lipase with main meals) compensating for uncoordinated bile-pancreatic juice mixing.
+
+---
+
+## 2. Hepatic Steatosis & Steatohepatitis (MASLD / MASH)
+
+### A. Terminology & Staging:
+- **MASLD (Metabolic Dysfunction-Associated Steatotic Liver Disease)** (formerly NAFLD):
+  - Hepatic steatosis ($\ge 5\%$ hepatocytes with fat accumulation by imaging or histology) in the presence of $\ge 1$ cardiometabolic risk factor (obesity, T2D, hypertension, dyslipidemia).
+- **MASH (Metabolic Dysfunction-Associated Steatohepatitis)** (formerly NASH):
+  - Progression characterized by hepatocyte ballooning degeneration, lobular inflammation, and pericellular fibrosis.
+
+### B. Non-Invasive Fibrosis Assessment:
+- **FIB-4 Index**:
+  $$\text{FIB-4} = \frac{\text{Age } (\text{years}) \times \text{AST } (\text{U/L})}{\text{Platelet count } (10^9/\text{L}) \times \sqrt{\text{ALT } (\text{U/L})}}$$
+  - **$< 1.30$** ($< 2.0$ in age $> 65$): High negative predictive value ($> 90\%$) for excluding advanced fibrosis (F3–F4).
+  - **$1.30–2.67$**: Indeterminate zone (requires transient elastography).
+  - **$> 2.67$**: High risk of advanced fibrosis/cirrhosis (referral to hepatology required).
+- **Transient Elastography (FibroScan)**:
+  - Controlled Attenuation Parameter (CAP, in $\text{dB/m}$): Quantifies steatosis ($S1 > 248$, $S2 > 268$, $S3 > 280\text{ dB/m}$).
+  - Liver Stiffness Measurement (LSM, in $\text{kPa}$): Assesses fibrosis ($F0–F1 < 7.0$, $F2: 7.0–8.7$, $F3: 8.7–10.3$, $F4 \ge 10.3\text{ kPa}$).
+
+### C. Clinical Management:
+- Weight reduction: $7–10\%$ body weight loss induces histological regression of MASH and fibrosis.
+- Insulin sensitizers and GLP-1 Receptor Agonists (*semaglutide, tirzepatide*) demonstrating profound reduction in hepatic lipid content.
+- Hepatoprotective agents: Vitamin E ($800\text{ IU/day}$ in non-diabetic MASH), S-adenosylmethionine (AdoMet), phosphatidylcholine.
+
+---
+
+## 3. Gastritis & Gastroduodenal Pathologies
+
+### A. Etiological Classification of Gastritis:
+1. **Type A (Autoimmune Metaplastic Atrophic Gastritis - AMAG)**:
+   - Autoantibodies targeting **Parietal Cells (PCA)** and **Intrinsic Factor (IFA)**.
+   - Body/fundus predominance; hypochlorhydria/achlorhydria $\rightarrow$ loss of negative feedback causes extreme hypergastrinemia (Gastrin-17 $\uparrow\uparrow$).
+   - Consequence: Severe Vitamin B12 malabsorption (Pernicious Anemia, subacute combined degeneration of spinal cord) and iron-deficiency anemia; gastric neuroendocrine tumor (NET) risk.
+2. **Type B (Helicobacter pylori Gastritis)**:
+   - Antrum-predominant (initial) progressing to pangastritis. Gram-negative microaerophilic curved bacillus producing urease ($H_2O + \text{urea} \rightarrow 2NH_3 + CO_2$).
+   - Leading cause of peptic ulcer disease and gastric adenocarcinoma (Class 1 carcinogen).
+   - Diagnosis: **$^{13}\text{C}$-Urea Breath Test (UBT)** (gold standard), Stool Antigen Test (SAT), or endoscopic biopsy with rapid urease test (CLO-test). PPIs must be held for 14 days prior to testing!
+3. **Type C (Chemical / Reactive Gastropathy)**:
+   - NSAID-induced (inhibition of COX-1-mediated mucosal protective prostaglandins $PGE_2$) or alkaline bile reflux.
+
+### B. Serological "Virtual Biopsy" (GastroPanel):
+- **Pepsinogen I (PG I)**: Secreted only by fundic/body chief cells ($30–165\text{ }\mu\text{g/L}$). Values $< 30\text{ }\mu\text{g/L}$ indicate corpus atrophy.
+- **Pepsinogen II (PG II)**: Secreted throughout stomach and duodenum. Marker of overall inflammation.
+- **PG I / PG II Ratio**: Normal $> 3.0$. A ratio $< 3.0$ strongly indicates corpus atrophic gastritis.
+- **Gastrin-17 (fasting / stimulated)**: Secreted by antral G-cells. High in corpus atrophy (no acid feedback); low in antral atrophy.
+
+### C. H. pylori Eradication Protocols (Maastricht VI Consensus):
+- **First-Line Quadruple Therapy (14 days)**:
+  - PPI (e.g. Esomeprazole $40\text{ mg}$ bid or Rabeprazole $20\text{ mg}$ bid)
+  - Bismuth subcitrate ($120\text{ mg}$ qid or $240\text{ mg}$ bid)
+  - Metronidazole ($500\text{ mg}$ tid/qid)
+  - Tetracycline ($500\text{ mg}$ qid)
+- Alternative Concomitant Non-Bismuth Quadruple: PPI + Amoxicillin $1000\text{ mg}$ bid + Clarithromycin $500\text{ mg}$ bid + Metronidazole $500\text{ mg}$ bid for 14 days.
+
+---
+
+## 4. Gastroesophageal Reflux Disease (GERD)
+
+### A. Clinical Spectrum & Complications:
+- Incompetence of the Lower Esophageal Sphincter (LES) and crural diaphragm (hiatal hernia).
+- **Esophageal Syndromes**: Typical reflux syndrome (pyrosis / heartburn, acid regurgitation), reflux chest pain (mimicking angina).
+- **Extraesophageal Syndromes**: Chronic reflux cough, asthma exacerbation, laryngopharyngeal reflux (LPR - globus sensation, hoarseness, throat clearing), dental enamel erosion.
+- **Endoscopic Classification (Los Angeles Criteria)**:
+  - Grade A: $\ge 1$ mucosal break $\le 5\text{ mm}$, not extending between tops of two mucosal folds.
+  - Grade B: $\ge 1$ mucosal break $> 5\text{ mm}$, not extending between tops of two mucosal folds.
+  - Grade C: Continuous between tops of $\ge 2$ mucosal folds, involving $< 75\%$ of circumference.
+  - Grade D: Involving $\ge 75\%$ of the esophageal circumference.
+- **Barrett's Esophagus**: Specialized intestinal metaplasia (squamous $\rightarrow$ columnar epithelium with goblet cells) above the gastroesophageal junction. Premalignant precursor to esophageal adenocarcinoma.
+
+### B. Pharmacotherapy:
+- **Proton Pump Inhibitors (PPI)**: Esomeprazole $20–40\text{ mg}$, Rabeprazole $20\text{ mg}$, Pantoprazole $40\text{ mg}$ taken strictly $30–60\text{ minutes}$ before breakfast.
+- **Potassium-Competitive Acid Blockers (P-CAB)** (*Vonoprazan*): Rapid, reversible, non-covalent $K^+$-competitive inhibition of $H^+/K^+$-ATPase without requiring meal activation.
+- **Alginate Raft Formers (Gaviscon)**: Sodium alginate reacts with gastric acid to form a neutral mechanical floating gel raft physically preventing acid and bile pocket ascent.
+- **Prokinetics**: **Itopride** ($50\text{ mg}$ tid): Dopamine $D_2$ receptor antagonist and acetylcholinesterase inhibitor; stimulates gastric emptying and increases LES resting pressure without cardiac QT prolongation.
+
+---
+
+## 5. Irritable Bowel Syndrome (IBS) & SIBO
+
+### A. Rome IV Diagnostic Criteria for IBS:
+Recurrent abdominal pain on average $\ge 1\text{ day/week}$ in the last 3 months, associated with $\ge 2$ of the following:
+1. Related to defecation (relief or worsening).
+2. Associated with a change in stool frequency.
+3. Associated with a change in stool form (appearance, Bristol Stool Form Scale).
+- **Subtypes**:
+  - **IBS-D** (Diarrhea predominant): Bristol types 6–7 $> 25\%$, types 1–2 $< 25\%$.
+  - **IBS-C** (Constipation predominant): Bristol types 1–2 $> 25\%$, types 6–7 $< 25\%$.
+  - **IBS-M** (Mixed): Both types 1–2 and 6–7 $> 25\%$.
+
+### B. Small Intestinal Bacterial Overgrowth (SIBO):
+- Colonization of the jejunum and ileum by $> 10^3\text{–}10^5\text{ CFU/mL}$ of colonic bacteria.
+- Etiology: Impaired migrating motor complex (MMC), ileocecal valve incompetence, chronic PPI use, post-surgical anatomy.
+- **Diagnosis**: Hydrogen and Methane Lactulose Breath Test:
+  - Hydrogen ($H_2$) rise $\ge 20\text{ ppm}$ above baseline within 90 minutes (indicates small bowel fermenting bacteria; associated with IBS-D).
+  - Methane ($CH_4$) level $\ge 10\text{ ppm}$ at any point (indicates *Methanobrevibacter smithii* archaea; inhibits motility $\rightarrow$ associated with severe IBS-C).
+- **Therapy**:
+  - **Rifaximin** ($550\text{ mg}$ tid for 14 days): Non-absorbable, broad-spectrum eubiotic antibiotic.
+  - Neomycin or Metronidazole added if methane-positive.
+  - Prokinetic agents (e.g. low-dose prucalopride or ginger extract) post-treatment to maintain MMC motility during fasting.
+
+### C. Low-FODMAP Diet Protocol:
+- **Phase 1 (Strict Elimination, 2–6 weeks)**: Restrict Fermentable Oligosaccharides, Disaccharides, Monosaccharides, and Polyols (fructose excess, lactose, fructans, galactans, polyols/sorbitol).
+- **Phase 2 (Structured Reintroduction, 6–8 weeks)**: Stepwise challenge of individual FODMAP groups to identify specific molecular triggers.
+- **Phase 3 (Personalized Maintenance)**: Long-term liberalized diet avoiding only verified triggers to preserve colonic microbiome diversity.
+
+---
+
+
+<a name="geriatrics-gerontology-longevity"></a>
+# 📦 SKILL: geriatrics-gerontology-longevity
+*Domain:* **Clinical Medicine & Longevity**
+
+---
+name: geriatrics-gerontology-longevity
+description: >-
+  Clinical geriatrics, geroscience, hallmarks of aging, longevity biochemistry (mTOR, AMPK, NAD+, senolytics), frailty syndrome (Fried, CFS), sarcopenia (EWGSOP2), osteoporosis (DXA, FRAX, bisphosphonates, K2), cognitive screening (MoCA), and Beers polypharmacy criteria.
+---
+# Clinical Geriatrics, Geroscience & Longevity Medicine
+
+A master clinical, biological, and pharmacological manual for managing the aging process, evaluating geriatric syndromes (frailty, sarcopenia, osteoporosis, cognitive decline), implementing geroscience-guided longevity interventions, and preventing adverse polypharmacy.
+
+---
+
+## 1. The Biological Hallmarks of Aging (Geroscience Framework)
+
+### A. The 12 Canonical Hallmarks (López-Otín Consensus):
+1. **Genomic Instability**: Progressive somatic DNA mutations, chromosomal aneuploidies, microsatellite instability.
+2. **Telomere Attrition**: Critical shortening of hexameric tandem repeats ($TTAGGG$) triggering the DNA damage response (DDR) and permanent cell-cycle arrest.
+3. **Epigenetic Alterations**: Global DNA hypomethylation with focal hypermethylation of promoter CpG islands (basis of Horvath & Hannum "epigenetic clocks").
+4. **Loss of Proteostasis**: Failure of chaperone folding and ubiquitin-proteasome system (UPS) clearance $\rightarrow$ toxic protein aggregation.
+5. **Disabled Macroautophagy**: Defective lysosomal degradation of damaged organelles and aggregates.
+6. **Deregulated Nutrient Sensing**:
+   - Hyperactive **IIS (Insulin / IGF-1)** and **mTOR (mechanistic Target of Rapamycin)** signaling inhibit autophagy and accelerate senescence.
+   - Blunted **AMPK** and **Sirtuin (SIRT1–7)** activity impairs mitochondrial biogenesis and stress resistance.
+7. **Mitochondrial Dysfunction**: Accumulation of mtDNA mutations, respiratory chain uncoupling, elevated electron leak generating reactive oxygen species (ROS), impaired mitophagy.
+8. **Cellular Senescence**:
+   - Permanent cell-cycle exit mediated by $p53/p21^{CIP1}$ and $p16^{INK4a}/Rb$ pathways.
+   - **Senescence-Associated Secretory Phenotype (SASP)**: Hyper-secretion of pro-inflammatory cytokines ($IL-6, IL-1\beta, TNF-\alpha$), chemokines ($CXCL8, CCL2$), and matrix metalloproteinases ($MMP-1, MMP-3$), degrading extracellular matrix and spreading senescence to healthy bystander cells paracrinely.
+9. **Stem Cell Exhaustion**: Depletion of hematopoietic, neural, satellite, and mesenchymal stem cells.
+10. **Altered Intercellular Communication**: Low-grade, chronic, sterile, systemic inflammation (**"Inflammaging"**).
+11. **Chronic Dysbiosis**: Loss of intestinal microbial diversity, decline in short-chain fatty acid (SCFA: butyrate) producers, increased mucosal permeability.
+12. **Structural Splicing & Extracellular Matrix Stiffening**: Advanced Glycation End-products (AGEs) cross-linking collagen, arterial stiffening.
+
+---
+
+## 2. Evidence-Based Longevity Biochemistry & Pathways
+
+### A. The Longevity Triad (mTOR, AMPK, Sirtuins):
+- **mTOR Downregulation**:
+  - mTOR Complex 1 (mTORC1) coordinates cell growth and translation. Pharmacological or nutritional down-regulation enhances macroautophagy and extends lifespan across model organisms.
+  - Nutritional modulators: Periodic fasting, protein restriction/pulsing, natural polyamines (**Spermidine** $1–5\text{ mg/day}$ triggering ATG5-dependent autophagy).
+- **AMPK Upregulation**:
+  - The cell's master energy sensor ($AMP/ATP$ and $ADP/ATP$ ratio detector). Activates PGC-1$\alpha$ (mitochondrial biogenesis), upregulates GLUT4, and turns on fatty acid oxidation.
+  - Modulators: Vigorous physical exercise, **Berberine**, Metformin.
+- **Sirtuin Activation & NAD+ Dynamics**:
+  - $NAD^+$-dependent deacetylases (SIRT1 nuclear, SIRT3 mitochondrial) regulating DNA repair and antioxidant defense.
+  - $NAD^+$ levels decline by $> 50\%$ between ages 20 and 60, driven by the ectoenzyme **CD38** consuming $NAD^+$.
+  - Interventions: $NAD^+$ salvage precursors (**NMN - Nicotinamide Mononucleotide** $500–1000\text{ mg/day}$ or **NR - Nicotinamide Riboside**), CD38 inhibitors (Apigenin, Quercetin).
+- **Senolytics**:
+  - Targeted compounds inducing apoptosis specifically in senescent cells: **Quercetin + Dasatinib**, **Fisetin** ($20\text{ mg/kg}$ hit-and-run dosing protocol), clearing SASP burden.
+
+---
+
+## 3. Clinical Geriatric Syndromes
+
+### A. Frailty Syndrome (Старческая астения):
+A state of increased vulnerability to low-grade stressors resulting from cumulative multi-system physiological decline.
+- **Fried Frailty Phenotype (Physical Frailty)** - Diagnosed by $\ge 3$ criteria (1–2 = Pre-frail; 0 = Robust):
+  1. *Unintentional weight loss*: $> 4.5\text{ kg}$ or $> 5\%$ of body weight in prior year.
+  2. *Self-reported exhaustion*: Significant effort required for routine tasks $\ge 3\text{ days/week}$.
+  3. *Muscle weakness*: Low handgrip strength measured by dynamometer (adjusted for sex/BMI; men $< 27\text{ kg}$, women $< 16\text{ kg}$).
+  4. *Slow walking speed*: Usual pace gait speed $< 0.8\text{ m/s}$ over $4\text{ meters}$.
+  5. *Low physical activity level*: Sedentary lifestyle.
+- **Rockwood Clinical Frailty Scale (CFS 1–9)**: From 1 (Very Fit) to 7 (Severely Frail - completely dependent) and 9 (Terminally Ill).
+
+### B. Sarcopenia (EWGSOP2 Diagnostic Consensus):
+Progressive and generalized skeletal muscle disorder involving accelerated loss of muscle mass, quality, and physical function.
+1. **Case Finding**: **SARC-F Questionnaire** (Score $\ge 4$ predicts sarcopenia).
+2. **Assessment of Muscle Strength (Probable Sarcopenia)**:
+   - Handgrip dynamometry: $< 27\text{ kg}$ (men), $< 16\text{ kg}$ (women).
+   - Chair Stand Test (5-times sit-to-stand): $> 15\text{ seconds}$ indicates poor functional strength.
+3. **Confirmation of Low Muscle Quantity / Quality (Confirmed Sarcopenia)**:
+   - Appendicular Skeletal Muscle Mass (ASMM) by DXA ($< 20\text{ kg}$ in men, $< 15\text{ kg}$ in women) or ASMM/height$^2$ ($< 7.0\text{ kg/m}^2$ men, $< 5.5\text{ kg/m}^2$ women).
+4. **Severity Assessment**: Gait speed $\le 0.8\text{ m/s}$ indicates **Severe Sarcopenia**.
+- **Therapeutic Protocol**:
+  - **Overcoming Anabolic Resistance**: High dietary protein intake of **$1.2–1.5\text{ g/kg/day}$** distributed in boluses of $\ge 30–35\text{ g}$ protein containing $\ge 2.5–3.0\text{ g}$ of **Leucine** per meal.
+  - **Progressive Resistance Training (PRT)**: 2–3 sessions/week focusing on major compound movements.
+  - **Creatine Monohydrate**: $3–5\text{ g/day}$ to boost phosphocreatine resynthesis and muscle protein synthesis.
+  - **Vitamin D3 Optimization**: Target $25(OH)D$ serum levels of **$75–125\text{ nmol/L}$ ($30–50\text{ ng/mL}$)**; suppresses myostatin and enhances type II muscle fiber contractility.
+
+---
+
+## 4. Osteoporosis & Bone Integrity
+
+### A. Diagnostic Staging by Bone Mineral Density (DXA Scan):
+Dual-Energy X-Ray Absorptiometry measuring the lumbar spine ($L_1–L_4$), femoral neck, and total hip:
+- **T-Score** (Standard deviations compared to young healthy adult peak bone mass):
+  - **Normal**: T-score $\ge -1.0\text{ SD}$.
+  - **Osteopenia**: $-2.5 < \text{T-score} < -1.0\text{ SD}$.
+  - **Osteoporosis**: $\text{T-score} \le -2.5\text{ SD}$.
+  - **Severe (Established) Osteoporosis**: $\text{T-score} \le -2.5\text{ SD}$ accompanied by $\ge 1$ low-trauma fragility fracture.
+- **FRAX Score**: Computes 10-year probability of a Major Osteoporotic Fracture (MOF) and Hip Fracture. Intervention threshold: MOF $\ge 20\%$ or Hip fracture $\ge 3\%$.
+
+### B. Pharmacotherapy of Osteoporosis:
+1. **Anti-Resorptive Agents (Inhibit Osteoclasts)**:
+   - **Oral Bisphosphonates**: **Alendronate** $70\text{ mg}$ once weekly or **Risedronate** $35\text{ mg}$ once weekly.
+     - *Strict Administration Rules*: Must be taken immediately upon waking with a full glass of plain water ($200\text{ mL}$), strictly fasting, remaining upright (standing/sitting) for $\ge 30–60\text{ minutes}$ to avoid severe ulcerative esophagitis.
+   - **Intravenous Bisphosphonate**: **Zoledronic Acid** ($5\text{ mg}$ IV infusion once yearly).
+   - **RANKL Inhibitor**: **Denosumab** ($60\text{ mg}$ SC every 6 months).
+     - *Critical Warning*: Must NEVER be stopped abruptly without transitioning to a bisphosphonate; cessation causes a massive rebound spike in bone resorption and catastrophic multiple vertebral fractures!
+2. **Anabolic Bone-Forming Agents (Stimulate Osteoblasts)**:
+   - **Teriparatide** (recombinant PTH 1-34, $20\text{ }\mu\text{g}$ SC daily for max 24 months) or **Romosozumab** (Sclerostin inhibitor).
+3. **Essential Nutrient Foundation**:
+   - Elemental Calcium: $1000–1200\text{ mg/day}$ (dietary intake prioritized).
+   - Vitamin D3: $2000–4000\text{ IU/day}$ to ensure intestinal calcium transport.
+   - **Vitamin K2 (Menaquinone-7 / MK-7)**: $100–200\text{ }\mu\text{g/day}$. Activates **Osteocalcin** (binding calcium into bone hydroxyapatite crystal matrix) and **Matrix Gla Protein (MGP)** (inhibiting pathological calcium precipitation in arterial walls).
+
+---
+
+## 5. Cognitive Health & Geriatric Pharmacotherapy Safety
+
+### A. Cognitive Screening Scales:
+- **Montreal Cognitive Assessment (MoCA)**:
+  - Total score 30 points; cutoff $< 26$ indicates cognitive impairment (sensitivity $> 90\%$ for detecting Mild Cognitive Impairment - MCI). Evaluates visuospatial, executive function, naming, memory, attention, language, abstraction, and orientation.
+- **Clock Drawing Test**: Rapid screening for executive function, parietal lobe spatial processing, and semantic memory.
+
+### B. Polypharmacy, Beers Criteria & STOPP/START:
+The American Geriatrics Society (AGS) Beers Criteria identifies medications with unfavorable risk-to-benefit ratios in older adults:
+- **Anticholinergic Burden**: Strictly avoid first-generation antihistamines (*diphenhydramine, hydroxyzine* in frail elderly), tertiary TCAs (*amitriptyline*), bladder antispasmodics (*oxybutynin*) due to high risk of acute delirium, urinary retention, and accelerated dementia.
+- **Sedative-Hypnotics**: Benzodiazepines and "Z-drugs" (*zolpidem, zopiclone*) significantly increase fall, hip fracture, and delirium rates with minimal sleep architecture benefit.
+- **Chronic NSAIDs**: Extreme caution; induce GI bleeding, acute kidney injury, fluid retention, and worsening hypertension.
+- **Long-term PPIs**: Deprescribe when no formal indication exists; prolonged use associated with hypomagnesemia, Vitamin B12 deficiency, bone fractures, and *C. difficile* colitis.
+
+---
+
+
 <a name="internal-medicine-hematology"></a>
 # 📦 SKILL: internal-medicine-hematology
 *Domain:* **Clinical Medicine**
@@ -3608,6 +4078,7 @@ A master clinical manual for interpreting hematological profiles, serum biochemi
 
 ---
 
+
 <a name="intl-contract-drafting-ip"></a>
 # 📦 SKILL: intl-contract-drafting-ip
 *Domain:* **International Law & IP**
@@ -3708,6 +4179,7 @@ When drafting international commercial agreements (IT outsourcing, wholesale, di
 
 ---
 
+
 <a name="landscape-interior-exterior-design"></a>
 # 📦 SKILL: landscape-interior-exterior-design
 *Domain:* **Architecture & Spatial Design**
@@ -3791,6 +4263,7 @@ A master design, architectural visualization, and spatial planning manual coveri
 - Camera calibration: Real-world focal lengths (24mm–35mm for interiors, 50mm–85mm for exteriors), two-point perspective with corrected vertical shifts.
 
 ---
+
 
 <a name="network-hardware-firewalls"></a>
 # 📦 SKILL: network-hardware-firewalls
@@ -4109,6 +4582,7 @@ New-NetFirewallRule -DisplayName "MGMT-Inbound-WinRM-Hardened" -Direction Inboun
 
 ---
 
+
 <a name="neurology-neurosurgery-triage"></a>
 # 📦 SKILL: neurology-neurosurgery-triage
 *Domain:* **Clinical Medicine & Neurosurgery**
@@ -4262,6 +4736,7 @@ When evaluating any headache, systematically check the **SNOOP4** criteria. A po
 
 ---
 
+
 <a name="ophthalmology-vision-care"></a>
 # 📦 SKILL: ophthalmology-vision-care
 *Domain:* **Clinical Medicine & Ophthalmology**
@@ -4379,6 +4854,70 @@ A master clinical manual for diagnosing ocular pathology, performing advanced vi
   - Punctal plugs (silicone or collagen) occluding lacrimal puncta to retain natural tears.
 
 ---
+
+## 6. Neuro-Ophthalmology, Optic Nerve Lesions & Peripheral Visual Field Loss
+
+### A. Anatomy of the Optic Pathway & Ganglion Cell Complex:
+- The **Optic Nerve (Cranial Nerve II)** consists of approximately $1.2\text{ million}$ myelinated axons originating from the **Retinal Ganglion Cells (RGCs)** of the innermost retina.
+- Axons converge at the **Optic Disc (Papilla)**, traverse the sieve-like collagenous **Lamina Cribrosa**, enter the orbit, pass through the optic canal, and form the **Optic Chiasm** (where nasal retinal fibers decussate, carrying temporal visual hemifield information).
+
+### B. Etiological Spectrum of Optic Neuropathies:
+1. **Glaucomatous Optic Neuropathy (GON)**:
+   - Progressive pressure- and ischemia-mediated apoptosis of RGC axons at the level of the lamina cribrosa.
+   - Distinctive structural signs: Increased Cup-to-Disc (C/D) ratio, neuroretinal rim thinning (violating the ISNT rule), bayoneting of vessels, disc hemorrhages (Drance hemorrhages - sign of active disease progression).
+2. **Ischemic Optic Neuropathies (AION)**:
+   - **Non-Arteritic Anterior Ischemic Optic Neuropathy (NAION)**:
+     - Microvascular infarction of the short posterior ciliary arteries nourishing the prelaminar and laminar optic nerve head.
+     - Predisposing anatomy: "Disc at risk" (crowded optic disc with small or absent physiological cup, C/D ratio $< 0.2$).
+     - Presentation: Sudden, painless, unilateral visual loss typically noticed upon waking from sleep (due to physiological nocturnal dip in systemic blood pressure).
+     - Visual field defect: Characteristically **Altitudinal hemifield defect** (loss of either entire lower or upper half of vision, respecting the horizontal meridian).
+   - **Arteritic Anterior Ischemic Optic Neuropathy (A-AION)**:
+     - Secondary to **Giant Cell Arteritis (GCA / Temporal Arteritis)**.
+     - Fundoscopy: Severe pale, chalky-white optic disc edema.
+     - Extreme ophthalmic emergency: Risk of bilateral irreversible blindness within days without massive IV pulse corticosteroids!
+3. **Toxic, Metabolic & Nutritional Optic Neuropathies**:
+   - Severe Vitamin B12 and folate deficiencies; chronic alcoholism and tobacco use ("tobacco-alcohol amblyopia"); toxic exposures (methanol, ethambutol).
+   - Characterized by bilateral, symmetric progressive central or **cecocentral scotomas** (connecting fixation point with the blind spot) and dyschromatopsia (loss of red-green color perception).
+
+### C. Computerized Static Perimetry (Visual Field Analysis):
+Gold standard diagnostic instrument: **Humphrey Field Analyzer (HFA)** or **Octopus** using standard Swedish Interactive Threshold Algorithm (SITA-Standard or SITA-Faster) 24-2 or 30-2 test grids:
+- **Topography of Visual Field Loss**:
+  - **Paracentral Scotoma**: Early isolated islands of visual loss within the central $10–20^\circ$.
+  - **Arcuate (Bjerrum) Scotoma**: Follows the curved anatomical arc of retinal nerve fibers running from the blind spot, arching around the central fovea, and ending abruptly at the horizontal raphe.
+  - **Nasal Step (Roenne's Step)**: Difference in sensitivity between upper and lower halves of the nasal visual field, sharply demarcated by the horizontal meridian.
+  - **Concentric Peripheral Constriction ("Tunnel Vision")**: Advanced end-stage loss of all peripheral vision with a small residual island of central foveal vision.
+- **Perimetric Global Indices**:
+  - **Mean Deviation (MD, in dB)**: Overall departure of visual sensitivity from age-matched normal values:
+    - *Early field loss*: $\text{MD } 0\text{ to } -6\text{ dB}$.
+    - *Moderate field loss*: $\text{MD } -6\text{ to } -12\text{ dB}$.
+    - *Advanced / Severe field loss*: $\text{MD } < -12\text{ dB}$.
+  - **Pattern Standard Deviation (PSD, in dB)**: Measures non-uniformity and focal depressions in the visual field contour (spikes in early localized damage; decreases in end-stage diffuse loss).
+  - **Visual Field Index (VFI, %)**: Summary percentage metric of functional visual field (normal $100\%$).
+- **Reliability Criteria (Must verify before clinical interpretation)**:
+  - *Fixation Losses*: Must be $< 20\%$.
+  - *False Positive Errors*: Must be $< 15\%$ (high values suggest "trigger-happy" patient, falsely normalizes depressed fields).
+  - *False Negative Errors*: Must be $< 15\%$ (indicates inattention or severely depressed field).
+
+### D. Optical Coherence Tomography (OCT) of the Optic Nerve & Macula:
+- **Peripapillary RNFL (Retinal Nerve Fiber Layer) Thickness**:
+  - High-resolution cross-sectional scan measuring axonal thickness in $\mu\text{m}$ in 4 quadrants (Superior, Inferior, Nasal, Temporal) and 12 clock-hour sectors.
+  - Normal average RNFL: $\approx 95–115\text{ }\mu\text{m}$.
+  - Thinning into borderline yellow ($< 5\%$ percentile) or pathological red ($< 1\%$ percentile, $< 75–80\text{ }\mu\text{m}$) indicates irreversible axonal degeneration.
+- **Macular Ganglion Cell Complex (GCC / GCIPL)**:
+  - Measures the combined thickness of the ganglion cell layer and inner plexiform layer in the macula (where $> 50\%$ of all retinal ganglion cell bodies reside).
+  - **Pre-perimetric Detection**: Detects structural neuronal cell body loss **years before** functional visual field defects become detectable on standard Humphrey perimetry!
+
+### E. Neuroprotection & Axonal Metabolic Support Protocols:
+- **Citicoline (CDP-Choline)** ($500–1000\text{ mg/day}$ orally, or 0.2% ophthalmic drops):
+  - Precursor of phosphatidylcholine in neuronal membranes; rescues damaged mitochondrial membranes, increases retinal dopamine, slows visual field deterioration in open-angle and normal-tension glaucoma.
+- **Coenzyme Q10 + Vitamin E (Ophthalmic / Systemic)**:
+  - Unmyelinated prelaminar axons consume massive amounts of ATP generated by local mitochondria. CoQ10 ($100–300\text{ mg/day}$ Ubiquinol) prevents mitochondrial permeability transition pore (mPTP) opening and protects RGCs against oxidative glutamate excitotoxicity.
+- **Retrobulbar Hemodynamics & Microcirculation**:
+  - Standardized Ginkgo Biloba Extract (EGb 761, $120–240\text{ mg/day}$): Improves end-diastolic velocity in the ophthalmic artery and short posterior ciliary arteries, stabilizing visual field progression in normal-tension glaucoma.
+  - Strict avoidance of nocturnal systemic hypotension (avoid taking nighttime anti-hypertensive drugs that drop nocturnal DBP $< 60–65\text{ mmHg}$, which compromises ocular perfusion pressure: $\text{OPP} = \text{Diastolic BP} - \text{IOP}$).
+
+---
+
 
 <a name="orthopedics-knee-rehab"></a>
 # 📦 SKILL: orthopedics-knee-rehab
@@ -4511,6 +5050,137 @@ Perform systematically with the patient relaxed in supine position:
   - Plyometrics, agility drills, running progression, sport-specific functional testing.
 
 ---
+
+
+<a name="otorhinolaryngology-ent-medicine"></a>
+# 📦 SKILL: otorhinolaryngology-ent-medicine
+*Domain:* **Clinical Medicine & Otorhinolaryngology**
+
+---
+name: otorhinolaryngology-ent-medicine
+description: >-
+  Clinical otorhinolaryngology (ENT): rhinology (rhinosinusitis EPOS 2020, post-nasal drip UACS, vasomotor rhinitis), otology (otitis, Eustachian tube dysfunction, sudden hearing loss SSNHL, tinnitus), neurotology (BPPV Epley maneuver, Meniere's, vestibular neuritis, HINTS protocol), and pharyngolaryngology.
+---
+# Clinical Otorhinolaryngology (ENT), Neurotology & Auditory Health
+
+A comprehensive diagnostic, therapeutic, and neurotological reference covering rhinological conditions, middle and inner ear pathology, acute hearing loss, peripheral vestibular syndromes, dizziness differential diagnosis, and pharyngolaryngeal diseases.
+
+---
+
+## 1. Rhinology & Sinonasal Pathologies
+
+### A. Rhinosinusitis (EPOS 2020 Guidelines):
+- **Clinical Definition**: Inflammation of the nose and paranasal sinuses characterized by $\ge 2$ symptoms, one of which must be:
+  1. Nasal blockage / obstruction / congestion, OR
+  2. Nasal discharge (anterior or posterior drip);
+  - $\pm$ Facial pain / pressure;
+  - $\pm$ Reduction or loss of smell (hyposmia / anosmia).
+- **Classification by Chronology**:
+  - **Acute Rhinosinusitis (ARS)**: $< 12\text{ weeks}$ with complete resolution.
+    - *Viral ARS (Common Cold)*: Duration $< 10\text{ days}$ without worsening.
+    - *Post-Viral ARS*: Symptoms increase after 5 days, or persist $> 10\text{ days}$ with $< 12\text{ weeks}$ duration.
+    - *Acute Bacterial Rhinosinusitis (ABRS)* ($\approx 2–5\%$ of cases): Diagnosed by $\ge 3$ features:
+      - Double sickening (worsening after initial milder phase);
+      - Purulent nasal discharge;
+      - Severe local unilateral facial pain;
+      - Fever $> 38^\circ\text{C}$;
+      - Elevated ESR/CRP.
+  - **Chronic Rhinosinusitis (CRS)**: $\ge 12\text{ weeks}$ duration without complete resolution (CRS with nasal polyps - CRSwNP, vs CRS without nasal polyps - CRSsNP).
+
+### B. Rhinitis Phenotypes:
+- **Allergic Rhinitis**: IgE-mediated response to aeroallergens; watery rhinorrhea, sneezing paroxysms, itchy nose/eyes, pale boggy turbinates.
+- **Vasomotor (Non-Allergic) Rhinitis**: Autonomic dysregulation with hyper-reactivity of nasal parasympathetic fibers triggered by temperature changes, cold air, spicy food, dry air, or strong odors.
+- **Rhinitis Medicamentosa**: Rebound chemical mucosal hyperemia and severe chronic congestion caused by prolonged ($> 5–7\text{ days}$) use of topical alpha-adrenergic decongestants (xylometazoline, oxymetazoline) causing down-regulation of alpha receptors.
+  - Treatment: Immediate cessation of decongestants, initiation of high-dose intranasal corticosteroids (mometasone or fluticasone furoate), oral corticosteroid taper in severe cases, saline irrigations.
+- **Upper Airway Cough Syndrome (UACS / Post-Nasal Drip)**:
+  - Chronic sensation of mucous accumulation or trickling down the posterior pharyngeal wall, chronic dry throat clearing or cough, "cobblestone" appearance of posterior pharyngeal mucosa.
+
+---
+
+## 2. Otology & Audiological Disorders
+
+### A. External & Middle Ear Diseases:
+- **Acute Otitis Externa (AOE / "Swimmer's Ear")**: Diffuse inflammation of the external auditory canal (*Pseudomonas aeruginosa*, *Staphylococcus aureus*). Severe tragal tenderness, ear canal erythema and edema. Treatment: topical fluoroquinolone + dexamethasone ear drops (ciprofloxacin/dexamethasone); avoid systemic antibiotics unless cellulitis spreads beyond ear canal.
+- **Acute Otitis Media (AOM)**: Purulent middle ear effusion behind an erythematous, bulging, opaque tympanic membrane with decreased mobility. First-line antibiotic if indicated: high-dose Amoxicillin ($80–90\text{ mg/kg/day}$ or $1000\text{ mg}$ tid in adults).
+- **Eustachian Tube Dysfunction (ETD)**:
+  - Failure of the auditory tube to open during swallowing/yawning, resulting in negative middle ear pressure.
+  - Symptoms: Ear fullness/plugged sensation, autophony, popping, muffled hearing.
+  - **Tympanometry**:
+    - *Type A*: Normal middle ear pressure ($-100\text{ to }+50\text{ daPa}$) and normal compliance ($0.3–1.5\text{ mL}$).
+    - *Type B*: Flat tracing with no compliance peak (fluid/middle ear effusion or TM perforation if ear canal volume $> 2.0\text{ mL}$).
+    - *Type C*: Significant negative middle ear pressure ($< -100\text{ daPa}$), indicating retracted TM and ETD.
+
+### B. Sensorineural Hearing Loss & Tinnitus:
+- **Sudden Sensorineural Hearing Loss (SSNHL) - Medical Otologic Emergency**:
+  - Acute onset of $\ge 30\text{ dB}$ sensorineural loss over $\ge 3$ contiguous frequencies occurring within 72 hours.
+  - Tuning fork tests: Weber lateralizes to the **normal** ear; Rinne positive bilaterally ($AC > BC$).
+  - **Therapeutic Window**: High-dose systemic corticosteroids (Prednisone $1\text{ mg/kg/day}$, max $60\text{ mg}$ for 7–14 days with taper) must be initiated **immediately**; intratympanic dexamethasone salvage if incomplete recovery.
+- **Tinnitus (Acoustic Phantom Perception)**:
+  - Subjective tinnitus: Perception of sound without external acoustic stimulus.
+  - Differential: Cochlear damage (noise exposure, presbycusis), microvascular ischemia, temporomandibular joint (TMJ) dysfunction, cervical myofascial trigger points, vestibular schwannoma (acoustic neuroma - unilateral tinnitus mandates MRI of cerebellopontine angle).
+
+---
+
+## 3. Neurotology, Vertigo & Peripheral Vestibular Syndromes
+
+### A. Differentiating Peripheral vs. Central Vertigo (HINTS Examination):
+In acute continuous vertigo and nystagmus (Acute Vestibular Syndrome - AVS), the **HINTS** protocol is superior to early MRI for identifying cerebellar/brainstem stroke:
+1. **Head Impulse Test (HIT)**:
+   - *Peripheral*: Abnormal (pathological corrective saccade observed as eyes slip off examiner's nose).
+   - *Central (Stroke)*: Normal (eyes stay locked on target - dangerous sign in acute vertigo!).
+2. **Nystagmus**:
+   - *Peripheral*: Unidirectional, horizontal with torsional component; fast phase beats away from the affected ear; does not change direction with gaze; suppressed by visual fixation.
+   - *Central*: Direction-changing on eccentric gaze (bidirectional), pure vertical (upbeat/downbeat), or pure torsional.
+3. **Test of Skew (Cover-Uncover)**:
+   - *Peripheral*: No vertical realignment.
+   - *Central*: Vertical ocular misalignment (skew deviation; eye shifts up/down upon un-covering).
+
+### B. Benign Paroxysmal Positional Vertigo (BPPV):
+- **Pathophysiology**: Dislodged otoconia (calcium carbonate crystals) from the utricle migrate into a semicircular canal (most commonly the **posterior canal**, $85–90\%$).
+- **Clinical Presentation**: Brief ($< 60\text{ seconds}$), intense spinning vertigo provoked exclusively by head position changes (turning in bed, looking up, bending down). No hearing loss or tinnitus.
+- **Diagnostic Gold Standard**: **Dix-Hallpike Maneuver**:
+  - Patient seated, head turned $45^\circ$ toward test ear, rapidly reclined to supine position with head extended $20–30^\circ$ below horizontal.
+  - Positive: Latency of $2–10\text{ seconds}$, followed by crescendo-decrescendo torsional upbeat nystagmus, lasting $< 60\text{ seconds}$, accompanied by subjective vertigo and fatigue upon repetition.
+- **Definitive Treatment**: **Epley Canalith Repositioning Maneuver**:
+  - Step 1: Dix-Hallpike position held for 30–60 seconds.
+  - Step 2: Head rotated $90^\circ$ toward unaffected side, held 30–60 seconds.
+  - Step 3: Body and head rotated further $90^\circ$ in the same direction (patient facing floor), held 30–60 seconds.
+  - Step 4: Patient brought upright to seated position. Resolution rate $> 85–90\%$ on first or second maneuver!
+
+### C. Meniere's Disease (Endolymphatic Hydrops):
+- **Diagnostic Diagnostic Tetrad**:
+  1. $\ge 2$ spontaneous episodes of rotational vertigo lasting $20\text{ minutes to } 12\text{ hours}$.
+  2. Documented low-to-mid frequency sensorineural hearing loss in the affected ear on audiometry.
+  3. Fluctuating aural symptoms (tinnitus or aural fullness) in the affected ear.
+  4. Exclusion of other vestibular pathologies.
+- **Therapeutic Strategy**:
+  - Acute attack: Vestibular suppressants (meclizine, dimenhydrinate, diazepam) strictly limited to $< 48–72\text{ hours}$ to prevent central compensation arrest.
+  - Long-term maintenance: Strict low-salt diet ($< 1.5–2.0\text{ g sodium/day}$), avoidance of caffeine and alcohol, **Betahistine** ($24–48\text{ mg}$ bid - improves microvascular stria vascularis circulation), potassium-sparing diuretics (hydrochlorothiazide/triamterene).
+
+---
+
+## 4. Pharyngolaryngology & Upper Airway
+
+### A. Acute Pharyngotonsillitis & Centor / McIsaac Score:
+Stratifies probability of Group A Beta-Hemolytic Streptococcus (*Streptococcus pyogenes* - GABHS) to avoid unnecessary antibiotics:
+- Absence of cough (+1)
+- Swollen and tender anterior cervical lymph nodes (+1)
+- Temperature $> 38^\circ\text{C}$ (+1)
+- Tonsillar exudate or swelling (+1)
+- Age: $3–14$ (+1), $15–44$ (0), $\ge 45$ (-1)
+- **Score $\le 1$**: Low risk ($< 10\%$), symptomatic care only.
+- **Score $2–3$**: Rapid Antigen Detection Test (RADT) or throat culture; treat only if positive.
+- **Score $\ge 4$**: High risk ($\approx 50\%$), empiric Penicillin V ($500–1000\text{ mg}$ bid for 10 days) or Amoxicillin.
+
+### B. Peritonsillar Abscess (Quinsy) - Emergency:
+- Severe unilateral sore throat, high fever, **trismus** (inability to open mouth due to pterygoid muscle spasm), **"hot potato" muffled voice**, contralateral uvular deviation, fullness of the superior anterior pillar.
+- Management: Needle aspiration or incision and drainage (I&D), IV antibiotics, IV dexamethasone.
+
+### C. Laryngeal Red Flags:
+- Persistent hoarseness or dysphonia lasting **$> 3\text{ weeks}$** requires mandatory direct or indirect flexible fiberoptic laryngoscopy to rule out vocal fold malignancy (squamous cell carcinoma), vocal cord nodules, polyps, or laryngeal amyloidosis.
+
+---
+
 
 <a name="proctology-colorectal-surgery"></a>
 # 📦 SKILL: proctology-colorectal-surgery
@@ -4670,6 +5340,239 @@ Prior to performing elective proctological surgery in adult patients, thorough e
 
 ---
 
+
+<a name="psychosomatics-autonomic-dysfunction"></a>
+# 📦 SKILL: psychosomatics-autonomic-dysfunction
+*Domain:* **Clinical Medicine & Psychosomatics**
+
+---
+name: psychosomatics-autonomic-dysfunction
+description: >-
+  Clinical psychosomatics, autonomic nervous system (ANS) dysregulation, vegeto-vascular dystonia (VVD/somatoform autonomic dysfunction), panic attacks, hyperventilation syndrome, POTS, brain-body axis, HRV biofeedback, CBT, and targeted neuropharmacology.
+---
+# Clinical Psychosomatics, Autonomic Dysregulation & Panic Disorders
+
+A master clinical, neurobiological, and psychopharmacological manual for evaluating functional autonomic disorders, vegetative crises, panic attacks, somatization cascades, hyperventilation syndrome, and evidence-based mind-body therapeutic protocols.
+
+---
+
+## 1. Autonomic Nervous System (ANS) Architecture & Homeostasis
+
+### A. Sympathetic vs. Parasympathetic Balance:
+- **Sympathetic Nervous System (SNS)**:
+  - Thoracolumbar outflow ($T_1–L_2$); preganglionic acetylcholine $\rightarrow$ postganglionic **norepinephrine** acting on $\alpha_1, \alpha_2, \beta_1, \beta_2$ receptors; direct adrenal medullary stimulation releases **epinephrine** ($80\%$) and norepinephrine ($20\%$).
+  - Effects: Pupillary dilation (mydriasis), tachycardia ($\beta_1$), bronchodilation ($\beta_2$), peripheral vasoconstriction ($\alpha_1$), splanchnic hypoperfusion, hepatic glycogenolysis.
+- **Parasympathetic Nervous System (PNS)**:
+  - Craniosacral outflow (Cranial nerves III, VII, IX, and **X - Vagus Nerve**; sacral $S_2–S_4$).
+  - Neurotransmitter: Acetylcholine acting on muscarinic ($M_2$ cardiac, $M_3$ visceral/glandular) receptors.
+  - Effects: Bradycardia (SA node inhibition), bronchoconstriction, increased gastric motility/acid secretion, sphincter relaxation.
+- **Heart Rate Variability (HRV)**:
+  - Objective physiological biomarker of autonomic flexibility and vagal tone:
+    - **SDNN** (Standard Deviation of NN intervals): Overall ANS autonomic variability; $< 50\text{ ms}$ indicates compromised resilience or elevated cardiovascular mortality risk.
+    - **RMSSD** (Root Mean Square of Successive Differences): Pure metric of parasympathetic (vagal) tone; optimal $> 40–60\text{ ms}$.
+    - **High Frequency (HF, 0.15–0.40 Hz)**: Driven exclusively by vagal activity and respiratory sinus arrhythmia (RSA).
+    - **LF/HF Ratio**: Surrogate indicator of sympathovagal balance.
+
+---
+
+## 2. Somatoform Autonomic Dysfunction ("Vegeto-Vascular Dystonia" - VVD)
+
+### A. Deconstruction of the Umbrella Diagnosis:
+In post-Soviet and historical European medicine, "Vegeto-vascular dystonia" (НЦД / ВСД / Neurocirculatory Dystonia) was heavily overused as a catch-all diagnosis. Modern clinical medicine classifies these functional phenomena under **ICD-10 F45.3 (Somatoform Autonomic Dysfunction)**, **ICD-11 6C20 (Bodily Distress Disorder)**, or specific dysautonomic conditions:
+1. **Hyperadrenergic Orthostatic Intolerance / POTS (Postural Orthostatic Tachycardia Syndrome)**:
+   - Sustained heart rate increase $\ge 30\text{ bpm}$ within 10 minutes of standing from recumbent (or $\ge 120\text{ bpm}$) **without** a drop in blood pressure (which would signify classic orthostatic hypotension).
+2. **Subclinical Vasovagal / Neurocardiogenic Syncope**: Exaggerated vagal response triggered by prolonged standing, heat, blood-injury phobia, or emotional strain.
+3. **Somatized Generalized Anxiety Disorder (GAD)**: Chronic sub-panic visceral hyper-arousal.
+
+### B. Organ-Specific Psychosomatic Manifestations:
+- **Cardiovascular**: Sinus tachycardia, sensation of heart "fluttering" or skipped beats (benign premature ventricular contractions - PVCs), labile blood pressure with systolic spikes on minor stress.
+- **Respiratory**: Air hunger (*dyspnea sine materia*), frequent sighing, inability to take a "satisfying deep breath", globus pharyngeus (throat lump sensation).
+- **Gastrointestinal**: "Nervous stomach", rapid gastrocolic reflex, postprandial cramping, functional diarrhea or constipation, visceral hypersensitivity (amplification of normal intestinal motility sensations).
+- **Musculoskeletal**: Cervicocranial muscle spasm, tension-type headaches, nocturnal bruxism, chronic shoulder/trapezius bracing ("stress armor").
+
+---
+
+## 3. Panic Attacks & Hyperventilation Syndrome
+
+### A. Neurobiology of a Panic Attack (DSM-5 / ICD-11):
+- Discrete surge of intense fear or intense discomfort that reaches a peak within minutes, involving $\ge 4$ of:
+  - Palpitations, pounding heart, accelerated heart rate;
+  - Sweating;
+  - Trembling or shaking;
+  - Sensations of shortness of breath or smothering;
+  - Feelings of choking;
+  - Chest pain or discomfort;
+  - Nausea or abdominal distress;
+  - Feeling dizzy, unsteady, light-headed, or faint;
+  - Chills or heat sensations;
+  - Paresthesias (numbness or tingling sensations, especially perioral and extremities);
+  - Derealization (feelings of unreality) or depersonalization (being detached from oneself);
+  - Fear of losing control or "going crazy";
+  - Fear of dying.
+- **Central Mechanism**: Pathological hyperexcitability of the **Amygdala** and **Locus Coeruleus** (central noradrenergic hub), triggering a catastrophic false "suffocation alarm" and massive sympathetic outflow.
+
+### B. The Hyperventilation Cascade:
+A critical pathophysiological vicious cycle underlying severe panic attacks:
+$$\text{Panic / Anxiety} \longrightarrow \text{Tachypnea / Hyperventilation} \longrightarrow \text{Alveolar washout of } CO_2$$
+$$\Downarrow$$
+$$\text{Hypocapnia } (pCO_2 < 35\text{ mmHg}) \longrightarrow \text{Acute Respiratory Alkalosis } (pH > 7.45)$$
+$$\Downarrow$$
+$$\text{Binding of serum } Ca^{2+} \text{ to albumin} \longrightarrow \text{Acute Ionized Hypocalcemia}$$
+$$\Downarrow$$
+$$\textbf{Cerebral Arterial Vasoconstriction} \text{ (up to } 40\% \text{ reduction in cerebral blood flow)}$$
+$$\textbf{+ Neuromuscular Hyperexcitability} \text{ (peripheral paresthesias, perioral tingling, carpopedal spasms)}$$
+$$\Downarrow$$
+$$\textbf{Dizziness, Presyncope, Brain Fog} \longrightarrow \textbf{Escalation of Fear ("I'm having a stroke/dying!")}$$
+
+### C. Acute Crisis Interventions:
+1. **Interrupting Hypocapnia & Restoring $pCO_2$**:
+   - **Physiological Sigh**: Two quick successive nasal inhalations followed by a long, slow, passive mouth exhalation (activates the pulmonary Hering-Breuer reflex and vagal slowing).
+   - **Box Breathing (4-4-4-4)** or **4-7-8 Breathing**: Inhale 4s, hold 7s, exhale slowly 8s through pursed lips.
+   - Cupped hands breathing (rebreathing exhaled $CO_2$; paper bags discouraged in unmonitored environments due to hypoxia risk).
+2. **Cognitive & Somatosensory Grounding (5-4-3-2-1 Technique)**:
+   - Identify: 5 things you can see, 4 things you can physically feel, 3 things you can hear, 2 things you can smell, 1 thing you can taste. Forces cortical activation, decoupling amygdalar hijacking.
+3. **Vagal Stimulation**: Cold water facial immersion (Diving Reflex), slow drinking of ice-cold water.
+
+---
+
+## 4. Evidence-Based Pharmacotherapy
+
+### A. Long-Term Maintenance (Basal Anxiolysis):
+1. **Selective Serotonin Reuptake Inhibitors (SSRIs) - Gold Standard First-Line**:
+   - **Escitalopram**: Start at $5\text{ mg}$ daily for 7 days, titrate to $10–20\text{ mg}$ daily.
+   - **Sertraline**: Start at $25\text{ mg}$ daily for 7 days, titrate to $50–100\text{ mg}$ daily.
+   - *Clinical Rule*: In panic disorder, SSRIs can cause a transient paradoxical increase in anxiety during days $1–10$. Warn the patient and co-prescribe a short-term non-addictive bridging agent. Full therapeutic onset: $4–8\text{ weeks}$.
+2. **Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs)**:
+   - **Venlafaxine XR** ($75–225\text{ mg}$) or **Duloxetine** ($30–60\text{ mg}$, particularly effective when chronic somatic/musculoskeletal pain coexists).
+
+### B. Crisis Relief & Non-Habit-Forming Anxiolytics:
+- **Etifoxine (Stresam)** ($50\text{ mg}$ 2–3x/day):
+  - Dual action: Binds directly to the $\beta_2/\beta_3$ subunit of $GABA_A$ receptor and stimulates the mitochondrial Translocator Protein (TSPO), accelerating neurosteroid synthesis (allopregnanolone).
+  - Anxiolytic efficacy comparable to lorazepam **without** sedative, myorelaxant, memory-impairing, or dependence/addiction risks.
+- **Hydroxyzine (Atarax)** ($12.5–25\text{ mg}$ prn or at bedtime):
+  - First-generation antihistamine ($H_1$ receptor antagonist) with 5-$HT_{2A}$ antagonism; suppresses subcortical emotional centers rapidly.
+- **Alimemazine (Teraligen)** ($5–10\text{ mg}$):
+  - Mild neuroleptic/antihistaminic; stabilizes vegetative lability, insomnia, and visceral somatic symptoms.
+- **Propranolol** ($10–20\text{ mg}$ prn):
+  - Non-selective lipophilic $\beta$-blocker. Blocks peripheral $\beta_1$ (tachycardia) and $\beta_2$ (tremor, sweating) sympathetic manifestations. Breaks the somatic sensory feedback loop feeding panic.
+
+---
+
+## 5. Non-Pharmacological & Psychotherapeutic Standards
+
+- **Cognitive Behavioral Therapy (CBT - Level 1A Evidence)**:
+  - Psychoeducation: Demystifying physical sensations (re-framing palpitations as harmless autonomic surges, not heart attacks).
+  - Decatastrophizing internal dialogue.
+  - **Interoceptive Exposure**: Deliberate hyperventilation or spinning under controlled supervision to induce benign sensations and extinguish conditioned fear responses.
+- **HRV Biofeedback**:
+  - Resonant frequency breathing ($\approx 5.5–6.0\text{ breaths/minute}$, or 0.1 Hz) matching baroreflex resonance, maximizing vagal tone and HRV amplitude.
+
+---
+
+
+<a name="rheumatology-autoimmune-musculoskeletal"></a>
+# 📦 SKILL: rheumatology-autoimmune-musculoskeletal
+*Domain:* **Clinical Medicine & Rheumatology**
+
+---
+name: rheumatology-autoimmune-musculoskeletal
+description: >-
+  Clinical rheumatology, autoimmune connective tissue diseases, Polymyalgia Rheumatica (PMR) & Giant Cell Arteritis (GCA), Rheumatoid Arthritis, serology (ANA, ENA, anti-CCP, ANCA), Gout, Osteoarthritis, Fibromyalgia, and immunomodulatory pharmacotherapy.
+---
+# Clinical Rheumatology, Autoimmune Diseases & Musculoskeletal Disorders
+
+A master clinical, serological, and therapeutic reference covering systemic autoimmune connective tissue diseases, inflammatory arthritis, polymyalgia rheumatica, crystal arthropathies, degenerative joint diseases, and targeted immunomodulatory protocols.
+
+---
+
+## 1. Polymyalgia Rheumatica (PMR) & Giant Cell Arteritis (GCA)
+
+### A. Clinical Presentation of PMR:
+- **Epidemiology**: Exclusively occurs in individuals $\ge 50$ years (mean age $\approx 73$ years); female-to-male ratio $2:1–3:1$.
+- **Symptom Complex**:
+  - Acute or subacute onset ($< 2\text{ weeks}$) of severe bilateral pain and stiffness in the **shoulder girdle** ($> 95\%$) and **pelvic girdle** ($50–70\%$), and **neck**.
+  - Pronounced **morning stiffness lasting $> 45–60\text{ minutes}$**, often severely restricting routine activities (difficulty putting on a jacket, brushing hair, getting out of a chair or bed).
+  - Systemic manifestations: Low-grade fever, malaise, fatigue, anorexia, weight loss, depression.
+- **Physical Examination**: Muscle strength is objectively preserved (weakness is perceived/secondary to severe pain), active range of motion is markedly restricted, passive motion often tolerated; subdeltoid/subacromial bursitis and bicipital tenosynovitis on ultrasound.
+
+### B. Laboratory Hallmarks & Differential Diagnosis:
+- **Massively Elevated Inflammatory Biomarkers**:
+  - **Erythrocyte Sedimentation Rate (ESR)**: Typically $> 40–50\text{ mm/h}$, frequently $> 80–100\text{ mm/h}$ (Westergren).
+  - **C-Reactive Protein (CRP)**: Markedly elevated ($> 20–50\text{ mg/L}$).
+- **Normal Muscle Enzymes**:
+  - **Creatine Kinase (CK)** and Aldolase are strictly **NORMAL** (essential discriminator from polymyositis and dermatomyositis, where CK is markedly elevated).
+- Rheumatoid Factor (RF) and anti-CCP are typically negative (rules out late-onset RA).
+
+### C. The Giant Cell Arteritis (GCA / Horton's) Association - Critical Risk:
+Approximately $15–20\%$ of PMR patients develop GCA, a granulomatous vasculitis of medium and large arteries.
+- **Red Flag Symptoms for GCA**:
+  1. New-onset localized headache (usually temporal or occipital).
+  2. **Scalp tenderness** (pain upon hair brushing or resting head on pillow).
+  3. **Jaw claudication** (fatigue and cramping of masseter muscles while chewing - high diagnostic specificity!).
+  4. **Visual disturbances**: Transient vision loss (amaurosis fugax), diplopia, or sudden painless visual blurring due to **Arteritic Anterior Ischemic Optic Neuropathy (A-AION)**.
+  5. Thickened, tender, nodular, non-pulsatile temporal artery.
+- *Emergency Rule*: If GCA is suspected, initiate immediate high-dose corticosteroids (Methylprednisolone $500–1000\text{ mg}$ IV daily for 3 days or oral Prednisone $1\text{ mg/kg/day}$) without waiting for temporal artery biopsy or ultrasound to prevent **irreversible permanent blindness**!
+
+### D. PMR Therapeutic Management (EULAR/ACR Guidelines):
+- **Diagnostic Therapeutic Test**: Oral **Prednisone $12.5–25\text{ mg/day}$** (usually $15\text{ mg/day}$).
+  - *The "PMR Miracle"*: A dramatic, near-complete ($> 70–100\%$) resolution of pain and morning stiffness within **$48–72\text{ hours}$** strongly confirms the diagnosis.
+- **Tapering Protocol**:
+  - Maintain starting dose until symptoms resolve and ESR/CRP normalize (usually 3–4 weeks).
+  - Taper by $2.5\text{ mg}$ every 2–4 weeks down to $10\text{ mg/day}$.
+  - Then taper very slowly by $1.0\text{ mg}$ every 4–8 weeks down to zero, monitoring for relapse. Total duration typically **$12–24\text{ months}$**.
+  - Glucocorticoid protection: Concomitant Calcium ($1000\text{ mg}$), Vitamin D3 ($1000–2000\text{ IU}$), and bisphosphonates if osteopenia/osteoporosis is present.
+  - Steroid-sparing agent: Methotrexate ($10–15\text{ mg/week}$) or Tocilizumab (IL-6 receptor antagonist) for frequent relapses.
+
+---
+
+## 2. Systemic Autoimmune Diseases & Serological Profiling
+
+### A. Diagnostic Serological Matrix:
+| Serological Marker | Clinical Target / High Specificity | Clinical Utility & Interpretation |
+| :--- | :--- | :--- |
+| **ANA (Antinuclear Antibodies)** | Systemic Autoimmune Rheumatic Diseases | High sensitivity screening ($\ge 1:160$ on HEp-2 cells); non-specific alone. |
+| **Anti-dsDNA** | Systemic Lupus Erythematosus (SLE) | Specificity $> 95\%$; correlates with lupus nephritis activity. |
+| **Anti-Sm (Smith)** | SLE | Highly specific for SLE ($> 99\%$), does not fluctuate with disease. |
+| **Anti-Ro/SSA & Anti-La/SSB** | Sjögren's Syndrome & SLE | Sicca symptoms; congenital heart block risk in neonates. |
+| **Anti-CCP (ACPA)** | Rheumatoid Arthritis (RA) | Specificity $\approx 96–98\%$; predicts aggressive erosive joint disease. |
+| **Rheumatoid Factor (RF)** | RA, Cryoglobulinemia, Sjögren's | High sensitivity ($70–80\%$), moderate specificity; elevated in infections. |
+| **c-ANCA (Anti-PR3)** | Granulomatosis with Polyangiitis (GPA) | Necrotizing vasculitis of respiratory tract and kidneys. |
+| **p-ANCA (Anti-MPO)** | Microscopic Polyangiitis (MPA) / EGPA | Rapidly progressive glomerulonephritis, alveolar hemorrhage. |
+| **Serum Complement (C3, C4)** | SLE, Cryoglobulinemic Vasculitis | Consumption / low levels indicate active immune-complex deposition. |
+
+### B. Rheumatoid Arthritis (RA):
+- Symmetric, chronic erosive polyarthritis predominantly targeting small joints: Metacarpophalangeal (MCP), Proximal Interphalangeal (PIP), and Metatarsophalangeal (MTP) joints. Typically **spares the Distal Interphalangeal (DIP) joints**.
+- Management: Early initiation of Conventional Synthetic DMARDs (**Methotrexate** $15–25\text{ mg/week}$ orally or SC + Folic acid $5\text{ mg/week}$), progressing to Biologic DMARDs (Anti-TNF: adalimumab, etanercept; IL-6R: tocilizumab) or targeted synthetic JAK Inhibitors (tofacitinib, baricitinib) to achieve clinical remission (DAS28 $< 2.6$).
+
+---
+
+## 3. Musculoskeletal Pain Differential & Joint Disorders
+
+### A. Osteoarthritis (OA / Arthrosis):
+- Progressive mechanical degradation of articular cartilage, subchondral bone sclerosis, and osteophyte formation.
+- Typical features: Joint pain worsening with weight-bearing and exertion, relieved by rest; **brief morning stiffness ($< 30\text{ minutes}$)**; "gel phenomenon" (stiffness after resting); crepitus on passive motion.
+- Nodal manifestations: **Heberden's nodes** (DIP joints) and **Bouchard's nodes** (PIP joints).
+- Management: Low-impact exercise, weight reduction, topical NSAIDs (diclofenac gel - first line), paracetamol, oral selective COX-2 inhibitors (*celecoxib, etoricoxib*) for acute flares, intra-articular high molecular weight hyaluronic acid or PRP.
+
+### B. Gout & Hyperuricemia:
+- Precipitation of monosodium urate (MSU) needle-shaped negatively birefringent crystals in synovial fluid and soft tissues (tophi).
+- Serum Uric Acid Threshold: Supersaturation occurs at $> 408\text{ }\mu\text{mol/L}$ ($> 6.8\text{ mg/dL}$).
+- Acute Podagra (1st MTP joint): Sudden, excruciating, erythematous, swollen, warm monoarthritis.
+  - Acute Therapy: High-dose NSAIDs (*naproxen, indomethacin*) or **Colchicine** ($1.0\text{ mg}$ immediately, followed by $0.5\text{ mg}$ 1 hour later) or oral Prednisolone ($30–35\text{ mg/day}$ for 5 days).
+- Urate-Lowering Therapy (ULT):
+  - Indications: $\ge 2$ flares/year, presence of tophi, CKD stage $\ge 2$, or urolithiasis.
+  - **Allopurinol** (Xanthine oxidase inhibitor): Start low at $100\text{ mg/day}$ (titrate up to $300–800\text{ mg/day}$) with colchicine flare prophylaxis for first 3–6 months.
+  - Target: Serum urate **$< 360\text{ }\mu\text{mol/L}$ ($< 6.0\text{ mg/dL}$)**; $< 300\text{ }\mu\text{mol/L}$ ($< 5.0\text{ mg/dL}$) if tophaceous.
+
+### C. Fibromyalgia & Central Pain Sensitization:
+- Generalized widespread musculoskeletal pain in all 4 quadrants $> 3\text{ months}$ accompanied by fatigue, cognitive dysfunction ("fibro fog"), and non-restorative sleep.
+- Normal inflammatory markers (ESR/CRP normal, ANA negative, normal imaging).
+- Pathophysiology: Central nervous system hyperexcitability and failure of descending descending pain inhibitory pathways.
+- Management: Non-responsive to opioids or NSAIDs; treated with **Duloxetine** ($30–60\text{ mg}$), **Pregabalin** ($150–300\text{ mg}$), or low-dose Amitriptyline ($10–25\text{ mg}$ at bedtime), alongside low-intensity progressive aerobic conditioning.
+
+---
+
+
 <a name="ru-accounting-tax"></a>
 # 📦 SKILL: ru-accounting-tax
 *Domain:* **Russian Accounting & Tax**
@@ -4801,6 +5704,7 @@ Contributions cover Pension (OPS), Medical (OMS), and Social Disability/Maternit
 
 ---
 
+
 <a name="ru-civil-corporate-law"></a>
 # 📦 SKILL: ru-civil-corporate-law
 *Domain:* **Russian Business Law**
@@ -4920,6 +5824,7 @@ Before acquiring real estate or commercial facilities:
 3. **Land & Permitted Use (Permitted Land Use Category VRI)**: Ensuring the building conforms to statutory zoning and land category (Land Category).
 
 ---
+
 
 <a name="ru-litigation-advocacy"></a>
 # 📦 SKILL: ru-litigation-advocacy
@@ -5067,6 +5972,7 @@ Obtaining a court judgment is only the first stage; recovery of funds is governe
   - Challenging unlawful inaction of the bailiff via administrative complaints to higher bailiffs or through the court under Chapter 22 KAS RF.
 
 ---
+
 
 <a name="secure-software-engineering"></a>
 # 📦 SKILL: secure-software-engineering
@@ -5369,6 +6275,7 @@ func CompareSecrets(a, b []byte) bool {
 
 ---
 
+
 <a name="server-hardening-zerotrust"></a>
 # 📦 SKILL: server-hardening-zerotrust
 *Domain:* **Server Hardening**
@@ -5508,6 +6415,7 @@ For systems processing, transmitting, or storing cardholder or sensitive financi
 
 ---
 
+
 <a name="somnology-sleep-apnea-snoring"></a>
 # 📦 SKILL: somnology-sleep-apnea-snoring
 *Domain:* **Clinical Medicine & Somnology**
@@ -5625,6 +6533,7 @@ Anatomical levels of pharyngeal obstruction graded by degree ($0 = \text{none } 
    - *Prerequisites*: $\text{AHI } 15\text{–}65$, $\text{BMI } < 35\text{ kg/m}^2$, absence of complete concentric collapse on DISE.
 
 ---
+
 
 <a name="sysadmin-network-engineering"></a>
 # 📦 SKILL: sysadmin-network-engineering
@@ -5749,6 +6658,7 @@ Operational management of secure tunnels capable of bypassing deep packet inspec
 
 ---
 
+
 <a name="systematic-debugging"></a>
 # 📦 SKILL: systematic-debugging
 *Domain:* **Software Engineering**
@@ -5771,6 +6681,7 @@ When asked to debug a script or system issue, follow this strict protocol:
 5. **Verify**: Once a fix is applied, verify it solves the specific error without introducing new ones.
 
 ---
+
 
 <a name="ui-ux-gui-design-systems"></a>
 # 📦 SKILL: ui-ux-gui-design-systems
@@ -5852,6 +6763,7 @@ A master engineering and aesthetic manual for architecting high-performance, acc
 - Asynchronous UI binding (MVVM architecture), avoiding UI thread blocking on data retrieval.
 
 ---
+
 
 <a name="urology-nephrology-cholelithiasis"></a>
 # 📦 SKILL: urology-nephrology-cholelithiasis
@@ -5984,6 +6896,7 @@ A comprehensive surgical and clinical manual for the diagnosis, emergency triage
 
 ---
 
+
 <a name="video-editing-motion-production"></a>
 # 📦 SKILL: video-editing-motion-production
 *Domain:* **Video Editing & Motion Graphics**
@@ -6078,6 +6991,7 @@ ffmpeg -i input.mp4 -vf "subtitles=subtitles.srt:force_style='FontName=Montserra
 ```
 
 ---
+
 
 <a name="white-collar-crime-tax-liability"></a>
 # 📦 SKILL: white-collar-crime-tax-liability
@@ -6223,6 +7137,7 @@ A comprehensive legal and corporate defense manual covering financial crimes, ta
 
 ---
 
+
 <a name="writing-plans"></a>
 # 📦 SKILL: writing-plans
 *Domain:* **Software Engineering**
@@ -6243,3 +7158,4 @@ Before writing any complex Bash or PowerShell script, you MUST create a plan and
 5. **Wait for Approval**: Do not write the full code until the user approves the plan.
 
 ---
+
