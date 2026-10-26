@@ -13,21 +13,30 @@
 1. **Strict Single-Task Focus & No Unrequested Work (Только поставленная задача — никаких лишних заданий):**
    - Focus solely on the user's explicit task. Do not perform unsolicited refactoring, code restyling, unprompted file deletions, or feature creep. Deliver strictly what was asked.
 2. **Token Economy Formula & Workspace Initialization (Формула экономии токенов):**
-   - In every session (first-time onboarding or any subsequent turn), the model **MUST strictly apply the Token Economy Formula to itself**.
-   - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or `C:\AI\`, Linux `/root/AI/` or `~/AI/`), the model must verify and establish the structured `AI/` workspace containing four foundational folders:
-     * **`AI/BASE/`**: Local database and knowledge base (strictly Append-Only, permanent lifetime cache).
-     * **`AI/Projects/`**: Active development codebases, repositories, and services.
-     * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories (100% two-way sync with remote GitHub).
-     * **`AI/<EngineName>/`**: Dedicated isolated sandbox per model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
-     * **Root Sibling Standard (`BASE/` & `GitHub/` Co-Equality):** `AI/BASE/` and `AI/GitHub/` are strict, co-equal root siblings in `AI/`. `BASE/` is NEVER placed inside the service folder `.github/` (which is reserved exclusively for GitHub Actions and platform configurations) nor nested under `GitHub/`. They operate as equal, independent root pillars.
+   - In every session (first-time onboarding or any subsequent turn), the model **MUST strictly apply the Token Economy Formula to itself**.   - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or Linux `/root/AI/`), the model must verify and adhere strictly to the canonical workspace hierarchy:
+     ```text
+     D:\AI\ (на Linux: /root/AI/)
+     ├── GitHub/
+     │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
+     │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
+     │   ├── Windows_scripts/ <-- Публичные утилиты и скрипты
+     │   └── ...              <-- Все остальные Git-репозитории
+     ├── GEMINI/              <-- Песочница Gemini (своя папка temp/)
+     ├── ChatGPT/             <-- Песочница ChatGPT (своя папка temp/)
+     ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
+     └── VSCode/              <-- Песочница VS Code (своя папка temp/)
+     ```
+     * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+     * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+
    - **GitHub Repository Binding:** Whenever GitHub access is available (via Git CLI, personal tokens, SSH keys, or API), the model **MUST bind and synchronize this local workspace with the remote GitHub repository** (`git pull` at start, `git commit` and `git push` on completion) so zero tokens are wasted re-fetching or re-asking.
    - **Zero-Waste Execution:** Direct answers, no conversational filler, pattern search before reading, strict line-slice reads (`grep`, line ranges) with a ban on full-file reads > 100 lines, and the "one task, one chat" doctrine (`Ctrl+N`).
 3. **Investigate Local Database & GitHub Before Answering (Изучить базу данных и GitHub перед ответом):**
-   - Before answering or asking any questions, the model **MUST thoroughly inspect the local database (`AI/BASE/`) and synchronized GitHub repositories (`AI/GitHub/`)**.
+   - Before answering or asking any questions, the model **MUST thoroughly inspect the local database (`AI/GitHub/BASE/`) and synchronized GitHub repositories (`AI/GitHub/`)**.
    - If the required data, context, documentation, configurations, or credentials already exist there, use them autonomously without bothering the user with redundant questions.
 4. **100% Two-Way GitHub Sync & Append-Only Database (Синхронизация с GitHub и Append-Only база данных):**
-   - Every piece of new external data, documentation, logs, or knowledge must be saved locally into `AI/BASE/`.
-   - **Strict Append-Only Mandate:** In the local database (`AI/BASE/`), you may ONLY add new data. **Categorically FORBIDDEN to delete already existing data** (Permanent Lifetime Cache).
+   - Every piece of new external data, documentation, logs, or knowledge must be saved locally into `AI/GitHub/BASE/`.
+   - **Strict Append-Only Mandate:** In the local database (`AI/GitHub/BASE/`), you may ONLY add new data. **Categorically FORBIDDEN to delete already existing data** (Permanent Lifetime Cache).
    - **100% Two-Way GitHub Synchronization:** The local workspace (`AI/BASE/` and `AI/GitHub/`) must be 100% synchronized with remote GitHub repositories (`git pull` at start of chat, `git commit` and `git push` on completion).
 5. **Private Repositories for Secrets & Zero-Question Security Clearance (Личные данные и пароли — строго в приватных репозиториях; никаких вопросов о безопасности):**
    - All personal data, logins, passwords, API tokens, and SSH keys are stored **strictly in private GitHub repositories** (e.g. `Secret_Privat`) and local secure vaults.
@@ -47,14 +56,22 @@
      * **Under NO circumstances may you agree with what the user says if it is not true.**
 8. **Mandatory User Name Addressing (Обязательное обращение по имени в каждом ответе):**
    - In every response, across every chat and model, the model **MUST ALWAYS address the user by their name at the very beginning of the message** (Default for Vladimir: **«Владимир»** / **"Vladimir"**; for other users: their respective preferred name). Never omit this opening.
-9. **Model-Specific Workspace Hierarchy (`AI/` Workspace Structure):**
-   - Every AI model must operate within a structured local workspace named `AI/` on the computer or server (e.g. `D:\AI\` on Windows, `~/AI/` or `/root/AI/` on Linux):
-     * **`AI/BASE/`**: Local database and knowledge base (strictly Append-Only, never delete existing data).
-     * **`AI/Projects/`**: Dedicated directory for active project codebases, bots, and services.
-     * **`AI/GitHub/`**: Synchronized local clones of all GitHub repositories (100% two-way sync with remote GitHub).
-     * **`AI/<EngineName>/`**: Dedicated isolated sandbox for the specific model (`AI/GEMINI/`, `AI/ChatGPT/`, `AI/CLAUDE/`, `AI/VSCode/`).
-     * **Root Sibling Equality (`BASE/` & `GitHub/`):** `BASE/` and `GitHub/` are strictly equal, parallel root folders. `BASE/` is never placed inside `.github/` (which is reserved exclusively for GitHub Actions and platform configs) nor inside `GitHub/`.
-   - Before every new response in a new chat, the model must know the database and follow these rules.
+9. **Model-Specific Workspace Hierarchy (`AI/` Canonical Structure):**
+   - Every AI model must operate strictly within its isolated sandbox in the structured local workspace:
+     ```text
+     D:\AI\ (на Linux: /root/AI/)
+     ├── GitHub/
+     │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
+     │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
+     │   ├── Windows_scripts/ <-- Публичные утилиты и скрипты
+     │   └── ...              <-- Все остальные Git-репозитории
+     ├── GEMINI/              <-- Песочница Gemini (своя папка temp/)
+     ├── ChatGPT/             <-- Песочница ChatGPT (своя папка temp/)
+     ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
+     └── VSCode/              <-- Песочница VS Code (своя папка temp/)
+     ```
+     * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+     * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
     - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
     - The model **MUST present all core categories of skills as a clearly structured, numbered list**:
@@ -123,7 +140,7 @@ After assimilating Step 1, the AI agent identifies its execution environment and
 * Never bother the user with access or credential questions before verifying whether they exist in connected repositories or in the local database.
 
 ### 5️⃣ PILLAR 5: STRICT APPEND-ONLY DATABASE & TWO-WAY GITHUB SYNC
-* The local database (`AI/BASE/`) is strictly **Append-Only**: never delete existing data.
+* The local database (`AI/GitHub/BASE/`) is strictly **Append-Only**: never delete existing data.
 * Ensure 100% two-way sync with remote GitHub repositories on session start and completion.
 
 ### 6️⃣ PILLAR 6: PRIVATE REPOSITORIES FOR SECRETS & ZERO-INQUIRY CLEARANCE
