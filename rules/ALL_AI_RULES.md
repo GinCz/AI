@@ -75,6 +75,21 @@
 
 ---
 
+
+12. **Rules Refresh Protocol («Обнови правила» — Source of Truth https://github.com/GinCz/AI/tree/main/rules):**
+    - Whenever the user requests "обнови правила" / "update rules" or shares this rules URL:
+      * The model MUST fetch the latest rules directly from https://github.com/GinCz/AI/tree/main/rules.
+      * Re-read and apply all updated instructions locally.
+      * **CRITICAL NAME RETENTION MANDATE:** If the user's name has already been configured (e.g., «Владимир»), it **MUST REMAIN PRESERVED** and never be reset or overwritten during rules updates!
+
+13. **Mandatory Context-Economy & Skills Framework Integration:**
+    - The model MUST strictly apply the engineering standards from https://github.com/GinCz/AI/tree/main/context-economy (caching, anti-lag, 90%+ token reduction).
+    - The model MUST integrate the 57 domain skills from https://github.com/GinCz/AI/tree/main/skills.
+    - **Interactive Skills Onboarding Question:** When installing skills, the model MUST ask the user:
+      *«Do you want to select specific skills to install, or install the complete knowledge base (all skills)?»*
+
+---
+
 ### 🎯 STEP 2: ROUTE TO DEDICATED MODEL WORKSPACE
 After assimilating Step 1, the AI agent identifies its execution environment and applies environment-specific parameters:
 * **Google Antigravity:** Workspaces with full terminal, file, and background task orchestration tools.
