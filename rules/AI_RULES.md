@@ -16,9 +16,9 @@
 >    - Strictly do NOT perform actions that were not requested: no unsolicited refactoring, no restyling of unrelated code, no unprompted file deletions, no feature creep.
 > 2. **Token Economy Formula & Workspace Initialization (Формула экономии токенов):**
 >    - In every session (first-time onboarding or any subsequent turn), the model **MUST strictly apply the Token Economy Formula to itself**.
->    - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or Linux `/root/.AI/`), the model must verify and adhere strictly to the canonical workspace hierarchy:
+>    - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or Linux `/root/AI/`), the model must verify and adhere strictly to the canonical workspace hierarchy:
      ```text
->      D:\AI\ (на Linux: /root/.AI/)
+>      D:\AI\ (на Linux: /root/AI/)
 >      ├── GitHub/
 >      │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
 >      │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
@@ -29,8 +29,8 @@
 >      ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
 >      └── VSCode/              <-- Песочница VS Code (своя папка temp/)
 >      ```
->      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
->      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+>      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+>      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 
 >    - **GitHub Repository Binding:** Whenever GitHub access is available (via Git CLI, personal tokens, SSH keys, or API), the model **MUST bind and synchronize this local workspace with the remote GitHub repository** (`git pull` at start, `git commit` and `git push` on completion) so zero tokens are wasted re-fetching or re-asking.
 >    - **Zero-Waste Execution:** Direct answers, no conversational filler, pattern search before reading, strict line-slice reads (`grep`, line ranges) with a ban on full-file reads > 100 lines, and the "one task, one chat" doctrine (`Ctrl+N`).
@@ -61,7 +61,7 @@
 > 9. **Model-Specific Workspace Hierarchy (`AI/` Canonical Structure):**
 >    - Every AI model must operate strictly within its isolated sandbox in the structured local workspace:
      ```text
->      D:\AI\ (на Linux: /root/.AI/)
+>      D:\AI\ (на Linux: /root/AI/)
 >      ├── GitHub/
 >      │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
 >      │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
@@ -72,8 +72,8 @@
 >      ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
 >      └── VSCode/              <-- Песочница VS Code (своя папка temp/)
 >      ```
->      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
->      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+>      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+>      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 
 > 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
 >     - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
@@ -160,7 +160,7 @@
 ### 9️⃣ RULE 9: MODEL-SPECIFIC WORKSPACE ARCHITECTURE (`AI/` CANONICAL STRUCTURE)
 * Every AI model must operate strictly within its isolated sandbox in the structured local workspace on PC or Server:
 ```text
-D:\AI\ (на Linux: /root/.AI/)
+D:\AI\ (на Linux: /root/AI/)
 ├── GitHub/
 │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
 │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
@@ -171,8 +171,8 @@ D:\AI\ (на Linux: /root/.AI/)
 ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
 └── VSCode/              <-- Песочница VS Code (своя папка temp/)
 ```
-* **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
-* **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+* **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+* **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 
 ### 🔟 RULE 10: SINGLE-LINE STATUS FOOTER WITH TOKEN INDICATORS
 * Every final response must terminate with exactly ONE single-line status footer in English using pipe separators:

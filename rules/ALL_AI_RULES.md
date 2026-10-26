@@ -59,19 +59,26 @@
 9. **Model-Specific Workspace Hierarchy (`AI/` Canonical Structure):**
    - Every AI model must operate strictly within its isolated sandbox in the structured local workspace:
      ```text
-     D:\AI\ (на Linux: /root/.AI/)
-     ├── GitHub/
+     D:\AI\ (на Linux: /root/AI/)
+     ├── GitHub/              <-- Единственное каноническое место для ВСЕХ Git-репозиториев
      │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
      │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
-     │   ├── Windows_scripts/ <-- Публичные утилиты и скрипты
+     │   ├── Linux_Server_Public/ <-- Серверные скрипты и публичные конфигурации
+     │   ├── Windows_scripts/ <-- Публичные утилиты и скрипты Windows
      │   └── ...              <-- Все остальные Git-репозитории
+     ├── scripts/             <-- Сервисные скрипты и автосинхронизация
+     ├── backups/             <-- Оперативные дампы БД и бэкапы
+     ├── archive/             <-- Долгосрочные архивы сборок и развертываний
      ├── GEMINI/              <-- Песочница Gemini (своя папка temp/)
      ├── ChatGPT/             <-- Песочница ChatGPT (своя папка temp/)
      ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
      └── VSCode/              <-- Песочница VS Code (своя папка temp/)
      ```
-     * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
-     * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+     * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+     * **Clean Root Policy (Запрет на захламление корня диска):** Root `/root/` must remain clean. All git repositories reside strictly within `GitHub/`. Loose server scripts belong in `scripts/`, database backups in `backups/`, build archives in `archive/`. Empty system XDG directories are removed and disabled (`user-dirs.conf` -> `enabled=False`).
+     * **Automated Continuous GitHub Sync:** All repositories in `GitHub/` are kept continuously synchronized via scheduled script (`/root/AI/scripts/sync_github_repos.sh` on Linux, `D:\AI\GitHub\sync_repos.ps1` on Windows).
+     * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+     * **Antigravity UI Project Folder:** In Antigravity Web UI settings, the project workspace folder is strictly configured to `/root/AI/`.
 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
     - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
     - The model **MUST present all core categories of skills as a clearly structured, numbered list**:
