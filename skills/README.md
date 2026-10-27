@@ -8,7 +8,7 @@
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
-To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 57 specialized domain skills, provide this single prompt:
+To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 59 specialized domain skills, provide this single prompt:
 
 ```text
 Study the skills catalog at https://github.com/GinCz/AI/tree/main/skills and the monolithic compilation at https://raw.githubusercontent.com/GinCz/AI/main/skills/ALL_SKILLS.md.
@@ -17,7 +17,7 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 
 ---
 
-## 🗂️ Catalog of 57 Battle-Tested Production Skills
+## 🗂️ Catalog of 59 Battle-Tested Production Skills
 
 | Skill Identifier | Direct Link | Domain Category | Scope & Core Competencies |
 | :--- | :--- | :--- | :--- |
@@ -54,6 +54,8 @@ Permanently integrate all these expert skills, legal standards (Czech Republic, 
 | **`eu-vat-accounting`** | [`eu-vat-accounting/SKILL.md ↗`](eu-vat-accounting/SKILL.md) | **EU VAT & Cross-Border Tax** | EU VAT Directives, Reverse Charge, One Stop Shop (OSS/IOSS), Identifikovaná osoba, VIES validation, DAC7 reporting. |
 | **`gastroenterology-hepatology-gi`** | [`gastroenterology-hepatology-gi/SKILL.md ↗`](gastroenterology-hepatology-gi/SKILL.md) | **Clinical Medicine & Gastroenterology** | Postcholecystectomy syndrome (PCES, SOD, chologenic diarrhea), MASLD/MASH, gastritis (H. pylori, autoimmune), GERD, Barrett, IBS, SIBO, Low-FODMAP. |
 | **`geriatrics-gerontology-longevity`** | [`geriatrics-gerontology-longevity/SKILL.md ↗`](geriatrics-gerontology-longevity/SKILL.md) | **Clinical Medicine & Longevity** | 12 Hallmarks of Aging, mTOR/AMPK/NAD+ longevity biochemistry, frailty syndrome (Fried, CFS), sarcopenia (EWGSOP2), osteoporosis (DEXA, FRAX, K2), Beers. |
+| **`gmail`** | [`gmail/SKILL.md ↗`](gmail/SKILL.md) | **Email Operations & Automation** | Complete Gmail CLI operations (IMAP/SMTP) for gin.vladimir@gmail.com: status, list, read, search, send, and rejection purges. |
+| **`gmail-job-cleaner`** | [`gmail-job-cleaner/SKILL.md ↗`](gmail-job-cleaner/SKILL.md) | **Job Search & Mail Automation** | Zero-false-positive automated purge of job application rejection emails across Czech, English, German, and Russian (Jobs.cz, LinkedIn, Teamio ATS). |
 | **`internal-medicine-hematology`** | [`internal-medicine-hematology/SKILL.md ↗`](internal-medicine-hematology/SKILL.md) | **Clinical Medicine** | Internal medicine, hematology, CBC interpretation, anemias, coagulation profiles, liver/renal/lipid panels. |
 | **`intl-contract-drafting-ip`** | [`intl-contract-drafting-ip/SKILL.md ↗`](intl-contract-drafting-ip/SKILL.md) | **International Law & IP** | Vienna Convention CISG 1980, Incoterms 2020, Force Majeure/Hardship, Madrid/EUIPO trademarks, SaaS/SLA agreements. |
 | **`landscape-interior-exterior-design`** | [`landscape-interior-exterior-design/SKILL.md ↗`](landscape-interior-exterior-design/SKILL.md) | **Architecture & Spatial Design** | Residential interior flow, ergonomic kitchen triangles, lighting engineering (Lux/Lumens/Kelvin), exterior facades, landscape zoning, Blender Cycles. |

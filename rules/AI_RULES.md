@@ -257,6 +257,20 @@ D:\AI\ (на Linux: /root/AI/)
 * **Root Cause Reporting on Hang:**
   - Upon terminating a hung task, immediately analyze captured logs, identify the root cause (e.g. interactive prompt, missing `-y` flag, locked port, SSH timeout), and present an autonomous 1-click resolution.
 
+### 2️⃣0️⃣ RULE 20: AUTOMATED GMAIL JOB REJECTION PURGE ("ПОЧИСТИ МОЮ ПОЧТУ ОТ ОТКАЗОВ О РАБОТЕ")
+* **Canonical Trigger:**
+  - When Vladimir requests: *«Почисти мою почту от отказов о работе»*, *«Удали отказы по работе из почты»*, *«Посмотри отказы по вакансиям за последние пару месяцев и удали их»*.
+* **Zero Redundant Questions:**
+  - Immediately execute `gmail clean-rejections --days 90` or `python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejections.py`.
+* **Multi-Lingual Rejection Matrix (CZ, EN, DE, RU):**
+  - Accurately detects rejection phraseology across ATS platforms (Jobs.cz, LinkedIn, Teamio ATS, StartupJobs, Workday, SAP SuccessFactors, Greenhouse, Lever).
+* **Strict Negative Invariants (Zero False Positives):**
+  - NEVER touch application confirmations (*«Zařadili jsme Vás do výběrového řízení»*, *«Děkujeme za projevení zájmu»*), recruiter InMail outreach, calendar interview invites, or utility/bank/hosting emails.
+* **Safe Deletion Protocol:**
+  - Safely copies messages to `[Gmail]/Корзина` (`\Trash`) by IMAP UID and expunges from `INBOX` (30 days Google recovery window).
+* **Structured Audit Reporting:**
+  - Deliver a concise summary table of removed items: Company, Role, Date, Sender, and Rejection phrase quote.
+
 
 ---
 

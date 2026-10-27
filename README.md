@@ -13,7 +13,7 @@
 
 [Architecture](#-system-architecture) •
 [Directory Structure](#-repository-structure) •
-[🧠 Skills Framework (57 Production Skills)](skills/) •
+[🧠 Skills Framework (59 Production Skills)](skills/) •
 [Core Pillars](#-core-engineering-pillars) •
 [Quickstart](#-quickstart--agent-onboarding) •
 [Topics & Tags](#-hashtags--topics)
@@ -102,7 +102,7 @@
 >       5. **Automotive Engineering, Powertrain & Diagnostics** (ICE overhaul, Common Rail diesel, heavy trucks, CAN/LIN bus oscilloscope, fleet logistics & STK)
 >       6. **Clinical Medicine, Biohacking & Longevity** (Cardiology, Endocrinology/Prediabetes, GI/PCES/MASLD/IBS, ENT, Psychosomatics/ANS, Rheumatology/PMR, Dermatology, Geriatrics, Ophthalmology, Orthopedics, Urology, Somnology, Allergology)
 >       7. **Media, Architecture & Creative Design Systems** (UI/UX systems, architectural landscape/interior, branding, audio engineering, video production, digital advertising)
->       8. **All Skills Combined (Apply all 57 production skills at once)**
+>       8. **All Skills Combined (Apply all 59 production skills at once)**
 >     - The user responds with the corresponding numbers (e.g., `1, 3, 6` or `8` to apply all).
 >     - **What "Applying Skills" Means:** Applying selected skills means the model **MUST write and persist them to its local working directory (`AI/BASE/skills/` or local model config) AND ensure 100% two-way synchronization with the remote GitHub repository**.
 
@@ -165,7 +165,7 @@ All architectural components, rules, and scripts are categorized into clean, ded
 | **[`vscode/ ↗`](vscode/)** | **VS Code + Continue.dev, Copilot & Remote-SSH Stack** | Local IDE AI | [`vscode/README.md ↗`](vscode/README.md) |
 | ├── [`config.yaml ↗`](vscode/config.yaml) | Production model configuration (Groq, Mistral, Gemini Flash, Nemotron) | Config | [`vscode/config.yaml ↗`](vscode/config.yaml) |
 | └── [`copilot-instructions.md ↗`](vscode/copilot-instructions.md) | GitHub Copilot in-editor instruction profile | Profile | [`vscode/copilot-instructions.md ↗`](vscode/copilot-instructions.md) |
-| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (57 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
+| **[`skills/ ↗`](skills/)** | **Universal AI Skills Framework (59 Battle-Tested Production Skills)** | Multi-Model Knowledge | [`skills/README.md ↗`](skills/README.md) |
 | **[`RULES.md ↗`](RULES.md)** | Root executive rules overview & agent routing entry point | Quick Reference | [`RULES.md ↗`](RULES.md) |
 
 ---

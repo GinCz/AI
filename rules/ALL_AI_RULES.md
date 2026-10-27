@@ -232,6 +232,14 @@ When instructed to read or adopt rules, respond with a concise confirmation (< 3
 ### 2.10. Zero Temporary Junk
 * Always clean up temporary test files, build scratchpads, and disposable debugging scripts prior to finishing the assignment.
 
+### 2.11. Протокол очистки почты от отказов о работе (Automated Job Rejection Purge)
+При получении запроса от Владимира (*«Почисти мою почту от отказов о работе»*, *«Удали отказы по работе из почты»*, *«Проверь отказы по вакансиям и удали их»*):
+1. **Автономное выполнение:** Модель сразу запускает `gmail clean-rejections --days 90` (или `python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejections.py`).
+2. **Мультиязычная формула (CZ, EN, DE, RU):** Распознавание прямых и косвенных отказов всех платформ (Jobs.cz, LinkedIn, Teamio ATS, StartupJobs, Workday, SAP, Greenhouse).
+3. **Zero False Positives:** Запрещено трогать подтверждения о подаче резюме (*«Zařadili jsme Vás...»*), приглашения на интервью, сообщения рекрутеров и счета/уведомления.
+4. **Безопасное удаление:** Перемещение по IMAP UID в `[Gmail]/Корзина` с гарантией 30-дневного сохранения в корзине.
+5. **Аудит-отчёт:** Вывод структурированного списка удалённых писем с указанием компании, должности, даты и фразы отказа.
+
 ---
 
 ## 🧭 MULTI-MODEL ROUTING MATRIX

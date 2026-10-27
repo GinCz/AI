@@ -7159,3 +7159,104 @@ Before writing any complex Bash or PowerShell script, you MUST create a plan and
 
 ---
 
+<a name="gmail"></a>
+# 📦 SKILL: gmail
+*Domain:* **Email Operations & Automation**
+
+---
+name: gmail
+description: Read, search, list, and send emails via Gmail for Vladimir Bulantsev (gin.vladimir@gmail.com). Use whenever the user asks to check email, list recent messages, search inbox, send an email, or clean job rejection emails.
+---
+
+# Gmail CLI Skill
+
+The `gmail` command line tool provides access to the user's Google Mail (`gin.vladimir@gmail.com`).
+
+## Available Commands
+
+### 1. Check Status
+```bash
+gmail status
+```
+Verifies IMAP and SMTP connections and reports total and unread message counts.
+
+### 2. List Recent Emails
+```bash
+gmail list [-n LIMIT] [-u] [-f FOLDER]
+```
+- `-n 10`: Show last 10 emails (default: 10)
+- `-u`: Only show unread emails
+- `-f INBOX`: Folder name (default: INBOX)
+
+### 3. Read Email by ID
+```bash
+gmail read <MESSAGE_ID> [--max-chars 3000]
+```
+Fetches and displays the full subject, sender, date, and body content of the email.
+
+### 4. Search Emails
+```bash
+gmail search "<QUERY>" [-n LIMIT]
+```
+Searches for emails where subject or sender matches the query string.
+
+### 5. Send Email
+```bash
+gmail send --to "<RECIPIENT>" --subject "<SUBJECT>" --body "<BODY_TEXT>"
+```
+Sends an email from `gin.vladimir@gmail.com`.
+
+### 6. Clean Job Rejections (Почисти почту от отказов о работе)
+```bash
+gmail clean-rejections [--days 90] [--dry-run] [-f INBOX]
+```
+Automatically scans, detects, and safely moves job rejection emails (Jobs.cz, LinkedIn, Teamio, StartupJobs, ATS) across Czech, English, German, and Russian into Trash with zero false positives.
+
+---
+
+<a name="gmail-job-cleaner"></a>
+# 📦 SKILL: gmail-job-cleaner
+*Domain:* **Job Search & Mail Automation**
+
+---
+name: gmail-job-cleaner
+description: Universal automated cleaner for job application rejection emails in Vladimir's Gmail (gin.vladimir@gmail.com). Triggers on requests like "почисти мою почту от отказов о работе", "удали отказы по работе", or "clean job rejections".
+---
+
+# 🧹 Universal Job Rejection Cleaner Protocol
+
+> **Objective:** 100% accurate, zero-false-positive detection and safe removal of job rejection emails from Gmail (`gin.vladimir@gmail.com`).  
+> **Target Sources:** Jobs.cz, Práce.cz, Teamio ATS, LinkedIn InMail / Job Alerts, StartupJobs, Atmoskop, SAP SuccessFactors, Greenhouse, Lever, Workday, SmartRecruiters, and direct corporate HR / career form responses.
+
+## ⚡ Canonical Trigger Phrases
+
+When Vladimir says any of the following:
+- *«Почисти мою почту от отказов о работе»*
+- *«Удали все отказы по резюме из почты»*
+- *«Посмотри отказы по вакансиям за последние пару месяцев и удали их»*
+- *«Clean job rejections from my email»*
+
+The agent immediately executes:
+```bash
+gmail clean-rejections --days 90
+```
+
+## 🔍 The Universal Detection Formula
+
+### 1. Multi-Lingual Rejection Matrix
+- **Czech:** `upřednostnili (jsme )?(jiné|jiného|uchazeče)`, `dali (jsme )?přednost (jiným|jinému)`, `vybrali (jsme )?(jiného|jiné) kandidát`, `rozhodli (jsme se )?pokračovat s jiným`, `nemáme vhodnou pozici`, `s politováním oznámit`, `nepostupujete do (dalšího|užšího)`, `nebudeme pokračovat`, `pozice byla obsazena`, `bohužel` + `(kandidát|uchazeč|pozic|vybrali|upřednostnili|nemáme|rozhodli|nepostup)`.
+- **English:** `decided to move forward with (other|another) candidate`, `pursue other candidates`, `not moving forward`, `decided not to proceed`, `regret to inform`, `not selected for this (role|position)`, `position has been filled`, `unfortunately` + `(candidate|move forward|position|role)`.
+- **German / Russian:** `anderen kandidaten den vorzug`, `вынуждены отказать`, `выбрали другого кандидата`, `не готовы предложить`.
+
+### 2. Strict Negative Invariants (Zero False Positives — NEVER DELETE)
+- ❌ Application confirmations (*«Zařadili jsme Vás do výběrového řízení»*, *«Děkujeme za projevení zájmu»*, *«Your CV is on its way»*).
+- ❌ Active recruiter invitations (*«Pozvánka na pohovor»*, LinkedIn InMail *«Hledáme člověka...»*).
+- ❌ Non-job emails (ČEZ, Vodafone, Fio, NIC.cz, Beget, DIS+, ČSSZ).
+
+### 3. Safe Deletion Protocol
+- Messages moved by IMAP UID to localized Trash (`[Gmail]/Корзина` / `\Trash`) and purged from `INBOX`.
+- Recoverable in Gmail Trash for 30 days.
+
+---
+
+
