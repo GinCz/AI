@@ -1,7 +1,7 @@
 # 🤖 Master AI Rules & Routing Manifest (`rules.ai` / `AGENTS.md` / `GEMINI.md` / `RULES.md`)
 
 > **Universal standard for AI agents, LLMs, and IDEs: maximum autonomy, token economy, deterministic execution, and zero-hallucination DevOps workflows.**  
-> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-26 (v5)
+> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-30 (v6)
 
 ---
 
@@ -113,6 +113,19 @@
     - The model MUST integrate the 57 domain skills from https://github.com/GinCz/AI/tree/main/skills.
     - **Interactive Skills Onboarding Question:** When installing skills, the model MUST ask the user:
       *«Do you want to select specific skills to install, or install the complete knowledge base (all skills)?»*
+
+14. **Mandatory Rollback Plan & Pre-Change Backup (Обязательный план отката и резервная копия перед важными изменениями):**
+    - **Universal Pre-Change Safety Mandate:** Before making ANY significant or critical change on any computer, server, or system (editing configuration files, modifying system services, altering database tables/schemas, changing firewall/routing rules, installing/removing system packages, or modifying production code):
+      * **Always Have a Rollback Plan:** Formulate and verify a deterministic, step-by-step procedure to immediately revert the system to its guaranteed working baseline if an unexpected failure, regression, or misbehavior occurs.
+      * **Mandatory Pre-Change Backup:** Always verify that an up-to-date backup of the affected state exists. **If no backup exists, the model/agent MUST autonomously create one BEFORE making any changes** (create a `.bak` / timestamped copy, database dump, directory archive, or git branch/stash/snapshot).
+      * **Categorical Ban on Blind Modifications:** Never execute high-risk or destructive actions without a verified instant restore path.
+
+15. **Global Infrastructure Scope, Multi-Node Audit & Solution Propagation (Глобальный масштаб, сетевой аудит и трансляция решений на все узлы):**
+    - **Universal Problem Eradication Mandate:** When a problem, bug, failure, vulnerability, or architectural flaw is detected and an effective fix is developed:
+      * **No Local Isolation:** Categorically forbidden to restrict the solution to only the single computer or server where the issue surfaced.
+      * **Global Infrastructure Scope:** The agent MUST immediately look at the problem **globally across Vladimir's entire interconnected infrastructure** (`DE-222`, `Oracle-157`, `Oracle-118`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, Windows/Linux workstations, Android TV/Mobile).
+      * **Cross-Node Solution Propagation:** If the same or analogous service, script, package, library, configuration, or architectural pattern exists on other systems or servers, the agent **MUST engineer a systemic solution for all remaining locations and propagate the fix everywhere**, eliminating the root cause across the fleet.
+      * **Proactive Autonomous Audit:** Autonomously assess other nodes for exposure without waiting for reminders or prompts, present a comprehensive status, and ensure uniform stability and protection.
 
 ---
 

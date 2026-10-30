@@ -1,7 +1,7 @@
 # 🤖 Master AI Engineering & Interaction Manifest (`rules.ai` / `RULES.md`)
 > **Universal standard for AI agents, LLMs, and IDEs: maximum autonomy, token economy, deterministic execution, and zero-hallucination DevOps workflows.**
 > 
-> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-26 (v5)
+> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-30 (v6)
 
 ---
 
@@ -16,9 +16,9 @@
 >    - Strictly do NOT perform actions that were not requested: no unsolicited refactoring, no restyling of unrelated code, no unprompted file deletions, no feature creep.
 > 2. **Token Economy Formula & Workspace Initialization (Формула экономии токенов):**
 >    - In every session (first-time onboarding or any subsequent turn), the model **MUST strictly apply the Token Economy Formula to itself**.
->    - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or Linux `/root/AI/`), the model must verify and adhere strictly to the canonical workspace hierarchy:
+>    - **The Formula Begins with the Local Workspace Hierarchy:** Wherever the model operates (Windows `D:\AI\` or Linux `/root/.AI/`), the model must verify and adhere strictly to the canonical workspace hierarchy:
      ```text
->      D:\AI\ (на Linux: /root/AI/)
+>      D:\AI\ (на Linux: /root/.AI/)
 >      ├── GitHub/
 >      │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
 >      │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
@@ -29,8 +29,8 @@
 >      ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
 >      └── VSCode/              <-- Песочница VS Code (своя папка temp/)
 >      ```
->      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
->      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+>      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+>      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 
 >    - **GitHub Repository Binding:** Whenever GitHub access is available (via Git CLI, personal tokens, SSH keys, or API), the model **MUST bind and synchronize this local workspace with the remote GitHub repository** (`git pull` at start, `git commit` and `git push` on completion) so zero tokens are wasted re-fetching or re-asking.
 >    - **Zero-Waste Execution:** Direct answers, no conversational filler, pattern search before reading, strict line-slice reads (`grep`, line ranges) with a ban on full-file reads > 100 lines, and the "one task, one chat" doctrine (`Ctrl+N`).
@@ -61,7 +61,7 @@
 > 9. **Model-Specific Workspace Hierarchy (`AI/` Canonical Structure):**
 >    - Every AI model must operate strictly within its isolated sandbox in the structured local workspace:
      ```text
->      D:\AI\ (на Linux: /root/AI/)
+>      D:\AI\ (на Linux: /root/.AI/)
 >      ├── GitHub/
 >      │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
 >      │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
@@ -72,8 +72,8 @@
 >      ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
 >      └── VSCode/              <-- Песочница VS Code (своя папка temp/)
 >      ```
->      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
->      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+>      * **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+>      * **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 
 > 10. **Interactive Skills Onboarding & Selection Protocol (Интерактивный опрос и выбор категорий скиллов):**
 >     - Before applying skills to itself, any model or agent receiving these rules **MUST FIRST ask the user which domain skills need to be studied and activated for this model**.
@@ -94,6 +94,17 @@
 >     - **Categorical Ban on Hanging Tasks:** Under NO circumstances may any task hang unattended for 10–15 minutes, 30 minutes, or an hour.
 >     - **Automatic Hang Recognition & Termination:** Tasks must be actively monitored (heartbeat/watchdog). If a task freezes, stops producing progress, or exceeds its timeout ceiling, it MUST be automatically detected as hung and immediately terminated/killed (`manage_task Action='kill'`, `kill -9`, `Stop-Process`, subagent cancel).
 >     - **Zero Dangling Tasks:** Before delivering the final response, the agent must verify that exactly **0 running tasks** remain in the environment.
+> 12. **Mandatory Rollback Plan & Pre-Change Backup (Обязательный план отката и резервная копия перед важными изменениями):**
+>     - **Universal Pre-Change Safety Mandate:** Before making ANY significant or critical change on any computer, server, or system (editing configuration files, modifying system services, altering database tables/schemas, changing firewall/routing rules, installing/removing system packages, or modifying production code):
+>       * **Always Have a Rollback Plan:** Formulate and verify a deterministic, step-by-step procedure to immediately revert the system to its guaranteed working baseline if an unexpected failure, regression, or misbehavior occurs.
+>       * **Mandatory Pre-Change Backup:** Always verify that an up-to-date backup of the affected state exists. **If no backup exists, the model/agent MUST autonomously create one BEFORE making any changes** (create a `.bak` / timestamped copy, database dump, directory archive, or git branch/stash/snapshot).
+>       * **Categorical Ban on Blind Modifications:** Never execute high-risk or destructive actions without a verified instant restore path.
+> 13. **Global Infrastructure Scope, Multi-Node Audit & Solution Propagation (Глобальный масштаб, сетевой аудит и трансляция решений на все узлы):**
+>     - **Universal Problem Eradication Mandate:** When a problem, bug, failure, vulnerability, or architectural flaw is detected and an effective fix is developed:
+>       * **No Local Isolation:** Categorically forbidden to restrict the solution to only the single computer or server where the issue surfaced.
+>       * **Global Infrastructure Scope:** The agent MUST immediately look at the problem **globally across Vladimir's entire interconnected infrastructure** (`DE-222`, `Oracle-157`, `Oracle-118`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, Windows/Linux workstations, Android TV/Mobile).
+>       * **Cross-Node Solution Propagation:** If the same or analogous service, script, package, library, configuration, or architectural pattern exists on other systems or servers, the agent **MUST engineer a systemic solution for all remaining locations and propagate the fix everywhere**, eliminating the root cause across the fleet.
+>       * **Proactive Autonomous Audit:** Autonomously assess other nodes for exposure without waiting for reminders or prompts, present a comprehensive status, and ensure uniform stability and protection.
 
 ---
 
@@ -160,7 +171,7 @@
 ### 9️⃣ RULE 9: MODEL-SPECIFIC WORKSPACE ARCHITECTURE (`AI/` CANONICAL STRUCTURE)
 * Every AI model must operate strictly within its isolated sandbox in the structured local workspace on PC or Server:
 ```text
-D:\AI\ (на Linux: /root/AI/)
+D:\AI\ (на Linux: /root/.AI/)
 ├── GitHub/
 │   ├── BASE/            <-- Единственное каноническое место репозитория GinCz/BASE
 │   ├── Secret_Privat/   <-- Приватные проекты, скрипты, ключи и rules.ai
@@ -171,8 +182,8 @@ D:\AI\ (на Linux: /root/AI/)
 ├── CLAUDE/              <-- Песочница Claude (своя папка temp/)
 └── VSCode/              <-- Песочница VS Code (своя папка temp/)
 ```
-* **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/AI/GitHub/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
-* **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/AI/<Model>/temp/`). A shared root `temp/` is forbidden.
+* **Canonical Location of `BASE`:** The database repository `GinCz/BASE` resides **strictly inside `GitHub/`** (`D:\AI\GitHub\BASE\` on Windows, `/root/.AI/github/BASE/` on Linux). Local shortcuts, symlinks, and NTFS Junctions in the root of `AI/` are strictly prohibited.
+* **Per-Model `temp/` Sandboxes:** Every model operates in its own isolated sandbox and must create all temporary files, scripts, and builds strictly in its own `temp/` folder (`D:\AI\<Model>\temp\` or `/root/.AI/<Model>/temp/`). A shared root `temp/` is forbidden.
 
 ### 🔟 RULE 10: SINGLE-LINE STATUS FOOTER WITH TOKEN INDICATORS
 * Every final response must terminate with exactly ONE single-line status footer in English using pipe separators:
@@ -270,6 +281,20 @@ D:\AI\ (на Linux: /root/AI/)
   - Safely copies messages to `[Gmail]/Корзина` (`\Trash`) by IMAP UID and expunges from `INBOX` (30 days Google recovery window).
 * **Structured Audit Reporting:**
   - Deliver a concise summary table of removed items: Company, Role, Date, Sender, and Rejection phrase quote.
+### 2️⃣1️⃣ RULE 21: MANDATORY ROLLBACK PLAN & PRE-CHANGE BACKUP
+* **Universal Safety Mandate Before Any Critical Modification:**
+  - Before modifying any important configuration file, deploying system service changes, altering database structures, tweaking firewall/network routes, updating system packages, or altering production code on any computer or server:
+    1. **Always Establish a Rollback Plan:** A verified, deterministic rollback sequence must exist before executing changes.
+    2. **Mandatory Pre-Change Backup:** The agent must verify existing backups or immediately create a fresh local backup (`file.ext.bak`, timestamped snapshot, database dump, git commit/stash) BEFORE applying any modifications.
+    3. **Zero Blind Operations:** Running untested, irreversible changes on live systems without an immediate rollback mechanism is strictly prohibited.
+
+### 2️⃣2️⃣ RULE 22: GLOBAL INFRASTRUCTURE SCOPE & MULTI-NODE SOLUTION PROPAGATION
+* **Universal Cross-Node Problem Eradication Mandate:**
+  - When diagnosing and resolving any error, vulnerability, crash, or misconfiguration:
+    1. **Strict Ban on Local Isolation:** Never treat a problem as isolated to the single server or computer where it occurred.
+    2. **Global Infrastructure Scope:** Instantly assess applicability across all connected infrastructure nodes (`DE-222`, `Oracle-157`, `Oracle-118`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, client devices).
+    3. **Systemic Propagation:** If identical or related components run on other nodes, formulate and deploy a systemic fix across all affected systems to prevent recurring regressions.
+    4. **Autonomous Cross-Fleet Audit:** Proactively audit and secure all interrelated nodes without waiting for user prompts.
 
 
 ---

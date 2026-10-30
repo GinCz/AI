@@ -1,7 +1,7 @@
 # 🤖 Master AI Engineering & Interaction Manifest (`rules.ai` / `RULES.md`)
 > **Universal standard for AI agents, LLMs, and IDEs: maximum autonomy, token economy, deterministic execution, and zero-hallucination DevOps workflows.**
 > 
-> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-26 (v5)
+> *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI) | *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Version:* v2026-10-30 (v6)
 
 ---
 
@@ -94,6 +94,17 @@
 >     - **Categorical Ban on Hanging Tasks:** Under NO circumstances may any task hang unattended for 10–15 minutes, 30 minutes, or an hour.
 >     - **Automatic Hang Recognition & Termination:** Tasks must be actively monitored (heartbeat/watchdog). If a task freezes, stops producing progress, or exceeds its timeout ceiling, it MUST be automatically detected as hung and immediately terminated/killed (`manage_task Action='kill'`, `kill -9`, `Stop-Process`, subagent cancel).
 >     - **Zero Dangling Tasks:** Before delivering the final response, the agent must verify that exactly **0 running tasks** remain in the environment.
+> 12. **Mandatory Rollback Plan & Pre-Change Backup (Обязательный план отката и резервная копия перед важными изменениями):**
+>     - **Universal Pre-Change Safety Mandate:** Before making ANY significant or critical change on any computer, server, or system (editing configuration files, modifying system services, altering database tables/schemas, changing firewall/routing rules, installing/removing system packages, or modifying production code):
+>       * **Always Have a Rollback Plan:** Formulate and verify a deterministic, step-by-step procedure to immediately revert the system to its guaranteed working baseline if an unexpected failure, regression, or misbehavior occurs.
+>       * **Mandatory Pre-Change Backup:** Always verify that an up-to-date backup of the affected state exists. **If no backup exists, the model/agent MUST autonomously create one BEFORE making any changes** (create a `.bak` / timestamped copy, database dump, directory archive, or git branch/stash/snapshot).
+>       * **Categorical Ban on Blind Modifications:** Never execute high-risk or destructive actions without a verified instant restore path.
+> 13. **Global Infrastructure Scope, Multi-Node Audit & Solution Propagation (Глобальный масштаб, сетевой аудит и трансляция решений на все узлы):**
+>     - **Universal Problem Eradication Mandate:** When a problem, bug, failure, vulnerability, or architectural flaw is detected and an effective fix is developed:
+>       * **No Local Isolation:** Categorically forbidden to restrict the solution to only the single computer or server where the issue surfaced.
+>       * **Global Infrastructure Scope:** The agent MUST immediately look at the problem **globally across Vladimir's entire interconnected infrastructure** (`DE-222`, `Oracle-157`, `Oracle-118`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, Windows/Linux workstations, Android TV/Mobile).
+>       * **Cross-Node Solution Propagation:** If the same or analogous service, script, package, library, configuration, or architectural pattern exists on other systems or servers, the agent **MUST engineer a systemic solution for all remaining locations and propagate the fix everywhere**, eliminating the root cause across the fleet.
+>       * **Proactive Autonomous Audit:** Autonomously assess other nodes for exposure without waiting for reminders or prompts, present a comprehensive status, and ensure uniform stability and protection.
 
 ---
 
@@ -256,6 +267,34 @@ D:\AI\ (на Linux: /root/.AI/)
   - Before delivering the final user response and sounding the completion chime, the agent must check all active tasks and guarantee that exactly **0 background tasks are running**.
 * **Root Cause Reporting on Hang:**
   - Upon terminating a hung task, immediately analyze captured logs, identify the root cause (e.g. interactive prompt, missing `-y` flag, locked port, SSH timeout), and present an autonomous 1-click resolution.
+
+### 2️⃣0️⃣ RULE 20: AUTOMATED GMAIL JOB REJECTION PURGE ("ПОЧИСТИ МОЮ ПОЧТУ ОТ ОТКАЗОВ О РАБОТЕ")
+* **Canonical Trigger:**
+  - When Vladimir requests: *«Почисти мою почту от отказов о работе»*, *«Удали отказы по работе из почты»*, *«Посмотри отказы по вакансиям за последние пару месяцев и удали их»*.
+* **Zero Redundant Questions:**
+  - Immediately execute `gmail clean-rejections --days 90` or `python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejections.py`.
+* **Multi-Lingual Rejection Matrix (CZ, EN, DE, RU):**
+  - Accurately detects rejection phraseology across ATS platforms (Jobs.cz, LinkedIn, Teamio ATS, StartupJobs, Workday, SAP SuccessFactors, Greenhouse, Lever).
+* **Strict Negative Invariants (Zero False Positives):**
+  - NEVER touch application confirmations (*«Zařadili jsme Vás do výběrového řízení»*, *«Děkujeme za projevení zájmu»*), recruiter InMail outreach, calendar interview invites, or utility/bank/hosting emails.
+* **Safe Deletion Protocol:**
+  - Safely copies messages to `[Gmail]/Корзина` (`\Trash`) by IMAP UID and expunges from `INBOX` (30 days Google recovery window).
+* **Structured Audit Reporting:**
+  - Deliver a concise summary table of removed items: Company, Role, Date, Sender, and Rejection phrase quote.
+### 2️⃣1️⃣ RULE 21: MANDATORY ROLLBACK PLAN & PRE-CHANGE BACKUP
+* **Universal Safety Mandate Before Any Critical Modification:**
+  - Before modifying any important configuration file, deploying system service changes, altering database structures, tweaking firewall/network routes, updating system packages, or altering production code on any computer or server:
+    1. **Always Establish a Rollback Plan:** A verified, deterministic rollback sequence must exist before executing changes.
+    2. **Mandatory Pre-Change Backup:** The agent must verify existing backups or immediately create a fresh local backup (`file.ext.bak`, timestamped snapshot, database dump, git commit/stash) BEFORE applying any modifications.
+    3. **Zero Blind Operations:** Running untested, irreversible changes on live systems without an immediate rollback mechanism is strictly prohibited.
+
+### 2️⃣2️⃣ RULE 22: GLOBAL INFRASTRUCTURE SCOPE & MULTI-NODE SOLUTION PROPAGATION
+* **Universal Cross-Node Problem Eradication Mandate:**
+  - When diagnosing and resolving any error, vulnerability, crash, or misconfiguration:
+    1. **Strict Ban on Local Isolation:** Never treat a problem as isolated to the single server or computer where it occurred.
+    2. **Global Infrastructure Scope:** Instantly assess applicability across all connected infrastructure nodes (`DE-222`, `Oracle-157`, `Oracle-118`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, client devices).
+    3. **Systemic Propagation:** If identical or related components run on other nodes, formulate and deploy a systemic fix across all affected systems to prevent recurring regressions.
+    4. **Autonomous Cross-Fleet Audit:** Proactively audit and secure all interrelated nodes without waiting for user prompts.
 
 
 ---
