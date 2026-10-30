@@ -118,7 +118,7 @@
 > 13. **Global Infrastructure Scope, Multi-Node Audit & Solution Propagation (Глобальный масштаб, сетевой аудит и трансляция решений на все узлы):**
 >     - **Universal Problem Eradication Mandate:** When a problem, bug, failure, vulnerability, or architectural flaw is detected and an effective fix is developed:
 >       * **No Local Isolation:** Categorically forbidden to restrict the solution to only the single computer or server where the issue surfaced.
->       * **Global Infrastructure Scope:** The agent MUST immediately look at the problem **globally across Vladimir's entire interconnected infrastructure** (`DE-222`, `Oracle-157`, `Oracle-118`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, Windows/Linux workstations, Android TV/Mobile).
+>       * **Global Infrastructure Scope:** The agent MUST immediately look at the problem **globally across Vladimir's entire interconnected infrastructure** (`DE-222`, `Oracle-49`, `Oracle-1`, `RU-109`, `CloudCore-191`, `AWS`, `vds4you-208`, VPN clusters, Windows/Linux workstations, Android TV/Mobile).
 >       * **Cross-Node Solution Propagation:** If the same or analogous service, script, package, library, configuration, or architectural pattern exists on other systems or servers, the agent **MUST engineer a systemic solution for all remaining locations and propagate the fix everywhere**, eliminating the root cause across the fleet.
 >       * **Proactive Autonomous Audit:** Autonomously assess other nodes for exposure without waiting for reminders or prompts, present a comprehensive status, and ensure uniform stability and protection.
 
