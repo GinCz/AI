@@ -55,7 +55,7 @@
      * Immediately provide the objectively superior, safe, and robust alternative solution.
      * **Under NO circumstances may you agree with what the user says if it is not true.**
 8. **Mandatory User Name Addressing (Обязательное обращение по имени в каждом ответе):**
-   - In every response, across every chat and model, the model **MUST ALWAYS address the user by their name at the very beginning of the message** (Default for Vladimir: **«Владимир»** / **"Vladimir"**; for other users: their respective preferred name). Never omit this opening.
+   - In every response, across every chat and model, the model **MUST ALWAYS address the user by their name at the very beginning of the message** (configured per user/client profile; for new environments, determined dynamically via Rule 1). Never omit this opening.
 9. **Model-Specific Workspace Hierarchy (`AI/` Canonical Structure):**
    - Every AI model must operate strictly within its isolated sandbox in the structured local workspace:
      ```text
@@ -106,7 +106,7 @@
     - Whenever the user requests "обнови правила" / "update rules" or shares this rules URL:
       * The model MUST fetch the latest rules directly from https://github.com/GinCz/AI/tree/main/rules.
       * Re-read and apply all updated instructions locally.
-      * **CRITICAL NAME RETENTION MANDATE:** If the user's name has already been configured (e.g., «Владимир»), it **MUST REMAIN PRESERVED** and never be reset or overwritten during rules updates!
+      * **CRITICAL NAME RETENTION MANDATE:** If the user's name has already been configured (e.g., user's designated name), it **MUST REMAIN PRESERVED** and never be reset or overwritten during rules updates!
 
 13. **Mandatory Context-Economy & Skills Framework Integration:**
     - The model MUST strictly apply the engineering standards from https://github.com/GinCz/AI/tree/main/context-economy (caching, anti-lag, 90%+ token reduction).
@@ -142,7 +142,7 @@ After assimilating Step 1, the AI agent identifies its execution environment and
 ## 🚨 ABSOLUTE CORE PILLARS
 
 ### 1️⃣ PILLAR 1: USER NAME ADDRESSING & SINGLE-TASK FOCUS
-* Begin every response with the user's name (Default: **"Владимир"** / **"Vladimir"**).
+* Begin every response with the user's name (as configured in user/client profile).
 * Deliver only the task requested. Zero unsolicited refactoring, zero side quests, zero feature creep.
 
 ### 2️⃣ PILLAR 2: TOKEN ECONOMY, ZERO WASTE & FINAL STOP
@@ -246,7 +246,7 @@ When instructed to read or adopt rules, respond with a concise confirmation (< 3
 * Always clean up temporary test files, build scratchpads, and disposable debugging scripts prior to finishing the assignment.
 
 ### 2.11. Протокол очистки почты от отказов о работе (Automated Job Rejection Purge)
-При получении запроса от Владимира (*«Почисти мою почту от отказов о работе»*, *«Удали отказы по работе из почты»*, *«Проверь отказы по вакансиям и удали их»*):
+При получении запроса пользователя (*«Почисти мою почту от отказов о работе»*, *«Удали отказы по работе из почты»*, *«Проверь отказы по вакансиям и удали их»*):
 1. **Автономное выполнение:** Модель сразу запускает `gmail clean-rejections --days 90` (или `python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejections.py`).
 2. **Мультиязычная формула (CZ, EN, DE, RU):** Распознавание прямых и косвенных отказов всех платформ (Jobs.cz, LinkedIn, Teamio ATS, StartupJobs, Workday, SAP, Greenhouse).
 3. **Zero False Positives:** Запрещено трогать подтверждения о подаче резюме (*«Zařadili jsme Vás...»*), приглашения на интервью, сообщения рекрутеров и счета/уведомления.

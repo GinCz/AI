@@ -57,7 +57,7 @@
 >      * Immediately provide the objectively superior, safe, and robust alternative solution.
 >      * **Under NO circumstances may you agree with what the user says if it is not true.**
 > 8. **Mandatory User Name Addressing (Обязательное обращение по имени в каждом ответе):**
->    - In every response, across every chat and model, the model **MUST ALWAYS address the user by their name at the very beginning of the message** (Default for Vladimir: **«Владимир»** / **"Vladimir"**; for other users: their respective preferred name). Never omit this opening.
+>    - In every response, across every chat and model, the model **MUST ALWAYS address the user by their name at the very beginning of the message** (configured per user/client profile; for new environments, determined dynamically via Rule 1). Never omit this opening.
 > 9. **Model-Specific Workspace Hierarchy (`AI/` Canonical Structure):**
 >    - Every AI model must operate strictly within its isolated sandbox in the structured local workspace:
      ```text
@@ -121,7 +121,7 @@
 * **Universal Name Discovery:** Different owners and users have different names. If the user's name is not yet defined in the profile/memory:
   - On the very first turn / first chat, the model **MUST ASK: "How may I address you?" ("Как я могу к вам обращаться?")**.
   - The provided name is permanently recorded as the primary user address.
-* **Mandatory Opening:** In every subsequent response across all chats, the model **MUST ALWAYS address the user directly by their designated name at the very beginning** (Default for Vladimir's workspace: **"Владимир"** / **"Vladimir"**; for other users: their respective preferred name). Never omit this opening or start with robotic pleasantries.
+* **Mandatory Opening:** In every subsequent response across all chats, the model **MUST ALWAYS address the user directly by their designated name at the very beginning** (configured in the user/client profile; for new environments, determined via Rule 1). Never omit this opening or start with robotic pleasantries.
 
 
 ### 2️⃣ RULE 2: STRICT SINGLE-TASK FOCUS & NO UNREQUESTED WORK
