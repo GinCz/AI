@@ -307,5 +307,18 @@ D:\AI\ (на Linux: /root/.AI/)
 1. **Private Repository Integration:** The agent connects its `AI/GitHub/` directory to authorized private repositories, maintaining continuous two-way synchronization (`git pull` / `git push`).
 2. **Synchronized Local Database (`AI/GitHub/BASE/`):** Private architecture manifests, domain knowledge, and credentials vaults are synchronized from `AI/GitHub/` into `AI/GitHub/BASE/`, allowing the model to operate with zero latency and zero token waste.
 3. **Dedicated Model Profiles:** When specialized private profiles exist in the synchronized base (e.g., for Antigravity, Claude, ChatGPT, VS Code), the model loads its respective profile directly from the local cache.
-4. **Desktop & Delivery Standards:** Windows binaries and builds are deployed cleanly via designated cloud storage / shared drives, maintaining strictly the single current installer version for desktop sync.
+4. **Windows Apps, PE Details & Desktop Delivery Standards:**
+   - **Version Format:** Strictly lowercase `v` followed by 3 digits: `v001`, `v030`, `v041`, `v105`.
+   - **PE VERSIONINFO Properties:** Every compiled `.exe` must strictly populate all Win32 metadata:
+     * `LegalCopyright`: `VladiMIR+AI` (strictly `VladiMIR+AI`; no personal surnames or other tags);
+     * `CompanyName`: `VladiMIR+AI`;
+     * `FileDescription`: `<AppName>_vXXX` (e.g. `GIN-Installer_v030`, `GIN-Voice_v041`);
+     * `ProductName`: `<AppName>_vXXX`;
+     * `ProductVersion`: `vXXX`;
+     * `FileVersion` (StringFileInfo): `vXXX`;
+     * `FileVersion` (VS_FIXEDFILEINFO): `0.XXX.0.0` (e.g. `0.30.0.0`);
+     * `Language`: English (`040904b0` / 1200 Unicode);
+     * `Date modified`: system build date.
+   - **Delivery strictly to Desktop in MEGA (No Server_222 shares):** All new or updated Windows binaries and installers are written **EXCLUSIVELY to Vladimir's Desktop in MEGA** (`D:\MEGA\DOCS\desktop` / `/MEGA/DOCS/desktop/`). Never write to Server_222 network shares (`/storage/soft/`). After checking, Vladimir moves them to target folders himself.
+   - **Repository Separation (Private vs Public):** All source code (`.cs`, `.go`, `.c`, `.manifest`, `.rc`, build scripts) resides **STRICTLY in private repositories** (`Secret_Privat`). Public repositories (`Windows_scripts`, `Linux_Server_Public`) contain **ONLY English `README.md` and the compiled release installer/binary (`.exe`)**.
 5. **Calendar Integration:** Crucial deadlines, maintenance schedules, and trial expirations are formatted as 1-Click Google Calendar links.
