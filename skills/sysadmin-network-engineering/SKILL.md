@@ -19,6 +19,10 @@ A master operational manual for systems administration across Linux and Windows 
 ### Windows Server & Workstation Administration:
 - **PowerShell 7+ Automation**: Script blocks, advanced parameters, pipeline chaining, structured error handling with `$ErrorActionPreference = 'Stop'`.
 - **Windows Services & Scheduled Tasks**: Automated creation, service account delegation (`gMSA` - Group Managed Service Accounts), non-interactive background scheduling.
+- **Windows Update & Shutdown Flyout Suppression**:
+  - Eliminating stuck "Update and shut down" / "Update and restart" options in Win+X and Start Menu power flyouts via Orchestrator registry settings (`ShutdownFlyoutOptions = 0`, `EnhancedShutdownEnabled = 0` under `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator`).
+  - Purging low-level update indicators: Session Manager `PendingFileRenameOperations`, token-elevated CBS `RebootPending` bypass (overriding TrustedInstaller ownership), and registry service lockdown (`Start = 4` on `UsoSvc`, `WaaSMedicSvc`, `wuauserv`).
+  - Detailed operational guide: [Windows Update Power Flyout Control](references/windows_update_power_flyout_control.md).
 - **Sysinternals Diagnostics**:
   - `Process Explorer` (identifying process handles, DLL injection, CPU spikes).
   - `Process Monitor` (ProcMon - real-time file system, registry, and network activity tracing).

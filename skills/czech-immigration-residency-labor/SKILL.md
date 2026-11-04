@@ -82,3 +82,28 @@ A permanent residence permit **cannot be arbitrarily revoked**, but statutory gr
 - **State-Paid Category (*Státní pojištěnec*)**:
   - The moment an individual is successfully registered in the register of job seekers at Úřad práce, the **Czech state pays public health insurance contributions directly** to their insurance fund (VZP or OZP) under § 7 odst. 1 písm. b) of Act No. 48/1997 Sb.
   - Eliminates the mandatory minimum health insurance contribution (~2 968 CZK/month in 2024–2026 for persons without taxable income - OBZP).
+
+---
+
+## 6. Foreigners' Travel Documents & Passport Acquisition Workflows
+
+### A. Cizinecký pas (Alien's Passport - § 113 Act No. 326/1999 Sb.):
+- **Statutory Mandate (§ 113 odst. 6 písm. a)**:
+  - Ministry of the Interior (OAMP MV ČR) issues a *Cizinecký pas* to a foreigner holding *Trvalý pobyt* ONLY IF the applicant has no valid travel document AND proves that they cannot obtain one independently of their own will (*doloží, že si jej nemůže nezávisle na své vůli opatřit u orgánů domovského státu*).
+- **Evidentiary Threshold**:
+  - Mere reluctance to visit the home country consulate, long waitlists, or administrative friction are **statutorily insufficient**.
+  - Requires hard official evidence: formal written denial of passport issuance by home country diplomatic mission, certificate of loss/deprivation of citizenship, or proven direct safety threats. If the home country consulate operates normally, OAMP will reject the application.
+- **Document Specifications**:
+  - Biometric passport valid for **10 years** (5 years for minors under 15). Non-extendable.
+  - Machine-readable zone identifies nationality of origin (e.g. `RUS`).
+  - **Not an EU passport**: Does not confer EU citizenship privileges or automatic third-country visa waivers.
+
+### B. Cestovní pas ČR (Czech National EU Passport - Act No. 329/1999 Sb.):
+- Issued **exclusively to citizens of the Czech Republic (*státní občan ČR*)**.
+- Cannot be obtained directly by virtue of holding *Trvalý pobyt*.
+- Requires naturalization via Granting of Czech Citizenship (*Udělení státního občanství ČR* - Act No. 186/2013 Sb.):
+  1. Minimum 5 years of continuous *Trvalý pobyt*.
+  2. Language (B1) and Czech Life & Institutions (*České reálie*) state integration exams (ÚJOP UK).
+  3. Clean tax, social, and customs history with zero public budget arrears (FÚ, ČSSZ, VZP) for the preceding 3 years.
+  4. Substantiation of lawful income sources and actual physical residence in the Czech Republic.
+
