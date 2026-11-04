@@ -1,0 +1,12 @@
+{
+  "github-sync": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "/AI/sync_github.sh",
+        "timeout": 45
+      }
+    ]
+  }
+}

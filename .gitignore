@@ -17,3 +17,6 @@ Thumbs.db
 api_keys*
 secrets*
 passwords*
+# Local multi-repo folder
+GitHub/
+sync.log
