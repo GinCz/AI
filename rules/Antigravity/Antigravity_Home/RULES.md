@@ -80,3 +80,13 @@
   - На директорию: `https://github.com/GinCz/<Repo>/tree/main/<Dir> ↗`
 - **Категорический запрет на `raw.githubusercontent.com` и `file:///` для GitHub:** Ссылка обязана открывать полноценный интерфейс GitHub с кнопкой редактирования («Edit this file»), а не сырой текст или локальный путь.
 - **Обязательность в каждом ответе:** При любых изменениях, коммитах или пушах в GitHub в ответе ВСЕГДА приводится прямая кликабельная ссылка на измененные файлы со стрелочкой `↗`.
+
+### 6. ЕЖЕНЕДЕЛЬНЫЙ АУДИТ ЗДОРОВЬЯ ЛОКАЛЬНОГО ANTIGRAVITY (WEEKLY MONDAY HEALTH AUDIT):
+- **Триггер:** Каждый первый понедельник (во время первого любого диалога недели, начиная с понедельника).
+- **Скрипт проверки:** `powershell -ExecutionPolicy Bypass -File "D:\AI\GitHub\Windows_scripts\Antigravity_Health_Check.ps1"`
+- **Чек-лист проверки и очистки:**
+  1. **Мертвые daemon-хабы (`%USERPROFILE%\.gemini\antigravity\daemon\hub_*.json`):** Проверка PID в каждом JSON-файле. Если процесс `language_server.exe` / `Antigravity.exe` не запущен — немедленное удаление stale JSON для предотвращения зависания сокетов (10–30 сек) при инициализации чатов.
+  2. **Осиротевшие блокировки сессий (`%USERPROFILE%\.gemini\antigravity\presence\*.lock`):** Удаление всех разблокированных lock-файлов от закрытых сессий с сохранением блокировки только текущего активного чата.
+  3. **Ротация crash-логов (`%USERPROFILE%\.gemini\antigravity\crashes\`):** Удаление устаревших дампов старше 7 дней.
+  4. **Watchdog фоновых процессов:** Проверка и снятие зависших процессов `powershell`, `git`, `ssh`.
+  5. **Фиксация телеметрии:** Запись даты и метрик в `C:\Users\USER\.gemini\antigravity\last_health_check.json`.
