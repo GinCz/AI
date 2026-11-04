@@ -227,8 +227,9 @@ D:\AI\ (на Linux: /root/.AI/)
 ### 1️⃣5️⃣ RULE 15: CLEAN TEXT FORMAT FOR MESSENGERS
 * Format technical instructions and summaries meant for mobile sharing (Telegram, WhatsApp) in clean text blocks with a copy button. Use standard hyphen lists (`- `) with newlines to ensure clean rendering across mobile clients.
 
-### 1️⃣6️⃣ RULE 16: STRICT VERSION INCREMENT MANDATE
-* Any modification to applications, bots, scripts, or release packages mandates a version bump (`v001` ➔ `v002`, `0.1.5` ➔ `0.1.6`).
+### 1️⃣6️⃣ RULE 16: STRICT VERSION INCREMENT MANDATE & ANDROID APK MEGA SYNC
+* Any modification or added feature to applications, bots, scripts, or release packages mandates a version bump (`v001` ➔ `v002`, `0.1.5` ➔ `0.1.6`, `versionCode += 1`).
+* **Android APK Mandatory MEGA Sync (`D:\MEGA\WIN-FLASH\ANDROID\GIN_APK`):** Any change or added feature in an Android project increments its version and produces a new `<AppName>_v<Version>.apk`. Every newly created APK MUST be copied to `D:\MEGA\WIN-FLASH\ANDROID\GIN_APK` via MEGA Cloud (`mega-put -c <apk> "MEGA/WIN-FLASH/ANDROID/GIN_APK/"`) and to Samba (`/storage/user/APK/`). In MEGA Cloud (`D:\MEGA\WIN-FLASH\ANDROID\GIN_APK`) and Samba, each of the 8 projects (`GIN-APP`, `GIN-Cinema`, `GIN-IP`, `GIN-Jarvis`, `GIN-Remote`, `GIN-TV`, `GIN-TV-Launcher`, `GIN-VPN`) MUST always retain strictly the **2 latest versions** (`v<PREV>` and `v<VER>`), automatically deleting the 3rd and older versions.
 * Synchronize version numbers across the codebase, UI signatures, manifests (`package.json`, `.syso`, `version.json`), and Git tags.
 
 ### 1️⃣7️⃣ RULE 17: DIRECT GITHUB WEB UI LINKS & MANDATORY EDIT-ENABLED REPO LINKS
