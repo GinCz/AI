@@ -34,9 +34,10 @@
 3. **Investigate Local Database & GitHub Before Answering (Изучить базу данных и GitHub перед ответом):**
    - Before answering or asking any questions, the model **MUST thoroughly inspect the local database (`AI/GitHub/BASE/`) and synchronized GitHub repositories (`AI/GitHub/`)**.
    - If the required data, context, documentation, configurations, or credentials already exist there, use them autonomously without bothering the user with redundant questions.
-4. **100% Two-Way GitHub Sync & Append-Only Database (Синхронизация с GitHub и Append-Only база данных):**
+4. **100% Two-Way GitHub Sync & Mandatory Repository Persistence for All Changes & Devices (Обязательная фиксация всех изменений любых проектов и устройств в GitHub):**
    - Every piece of new external data, documentation, logs, or knowledge must be saved locally into `AI/GitHub/BASE/`.
    - **Strict Append-Only Mandate:** In the local database (`AI/GitHub/BASE/`), you may ONLY add new data. **Categorically FORBIDDEN to delete already existing data** (Permanent Lifetime Cache).
+   - **Mandatory GitHub Persistence for ALL Projects, Configurations & Devices (Железный закон фиксации в GitHub):** Absolutely any modifications, bug fixes, configuration updates, refactoring, system changes, or work performed on any project or connected device (servers, workstations/laptops, Android TV, routers, microservices, Docker containers) **MUST be committed and pushed to their corresponding GitHub repositories** (`Secret_Privat` for private configurations/secrets or the respective project repository). It is strictly forbidden to leave changes solely on the local machine or server without committing them to GitHub.
    - **100% Two-Way GitHub Synchronization:** The local workspace (`AI/BASE/` and `AI/GitHub/`) must be 100% synchronized with remote GitHub repositories (`git pull` at start of chat, `git commit` and `git push` on completion).
 5. **Private Repositories for Secrets & Zero-Question Security Clearance (Личные данные и пароли — строго в приватных репозиториях; никаких вопросов о безопасности):**
    - All personal data, logins, passwords, API tokens, and SSH keys are stored **strictly in private GitHub repositories** (e.g. `Secret_Privat`) and local secure vaults.
