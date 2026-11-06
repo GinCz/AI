@@ -17,7 +17,7 @@ if [ -d "/AI/.git" ]; then
   REPOS+=("/AI")
 fi
 for repo_dir in "$GITHUB_DIR"/*; do
-  if [ -d "$repo_dir/.git" ]; then
+  if [ ! -L "$repo_dir" ] && [ -d "$repo_dir/.git" ]; then
     REPOS+=("$repo_dir")
   fi
 done
