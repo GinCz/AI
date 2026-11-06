@@ -152,3 +152,11 @@
   4. **Purge Stale Crash Dumps (`%USERPROFILE%\.gemini\antigravity\crashes\`):** Delete crash logs older than 7 days.
   5. **Watchdog Background Tasks:** Verify and kill orphan `powershell.exe`, `git.exe`, `ssh.exe` processes.
   6. **Telemetry Persistence:** Record completion status to `C:\Users\USER\.gemini\antigravity\last_health_check.json`.
+
+### 2️⃣7️⃣ RULE 27: ANTI-HANG BATCHING & RECORDING I/O BOTTLENECK MITIGATION
+* **Turnkey Batching Over Micro-Chaining:** Strictly FORBIDDEN to chain 5–15 serial tool calls for diffs, file reads, or status checks. Every multi-step workflow MUST be packaged into a single atomic script (PowerShell/Bash) that executes in 1–5 seconds and outputs only concise summaries.
+* **Transcript & SQLite Recording Overhead Mitigation:** Every tool call and output is written to Antigravity's internal SQLite database and `transcript.jsonl`. Long tool chains create write lock contention and 30–60s serialization pauses per step:
+  * Strict cap: **maximum 1 to 3 targeted tool calls per turn**.
+  * Suppress verbose output: use quiet flags (`/NFL /NDL /NJH /NJS` for robocopy, `--short` for git status).
+  * Never output giant dumps or diff entire multi-megabyte files.
+* **Deterministic Turn-Level Watchdog:** A single query or status request must complete in **<= 60 seconds**.

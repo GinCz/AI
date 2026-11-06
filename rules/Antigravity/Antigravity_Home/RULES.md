@@ -41,4 +41,6 @@
   All Windows batch files (`.bat`, `.cmd`) **MUST ALWAYS HAVE CRLF (`\r\n`) LINE ENDINGS**. Never save batch files with LF — Windows `cmd.exe` miscalculates line offsets on LF and breaks command parsing. Always run `unix2dos` or verify `\r\n`.
 * **No Premature Batch Code Surgery:**
   Never alter working batch logic unless an actual syntax/code bug inside the script has been proven. If the problem is environmental, state it clearly and provide a 1-click system fix.
+* **Anti-Hang Batching & Zero Recording Lag:**
+  Never execute serial micro-tool calls for diagnostics, status checking, or diffs. Every multi-step check or sync MUST run in a single atomic PowerShell script. Keep command outputs quiet and compact (`--short`, `/NFL /NDL /NJH /NJS`) to eliminate SQLite lock contention and transcript write latency.
 * **Zero Dangling Background Tasks:** Always verify 0 active background tasks before delivering final responses.
