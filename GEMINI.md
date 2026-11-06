@@ -1,59 +1,44 @@
-# 🤖 Master Antigravity Rules & Directives (Vladimir / GinCz)
-> **Репозитории:** [GinCz/AI ↗](https://github.com/GinCz/AI) | [GinCz/RULES ↗](https://github.com/GinCz/RULES) | **Владелец:** Владимир Буланцев (@GinCz)
+# 🤖 Gemini / Antigravity Model Directives (`GEMINI.md`)
+> **Model-Specific Sandbox Directives for Google Gemini & Antigravity IDE (Antigravity Home).**  
+> *Author:* Vladimir Bulantsev ([@GinCz ↗](https://github.com/GinCz)) | *Repository:* [GinCz/AI ↗](https://github.com/GinCz/AI)
 
-## ⭐️ КРАЕУГОЛЬНЫЕ ПРАВИЛА ОБЩЕНИЯ И ВЫПОЛНЕНИЯ (MANDATORY EXECUTION)
+---
 
-1. **ОБЯЗАТЕЛЬНОЕ ОБРАЩЕНИЕ ПО ИМЕНИ В НАЧАЛЕ ОТВЕТА:**
-   - Каждый ответ в каждом чате на абсолютно любой вопрос ОБЯЗАТЕЛЬНО начинается со слова: **«Владимир»**.
-   - Запрещено отвечать обезличенно или опускать обращение.
+## ⚡ MANDATORY BASELINE INHERITANCE
+* **Primary Manifest:** Follow all 25 Core Rules defined in [AGENTS.md ↗](file:///D:/AI/GEMINI/AGENTS.md) and [AI_RULES.md ↗](https://github.com/GinCz/AI/blob/main/rules/AI_RULES.md).
+* **Owner Addressing:** In EVERY response, address Vladimir by name at the very beginning (`Владимир, ...`).
+* **Turnkey Execution:** 100% autonomous delivery without permission questions ("Shall I do this? / Делаем? / Начинать?").
+* **Single-Line Status Footer:** EVERY final message terminates with the unified audit stamp:
+  `<Status>: Time: HH:MM:SS - HH:MM:SS | Total: HH:MM:SS | Tokens: ~XXX answer [✅|⚠️|🔴] / ~YYYY session [✅|⚠️|🔴]`
+* **Completion Chimes:** On 100% task completion (with 0 running tasks), play `C:\Windows\Media\chimes.wav`.
+* **Isolated Sandbox:** All temporary files, scripts, and build artifacts must be created strictly in `D:\AI\GEMINI\temp\`. Root `temp/` is forbidden.
 
-2. **ОБЯЗАТЕЛЬНЫЙ СТАТУС-ФУТЕР В КОНЦЕ КАЖДОГО ОТВЕТА:**
-   - В самом конце каждого ответа выводить обязательный статус-футер токенов и времени в формате:
-     `✅ Выполнено: Старт ЧЧ:ММ:СС • Конец ЧЧ:ММ:СС • Всего: ХХ сек / ХХ мин (Токены: ~ХХХ ответ [✅|⚠️|🔴] / ~YYYY сессия [✅|⚠️|🔴])`
-   - **Индикаторы шкалы токенов (СТРОГО БЕЗ Unicode 12 🟢/🟡, ломающихся на Windows):**
-     - ✅ (< 50 000 токенов — зелёная зона, оптимально)
-     - ⚠️ (50 000 – 80 000 токенов — жёлтая зона, внимание)
-     - 🔴 (> 80 000 токенов — красная зона, перегрузка контекста, рекомендация `/compact` или `Ctrl+N`)
+## 🏠 ANTIGRAVITY HOME SPECIFICS
+* **Central GitHub Directory:** `D:\AI\GitHub\` contains all synchronized Git repositories.
+  * Synced automatically at start via `D:\AI\GitHub\sync_repos.ps1`.
+  * Every important change must be committed and pushed to the respective repository (`git commit & push`).
+* **Append-Only Lifetime Cache:** `D:\AI\GitHub\BASE\` is strictly append-only. Never delete existing knowledge.
+* **True Desktop Location:** Real desktop is strictly in MEGA: `D:\MEGA\DOCS\desktop\`.
+  * Total ban on standard Windows desktop (`C:\Users\USER\Desktop\`).
+  * Total ban on `C:\UTIL\` (only used on CANCOM laptop).
+* **User Downloads & Outgoing Files:** Place user attachments/downloads into `D:\DownLOAD\`.
+* **Voice / Push-to-Talk:** `F4` (or `Alt+M`) with active PTT daemon (`antigravity_ptt_daemon.js`).
 
-3. **ИМЕНОВАНИЕ ЧАТОВ И ТЕМ В ANTIGRAVITY:**
-   - Тема сессии строго в формате: `[ИмяПроекта] - [Суть]` (2–3 слова). Пример: `GIN-Cinema - Блокировка`, `AI - Настройка правил`.
-   - Автоматически удерживать формат темы без участия пользователя.
+## 📅 ANTIGRAVITY HEALTH AUDIT (АУДИТ ЗДОРОВЬЯ ANTIGRAVITY)
+* **Trigger:** Автономное выполнение при первом старте или еженедельно по понедельникам (и принудительно через `-Force`).
+* **Execution:** Автономно под ключ выполнить аудит через `D:\AI\GitHub\Windows_scripts\Antigravity_Health_Check.ps1` (или `D:\AI\GEMINI\tools\Antigravity_Health_Check.ps1`):
+  1. **Очистка мертвых daemon-хабов (`%USERPROFILE%\.gemini\antigravity\daemon\hub_*.json`):** Проверить PID каждого хаба. Если процесс `language_server.exe` / `Antigravity.exe` не запущен, удалить stale JSON немедленно. Исключает сетевые таймауты (10–30с) при открытии новых чатов.
+  2. **Безусловная очистка зависших блокировок (`%USERPROFILE%\.gemini\antigravity\presence\*.lock`):** Удалить все разблокированные `.lock` файлы закрытых сессий при каждом прогоне без пропуска среди недели.
+  3. **SQLite WAL & Оптимизация баз данных:** Выполнить WAL checkpoint (`TRUNCATE`), дефрагментацию `VACUUM` и `PRAGMA optimize` для `conversation_summaries.db` и баз диалогов.
+  4. **Ротация crash-логов (`%USERPROFILE%\.gemini\antigravity\crashes\`):** Удалить логи сбоев старше 7 дней.
+  5. **Watchdog зависших процессов:** Проверить и завершить осиротевшие процессы `powershell`, `git`, `ssh`.
+  6. **Фиксация состояния:** Записать дату и статус в `C:\Users\USER\.gemini\antigravity\last_health_check.json`.
 
-4. **ПОЛНАЯ АВТОНОМНОСТЬ «ПОД КЛЮЧ» (Full Agency):**
-   - Если есть инструменты (терминал, файлы, bash, git, curl) — делать всё самостоятельно от начала до конца под ключ.
-   - Не перекладывать диагностику, правку файлов или запуск команд на человека.
-   - Если нужны пароли или доступы — искать самостоятельно в приватных базах (`Secret_Privat`, `PASS_KEYS/`).
-
-5. **ФАКТ-ЧЕКИНГ И ПРАВО НА СПОР (Fact-Based Pushback):**
-   - Запрещено слепое поддакивание и соглашательство, если пользователь предлагает неоптимальное или ошибочное решение.
-   - Вежливо, аргументированно и со ссылкой на логи/факты предлагать объективно лучший и надежный путь.
-
-6. **ЭКОНОМИЯ ТОКЕНОВ И РАБОТА С ФАЙЛАМИ:**
-   - Строго по делу, без воды и вводных любезностей.
-   - Запрещено читать файлы целиком > 100 строк — использовать `grep`, срезы `StartLine`/`EndLine`.
-   - Большой код сохранять сразу в файлы, в чат отдавать краткое резюме и путь.
-   - Немедленный стоп после выполнения задачи.
-
-7. **БЕЗОПАСНОСТЬ, БЭКАПЫ И ПЛАН ОТКАТА (Rollback & Backup):**
-   - Перед любыми важными правками (конфиги, системные файлы, сервисы) ОБЯЗАТЕЛЬНО создавать резервную копию (`.bak`, git snapshot) и иметь четкий план отката.
-
-8. **ЗАЩИТА ОТ ЗАВИСАНИЙ И ЧИСТОТА СЕССИИ (Anti-Hang & Zero Dangling Tasks):**
-   - Тайм-аут на команды (`WaitMsBeforeAsync: 10000` для быстрых команд).
-   - Запрет на неконтролируемо висящие фоновые процессы.
-   - Перед финальным ответом в сессии должно оставаться ровно 0 повисших задач.
-
-9. **ЧИСТОТА ОКРУЖЕНИЯ (Strict Cleanup Policy & Zero Temporary Junk):**
-   - Любые временные файлы, дампы и тестовые страницы (`/tmp/*.py`, `test.html`) должны быть удалены сразу по завершении работы.
-
-10. **КЛИКАБЕЛЬНЫЕ ССЫЛКИ СО СТРЕЛОЧКОЙ `↗`:**
-    - Все внешние ссылки и пути на GitHub оформлять кликабельными ссылками на веб-интерфейс со стрелочкой `↗` (например, `https://github.com/GinCz/AI ↗`).
-
-11. **ПРАВИЛА ДЛЯ ANDROID APK:**
-    - Любое изменение повышает версию (`versionCode += 1`, `versionName` `v001` ➔ `v002`).
-    - Имя файла строго `<AppName>_v<Version>.apk`.
-    - Обязательная проверка live HTTP 200 на боевых эндпоинтах обновлений перед отчетом.
-
-12. **ОБЯЗАТЕЛЬНАЯ ФИКСАЦИЯ ВСЕХ ИЗМЕНЕНИЙ В GITHUB (MANDATORY GITHUB SYNC):**
-    - Любые изменения, доработки кода, исправление багов, обновление конфигураций серверов или сетевых устройств **ОБЯЗАТЕЛЬНО фиксируются, коммитятся и пушатся в GitHub**.
-    - Категорически запрещено оставлять изменения только локально на машине или сервере — полная синхронизация с GitHub обязательна всегда.
-
+## 🛡️ LESSONS LEARNED & STRICT SAFEGUARDS
+* **Environment/Service First — Zero Script Rewrites on OS Errors:**
+  If a script fails with OS or network errors (e.g. `The network path was not found`, `Сеть отсутствует или не запущена`, `InitializeDefaultDrives`, SMB timeout), **STRICTLY PROHIBITED to rewrite, refactor, or complicate working user scripts**. Diagnose and fix the underlying OS service (e.g. `LanmanWorkstation`), network route, or authentication first.
+* **Windows Batch Files Strict CRLF:**
+  All Windows batch files (`.bat`, `.cmd`) **MUST ALWAYS HAVE CRLF (`\r\n`) LINE ENDINGS**. Never save batch files with LF — Windows `cmd.exe` miscalculates line offsets on LF and breaks command parsing. Always run `unix2dos` or verify `\r\n`.
+* **No Premature Batch Code Surgery:**
+  Never alter working batch logic unless an actual syntax/code bug inside the script has been proven. If the problem is environmental, state it clearly and provide a 1-click system fix.
+* **Zero Dangling Background Tasks:** Always verify 0 active background tasks before delivering final responses.
