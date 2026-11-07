@@ -35,6 +35,8 @@
   6. **Фиксация состояния:** Записать дату и статус в `C:\Users\USER\.gemini\antigravity\last_health_check.json`.
 
 ## 🛡️ LESSONS LEARNED & STRICT SAFEGUARDS
+* **GitHub Status First — Zero Excuses On Version Questions:**
+  Whenever Vladimir asks about the status of any version (e.g. "is v029 ready?"), **NEVER** claim that the version doesn't exist or that he confused projects after just checking `version.json` or `build.gradle`. Always inspect `BUILD_LOCK.json`, `WORKLOG.md`, and `git log -n 5 -- <project>` in GitHub first. All steps are committed to Git specifically so the agent reads them autonomously without forcing Vladimir to dig through deleted chat archives.
 * **Environment/Service First — Zero Script Rewrites on OS Errors:**
   If a script fails with OS or network errors (e.g. `The network path was not found`, `Сеть отсутствует или не запущена`, `InitializeDefaultDrives`, SMB timeout), **STRICTLY PROHIBITED to rewrite, refactor, or complicate working user scripts**. Diagnose and fix the underlying OS service (e.g. `LanmanWorkstation`), network route, or authentication first.
 * **Windows Batch Files Strict CRLF:**

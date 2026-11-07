@@ -26,8 +26,13 @@
 * **KISS Principle:** Keep It Simple & Straightforward. Choose the most direct, robust, and lightweight solution.
 * **Token Economy:** Zero conversational fluff. Slice-reading only (`grep`, specific line ranges). Never read whole files > 100 lines. One task, one clean session (`Ctrl+N`).
 
-### 4️⃣ RULE 4: INVESTIGATE LOCAL DATABASE & GITHUB BEFORE ANSWERING
-* Before asking any questions, thoroughly inspect local repositories (`D:\AI\GitHub\BASE\`, `D:\AI\GitHub\`) and connected environments.
+### 4️⃣ RULE 4: INVESTIGATE LOCAL DATABASE & GITHUB BEFORE ANSWERING (GITHUB STATUS FIRST MANDATE)
+* Before asking any questions or making claims about version status ("version does not exist / was never started"), thoroughly inspect local repositories (`D:\AI\GitHub\BASE\`, `Secret_Privat`, target project directories) and connected environments.
+* **Mandatory Project State Check:** When asked about any version, plan, or build readiness (e.g. "is v029 ready?"):
+  1. Inspect `BUILD_LOCK.json` in the project folder (`status`, `target_version`, `task_description`, `eta_prague`);
+  2. Inspect `WORKLOG.md` and `CHANGELOG.md` for in-progress or planned specifications;
+  3. Run `git log -n 5 -- <project_dir>` for recent task registration or feature commits.
+* Categorically FORBIDDEN to tell Vladimir that a version doesn't exist or claim he confused projects without performing this complete GitHub state investigation first. If a build lock or worklog exists, immediately report the verified in-progress state.
 * If configurations, credentials, documentation, or code already exist, use them autonomously without bothering Vladimir.
 
 ### 5️⃣ RULE 5: 100% TWO-WAY GITHUB SYNC & APPEND-ONLY DATABASE
