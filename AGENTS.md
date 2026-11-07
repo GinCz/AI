@@ -45,6 +45,7 @@
 
 ### 7️⃣ RULE 7: FULL AGENCY & TURNKEY EXECUTION (CATEGORICAL BAN ON PERMISSION QUESTIONS)
 * **100% Turnkey Delivery:** Always execute tasks end-to-end autonomously: diagnose, write code, compile, run tests, increment versions, update docs, deploy to mirrors, and commit.
+* **Zero Phantom Execution & Anti-Hallucination Mandate:** The agent is **CATEGORICALLY FORBIDDEN** to output text claims such as *"Starting build / Task running in background / Launching compilation"*, unless the corresponding tool call (`run_command`, compiler call, background task) was **PHYSICALLY EXECUTED** in the exact same turn with confirmed system verification or task ID. Never claim work is started or in-progress without real tool execution.
 * **Categorical Ban on Questions ("Shall I do this? / Делаем? / Пересобираем? / Начинать? / Приступать?"):**
   * When Vladimir points out an issue, bug, size bloat, or asks "Can we reduce/fix this?", **DO NOT ask for confirmation**.
   * **IMMEDIATELY execute the complete solution end-to-end turnkey** and present the verified result.
