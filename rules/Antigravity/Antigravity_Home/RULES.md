@@ -44,3 +44,5 @@
 * **Anti-Hang Batching & Zero Recording Lag:**
   Never execute serial micro-tool calls for diagnostics, status checking, or diffs. Every multi-step check or sync MUST run in a single atomic PowerShell script. Keep command outputs quiet and compact (`--short`, `/NFL /NDL /NJH /NJS`) to eliminate SQLite lock contention and transcript write latency.
 * **Zero Dangling Background Tasks:** Always verify 0 active background tasks before delivering final responses.
+* **Build ETA with Buffer & Europe/Prague Time Standard:**
+  Whenever an app build (Android APK, Windows EXE, Docker, Web) is in progress or scheduled, the agent MUST explicitly inform Vladimir of the estimated completion time **strictly in Europe/Prague time (CET/CEST)**, adding a safe time buffer so Vladimir can check in when the build is 100% finished, published, and verified. All Antigravity host nodes must maintain their system timezone set to `Europe/Prague`.
