@@ -51,9 +51,29 @@ for repo_dir in "${REPOS[@]}"; do
   fi
 done
 
-# Keep .agents/skills in sync with skills (only directories)
-if [ -d "/AI/skills" ] && [ -d "/AI/.agents/skills" ]; then
+# Keep .agents/skills and ~/.gemini/config/skills in sync with skills (only directories)
+if [ -d "/AI/GitHub/BASE/SKILLS" ]; then
+  mkdir -p /AI/.agents/skills /root/.gemini/config/skills
+  find /AI/GitHub/BASE/SKILLS -mindepth 1 -maxdepth 1 -type d ! -name PROMPTS -exec cp -ru {} /AI/.agents/skills/ \; 2>/dev/null || true
+  find /AI/GitHub/BASE/SKILLS -mindepth 1 -maxdepth 1 -type d ! -name PROMPTS -exec cp -ru {} /root/.gemini/config/skills/ \; 2>/dev/null || true
+elif [ -d "/AI/skills" ] && [ -d "/AI/.agents/skills" ]; then
   find /AI/skills -mindepth 1 -maxdepth 1 -type d ! -name PROMPTS -exec cp -ru {} /AI/.agents/skills/ \; 2>/dev/null || true
+fi
+
+# Keep rules synchronized across .agents and ~/.gemini/config
+if [ -d "/AI/GitHub/AI/rules" ]; then
+  mkdir -p /root/.gemini/config/rules /AI/.agents/rules
+  cp -ru /AI/GitHub/AI/rules/* /root/.gemini/config/rules/ 2>/dev/null || true
+  cp -ru /AI/GitHub/AI/rules/* /AI/.agents/rules/ 2>/dev/null || true
+  if [ -f "/AI/GitHub/AI/rules/Antigravity/RULES.md" ]; then
+    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /root/.gemini/config/RULES.md 2>/dev/null || true
+    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /root/.gemini/config/GEMINI.md 2>/dev/null || true
+    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /AI/RULES.md 2>/dev/null || true
+    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /AI/GEMINI.md 2>/dev/null || true
+  fi
+  if [ -f "/AI/AGENTS.md" ]; then
+    cp -u /AI/AGENTS.md /root/.gemini/config/AGENTS.md 2>/dev/null || true
+  fi
 fi
 
 echo "[$DATE_STR] Synchronization complete: $synced_count checked, $updated_count updated, $error_count errors" >> "$LOG_FILE"
