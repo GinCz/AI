@@ -45,27 +45,32 @@ python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejection
 ### 1. Multi-Lingual Rejection Matrix
 
 #### 🇨🇿 Czech Patterns (High-Frequency: Jobs.cz, Teamio, Direct HR)
-- `upřednostnili (jsme )?(jiné|jiného|uchazeče|uchazečů)`
+- `upřednostnili (jsme )?(jiné|jiného|ostatní|uchazeče|uchazečů|kandidát)`
 - `dali (jsme )?přednost (jiným|jinému|ostatním)`
-- `vybrali (jsme )?(jiného|jiné) kandidát`
+- `(vybrali|našli) (jsme )?(jiného|jiné) (kandidát|uchazeč)`
 - `rozhodli (jsme se )?pokračovat s jiným`
-- `v tuto chvíli (pro vás )?nemáme vhodnou pozici`
-- `s politováním oznámit` / `litujeme`
-- `nepostupujete do (dalšího|užšího)` / `do užšího výběru upřednostnili`
-- `nebudeme pokračovat` / `nebudeme vás zvát`
-- `pozice byla obsazena`
-- `bohužel` in proximity to `(kandidát|uchazeč|pozic|vybrali|upřednostnili|nemáme|rozhodli|nepostup)`
+- `nemáme (v tuto chvíli )?(pro vás )?(jinou )?(vhodnou )?pozici` (*«V tuto chvíli pro Vás nemáme jinou vhodnou pozici»*)
+- `(s politováním|s lítostí) (vám )?(musíme |musím )?(oznámit|sdělit)` / `litujeme`
+- `bohužel (vám )?(musím|musíme) (oznámit|sdělit)` (*«Vám bohužel musím oznámit»*)
+- `nepostupujete do (dalšího|užšího)`
+- `(do )?(užšího|dalšího) (výběru|kola) .*(nezařadili|nepostupujete|upřednostnili)` (*«do užšího výběru nezařadili»*)
+- `profil do užšího výběru nezařadili`
+- `nebudeme (vás )?(zvát|pokračovat)`
+- `pozice byla (obsazena|uzavřena)`
+- `bohužel` in proximity (<= 100 chars) to `(kandidát|uchazeč|pozic|vybrali|upřednostnili|nemáme|rozhodli|nepostup|nezařadili|výběr)`
 
 #### 🇬🇧 English Patterns (LinkedIn, International ATS: Greenhouse, Lever, SAP)
-- `decided to move forward with (other|another) candidate`
-- `pursue (other|another) candidate`
-- `will not be moving forward` / `not moving forward`
+- `decided to move forward with (other|another|different)`
+- `(pursue|pursuing) (other|another) candidate`
+- `(found|selected|chosen) (other|another) candidate`
+- `will not be moving forward` / `not moving forward (with your application)?`
 - `decided not to proceed` / `will not be proceeding`
-- `regret to inform`
-- `not selected for this (role|position)`
-- `position has been filled`
-- `after careful consideration` + `(other candidates|not selected|decided not)`
-- `unfortunately` + `(candidate|move forward|position|role|profile|proceed)`
+- `regret to inform you`
+- `not selected for this (role|position|interview)`
+- `(role|position) has been filled`
+- `after careful consideration` + `(other candidates|not selected|decided not|another candidate)`
+- `unfortunately` in proximity (<= 100 chars) to `(candidate|move forward|position|role|profile|proceed|not selected|pursue|another)`
+- `do not have any (other )?(open|suitable) (roles|positions)`
 
 #### 🇩🇪 German Patterns
 - `anderen kandidaten den vorzug`
@@ -84,21 +89,23 @@ python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejection
 
 The cleaner **MUST NEVER** touch or delete the following categories:
 
-1. **Application Confirmations (Подтверждения приёма резюме):**
+1. **Protected Senders Whitelist (Outgoing & Family):**
+   - Outgoing messages from Vladimir Bulantsev (`gin.vladimir@gmail.com`, `gin@volny.cz`) or family (`elena.bulanceva@gmail.com`).
+2. **Active Recruiter Outreach & Interview / Proposal Discussions:**
+   - *«Pozvánka na pohovor»*, interview scheduling links, proposal discussions (*«Interview/queries to proposal required»*, *«rádi bychom vás pozvali»*, *«setkat se osobně»*).
+   - LinkedIn InMail recruiter messages (*«Hledáme člověka, který...»*).
+3. **Application Confirmations in Process (Подтверждения приёма резюме):**
    - *«Zařadili jsme Vás do výběrového řízení»*
-   - *«Děkujeme za projevení zájmu o spolupráci»*
+   - *«Děkujeme za projevení zájmu o spolupráci ... budeme Vás kontaktovat»*
    - *«Your CV is on its way to us»*
    - *«Potvrzení o přijetí odpovědi»*
    - *«Už o vás víme»*
    - *«We received your application»*
-2. **Active Recruiter Outreach & Interview Invitations:**
-   - *«Pozvánka na pohovor»*, interview scheduling links.
-   - LinkedIn InMail recruiter messages (*«Hledáme člověka, který...»*).
-3. **Critical Non-Job Emails:**
-   - Bank notifications (Fio, Sberbank).
-   - Utility and telecom bills (ČEZ, Vodafone, Innogy).
-   - Domain and hosting notifications (NIC.cz, Beget, FastVPS).
-   - Government and legal portals (DIS+, ČSSZ, Datová schránka).
+4. **Critical Non-Job Emails:**
+   - Bank notifications (Fio, ČS, KB, AirBank, Raiffeisen).
+   - Utility and telecom bills (ČEZ, Vodafone, Innogy, O2, T-Mobile).
+   - Domain and hosting notifications (NIC.cz, Beget, FastVPS, Hetzner, AWS, Oracle).
+   - Government and legal portals (DIS+, ČSSZ, Datová schránka, VZP, OZP).
 
 ---
 
