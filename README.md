@@ -105,6 +105,7 @@
 >       8. **All Skills Combined (Apply all 59 production skills at once)**
 >     - The user responds with the corresponding numbers (e.g., `1, 3, 6` or `8` to apply all).
 >     - **What "Applying Skills" Means:** Applying selected skills means the model **MUST write and persist them to its local working directory (`AI/BASE/skills/` or local model config) AND ensure 100% two-way synchronization with the remote GitHub repository**.
+>     - **Zero Eager Skill Loading in Chats (Lazy On-Demand Activation):** When starting each new chat session or handling prompts, the model **MUST NOT** load or ingest skills into context by default. Skills are read and activated **strictly on-demand** only when the user's specific request requires domain expertise (e.g. medicine, law, taxes, EDR security), preserving tokens and turn execution speed.
 > 11. **Universal Task Execution Timeouts, Watchdog & Anti-Hang Policy (Контроль времени выполнения задач и защита от зависаний):**
 >     - Every background command, subagent, process, or script must have an estimated execution duration plus a reasonable, strictly bounded safety buffer for latency and system load.
 >     - **Categorical Ban on Hanging Tasks:** Under NO circumstances may any task hang unattended for 10–15 minutes, 30 minutes, or an hour.

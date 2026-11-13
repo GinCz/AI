@@ -238,8 +238,16 @@ D:\AI\ (на Linux: /root/.AI/)
 * **Strict Prohibition on `raw.githubusercontent.com` and Local `file:///` for Repo Files:** Never provide `raw.githubusercontent.com` links or local `file:///` URIs when referencing GitHub files or synchronization results.
 * **Mandatory Clickable Links on Any Change:** Every important response that introduces commits, pushes, or file modifications in any GitHub repository MUST include direct clickable markdown links with an arrow `↗` leading to the modified GitHub files and repository.
 
-### 1️⃣8️⃣ RULE 18: INTERACTIVE DOMAIN SKILLS ONBOARDING & SELECTION (`skills/`)
-* **Interactive Pre-Activation Requirement:** Before adopting and executing skills, the agent **MUST prompt the user with a numbered list of all core skill categories** available in the repository.
+### 1️⃣8️⃣ RULE 18: INTERACTIVE DOMAIN SKILLS ONBOARDING & ON-DEMAND LOADING (`skills/`)
+* **Strict Ban on Blanket / Eager Loading (Zero Eager Loading in Chats):**
+  - The AI agent **MUST NOT** load, parse, or inject skill files (`SKILL.md`) into context upon starting a new chat or indiscriminately across turns.
+  - All 59+ specialized skills reside passively on local storage (`.agents/skills/` / `skills/`) as on-disk documentation.
+* **Strict On-Demand Loading Per Request:**
+  - The model loads and reads a specific `SKILL.md` **only when the user's specific request directly touches that particular domain** (e.g., medical questions ➔ medical skill; tax questions ➔ Czech/EU/RU tax skill; network hardware ➔ network firewall skill).
+  - If the prompt is a general engineering question, code bugfix, shell script, build execution, or Git sync, **NO skill files are loaded**.
+* **Token Economy & Latency Preservation:**
+  - Blanket skill loading wastes tens of thousands of context window tokens and adds seconds to minutes of turn latency. Strictly avoid this by lazy-loading only the required skill when triggered.
+* **Interactive Pre-Activation Requirement (Initial Setup):** Before adopting and executing skills on first onboarding, the agent **MUST prompt the user with a numbered list of all core skill categories** available in the repository.
 * **Numbered Categories for User Selection:**
   1. **Legal, Litigation & Compliance** (Czech corporate & civil law, EU litigation & single market, Russian law, international contracts, white-collar crime);
   2. **Accounting, Taxation, ERP & Crypto** (Czech taxes, EU VAT, Russian accounting, Stormware POHODA, ISDS, crypto-asset taxation);

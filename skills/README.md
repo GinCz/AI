@@ -8,6 +8,10 @@
 
 ## 🤖 1-Click Onboarding Instruction for Any AI Agent
 
+> [!IMPORTANT]
+> **Strict On-Demand Loading (Zero Eager Ingestion in Chats):**  
+> AI agents **DO NOT** load or read all `SKILL.md` files upon every new chat session. Skills are passive on-disk documentation and must be loaded **strictly on-demand** only when a user's prompt directly involves that specific domain (e.g. medicine, legal, taxes, security). This preserves context tokens and prevents execution delays.
+
 To bootstrap any AI engine (ChatGPT, Claude, Cursor, Antigravity, DeepSeek) with all 59 specialized domain skills, provide this single prompt:
 
 ```text

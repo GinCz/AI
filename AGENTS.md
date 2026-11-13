@@ -25,6 +25,7 @@
 ### 3️⃣ RULE 3: MAXIMUM SIMPLICITY & TOKEN ECONOMY FORMULA
 * **KISS Principle:** Keep It Simple & Straightforward. Choose the most direct, robust, and lightweight solution.
 * **Token Economy:** Zero conversational fluff. Slice-reading only (`grep`, specific line ranges). Never read whole files > 100 lines. One task, one clean session (`Ctrl+N`).
+* **Zero Eager Skill Preloading:** Never ingest or scan skills on chat startup; load skills strictly on-demand when explicitly triggered by user domain requests (see Rule 18).
 
 ### 4️⃣ RULE 4: INVESTIGATE LOCAL DATABASE & GITHUB BEFORE ANSWERING (GITHUB STATUS FIRST MANDATE)
 * Before asking any questions or making claims about version status ("version does not exist / was never started"), thoroughly inspect local repositories (`D:\AI\GitHub\BASE\`, `Secret_Privat`, target project directories) and connected environments.
@@ -105,8 +106,11 @@
 * Every GitHub link must point to the standard Web UI with edit button access and end with an arrow: `[Resource Name ↗](https://github.com/<owner>/<repo>/blob/main/<path>)`.
 * Categorical ban on raw URLs (`raw.githubusercontent.com`) and local `file:///` links for GitHub assets.
 
-### 1️⃣8️⃣ RULE 18: INTERACTIVE DOMAIN SKILLS ONBOARDING (`skills/`)
-* On first onboarding, present domain skill categories 1–8 for user selection before activating skills into working directories.
+### 1️⃣8️⃣ RULE 18: ON-DEMAND DOMAIN SKILLS ACTIVATION & NO EAGER LOADING (`skills/`)
+* **Strict Ban on Blanket / Eager Loading (Zero Eager Loading in Chats):** The agent **MUST NOT** load, read, or inject domain skill files (`SKILL.md`) into context upon starting every new chat session. All skills remain passive on-disk documentation.
+* **Strict On-Demand Triggering Per Request:** The agent loads and reads a specific `SKILL.md` **exclusively when Vladimir's immediate prompt directly touches that specific domain** (e.g. clinical medicine, legal statutes, tax regimes, EDR security, network firewalls, Meta Graph API, Flatsome).
+* **Token Economy & Time Preservation:** General technical inquiries, script writing, bug fixing, bash commands, system diagnostics, and Git synchronization require **ZERO skill loading**. Never waste tokens or execution time reading unrelated skills.
+* **Onboarding Selection:** On initial repository onboarding, present domain skill categories 1–8 for user selection before syncing skill folders.
 
 ### 1️⃣9️⃣ RULE 19: UNIVERSAL TIMEOUTS, WATCHDOG & STRICT ANTI-HANG POLICY
 * **Turn-Level Time Budget & Tool-Chain Ceiling:**
