@@ -48,6 +48,9 @@ python3 /root/.AI/github/AI/skills/gmail-job-cleaner/scripts/clean_job_rejection
 - `upřednostnili (jsme )?(jiné|jiného|ostatní|uchazeče|uchazečů|kandidát)`
 - `dali (jsme )?přednost (jiným|jinému|ostatním)`
 - `(vybrali|našli) (jsme )?(jiného|jiné) (kandidát|uchazeč)`
+- `(do )?(dalšího|druhého|třetího|užšího) kola (výběrového řízení |výběru )?(jsme )?(vybrali|vybrat) (jiného )?(kandidát|uchazeč)` (*«jsme do dalšího kola výběrového řízení vybrali kandidáta...»*)
+- `vybrali (jsme )?kandidáta, který .*(odpovídal|odpovídá)`
+- `požadavkům odpovídal o něco přesněji` / `(lépe|více|přesněji) odpovídá (našim )?požadavkům`
 - `rozhodli (jsme se )?pokračovat s jiným`
 - `nemáme (v tuto chvíli )?(pro vás )?(jinou )?(vhodnou )?pozici` (*«V tuto chvíli pro Vás nemáme jinou vhodnou pozici»*)
 - `(s politováním|s lítostí) (vám )?(musíme |musím )?(oznámit|sdělit)` / `litujeme`
