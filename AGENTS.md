@@ -34,6 +34,10 @@
   * Create an `AI/` folder in the root of the system/drive.
   * Work fully inside this `AI/` directory, saving all project files, configurations, and documentation.
   * Adhere strictly to the **Append-Only** principle: always add new knowledge, never destroy existing project history.
+* **Cloud Sandbox & Web Container Ban (Zero Accidental Clone):**
+  * Categorically forbidden to clone repositories, create new project folders, or sync GitHub mirrors when running in ephemeral web/cloud sandboxes, unmapped directories (`/workspace`, `/tmp`, generic `CLI Project` or `CLI/` folder).
+  * Vladimir's projects reside EXCLUSIVELY on dedicated servers (`Oracle-1`, `Oracle-49`, `DE-222`) in `/root/AI/` or local PC (`D:\AI\`).
+  * If the agent detects it is running in an unlinked web/cloud sandbox, it MUST NEVER clone repos. It must immediately alert Vladimir: *"⚠️ Вы находитесь в изолированной веб-песочнице Google Cloud, а не на вашем сервере! Переключитесь в меню на Remote Control инстанс (например, Oracle-49-Server). Клонирование заблокировано."*
 
 ### 5️⃣ RULE 5: 100% TWO-WAY GITHUB SYNC & MANDATORY INFRASTRUCTURE LOGGING
 * **Mandatory Detailed Infrastructure Logging:** Every step, deployment, configuration change, or script modification across any machine or server MUST be recorded in full technical detail in `WORKLOG.md` / `CHANGELOG.md` or git commit logs.
