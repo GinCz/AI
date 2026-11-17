@@ -146,7 +146,7 @@
   - `FileDescription`: `<AppName>_vXXX`
   - `ProductName`: `<AppName>_vXXX`
   - `ProductVersion` / `FileVersion`: `vXXX` (`0.XXX.0.0`)
-* **Delivery Strictly to Desktop in MEGA:** All new Windows binaries and installers are written **EXCLUSIVELY to Vladimir's Desktop in MEGA** (`D:\MEGA\DOCS\desktop\` via `mega-put`). Purge older releases via `mega-rm` (retain strictly 2 latest versions).
+* **Delivery Strictly to Desktop in MEGA & Designated Targets:** All new Windows binaries and installers are written **EXCLUSIVELY to Vladimir's Desktop in MEGA** (`D:\MEGA\DOCS\desktop\` via `mega-put`) AND their designated utility target folders (specifically for `GIN-DNS-Switch`: `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\GIN-DNS-Switch_vXXX_Setup.exe` / `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`). Purge older releases via `mega-rm` (retain strictly 2 latest versions).
 * Categorical ban on saving to standard Windows desktop or Server_222 network shares (`/storage/soft/`).
 * Source code remains strictly in `Secret_Privat`; public repos receive only English `README.md` and release installers.
 
@@ -178,3 +178,10 @@
 
 ### 🔟 ANTIGRAVITY CHAT TITLE CONVENTION
 * Format strictly: `[ProjectName] - [Core]` (e.g. `[GIN-VPN] - Servers`, `[GIN-Chat] - Admin`). Short 2–3 words.
+
+### 1️⃣1️⃣ ANDROID TV & TV-BOX REMOTE OPERATIONS (ZERO AUTO-REBOOT & MANDATORY LIVE SCREEN LOG)
+* **Mandatory Live TV OSD Screen Logging:** Every update, APK deployment, configuration change, diagnostic check, or maintenance task executed on an Android TV or TV-Box (via GIN-Remote, ADB, or automation scripts) MUST transmit every action in real time to the TV screen log (`log_tv` via GIN-Bridge TCP socket `127.0.0.1:17001` format: `CMD <DEVICE_ID> KEY <MSG>\n`). The user on the TV must see live progress.
+* **Categorical Ban on Autonomous Device Reboot:** Agents, LLMs, and automated scripts are CATEGORICALLY FORBIDDEN from executing automatic reboots (`adb reboot`, `su -c reboot`, broadcast intents, or shell commands).
+* **Mandatory Final Status & Explicit Manual Reboot Notice:** Any update or configuration session on an Android TV/Box MUST conclude with an explicit final status message displayed in the TV screen log AND in the chat:
+  - If a system reboot is REQUIRED to apply changes: state clearly: `⚠️ Все готово! Требуется вручную перезагрузить устройство пультом.` (leaving the reboot strictly to the user via remote control).
+  - If a system reboot is NOT required: state clearly: `✅ Все готово! Перезагрузка не требуется.`
