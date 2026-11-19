@@ -1,3 +1,12 @@
+## [2026-11-19] RustDesk Web Admin (rd.gincz.com): Кнопка полного отключения категорий ("Одним списком")
+- **Контекст:** По запросу Владимира в панель управления [rd.gincz.com ↗](https://rd.gincz.com/) добавлен переключатель режима отображения: разделение компьютеров по папкам-категориям либо единый сплошной список всех компьютеров без группировки.
+- **Выполненные работы:**
+  1. **Интерфейс режимов (`registry_server.py`):** В панель управления добавлен переключатель `#modeToggleGroup`: `[📁 По категориям]` / `[📋 Одним списком]`.
+  2. **Логика единого списка:** При активации режима "Одним списком" скрываются заголовки категорий и аккордеоны, а все компьютеры объединяются в единую таблицу `#flatTable`. Кнопки фильтрации категорий и разворачивания аккордеонов автоматически скрываются.
+  3. **Синхронизация и фильтры:** В едином списке сохраняется полная функциональность: фильтрация `All` / `Last (30 Days)`, мгновенный поиск, редактирование примечаний и перемещение между категориями.
+  4. **Сохранение в `localStorage`:** Выбранный режим фиксируется в ключе `rd_cat_mode` и не сбрасывается при обновлении страницы.
+  5. **Деплой:** Файл задеплоен на мастер-сервер RU-109 (`212.109.223.109`), служба `rustdesk-registry.service` перезапущена и проверена. Изменения зафиксированы в репозитории `Secret_Privat`.
+
 ## [2026-11-19] RustDesk Web Admin (rd.gincz.com): Интерактивные фильтры-переключатели категорий в блоке All / Last 30
 - **Контекст:** По запросу Владимира в панель управления [rd.gincz.com ↗](https://rd.gincz.com/) рядом с вкладками `📋 All` и `⚡ Last (30 Days)` добавлен блок переключателей категорий с возможностью включения и отключения отдельных категорий компьютеров.
 - **Выполненные работы:**
@@ -1425,6 +1434,13 @@
 - VZP: ⏳ ожидает звонка для подтверждения получения Датовки i48ae3q
 - PSSZ: ⏳ ожидает звонка для подтверждения получения Датовки hnhacvt
 - FÚ Říčany: следующий шаг (не начато)
+### [2026-11-19 17:38:00] Ultarix-Monitor Standardized Computer Naming & De-duplication
+- **Unified Standard Naming**: Standardized all company computer identifiers to the canonical format `U-XXX` (`U-002`, `U-003`, ..., `U-010`, `U-507`, `ULPS1`), completely eliminating duplicate alias entries (`PC-02`/`Ulka-02`, `007`/`PC-07`/`Ulta_007`, `PC-09`/`U-09`/`ULTARIX-09`).
+- **Canonical Mapper Engine**: Integrated bidirectional canonical name resolver into `server.py` and `agent.ps1` to automatically map legacy hostname reports to the unified `U-XXX` convention.
+- **Cleaned Dashboard & API**: Updated `employees.json`, `dashboard.html`, and `server.py` on `DE-222`. The dashboard now renders strictly 11 distinct computers in clean numerical order.
+- **Live Active Telemetry**: `ULPS1`, `U-009`, and `U-507` verified sending active pulses and displaying green status dots on `https://ultrarix.gincz.com/`.
+- **Desktop Installer Refreshed**: Published updated `Ultarix_Monitor_Setup.cmd` to Vladimir's Desktop in MEGA (`D:\MEGA\DOCS\desktop\`).
+
 ### [2026-11-19 17:23:00] Ultarix-Monitor Cloud Telemetry & Automated Remote Deployment
 - **Domain Clean**: Completely purged all references to `server.gincz.com/monitor/` across roadmap, scripts, server daemons, and configs. The single official hub is strictly `https://ultrarix.gincz.com/`.
 - **Direct Cloud Push Engine**: Upgraded client collector agent to push live heartbeat & today aggregations directly to `https://ultrarix.gincz.com/api/push` every 10 seconds via non-blocking TLS 1.2/1.3 `HttpWebRequest`. Works both in office LAN and remote home setups.
