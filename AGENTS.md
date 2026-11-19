@@ -147,6 +147,13 @@
   - `ProductName`: `<AppName>_vXXX`
   - `ProductVersion` / `FileVersion`: `vXXX` (`0.XXX.0.0`)
 * **Delivery Strictly to Desktop in MEGA & Designated Targets:** All new Windows binaries and installers are written **EXCLUSIVELY to Vladimir's Desktop in MEGA** (`D:\MEGA\DOCS\desktop\` via `mega-put`) AND their designated utility target folders (specifically for `GIN-DNS-Switch`: `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\GIN-DNS-Switch_vXXX_Setup.exe` / `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`). Purge older releases via `mega-rm` (retain strictly 2 latest versions).
+* **Strict MEGA Cloud Sync Root Standard (`/MEGA/` Prefix):**
+  - Vladimir's synchronized root folder on local drive `D:\` is mapped **EXCLUSIVELY to `/MEGA/` in the cloud**.
+  - **Categorical Ban on Unprefixed Cloud Uploads:** Uploading directly to root `/DOCS/`, `/WIN-FLASH/`, or `/desktop/` is strictly prohibited because those unprefixed cloud folders do NOT sync with Vladimir's PC.
+  - **Canonical Cloud Sync Paths (Always prefix with `/MEGA/`):**
+    - Desktop: `/MEGA/DOCS/desktop/<FileName>` (maps to `D:\MEGA\DOCS\desktop\<FileName>`)
+    - Flash Root: `/MEGA/WIN-FLASH/Util-WINDOWS/<FileName>` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\<FileName>`)
+    - Flash NET: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/<FileName>` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\<FileName>`)
 * Categorical ban on saving to standard Windows desktop or Server_222 network shares (`/storage/soft/`).
 * Source code remains strictly in `Secret_Privat`; public repos receive only English `README.md` and release installers.
 
@@ -185,3 +192,21 @@
 * **Mandatory Final Status & Explicit Manual Reboot Notice:** Any update or configuration session on an Android TV/Box MUST conclude with an explicit final status message displayed in the TV screen log AND in the chat:
   - If a system reboot is REQUIRED to apply changes: state clearly: `⚠️ Все готово! Требуется вручную перезагрузить устройство пультом.` (leaving the reboot strictly to the user via remote control).
   - If a system reboot is NOT required: state clearly: `✅ Все готово! Перезагрузка не требуется.`
+
+### 1️⃣2️⃣ MANDATORY TELEGRAM NOTIFICATIONS ON BUILD & DEPLOYMENT COMPLETION
+* **Universal Telegram Notification:** Every project build script, compilation pipeline (Windows EXE, Android APK, Linux daemon/service builds) and long-running asynchronous preparation task MUST integrate automated Telegram notification to Vladimir.
+* **Credentials & Endpoint:**
+  - Bot Token: `1226649515:AAFzU7Rkq-kGGRDbPCEf-Zkzb9smT7mWTUU` (My_WWW_bot)
+  - Target Chat: `261784949` (Vladimir / @GinCz)
+  - Standard Scripts: `bash /root/.AI/GitHub/Secret_Privat/scripts/notify_telegram.sh "<Project>" "<SUCCESS|ERROR>" "<vXXX>" "<Details>" "<Download_URL>"` (Linux) or `notify_telegram.ps1` (Windows).
+* **Mandatory Trigger:**
+  - Upon successful build and publication of ANY APK or EXE installer, send an immediate notification with app name, version, changelog summary, and direct download URL.
+  - Upon any catastrophic build or verification failure, immediately alert with error details.
+  - When the agent finishes a long-running background build, it must ensure Vladimir receives this Telegram ping without needing to check the IDE chat manually.
+
+### 1️⃣4️⃣ GIN-AGENT STANDALONE SINGLE-FILE ARCHITECTURE (STRICT ZERO PS1)
+* **Strict Single Polyglot File:** `GIN-Agent` for Windows MUST ALWAYS be implemented, distributed, and maintained as **strictly ONE standalone `.cmd` file** (`GIN-Agent_Windows_vXXX.cmd`).
+* **Categorical Ban on External PS1 Files:** Categorically forbidden to create, distribute, generate, or execute separate `.ps1` files (e.g. `GIN-Agent-Core.ps1`, `agent.ps1`) anywhere in the repository, deployment mirrors, or client `%ProgramData%\GIN-Agent` directories.
+* **Dual-Mode Self-Contained Execution:**
+  - **Installer Mode (Interactive / Double-Click):** Checks UAC elevation, halts existing agent processes, purges any obsolete `.ps1` files, copies itself to `%ProgramData%\GIN-Agent\GIN-Agent.cmd`, registers the Windows scheduled service `GIN-Agent-Service` (`cmd.exe /c ""%ProgramData%\GIN-Agent\GIN-Agent.cmd" /service"`), starts it silently in the background, and displays an auto-closing countdown.
+  - **Service Worker Mode (`/service`):** Runs headless in the background via hidden PowerShell block executed directly from the `.cmd` file, handles singleton mutex (`Global\GIN_Agent_Core_Mutex`), gateway polling, hardware 9-digit GIN-PIN calculation, and strict numeric RustDesk ID detection.
