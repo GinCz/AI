@@ -6358,7 +6358,22 @@ etkvm) для виртуализации KVM/OCI.
   6. Выгрузка в облако MEGA на Рабочий стол (`/MEGA/DOCS/desktop/`) и на флешку (`/MEGA/WIN-FLASH/Util-WINDOWS/MUSIC/`) с ротацией строго 2 последних версий.
   7. Синхронизация с GitHub в `Secret_Privat` и `Windows_scripts`.
 
-### [2026-11-19 16:35:00] Classified Boards Ecosystem Standard & Multi-Country Seeding
+### [2026-11-19 18:00:00] Ultarix-Monitor — Standardized U-XXX Fleet, Zero-Lag Background Daemons & Live Cloud Push
+- **Component**: Ultarix Activity Monitor (`https://ultrarix.gincz.com/`, DE-222 / `152.53.182.222`, systemd `ultarix-monitor.service`).
+- **Standardized Naming & Alias Deduplication**:
+  - Replaced duplicate workstation alias entries with strictly 11 canonical workstations: `ULPS1`, `U-002`, `U-003`, `U-004`, `U-005`, `U-006`, `U-007`, `U-008`, `U-009`, `U-010`, `U-507`.
+  - Updated `employees.json`, `server.py`, `dashboard.html` (Web & Android assets) with `CANONICAL_MAP` and numerical sorting.
+  - Purged obsolete legacy endpoints (`server.gincz.com/monitor/`).
+- **Resilient Client Collector Daemon (`agent.ps1`)**:
+  - Fixed hash literal duplicate keys (`u-06`, `u-09`) and eliminated dynamic `$idleSec` string interpolation inside the window title during AFK pause to prevent continuous disk log flooding.
+  - Configured 10-second non-blocking direct HTTPS cloud push (`/api/push`) alongside local SMB write fallback (`\\ulps1\UTIL\UltarixMonitor\logs`).
+  - Implemented scheduled task auto-registration (`schtasks /create /tn "Ultarix-Monitor" ... /sc ONLOGON /rl HIGHEST`) and registry Run persistence.
+- **Autonomous Remote Rollout via GIN-Agent**:
+  - Deployed, verified, and started background agents on `ULPS1` (Server), `U-009` (Tatiana/Lyubov), and `U-507` (Galina Home).
+  - All 3 workstations are actively transmitting live telemetry every 10 seconds to `https://ultrarix.gincz.com/`.
+- **Desktop Delivery**:
+  - Delivered standalone installer `Ultarix_Monitor_Setup.cmd` directly to Vladimir's Desktop in MEGA (`/MEGA/DOCS/desktop/Ultarix_Monitor_Setup.cmd`) with Windows CRLF line endings.
+
 - **Component**: Classified Boards Network (11 multi-country sites on DE-222: doska-cz.ru, doska-de.ru, doska-esp.ru, doska-fr.ru, doska-gr.ru, doska-hun.ru, doska-isl.ru, doska-it.ru, doska-mld.ru, doska-pl.ru, doska-ua.ru)
 - **Standard Documented**: Created and committed `CLASSIFIED_BOARDS_ECOSYSTEM_STANDARD.md` to `GinCz/BASE/07_INFRASTRUCTURE_AND_SECURITY/`.
   - Security Architecture: Global Nginx uploads protection blocking PHP execution (`location ^~ /wp-content/uploads/`), HTTP security headers (`nosniff`, `SAMEORIGIN`, `strict-origin-when-cross-origin`, `fastcgi_hide_header X-Powered-By`), `default_role = subscriber` enforcement.
