@@ -1425,6 +1425,17 @@
 - VZP: ⏳ ожидает звонка для подтверждения получения Датовки i48ae3q
 - PSSZ: ⏳ ожидает звонка для подтверждения получения Датовки hnhacvt
 - FÚ Říčany: следующий шаг (не начато)
+### [2026-11-19 17:23:00] Ultarix-Monitor Cloud Telemetry & Automated Remote Deployment
+- **Domain Clean**: Completely purged all references to `server.gincz.com/monitor/` across roadmap, scripts, server daemons, and configs. The single official hub is strictly `https://ultrarix.gincz.com/`.
+- **Direct Cloud Push Engine**: Upgraded client collector agent to push live heartbeat & today aggregations directly to `https://ultrarix.gincz.com/api/push` every 10 seconds via non-blocking TLS 1.2/1.3 `HttpWebRequest`. Works both in office LAN and remote home setups.
+- **Client Installer Released**: Engineered `Ultarix_Monitor_Setup.cmd` with Windows CRLF line endings, auto-elevation, scheduled task registration (`ONLOGON` + `/ru "NT AUTHORITY\SYSTEM"` / `/rl HIGHEST`), and immediate first cloud telemetry dispatch.
+- **Desktop Delivery**: Published `Ultarix_Monitor_Setup.cmd` directly to Vladimir's Desktop in MEGA (`D:\MEGA\DOCS\desktop\`).
+- **Autonomous Remote Deployment via GIN-Agent**:
+  - `U-09`: Ultarix-Monitor deployed & actively running live telemetry.
+  - `U-507`: Ultarix-Monitor deployed & actively running live telemetry.
+  - `ULPS1`: Ultarix-Monitor deployed + `Ultarix-Cloud-Sync` daemon configured for local SMB forward.
+- **Live Status**: Real-time telemetry confirmed active in `https://ultrarix.gincz.com/api/status`.
+
 ## 2026-09-25 — Business_CZ: Подтверждение успешной отправки уведомлений в VZP (i48ae3q) и PSSZ (hnhacvt)
 - **Репозиторий:** [GitHub: Secret_Privat ↗](https://github.com/GinCz/Secret_Privat) (каталог `Business_CZ/`)
 - **Выполненные работы:**
