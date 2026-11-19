@@ -6358,6 +6358,14 @@ etkvm) для виртуализации KVM/OCI.
   6. Выгрузка в облако MEGA на Рабочий стол (`/MEGA/DOCS/desktop/`) и на флешку (`/MEGA/WIN-FLASH/Util-WINDOWS/MUSIC/`) с ротацией строго 2 последних версий.
   7. Синхронизация с GitHub в `Secret_Privat` и `Windows_scripts`.
 
+### [2026-11-20 00:41:00] Ultarix-Monitor — Purge Erroneous Subdomain (ultrarix.gincz.com)
+- **Cloudflare DNS**: Permanently deleted the DNS A-record for `ultrarix.gincz.com` (Record ID `798d25feea7dc8b4cf005de85784241f`) via Cloudflare API v4.
+- **Nginx Infrastructure (DE-222)**:
+  - Removed `ultrarix.gincz.com` from `/etc/nginx/conf.d/ultarix.gincz.com.conf`.
+  - Service strictly bound to canonical `ultarix.gincz.com` with TLS 1.2/1.3 and HTTP/2 proxy to `127.0.0.1:8099`.
+  - Fixed comments and references in `server.py` and `Ultarix-Monitor_Setup_v001.cmd`.
+  - Verified `https://ultarix.gincz.com/` returns HTTP 200, while `https://ultrarix.gincz.com/` is completely unresolvable (NXDOMAIN).
+
 ### [2026-11-19 22:08:00] Ultarix-Monitor — Domain Correction (ultarix.gincz.com) & Cloudflare DNS Sync
 - **Domain Correction**: Fixed domain name from typo `ultrarix.gincz.com` to canonical **`https://ultarix.gincz.com/`**.
 - **Cloudflare DNS & Nginx Routing**:
