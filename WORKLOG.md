@@ -6358,6 +6358,16 @@ etkvm) для виртуализации KVM/OCI.
   6. Выгрузка в облако MEGA на Рабочий стол (`/MEGA/DOCS/desktop/`) и на флешку (`/MEGA/WIN-FLASH/Util-WINDOWS/MUSIC/`) с ротацией строго 2 последних версий.
   7. Синхронизация с GitHub в `Secret_Privat` и `Windows_scripts`.
 
+### [2026-11-19 22:08:00] Ultarix-Monitor — Domain Correction (ultarix.gincz.com) & Cloudflare DNS Sync
+- **Domain Correction**: Fixed domain name from typo `ultrarix.gincz.com` to canonical **`https://ultarix.gincz.com/`**.
+- **Cloudflare DNS & Nginx Routing**:
+  - Created DNS A record `ultarix.gincz.com -> 152.53.182.222` with Cloudflare Proxy ON.
+  - Updated Nginx virtual host configuration on DE-222 (`/etc/nginx/conf.d/ultarix.gincz.com.conf`) supporting both hostnames with 301 redirection for legacy links.
+- **Client & Dashboard Synchronization**:
+  - Updated `dashboard.html` (Web UI & Android assets), `MainActivity.kt`, and `server.py`.
+  - Updated `Ultarix_Monitor_Setup.cmd` and `1_Client_Install.cmd` with canonical cloud endpoint `https://ultarix.gincz.com/api/push` and delivered to MEGA Desktop (`/MEGA/DOCS/desktop/Ultarix_Monitor_Setup.cmd`).
+  - Remote agents on `ULPS1`, `U-009`, and `U-507` updated and verified streaming live telemetry to `https://ultarix.gincz.com/`.
+
 ### [2026-11-19 18:00:00] Ultarix-Monitor — Standardized U-XXX Fleet, Zero-Lag Background Daemons & Live Cloud Push
 - **Component**: Ultarix Activity Monitor (`https://ultrarix.gincz.com/`, DE-222 / `152.53.182.222`, systemd `ultarix-monitor.service`).
 - **Standardized Naming & Alias Deduplication**:
