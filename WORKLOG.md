@@ -6317,3 +6317,14 @@ etkvm) для виртуализации KVM/OCI.
   5. Собраны релизные бинарники `GIN-Voice_Setup_v046.exe` и `GIN-Voice_Setup.exe` с заполнением свойств Windows PE (версия `0.46.0.0`, копирайт `VladiMIR+AI`).
   6. Выгрузка в облако MEGA на Рабочий стол (`/MEGA/DOCS/desktop/`) и на флешку (`/MEGA/WIN-FLASH/Util-WINDOWS/MUSIC/`) с ротацией строго 2 последних версий.
   7. Синхронизация с GitHub в `Secret_Privat` и `Windows_scripts`.
+
+### [2026-11-19 16:35:00] Classified Boards Ecosystem Standard & Multi-Country Seeding
+- **Component**: Classified Boards Network (11 multi-country sites on DE-222: doska-cz.ru, doska-de.ru, doska-esp.ru, doska-fr.ru, doska-gr.ru, doska-hun.ru, doska-isl.ru, doska-it.ru, doska-mld.ru, doska-pl.ru, doska-ua.ru)
+- **Standard Documented**: Created and committed `CLASSIFIED_BOARDS_ECOSYSTEM_STANDARD.md` to `GinCz/BASE/07_INFRASTRUCTURE_AND_SECURITY/`.
+  - Security Architecture: Global Nginx uploads protection blocking PHP execution (`location ^~ /wp-content/uploads/`), HTTP security headers (`nosniff`, `SAMEORIGIN`, `strict-origin-when-cross-origin`, `fastcgi_hide_header X-Powered-By`), `default_role = subscriber` enforcement.
+  - SEO Micro Architecture: `WP SEO Micro` v1.32+ native XML sitemaps for `vb_listing`, `vb_category`, `vb_location`; single canonical; Schema.org JSON-LD for WebSite, SearchAction, LocalBusiness, and Product; semantic H1 in header and H2 on taxonomy/single listing pages; optimized robots.txt.
+  - Data Structure & Media: Standardized `vb_location` (national + English names), `_vb_type = company`, `_vb_never_expires = 1`, rich contact details (phone, email, website, address), high-resolution 800x600 branded logo cards with `_thumbnail_id` and `_vb_images` dual attachment.
+- **Capital Regions & Companies Seeding**:
+  - Seeded 10 distinct, realistic companies in the capital city for each of the 10 international boards (Berlin, Madrid, Paris, Athens, Budapest, Tel Aviv/Jerusalem, Rome, Chisinau, Warsaw, Kyiv) totaling 100 new verified company profiles.
+  - Generated 100 custom branded 800x600 cards via Python Pillow with sector-specific color themes, monograms, badges, category ribbons, and trust seals.
+  - Imported all assets into WordPress Media Libraries and bound thumbnails and `_vb_images` arrays.
