@@ -6483,3 +6483,14 @@ etkvm) для виртуализации KVM/OCI.
   - Real-Time Weather HUD below desktop calendar supporting `Open-Meteo` and `wttr.in` sources with location search.
   - Cleaned uninstaller & installer: SHA-256 integrity verification, dual HKLM/HKCU cleanup, optional settings/cache wipe.
   - Built & deployed `GIN-Desktop_v043_Setup.exe` (SHA-256: `37cd88f78b8eb25107ea63582e740e6e8daa08a6d727412b76ec79b3e3d606ef`). Retained strictly latest 2 versions (`v042`, `v043`).
+
+### [2026-11-21 00:56:00] Windows Projects: Ironclad Rule for Version Increments & MEGA Desktop Delivery
+- **Scope**: `GinCz/Windows_scripts` (`/AI/GitHub/Windows/`).
+- **Standard Established**:
+  - Ironclad Rule registered in `RULES.md`, `AGENTS.md`, and `GEMINI.md`:
+    1. Mandatory version increment on every modification or feature addition (`v043` ➔ `v044`).
+    2. Mandatory inclusion of version in installer filename (`<AppName>_vXXX_Setup.exe`).
+    3. Mandatory automated delivery to Vladimir's Desktop in MEGA cloud (`/MEGA/DOCS/desktop/` -> `D:\MEGA\DOCS\desktop\`).
+  - Implemented standalone reusable deployment engine: `/AI/GitHub/Windows/scripts/sync_mega_desktop.sh`.
+  - Integrated auto-deployment into `GIN-Desktop/src/build_release.py`.
+  - Verified `GIN-Desktop_v043_Setup.exe` (733,696 bytes) deployed and verified in `/MEGA/DOCS/desktop/`.
