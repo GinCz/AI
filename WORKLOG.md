@@ -6401,3 +6401,53 @@ etkvm) для виртуализации KVM/OCI.
   - Seeded 10 distinct, realistic companies in the capital city for each of the 10 international boards (Berlin, Madrid, Paris, Athens, Budapest, Tel Aviv/Jerusalem, Rome, Chisinau, Warsaw, Kyiv) totaling 100 new verified company profiles.
   - Generated 100 custom branded 800x600 cards via Python Pillow with sector-specific color themes, monograms, badges, category ribbons, and trust seals.
   - Imported all assets into WordPress Media Libraries and bound thumbnails and `_vb_images` arrays.
+
+### [2026-11-20 15:20:00] GIN-Agent v024 — Detached Session 0 / WMI Execution & Complete Legacy Purge
+- **Component**: GIN-Agent Windows Service (`GIN-Agent_Windows_v024.cmd`, `GIN-Agent.cmd`).
+- **Detached Execution Fix**:
+  - Eliminated interactive child process `Start-Process cmd.exe ...` which caused agent termination when the installer console was closed.
+  - Primary service host runs exclusively under Windows Task Scheduler in Session 0 (`/ru SYSTEM /sc ONSTART /rl HIGHEST`).
+  - Implemented automatic fallback to WMI `Win32_Process.Create` (parented by `WmiPrvSE.exe`), fully decoupled from the calling console.
+  - Added 5-second auto-close countdown.
+  - Converted all console text to English/ASCII to avoid Win32 error `0x1F` on non-Unicode locales.
+- **Complete Legacy Purge**:
+  - Stops and unregisters old Windows Services via `sc.exe stop/delete GIN-Agent` & `GIN-Agent-Service`.
+  - Removes old scheduled tasks (`GIN-Agent-Service`, `GIN-Agent`, `GIN-Agent-Watchdog`, `GIN-Agent-Updater`, `GIN-Remote`).
+  - Completely wipes obsolete files in `C:\ProgramData\GIN-Agent\` (cleaning all `.ps1`, `.cmd`, `.bak`, `.tmp`).
+- **European Gateway Fix (`agent_bridge.py` on DE-222)**:
+  - Resolved telemetry loss where `/poll` requests stripped host metadata (PIN, version, RAM, CPU, disk) from server memory.
+  - Added unauthenticated `/agent/latest` and `/agent/v024` download endpoints.
+- **Rollout**:
+  - Updated in-place `\\Ulps1\util\GIN-Agent_Windows_v024.cmd` (`C:\util\` on `ULPS1`, 27,016 bytes).
+  - Deployed across `ULTARIX-03`, `ULTARIX-04`, `ULTARIX-05`, `U-09`, `ULPS1`, `VLADIMIR-E14`, `e14--home`.
+
+### [2026-11-20 15:10:00] RustDesk Remote Support Dashboard (`rd.gincz.com`) — Web Client Auto-Password & WSS Proxy
+- **Component**: RustDesk Dashboard & Registry (`rd.gincz.com` / RU-109 / `212.109.223.109`).
+- **Automated Password Injection in Web URLs**:
+  - Injected default passwords directly into the Web client URL (`https://rustdesk.com/web/#/<ID>?password=<PASSWORD>`):
+    - **ULTARIX Group** (`ultarix`, `ULTARIX-*`, `U-*`, `ULPS1`, `007_galina`): `Ultarix-22`
+    - **Other Computers** (Family, personal, clients): `OKMokm-09`
+  - Added assigned password display to button tooltips.
+- **Nginx WebSocket Reverse Proxy**:
+  - Configured SSL WebSocket proxy on RU-109: `/ws/id` -> `127.0.0.1:21118` and `/ws/relay` -> `127.0.0.1:21119`.
+- **Public Cluster Standard**:
+  - Retained all clients on the official free public RustDesk network while transitioning to GIN-Agent direct RDP/Shadow.
+  - Fixed Web client link format from `web.rustdesk.com` to `https://rustdesk.com/web/#/<ID>`.
+  - Added `🕹️ GIN-Remote` link and category filter controls.
+
+### [2026-11-20 11:30:00] Ultarix-Monitor v006 — Android APK & Web Dashboard Redesign
+- **Component**: Ultarix-Monitor (`ultarix.gincz.com`, DE-222, Android App).
+- **Enhancements**:
+  - Coordinated WebView scrolling with Pull-to-Refresh (`swipeRefresh.setOnChildScrollUpCallback` and `AndroidBridge.onScroll`).
+  - Redesigned top header: `U` monogram, localized dynamic active user pill (`Активных X из 11`), refresh & menu actions.
+  - 2-column language grid with complete Czech (`cs`) localization.
+  - Published to MEGA Cloud (`/MEGA/WIN-FLASH/ANDROID/GIN_APK/`) and network share `\\s.gincz.com\user\APK\`.
+
+### [2026-11-18 20:00:00] GIN-PDF-RW v001–v011 & Android Eco-System Updates
+- **GIN-PDF-RW**:
+  - Released native C# WinRT PDF application (v001–v011) with AcroForms, e-signatures, left-drag panning, wheel scroll, fullscreen toggle, theme persistence, and multilingual installer.
+  - Delivered `GIN-PDF-RW_vXXX_Setup.exe` to MEGA Desktop.
+- **Android Media & System Apps**:
+  - `GIN-Cinema` (v118–v124): instant high-definition seek previews, refined card borders, TV remote color buttons support.
+  - `GIN-TV` (v083–v085): non-blocking error overlay, instant channel hopping, 2-step DPAD navigation, free EU playlist.
+  - `GIN-Launcher` (v042): purged key filters and volume interception, ensuring 0ms navigation latency.
