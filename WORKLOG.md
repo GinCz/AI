@@ -6451,3 +6451,17 @@ etkvm) для виртуализации KVM/OCI.
   - `GIN-Cinema` (v118–v124): instant high-definition seek previews, refined card borders, TV remote color buttons support.
   - `GIN-TV` (v083–v085): non-blocking error overlay, instant channel hopping, 2-step DPAD navigation, free EU playlist.
   - `GIN-Launcher` (v042): purged key filters and volume interception, ensuring 0ms navigation latency.
+
+### [2026-11-20 23:40:00] GIN-Desktop v043 Release & Rebranding
+- **Component**: `GIN-Desktop` (formerly `GIN-Dock-Wallpaper`, `GinCz/Windows_scripts`).
+- **Architectural Enhancements & Delivered Features**:
+  - Rebranded project & repository tree to `GIN-Desktop`.
+  - Added strict daily midnight wallpaper refresh & calendar HUD sync at `00:03`.
+  - Intelligent cache manager: automatic 7-day TTL and 100 MB max disk quota auto-pruning down to 80 MB.
+  - Portable-first config storage: `config.json` saved in application base directory with fallback to `%AppData%\GIN-Desktop` if non-writable.
+  - Configurable shortcuts root path defaulting to `D:\UTIL\GIN-Desktop\` with `[Browse...]` folder selector dialog.
+  - Dock bar locked strictly to Top edge; activated exclusively when cursor enters the Top-Left screen corner (`X <= 15 && Y <= 15`).
+  - Live Hardware Monitoring HUD on Dock bar (`CPU %`, `RAM %`, `GPU %`, `GPU Temp °C`) via zero-allocation WinAPI calls (`GetSystemTimes`, `GlobalMemoryStatusEx`).
+  - Real-Time Weather HUD below desktop calendar supporting `Open-Meteo` and `wttr.in` sources with location search.
+  - Cleaned uninstaller & installer: SHA-256 integrity verification, dual HKLM/HKCU cleanup, optional settings/cache wipe.
+  - Built & deployed `GIN-Desktop_v043_Setup.exe` (SHA-256: `37cd88f78b8eb25107ea63582e740e6e8daa08a6d727412b76ec79b3e3d606ef`). Retained strictly latest 2 versions (`v042`, `v043`).
