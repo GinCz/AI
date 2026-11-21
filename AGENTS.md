@@ -204,9 +204,14 @@
   - Upon any catastrophic build or verification failure, immediately alert with error details.
   - When the agent finishes a long-running background build, it must ensure Vladimir receives this Telegram ping without needing to check the IDE chat manually.
 
-### 1️⃣4️⃣ GIN-AGENT STANDALONE SINGLE-FILE ARCHITECTURE (STRICT ZERO PS1)
+### 1️⃣4️⃣ GIN-AGENT STANDALONE ARCHITECTURE & ZERO-LATENCY FAST-PATH
 * **Strict Single Polyglot File:** `GIN-Agent` for Windows MUST ALWAYS be implemented, distributed, and maintained as **strictly ONE standalone `.cmd` file** (`GIN-Agent_Windows_vXXX.cmd`).
 * **Categorical Ban on External PS1 Files:** Categorically forbidden to create, distribute, generate, or execute separate `.ps1` files (e.g. `GIN-Agent-Core.ps1`, `agent.ps1`) anywhere in the repository, deployment mirrors, or client `%ProgramData%\GIN-Agent` directories.
 * **Dual-Mode Self-Contained Execution:**
   - **Installer Mode (Interactive / Double-Click):** Checks UAC elevation, halts existing agent processes, purges any obsolete `.ps1` files, copies itself to `%ProgramData%\GIN-Agent\GIN-Agent.cmd`, registers the Windows scheduled service `GIN-Agent-Service` (`cmd.exe /c ""%ProgramData%\GIN-Agent\GIN-Agent.cmd" /service"`), starts it silently in the background, and displays an auto-closing countdown.
   - **Service Worker Mode (`/service`):** Runs headless in the background via hidden PowerShell block executed directly from the `.cmd` file, handles singleton mutex (`Global\GIN_Agent_Core_Mutex`), gateway polling, hardware 9-digit GIN-PIN calculation, and strict numeric RustDesk ID detection.
+* **Zero-Latency Remote Update Fast-Path (Strict Ban on Discovery Searching & Blocking Verification):**
+  - **Zero Pre-Search:** When requested to update an agent on a connected Windows host, the agent MUST NEVER run broad `find`, `grep`, or multi-file research to figure out how to update. The update pipeline is strictly canonical: download `http://152.53.182.222:9876/GIN-Agent_Windows_v<NEW>.cmd` to `%ProgramData%\GIN-Agent\`, overwrite `GIN-Agent.cmd`, and restart `GIN-Agent-Service` in a detached process.
+  - **Hard Timeout on `/exec` Calls (Max 15s):** Any HTTP POST `/exec` call sent through the remote bridge (`http://152.53.182.222:9876/exec`) MUST have an explicit hard command timeout of maximum 15 seconds (`--max-time 15` in curl). Categorically forbidden to wait indefinitely on hanging remote command sockets.
+  - **Non-Blocking Status Verification via Heartbeat:** When an agent service is restarted, NEVER query status through `/exec` (which blocks up to 180s while the service is cycling). Verify online presence and version exclusively through the central registry heartbeat in `rd.gincz.com` / `clients.json` (`agent_version` and `agent_last_seen`), which updates within 15–30 seconds.
+
