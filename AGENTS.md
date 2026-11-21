@@ -16,10 +16,13 @@
 * The agent must determine the primary user/owner name from local environment settings, configuration, or initial prompt.
 * In every response, across every chat, the model must address the user by their configured name at the very beginning of the message ("Владимир, ..."). Never omit this opening or start with generic robotic filler.
 
-### 2️⃣ RULE 2: STRICT SINGLE-TASK FOCUS & NO UNREQUESTED WORK
+### 2️⃣ RULE 2: STRICT SINGLE-TASK FOCUS, PROJECT ISOLATION & CANONICAL README STANDARD
 * **Strict Single Goal:** Deliver strictly and exclusively what was requested.
 * **Zero Unsolicited Actions:** Strictly NO unprompted refactoring, no restyling of unrelated code, no unsolicited file deletions, no architectural creep.
 * **Infrastructure vs Code Separation:** When an error is caused by external environment/OS conditions (service stopped, network offline, host unreachable, missing credentials, SMB provider failure), **DO NOT refactor or rewrite working user scripts**. Diagnose and fix the system/service level first.
+* **Project Directory Isolation:** Every project MUST live in its own separate, dedicated directory (e.g. `Windows/<ProjectName>/`). Scattering loose project files across parent folders is strictly forbidden.
+* **Mandatory Canonical README.md:** Every project folder MUST contain an authoritative `README.md` documenting architecture, components, ports, APIs, credentials pointers, build commands, and deployment paths.
+* **Categorical Ban on Discovery Pre-Searching (Zero Discovery Search):** When working on any project, the agent is strictly prohibited from running recursive disk-wide searches (`find /AI`, broad `grep -r`) across the repository. The agent MUST navigate directly to the target project directory and read its canonical `README.md`. Everything needed to understand and build the project is already documented there.
 
 ### 3️⃣ RULE 3: MAXIMUM SIMPLICITY, ZERO-WASTE TOKENS & INTERNAL CALCULATION
 * **KISS Principle:** Keep It Simple & Straightforward. Choose the most direct, robust, and lightweight solution.
@@ -84,21 +87,24 @@
 ### 1️⃣4️⃣ RULE 14: CLEAN TEXT FORMAT FOR MESSENGERS
 * Keep responses clean and legible across mobile apps and messengers without broken layout artifacts.
 
-### 1️⃣5️⃣ RULE 15: STRICT VERSION INCREMENT ON EVERY CHANGE
-* **Every change produces a new version:** Any bugfix, enhancement, or layout tweak MUST increment the version (`v035` ➔ `v036`). In-place release overwriting is strictly prohibited.
-* Synchronize version numbers across source metadata, filenames, `CHANGELOG.md`, `README.md`, `WORKLOG.md`, and commit messages. Retain strictly the 2 latest versions in deployment mirrors.
+### 1️⃣5️⃣ RULE 15: STRICT VERSION INCREMENT ON EVERY CHANGE & MEGA DESKTOP DELIVERY
+* **Every change produces a new version:** Any bugfix, enhancement, layout tweak, or code change in application source files or installer scripts (`.cmd`, `.bat`, `.exe`) MUST increment the version (`v035` ➔ `v036`). In-place release overwriting is strictly prohibited.
+* **Canonical Installer Naming Standard:** All installer releases follow strictly: `<ProjectName>_vXXX` (e.g. `GIN-Agent_Windows_v025.cmd`, `GIN-NetScan_v036_Setup.exe`).
+* **Mandatory Delivery to Desktop via MEGA:** Every newly built or modified Windows installer or executable MUST be delivered directly to Vladimir's computer desktop via the MEGA cloud sync directory (`/MEGA/DOCS/desktop/<FileName>` -> `D:\MEGA\DOCS\desktop\<FileName>`). Previous obsolete versions on the desktop must be rotated/purged so that strictly 1 active latest version remains.
+* **Metadata & Commit Synchronization:** Synchronize version numbers across source metadata, filenames, `CHANGELOG.md`, `README.md`, `WORKLOG.md`, and commit messages. Retain strictly the 2 latest versions in deployment mirrors.
 
 ### 1️⃣6️⃣ RULE 16: CLEAN GITHUB LINKS
 * Every GitHub link must point directly to the standard Web UI with edit button access without decorative arrows: `[Resource Name](https://github.com/<owner>/<repo>/blob/main/<path>)`.
 * Categorical ban on raw URLs (`raw.githubusercontent.com`) and local `file:///` links for GitHub assets.
 
-### 1️⃣7️⃣ RULE 17: STRICT 10-SECOND RESPONSE LIMIT, BACKGROUND ASYNC & PROCESS WATCHDOG
+### 1️⃣7️⃣ RULE 17: STRICT 10-SECOND RESPONSE LIMIT, PROCESS TIMEOUTS & TELEGRAM NOTIFICATION
 * **Strict 10-Second Response SLA:** Every direct question, status check, or operational prompt MUST receive an answer within **maximum 10 seconds**.
 * **Mandatory Background Dispatch with Hard Timeout:** If any build, deployment, test, or query will exceed 10 seconds:
-  1. The agent MUST dispatch the command as an asynchronous background task with an explicit maximum execution timeout (`TimeoutSec` / hard deadline);
+  1. The agent MUST dispatch the command as an asynchronous background task with an explicit maximum execution timeout (`TimeoutSec` / hard deadline, strictly 30–60 seconds for builds/compilations, max 15 seconds for network `/exec` calls);
   2. The agent MUST reply within 10 seconds, stating: Task ID, purpose, and estimated completion time (ETA);
   3. Never hold the chat turn hostage while waiting for a long process to finish.
-* **Post-Execution Watchdog:** After completion of any background or sync process, verify that exactly **0 hanging or orphan processes** remain.
+* **Post-Execution Hang Watchdog:** After the timeout elapses, verify whether the task completed or hung; never leave hanging or orphan processes running.
+* **Mandatory Telegram Build Alerts:** When compiling or building a large `.exe` installer or long-running release, the agent must immediately inform Vladimir in chat that creation is underway, and upon successful completion (or critical error) immediately dispatch an automated Telegram alert via `notify_telegram.sh` / `notify_telegram.ps1` to Vladimir (@GinCz / `261784949`).
 
 ### 1️⃣8️⃣ RULE 18: MANDATORY ROLLBACK PLAN & PRE-CHANGE BACKUP
 * Before modifying production configurations, services, or databases, verify or create a fresh backup (`.bak`, timestamped snapshot, or git commit). Always have a deterministic instant rollback plan.
