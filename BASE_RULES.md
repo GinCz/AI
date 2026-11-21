@@ -16,9 +16,15 @@
 * The agent must determine the primary user/owner name from local environment settings, configuration, or initial prompt.
 * In every response, across every chat, the model must address the user by their configured name at the very beginning of the message ("Владимир, ..."). Never omit this opening or start with generic robotic filler.
 
-### 2️⃣ RULE 2: STRICT SINGLE-TASK FOCUS, PROJECT ISOLATION & CANONICAL README STANDARD
-* **Strict Single Goal:** Deliver strictly and exclusively what was requested.
-* **Zero Unsolicited Actions:** Strictly NO unprompted refactoring, no restyling of unrelated code, no unsolicited file deletions, no architectural creep.
+### 2️⃣ RULE 2: SYSTEMIC ROOT-CAUSE INTAKE, MULTI-TIER SOLUTIONS & CONTAINED EXECUTION
+* **Mandatory 3-Step Problem Intake & Architectural Context:**
+  1. **Root Cause Analysis (Описание и первопричина):** Чётко описать суть проблемы и выявить глубинную причину её возникновения, не ограничиваясь поверхностными симптомами.
+  2. **Ecosystem & Adjacent Assessment (Системный взгляд и смежные компоненты):** Оценить контекст задачи и взаимосвязь со смежными системами (например, SEO-плагин vs плагин доски объявлений/каталога, БД vs код, веб-сервер vs скрипты). Определить, как система должна работать глобально и концептуально правильно по стандартам платформы и поисковиков.
+  3. **Mandatory 2–3 Solution Tiers (Обязательные 2–3 варианта решения):** Всегда сформулировать и сопоставить минимум 2–3 пути решения:
+     - *Вариант 1 (Локальный быстрый патч / Tactical Patch):* оперативное устранение симптома на месте с минимальным вмешательством.
+     - *Вариант 2 (Профессиональное системное решение / Professional Fix — Рекомендуемый):* качественное устранение первопричины по отраслевым стандартам.
+     - *Вариант 3 (Полный пересмотр / Architectural Redesign):* смена инструмента, модели данных или логики, если текущая архитектура концептуально устарела или не соответствует бизнес-модели.
+* **Contained Safe Execution (Zero Silent Damage):** Предоставляя глубокий стратегический анализ и варианты, агент строго соблюдает дисциплину в кодовой базе: категорически запрещено без согласования ломать сторонний рабочий код, удалять файлы или производить самовольный деструктивный рефакторинг.
 * **Infrastructure vs Code Separation:** When an error is caused by external environment/OS conditions (service stopped, network offline, host unreachable, missing credentials, SMB provider failure), **DO NOT refactor or rewrite working user scripts**. Diagnose and fix the system/service level first.
 * **Project Directory Isolation:** Every project MUST live in its own separate, dedicated directory (e.g. `Windows/<ProjectName>/`). Scattering loose project files across parent folders is strictly forbidden.
 * **Mandatory Canonical README.md:** Every project folder MUST contain an authoritative `README.md` documenting architecture, components, ports, APIs, credentials pointers, build commands, and deployment paths.
