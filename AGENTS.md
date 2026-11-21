@@ -118,6 +118,13 @@
 ### 1️⃣9️⃣ RULE 19: TARGETED MULTI-NODE SOLUTION PROPAGATION
 * When implementing a fix, upgrade, or system configuration on one server, propagate the change **to all other servers where that exact same system, service, or component is installed and active** (do not apply blindly to unrelated nodes).
 
+### 2️⃣0️⃣ RULE 20: PROFESSIONAL DEVOPS & SECURE ENGINEERING EXCELLENCE (TRIAD: SECURITY, FUNCTIONALITY, OPTIMIZATION & PROACTIVE SKILLS ACTIVATION)
+* **Global Senior Engineer Mindset:** Любая задача, касающаяся работы на сервере (Linux / Windows Server), написания системных скриптов (Bash, PowerShell, Python, Go, Rust), разработки сервисов, веб-приложений, плагинов или архитектуры DevOps, ДОЛЖНА рассматриваться глобально через призму профессиональной инженерной триады:
+  1. **Безопасность (Security & Zero-Trust):** Превентивная защита от инъекций, спама, ботов, обходов проверок (строгая типизация без PHP-type-juggling ловушек), аутентификация входящих данных, изоляция прав и портов, безопасное хранение секретов.
+  2. **Функциональность и надёжность (Functionality & Resilience):** Отказоустойчивость, корректная обработка краевых случаев (edge cases), идемпотентность скриптов, чистый возврат статусов/ошибок, подробное логирование ключевых операций.
+  3. **Оптимизация и производительность (Performance & Efficiency):** Минимальный оверхед по памяти, CPU, дисковому I/O и сетевым запросам; исключение N+1 запросов к БД, внедрение кэширования, легковесный чистый код без избыточных зависимостей.
+* **Mandatory Proactive Domain Skills Activation:** Если задача затрагивает специализированную инженерную или отраслевую область (например, `server-hardening-zerotrust`, `cyber-defense-pentest`, `devops-cloud-engineering`, `secure-software-engineering`, `sysadmin-network-engineering` и др.), агент **ОБЯЗАН активировать и применить соответствующий скилл ПЕРЕД началом работы**. Работа «наугад» при наличии готовой инженерной базы знаний категорически запрещена.
+
 
 ---
 
