@@ -6523,3 +6523,15 @@ etkvm) для виртуализации KVM/OCI.
 - **Stabilization & Prevention Standard**:
   - Documented profile updates in `Secret_Privat/Android/GIN-Remote/DEVICES/Xiaomi_MiTV-AESP0.md`.
   - Defined 1GB RAM best practices: Google Play Store auto-updates set to "Never", home screen channel bloat removed, developer options window animations set to 0.5x, background process limit set to max 3, dedicated 5V 2A external power supply enforced.
+
+
+### [2026-11-23 21:40:00] Android Smart TV & TV-Sticks Dedicated Registry Architecture
+- **Dedicated Section**: Created `Android/Smart_TV/` in `Secret_Privat` consolidating all TV and HDMI-stick hardware profiles.
+- **Numbered Registry Standard**:
+  - `01`: `Vestel Android TV` (Smart TV 4K, BODRUM, PIN `329-441-914`)
+  - `02`: `RockChip H96 Max 3518 TS` (TV-Stick HDMI, Android 14, PIN `187-797-773`)
+  - `03`: `H96 Max TV Stick` (TV-Stick Allwinner H616/H618 Type-C)
+  - `04`: `Google Transpeed` (TV-Box/Stick Allwinner, PIN `969-804-300`)
+  - `05`: `Xiaomi Mi TV Stick` (TV-Stick MiTV-AESP0, Android 9 Pie, PIN `776-489-873`)
+- **Quick-Access Navigation**:
+  - Created `Android/Smart_TV/README.md` featuring instant markdown lookup table, direct links to individual dossiers, specifications, and hardware emergency Recovery procedures for each device.
