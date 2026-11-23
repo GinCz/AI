@@ -6490,3 +6490,36 @@ etkvm) для виртуализации KVM/OCI.
   4. Propagated `whitelist-trusted.yaml` to cluster nodes Oracle-1 (`130.61.212.1`) and DE-222 (`152.53.182.222`) per Rule 19.
   5. Unbanned Vladimir's Home IP (`185.100.197.0`) which had a temporary trigger on Oracle-1.
   6. Verified end-to-end: ICMP ping from Oracle-1 to Oracle-49 (0.65ms, 0% loss), HTTP 303 responses for web endpoints, and Uptime Kuma monitors returned to `[🟢 UP]`.
+
+## [2026-11-23 21:24] - GIN-Agent v030 & 1-Click RDP Relay Infrastructure Deployed
+- **Goal:** Implement turnkey 1-click Windows Remote Desktop (RDP) and RDP Shadow connection via GIN-Agent across NAT.
+- **Target Test Computer:** `SVETLANA_BOOK` (PIN `478-384-367`).
+- **Backend Relay (`agent_bridge.py` on DE-222 `152.53.182.222:9876`):**
+  - Integrated dynamic RDP TCP Bridge Multiplexer with non-blocking stream forwarding.
+  - Endpoints: `POST /rdp/open`, `POST /rdp/close`, `GET /rdp/sessions`, `GET /rdp/file`.
+  - Encoded PowerShell async reverse tunnel via .NET `CopyToAsync` without external binaries or open public ports.
+  - Automatic session timeout and zero orphan process watchdog.
+- **Admin Portal (`registry_server.py` on RU-109 `rd.gincz.com`):**
+  - Added `🖥️ RDP` and `👥 Shadow` buttons in device table actions.
+  - Added `🖥️ RDP Готов` status indicator in GIN-Agent column for live RDP capability.
+  - Added `/api/rdp` endpoint serving dynamic `.rdp` files (full address:s:152.53.182.222:<port>) and `.cmd` shadow launchers.
+- **Client Agent (`GIN-Agent_Windows_v030.cmd`):**
+  - Incremented version to `v030`.
+  - Registered `gin-rdp://` custom protocol handler in Windows registry.
+  - Enforced TLS 1.2 on independent background heartbeat timer.
+  - Packaged companion `GIN-Agent_Windows_v030.zip` and deployed to all 3 MEGA cloud sync directories.
+
+
+### [2026-11-23 21:35:00] Xiaomi MiTV-AESP0 Stick — Bootloop Diagnosis, Hardware Recovery & RAM Stabilization
+- **Incident & Symptoms**:
+  - Device: `Xiaomi MiTV-AESP0` (Android 9 Pie TV, 1GB RAM / 8GB eMMC, Amlogic S805Y).
+  - Left powered in TV HDMI port overnight; developed continuous bootloop on startup. GUI loaded for only a few seconds before watchdog triggered reboot, preventing entry into standard Android settings.
+  - Tested & ruled out: Wi-Fi crash loop (Wi-Fi and background scanning disabled), USB power cables and 3 separate adapters (issue persisted), HDMI port direct vs extender.
+  - Temperature state: Body was lukewarm (~50–60°C, ruling out instant thermal shutdown; historical severe overheating acknowledged). Root cause determined as software crash loop in `system_server` / cache corruption under 1GB RAM constraint.
+- **Hardware Recovery Resolution**:
+  - Executed hard recovery combination via standard Xiaomi Bluetooth remote: `[Back]` + `[OK]` simultaneously held while plugging in micro-USB power cable.
+  - Successfully entered Android Recovery console.
+  - Performed full `Wipe data / factory reset` and `Wipe cache partition`, followed by `Reboot system now`.
+- **Stabilization & Prevention Standard**:
+  - Documented profile updates in `Secret_Privat/Android/GIN-Remote/DEVICES/Xiaomi_MiTV-AESP0.md`.
+  - Defined 1GB RAM best practices: Google Play Store auto-updates set to "Never", home screen channel bloat removed, developer options window animations set to 0.5x, background process limit set to max 3, dedicated 5V 2A external power supply enforced.
