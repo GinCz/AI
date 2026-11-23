@@ -19,5 +19,12 @@
   - Telegram Build Alerts: Any server/app build or long preparation pipeline MUST notify Vladimir in Telegram (@GinCz / `261784949`) via `notify_telegram.sh` / `notify_telegram.ps1` upon completion.
 * **Isolated Sandbox:** Temporary scripts and build artifacts must reside strictly in `<model>/temp/` (Windows: `D:\AI\GEMINI\temp\`, Linux: `/root/.AI/AntiGravity/temp/`).
 * **Cloud Sandbox Safeguard:** Never clone repositories or create project directories in web/cloud sandboxes (`CLI`, `/workspace`). If running unattached to a server, immediately warn Vladimir to switch to Remote Control.
+* **Public GitHub Releases & Dual MEGA Delivery:** For public repos (`GIN-PDF-RW`, `GIN-DNS-Switch`), every version MUST be published to **GitHub Releases** (`gh release create vXXX`) with attached Setup binary. Windows installers deliver simultaneously to Desktop (`/MEGA/DOCS/desktop/`) AND designated Flash folder (`GIN-PDF-RW` -> `/MEGA/WIN-FLASH/Util-WINDOWS/Graphics/PDF/`, `GIN-DNS-Switch` -> `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`).
+* **GIN-Agent Mandatory 3-Folder Delivery:** Every new `GIN-Agent_Windows_vXXX.cmd` version MUST be uploaded to **ALL 3** MEGA folders:
+  1. `/MEGA/DOCS/desktop/` (maps to `D:\MEGA\DOCS\desktop\`)
+  2. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
+  3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
+  Retain strictly the 2 latest versions in each target (purge older releases via `mega-rm`).
 * **MEGA Cloud Sync Standard:** Always prefix MEGA upload paths with `/MEGA/` (e.g. `/MEGA/DOCS/desktop/`, `/MEGA/WIN-FLASH/Util-WINDOWS/`). Unprefixed `/DOCS/` does not sync with PC.
 * **GIN-Agent Standalone Standard:** GIN-Agent must strictly be ONE polyglot `.cmd` file with ZERO external `.ps1` files.
+* **Strict CRLF Integrity & .gitattributes:** Every `.cmd` and `.bat` file MUST have CRLF line terminators. All repositories with Windows scripts MUST have `.gitattributes` pinning `*.cmd text eol=crlf`.
