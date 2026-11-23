@@ -210,6 +210,26 @@
 * **Mandatory Final Status & Explicit Manual Reboot Notice:** Any update or configuration session on an Android TV/Box MUST conclude with an explicit final status message displayed in the TV screen log AND in the chat:
   - If a system reboot is REQUIRED to apply changes: state clearly: `⚠️ Все готово! Требуется вручную перезагрузить устройство пультом.` (leaving the reboot strictly to the user via remote control).
   - If a system reboot is NOT required: state clearly: `✅ Все готово! Перезагрузка не требуется.`
+* **Mandatory Default Debloat on ALL TV Devices (Ironclad Rule):**
+  Whenever configuring or optimizing ANY Smart TV, TV-Box, or TV-Stick, the agent MUST unconditionally execute:
+  1. **Purge Commercial Bloatware (Uninstall/Disable):**
+     - Netflix: `com.netflix.ninja`, `com.netflix.mediaclient`
+     - Prime Video: `com.amazon.amazonvideo.livingroom`, `com.amazon.avod.thirdpartyclient`
+     - YouTube Music: `com.google.android.youtube.tvmusic`
+     - Google Play Movies: `com.google.android.videos`
+  2. **Disable-Only Bloatware (Disable via `pm disable-user --user 0`):**
+     - Live Channels: `com.google.android.tv`, `com.android.tv`
+     - PatchWall & Xiaomi Feeds: `com.mitv.tvhome`, `com.xiaomi.mitv.tvhome`, `com.xiaomi.mitv.upgrade`, `com.mitv.videoplayer`
+  3. **Disable Google Play Protect, Antivirus & System Auto-Updates:**
+     - `settings put global package_verifier_enable 0`
+     - `settings put global package_verifier_user_consent -1`
+     - `settings put global upload_apk_enable 0`
+     - `settings put global auto_update 0`
+     - `pm disable-user --user 0 com.google.android.gms/.update.SystemUpdateService`
+     - `pm disable-user --user 0 com.google.android.gsf/.update.SystemUpdateService`
+  4. **Strict Chromecast Immunity (Never Touch):**
+     - `com.google.android.apps.mediashell` (Chromecast Built-in) MUST ALWAYS be preserved and enabled (`pm enable com.google.android.apps.mediashell`). Screen casting from phones, Google Chrome, and Cent Browser must never be impaired.
+
 
 ### 1️⃣2️⃣ MANDATORY TELEGRAM NOTIFICATIONS ON BUILD & DEPLOYMENT COMPLETION
 * **Universal Telegram Notification:** Every project build script, compilation pipeline (Windows EXE, Android APK, Linux daemon/service builds) and long-running asynchronous preparation task MUST integrate automated Telegram notification to Vladimir.

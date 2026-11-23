@@ -6535,3 +6535,17 @@ etkvm) для виртуализации KVM/OCI.
   - `05`: `Xiaomi Mi TV Stick` (TV-Stick MiTV-AESP0, Android 9 Pie, PIN `776-489-873`)
 - **Quick-Access Navigation**:
   - Created `Android/Smart_TV/README.md` featuring instant markdown lookup table, direct links to individual dossiers, specifications, and hardware emergency Recovery procedures for each device.
+
+
+### [2026-11-23 23:20:00] Android TV Universal Debloat Standard & Strict Chromecast Immunity Rule
+- **Universal Debloat & Package Lockdown (Master Manifest & RULES.md)**:
+  - Codified permanent rule across `AGENTS.md`, `GEMINI.md`, and `Secret_Privat/Android/RULES.md` (Section 12).
+  - **Mandatory Default Purge**: Netflix (`com.netflix.ninja`), Prime Video (`com.amazon.amazonvideo.livingroom`), YouTube Music (`com.google.android.youtube.tvmusic`), Google Play Movies (`com.google.android.videos`).
+  - **Mandatory Disable-Only**: Live Channels (`com.google.android.tv`, `com.android.tv`), Xiaomi PatchWall suite (`com.mitv.tvhome`, `com.xiaomi.mitv.tvhome`, `com.xiaomi.mitv.upgrade`, `com.mitv.videoplayer`).
+  - **Security & Auto-Updates Lockdown**: Package verifier / Play Protect disabled (`package_verifier_enable 0`, `upload_apk_enable 0`, `auto_update 0`), Google Play Services & GSF `SystemUpdateService` disabled.
+  - **Strict Chromecast Protection**: `com.google.android.apps.mediashell` explicitly protected and enabled to guarantee screen mirroring from phones, Google Chrome, and Cent Browser.
+- **Engine Script Updates**:
+  - Updated `tv_setup_cleaner.sh` (both in `GIN-Remote` and `Install_New_Android`) with immediate auto-purge and disable routines.
+  - Synchronized `05_Xiaomi_Mi_TV_Stick.md` and `Xiaomi_MiTV-AESP0.md`.
+- **GIN-Launcher Feature Verification**:
+  - Verified `isHideEditMode` and `btnMenuHideApps` in `GIN-Launcher` (accessible via long-press OK / Menu on "All Apps" tab).

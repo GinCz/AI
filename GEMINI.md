@@ -29,3 +29,5 @@
 * **GIN-Agent Standalone Standard:** GIN-Agent must strictly be ONE polyglot `.cmd` file with ZERO external `.ps1` files.
 * **Strict CRLF Integrity & .gitattributes:** Every `.cmd` and `.bat` file MUST have CRLF line terminators. All repositories with Windows scripts MUST have `.gitattributes` pinning `*.cmd text eol=crlf`.
 * **Mandatory versions/ & Companion ZIP for CMD Projects:** All Windows CMD/BAT projects must store scripts in `versions/` (retaining strictly 2 latest versions) and ALWAYS generate a companion `.zip` archive (`<App>_vXXX.zip`) alongside each `.cmd` to protect users against GitHub Web HTML-saving corruption.
+* **Mandatory TV Debloat & Chromecast Immunity:** Unconditionally purge Netflix, Prime Video, YouTube Music, Google Play Movies; disable Live Channels and PatchWall; disable Google Play Protect and GMS updates; strictly preserve Chromecast `com.google.android.apps.mediashell` for Chrome/Cent Browser mirroring.
+
