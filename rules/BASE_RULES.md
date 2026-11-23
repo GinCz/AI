@@ -234,3 +234,11 @@
   - **Hard Timeout on `/exec` Calls (Max 15s):** Any HTTP POST `/exec` call sent through the remote bridge (`http://152.53.182.222:9876/exec`) MUST have an explicit hard command timeout of maximum 15 seconds (`--max-time 15` in curl). Categorically forbidden to wait indefinitely on hanging remote command sockets.
   - **Non-Blocking Status Verification via Heartbeat:** When an agent service is restarted, NEVER query status through `/exec` (which blocks up to 180s while the service is cycling). Verify online presence and version exclusively through the central registry heartbeat in `rd.gincz.com` / `clients.json` (`agent_version` and `agent_last_seen`), which updates within 15–30 seconds.
 
+### 2️⃣0️⃣ RULE 20: MANDATORY `versions/` DIRECTORY & COMPANION ZIP ARCHIVES FOR ALL CMD/BAT PROJECTS
+* **Root Directory Cleanliness:** In any Windows script or CMD project repository or subfolder, the root directory MUST contain ONLY `README.md` and clean subfolders (`versions/`, `docs/`, `src/`). Categorical ban on littering root directories with loose `.cmd` or `.bat` files.
+* **Dedicated `versions/` Directory:** All release versions of Windows scripts (`.cmd`, `.bat`) must reside strictly in a dedicated `versions/` subfolder. Retain strictly the 2 latest versions (`vXXX` and `vYYY`), purging older obsolete versions.
+* **Mandatory Companion ZIP Archive for EVERY Version:**
+  Because GitHub Web UI right-click ("Save link as...") downloads the HTML preview page instead of the script, strips CRLF line endings, or triggers browser `.txt` extension renaming and Windows SmartScreen blocks, **EVERY versioned `.cmd` file in `versions/` (`<AppName>_vXXX.cmd`) MUST have a corresponding companion ZIP archive (`<AppName>_vXXX.zip`)** containing that exact script in pristine Windows CRLF (`\r\n`) encoding.
+* **Mandatory ZIP Download Link in `README.md`:** The root `README.md` of every CMD project must explicitly document:
+  1. Safe ZIP download link: `[Скачать ZIP-архив vXXX](versions/<AppName>_vXXX.zip)` as the primary safe download method to avoid HTML corruption.
+  2. 1-click PowerShell launcher: `powershell -ep bypass -c "iwr -useb <url> -OutFile <file>; .\<file>"`.
