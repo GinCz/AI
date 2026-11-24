@@ -6757,3 +6757,13 @@ etkvm) для виртуализации KVM/OCI.
     - Zero-manual-search direct links directory (Website, Facebook Page, Post #1, Firmy.cz, Google Maps, GSC).
     - Full summary of accomplishments on 2026-11-24 (WordPress DE-222 B2B optimization, 2014 milestone, SEOPress, Google Indexing API, local maps 244-char copy, automated Tuesday 10:00 AM Facebook posting).
     - Actionable 5-step roadmap for Phase 2 (GSC performance review, landing pages, Schema.org AutoRepair, Polylang multilinguality, Czech transport directories).
+
+
+### [2026-11-24 11:28:00] Strategic Realignment: Czech-Only Focus, Google Sites Tier-1 & Position Tracker Spec
+- **Refined SEO Strategy for car-bus-autoservice.cz**:
+  - Excluded Schema.org microdata (redundant with existing UX route, WhatsApp, Telegram actions).
+  - Excluded multilingual expansion: focused 100% on Czech language (CS) and local Prague/Central Bohemia transport ecosystem.
+  - Added Google Sites B2B satellite plan: external dedicated authority landing page with rich truck/bus imagery and contextual backlinks to `car-bus-autoservice.cz`.
+  - Added B2B transport directory link building (Trans.eu, Spedice.cz, Doprava.cz, Kamiony.cz, Autobusy.cz, Kompass.cz).
+- **Independent SERP Position Tracker Architecture (New Project)**:
+  - Drafted comprehensive technical specification in `Secret_Privat/SEO/SERP_POSITION_TRACKER_SPEC.md` for an autonomous in-house rank checking system covering Google.cz, Seznam.cz, and Yandex across custom regions with SQLite storage, proxy rotation, and automated Telegram reporting.
