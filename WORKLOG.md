@@ -9,6 +9,11 @@
      - Сгенерирован `versions/Ultarix-Monitor_Setup_v010.cmd` и companion `.zip` `Ultarix-Monitor_Setup_v010.zip`.
      - Создан быстрый апдейтер `1_UPDATE_ALL_TO_V010.cmd`.
      - В `versions/` и `GitHub/Windows/` сохранены строго 2 последние версии (`v009` и `v010`), старая `v008` удалена.
+     - **Доставка в MEGA (Desktop и Флешка):** установщик `Ultarix-Monitor_Setup_v010.cmd` и zip `Ultarix-Monitor_Setup_v010.zip` загружены во все 3 целевых каталога:
+       * Рабочий стол: `/MEGA/DOCS/desktop/` (мапится в `D:\MEGA\DOCS\desktop\`)
+       * Флешка NET: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (мапится в `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
+       * Флешка RadMin: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (мапится в `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
+       * Старые релизы v008 вычищены через `mega-rm`.
   2. **Android APK (v010):**
      - В `build.gradle.kts` установлены `versionCode = 10`, `versionName = "v010"`.
      - На сервере `DE-222` скомпилирован релиз `Ultarix-Monitor_v010.apk`.
