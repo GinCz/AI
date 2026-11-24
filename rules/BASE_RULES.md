@@ -49,8 +49,12 @@
   * If the agent detects it is running in an unlinked web/cloud sandbox, it MUST NEVER clone repos. It must immediately alert Vladimir: *"⚠️ Вы находитесь в изолированной веб-песочнице Google Cloud, а не на вашем сервере! Переключитесь в меню на Remote Control инстанс (например, Oracle-49-Server). Клонирование заблокировано."*
 
 ### 5️⃣ RULE 5: 100% TWO-WAY GITHUB SYNC & MANDATORY INFRASTRUCTURE LOGGING
-* **Mandatory Detailed Infrastructure Logging:** Every step, deployment, configuration change, or script modification across any machine or server MUST be recorded in full technical detail in `WORKLOG.md` / `CHANGELOG.md` or git commit logs.
-* **Strict Append-Only Mandate:** In the knowledge database (`BASE/`), you may ONLY add new knowledge. Categorically forbidden to delete existing data.
+* **Mandatory Detailed Infrastructure Logging in WORKLOG.md:** Every step, deployment, configuration change, or script modification across any machine or server MUST be recorded in full technical detail directly inside `WORKLOG.md` (and `CHANGELOG.md` for versioned software releases). A Git commit message ALONE is NEVER a substitute for updating `WORKLOG.md`!
+* **Ironclad Closing Protocol (Worklog Before Reply):** BEFORE delivering the final response to Vladimir, the agent MUST:
+  1. Append the full technical report to `WORKLOG.md` in the root repository and target project repository;
+  2. Run `git add WORKLOG.md && git commit -m "docs: ..." && git push`;
+  3. Only AFTER `git push` is confirmed may the agent trigger the sound alert and send the final response. Delivering a final response without updating and pushing `WORKLOG.md` is strictly classified as incomplete work/defect.
+* **Strict Append-Only Mandate:** In the knowledge database (`BASE/`) and `WORKLOG.md`, you may ONLY add new knowledge/entries. Categorically forbidden to delete existing data.
 * **Full Two-Way Sync:** Keep local and remote repositories 100% synchronized when performing Git operations (`git pull` on start, `git commit` and `git push` on completion).
 
 ### 6️⃣ RULE 6: PRIVATE REPOSITORIES FOR SECRETS & ZERO-QUESTION CLEARANCE
