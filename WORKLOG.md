@@ -6724,3 +6724,13 @@ etkvm) для виртуализации KVM/OCI.
   - Added recurring cron job on Oracle-230 for every Tuesday at 10:00 AM.
 - **Local Maps Strategy (Google & Seznam)**:
   - Prepared copy-pasteable Czech Title & Description for Google Maps and Firmy.cz along with direct management links.
+
+
+### [2026-11-24 11:00:00] Codified Mandatory Direct Clickable Links Standard (Rule 16) & Seznam 300-Char Limit
+- **Ironclad Rule 16 Enhancement Across All Manifests**:
+  - Updated `BASE_RULES.md`, `AGENTS.md`, `GEMINI.md`, `rules/BASE_RULES.md`, `rules/Antigravity/AGENTS.md`, `.agents/rules/BASE_RULES.md`, `.agents/rules/Antigravity/AGENTS.md`.
+  - Enforced strict requirement: whenever ANY post (Facebook, Instagram, Telegram), webpage, release, map item, or asset is created or updated, the agent MUST immediately output a direct clickable Markdown link `[Link Text](https://...)` directly in the chat response. Vladimir must never have to search for created assets manually.
+- **Seznam Firmy.cz Copy Optimization (Strict <= 300 Characters)**:
+  - Formulated title + description combination totaling exactly 279 characters (including title, spaces, and phone number) incorporating all primary commercial B2B keywords: nákladní pneuservis, kamiony, dodávky, autobusy, 3D geometrie, diagnostika, STK, Strakonická Praha 5.
+- **Provided Direct Facebook Post Link**:
+  - Located direct Facebook post permalink `https://www.facebook.com/1149660680790412/posts/1149646037458543` and provided to Vladimir.

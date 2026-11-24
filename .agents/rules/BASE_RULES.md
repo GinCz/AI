@@ -103,8 +103,9 @@
 * **Mandatory Delivery to Desktop via MEGA:** Every newly built or modified Windows installer or executable MUST be delivered directly to Vladimir's computer desktop via the MEGA cloud sync directory (`/MEGA/DOCS/desktop/<FileName>` -> `D:\MEGA\DOCS\desktop\<FileName>`). Previous obsolete versions on the desktop must be rotated/purged so that strictly 1 active latest version remains.
 * **Metadata & Commit Synchronization:** Synchronize version numbers across source metadata, filenames, `CHANGELOG.md`, `README.md`, `WORKLOG.md`, and commit messages. Retain strictly the 2 latest versions in deployment mirrors.
 
-### 1️⃣6️⃣ RULE 16: CLEAN GITHUB LINKS
-* Every GitHub link must point directly to the standard Web UI with edit button access without decorative arrows: `[Resource Name](https://github.com/<owner>/<repo>/blob/main/<path>)`.
+### 1️⃣6️⃣ RULE 16: MANDATORY DIRECT CLICKABLE LINKS (ZERO MANUAL SEARCH) & CLEAN GITHUB URLS
+* **Mandatory Direct Clickable Links for Every Action / Post / Asset (Ironclad):** Whenever the agent creates, deploys, publishes, or modifies ANY asset — including social media posts (Facebook, Instagram, LinkedIn, Telegram), website pages, SEO metadata, map profiles (Google Maps, Firmy.cz), GitHub releases, files, or cloud assets — the agent MUST IMMEDIATELY provide a direct, fully clickable Markdown link `[Link Text](https://...)` directly in the chat response. Vladimir must NEVER have to manually search for what was created or where it was published.
+* **GitHub Link Standard:** Every GitHub link must point directly to the standard Web UI with edit button access without decorative arrows: `[Resource Name](https://github.com/<owner>/<repo>/blob/main/<path>)`.
 * Categorical ban on raw URLs (`raw.githubusercontent.com`) and local `file:///` links for GitHub assets.
 
 ### 1️⃣7️⃣ RULE 17: STRICT 10-SECOND RESPONSE LIMIT, PROCESS TIMEOUTS & TELEGRAM NOTIFICATION
