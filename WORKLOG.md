@@ -1,3 +1,22 @@
+## [2026-11-24 10:25:00] Ultarix-Monitor: Синхронизация единой версии v010 (Windows Setup, Updater, Android APK, Server)
+- **Контекст задачи:**
+  - Владимир указал на рассинхронизацию версий: Windows-агент уже имел версию `v009` (`Mon_v009`), в то время как Android-сборка ошибочно именовалась `v008`.
+  - По правилу Rule 15 вся линейка Ultarix-Monitor синхронизирована под единую старшую версию **`v010`**.
+- **Выполненные работы:**
+  1. **Windows-компоненты (v010):**
+     - `agent.ps1` переведён на `v010 (Mon_v010)`.
+     - `Ultarix_Monitor_Setup.cmd` переведён на `v010`.
+     - Сгенерирован `versions/Ultarix-Monitor_Setup_v010.cmd` и companion `.zip` `Ultarix-Monitor_Setup_v010.zip`.
+     - Создан быстрый апдейтер `1_UPDATE_ALL_TO_V010.cmd`.
+     - В `versions/` и `GitHub/Windows/` сохранены строго 2 последние версии (`v009` и `v010`), старая `v008` удалена.
+  2. **Android APK (v010):**
+     - В `build.gradle.kts` установлены `versionCode = 10`, `versionName = "v010"`.
+     - На сервере `DE-222` скомпилирован релиз `Ultarix-Monitor_v010.apk`.
+     - Загружен в MEGA Cloud: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/Ultarix-Monitor_v010.apk`.
+     - Опубликован в локальной сети: `\\s.gincz.com\user\APK\Ultarix-Monitor_v010.apk`.
+  3. **Сервер DE-222:**
+     - На веб-сервер `ultarix.gincz.com` доставлен `Ultarix-Monitor_Setup_v010.cmd`.
+
 ## [2026-11-24 10:20:00] Ultarix-Monitor (ultarix.gincz.com): Развёртывание модального окна правил учёта времени, интеграция в Android APK v008 и снятие лимита отдыха
 - **Контекст задачи:**
   - Владимир запросил уточнить правила подсчёта рабочего времени и отдыха в системе Ultarix-Monitor, а также встроить интерактивную русскую инструкцию в настройки программы (как через веб-интерфейс `ultarix.gincz.com`, так и в нативное Android-приложение для Ульяны).
