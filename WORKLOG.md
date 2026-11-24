@@ -6710,3 +6710,17 @@ etkvm) для виртуализации KVM/OCI.
     2. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (synced to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
     3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (synced to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
   - Purged older versions (`v033`, `v034`), strictly retaining the 2 latest versions (`v036` and `v037`) in all 3 targets.
+
+
+### [2026-11-24 10:40:00] Turnkey SEO & Facebook SMM Deployment: Car-Bus-Autoservice.cz
+- **Direct Server DE-222 (152.53.182.222) WordPress Optimization**:
+  - Located site at `/var/www/andrey-autoservis/data/www/car-bus-autoservice.cz` under user `andrey-autoservis`.
+  - Updated Front Page (ID `2`) text under banner with reinforced B2B & truck keywords: `Profesionální autoservis, servis nákladních aut a nákladní pneuservis Praha 5 – CBA`, 3D geometry, WABCO/KNORR diagnostics, kamiony/dodávky/tahače/návěsy.
+  - Configured SEOPress meta title and description for home page; updated WordPress `blogdescription`.
+  - Dispatched instant re-crawl notification to Google Indexing API (`URL_UPDATED`) for `https://car-bus-autoservice.cz/`.
+- **Facebook SMM Automation**:
+  - Implemented `cba_fb_poster.py` with 5-service rotation, site images, localized copy, hashtags, phone, and address.
+  - Successfully published live Facebook post (Post ID: `1149646017458545`).
+  - Added recurring cron job on Oracle-230 for every Tuesday at 10:00 AM.
+- **Local Maps Strategy (Google & Seznam)**:
+  - Prepared copy-pasteable Czech Title & Description for Google Maps and Firmy.cz along with direct management links.
