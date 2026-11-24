@@ -229,6 +229,16 @@
      - `pm disable-user --user 0 com.google.android.gsf/.update.SystemUpdateService`
   4. **Strict Chromecast Immunity (Never Touch):**
      - `com.google.android.apps.mediashell` (Chromecast Built-in) MUST ALWAYS be preserved and enabled (`pm enable com.google.android.apps.mediashell`). Screen casting from phones, Google Chrome, and Cent Browser must never be impaired.
+  5. **Mandatory First-Run Low-RAM (≤ 1.5GB) & Stick Emergency Thermal Profile:**
+     Whenever connecting to, configuring, or optimizing ANY Android TV stick or low-RAM TV-Box (≤ 1.5GB RAM, e.g. Xiaomi Mi TV Stick S805Y, Realme TV Stick, Chromecast HD, etc.), the agent MUST unconditionally execute the emergency thermal & RAM optimization FIRST, BEFORE any other commands, installations, or app launches:
+     - **Reduce UI Resolution to 720p:** `wm size 1280x720` and `wm density 213` (cuts GPU memory allocation, texture cache, and fillrate load on weak Mali GPUs in half; drops SoC temperature by 15–20°C, eliminating thermal shutdown/reboot loops while hardware video decoding in media players retains 1080p).
+     - **Disable All System Animations:**
+       - `settings put global window_animation_scale 0.0`
+       - `settings put global transition_animation_scale 0.0`
+       - `settings put global animator_duration_scale 0.0`
+     - **Strict Background Process Limit:** `settings put global background_process_limit 2`
+     - **Disable Heavy Recommendation Feeds & Telemetry:** `pm disable-user --user 0 com.google.android.tvrecommendations`
+     - **Mandatory Power Supply Verification Notice:** Immediately alert the user if a stick is powered from a TV's USB port (0.5A). Sticks MUST be powered strictly from an external dedicated 5V ≥ 1.5A–2.0A power adapter to prevent severe voltage drop reboots under load.
 
 
 ### 1️⃣2️⃣ MANDATORY TELEGRAM NOTIFICATIONS ON BUILD & DEPLOYMENT COMPLETION
