@@ -170,6 +170,15 @@
   - `FileDescription`: `<AppName>_vXXX`
   - `ProductName`: `<AppName>_vXXX`
   - `ProductVersion` / `FileVersion`: `vXXX` (`0.XXX.0.0`)
+* **Public GitHub Repositories Release Standard & Designated Targets:**
+  - For ANY project with a public GitHub repository (e.g. `GIN-PDF-RW`, `GIN-DNS-Switch`, `GIN-Dock-Wallpaper`), EVERY version increment MUST publish an official **GitHub Release** with compiled binary assets (`gh release create vXXX <Setup.exe>`) so users can download it directly from GitHub.
+  - Deliver compiled Windows installers to **BOTH**:
+    1. Desktop in MEGA: `/MEGA/DOCS/desktop/<AppName>_vXXX_Setup.exe` (maps to `D:\MEGA\DOCS\desktop\`)
+    2. Designated Flash Category in MEGA:
+       - `GIN-PDF-RW`: `/MEGA/WIN-FLASH/Util-WINDOWS/Graphics/PDF/` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\Graphics\PDF\`)
+       - `GIN-DNS-Switch`: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
+       - `GIN-Dock-Wallpaper`: `/MEGA/WIN-FLASH/Util-WINDOWS/Graphics/` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\Graphics\`)
+  - Retain strictly 2 latest versions in deployment targets (purge older releases via `mega-rm`).
 * **Delivery Strictly to Desktop in MEGA & Designated Targets:** All new Windows binaries and installers are written **EXCLUSIVELY to Vladimir's Desktop in MEGA** (`D:\MEGA\DOCS\desktop\` via `mega-put`) AND their designated utility target folders (specifically for `GIN-DNS-Switch`: `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\GIN-DNS-Switch_vXXX_Setup.exe` / `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`). Purge older releases via `mega-rm` (retain strictly 2 latest versions).
 * **Strict MEGA Cloud Sync Root Standard (`/MEGA/` Prefix):**
   - Vladimir's synchronized root folder on local drive `D:\` is mapped **EXCLUSIVELY to `/MEGA/` in the cloud**.
