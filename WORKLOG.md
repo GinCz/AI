@@ -6690,3 +6690,23 @@ etkvm) для виртуализации KVM/OCI.
   - Identified major B2B expansion vector: truck and heavy vehicle queries (`servis nákladních aut praha`, `geometrie nákladní`) require on-page title/H1 and metadata reinforcement.
 - **Local Maps Strategy (Google Business Profile & Seznam Firmy.cz)**:
   - Formulated precise category and naming enhancements in Czech for Firmy.cz (ID `12970144`) and Google Maps to boost ranking in B2B truck/bus service queries in Prague 5 / Strakonická.
+
+### [2026-11-24 10:30:00] GIN-Agent v036 & v037: Universal Multi-Tier Fallback, Session 0 Persistence & MEGA Delivery
+- **Server 109 Heartbeat Deadlock & Geo Fix (rd.gincz.com)**:
+  - Identified `get_geo_for_ip` synchronous calls to `ip-api.com` timing out on RU-109 (blocked in RU), causing `CLIENTS_LOCK` mutex contention and 6+ second delays in heartbeat responses.
+  - Patched `/opt/rustdesk-server/registry_server.py` on `212.109.223.109` to bypass external queries for local/private IPs and cached queries; reduced response latency from 6170ms to 137ms.
+- **GIN-Agent v036 & v037 Engineering**:
+  - **Universal 3-Tier Auto-Update Engine**: Implemented fast multi-tier fallback (GitHub raw 5s -> Server 222 [EU] 5s -> Server 109 [RU] 5s) preventing script deadlocks in Russia or under network restrictions.
+  - **Session 0 SYSTEM Background Isolation**: Fixed disconnect on user logoff. Replaced interactive session fallback with strict `NT AUTHORITY\SYSTEM` Task Scheduler execution (`GIN-Agent-Service` with dual `BootTrigger` + `LogonTrigger`, `DisallowStartIfOnBatteries=false`, `StopIfGoingOnBatteries=false`, `ExecutionTimeLimit=PT0S`, restart on failure every 1 min).
+  - **1-Click Self-Elevating Update & Clean Uninstall**: Installed `update.cmd` (auto-elevates via UAC, stops tasks, wipes stale mutexes/daemons, pulls and reinstalls latest release) and hardened `uninstall.cmd` directly into `C:\Program Files\GIN-Agent\`.
+  - **90-Day Rolling Diagnostic Log**: Integrated `logs\agent.log` with automatic rolling rotation (stores events for up to 90 days, max 5MB buffer).
+- **Multi-Node Deployment & Synchronizations**:
+  - GitHub repositories `GinCz/Windows_scripts` and `Secret_Privat`: updated to `v037` (`GIN-Agent_Windows_v037.cmd`, `version.txt=v037`).
+  - Server 222 (`152.53.182.222:9876`): deployed `GIN-Agent_Windows.cmd` (`v037`), updated `agent_bridge.py` with `HEAD` request handler.
+  - Server 109 (`212.109.223.109`): deployed `GIN-Agent_Windows.cmd` (`v037`) to `/var/www/agent/` and `/var/www/`.
+- **MEGA Cloud Delivery & Strict Retention Standard**:
+  - Deployed `GIN-Agent_Windows_v037.cmd` to all 3 designated targets via Server 222:
+    1. `/MEGA/DOCS/desktop/` (synced to `D:\MEGA\DOCS\desktop\`)
+    2. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (synced to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
+    3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (synced to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
+  - Purged older versions (`v033`, `v034`), strictly retaining the 2 latest versions (`v036` and `v037`) in all 3 targets.
