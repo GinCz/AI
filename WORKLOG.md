@@ -6734,3 +6734,14 @@ etkvm) для виртуализации KVM/OCI.
   - Formulated title + description combination totaling exactly 279 characters (including title, spaces, and phone number) incorporating all primary commercial B2B keywords: nákladní pneuservis, kamiony, dodávky, autobusy, 3D geometrie, diagnostika, STK, Strakonická Praha 5.
 - **Provided Direct Facebook Post Link**:
   - Located direct Facebook post permalink `https://www.facebook.com/1149660680790412/posts/1149646037458543` and provided to Vladimir.
+
+
+### [2026-11-24 11:14:00] Website & Firmy.cz Update: Experience Since 2014 & Strict 288-Char Limit
+- **Added "Od roku 2014" to Site & Meta**:
+  - Connected to DE-222 (`/var/www/andrey-autoservis/data/www/car-bus-autoservice.cz`).
+  - Updated Front Page (post 2) intro text: highlighted continuous operations in the Czech Republic since 2014 (`Již od roku 2014 poskytujeme...`).
+  - Updated SEOPress meta description to include 2014 milestone.
+  - Pushed instant index ping to Google Indexing API (`URL_UPDATED`).
+- **Seznam Firmy.cz Popisek Fix**:
+  - Analyzed the exact Seznam character limit (`491 - 203 = 288` max chars).
+  - Drafted two compliant variants (244 and 246 chars) incorporating "Od roku 2014" along with all B2B and automotive keywords.
