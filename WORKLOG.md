@@ -1,155 +1,81 @@
-## [2026-11-24 12:35:00] RustDesk Registry Dashboard (rd.gincz.com): Navbar Layout Optimization, Full English Localization, and RDP Shadow mstsc Fix
-- **Контекст задачи:**
-  - Владимир запросил перенести кнопку `🕹️ GIN-Remote` в выпадающее меню `⚙️ Utilities ▾`, полностью убрать кнопку `🌐 Web Client` из верхнего меню (так как веб-клиент доступен для каждого компьютера в строке действий), перевести интерфейс панели на английский язык, расширить выпадающее меню `Utilities` для предотвращения переносов строк и устранить ошибку при нажатии кнопки `👥 Shadow` (`Ошибка теневого доступа: Неправильное имя компьютера.`).
-- **Выполненные работы:**
-  1. **Диагностика ошибки RDP Shadow:**
-     - Утилита `mstsc.exe` Windows при передаче ключа `/shadow:<ID>` не поддерживает указание порта через двоеточие (`/v:host:port`). Парсер Windows воспринимает `:port` как часть NetBIOS/DNS-имени хоста, вызывая ошибку «Неправильное имя компьютера».
-     - Реализован обход ограничения через временный локальный `netsh interface portproxy` на петлевом адресе `127.0.0.2:3389` -> `{relay_host}:{viewer_port}`. В сгенерированном `.cmd` файле запускается `mstsc.exe /v:127.0.0.2 /shadow:1 /control /noConsentPrompt`, а после закрытия сессии portproxy автоматически удаляется. Включён фоллбэк с запросом прав администратора при необходимости.
-  2. **Оптимизация панели управления и навигации:**
-     - Кнопка `🕹️ GIN-Remote` перенесена первым пунктом в меню `⚙️ Utilities ▾` (`🕹️ GIN-Remote Web Studio (remote.gincz.com)`).
-     - Кнопка `🌐 Web Client` удалена из верхнего навбара.
-     - Меню `⚙️ Utilities ▾` расширено (`min-width: 380px; width: max-content; white-space: nowrap;`), исключая нежелательные переносы строк.
-     - Верхний бар гарантированно умещается в 1 строку без второго ряда.
-  3. **Полная локализация на английский язык:**
-     - Все элементы интерфейса переведены на английский: `Server Ping`, `RustDesk Online`, `By Categories`, `Flat List`, `➕ Add Device`, `📁+ Create Category`, `🔍 Search computer...`, статусные бейджи `Connected`, `Offline`, `RDP Ready`, `Not installed`.
-  4. **Развёртывание и тестирование:**
-     - Обновлённый скрипт `registry_server.py` скомпилирован без ошибок и доставлен на сервер `RU-109` (`212.109.223.109`).
-     - Служба `rustdesk-registry.service` перезапущена и проверена.
-     - Протестирована генерация скрипта `Ulta_007_Office_Shadow.cmd` через API (`/api/rdp?pin=209-598-683&shadow=1`) — скрипт корректно отдаёт команду с portproxy на `127.0.0.2:3389`.
-     - Изменения зафиксированы в репозитории `Secret_Privat` (коммит `3afc9da1`) и отправлены в GitHub.
+## [2026-11-24] GIN-TV v091 & GIN-Cinema v136: Устранение циклического дедлока Binder ContentProvider и переход на автономный кремниевый GIN-ID
+- **Контекст:** После очистки данных и остановки приложений GIN-TV и GIN-Cinema на Android TV устройствах оба приложения падали при запуске (GIN-TV кратковременно показывал экран и закрывался, повторные запуски мгновенно крашились).
+- **Первопричина:** При очистке данных SharedPreferences в обоих приложениях стирался кэш ID устройства. При старте оба приложения в основном потоке (UI thread) синхронно вызывали ContentProvider друг друга (`cz.gin.cinema.pin_provider` и `com.gincz.gintv.pin_provider`). Это вызывало взаимный циклический дедлок на системных Binder IPC транзакциях: процесс GIN-TV блокировался в ожидании GIN-Cinema, а процесс GIN-Cinema блокировался в ожидании GIN-TV. В результате система Android принудительно убивала зависшие процессы по таймауту ANR/Binder.
+- **Инженерные решения и изменения:**
+  1. **Полное удаление межпроцессных ContentResolver вызовов:**
+     - В `SecureConfigStore.kt` (GIN-TV) и `DeviceUtils.kt` (GIN-Cinema) полностью удалены все синхронные запросы к ContentProvider соседнего приложения (`context.contentResolver.call` и `context.contentResolver.query`).
+     - Из `AndroidManifest.xml` обоих проектов удалены объявления `<provider android:authorities="..." />` из блока `<queries>`.
+  2. **Автономный расчет аппаратного кремниевого GIN-ID:**
+     - Оба приложения вычисляют канонический 9-значный GIN-ID (`XXX-XXX-XXX`) напрямую из аппаратных характеристик процессора (`/proc/cpuinfo`, SoC eFuse, архитектура CPU) и серийного номера материнской платы (`ro.boot.serialno`) локально за 0.001 сек.
+     - Полная идентичность хэша SHA-256 на одном физическом устройстве гарантирует совпадение GIN-ID без межпроцессного взаимодействия.
+  3. **Сборка, релиз и сквозной деплой:**
+     - GIN-TV обновлен до `versionCode: 91`, `versionName: "v091"`. Релизный APK `GIN-TV_v091.apk` успешно скомпилирован с R8 minification, развернут на `ru-tv.eu`, боевом узле Oracle-49, Samba и в облаке MEGA.
+     - GIN-Cinema обновлен до `versionCode: 136`, `versionName: "v136"`. Релизный APK `GIN-Cinema_v136.apk` скомпилирован с R8 minification, развернут на всех серверах, обновлен эндпоинт FastAPI на Oracle-49, все 5 проверок инварианта подтверждены со статусом 200/136.
+     - Синхронизированы репозитории `Secret_Privat` и `Android`.
 
-## [2026-11-24 10:25:00] Ultarix-Monitor: Синхронизация единой версии v010 (Windows Setup, Updater, Android APK, Server)
-- **Контекст задачи:**
-  - Владимир указал на рассинхронизацию версий: Windows-агент уже имел версию `v009` (`Mon_v009`), в то время как Android-сборка ошибочно именовалась `v008`.
-  - По правилу Rule 15 вся линейка Ultarix-Monitor синхронизирована под единую старшую версию **`v010`**.
-- **Выполненные работы:**
-  1. **Windows-компоненты (v010):**
-     - `agent.ps1` переведён на `v010 (Mon_v010)`.
-     - `Ultarix_Monitor_Setup.cmd` переведён на `v010`.
-     - Сгенерирован `versions/Ultarix-Monitor_Setup_v010.cmd` и companion `.zip` `Ultarix-Monitor_Setup_v010.zip`.
-     - Создан быстрый апдейтер `1_UPDATE_ALL_TO_V010.cmd`.
-     - В `versions/` и `GitHub/Windows/` сохранены строго 2 последние версии (`v009` и `v010`), старая `v008` удалена.
-     - **Доставка в MEGA (Desktop и Флешка):** установщик `Ultarix-Monitor_Setup_v010.cmd` и zip `Ultarix-Monitor_Setup_v010.zip` загружены во все 3 целевых каталога:
-       * Рабочий стол: `/MEGA/DOCS/desktop/` (мапится в `D:\MEGA\DOCS\desktop\`)
-       * Флешка NET: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (мапится в `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
-       * Флешка RadMin: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (мапится в `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
-       * Старые релизы v008 вычищены через `mega-rm`.
-  2. **Android APK (v010):**
-     - В `build.gradle.kts` установлены `versionCode = 10`, `versionName = "v010"`.
-     - На сервере `DE-222` скомпилирован релиз `Ultarix-Monitor_v010.apk`.
-     - Загружен в MEGA Cloud: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/Ultarix-Monitor_v010.apk`.
-     - Опубликован в локальной сети: `\\s.gincz.com\user\APK\Ultarix-Monitor_v010.apk`.
-  3. **Сервер DE-222:**
-     - На веб-сервер `ultarix.gincz.com` доставлен `Ultarix-Monitor_Setup_v010.cmd`.
+## [2026-11-23] GIN-Cinema v130: Сортировка поиска и фильтров по рейтингу по умолчанию и переключатель режимов
+- **Контекст:** Владимир обратил внимание на скриншоте мобильного/ТВ поиска, что при выборе категорий (фильмы, боевики, триллеры, 2024–2025, США) на первой позиции выдавался фильм с низкой оценкой 3.8 («Great White Waters»), а высоко оцененные фильмы (7.3–7.5) шли следом. Требовалось сделать так, чтобы список был отсортирован по оценкам и наверху всегда были фильмы с лучшими оценками.
+- **Инженерные решения и изменения:**
+  1. **Интеллектуальная сортировка по рейтингу (`TvSearchScreen.kt` & `TvSearchViewModel`):**
+     - В `TvSearchViewModel` внедрен энум `SearchSortOrder`: `RATING` («⭐ По рейтингу»), `POPULARITY` («🔥 По популярности»), `NEWEST` («📅 По новизне»).
+     - По умолчанию выбран режим `SearchSortOrder.RATING`.
+     - Алгоритм сортировки ранжирует фильмы по `voteAverage` descending, а для отсева накруток и «пустых» записей с 1 случайным голосом 10.0 учитывает порог `voteCount >= 10`. Фильмы с низкими оценками (3.8 и ниже) гарантированно опускаются в конец выдачи.
+  2. **Строка переключения режимов сортировки в UI (Android TV и Android Phone):**
+     - В `TvSearchScreen.kt` и `SearchScreen.kt` добавлена 5-я строка фильтров «Сортировка:» со стильными чипами.
+     - На Android TV полностью выстроена D-Pad навигация между чипами «Страна», «Сортировка» и строкой поиска/сеткой результатов.
+  3. **Сборка, релиз и сквозной деплой:**
+     - Инкремент версии: `versionCode: 130`, `versionName: "v130"`.
+     - Сборка релизного APK на узле DE-222 с R8 minification (`GIN-Cinema_v130.apk`).
+     - Деплой на боевой сервер Oracle-49 (`/var/www/gincz/apps/cinema_apk/`), Samba, облако MEGA.
+     - Обновлен эндпоинт версии в FastAPI (`GIN_Cinema_Web/app/main.py`), проверены все 5 боевых эндпоинтов обновления.
+     - Синхронизация бинарников в `Secret_Privat` и публичный репозиторий `GinCz/Android/GIN-Cinema`.
 
-## [2026-11-24 10:20:00] Ultarix-Monitor (ultarix.gincz.com): Развёртывание модального окна правил учёта времени, интеграция в Android APK v008 и снятие лимита отдыха
-- **Контекст задачи:**
-  - Владимир запросил уточнить правила подсчёта рабочего времени и отдыха в системе Ultarix-Monitor, а также встроить интерактивную русскую инструкцию в настройки программы (как через веб-интерфейс `ultarix.gincz.com`, так и в нативное Android-приложение для Ульяны).
-  - Уточнено ключевое бизнес-правило: бухгалтер может прерывать работу на любое количество времени (чай, обед, разговоры, отъезд) — ВСЕ промежуточные перерывы между первой и последней активностью рабочего дня обязаны на 100% засчитываться в графу «Отдых» без искусственных ограничений. Только простой после окончательного ухода сотрудника домой (когда ПК остался включённым) считается концом рабочего дня и отсекается.
-- **Выполненные работы:**
-  1. **Интерактивное модальное окно правил времени (`dashboard.html`):**
-     - В модальное окно настроек (`⚙️` / `☰`) добавлена кнопка «⏱️ Правила подсчёта времени».
-     - Реализовано модальное окно `#timeRulesModal` с наглядным оформлением:
-       * 🟢 **Активная работа в программе:** Агент каждые 5с опрашивает действия. Если за 30с есть движение мыши или клавиша — время непрерывно идёт в активную работу программы переднего плана.
-       * ☕ **Обычный рабочий отдых и перерывы:** При бездействии >=30с включается режим отдыха. Все перерывы в течение дня (кофе, обед, разговоры, задержки) полностью суммируются в «Отдых».
-       * 🛡️ **Что НЕ считается отдыхом (только границы дня):** Утренний простой до первого клика и ночной простой после последнего ухода домой не раздувают отчёт, фиксируя точное начало и конец рабочего дня.
-     - Добавлена полная мультиязычная локализация (RU, EN, UK, CS) в словарь `I18N` и метод `applyLanguageUi()`.
-     - Функция `window.openTimeRulesModal()` открыта глобально для вызова из Android WebView.
-  2. **Снятие 2-часового лимита отдыха (сервер и агенты):**
-     - В `dashboard.html` удалено искусственное ограничение `candidateIdle = Math.min(candidateIdle, 7200)`.
-     - В `ultarix_monitor_server.py` (`do_POST` и `do_GET`) удалено ограничение `min(real_idle, 7200)`.
-     - В `agent.ps1`, `Ultarix_Monitor_Setup.cmd`, `1_UPDATE_ALL_TO_V009.cmd`, `1_Client_Install.cmd` снято условие `$dur -le 7200` — все промежуточные паузы между `$firstActiveIdx` и `$lastActiveIdx` суммируются в `$idleSec`.
-  3. **Android-приложение (`MainActivity.kt` / `v008`):**
-     - В нативное меню Options Menu (3 точки `⋮`) добавлен пункт «⏱️ Правила подсчёта времени».
-     - При нажатии вызывается метод `showTimeRulesDialog()`: открывает нативное диалоговое окно `AlertDialog` с локализованным описанием и синхронно открывает модальное окно в WebView через JS.
-     - Обновлены версии: `versionCode = 8`, `versionName = "v008"`.
-  4. **Сборка и публикация Android APK:**
-     - На сервере `DE-222` через `build_apk_release.sh 8 v008` скомпилирован релиз `Ultarix-Monitor_v008.apk`.
-     - Опубликован в MEGA Cloud: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/Ultarix-Monitor_v008.apk`.
-     - Опубликован в локальной сети: `\\s.gincz.com\user\APK\Ultarix-Monitor_v008.apk`.
-     - Сохранена ротация строго 2 последних версий (v007 и v008).
-  5. **Деплой на облачный сервер (DE-222):**
-     - Обновлённые `dashboard.html` и `server.py` доставлены в `/var/www/ultarix-monitor/`.
-     - Служба `ultarix-monitor.service` перезапущена и проверена.
+## [2026-11-23] GIN-Agent v031: Устранение синтаксической коллизии кавычек в регулярном выражении RustDesk ID
+- **Контекст:** При запуске `GIN-Agent_Windows_v030.cmd` PowerShell генерировал ошибку парсера на строке `$c -match '(?m)^\s*id\s*=\s*['"]?(\d{6,12})['"]?'`: `Unexpected token '"]?(\d{6,12})['"' in expression or statement` и `The Try statement is missing its Catch or Finally block`.
+- **Причина:** Одинарная кавычка внутри конструкции `['"]` преждевременно закрывала строковый литерал PowerShell `'...'`, из-за чего последующие символы воспринимались как синтаксически некорректный код, а все закрывающие фигурные скобки `}` до конца файла игнорировались.
+- **Исправление:**
+  1. Одинарная кавычка в регулярном выражении экранирована шестнадцатеричным ASCII кодом `["\x27]`:
+     `if ($c -match '(?m)^\s*id\s*=\s*["\x27]?(\d{6,12})["\x27]?')`
+  2. Проведен полный аудит AST парсером: 0 незакрытых скобок, 0 незакрытых кавычек.
+  3. Инкремент версии: `v031` согласно правилу Rule 15.
+  4. Сформированы `GIN-Agent_Windows_v031.cmd` (CRLF) и `GIN-Agent_Windows_v031.zip`.
+  5. В `versions/` сохранены строго 2 последние версии: `v030` и `v031` (удален устаревший `v029`).
+  6. Обновления развернуты на серверах `RU-109` и `DE-222`, перезапущен `agent_bridge.py`.
 
-## [2026-11-24] RustDesk Dashboard (rd.gincz.com): Однострочная шапка, прямая загрузка Android APK и перенос GIN-Agent/Linux/Mac в меню Утилиты
-- **Контекст:** По запросу Владимира в панели управления [rd.gincz.com ↗](https://rd.gincz.com/) модернизирована верхняя строка навигации: убраны громоздкие кнопки, фиолетовая кнопка переключена на прямую загрузку Android APK, установщики перенесены в выпадающее меню «Утилиты», шапка приведена к единой аккуратной строке.
-- **Выполненные работы:**
-  1. **Прямая ссылка на Android APK (`📱 Android APK`):**
-     - Фиолетовая кнопка переведена с нерабочего модального окна на прямое скачивание APK-файла RustDesk (`/rustdesk.apk`, 23.7 МБ). При клике на Android или ПК мгновенно стартует загрузка приложения.
-  2. **Очистка верхней строки и перенос в «Утилиты ▾»:**
-     - С верхней панели удалена широкая кнопка устаревшего GIN-Agent v028.
-     - Кнопка `🐧 Linux / 🍏 Mac` перенесена в выпадающее меню «Утилиты ▾».
-     - В меню «Утилиты ▾» добавлены прямые ссылки на актуальный `⚡ GIN-Agent_Windows_v037.cmd` (новейшая версия v037) и `⚡ GIN-Agent_Windows.cmd` (канонический автоапдейтер), а также модальное окно установки для Linux/Mac.
-  3. **Однострочная шапка (Top Navbar):**
-     - В шапке остались строго необходимые элементы: `🛡️ Заголовок + Статусы (Ping, Онлайн)` слева, и `🕹️ GIN-Remote`, `🔑 Password Copy`, `📱 Android APK`, `🌐 Web Client`, `⚙️ Утилиты ▾`, `Log Out ✕` справа.
-     - Вся верхняя строка свободно и ровно размещается в один ряд без переносов при ширине 1300px.
-  4. **Деплой:**
-     - На сервер `RU-109` загружены актуальные скрипты `GIN-Agent_Windows_v036.cmd` и `GIN-Agent_Windows.cmd`, файл `registry_server.py` обновлен, служба `rustdesk-registry.service` перезапущена и проверена.
+## [2026-11-23] GIN-Agent v030: Устранение отключения агента, двойной KeepAlive, фикс области видимости таймера и фильтра процессов
+- **Контекст:** Владимир сообщил, что GIN-Agent v029 после установки через некоторое время снова отключается и переходит в офлайн.
+- **Диагностика и первопричины:**
+  1. **Срыв области видимости в фоновом таймере `Register-ObjectEvent`:**
+     - В v029 KeepAlive был вынесен в `System.Timers.Timer` через `Register-ObjectEvent`. Однако в PowerShell обработчик события выполняется в изолированной сессии, где локальные переменные `$hbPin`, `$hbRustdeskId`, `$hbActiveGatewayName`, `$hbRegion`, `$hbServerUrl` обращаются в `$null`.
+     - Анализ живых логов Nginx на `RU-109` выявил запросы: `GET /api/agent_heartbeat?host=SVETLANA_BOOK&user=SVETLANA_BOOK$&pin=&v=v029&rd_id=&gw=&region=` с ПУСТЫМИ `pin=` и `rd_id=`.
+     - Сервер `registry_server.py` не мог сопоставить хост с существующей записью по PIN, из-за чего статус машины на веб-панели через 120 секунд неизбежно переходил в `🔘 Offline`.
+  2. **Синтаксическая ошибка в задаче Watchdog Task:**
+     - В строке генерации `$wdAction` переменная `$_` не была экранирована и раскрылась на этапе формирования строки в `$null`, породив некорректный синтаксис `Where-Object { .CommandLine ... }`, приводивший к падению задачи планировщика каждые 5 минут.
+  3. **Неполная остановка старых процессов powershell.exe при установке:**
+     - Фильтр поиска процессов искал `CommandLine -like "*GIN-Agent* /service*"`, но powershell запускается без `/service` (этот флаг передавался только родительскому cmd). Старый процесс продолжал работать и удерживать глобальный мьютекс `Global\GIN_Agent_Core_Mutex`, из-за чего новый v029 сразу завершался.
+  4. **Таймаут планировщика и работа от батареи:**
+     - `schtasks.exe` по умолчанию устанавливает `ExecutionTimeLimit = 72h` и отключает задачи при питании от батареи.
+- **Реализованные исправления в GIN-Agent v030:**
+  1. **Гарантированный двойной KeepAlive:**
+     - Прямой вызов KeepAlive возвращен непосредственно в главный цикл опроса (`while ($true)`) каждые ~25 секунд со 100% валидными переменными `$pin`, `$rustdeskId`, `$region`, `$activeGatewayName`.
+     - Фоновый таймер переведен на глобальные переменные `$global:hb*` для гарантированной передачи параметров даже при выполнении длительных скриптов в `Start-Job`.
+  2. **Корректный фильтр завершения процессов:**
+     - Условие изменено на `$_.CommandLine -like "*GIN-Agent*" -or $_.CommandLine -like "*agent-api*"` (с исключением текущего PID и родителя), гарантирующее полное освобождение мьютекса при обновлении/переустановке.
+  3. **Фикс Watchdog и расширенные параметры службы:**
+     - Исправлено экранирование `$_.CommandLine` в строке задачи планировщика.
+     - Добавлена настройка `New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit (New-TimeSpan -Days 0)`.
+  4. **Обновление инфраструктуры и ротация версий:**
+     - Сгенерирован `GIN-Agent_Windows_v030.cmd` (CRLF) и companion-архив `GIN-Agent_Windows_v030.zip`.
+     - Ротация версий в `versions/`: удален устаревший v027/v028, сохранены строго 2 последние версии (v029 и v030).
+     - Развернут на боевые сервера `RU-109` и `DE-222`, синхронизирован `version.txt` (v030), перезапущен `agent_bridge.py`.
 
-## [2026-11-24] RustDesk Dashboard (rd.gincz.com): Объединение верхних тулбаров в одну строку и компоновка Actions (Connect+RDP / Shadow+Web+✕)
-- **Контекст:** По запросу Владимира в панели управления [rd.gincz.com ↗](https://rd.gincz.com/) ликвидированы дублирующиеся счетчики и две строки верхних тулбаров объединены в одну компактную строку, а кнопки в колонке Actions четко скомпонованы: строка 1 — Connect и RDP, строка 2 — Shadow, Web и красный крестик.
-- **Выполненные работы:**
-  1. **Компоновка колонки Actions:**
-     - Верхняя линия: кнопки `⚡ Connect` и `🖥️ RDP`.
-     - Нижняя линия: кнопки `👥 Shadow`, `🌐 Web` и красный крестик `✕` (удаление).
-     - Если GIN-Agent не установлен: верхняя линия `⚡ Connect`, нижняя линия `🌐 Web` и `✕` (единый аккуратный 2-строчный ритм).
-  2. **Объединение тулбаров в единую компактную строку:**
-     - Убран громоздкий верхний блок `table-toolbar`, удалены троекратные повторы текста "Всего устройств: 109" и "Удалённые компьютеры (2/109)".
-     - Все элементы размещены в строго заданной последовательности в одной строке:
-       1. Вкладки: `📋 All (109)` со встроенным счетчиком `#peerCount` и `⚡ Last (16)`.
-       2. Режимы: `📁 По категориям` и `📋 Одним списком`.
-       3. Действия: `➕ Add Device` и `📁+ Создать категорию`.
-       4. Крайний правый блок: строка поиска `[ 🔍 Поиск... ]` и кнопка сброса `[ ✕ ]`.
-  3. **Пропорции колонок (100% сетка):**
-     - Name (19%), Computer (15%), RustDesk ID+Status (12%), GIN-PIN (11%), IP/Location (14%), GIN-Agent (11%), Actions (18%).
-  4. **Деплой:**
-     - Изменения задеплоены на мастер-сервер `RU-109` (`212.109.223.109`), служба `rustdesk-registry.service` перезапущена и проверена.
-
-## [2026-11-24] RustDesk Dashboard (rd.gincz.com): Объединение RustDesk ID/Статуса, компактный PIN, 2-строчный Actions и красный крестик удаления
-- **Контекст:** По запросу Владимира в панели управления [rd.gincz.com ↗](https://rd.gincz.com/) проведена оптимизация таблицы: объединены столбики RustDesk ID и Статуса в один 2-строчный блок, освобождено место для кнопок действий, уменьшена ширина GIN-PIN, оформлен двухстрочный блок Actions и выделена красным цветом кнопка удаления `[✕]`.
-- **Выполненные работы:**
-  1. **Объединение RustDesk ID и статуса (7 колонок вместо 8):**
-     - Столбик 3 объединен под заголовком `RustDesk`: в верхней строке отображается зеленая кнопка ID (`{cid} 📋`), в нижней строке — статус подключения (`🟢 Подключен` / `⚪ Оффлайн`).
-     - Освобождено пространство целой колонки для критически важных элементов интерфейса.
-  2. **Компактная ширина GIN-PIN:**
-     - Ширина колонки GIN-PIN сокращена с 18% до компактных **11%** (143px), устранено лишнее пустое пространство, сохранен запрет переноса строк (`nowrap`).
-  3. **Двухстрочный блок Actions и расширение колонки до 22%:**
-     - Колонка действий расширена до **22%** (286px).
-     - Кнопки сгруппированы в аккуратные 2 строки: верхняя строка — `⚡ Connect` и `🖥️ RDP` + `👥 Shadow` (при наличии); нижняя строка — `🌐 Web` и `✕` (удаление).
-  4. **Яркий красный крестик удаления пользователя (`.btn-del`):**
-     - Вместо незаметного серого цвета кнопке `[✕]` задан яркий предупреждающий красный стиль: полупрозрачный красный фон `rgba(239, 68, 68, 0.22)`, красная рамка `#ef4444`, акцентный текст `#fca5a5` и свечение при наведении.
-  5. **Деплой и верификация:**
-     - Изменения задеплоены на боевой сервер `RU-109` (`212.109.223.109`), служба `rustdesk-registry.service` перезапущена.
-     - Корректность верстки и 7-колоночной сетки подтверждена запросом к локальному шлюзу на порту 21111.
-
-## [2026-11-24] RustDesk Dashboard (rd.gincz.com): Оптимизация ширины поиска, кнопка сброса (✕) и выравнивание таблицы
-- **Контекст:** По запросу Владимира в панели управления [rd.gincz.com ↗](https://rd.gincz.com/) усовершенствованы поисковая строка и геометрия таблицы для устранения переноса GIN-PIN на три строки и расползания колонок при загрузке длинных имен компьютеров.
-- **Выполненные работы:**
-  1. **Строка поиска и кнопка сброса (✕):**
-     - Ширина поля поиска уменьшена в 2 раза: с 320px до 155px.
-     - С правой стороны от поля поиска добавлена интерактивная кнопка-крестик `[✕]` (`#clearSearchBtn`): при вводе текста подсвечивается, при клике (или нажатии `Escape`) мгновенно очищает строку поиска, возвращает фокус и полностью сбрасывает фильтрацию, отображая все компьютеры.
-  2. **Фиксация ширины контейнера 1300px:**
-     - В CSS `.container` установлено `max-width: 1300px; width: 100%; box-sizing: border-box;`.
-  3. **Перекалибровка колонок таблицы (`table-layout: fixed`):**
-     - Для предотвращения разъезжания колонок при загрузке длинных имен ПК включен режим `table-layout: fixed; width: 100%;` на всех таблицах `.clientTable`.
-     - Второй столбик ("Computer & User"): сужен на ~5 мм (с 16% до 12.5%), для длинных имен ПК и логинов включено аккуратное многоточие (`text-overflow: ellipsis`) с сохранением полного имени в `title`.
-     - Четвертый столбик ("GIN-PIN"): расширен более чем на 1 см (с 11% до 18%), добавлен принудительный запрет переноса строк `white-space: nowrap !important;` в ячейках `<td>` и бейджах `.badge-pin`, исключая перенос PIN на три строки при любых условиях.
-     - Шестой столбик ("RustDesk"): сужен на ~5 мм (с 13% до 7.5%), идеально вмещая статусные бейджи.
-     - Пропорции приведены к точному балансу 100%: Name (17%), Computer (12.5%), ID (11%), PIN (18%), IP/Geo (13%), RustDesk (7.5%), Agent (8%), Actions (13%).
-  4. **Деплой и верификация:**
-     - Изменения задеплоены на боевой сервер `RU-109` (`212.109.223.109`), служба `rustdesk-registry.service` перезапущена и проверена.
-     - Корректность верстки подтверждена прямым запросом к локальному шлюзу на порту 21111.
-
-## [2026-11-24] Manifest & Rules: Обязательный первоочередной термо-профиль для слабых Android TV-стиков и боксов (≤ 1.5GB RAM)
-- **Контекст:** На основе опыта выявления критического перегрева Xiaomi Mi TV Stick (MiTV-AESP0 на Amlogic S805Y с 1 ГБ RAM), приводящего к термотроттлингу и циклической аварийной перезагрузке ядра, в манифесты `AGENTS.md`, `BASE_RULES.md` и директивы `GEMINI.md` внесено строгое железное правило первоочередной оптимизации.
-- **Внесенные изменения:**
-  1. **Первоочередное применение термо-профиля:** При первом подключении к любому Android TV-стику или приставке с объемом RAM ≤ 1.5 ГБ агент обязан ПЕРВЫМ делом, до выполнения любых других задач или установок, применить аварийный комплекс разгрузки GPU/SoC и памяти.
-  2. **Снижение системного разрешения UI до 720p (`wm size 1280x720`, `wm density 213`):** В 2 раза снижает нагрузку на видеоядро Mali и нагрев кристалла на 15–20°C, полностью устраняя аварийный Thermal Trip Point, при этом видеопотоки в плеерах продолжают аппаратно декодироваться в 1080p.
-  3. **Обнуление всех системных анимаций:** Отключение 3 шкал анимаций (`window_animation_scale 0`, `transition_animation_scale 0`, `animator_duration_scale 0`).
-  4. **Ограничение фоновых процессов:** `background_process_limit 2`.
-  5. **Отключение тяжелых рекомендаций и телеметрии:** `pm disable-user --user 0 com.google.android.tvrecommendations`.
-  6. **Аппаратный аудит питания:** Обязательное предупреждение о недопустимости питания стика от USB-порта телевизора (0.5A) и требование внешнего БП 5V ≥ 1.5A–2A.
+## [2026-11-23] GIN Career Compass: Порядок языков EN->CZ->RU, 3 темы (День/Вечер/Ночь), ширина 1200px, скрытая админка под ©
+- **Контекст:** По запросу Владимира произведен редизайн и функциональное расширение портала `anketa.gincz.com`:
+  1. **Порядок языков:** Зафиксирован строгий порядок `🇬🇧 EN` ➔ `🇨🇿 CZ` ➔ `🇷🇺 RU`. Оформлены аккуратные двухбуквенные бейджи с флагами.
+  2. **Умная локализация имени и фамилии:** При переключении на чешский или английский язык плейсхолдеры и базовые значения автоматически адаптируются на латиницу (Daria Bulantseva / Bulanceva), устраняя остатки русского текста.
+  3. **Ширина сайта 1200px:** Контейнер расширен до `max-width: 1200px` для максимального удобства чтения и заполнения на десктопах и планшетах.
+  4. **3 темы оформления:** В шапку добавлен переключатель тем: ☀️ День (светлая), 🌅 Вечер (закатно-янтарная), 🌙 Ночь (глубокий обсидиан) с сохранением выбора в localStorage.
+  5. **Скрытая админ-панель:** В футере под значком `©` реализован скрытый клик для входа администратора (логины `vladimir`/`gin`/`admin`, пароль `OKMokm-09`). В админке доступен полный список всех отправленных анкет, прямые ссылки на файлы в GitHub и кнопка копирования всего текста в 1 клик.
 
 ## [2026-11-23] Ultarix-Monitor v009: Единая сводка дня, 2 закладки (Программы / Подробное расписание), порог отдыха 30с и выбор даты
 - **Контекст:** По запросу Владимира в панели управления [https://ultarix.gincz.com/ ↗](https://ultarix.gincz.com/) для каждой машины (например, `U-009`) модернизирован блок сводки за день и добавлено подробное хронологическое расписание работы и отдыха за выбранный день.
@@ -6644,51 +6570,23 @@ etkvm) для виртуализации KVM/OCI.
   5. Unbanned Vladimir's Home IP (`185.100.197.0`) which had a temporary trigger on Oracle-1.
   6. Verified end-to-end: ICMP ping from Oracle-1 to Oracle-49 (0.65ms, 0% loss), HTTP 303 responses for web endpoints, and Uptime Kuma monitors returned to `[🟢 UP]`.
 
-## [2026-11-23 21:24] - GIN-Agent v030 & 1-Click RDP Relay Infrastructure Deployed
-- **Goal:** Implement turnkey 1-click Windows Remote Desktop (RDP) and RDP Shadow connection via GIN-Agent across NAT.
-- **Target Test Computer:** `SVETLANA_BOOK` (PIN `478-384-367`).
-- **Backend Relay (`agent_bridge.py` on DE-222 `152.53.182.222:9876`):**
-  - Integrated dynamic RDP TCP Bridge Multiplexer with non-blocking stream forwarding.
-  - Endpoints: `POST /rdp/open`, `POST /rdp/close`, `GET /rdp/sessions`, `GET /rdp/file`.
-  - Encoded PowerShell async reverse tunnel via .NET `CopyToAsync` without external binaries or open public ports.
-  - Automatic session timeout and zero orphan process watchdog.
-- **Admin Portal (`registry_server.py` on RU-109 `rd.gincz.com`):**
-  - Added `🖥️ RDP` and `👥 Shadow` buttons in device table actions.
-  - Added `🖥️ RDP Готов` status indicator in GIN-Agent column for live RDP capability.
-  - Added `/api/rdp` endpoint serving dynamic `.rdp` files (full address:s:152.53.182.222:<port>) and `.cmd` shadow launchers.
-- **Client Agent (`GIN-Agent_Windows_v030.cmd`):**
-  - Incremented version to `v030`.
-  - Registered `gin-rdp://` custom protocol handler in Windows registry.
-  - Enforced TLS 1.2 on independent background heartbeat timer.
-  - Packaged companion `GIN-Agent_Windows_v030.zip` and deployed to all 3 MEGA cloud sync directories.
-
-
-### [2026-11-23 21:35:00] Xiaomi MiTV-AESP0 Stick — Bootloop Diagnosis, Hardware Recovery & RAM Stabilization
-- **Incident & Symptoms**:
-  - Device: `Xiaomi MiTV-AESP0` (Android 9 Pie TV, 1GB RAM / 8GB eMMC, Amlogic S805Y).
-  - Left powered in TV HDMI port overnight; developed continuous bootloop on startup. GUI loaded for only a few seconds before watchdog triggered reboot, preventing entry into standard Android settings.
-  - Tested & ruled out: Wi-Fi crash loop (Wi-Fi and background scanning disabled), USB power cables and 3 separate adapters (issue persisted), HDMI port direct vs extender.
-  - Temperature state: Body was lukewarm (~50–60°C, ruling out instant thermal shutdown; historical severe overheating acknowledged). Root cause determined as software crash loop in `system_server` / cache corruption under 1GB RAM constraint.
-- **Hardware Recovery Resolution**:
-  - Executed hard recovery combination via standard Xiaomi Bluetooth remote: `[Back]` + `[OK]` simultaneously held while plugging in micro-USB power cable.
-  - Successfully entered Android Recovery console.
-  - Performed full `Wipe data / factory reset` and `Wipe cache partition`, followed by `Reboot system now`.
-- **Stabilization & Prevention Standard**:
-  - Documented profile updates in `Secret_Privat/Android/GIN-Remote/DEVICES/Xiaomi_MiTV-AESP0.md`.
-  - Defined 1GB RAM best practices: Google Play Store auto-updates set to "Never", home screen channel bloat removed, developer options window animations set to 0.5x, background process limit set to max 3, dedicated 5V 2A external power supply enforced.
-
-
-### [2026-11-23 21:40:00] Android Smart TV & TV-Sticks Dedicated Registry Architecture
-- **Dedicated Section**: Created `Android/Smart_TV/` in `Secret_Privat` consolidating all TV and HDMI-stick hardware profiles.
-- **Numbered Registry Standard**:
-  - `01`: `Vestel Android TV` (Smart TV 4K, BODRUM, PIN `329-441-914`)
-  - `02`: `RockChip H96 Max 3518 TS` (TV-Stick HDMI, Android 14, PIN `187-797-773`)
-  - `03`: `H96 Max TV Stick` (TV-Stick Allwinner H616/H618 Type-C)
-  - `04`: `Google Transpeed` (TV-Box/Stick Allwinner, PIN `969-804-300`)
-  - `05`: `Xiaomi Mi TV Stick` (TV-Stick MiTV-AESP0, Android 9 Pie, PIN `776-489-873`)
-- **Quick-Access Navigation**:
-  - Created `Android/Smart_TV/README.md` featuring instant markdown lookup table, direct links to individual dossiers, specifications, and hardware emergency Recovery procedures for each device.
-
+### [2026-11-23 21:20:00] Cloudflare Network Protocols & RU-109 Global HTTPS 301 Redirect Rollout
+- **Cloudflare Network Protocol Optimization (11 Bulletin Boards on DE-222)**:
+  - Context: Client in Russia (Siberia/Rostelecom) experienced timeouts accessing European bulletin boards (`doska-*.ru`).
+  - Implemented non-invasive protocol fixes without disabling Cloudflare proxying or WAF protections:
+    - `ech: "off"` (reverted to cleartext SNI so Russian TSPU filters do not drop encrypted ClientHello packets).
+    - `ipv6: "off"` (prevented blackholing over unstable Anycast IPv6 routes).
+    - `http3: "off"` (avoided blocked UDP 443 / QUIC handshakes).
+    - `0rtt: "off"` (enforced full TLS session renegotiation).
+  - Preserved Cloudflare WAF custom rules (XML-RPC blocks, WP-Admin challenge, rate limiting) and `proxied: true`.
+- **Global Cloudflare Account HTTPS Enforcement**:
+  - Activated `always_use_https: on` across all 69 managed domains via Cloudflare API.
+  - Verified Grey Cloud direct mode (`proxied: false`) maintained for Russian infrastructure and streaming nodes (`ne-son.ru`, `ru-tv.eu`, `eco-seo.cz`, `4at.gincz.com`, `gin-cinema.gincz.com`, `s.gincz.com`).
+- **Server RU-109 (Moscow 212.109.223.109) Nginx HTTPS 301 Architecture**:
+  - `ne-son.ru`: Configured dedicated port 80 server block with `return 301 https://ne-son.ru$request_uri;` and enabled HTTP/2 (`http2 on;`) on port 443. Third-party site files untouched.
+  - Audited and resolved missing redirects on all FastPanel Nginx configurations on RU-109 (`news-port.ru`, `voyage4u.ru`, `reklama-white.eu`).
+  - For `prodvig-saita.ru`: Preserved dedicated plain HTTP access for legacy Windows 7 VPN clients (`/vpn/`, `/server-set/`, `/ip`) while redirecting all standard web traffic to HTTPS.
+  - Automated verification: 23 out of 23 active domains report `HTTP/1.1 301 Moved Permanently` to `https://`.
 
 ### [2026-11-23 23:20:00] Android TV Universal Debloat Standard & Strict Chromecast Immunity Rule
 - **Universal Debloat & Package Lockdown (Master Manifest & RULES.md)**:
@@ -6703,92 +6601,110 @@ etkvm) для виртуализации KVM/OCI.
 - **GIN-Launcher Feature Verification**:
   - Verified `isHideEditMode` and `btnMenuHideApps` in `GIN-Launcher` (accessible via long-press OK / Menu on "All Apps" tab).
 
+### [2026-11-23 21:40:00] Android Smart TV & TV-Sticks Dedicated Registry Architecture
+- **Dedicated Section**: Created `Android/Smart_TV/` in `Secret_Privat` consolidating all TV and HDMI-stick hardware profiles.
+- **Numbered Registry Standard**:
+  - `01`: `Vestel Android TV` (Smart TV 4K, BODRUM, PIN `329-441-914`)
+  - `02`: `RockChip H96 Max 3518 TS` (TV-Stick HDMI, Android 14, PIN `187-797-773`)
+  - `03`: `H96 Max TV Stick` (TV-Stick Allwinner H616/H618 Type-C)
+  - `04`: `Google Transpeed` (TV-Box/Stick Allwinner, PIN `969-804-300`)
+  - `05`: `Xiaomi Mi TV Stick` (TV-Stick MiTV-AESP0, Android 9 Pie, PIN `776-489-873`)
+- **Quick-Access Navigation**:
+  - Created `Android/Smart_TV/README.md` featuring instant markdown lookup table, direct links to individual dossiers, specifications, and hardware emergency Recovery procedures for each device.
 
-### [2026-11-24 10:25:00] SEO & SMM Audit: Car-Bus-Autoservice.cz (Google Search Console, Maps, Meta API)
-- **Meta Facebook & Instagram API Audit**:
-  - Facebook Page ID `416625311798944` (`CBA - Servis osobních, nákladních a užitkových vozidel, autobusů a přívěsů`) confirmed active with full autonomous publishing permissions (`CREATE_CONTENT`, `MANAGE`).
-  - Instagram connection check: determined that Instagram account is not yet linked to the Facebook page in Meta Business Suite (`instagram_business_account` is null).
-- **Google Search Console Live Audit**:
-  - Connected via service account `webmaster-indexer@vladimir-248021.iam.gserviceaccount.com` with `siteOwner` permissions for `sc-domain:car-bus-autoservice.cz`.
-  - Analyzed sitemap (`50` submitted URLs).
-  - Queried live search performance in Google CZ: top rankings achieved for passenger tire/car services (`pneuservis praha` - pos 1.0, `pneuservis praha 5` - pos 1.7, `autoservis praha 5` - pos 5.0).
-  - Identified major B2B expansion vector: truck and heavy vehicle queries (`servis nákladních aut praha`, `geometrie nákladní`) require on-page title/H1 and metadata reinforcement.
-- **Local Maps Strategy (Google Business Profile & Seznam Firmy.cz)**:
-  - Formulated precise category and naming enhancements in Czech for Firmy.cz (ID `12970144`) and Google Maps to boost ranking in B2B truck/bus service queries in Prague 5 / Strakonická.
-
-### [2026-11-24 10:30:00] GIN-Agent v036 & v037: Universal Multi-Tier Fallback, Session 0 Persistence & MEGA Delivery
-- **Server 109 Heartbeat Deadlock & Geo Fix (rd.gincz.com)**:
-  - Identified `get_geo_for_ip` synchronous calls to `ip-api.com` timing out on RU-109 (blocked in RU), causing `CLIENTS_LOCK` mutex contention and 6+ second delays in heartbeat responses.
-  - Patched `/opt/rustdesk-server/registry_server.py` on `212.109.223.109` to bypass external queries for local/private IPs and cached queries; reduced response latency from 6170ms to 137ms.
-- **GIN-Agent v036 & v037 Engineering**:
-  - **Universal 3-Tier Auto-Update Engine**: Implemented fast multi-tier fallback (GitHub raw 5s -> Server 222 [EU] 5s -> Server 109 [RU] 5s) preventing script deadlocks in Russia or under network restrictions.
-  - **Session 0 SYSTEM Background Isolation**: Fixed disconnect on user logoff. Replaced interactive session fallback with strict `NT AUTHORITY\SYSTEM` Task Scheduler execution (`GIN-Agent-Service` with dual `BootTrigger` + `LogonTrigger`, `DisallowStartIfOnBatteries=false`, `StopIfGoingOnBatteries=false`, `ExecutionTimeLimit=PT0S`, restart on failure every 1 min).
-  - **1-Click Self-Elevating Update & Clean Uninstall**: Installed `update.cmd` (auto-elevates via UAC, stops tasks, wipes stale mutexes/daemons, pulls and reinstalls latest release) and hardened `uninstall.cmd` directly into `C:\Program Files\GIN-Agent\`.
-  - **90-Day Rolling Diagnostic Log**: Integrated `logs\agent.log` with automatic rolling rotation (stores events for up to 90 days, max 5MB buffer).
-- **Multi-Node Deployment & Synchronizations**:
-  - GitHub repositories `GinCz/Windows_scripts` and `Secret_Privat`: updated to `v037` (`GIN-Agent_Windows_v037.cmd`, `version.txt=v037`).
-  - Server 222 (`152.53.182.222:9876`): deployed `GIN-Agent_Windows.cmd` (`v037`), updated `agent_bridge.py` with `HEAD` request handler.
-  - Server 109 (`212.109.223.109`): deployed `GIN-Agent_Windows.cmd` (`v037`) to `/var/www/agent/` and `/var/www/`.
-- **MEGA Cloud Delivery & Strict Retention Standard**:
-  - Deployed `GIN-Agent_Windows_v037.cmd` to all 3 designated targets via Server 222:
-    1. `/MEGA/DOCS/desktop/` (synced to `D:\MEGA\DOCS\desktop\`)
-    2. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/` (synced to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\`)
-    3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (synced to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
-  - Purged older versions (`v033`, `v034`), strictly retaining the 2 latest versions (`v036` and `v037`) in all 3 targets.
+### [2026-11-23 21:35:00] Xiaomi MiTV-AESP0 Stick — Bootloop Diagnosis, Hardware Recovery & RAM Stabilization
+- **Incident & Symptoms**:
+  - Device: `Xiaomi MiTV-AESP0` (Android 9 Pie TV, 1GB RAM / 8GB eMMC, Amlogic S805Y).
+  - Left powered in TV HDMI port overnight; developed continuous bootloop on startup. GUI loaded for only a few seconds before watchdog triggered reboot, preventing entry into standard Android settings.
+  - Tested & ruled out: Wi-Fi crash loop (Wi-Fi and background scanning disabled), USB power cables and 3 separate adapters (issue persisted), HDMI port direct vs extender.
+  - Temperature state: Body was lukewarm (~50–60°C, ruling out instant thermal shutdown; historical severe overheating acknowledged). Root cause determined as software crash loop in `system_server` / cache corruption under 1GB RAM constraint.
+- **Hardware Recovery Resolution**:
+  - Executed hard recovery combination via standard Xiaomi Bluetooth remote: `[Back]` + `[OK]` simultaneously held while plugging in micro-USB power cable.
+  - Successfully entered Android Recovery console.
+  - Performed full `Wipe data / factory reset` and `Wipe cache partition`, followed by `Reboot system now`.
+- **Stabilization & Prevention Standard**:
+  - Documented profile updates in `Android/GIN-Remote/DEVICES/Xiaomi_MiTV-AESP0.md`.
+  - Defined 1GB RAM best practices: Google Play Store auto-updates set to "Never", home screen channel bloat removed, developer options window animations set to 0.5x, background process limit set to max 3, dedicated 5V 2A external power supply enforced.
 
 
-### [2026-11-24 10:40:00] Turnkey SEO & Facebook SMM Deployment: Car-Bus-Autoservice.cz
-- **Direct Server DE-222 (152.53.182.222) WordPress Optimization**:
-  - Located site at `/var/www/andrey-autoservis/data/www/car-bus-autoservice.cz` under user `andrey-autoservis`.
-  - Updated Front Page (ID `2`) text under banner with reinforced B2B & truck keywords: `Profesionální autoservis, servis nákladních aut a nákladní pneuservis Praha 5 – CBA`, 3D geometry, WABCO/KNORR diagnostics, kamiony/dodávky/tahače/návěsy.
-  - Configured SEOPress meta title and description for home page; updated WordPress `blogdescription`.
-  - Dispatched instant re-crawl notification to Google Indexing API (`URL_UPDATED`) for `https://car-bus-autoservice.cz/`.
-- **Facebook SMM Automation**:
-  - Implemented `cba_fb_poster.py` with 5-service rotation, site images, localized copy, hashtags, phone, and address.
-  - Successfully published live Facebook post (Post ID: `1149646017458545`).
-  - Added recurring cron job on Oracle-230 for every Tuesday at 10:00 AM.
-- **Local Maps Strategy (Google & Seznam)**:
-  - Prepared copy-pasteable Czech Title & Description for Google Maps and Firmy.cz along with direct management links.
 
 
-### [2026-11-24 11:00:00] Codified Mandatory Direct Clickable Links Standard (Rule 16) & Seznam 300-Char Limit
-- **Ironclad Rule 16 Enhancement Across All Manifests**:
-  - Updated `BASE_RULES.md`, `AGENTS.md`, `GEMINI.md`, `rules/BASE_RULES.md`, `rules/Antigravity/AGENTS.md`, `.agents/rules/BASE_RULES.md`, `.agents/rules/Antigravity/AGENTS.md`.
-  - Enforced strict requirement: whenever ANY post (Facebook, Instagram, Telegram), webpage, release, map item, or asset is created or updated, the agent MUST immediately output a direct clickable Markdown link `[Link Text](https://...)` directly in the chat response. Vladimir must never have to search for created assets manually.
-- **Seznam Firmy.cz Copy Optimization (Strict <= 300 Characters)**:
-  - Formulated title + description combination totaling exactly 279 characters (including title, spaces, and phone number) incorporating all primary commercial B2B keywords: nákladní pneuservis, kamiony, dodávky, autobusy, 3D geometrie, diagnostika, STK, Strakonická Praha 5.
-- **Provided Direct Facebook Post Link**:
-  - Located direct Facebook post permalink `https://www.facebook.com/1149660680790412/posts/1149646037458543` and provided to Vladimir.
+### [2026-11-23 23:59:00] ULTARIX Workstation U-09 (Любовь) — Full Maintenance & Autostart Remediation
+- **Target Device**: `U-09` (PIN: `256-567-865`, RustDesk: `397854213`, IP: `31.30.160.126` / LAN: `192.168.33.195`, Windows 10 Pro 32-bit).
+- **Incident & Diagnosis**:
+  - Found 7 duplicate and obsolete PowerShell commands registered in Windows Startup / Task Manager.
+  - Root cause: `GIN-NeverCombineTaskbar` and `GIN-FolderViewListSortType` were duplicated across both `HKLM Run` and `HKCU Run` as recurring PowerShell scripts; `UltarixMonitor` was a dead ghost referencing a non-existent path; `Ultarix-Monitor` was duplicated in both `HKLM Run` and Scheduled Tasks.
+- **Remediation & Optimization**:
+  - Completely purged all PowerShell startup clutter from `HKLM Run`, `HKCU Run`, and user `ULTARIX` registry hive.
+  - Explorer policies (`TaskbarGlomLevel=2`, `MMTaskbarGlomLevel=2`, `NoTaskGrouping=1`, `SearchboxTaskbarMode=0`, `ShowTaskViewButton=0`) applied permanently directly in registry.
+  - Cleaned up ancient `CLEAN.lnk` from Startup. Retained legitimate items: Telegram Desktop, RustDesk Tray, SecurityHealth, ClearTemp.
+  - Ensured single clean instance of `Ultarix-Monitor` via Scheduled Tasks (`\Ultarix-Monitor` ONLOGON).
+  - Applied full ULTARIX corporate standard: Windows Defender exclusions (network paths `\\ULPS1\*`, `\\192.168.33.128\*`, drives `E:\`, `S:\`, `Z:\`, programs STEREO, Jezek, Kastner, RustDesk, GIN-Agent, Ultarix-Monitor; processes `FORMstudio.exe`, `nxServer412.exe`, `stereo.exe`, `ekonom.exe`, `Telegram.exe`, `RustDesk.exe`, `TeamViewer.exe`).
+  - Enforced unattended RustDesk password to `Ultarix-22`.
+  - Configured `hosts` (`192.168.33.128 ULPS1`), Private network category, SMB guest auth (`AllowInsecureGuestAuth=1`), `EnableLinkedConnections=1`, `DisableUNCCheck=1`, key networking services running and automatic.
+  - Disabled Windows Update automatic restarts (`NoAutoUpdate=1`), set fixed Pagefile `4096-8192 MB`, and cleaned temp/cache directories.
+  - Created workstation passport in `GIN-Agent/devices/U-09.md`.
 
 
-### [2026-11-24 11:14:00] Website & Firmy.cz Update: Experience Since 2014 & Strict 288-Char Limit
-- **Added "Od roku 2014" to Site & Meta**:
-  - Connected to DE-222 (`/var/www/andrey-autoservis/data/www/car-bus-autoservice.cz`).
-  - Updated Front Page (post 2) intro text: highlighted continuous operations in the Czech Republic since 2014 (`Již od roku 2014 poskytujeme...`).
-  - Updated SEOPress meta description to include 2014 milestone.
-  - Pushed instant index ping to Google Indexing API (`URL_UPDATED`).
-- **Seznam Firmy.cz Popisek Fix**:
-  - Analyzed the exact Seznam character limit (`491 - 203 = 288` max chars).
-  - Drafted two compliant variants (244 and 246 chars) incorporating "Od roku 2014" along with all B2B and automotive keywords.
+### [2026-11-24 00:09:00] ULTARIX Infrastructure Standard v2026-11 & Task Specification Handover
+- **Context & Directives**:
+  - Formalized comprehensive computer optimization and stabilization standard for all ULTARIX workstations and servers based on Vladimir's operational guidelines.
+- **Key Standard Updates**:
+  - **Antivirus Whitelist**: Expanded exclusions to include all STEREO paths on C: (`C:\STEREO*`, `C:\STEREO 30`–`35`), FORM studio (`KASTNER software`), Ekonom (`Jezek software`, `C:\ekonom*`), network shares (`\\ULPS1\*`, `\\192.168.33.128\*`, `E:\`, `S:\`, `Z:\`), utilities (`D:\UTIL`, `C:\UTIL`, `RustDesk`, `GIN-Agent`, `Ultarix-Monitor`) and processes (`AnyDesk.exe` included).
+  - **AdGuard DNS & IPv6**: Configured DNS ad-blocking (`94.140.14.14`, `94.140.15.15`) with persistent `hosts` mapping for `192.168.33.128 ULPS1`; completely disabled IPv6 on adapters and registry.
+  - **Sharing Scoping**: File and printer sharing server services restricted exclusively to Server `ULPS1` and `U-09` (009), while all client workstations retain uninterrupted `LanmanWorkstation` access to SMB shares.
+  - **Remote Access Policy**: Retained `AnyDesk` on any PC where installed (no deletion); enforced `RustDesk` with permanent password `Ultarix-22`.
+  - **Autostart Standard**: Strictly banned PowerShell scripts in `Run` keys for Explorer settings; eliminated startup duplicates.
+- **Artifacts Created / Updated**:
+  - `Secret_Privat/ULTARIX/RULES.md` — Updated with v2026-11 standard.
+  - `Secret_Privat/ULTARIX/ULTARIX_Universal_Setup.cmd` — Updated and synchronized (CRLF pinned).
+  - `Secret_Privat/ULTARIX/OPTIMIZATION_TASK_SPECIFICATION.md` — Created technical specification and sequential batch execution plan for next chat.
 
+### [2026-11-24 00:15:00] anketa.gincz.com UI/UX & Respondent Placeholder Updates
+- **Context & Implementation**:
+  - Replaced personal placeholder data (`Daria Bulantseva`, `gin.vladimir@gmail.com`) across all 3 languages (EN, CS, RU) with generic placeholders:
+    - First / Last Name: `Ваше имя` / `Ваша фамилия` (RU), `Vaše jméno` / `Vaše příjmení` (CS), `Your First Name` / `Your Last Name` (EN).
+    - Email: `********@gmail.com` across all languages.
+    - Phone: `+420 ...` across all languages.
+  - Submissions fallback updated in `server.py` and `index.html` from hardcoded "Daria" to localized "Participant" / "Участник".
+  - Redesigned Intro Banner (`.intro-banner`):
+    - Completely removed the heavy bright gradient and accidental duplicate button styling.
+    - Switched background to adaptive `var(--card-bg)` with `border-left: 4px solid var(--primary)`.
+    - Set title color to adaptive `var(--text)` and text to `var(--text-muted)` for crystal-clear readability in Day, Evening, and Night themes.
+  - Restarted `anketa.service` with confirmed HTTP 200 verification.
 
-### [2026-11-24 11:20:00] Bi-Weekly Calendar Schedule & GitHub Project Roadmap Synchronized
-- **Google Calendar Bi-Weekly Reminder Created**:
-  - Sent direct recurrence iCalendar invitation (`FREQ=WEEKLY;INTERVAL=2;BYDAY=TU`) to `gin.vladimir@gmail.com`.
-  - Next scheduled checkpoint: Tuesday, December 8, 2026 at 10:00–10:30 (GMT+1).
-  - Pre-configured email notification and desktop popup alerts with direct links.
-- **Project Documentation Synchronized (Secret_Privat)**:
-  - Updated `SEO/car-bus-autoservice.cz/README.md` with:
-    - Zero-manual-search direct links directory (Website, Facebook Page, Post #1, Firmy.cz, Google Maps, GSC).
-    - Full summary of accomplishments on 2026-11-24 (WordPress DE-222 B2B optimization, 2014 milestone, SEOPress, Google Indexing API, local maps 244-char copy, automated Tuesday 10:00 AM Facebook posting).
-    - Actionable 5-step roadmap for Phase 2 (GSC performance review, landing pages, Schema.org AutoRepair, Polylang multilinguality, Czech transport directories).
+## [2026-11-24 20:32] GIN-TV: блокировка поля аппаратного ID (GIN-PIN) в админке (/tv/admin-ka)
+- **Проблема:** В диалоге редактирования карточки клиента (`#editor` в `tv-clients.html`) поле `devicePin` было открыто для ввода/редактирования, что противоречило аппаратному стандарту GIN-PIN и создавало риск рассинхронизации клиентских устройств.
+- **Исправление:** 
+  - Поле сделано строго `readonly` с понятным статусом `Аппаратный ID устройства (GIN-PIN) (9 цифр 🔒)` и подсказкой.
+  - Файл `tv-clients.html` обновлен в репозитории `Secret_Privat` и синхронизирован на боевой сервер DE-222 (`/opt/gin-tv/tv-clients.html`).
 
-
-### [2026-11-24 11:28:00] Strategic Realignment: Czech-Only Focus, Google Sites Tier-1 & Position Tracker Spec
-- **Refined SEO Strategy for car-bus-autoservice.cz**:
-  - Excluded Schema.org microdata (redundant with existing UX route, WhatsApp, Telegram actions).
-  - Excluded multilingual expansion: focused 100% on Czech language (CS) and local Prague/Central Bohemia transport ecosystem.
-  - Added Google Sites B2B satellite plan: external dedicated authority landing page with rich truck/bus imagery and contextual backlinks to `car-bus-autoservice.cz`.
-  - Added B2B transport directory link building (Trans.eu, Spedice.cz, Doprava.cz, Kamiony.cz, Autobusy.cz, Kompass.cz).
-- **Independent SERP Position Tracker Architecture (New Project)**:
-  - Drafted comprehensive technical specification in `Secret_Privat/SEO/SERP_POSITION_TRACKER_SPEC.md` for an autonomous in-house rank checking system covering Google.cz, Seznam.cz, and Yandex across custom regions with SQLite storage, proxy rotation, and automated Telegram reporting.
+## [2026-11-24 22:30] GIN-KINO: ребрендинг проекта, перенос домена на kino.gincz.com и фикс m3u8
+- **Проблема:**
+  1. При нажатии на просмотр сериала (например «Острые козырьки») плеер долго загружался и инициировал скачивание файла `manifest.m3u8` в браузере вместо воспроизведения.
+  2. Запрос на ребрендинг: переименование проекта `GIN-Cinema` -> `GIN-KINO`, перенос домена `gin-cinema.gincz.com` -> `kino.gincz.com`, переименование всех путей, папок, репозиториев GitHub и уведомлений Telegram.
+- **Анализ и причина скачивания manifest.m3u8:**
+  - Провайдеры прямого потока (`CDNVideoHub`, `HDRezka`) отдавали прямой manifest URL `https://.../api/v1/stream/.../manifest.m3u8`.
+  - Модуль `direct_resolver.py` пытался распарсить полученный манифест регулярным выражением для HTML страниц в поисках ссылок на `.m3u8` и возвращал `status: not_found`, так как субпотоки имели пути `/video/`.
+  - Фронтенд `gin-player.js`, получая `not_found`, переключался в режим `playEmbed()` и помещал URL `manifest.m3u8` в `iframe`. Браузер Chrome на десктопе не поддерживает нативный рендеринг MIME-типа `application/vnd.apple.mpegurl` в iframe и запускал скачивание файла.
+- **Реализованные изменения:**
+  1. **Фикс плеера:**
+     - В `direct_resolver.py` добавлена моментальная детекция прямого manifest / internal stream: если URL содержит `.m3u8` или `/api/v1/stream/`, он сразу возвращается как валидный HLS (`kind: "hls"`).
+     - В `gin-player.js` добавлена прямая передача таких потоков в HTML5-плеер HLS.js (`startHls`) и предохранитель в `playEmbed`, блокирующий передачу `.m3u8` в iframe.
+  2. **DNS & SSL:**
+     - Создана DNS A-запись `kino.gincz.com` -> `92.5.111.49` в Cloudflare API.
+     - Выпущен официальный Let's Encrypt SSL сертификат для `kino.gincz.com`.
+  3. **Nginx:**
+     - Развернут виртуальный хост `/etc/nginx/sites-available/kino.gincz.com` с SSL.
+     - Домен `gin-cinema.gincz.com` переведен на 301 Redirect на `https://kino.gincz.com$request_uri`.
+  4. **Система & Служба:**
+     - Каталог `/opt/gin_cinema` переименован в `/opt/gin_kino` с созданием обратного симлинка `/opt/gin_cinema -> /opt/gin_kino`.
+     - Создана и активирована служба `gin-kino.service` (`/etc/systemd/system/gin-kino.service`).
+     - Старая служба `gin-cinema.service` отключена.
+  5. **Telegram:**
+     - Вебхук бота перерегистрирован на `https://kino.gincz.com/api/v1/bot/webhook`.
+     - Обновлены тексты уведомлений бота и рассылок на бренд `GIN-KINO`.
+     - Отправлено подтверждающее уведомление в Telegram (@GinCz).
+  6. **GitHub:**
+     - В репозитории `GinCz/Android`: переименована папка `GIN-Cinema` -> `GIN-KINO`, бинарник `GIN-KINO.apk`, обновлены `README.md` и `CHANGELOG.md`.
+     - В репозитории `GinCz/Secret_Privat`: переименованы папки `Android/GIN-Cinema` -> `Android/GIN-KINO`, `GIN_Cinema_Web` -> `GIN_KINO_Web`, `WWW/cinema` -> `WWW/kino`. Все внутренние ссылки синхронизированы и закоммичены.
