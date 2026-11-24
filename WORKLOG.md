@@ -6658,3 +6658,16 @@ etkvm) для виртуализации KVM/OCI.
   - Synchronized `05_Xiaomi_Mi_TV_Stick.md` and `Xiaomi_MiTV-AESP0.md`.
 - **GIN-Launcher Feature Verification**:
   - Verified `isHideEditMode` and `btnMenuHideApps` in `GIN-Launcher` (accessible via long-press OK / Menu on "All Apps" tab).
+
+
+### [2026-11-24 10:25:00] SEO & SMM Audit: Car-Bus-Autoservice.cz (Google Search Console, Maps, Meta API)
+- **Meta Facebook & Instagram API Audit**:
+  - Facebook Page ID `416625311798944` (`CBA - Servis osobních, nákladních a užitkových vozidel, autobusů a přívěsů`) confirmed active with full autonomous publishing permissions (`CREATE_CONTENT`, `MANAGE`).
+  - Instagram connection check: determined that Instagram account is not yet linked to the Facebook page in Meta Business Suite (`instagram_business_account` is null).
+- **Google Search Console Live Audit**:
+  - Connected via service account `webmaster-indexer@vladimir-248021.iam.gserviceaccount.com` with `siteOwner` permissions for `sc-domain:car-bus-autoservice.cz`.
+  - Analyzed sitemap (`50` submitted URLs).
+  - Queried live search performance in Google CZ: top rankings achieved for passenger tire/car services (`pneuservis praha` - pos 1.0, `pneuservis praha 5` - pos 1.7, `autoservis praha 5` - pos 5.0).
+  - Identified major B2B expansion vector: truck and heavy vehicle queries (`servis nákladních aut praha`, `geometrie nákladní`) require on-page title/H1 and metadata reinforcement.
+- **Local Maps Strategy (Google Business Profile & Seznam Firmy.cz)**:
+  - Formulated precise category and naming enhancements in Czech for Firmy.cz (ID `12970144`) and Google Maps to boost ranking in B2B truck/bus service queries in Prague 5 / Strakonická.
