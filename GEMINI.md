@@ -28,6 +28,7 @@
   3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\`)
   Retain strictly the 2 latest versions in each target (purge older releases via `mega-rm`).
 * **MEGA Cloud Sync Standard:** Always prefix MEGA upload paths with `/MEGA/` (e.g. `/MEGA/DOCS/desktop/`, `/MEGA/WIN-FLASH/Util-WINDOWS/`). Unprefixed `/DOCS/` does not sync with PC.
+* **Android APK Strict 2-Target Delivery (DE-222 Samba & MEGA Flash Only):** In ALL Android projects, compiled APKs deliver strictly to: 1) Server DE-222 Samba: `de222:/storage/user/APK/<AppName>_vXXX.apk` (`\\s.gincz.com\user\APK`), permissions `664`, owner `vlad:vlad`; 2) MEGA Cloud Flash: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/` (syncs to `D:\MEGA\WIN-FLASH\ANDROID\GIN_APK`). Strictly FORBIDDEN to copy APKs to Desktop (`/MEGA/DOCS/desktop/`). Retain strictly 2 latest versions.
 * **GIN-Agent Standalone Standard:** GIN-Agent must strictly be ONE polyglot `.cmd` file with ZERO external `.ps1` files.
 * **Strict CRLF Integrity & .gitattributes:** Every `.cmd` and `.bat` file MUST have CRLF line terminators. All repositories with Windows scripts MUST have `.gitattributes` pinning `*.cmd text eol=crlf`.
 * **Mandatory versions/ & Companion ZIP for CMD Projects:** All Windows CMD/BAT projects must store scripts in `versions/` (retaining strictly 2 latest versions) and ALWAYS generate a companion `.zip` archive (`<App>_vXXX.zip`) alongside each `.cmd` to protect users against GitHub Web HTML-saving corruption.

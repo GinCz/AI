@@ -178,6 +178,16 @@
     - Flash NET: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/<FileName>` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\<FileName>`)
     - Flash NET RadMin: `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/<FileName>` (maps to `D:\MEGA\WIN-FLASH\Util-WINDOWS\N E T\TeamViewer_RadMin\<FileName>`)
 * Categorical ban on saving to standard Windows desktop or Server_222 network shares (`/storage/soft/`).
+* **Android APK Strict 2-Target Delivery (DE-222 Samba & MEGA Flash Only):**
+  - Upon creating or compiling ANY Android APK across ABSOLUTELY ALL projects (`GIN-Cinema`, `GIN-TV`, `GIN-IP`, `GIN-Jarvis`, `GIN-Remote`, `GIN-Tube`, `GIN-VPN`, `GIN-APP`, `Ultarix-Monitor`, etc.):
+  - **Target 1: Server DE-222 Samba Share (`\\s.gincz.com\user\APK`):**
+    - The compiled APK MUST be copied to Server DE-222: `de222:/storage/user/APK/<AppName>_vXXX.apk` (maps to `\\s.gincz.com\user\APK\<AppName>_vXXX.apk`).
+    - File permissions MUST strictly be `664`, ownership `vlad:vlad`.
+  - **Target 2: Vladimir's Flash Folder in MEGA (`D:\MEGA\WIN-FLASH\ANDROID\GIN_APK`):**
+    - The compiled APK MUST be uploaded to MEGA Cloud: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/<AppName>_vXXX.apk` (which synchronizes directly to Vladimir's PC at `D:\MEGA\WIN-FLASH\ANDROID\GIN_APK`).
+  - **Strict Ban on Desktop for Android APKs:**
+    - Categorically FORBIDDEN to copy or upload Android APK files to Vladimir's Desktop (`/MEGA/DOCS/desktop/` or `D:\MEGA\DOCS\desktop\`). Any residual APKs on Desktop must be immediately purged.
+  - **Strict 2 Latest Versions:** Retain strictly the 2 latest versions in both `\\s.gincz.com\user\APK` and `/MEGA/WIN-FLASH/ANDROID/GIN_APK` (purge older releases).
 * Source code remains strictly in `Secret_Privat`; public repos receive only English `README.md` and release installers.
 
 ### 6️⃣ COMPLETION SOUND NOTIFICATION (WINDOWS & SERVERS)
