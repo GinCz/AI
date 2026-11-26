@@ -108,13 +108,17 @@
 * **GitHub Link Standard:** Every GitHub link must point directly to the standard Web UI with edit button access without decorative arrows: `[Resource Name](https://github.com/<owner>/<repo>/blob/main/<path>)`.
 * Categorical ban on raw URLs (`raw.githubusercontent.com`) and local `file:///` links for GitHub assets.
 
-### 1️⃣7️⃣ RULE 17: STRICT 10-SECOND RESPONSE LIMIT, PROCESS TIMEOUTS & TELEGRAM NOTIFICATION
+### 1️⃣7️⃣ RULE 17: STRICT 10-SECOND RESPONSE LIMIT, PROCESS TIMEOUTS & ZERO-ORPHAN TASK SWEEP
 * **Strict 10-Second Response SLA:** Every direct question, status check, or operational prompt MUST receive an answer within **maximum 10 seconds**.
 * **Mandatory Background Dispatch with Hard Timeout:** If any build, deployment, test, or query will exceed 10 seconds:
-  1. The agent MUST dispatch the command as an asynchronous background task with an explicit maximum execution timeout (`TimeoutSec` / hard deadline, strictly 30–60 seconds for builds/compilations, max 15 seconds for network `/exec` calls);
+  1. The agent MUST dispatch the command as an asynchronous background task with an explicit maximum execution timeout (`TimeoutSec` / `NotificationTimeoutSeconds` strictly 30–60 seconds for builds/compilations, max 15 seconds for network `/exec` calls);
   2. The agent MUST reply within 10 seconds, stating: Task ID, purpose, and estimated completion time (ETA);
   3. Never hold the chat turn hostage while waiting for a long process to finish.
-* **Post-Execution Hang Watchdog:** After the timeout elapses, verify whether the task completed or hung; never leave hanging or orphan processes running.
+* **Strict Ban on Inline Multi-Line Shell Commands (Zero Unclosed Quotes):** Categorically forbidden to pass complex multi-line PowerShell/Bash scripts with nested quotes, `$`, or variables directly inside command-line strings in `run_command`. Any script longer than 2 lines or containing nested quotes MUST be written to `<model>/temp/script.ps1` (or `.sh`) via `write_file` and executed as a script file. This unconditionally eliminates syntax failures and hanging sessions waiting for closing quotes (`The string is missing the terminator`).
+* **Ironclad Pre-Reply Task Sweep (manage_task list):** BEFORE delivering the final response to Vladimir and playing the chime sound, the agent MUST explicitly inspect `manage_task action: "list"`. If any background tasks remain running, aborted, or orphaned:
+  1. The agent MUST immediately terminate every stale task via `manage_task action: "kill" TaskId: "<id>"`;
+  2. Confirm that exactly **0 background tasks** remain;
+  3. Delivering a final response or claiming completion while any task remains listed in `manage_task` is strictly categorized as a critical protocol violation.
 * **Mandatory Telegram Build Alerts:** When compiling or building a large `.exe` installer or long-running release, the agent must immediately inform Vladimir in chat that creation is underway, and upon successful completion (or critical error) immediately dispatch an automated Telegram alert via `notify_telegram.sh` / `notify_telegram.ps1` to Vladimir (@GinCz / `261784949`).
 
 ### 1️⃣8️⃣ RULE 18: MANDATORY ROLLBACK PLAN & PRE-CHANGE BACKUP

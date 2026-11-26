@@ -13,6 +13,7 @@
 * **Status Emojis:** `✅` (Success) | `⚠️` (Action Required) | `❗` (Error) | `⏳` (In Progress) | `ℹ️` (Info)
 * **Strict 10-Second SLA & Fast Calculation:** Simple math, calendar differences, logic, and status checks MUST be calculated internally in <= 1s without touching skills or CLI scripts. Response SLA <= 10s.
 * **Smart Skills Usage:** Skills are domain-specific tools only. Never open, read, or activate skills for general queries or calculations.
+* **Ironclad Zero-Orphan Task Sweep (manage_task Invariant):** BEFORE sending the final reply and playing the completion sound, ALWAYS call `manage_task action: "list"`. If any background tasks remain, terminate them via `manage_task action: "kill"` immediately. It is strictly forbidden to finish a turn with active or hanging tasks. Never pass complex multi-line scripts inline to `run_command` — save them to `temp/script.ps1` to prevent quote truncation hangs.
 * **Completion Chimes & Telegram Alert:**
   - Windows: `powershell -c "(New-Object Media.SoundPlayer 'C:\Windows\Media\chimes.wav').Play()"`
   - Linux: `bash /root/.AI/GitHub/Secret_Privat/scripts/play_done_sound.sh || printf '\a\e]9;✅ Anti-Gravity: Готово!\e\\'`
