@@ -1,3 +1,30 @@
+## [2026-11-26 12:15] Vestel Android TV: Ликвидация сброса на Google TV Launcher, устранение мифа о mediashell и вечное закрепление GIN-Launcher
+- **Контекст задачи:** Владимир сообщил о повторном возврате стокового Google TV Launcher на главном телевизоре Vestel/Hyundai после выполнения отключения авто-обновлений Google Play.
+- **Глубокий технический анализ (Root Cause):**
+  1. **Приоритет в манифесте (mPriority=2):** Системное приложение `com.google.android.tvlauncher` размещено в `/product/priv-app/TVLauncher/TVLauncher.apk` и содержит в манифесте жесткий приоритет `priority=2`.
+  2. **Ограничение приоритета для сторонних APK:** Для любого пользовательского приложения из `/data/app` (включая `com.gincz.ginlauncher`) ядро Android `IntentResolver` аппаратно принудительно обрезает приоритет до `priority=0`.
+  3. **Логика IntentResolver:** При вызове события HOME Android группирует кандидатов по приоритету. Пока `tvlauncher` активен (`enabled`), система отбрасывает всех кандидатов с приоритетом < 2. Системные директивы `cmd package set-home-activity` игнорируются, так как выбор дефолтной активности происходит строго внутри пула наивысшего приоритета (priority=2).
+  4. **Миф о зависимости Chromecast built-in (mediashell):** Ранее агенты ошибочно полагали, что заморозка `tvlauncher` ломает Chromecast. Исследование пакетов подтвердило: `com.google.android.apps.mediashell` расположен в отдельном пакете `/product/priv-app/AndroidMediaShell/AndroidMediaShell.apk`. При заморозке `tvlauncher` служба MediaShell продолжает работать, порты 8008 и 8009 активны, трансляции с ПК (Chrome) и смартфонов работают безупречно.
+  5. **Блокировка HomeInterceptorService:** Фоновая служба перехвата блокировалась политикой Android 11+ (`ACCESS_RESTRICTED_SETTINGS: deny` и `SYSTEM_ALERT_WINDOW: default`), что препятствовало всплытию лаунчера из фона.
+- **Выполненные действия:**
+  1. Заморожены стоковый лаунчер и рекомендательные службы:
+     `pm disable-user --user 0 com.google.android.tvlauncher`
+     `pm disable-user --user 0 com.google.android.tvrecommendations`
+     `pm disable-user --user 0 com.mediatek.android.leanbacklauncher.partnercustomizer`
+  2. Убиты зомби-процессы стокового лаунчера (`am force-stop`).
+  3. Назначен безальтернативный домашний экран:
+     `cmd package set-home-activity com.gincz.ginlauncher/.MainActivity`
+     `cmd role add-role-holder android.app.role.HOME com.gincz.ginlauncher`
+  4. Сняты ограничения безопасности для GIN-Launcher:
+     `appops set com.gincz.ginlauncher ACCESS_RESTRICTED_SETTINGS allow`
+     `appops set com.gincz.ginlauncher SYSTEM_ALERT_WINDOW allow`
+     `settings put secure accessibility_enabled 1`
+     `settings put secure enabled_accessibility_services com.gincz.ginlauncher/com.gincz.ginlauncher.HomeInterceptorService`
+  5. Подтверждена активность Google Cast (`com.google.android.apps.mediashell`): PID активен, порты 8008/8009 слушают соединения.
+  6. Сохранена заморозка `com.android.vending` (Google Play Store) и блокировка автообновлений.
+  7. Проведено сквозное тестирование: вызов системных настроек (`com.android.tv.settings/.MainSettings`) и возврат по кнопке Home (`keyevent 3`) — фокус мгновенно возвращается на GIN-Launcher (`isDefault=true`, `priority=0`).
+  8. Исправлены скрипты `tv_setup_cleaner.sh` и паспорта `Vestel_Android_TV.md` (в `GIN-Remote` и `Smart_TV`), исключены команды `pm enable com.google.android.tvlauncher`.
+
 ## [2026-11-24 22:45] RustDesk Dashboard (rd.gincz.com): Разделение названия устройства и сетевого хоста, устранение дублирования и очистка синей кнопки
 - **Контекст задачи:** Владимир заметил, что в синей кнопке отображаются имена в скобках (например, `Marie Vedralova Dell (marie-dell)`), а во втором столбике дублируется то же самое имя `Marie Vedralova Dell`. Поставлена задача очистить синюю кнопку от скобок, сделать её максимально короткой и понятной для редактирования, а технический хостнейм ПК и Windows-пользователя разместить во втором столбце без дублирования.
 - **Выполненные изменения:**
