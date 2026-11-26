@@ -298,3 +298,15 @@
 * **Mandatory ZIP Download Link in `README.md`:** The root `README.md` of every CMD project must explicitly document:
   1. Safe ZIP download link: `[Скачать ZIP-архив vXXX](versions/<AppName>_vXXX.zip)` as the primary safe download method to avoid HTML corruption.
   2. 1-click PowerShell launcher: `powershell -ep bypass -c "iwr -useb <url> -OutFile <file>; .\<file>"`.
+
+### 2️⃣1️⃣ RULE 21: RUSSIAN SERVERS (RU-109, CLOUDCORE-191) & DOMAINS .RU: STRICT GREY-CLOUD, ECH-OFF & 301 INTEGRITY
+* **Categorical Ban on Cloudflare Proxy (Strict Grey Cloud DNS-Only):**
+  All domains hosted on Russian servers (`RU-109` `212.109.223.109`, `CloudCore-191` `31.59.126.191`) and Russian client sites must operate **EXCLUSIVELY in Grey Cloud mode (`proxied: false`)**. Categorically forbidden to enable the Orange Cloud (Cloudflare CDN Proxy) on Russian nodes — Roskomnadzor (RKN / TSPU) actively throttles and blocks Cloudflare Anycast IP ranges inside the Russian Federation, causing immediate total site outages for Russian visitors.
+* **Mandatory ECH (Encrypted Client Hello) Disabling via Cloudflare API:**
+  For ALL zones on Russian servers (and specifically `prodvig-saita.ru`), Cloudflare's Encrypted Client Hello setting MUST be explicitly disabled (`PATCH /settings/ech` ➔ `{"value": "off"}`). In Russia, TSPU hardware immediately terminates (TCP RST / packet drop) any TLS handshake presenting ECH extensions or DNS Type 65 HTTPS RR parameters.
+* **No Blanket Cloudflare Rollouts (Zero Blind Propagation to RU Nodes):**
+  Never apply global account-wide Cloudflare scripts (Always Use HTTPS, WAF rules, Bot Fight Mode, Browser Integrity Check) to Russian zones. Zones for RU-109 must keep: `browser_check: "off"`, `security_level: "essentially_off"`, `ech: "off"`.
+* **Nginx HTTP-to-HTTPS Redirect Integrity & `$request_uri` Mandate:**
+  On server RU-109, any port 80 redirect to HTTPS MUST include `$request_uri` (e.g. `return 301 https://$host$request_uri;` or `return 301 https://prodvig-saita.ru$request_uri;`). Categorically forbidden to omit `$request_uri` (e.g. `return 301 https://prodvig-saita.ru;`), which strips paths (`/test`, `/vpn/`, `/server-set/`) and permanently poisons the 301 redirect cache in mobile iOS Safari / Chrome.
+* **Direct 1-Step Redirection for Script & Utility Endpoints:**
+  Dedicated test or utility endpoints (`/test/`, `/vpn/`, `/server-set/`, `/ip/`) must have explicit location blocks on both port 80 and port 443 with direct one-step routing to the canonical trailing slash (`return 301 https://prodvig-saita.ru/test/;`), preventing double redirects and broken relative AJAX requests (`ping.php`, `send_report.php`).
