@@ -220,6 +220,8 @@
 * Format strictly: `[ProjectName] - [Core]` (e.g. `[GIN-VPN] - Servers`, `[GIN-Chat] - Admin`). Short 2–3 words.
 
 ### 1️⃣1️⃣ ANDROID TV & TV-BOX REMOTE OPERATIONS (ZERO AUTO-REBOOT & MANDATORY LIVE SCREEN LOG)
+* **Mandatory Pre-Flight Device Profile Inspection (Strict Invariant):**
+  BEFORE running any command (`adb`, `pm`, `settings`, `am`) against ANY TV device, the agent MUST read that device's passport file in `Android/GIN-Remote/DEVICES/<Device_ID>.md` (e.g. `Vestel_Android_TV.md`, `Hisilicon_TVBOX.md`). It is CATEGORICALLY FORBIDDEN to execute blind commands without verifying the target device's quirks, platform hazards, and hardware invariants!
 * **Mandatory Live TV OSD Screen Logging:** Every update, APK deployment, configuration change, diagnostic check, or maintenance task executed on an Android TV or TV-Box (via GIN-Remote, ADB, or automation scripts) MUST transmit every action in real time to the TV screen log (`log_tv` via GIN-Bridge TCP socket `127.0.0.1:17001` format: `CMD <DEVICE_ID> KEY <MSG>\n`). The user on the TV must see live progress.
 * **Categorical Ban on Autonomous Device Reboot:** Agents, LLMs, and automated scripts are CATEGORICALLY FORBIDDEN from executing automatic reboots (`adb reboot`, `su -c reboot`, broadcast intents, or shell commands).
 * **Mandatory Final Status & Explicit Manual Reboot Notice:** Any update or configuration session on an Android TV/Box MUST conclude with an explicit final status message displayed in the TV screen log AND in the chat:
@@ -227,24 +229,31 @@
   - If a system reboot is NOT required: state clearly: `✅ Все готово! Перезагрузка не требуется.`
 * **Mandatory Default Debloat on ALL TV Devices (Ironclad Rule):**
   Whenever configuring or optimizing ANY Smart TV, TV-Box, or TV-Stick, the agent MUST unconditionally execute:
-  1. **Purge Commercial Bloatware (Uninstall/Disable):**
+  1. **Stock Launcher & Chromecast Built-in Safety Invariant (Never Freeze on Smart TVs):**
+     - On Smart TVs (especially Vestel, Hyundai, Philips, Sony), **NEVER disable or freeze** `com.google.android.tvlauncher` or `com.google.android.apps.tv.launcherx`.
+     - Freezing stock launcher breaks Chromecast built-in (`com.google.android.apps.mediashell`) and leads to critical `system_server` crashes or bootloops (`FallbackHome` grey/black screen).
+     - Set default launcher strictly via standard system APIs: `cmd package set-home-activity com.gincz.ginlauncher/.MainActivity` & `cmd role add-role-holder android.app.role.HOME com.gincz.ginlauncher`.
+  2. **Purge Commercial Bloatware (Uninstall/Disable):**
      - Netflix: `com.netflix.ninja`, `com.netflix.mediaclient`
      - Prime Video: `com.amazon.amazonvideo.livingroom`, `com.amazon.avod.thirdpartyclient`
      - YouTube Music: `com.google.android.youtube.tvmusic`
      - Google Play Movies: `com.google.android.videos`
-  2. **Disable-Only Bloatware (Disable via `pm disable-user --user 0`):**
+  3. **Disable-Only Bloatware (Disable via `pm disable-user --user 0`):**
      - Live Channels: `com.google.android.tv`, `com.android.tv`
      - PatchWall & Xiaomi Feeds: `com.mitv.tvhome`, `com.xiaomi.mitv.tvhome`, `com.xiaomi.mitv.upgrade`, `com.mitv.videoplayer`
-  3. **Disable Google Play Protect, Antivirus & System Auto-Updates:**
+  4. **Disable Google Play Store, Protect, Antivirus & Automatic App Updates:**
+     - On Vladimir's TVs, all apps are installed manually. To block ads, unrequested app modifications, and background downloads:
+     - `pm disable-user --user 0 com.android.vending` (Google Play Store daemon disabled to stop auto-updates completely).
+     - `pm disable-user --user 0 com.google.android.play.games`
      - `settings put global package_verifier_enable 0`
      - `settings put global package_verifier_user_consent -1`
      - `settings put global upload_apk_enable 0`
      - `settings put global auto_update 0`
      - `pm disable-user --user 0 com.google.android.gms/.update.SystemUpdateService`
      - `pm disable-user --user 0 com.google.android.gsf/.update.SystemUpdateService`
-  4. **Strict Chromecast Immunity (Never Touch):**
+  5. **Strict Chromecast Immunity (Never Touch):**
      - `com.google.android.apps.mediashell` (Chromecast Built-in) MUST ALWAYS be preserved and enabled (`pm enable com.google.android.apps.mediashell`). Screen casting from phones, Google Chrome, and Cent Browser must never be impaired.
-  5. **Mandatory First-Run Low-RAM (≤ 1.5GB) & Stick Emergency Thermal Profile:**
+  6. **Mandatory First-Run Low-RAM (≤ 1.5GB) & Stick Emergency Thermal Profile:**
      Whenever connecting to, configuring, or optimizing ANY Android TV stick or low-RAM TV-Box (≤ 1.5GB RAM, e.g. Xiaomi Mi TV Stick S805Y, Realme TV Stick, Chromecast HD, etc.), the agent MUST unconditionally execute the emergency thermal & RAM optimization FIRST, BEFORE any other commands, installations, or app launches:
      - **Reduce UI Resolution to 720p:** `wm size 1280x720` and `wm density 213` (cuts GPU memory allocation, texture cache, and fillrate load on weak Mali GPUs in half; drops SoC temperature by 15–20°C, eliminating thermal shutdown/reboot loops while hardware video decoding in media players retains 1080p).
      - **Disable All System Animations:**
