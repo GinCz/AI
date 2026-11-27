@@ -7009,3 +7009,24 @@ etkvm) для виртуализации KVM/OCI.
      - Изменения запушены в репозиторий `GinCz/plugins` и развернуты на сервере `DE-222`.
   2. **Подготовка материалов для Google Sites:**
      - Сформирован полный структурированный пакет блоков для страницы Google Sites (`https://sites.google.com/d/1v5LOqLE8LZd_5-hcPjrf0ocT5xPDWRje/p/1eHH-PFnV0d5wZEb6gRFZ-Yw7rQa0Xou1/edit`) с разметкой стилей Google Sites (Title, Heading H1, Subheading H2, Normal text), акцентным выделением и анкорными ссылками на `car-bus-autoservice.cz`.
+
+### [2026-11-27 19:42] GIN-Remote & GIN-Agent: Релиз v041, WMI Detached Self-Update и фикс присутствия rd.gincz.com
+- **Контекст задачи:** Все удаленные компьютеры отображались как "Offline" в веб-админке GIN-Remote (`https://rd.gincz.com/`), а автоматическое обновление с v039 до v040 не применялось, требуя ручного вмешательства.
+- **Выявленные первопричины (Root Cause Analysis):**
+  1. *Ложный статус Offline в веб-админке:* `registry_server.py` на Server_109 опрашивал статус онлайн исключительно через сырой UDP/TCP сокет к `hbbs:21115` и внешнему серверу `rs-ny.rustdesk.com:21115`. Сервер hbbs сбрасывал незашифрованные пакеты (`ConnectionError: socket closed`), а New York падал по таймауту. В результате словарь онлайн-клиентов всегда был пуст (`{}`), и панель помечала все компьютеры как неактивные, несмотря на то, что машины работали и слали пинги GIN-Agent.
+  2. *Флаг `/service` в скриптах автообновления:* В `agent_bridge.py` и в самом скрипте команда обновления вызывалась с параметром `/service EU`. Этот флаг заставлял парсер прыгать в `:RUN_SERVICE` (фоновый рабочий цикл), полностью пропуская `:RUN_INSTALLER`. В итоге процесс крутился во временной папке `%TEMP%`, не обновляя файлы в `C:\Program Files\GIN-Agent\`.
+  3. *Ловушка завершения Job Object в Task Scheduler:* При вызове инсталлятора из-под запущенного сервиса через `Start-Process`, команда `schtasks.exe /end /tn "GIN-Agent-Service"` убивала всё дерево процессов родительской задачи (Job Object), моментально прерывая работу инсталлятора до регистрации обновлённой версии.
+- **Выполненные работы:**
+  1. **Архитектурный патч `registry_server.py` (Server_109):**
+     - Внедрена гибридная валидация присутствия: клиент считается онлайн, если активен сокет RustDesk ИЛИ зафиксирован свежий пинг GIN-Agent (до 180 сек).
+     - Отключены блокирующие сетевые запросы к `rs-ny.rustdesk.com`, таймаут сокета снижен до 0.5с.
+     - Эндпоинт `/api/rustdesk_status` обновлен для синхронизации гибридного статуса. Панель `rd.gincz.com` немедленно отобразила активные машины (`LUDMILA-PC`, `ELENA-B-E480`, `Ulka-3`).
+  2. **Релиз GIN-Agent v041 с WMI Detached Execution:**
+     - Создан `GIN-Agent_Windows_v041.cmd` (88 КБ, CRLF, UTF-8 без BOM) и защищенный архив `GIN-Agent_Windows_v041.zip` (22 КБ).
+     - Обновление переведено на detached-запуск через WMI (`([wmiclass]"Win32_Process").Create(...)`). Инсталлятор создается процессом `wmiprvse.exe` вне Job Object планировщика задач, что гарантирует 100% выполнение при перезапуске службы.
+     - Удален флаг `/service` из всех вызовов апдейтера.
+  3. **Синхронизация дистрибутивов и шлюзов:**
+     - На Server_222 обновлен `agent_bridge.py` (целевая версия v041, WMI detached upgrade command), перезапущен `antigravity-bridge.service`.
+     - Зеркала развернуты на Server_222 (`/root/GIN-Agent_Windows_v041.cmd`, `version.txt: v041`) и Server_109 (`/opt/rustdesk-server/`, `/var/www/remote-support/`).
+     - Загружен во все 3 папки облака MEGA: `/MEGA/DOCS/desktop/`, `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`, `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/`.
+     - Все репозитории (`Windows_scripts`, `Secret_Privat`, `AI`) синхронизированы и запушены в GitHub.
