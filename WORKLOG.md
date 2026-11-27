@@ -6916,3 +6916,17 @@ etkvm) для виртуализации KVM/OCI.
 - **Рекомендации пользователю:**
   1. Через веб-интерфейс Mail.ru (`https://biz.mail.ru/` или `https://mail.ru/`, логин `ludmilak@reklama-white.eu`) проверить письмо с вложением «Клензит воблер.pdf» и очистить Корзину/Спам.
   2. В самом Thunderbird нажать правой кнопкой мыши по папке «Входящие» -> «Свойства» -> «Починить» (Repair Folder) для переиндексации базы.
+
+
+### [2026-11-27 13:08] SEO & Calendar: Комплексная оптимизация car-bus-autoservice.cz и перенос напоминания
+- **Контекст задачи:** Глубокий аудит технических факторов ранжирования сайта CBA Autoservis и управление календарем Google по указанию Владимира.
+- **Выявленные проблемы (Root Cause):**
+  1. `robots.txt` содержал ссылки на чужой домен (`Sitemap: https://autoservis-rychlik.cz/sitemaps.xml`, `Host: autoservis-rychlik.cz`) и директивы `Disallow` для `/wp-content/themes/` и `/wp-content/plugins/`, блокирующие рендеринг стилей и скриптов роботами Googlebot и Seznam.
+  2. В базе данных оставалось 12 упоминаний старого домена (в ревизиях форм, опциях и метаданных).
+  3. В Schema.org WebSite SearchAction выводилась ссылка `/poisk-obyavlenij/` (шаблон доски объявлений).
+  4. В Google Календаре старое напоминание было настроено с избыточной частотой 2 раза в неделю (TU, FR).
+- **Выполненные работы:**
+  1. **Robots.txt:** Создана резервная копия `robots.txt.bak`. Сформирован чистый robots.txt: указан правильный sitemap `https://car-bus-autoservice.cz/sitemap.xml`, Host `car-bus-autoservice.cz`, снята блокировка со статики темы и плагинов.
+  2. **База данных:** Выполнен `wp search-replace` с заменой всех 12 вхождений `autoservis-rychlik.cz` на `car-bus-autoservice.cz`.
+  3. **Schema.org:** В плагине `wp-seo-micro` (v2026-11__1.40) логика `SearchAction` сделана динамической (на коммерческих сайтах без доски отдает нативный `/?s={search_term_string}`). Изменения зафиксированы в Git `plugins`.
+  4. **Google Calendar:** Старая серия `kr1opmcpd1upsh3bndgtue1cgk` удалена. Создано новое событие на пятницу, 4 декабря 2026, 10:00 - 10:30 (ID: `oajjr5dvvlrlp0ai9tglfc78rk`).
