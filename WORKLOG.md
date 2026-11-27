@@ -7131,3 +7131,15 @@ etkvm) для виртуализации KVM/OCI.
   1. Создан файл `GOOGLE_SITES_TEXT_RAW.txt` в папке проекта `Secret_Privat/SEO/car-bus-autoservice.cz/`.
   2. Обновлен `README.md` со ссылкой на raw-текст.
   3. Все изменения зафиксированы и синхронизированы с GitHub.
+
+### [2026-11-27 20:50] WordPress & Analytics: Установка и настройка плагина Burst Statistics на car-bus-autoservice.cz
+- **Контекст задачи:** По запросу Владимира на сайт автосервиса `car-bus-autoservice.cz` установлен и протестирован легковесный privacy-friendly плагин внутренней аналитики `Burst Statistics` (https://ru.wordpress.org/plugins/burst-statistics/).
+- **Выполненные работы:**
+  1. **Инсталляция:** На сервере DE-222 через WP-CLI установлен и активирован официальный плагин `burst-statistics` (v3.7.5). Права доступа к директориям выставлены на `andrey-autoservis:andrey-autoservis`.
+  2. **База данных и окружение:** Созданы необходимые таблицы БД (`wp_burst_statistics`, `wp_burst_sessions`, `wp_burst_uids`, `wp_burst_devices` и др.). Импортирована база геолокации GeoLite2 Country в `wp-content/uploads/burst/`.
+  3. **Настройки аналитики:** Активирован Turbo Mode, генерация оптимизированного бандла `wp-content/uploads/burst/js/burst.min.js`, прямая интеграция с контактными формами WPForms для отслеживания конверсий (`installed_integrations: wpforms`).
+  4. **Тестирование трекинга:**
+     - Проверена отдача фронтенда: скрипт `burst.min.js` подключен с атрибутом `defer` и разметкой `data-burst_id="2"` на `<body>`.
+     - Протестирован сбор хитов через маяк `wp-content/plugins/burst-statistics/endpoint.php` с эмуляцией браузерного хита (HTTP 200 OK). Зафиксирована корректная запись и связка сессии в таблице `wp_burst_statistics`.
+     - Тестовые данные очищены (TRUNCATE), статистика готова к живому сбору реального органического трафика без куки-баннеров и сторонних трекеров.
+  5. **Панель управления:** Доступ к дашборду доступен в WP-Admin: `https://car-bus-autoservice.cz/wp-admin/admin.php?page=burst`.
