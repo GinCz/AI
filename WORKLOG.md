@@ -6871,3 +6871,26 @@ etkvm) для виртуализации KVM/OCI.
   3. Получен и привязан постоянный RustDesk ID: 279883732.
   4. В реестре клиентов на RU-109 карточка объединена под понятным именем "Людмила (LUDMILA-PC)" (категория: Клиенты).
   5. В коде registry_server.py на RU-109 исправлен опрос приватного hbbs сервера по SERVER_IP (212.109.223.109), теперь статус RustDesk отображается как живой зеленый шар "🟢 Connected".
+
+
+### [2026-11-27 13:00] SEO & SMM: Регулярное продвижение CarBus Автосервис (car-bus-autoservice.cz)
+- **Контекст задачи:** Плановое мероприятие Google Календаря по комплексному продвижению CBA Autoservis (Strakonická 876, Praha 5).
+- **Выполненные работы:**
+  1. **SMM публикация Facebook:**
+     - Через `cba_fb_poster.py` (Meta Graph API v21.0) опубликован пост №2 из регулярной ротации: *«Profesionální čištění filtrů pevných částic (DPF / FAP) | CBA Praha»*.
+     - ID публикации: `1152951107128036`. Ссылка: `https://www.facebook.com/416625311798944/posts/1152951107128036`.
+     - Ротационный индекс в `rotation_state.json` обновлен на `1`.
+     - В системный crontab на Oracle-49 добавлено задание регулярной публикации каждый вторник в 10:00: `0 10 * * 2 /usr/bin/python3 /root/AI/GitHub/Secret_Privat/SEO/car-bus-autoservice.cz/cba_fb_poster.py >> /var/log/cba_fb_poster.log 2>&1`.
+  2. **Аудит и исправление обработки лидов (WPForms & Почта):**
+     - Проведен аудит формы обратной связи №147 на сервере `DE-222`.
+     - Обнаружено, что настройки формы наследовали старый домен Rychlík (тема и имя отправителя).
+     - Конфигурация формы обновлена: получатели `info@car-bus-autoservice.cz, info@autoservis-rychlik.cz`, тема письма `🔔 CBA AutoServis - Nová poptávka z webu (car-bus-autoservice.cz)`, отправитель `CBA AutoServis`, `Reply-To` автоматически выставлен на поле email клиента `{field_id="2"}`.
+  3. **Мониторинг позиций и индексации (Google Search Console & Seznam.cz):**
+     - Получены живые данные GSC Search Analytics API по домену `sc-domain:car-bus-autoservice.cz`:
+       - `pneuservis praha`: **ТОП-1** (позиция 1.0)
+       - `pneuservis praha zbraslav`: **ТОП-1** (позиция 1.0)
+       - `cba auto`: **ТОП-2** (позиция 2.0)
+       - `pneuservis praha 5`: **ТОП-2** (позиция 2.0)
+       - `autoservis praha 5`: **ТОП-4** (позиция 3.8)
+     - В поиске Seznam.cz подтверждена полная индексация сайта (11 URL) и интеграция карточки Firmy.cz (ID: 12970144) с оптимизированным сниппетом.
+  4. **Документирование:** Обновлен `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
