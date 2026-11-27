@@ -7156,3 +7156,21 @@ etkvm) для виртуализации KVM/OCI.
   - Плагин развернут на сервере DE-222 на сайте `car-bus-autoservice.cz`.
   - Успешно протестирована отправка маяка и фиксация в БД (HTTP 200 OK, `status: tracked`).
   - Тестовые записи очищены, плагин поставлен на боевой сбор.
+
+### [2026-11-27 21:05] SMM & Open Source: Фиксация публикаций Google Maps и публикация wp-site-stats в Open Source
+- **Контекст задачи:**
+  1. По указанию Владимира зафиксирован график из 5 коммерческих публикаций на Google Картах (Google Business Profile) для автосервиса CBA (`car-bus-autoservice.cz`).
+  2. Подготовлена полная англоязычная документация (`README.md`) и пакет релиза для нового плагина аналитики `wp-site-stats`, плагин выведен в публичные Open Source репозитории GitHub (`GinCz/plugins` и `GinCz/Linux_Server_Public`).
+- **Выполненные работы:**
+  1. **Google Карты (GBP) — График публикаций:**
+     - `27.11.2026 (Опубликовано):` Výměna motorového oleje s péčí o váš vůz (`/vymena-motoroveho-oleje/`).
+     - `04.12.2026 (Запланировано):` Příprava osobního vozu před prodejem – detailing (`/detailing/`).
+     - `11.12.2026 (Запланировано):` Komplexní renovace a oprava kol (`/pneuservis/`).
+     - `18.12.2026 (Запланировано):` Keramický povlak (tekuté sklo) pro osobní vozidla (`/detailing/`).
+     - `25.12.2026 (Запланировано):` Montáž a vyvážení pneumatik s důrazem na kvalitu (`/pneuservis/`).
+     - Полная таблица с прямыми ссылками добавлена в `Secret_Privat/SEO/car-bus-autoservice.cz/README.md`.
+  2. **Open Source публикация wp-site-stats:**
+     - Создан развернутый англоязычный `README.md` с описанием архитектуры, схемы БД, преимуществ перед Burst Statistics/MonsterInsights, GDPR-стандартов и инструкций по установке.
+     - Плагин синхронизирован в публичные репозитории `plugins/`, `WordPress/`, `Linux_Server_Public/`.
+     - Сгенерированы актуальные установочные архивы `wp-site-stats.zip` (25 KB) и обновлены каталоги `updates.json`.
+     - Лицензия: GPL-2.0-or-later, открытый исходный код, 100% бесплатный инструмент без рекламы и телеметрии.
