@@ -103,10 +103,16 @@
 * **Mandatory Delivery to Desktop via MEGA:** Every newly built or modified Windows installer or executable MUST be delivered directly to Vladimir's computer desktop via the MEGA cloud sync directory (`/MEGA/DOCS/desktop/<FileName>` -> `D:\MEGA\DOCS\desktop\<FileName>`). Previous obsolete versions on the desktop must be rotated/purged so that strictly 1 active latest version remains.
 * **Metadata & Commit Synchronization:** Synchronize version numbers across source metadata, filenames, `CHANGELOG.md`, `README.md`, `WORKLOG.md`, and commit messages. Retain strictly the 2 latest versions in deployment mirrors.
 
-### 1️⃣6️⃣ RULE 16: MANDATORY DIRECT CLICKABLE LINKS (ZERO MANUAL SEARCH) & CLEAN GITHUB URLS
-* **Mandatory Direct Clickable Links for Every Action / Post / Asset (Ironclad):** Whenever the agent creates, deploys, publishes, or modifies ANY asset — including social media posts (Facebook, Instagram, LinkedIn, Telegram), website pages, SEO metadata, map profiles (Google Maps, Firmy.cz), GitHub releases, files, or cloud assets — the agent MUST IMMEDIATELY provide a direct, fully clickable Markdown link `[Link Text](https://...)` directly in the chat response. Vladimir must NEVER have to manually search for what was created or where it was published.
+### 1️⃣6️⃣ RULE 16: MANDATORY DIRECT ACTIONABLE LINKS (ZERO MANUAL SEARCH, NEW WINDOW) & CLEAN GITHUB URLS
+* **Mandatory Direct Clickable Links for Every Action / Post / Asset / Website (Ironclad):** Whenever the agent creates, deploys, publishes, or modifies ANY asset — including websites, WordPress plugins/themes, admin panels, web apps, social media posts (Facebook, Instagram, LinkedIn, Telegram), website pages, SEO metadata, map profiles (Google Maps, Firmy.cz), GitHub releases, files, or cloud assets — the agent MUST IMMEDIATELY provide direct, fully clickable Markdown links `[Link Text](https://...)` directly at the end of the chat response. Vladimir must NEVER have to manually search for how to log in, how to access an admin panel, what was created, or where it was published.
+* **Mandatory Web & Admin Access Block:** For any web or WordPress task, always explicitly provide at the end of the response:
+  - 🌐 **Прямая ссылка на сайт / Public Site:** `[Название](https://...)`
+  - 🔐 **Вход в админку / Admin Dashboard:** `[WP-Admin](https://.../wp-admin/)`
+  - ⚙️ **Целевой модуль / Страница плагина:** `[Раздел / Плагин](https://.../wp-admin/admin.php?page=...)`
+  - 🐙 **Репозиторий GitHub:** `[GitHub Репозиторий](https://github.com/<owner>/<repo>/...)`
+* **Open in New Window / Browser Standard:** All links must be clean standard HTTPS Markdown links that open directly in the browser/new tab.
 * **GitHub Link Standard:** Every GitHub link must point directly to the standard Web UI with edit button access without decorative arrows: `[Resource Name](https://github.com/<owner>/<repo>/blob/main/<path>)`.
-* Categorical ban on raw URLs (`raw.githubusercontent.com`) and local `file:///` links for GitHub assets.
+* Categorical ban on raw URLs (`raw.githubusercontent.com`) and local `file:///` links for GitHub assets and user-facing links.
 
 ### 1️⃣7️⃣ RULE 17: STRICT 10-SECOND RESPONSE LIMIT, PROCESS TIMEOUTS & ZERO-ORPHAN TASK SWEEP
 * **Strict 10-Second Response SLA:** Every direct question, status check, or operational prompt MUST receive an answer within **maximum 10 seconds**.
