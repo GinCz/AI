@@ -7182,3 +7182,20 @@ etkvm) для виртуализации KVM/OCI.
   2. Включены высокочастотные коммерческие SEO-ключи: nákladní pneuservis, 3D geometrie, diagnostika WABCO/Knorr-Bremse, výměna oleje, servis autoklimatizací, DPF filtry, příprava na STK.
   3. Четкая географическая привязка (Praha 5 – Velká Chuchle, Strakonická 876) и CTA с прямым номером телефона.
 - **Документирование:** Актуализирован `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
+
+### [2026-11-27 21:18] Calendar & SMM: Создание напоминания на 27 декабря и планирование Facebook ротации
+- **Контекст задачи:** По указанию Владимира запланирована контрольная дата продолжения продвижения CBA Autoservis на 27 декабря 2026 г., а также проверена и дополнена сетка автопостинга на Facebook до этой даты.
+- **Выполненные работы:**
+  1. **Google Календарь:** Создано событие в Google Календаре Владимира (`gin.vladimir@gmail.com`):
+     - Название: `CBA Autoservis: Аудит результатов SEO и продолжение продвижения (car-bus-autoservice.cz)`
+     - Дата и время: Воскресенье, 27 декабря 2026 г. с 10:00 до 11:00 (Europe/Prague).
+     - Ссылка: https://www.google.com/calendar/event?eid=bGN0Z203dTMxbHBvMWNoMmg0M3Bzb2hzOTAgZ2luLnZsYWRpbWlyQG0
+  2. **Facebook Автопостинг (`cba_fb_poster.py`):**
+     - В ротацию добавлен шестой пост: `Prémiový detailing, vícekrokové leštění laku a keramická ochrana | CBA Praha` (с фото `presale_detailing_service.jpg`).
+     - Сформирован непрерывный график публикаций каждый вторник в 10:00:
+       - 01.12.2026: Пост №3 — АКПП и динамический пролив масла.
+       - 08.12.2026: Пост №4 — Подвеска, тормоза и пневматика (грузовики и автобусы).
+       - 15.12.2026: Пост №5 — Замена моторного масла и инспекционный осмотр.
+       - 22.12.2026: Пост №6 — Детейлинг, полировка и керамическая защита.
+     - Успешно протестирован `cba_fb_poster.py --dry-run`.
+  3. **Документирование:** Актуализирован `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
