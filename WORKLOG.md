@@ -7174,3 +7174,11 @@ etkvm) для виртуализации KVM/OCI.
      - Плагин синхронизирован в публичные репозитории `plugins/`, `WordPress/`, `Linux_Server_Public/`.
      - Сгенерированы актуальные установочные архивы `wp-site-stats.zip` (25 KB) и обновлены каталоги `updates.json`.
      - Лицензия: GPL-2.0-or-later, открытый исходный код, 100% бесплатный инструмент без рекламы и телеметрии.
+
+### [2026-11-27 21:06] SEO & Google Maps: Оптимизация главного описания (Popis) профиля CBA Autoservis
+- **Контекст задачи:** По запросу Владимира составлен актуализированный текст описания для профиля Google Business Profile (Google Карты) с лимитом до 730 символов.
+- **Особенности текста (676 символов):**
+  1. Охватывает все три магистральных направления: обслуживание и ремонт грузовиков/ТIR (kamiony, tahače, návěsy), автобусов/dodávek и детейлинг легковых авто (leštění laku, keramická ochrana, tekuté sklo, čištění interiérů, renovace kol).
+  2. Включены высокочастотные коммерческие SEO-ключи: nákladní pneuservis, 3D geometrie, diagnostika WABCO/Knorr-Bremse, výměna oleje, servis autoklimatizací, DPF filtry, příprava na STK.
+  3. Четкая географическая привязка (Praha 5 – Velká Chuchle, Strakonická 876) и CTA с прямым номером телефона.
+- **Документирование:** Актуализирован `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
