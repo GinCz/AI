@@ -7030,3 +7030,10 @@ etkvm) для виртуализации KVM/OCI.
      - Зеркала развернуты на Server_222 (`/root/GIN-Agent_Windows_v041.cmd`, `version.txt: v041`) и Server_109 (`/opt/rustdesk-server/`, `/var/www/remote-support/`).
      - Загружен во все 3 папки облака MEGA: `/MEGA/DOCS/desktop/`, `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`, `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/`.
      - Все репозитории (`Windows_scripts`, `Secret_Privat`, `AI`) синхронизированы и запушены в GitHub.
+
+
+### [2026-11-27 19:44] SEO & Google Sites: Публикация сателлита cb-autoservis и синхронизация
+- **Контекст задачи:** Фиксация публичного адреса Google Sites сателлита CBA Autoservis (`https://sites.google.com/view/cb-autoservis/`) и передача готовой текстовой структуры для наполнения.
+- **Выполненные работы:**
+  1. **Google Sites Public URL:** Зафиксирован и проверен опубликованный публичный URL сателлита `https://sites.google.com/view/cb-autoservis/`.
+  2. **Регламент и ссылки:** Обновлен `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
