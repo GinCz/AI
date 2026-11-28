@@ -7658,3 +7658,15 @@ etkvm) для виртуализации KVM/OCI.
      - Directory `Windows/Work_Time_Stat/` -> **200 OK**
      - Raw assets (`logo.png`, screenshots) -> **200 OK**
 - **Verification Status:** 100% verified, 0 404 errors, 0 background tasks.
+
+## [2026-11-28 10:04] GIN-Telegram-Bot: Инициализация приватного проекта в Secret_Privat
+- **Цель:** Проектирование собственного ультралегкого Android SMS & Push шлюза для замены Remote Bot Pro (45.5 МБ).
+- **Размещение:** GinCz/Secret_Privat в каталоге Android/GIN-Telegram-Bot/.
+- **Созданная документация и спецификации:**
+  1. README.md: Концепция шлюза, детальное сравнение характеристик с Remote Bot Pro, описание структуры каталогов.
+  2. docs/ARCHITECTURE.md: Архитектурная Mermaid-схема потоков данных, спецификация SmsReceiver (максимальный системный приоритет 2147483647), NotificationListenerService с белым списком банковских пакетов, HeartbeatManager и нативный HttpURLConnection без тяжелых SDK.
+  3. docs/DEVELOPMENT_PLAN.md: Дорожная карта из 5 этапов (каркас Gradle, перехватчики, транспорт, UI с чекбоксами приложений, релиз и полевое тестирование).
+  4. docs/UPTIME_KUMA_INTEGRATION.md: Схема мониторинга доступности через Push Monitor в Uptime Kuma (сервер DE-222) с интервалом 15 минут, передачей уровня заряда, Wi-Fi RSSI и автоматическими алертами в Telegram при обрыве связи или выключении телефона.
+  5. docs/TELEGRAM_SPEC.md: Спецификация HTML-шаблонов для SMS (с разделением по SIM 1 и SIM 2), банковских пушей и аварийных сигналов.
+  6. CHANGELOG.md & WORKLOG.md: Зафиксирована версия 001-plan.
+- **Синхронизация:** Репозитории Secret_Privat и AI успешно обновлены и синхронизированы с GitHub.
