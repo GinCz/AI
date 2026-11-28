@@ -7782,3 +7782,19 @@ etkvm) для виртуализации KVM/OCI.
   3. Развернут системный планировщик `GIN-Mail-Sync-Watchdog` (`C:\ProgramData\gin_mail_watchdog.ps1`, каждые 2 минуты): контролирует процесс Thunderbird и непрерывный рост `INBOX`.
   4. Зафиксирован результат: размер `INBOX` вырос с 6.1 МБ до **73.0+ МБ** за первые 3 минуты (скорость ~600 КБ/с). Загрузка всей почты через кабель идет на полной скорости без зависаний.
 - **Статус:** 100% выполнено удаленно под ключ, документация и репозитории зафиксированы в GitHub.
+
+## [2026-11-28 11:04] GIN-SMS-Backup: Перенос учетных данных Gmail IMAP из Google Docs в Secret_Privat
+- **Источник:** Google Документ [SMS Backup+ Credentials](https://docs.google.com/document/d/1KQvN2fOqgTn4oZCHRSbTeEqJ3AkXsA0VoZ3FgCemp60/edit?tab=t.0).
+- **Перенесенные данные:**
+  - Логин: gin.vladimir@gmail.com
+  - Сервер: imap.gmail.com:993 (TLS)
+  - Метод авторизации: Обычный текст (LOGIN, без XOAuth2)
+  - Пароль приложения 1 (SMS Backup+): pcgh epfv vnyn bbog (pcghepfvvnynbbog)
+  - Пароль приложения 2 (Резервный): viy konu xqcb yhts (viykonuxqcbyhts)
+  - Пароль приложения 3 (AI Ассистент): 	hil ulon hxqc jmry (	hilulonhxqcjmry)
+  - Папка сохранения: SMS
+- **Файлы обновлений:**
+  1. Android/GIN-SMS-Backup/CONFIG_PRIVATE.md: Создан специальный файл приватной конфигурации с классом PrivateConfig и значениями по умолчанию для сборки APK.
+  2. PASS_KEYS/README.md: Актуализирован раздел 14 (Google & Gmail Credentials) со всеми тремя паролями приложений.
+  3. Android/GIN-SMS-Backup/README.md: Добавлена ссылка на CONFIG_PRIVATE.md.
+- **Синхронизация:** Репозитории Secret_Privat и AI успешно обновлены и зафиксированы на GitHub.
