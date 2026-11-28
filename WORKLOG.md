@@ -7544,3 +7544,98 @@ etkvm) для виртуализации KVM/OCI.
   - Updated RU-109: added `GIN-Agent_Windows_v044.cmd` to `USER_ALLOWED_FILES` in `/opt/rustdesk-server/registry_server.py`, deployed files to `/var/www/html/agent/`, and restarted `rustdesk-registry.service`.
   - Updated both Git repositories: `GinCz/Secret_Privat` and `GinCz/Windows_scripts`.
   - Deployed binaries to MEGA: `/MEGA/DOCS/desktop/`, `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`, and `TeamViewer_RadMin/`.
+
+
+### [2026-11-28 09:38] GIN-AutoDiag: Запуск маркетингового пакета `SEO/`, SMM-стратегии (Facebook + Instagram), семантического ядра и еженедельной напоминалки в Google Календаре
+- **Контекст задачи:** Владимир поручил добавить еженедельную напоминалку в Google Календарь на каждый вторник на 14:00 (бессрочное повторение) о рекламе и продвижении проекта GIN-AutoDiag: создание страниц в Facebook и Instagram, доработка SEO для индексации сайта поисковиками. В репозитории проекта потребовалось создать папку `SEO` с планом работы, контент-стратегией живых постов для соцсетей и многоязычным списком ключевых слов для органического поиска.
+- **Выполненные работы:**
+  1. **Интеграция с Google Календарём:**
+     - Создано повторяющееся событие: `FREQ=WEEKLY;BYDAY=TU`, каждый вторник с 14:00 до 14:30 (Europe/Prague).
+     - Название: `GIN-AutoDiag: Реклама, соцсети (FB & IG) и SEO продвижение` (Event ID: `0kjdmrv4obp7ri4hd6vkq8v8lc`).
+     - Прямая ссылка: `https://www.google.com/calendar/event?eid=MGtqZG1ydjRvYnA3cmk0aGQ2dmtxOHY4bGNfMjAyNjEyMDFUMTMwMDAwWiBnaW4udmxhZGltaXJAbQ`.
+  2. **Создание директории `SEO/` в GIN-AutoDiag:**
+     - `SEO/README.md`: общая дорожная карта, позиционирование (онлайн-досье по всей Европе за 50 € и очный аудит в Нупаках/Праге за 80 €), этапы запуска соцсетей и SEO.
+     - `SEO/KEYWORDS_SEMANTIC_CORE.md`: многоязычное семантическое ядро на 4 языках (чешский, английский, немецкий, русский) с разбивкой по частотности, симптомам, маркам (BMW, VAG, PSA, Opel) и хэштегам.
+     - `SEO/SOCIAL_MEDIA_STRATEGY.md`: концепция живого экспертного блога («анти-реклама»), рубрикатор (ошибка недели, кейс из бокса, совет автомеханика), контент-план на 4 недели и готовые сценарии видео Reels.
+     - `SEO/WEBSITE_SEO_OPTIMIZATION.md`: технический чек-лист по индексации в Google Search Console и Seznam Webmaster, разметка Open Graph для красивых сниппетов в FB/Insta, микроразметка Schema.org (`AutoRepair`), регистрация в Google Maps и Firmy.cz.
+  3. **Связка с приватной базой `Secret_Privat`:**
+     - Создана символическая ссылка `Secret_Privat/SEO/gin-autodiag.eu -> /root/AI/GitHub/GIN-AutoDiag/SEO`.
+
+
+### [2026-11-28 09:40] Комплексная стандартизация, изоляция инфраструктуры и реструктуризация 10 публичных репозиториев GinCz (Professional Fix — Вариант 2)
+- **Контекст задачи:** Владимир утвердил реализацию Варианта 2 (Professional Fix) по результатам аудита 10 публичных репозиториев. Поставлены жесткие требования:
+  1. Архитектурный стандарт «Чистый корень»: не более 5 элементов (файлов и папок суммарно) в корне каждого проекта/репозитория;
+  2. 100% английский язык во всей публичной документации, описаниях, таблицах и метаданных;
+  3. Удобное прямое скачивание готовых сборок (.EXE, .APK, .ZIP) с контрольными суммами SHA-256;
+  4. Описание истории изменений всех версий через раскрывающийся аккордеон `<details>`;
+  5. Полная зачистка приватных данных: перенос персональных скриптов (`backup_gin_chat.sh`, `boot_acronis.sh`, `copy_drivers_smb.sh`, `New_Server_README.md`, `OPERATIONS.md`, `WP-UPDATE-README.md`), логов и внутренних IP-адресов в `Secret_Privat/Linux_Server/`;
+  6. Выделение утилит `fastpanel-fix.sh` и `wipe_disk.sh` в отдельные документированные проекты `FastPanel/` и `WipeDisk/`.
+- **Выполненные работы:**
+  1. **`Linux_Server_Public`:**
+     - Перенесены в `Secret_Privat/Linux_Server/`: `backup_gin_chat.sh`, `boot_acronis.sh`, `copy_drivers_smb.sh`, `vpn_infrastructure_backup.sh`, `New_Server_README.md`, `OPERATIONS.md`, `WP-UPDATE-README.md`.
+     - Созданы модульные директории с подробными английскими `README.md`: `FastPanel/` (с `fastpanel-fix.sh`), `WipeDisk/` (с `wipe_disk.sh` и предупреждениями безопасности), `SwapJournal_Tuner/` (с `setup_swap_and_journal.sh`).
+     - Зачищены реальные IP-адреса производственных серверов в `WORKLOG.md`.
+     - Главный `README.md` дополнен таблицей модулей и аккордеоном истории версий.
+  2. **`WordPress` & `plugins`:**
+     - В `WordPress/README.md` удалены открытые IP-адреса серверов `152.53.182.222`, `212.109.223.109`, `92.5.111.49`.
+     - В `plugins/README.md` удалены многоязычные секции (немецкий, французский, итальянский, испанский, польский), документация приведена к 100% английскому стандарту.
+     - Добавлен раздел «Direct Download Center» со ссылками на скачивание всех 13 ZIP-пакетов плагинов и аккордеоном истории версий.
+     - Устранено искажение UTF-8 кодировки эмодзи в `updates.json`.
+  3. **`Windows_scripts`:**
+     - Корень репозитория очищен до ровно 5 элементов: `GIN-Agent_Windows.cmd`, `version.txt`, `README.md`, `tools/`, `projects/`.
+     - 40+ разрозненных скриптов распределены по подпапкам: `tools/apps/`, `tools/network/`, `tools/remote/`, `tools/system/`, `tools/docs/`, для каждой создано подробное английское описание `README.md`.
+     - Флагманские утилиты собраны в `projects/`: `GIN-Agent/` (с версионированными сборами v043 и companion `.zip`), `Ultarix-Monitor/` (v009), `GIN-DNS-Switch/`, `GIN-Dock-Wallpaper/`, `GIN-Wallpaper/`, `WinUtil_VladiMIR/`.
+     - Главный `README.md` актуализирован (версия `v2026-11`, синхронизация версий приложений, аккордеон истории версий).
+  4. **`GIN-PDF-RW`:**
+     - Корень приведен строго к 5 элементам: `README.md`, `src/`, `assets/`, `docs/`, `releases/`.
+     - Удалены русские строки в меню и кнопке обновления, документация переведена на 100% английский. Добавлен аккордеон версий.
+  5. **`Android`:**
+     - Исправлены ошибки в таблице SHA-256 (вместо размера `36.5 MB` внесены реальные контрольные суммы).
+     - Синхронизирована актуальная версия `GIN-Launcher` (`v053`) и добавлен `Ultarix-Monitor` (`v002`).
+     - Добавлен аккордеон истории изменений.
+  6. **`RULES` & `AI`:**
+     - В `RULES/README.md` исправлен синтаксис ограждения блоков кода (удален артефакт `\text`), добавлена матрица совместимости моделей.
+     - В `AI/README.md` полностью устранены все 31 русскоязычная строка (заголовки правил, пояснения путей, серверные хосты), документ приведен к 100% чистому английскому стандарту.
+  7. **`GinCz` (Главная витрина):**
+     - Синхронизированы версии всех продуктов, добавлены `GIN-Agent` (`v043`), `GIN-PDF-RW` (`v021`), `WordPress Suite` (13 плагинов).
+     - Все ссылки ведут на прямые загрузки EXE, APK и ZIP.
+  8. **Синхронизация с GitHub:**
+     - Все 10 публичных репозиториев и приватный репозиторий `Secret_Privat` успешно закоммичены и запушены на GitHub.
+
+### 📅 2026-11-28 09:48 CET | Calendar Automation & Promotion Blueprint: Work Time Stat
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Scheduled recurring weekly marketing session in Google Calendar and engineered comprehensive B2B promotion strategy in private repository.  
+**Executed Actions:**
+- **Google Calendar Automation (`gcalendar`):**
+  - Created permanent recurring event: `📈 Продвижение и маркетинг WorkTimeStat`
+  - Schedule: Every Wednesday at 11:00 AM CET (`FREQ=WEEKLY;BYDAY=WE`, `2026-12-02T11:00:00+01:00` - `11:30:00+01:00`).
+  - Account: `gin.vladimir@gmail.com`
+  - Event link: [Google Calendar Event](https://www.google.com/calendar/event?eid=cXFvaWZmbTE3NnR1NWM3YWVlbTFlZjBjcDhfMjAyNjEyMDJUMTAwMDAwWiBnaW4udmxhZGltaXJAbQ)
+- **Private Repository Strategy (`Secret_Privat / Windows / Work_Time_Stat / SEO /`):**
+  - Created directory `Windows/Work_Time_Stat/SEO/`
+  - Created `README.md` and `MARKETING_PROMOTION_PLAN.md`:
+    - **Positioning:** Privacy-first on-premise Master Host PC architecture with Android APK vs intrusive spywares.
+    - **Dedicated Website / Landing Page:** High-converting structure, interactive Day/Evening/Night theme preview, and B2B quotation funnel.
+    - **SEO Strategy:** Multi-regional semantic core (CZ, EN, RU), Core Web Vitals optimization, Schema.org `SoftwareApplication` markup, and educational content plan.
+    - **Social Media Marketing (SMM):** Content pillars, posting schedule, and creative angles for Facebook Page/Groups and Instagram Reels/Carousels.
+    - **Paid Advertising (PPC):** Google Ads search campaigns on high-intent transactional keywords with negative keyword filters, and Meta Ads lead generation targeting business owners, IT directors, and accounting firms.
+    - **Gantt Roadmap & Financial KPIs:** 3-month rollout schedule, CAC, CPL, and LTV targets.
+
+### [2026-11-28 09:55:13] Audit, SEO Enrichment & Complete Link Verification across all 10 Public Repositories
+- **Objective:** Finalize link verification, eliminate dead links/redirects, enforce the <= 5 root entries rule, ensure 100% English documentation, and inject high-ranking SEO topics, hashtags, and semantic headings across all 10 public GitHub repositories.
+- **Actions Executed:**
+  1. **SEO Enrichment & Metadata Standardization:**
+     - Injected dedicated  (or ) blocks across all 10 repositories: , , , , , , , , , and .
+     - Standardized strict H1/H2 heading hierarchy for optimal search indexing on Google, Bing, and GitHub Search.
+     - Stripped UTF-8 BOM from  to conform to Rule 12 (UTF-8 without BOM).
+  2. **Link & Relative Path Integrity:**
+     - Verified and resolved relative link targets in  ( -> ).
+     - Fixed relative paths in  and .
+     - Added missing submodule documentation (, , , , ,  in ).
+     - Added  to .
+  3. **Root Cleanliness & Architecture Enforcement:**
+     - Enforced strictly 5 root items in : , , , , and  (tracking real tree  instead of broken symlinks).
+  4. **Multi-Repo Git Synchronization:**
+     - All 10 public repositories (, , , , , , , , , ) committed with message  and pushed to .
+- **Status:** 100% Complete, 0 broken links, 0 orphan background tasks.
