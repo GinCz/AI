@@ -7756,3 +7756,11 @@ etkvm) для виртуализации KVM/OCI.
   5. docs/RATE_LIMITING_ANTI_BLOCK.md: Алгоритмы защиты от блокировок Google (принудительные паузы 3.0 секунды между APPEND, сериализация в один поток, переиспользование активного TLS-сокета, экспоненциальный откат Exponential Backoff).
   6. CHANGELOG.md & WORKLOG.md: Зафиксирована начальная архитектурная версия 001-plan.
 - **Синхронизация:** Репозитории Secret_Privat и AI успешно обновлены и синхронизированы с GitHub.
+## [2026-11-28 10:46] Android Public Showcase: GIN-Telegram-Bot & GIN-SMS-Backup в GinCz/Android
+- **Цель:** Публикация открытых спецификаций и архитектуры проектов GIN-Telegram-Bot и GIN-SMS-Backup в публичном репозитории GinCz/Android.
+- **Конфиденциальность:** В публичных версиях полностью исключены персональные данные (нет email, токенов ботов, Chat ID, паролей или личных URL). Все примеры используют плейсхолдеры.
+- **Публикации:**
+  1. Android/GIN-Telegram-Bot/: README на английском языке с бейджами, хэштегами, описанием возможностей (Dual-SIM, App push checklist, Uptime Kuma push heartbeat, GPS), архитектурным документом docs/ARCHITECTURE.md и CHANGELOG.md.
+  2. Android/GIN-SMS-Backup/: README на английском языке с бейджами, хэштегами, описанием нативного Gmail IMAP TLS (imap.gmail.com:993), алгоритма защиты от блокировок Google (3.0s pacing), отсутствия зависимостей от Google Play Services, архитектурой docs/ARCHITECTURE.md и CHANGELOG.md.
+  3. Android/README.md: Оба приложения добавлены в главную таблицу публичного каталога и блок Highlights.
+- **Синхронизация:** Репозитории GinCz/Android и GinCz/AI успешно обновлены и отправлены в GitHub.
