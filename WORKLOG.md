@@ -8147,3 +8147,18 @@ etkvm) для виртуализации KVM/OCI.
      - Обновлены `CHANGELOG.md` и `WORKLOG.md` в обоих проектах.
      - Все изменения закоммичены и отправлены в GitHub: `GinCz/Secret_Privat` и `GinCz/Android`.
 - **Статус:** 100% выполнено. Подготовлено детальное ТЗ для локального Windows-агента с ADB.
+
+### [2026-11-28 19:12:00] DOOGEE X3: Миграция на корпоративные релизные сборки VladiMIR+AI (v011 & v004)
+- **Контекст задачи:** Локальный агент на ПК Владимира выполнил техническое задание по чистой миграции телефона DOOGEE X3 (Android 5.1 Lollipop, S260C1ZS67024425), подключенного по USB кабелю через ADB.
+- **Инженерные работы:**
+  1. *Подавление верификатора Play Protect:*
+     - Через `adb shell settings put` отключены `package_verifier_enable = 0`, `package_verifier_user_consent = -1`, `upload_apk_enable = 0` (глобально и секьюрно).
+  2. *Чистое удаление старых отладочных версий:*
+     - Удалены пакеты `com.gincz.telegrambot` и `com.gincz.smsbackup` (дебаг-подпись устранена без конфликтов `INSTALL_FAILED_UPDATE_INCOMPATIBLE`).
+  3. *Установка релизных APK:*
+     - `GIN-Telegram-Bot_v011.apk` (150 КБ) скопирован из локального кэша MEGA Flash и успешно установлен (`Success`, versionCode=11).
+     - `GIN-SMS-Backup_v004.apk` (77 КБ) скопирован из локального кэша MEGA Flash и успешно установлен (`Success`, versionCode=4).
+  4. *Запуск и валидация:*
+     - Запущены главные активности: `com.gincz.telegrambot/.MainActivity` и `com.gincz.smsbackup/.ui.MainActivity`.
+     - Проверены запущенные процессы в ОС Android: оба сервиса активны (`u0_a85`, `u0_a86`), подписи соответствуют корпоративному Keystore `VladiMIR+AI`.
+- **Статус:** 100% выполнено под ключ. Телефон DOOGEE X3 полностью обновлен и функционирует.
