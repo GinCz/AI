@@ -7744,3 +7744,15 @@ etkvm) для виртуализации KVM/OCI.
      - Samba DE-222: `/storage/user/APK/GIN-Telegram-Bot_v001.apk` (права `vlad:vlad`, `664`);
      - MEGA Cloud: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/GIN-Telegram-Bot_v001.apk` (100% выгружено).
 - **Статус:** Релиз `v001` успешно собран, протестирован с помощью `aapt2` и опубликован в целевые хранилища.
+
+## [2026-11-28 10:39] GIN-SMS-Backup: Инициализация независимого IMAP-проекта в Secret_Privat
+- **Цель:** Проектирование отдельного, независимого Android-приложения GIN-SMS-Backup для надежного архивирования входящих SMS в Google Почту (Gmail) по прямому протоколу IMAP без сервисов Google Play.
+- **Размещение:** GinCz/Secret_Privat в каталоге Android/GIN-SMS-Backup/.
+- **Созданная документация и спецификации:**
+  1. README.md: Концепция приложения, сравнение с SMS Backup+, ключевые преимущества (0 зависимостей от Google Play Services, размер < 250 КБ, потребление 3–5 МБ RAM).
+  2. docs/ARCHITECTURE.md: Схема взаимодействия (Mermaid), описание SmsReceiver, ImapSyncService (Foreground Service с WakeLock), движка задержек RateLimiter и легковесного ImapTlsClient на нативных сокетах Java.
+  3. docs/DEVELOPMENT_PLAN.md: Дорожная карта из 5 этапов (структура Gradle, база SQLite, IMAP-клиент, UI мониторинга и тестирование).
+  4. docs/GMAIL_IMAP_SPEC.md: Спецификация прямого протокола IMAP TLS (imap.gmail.com:993, команда APPEND "SMS"), структура писем RFC 2822 для совместимости с цепочками диалогов Gmail.
+  5. docs/RATE_LIMITING_ANTI_BLOCK.md: Алгоритмы защиты от блокировок Google (принудительные паузы 3.0 секунды между APPEND, сериализация в один поток, переиспользование активного TLS-сокета, экспоненциальный откат Exponential Backoff).
+  6. CHANGELOG.md & WORKLOG.md: Зафиксирована начальная архитектурная версия 001-plan.
+- **Синхронизация:** Репозитории Secret_Privat и AI успешно обновлены и синхронизированы с GitHub.
