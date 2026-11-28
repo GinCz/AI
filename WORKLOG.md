@@ -7234,3 +7234,22 @@ etkvm) для виртуализации KVM/OCI.
        2. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`
        3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/`
      - Репозитории GitHub: изменения синхронизированы в `Windows_scripts` и `Secret_Privat/GIN-Agent`.
+
+## [2026-11-28 09:10] Android Maintenance: DOOGEE X3 (S260C1ZS67024425) Оптимизация и Debloat
+- **Устройство:** DOOGEE X3 (чипсет MT6580, Android 5.1 Lollipop API 22, RAM 1 ГБ).
+- **Диагностика:**
+  - Обнаружен дефицит RAM: из 990 МБ свободно оставалось менее 50 МБ (zRAM swap был заполнен на 300 МБ).
+  - В фоне висели тяжелые процессы: Google Search Widget, Google Maps, Adups FOTA backdoor/spyware, Mediatek MTKLogger (постоянная запись дампов во флеш-память), рекламный загрузчик Opera Max, тестовый DocsToGo и живые обои.
+  - Анимации интерфейса создавали задержки (window_animation_scale = 1.0).
+- **Выполненные работы:**
+  1. **Debloat шпионского и фонового ПО:**
+     - Отключены/скрыты через pm hide: com.adups.fota, com.adups.fota.sysoper, com.fw.upgrade, com.fw.upgrade.sysoper (FOTA бэкдоры/вирусы).
+     - Отключен фоновый регистратор: com.mediatek.mtklogger (разгружен I/O накопителя).
+     - Отключен рекламный модуль: com.opera.max.loader.
+     - Отключен предустановленный мусор: com.dataviz.docstogo, com.android.ragentek.securitylocker.
+     - Отключены все ресурсоемкие живые обои и заставки: com.android.galaxy4, com.android.phasebeam, com.android.noisefield, com.android.wallpaper.holospiral, com.android.dreams.phototable, com.android.dreams.basic, com.android.musicvis.
+     - Отключены неиспользуемые фоновые службы: com.google.android.feedback, com.google.android.tts, com.google.android.googlequicksearchbox.
+  2. **Ускорение интерфейса:**
+     - Все шкалы анимаций (window_animation_scale, 	ransition_animation_scale, nimator_duration_scale) переведены в  .0 (мгновенный отклик UI).
+  3. **Сохранность рабочих сервисов:**
+     - Рабочие приложения (com.alexandershtanko.androidtelegrambot, com.zegoggles.smssync, cz.mobilecity, Root Explorer) и телефония (GSM/RIL) оставлены в полной сохранности.
