@@ -1,3 +1,15 @@
+## [2026-11-27 21:24] GIN-Remote: Регистрация досье Honor View 20 (HUAWEI PCT-L29) и аудит 360 пакетов в GitHub
+- **Контекст задачи:** Фиксация паспорта личного смартфона Владимира Honor View 20 в реестре `DEVICES/`, документирование архитектуры двухконтурного управления GIN-Remote v016 (Mobile Assist vs ADB Console), сохранение полного аудита 360 пакетов и списка кандидатов деблоатинга.
+- **Выполненные работы:**
+  1. Создано официальное досье устройства `Android/GIN-Remote/DEVICES/Honor_View_20_PCT-L29.md`:
+     - Технический паспорт (Kirin 980, 6GB RAM, Android 10 API 29, Magic UI 3.1).
+     - Сетевые реквизиты: GIN PIN `186-897-670`, LAN IP `192.168.33.152`, WAN IP `185.100.197.0`, шлюз `Oracle-49:17000`.
+     - Двухконтурная архитектура: беспроводной Mobile Assist (`RemoteAccessibilityService` + `MediaProjection` 540x1154) и ADB Console (`adb tcpip 5555`).
+     - Аудит пакетов: зафиксировано отсутствие `com.huawei.appmarket` и `com.huawei.hwid`; детализирован список 12 системных паразитов для отключения.
+  2. В реестр `Android/GIN-Remote/DEVICES/README.md` внесена запись об устройстве со ссылкой на досье и статусом `🟢 Online (Mobile Assist)`.
+  3. Сохранен фотоснимок экрана устройства в `Android/GIN-Remote/DEVICES/images/Honor_View_20_PCT-L29.jpg`.
+  4. На сервере `Oracle-49` очищен устаревший оффлайн-дубликат `HUAWEI_PCT-L29` в `devices.json`, перезапущен `gin-web-remote` для корректного отображения в веб-студии `https://remote.gincz.com/`.
+
 ## [2026-11-27 19:05] RustDesk Dashboard: Восстановление 1-Click копирования полной карточки ПК и очистка первого столбца от «ℹ️» (`rd.gincz.com`)
 - **Контекст и первопричина:** В панели управления `rd.gincz.com` после коммита `9d657279` клик по голубой кнопке названия ПК ошибочно копировал только имя, а для полных данных ПК была добавлена кнопка `ℹ️`. По требованию Владимира интерфейс возвращен к чистому стандарту: лишняя кнопка `ℹ️` удалена, а при клике на название компьютера копируется полная сводная карточка (RustDesk ID, пароль, GIN-PIN, IP, хост, пользователь, сервер и ссылки).
 - **Выполненные работы:**
@@ -7183,6 +7195,23 @@ etkvm) для виртуализации KVM/OCI.
   3. Четкая географическая привязка (Praha 5 – Velká Chuchle, Strakonická 876) и CTA с прямым номером телефона.
 - **Документирование:** Актуализирован `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
 
+
+### [2026-11-27 21:18] Analytics & i18n: Релиз Site Traffic & Visitor Analytics v1.01, развертывание на 58 сайтах и напоминание в Google Календаре
+- **Контекст задачи:** 
+  1. Объяснена специфика работы автономного privacy-friendly плагина `wp-site-stats`: статистика начинает наполняться с момента установки в реальном времени при посещении внешними пользователями (просмотры авторизованных администраторов `manage_options` намеренно исключаются из аналитики, чтобы не искажать метрики).
+  2. Реализована полноценная поддержка 9 языков (английский, чешский, немецкий, французский, испанский, итальянский, польский, русский и украинский) как в описании плагина (`vladimir-ai-i18n.php`), так и в интерфейсе самого дашборда аналитики (`wp-site-stats.php`).
+  3. Выполнен релиз версии `2026-11__1.01`, обновлен манифест `updates.json`, пересобран дистрибутив `zips/wp-site-stats.zip`.
+  4. Проведено автоматизированное пакетное развертывание и активация плагина на ВСЕХ 58 сайтах WordPress на серверах DE-222 (NetCup, 40 сайтов) и RU-109 (FastVDS, 18 сайтов).
+  5. В Google Календаре создано напоминание ровно через 7 дней (04.12.2026 в 16:00 CET) для проверки накопленных результатов аналитики на ключевых проектах: Татра-Урал, Шапки Оптом, CBA Autoservis, CzechToday и NewSport.
+- **Выполненные работы:**
+  - `i18n & Локализация:` В `vladimir-ai-i18n.php` добавлен `wp-site-stats` на 9 языках. В `wp-site-stats.php` внедрена нативная функция `vladimir_ss_t()` с полным словарем терминов, карточек, фильтров диапазонов, подсказок и флагов стран.
+  - `Репозитории и релизы:` Обновлены файлы в `GinCz/plugins`, `GinCz/WordPress`, `GinCz/Linux_Server_Public`, изменения запушены в GitHub.
+  - `Глобальный Rollout:` 
+    - DE-222: 40 из 40 сайтов активированы (100% success).
+    - RU-109: 18 из 18 сайтов активированы (100% success).
+    - Итого: 58 сайтов WordPress.
+  - `Google Календарь:` Создано событие с ID `of5roqb3kraeik9oe1djkoeuco` на 04.12.2026 с 16:00 до 17:00 с прямыми ссылками на сайты и панели статистики.
+
 ### [2026-11-27 21:18] Calendar & SMM: Создание напоминания на 27 декабря и планирование Facebook ротации
 - **Контекст задачи:** По указанию Владимира запланирована контрольная дата продолжения продвижения CBA Autoservis на 27 декабря 2026 г., а также проверена и дополнена сетка автопостинга на Facebook до этой даты.
 - **Выполненные работы:**
@@ -7199,6 +7228,17 @@ etkvm) для виртуализации KVM/OCI.
        - 22.12.2026: Пост №6 — Детейлинг, полировка и керамическая защита.
      - Успешно протестирован `cba_fb_poster.py --dry-run`.
   3. **Документирование:** Актуализирован `README.md` в `Secret_Privat/SEO/car-bus-autoservice.cz/`.
+
+
+### [2026-11-27 21:32] Audit & Plugins: Полная ревизия дублирующих плагинов статистики на всех сайтах (DE-222 и RU-109)
+- **Контекст задачи:** По указанию Владимира проведена тотальная инспекция всех 58 сайтов WordPress на двух боевых серверах DE-222 (NetCup, 40 сайтов) и RU-109 (FastVDS, 18 сайтов) на предмет наличия сторонних или дублирующих плагинов сбора статистики и аналитики.
+- **Результаты аудита:**
+  1. **Сторонние плагины автономной аналитики (WP-Statistics, Burst Statistics, Statify, Koko Analytics, Matomo, Slimstat, MonsterInsights и др.):** На серверах DE-222 и RU-109 **ОТСУТСТВУЮТ** (0 дубликатов на всех 58 сайтах). Ранее тестировавшийся Burst Statistics был полностью удален.
+  2. **Смежные установленные модули:**
+     - `wp-online-counter` (VladiMIR+AI Suite): Установлен на сайтах в качестве счетчика присутствия в реальном времени. Не собирает аналитику, не пишет в БД и хранит в transient-кэше лишь моментальное число активных пользователей за последние 5 минут.
+     - `google-site-kit`: Присутствует на части сайтов (включая car-bus-autoservice.cz) для интеграции с облачными сервисами Google Search Console / GA4 (внешнее облако Google).
+  3. **Вывод:** Никаких локальных конфликтов, двойного логирования хитов в БД или параллельных тяжелых движков внутренней статистики на серверах нет. Сбор локальной аналитики ведет исключительно `wp-site-stats`.
+
 
 ### [2026-11-27 21:37] Google Calendar: Обновление напоминания статистики на 2 недели вперед с 3 повторами
 - **Контекст задачи:** По указанию Владимира напоминание о проверке статистики в Google Календаре перенесено на 2 недели вперед (11.12.2026) с цикличностью на 3 еженедельных повтора (11.12, 18.12, 25.12). Описание события оформлено богатой HTML-разметкой с прямыми кликабельными ссылками на публичные сайты, панели статистики (`/wp-admin/admin.php?page=site-stats`) и входы в админки (`/wp-admin/`) для всех 5 ключевых сайтов: CBA Autoservis, Татра-Урал, Шапки Оптом, CzechToday и NewSport.
@@ -7235,36 +7275,272 @@ etkvm) для виртуализации KVM/OCI.
        3. `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/TeamViewer_RadMin/`
      - Репозитории GitHub: изменения синхронизированы в `Windows_scripts` и `Secret_Privat/GIN-Agent`.
 
-## [2026-11-28 09:10] Android Maintenance: DOOGEE X3 (S260C1ZS67024425) Оптимизация и Debloat
-- **Устройство:** DOOGEE X3 (чипсет MT6580, Android 5.1 Lollipop API 22, RAM 1 ГБ).
-- **Диагностика:**
-  - Обнаружен дефицит RAM: из 990 МБ свободно оставалось менее 50 МБ (zRAM swap был заполнен на 300 МБ).
-  - В фоне висели тяжелые процессы: Google Search Widget, Google Maps, Adups FOTA backdoor/spyware, Mediatek MTKLogger (постоянная запись дампов во флеш-память), рекламный загрузчик Opera Max, тестовый DocsToGo и живые обои.
-  - Анимации интерфейса создавали задержки (window_animation_scale = 1.0).
+
+### [2026-11-27 21:50] Полный аудит экосистемы WordPress (58 сайтов): Cloudflare Turnstile и устаревшие плагины
+- **Контекст задачи:** Проведена комплексная ревизия всех WordPress-сайтов на серверах DE-222 (40 сайтов) и RU-109 (18 сайтов) на предмет наличия и активности плагина Cloudflare Turnstile CAPTCHA, а также выявления устаревших, неактивных и потенциально небезопасных плагинов.
+- **Результаты проверки Cloudflare Turnstile (58 сайтов суммарно):**
+  - **Активен Cloudflare Turnstile:** 50 сайтов (33 на DE-222, 17 на RU-109).
+  - **Отсутствует Turnstile (7 сайтов):**
+    - DE-222: `car-bus-autoservice.cz`, `megan-consult.cz`, `kadernik-olga.eu`, `eurasia-translog.cz`, `car-chip.eu`, `stopservis-vestec.cz`.
+    - RU-109: `novorr-art.ru`.
+  - **Установлен, но деактивирован (1 сайт):** `lybawa.com` (DE-222) — `simple-cloudflare-turnstile` v1.44.7 [INACTIVE].
+  - **Сторонняя капча вместо Turnstile:** `car-chip.eu` — использует `hCaptcha for WP` v5.5.0 вместо единого Cloudflare Turnstile.
+- **Аудит устаревших и рискованных плагинов:**
+  - **Уязвимости / Бэкап-инструменты на боевых сайтах:**
+    - `lybawa.com`: активен `duplicator` v5.2.0.
+    - `alejandrofashion.cz`: активен `duplicator-pro` v4.5.19.1.
+  - **Устаревшие версии плагинов:**
+    - `kadernik-olga.eu`: старый `wpforms` v1.5.9.3 (на остальных сайтах унифицирован `wpforms-lite` v2.0.5.2).
+    - `novorr-art.ru`: устаревший визуальный редактор `wpueditors` v1.3.46 и `nextgen-gallery` v4.6.1.
+  - **Сайты с балластом неактивных плагинов:**
+    - `car-bus-autoservice.cz` (18 выключенных плагинов).
+    - `ekaterinburg-sro.eu` (10 выключенных плагинов).
+    - `detailing-alex.eu` (2 выключенных: `wp-reviews-plugin-for-google`, `wptelegram`).
+    - `timan-kuchyne.cz` (3 выключенных).
+    - `4ton-96.ru` (1 выключенный: `instagram-feed`).
+- **Сформированы 3 уровня системных решений:**
+  - *Уровень 1 (Тактический патч):* Активация Turnstile на `lybawa.com`, удаление Duplicator на `lybawa.com` и `alejandrofashion.cz`.
+  - *Уровень 2 (Комплексная стандартизация — Рекомендуемый):* Инсталляция и активация `simple-cloudflare-turnstile` на оставшихся 7 сайтах, замена `hCaptcha` на `car-chip.eu`, удаление `duplicator` и чистка балласта.
+  - *Уровень 3 (Автоматизация мониторинга):* Регулярный cron-скрипт целостности плагинов безопасности на DE-222 и RU-109.
+
+
+### [2026-11-27 22:04] 100% Развёртывание Cloudflare Turnstile на всех сайтах и глубокая чистка ekaterinburg-sro.eu
+- **Контекст задачи:** По указанию Владимира выполнено 100% покрытие всех площадок официальной капчей Cloudflare Turnstile (`simple-cloudflare-turnstile` v1.44.7) с автономной привязкой ключей Cloudflare, удалением старых/сторонних капч и опасных плагинов миграции, а также полная замена устаревших тяжелых плагинов на сайте `ekaterinburg-sro.eu` на фирменный стек микроплагинов `(VladiMIR+AI✅)`.
 - **Выполненные работы:**
-  1. **Debloat шпионского и фонового ПО:**
-     - Отключены/скрыты через pm hide: com.adups.fota, com.adups.fota.sysoper, com.fw.upgrade, com.fw.upgrade.sysoper (FOTA бэкдоры/вирусы).
-     - Отключен фоновый регистратор: com.mediatek.mtklogger (разгружен I/O накопителя).
-     - Отключен рекламный модуль: com.opera.max.loader.
-     - Отключен предустановленный мусор: com.dataviz.docstogo, com.android.ragentek.securitylocker.
-     - Отключены все ресурсоемкие живые обои и заставки: com.android.galaxy4, com.android.phasebeam, com.android.noisefield, com.android.wallpaper.holospiral, com.android.dreams.phototable, com.android.dreams.basic, com.android.musicvis.
-     - Отключены неиспользуемые фоновые службы: com.google.android.feedback, com.google.android.tts, com.google.android.googlequicksearchbox.
-  2. **Ускорение интерфейса:**
-     - Все шкалы анимаций (window_animation_scale, 	ransition_animation_scale, nimator_duration_scale) переведены в  .0 (мгновенный отклик UI).
-  3. **Сохранность рабочих сервисов:**
-     - Рабочие приложения (com.alexandershtanko.androidtelegrambot, com.zegoggles.smssync, cz.mobilecity, Root Explorer) и телефония (GSM/RIL) оставлены в полной сохранности.
-## [2026-11-28 09:20] Android SMS Gateway: DOOGEE X3 Тюнинг для Telegram Bot & SMS Backup+
-- **Назначение устройства:** Автономный SMS-шлюз для 2 российских SIM-карт в роуминге.
-  1. Пересылка входящих SMS в Telegram через Remote Bot Pro (Mob_79122855763_bot).
-  2. Резервное копирование SMS через IMAP в почту Google (gin.vladimir@gmail.com) через SMS Backup+.
-- **Проведенный аудит и настройки:**
-  1. **Защита от засыпания:**
-     - Установлен параметр stay_on_while_plugged_in = 7 (устройство никогда не переходит в deep sleep при подключении по USB / сети).
-     - Проверен wifi_sleep_policy = 2 (Wi-Fi активен 24/7 и не засыпает).
-     - Активирован mobile_data_always_on = 1 для бесшовного поддержания каналов связи.
-  2. **Освобождение оперативной памяти (защита от LMK):**
-     - Отключен тяжелый фоновый диспетчер com.rs.explorer.filemanager, который запускал native daemon librsnative.so и удерживал 163 потока (~80 МБ RAM).
-     - Свободная память устройства увеличена до **374 МБ** (более трети от всего объема), что полностью исключает убийство демонов шлюза через Low Memory Killer.
-  3. **Проверка служб доставки:**
-     - Remote Bot Pro: служба BotService активна в статусе isForeground=true с закрепленным уведомлением (oregroundId=100), что гарантирует высший приоритет процесса.
-     - SMS Backup+: проверено расписание для входящих SMS (установлен минимально возможный интервал — 1 минута), настроена синхронизация по IMAP. Опция "Только по WiFi" защищает от дорогостоящих расходов за мобильный интернет в роуминге на российских номерах.
+  1. **car-bus-autoservice.cz:**
+     - Подтверждена активность всех 18 рабочих плагинов ядра.
+     - Установлен, активирован и настроен плагин `simple-cloudflare-turnstile` v1.44.7 с ключами кластера автосервисов (`0x4AAAAAABctSBTWHvacBrvg`).
+  2. **Унификация Cloudflare Turnstile на всех оставшихся площадках:**
+     - `car-chip.eu`: полностью удалён устаревший `hcaptcha-for-forms-and-more`, установлен, активирован и настроен `simple-cloudflare-turnstile` v1.44.7.
+     - `kadernik-olga.eu`: развернут, активирован и сконфигурирован `simple-cloudflare-turnstile` v1.44.7 (`0x4AAAAAABdIZ-flr4OcAjkU`).
+     - `megan-consult.cz`: развернут, активирован и сконфигурирован `simple-cloudflare-turnstile` v1.44.7 (`0x4AAAAAABdS6C6NtVMmb6tC`).
+     - `eurasia-translog.cz`: развернут, активирован и сконфигурирован `simple-cloudflare-turnstile` v1.44.7 (`0x4AAAAAABdS6C6NtVMmb6tC`).
+     - `stopservis-vestec.cz`: развернут, активирован и сконфигурирован `simple-cloudflare-turnstile` v1.44.7 (`0x4AAAAAABdq0Ftpl2Ud-P2p`).
+     - `lybawa.com`: удален `duplicator`, активирован и настроен `simple-cloudflare-turnstile` v1.44.7.
+     - `alejandrofashion.cz`: удален `duplicator-pro` (закрыта потенциальная уязвимость экспорта БД).
+     - `novorr-art.ru` (RU-109): развернут, активирован и сконфигурирован `simple-cloudflare-turnstile` v1.44.7 (`0x4AAAAAABY6bSX_kaw6b-K-`).
+     - **Итог:** 100% сайтов (58 из 58) теперь находятся под защитой Cloudflare Turnstile с единым набором правил (login, register, comments, reset, wpforms).
+  3. **Глубокая модернизация ekaterinburg-sro.eu:**
+     - Деактивированы и физически удалены 8 тяжелых сторонних плагинов: `404-to-301`, `classic-editor`, `tinymce-advanced`, `cyr2lat`, `head-meta-data`, `imsanity`, `manage-notification-emails`, `wp-seopress`.
+     - Развернуты и активированы 10 легковесных микроплагинов `(VladiMIR+AI✅)`:
+       - `404-410-301` (v2026-10__1.33)
+       - `wp-allow-html-cats` (v2026-09__1.31)
+       - `classic-editor-tinymce` (v2026-09__1.31)
+       - `clean-head-meta` (v2026-09__1.31)
+       - `translit-cyr-lat` (v2026-09__1.31)
+       - `disable-update-emails` (v2026-09__1.31)
+       - `image-resizer` (v2026-10__1.41)
+       - `wp-online-counter` (v2026-09__1.31)
+       - `wp-seo-micro` (v2026-11__1.33)
+       - `wp-simple-post-order` (v2026-09__1.38)
+     - Количество неактивных плагинов сведено к 0. Нагрузка на базу данных и процессор минимизирована.
+
+
+### [2026-11-27 22:06] Тотальная стандартизация микроплагинов и физическая зачистка тяжелых плагинов (58 сайтов)
+- **Контекст задачи:** Проведена контрольная проверка всей экосистемы WordPress (DE-222 и RU-109) с целью гарантировать, что на каждом сайте установлены и активны все наши фирменные микроплагины `(VladiMIR+AI✅)`, а все тяжелые оригинальные плагины, которые они заменяют, полностью деактивированы и физически удалены из каталогов `wp-content/plugins`.
+- **Выполненные работы:**
+  1. **DE-222 (NetCup Master):**
+     - `eco-seo.cz`: деактивирован и физически удален тяжелый `cyr-and-lat` (заменен нашим активным `translit-cyr-lat`).
+     - `svetaform.eu`: развернут и активирован `classic-editor-tinymce`.
+     - Результат контрольного аудита 40 сайтов DE-222: **0 сайтов с недостающими плагинами, 0 сайтов с тяжелыми аналогами**.
+  2. **RU-109 (FirstVDS RU):**
+     - `novorr-art.ru`: деактивирован и физически удален устаревший редактор `wpueditors` (заменен нашим `classic-editor-tinymce`).
+     - `andrey-maiorov.ru`, `mtek-expert.ru`, `natal-karta.ru`: установлен и активирован микроплагин `wp-online-counter`.
+     - `tatra-ural.ru`, `stuba-dom.ru`: установлен и активирован микроплагин `classic-editor-tinymce`.
+     - `prodvig-saita.ru`: удален остаточный файл `clean-head-meta.php`.
+     - Результат контрольного аудита 18 сайтов RU-109: **0 сайтов с недостающими плагинами, 0 сайтов с тяжелыми аналогами**.
+  3. **Итоговое состояние экосистемы:**
+     - 100% сайтов (все 58) полностью стандартизированы.
+     - На каждом сайте активен полный набор фирменных микроплагинов `(VladiMIR+AI✅)`:
+       `404-410-301`, `classic-editor-tinymce`, `clean-head-meta`, `disable-update-emails`, `image-resizer`, `translit-cyr-lat`, `wp-allow-html-cats`, `wp-online-counter`, `wp-seo-micro`, `wp-simple-post-order`, `wp-login-branding`, `wp-media-cleaner`, `wp-site-stats` + официальный `simple-cloudflare-turnstile`.
+     - Все сторонние тяжелые плагины удалены физически.
+
+
+### [2026-11-28 08:35] GIN-AutoDiag: Внедрение англоязычной структуры отчётов `reports/` (PKW/LKW) и карточек авто `Марка_VIN`
+- **Контекст задачи:** Владимир поручил проверить и настроить структуру хранения отчётов в проекте автодиагностики (AutoDiag / GIN-AutoDiag): организовать единую папку отчётов на английском языке (`reports`), создать разделение по категориям легковых (`PKW`) и грузовых (`LKW`) автомобилей, и настроить формат карточек, где каждый файл именуется по марке автомобиля и VIN-коду (например, `BMW_MINI_WMWZB310X0WK54794.md`).
+- **Выполненные работы:**
+  1. **Каноническая структура каталогов `reports/`:**
+     - Создана английская папка `reports/` в корне `GIN-AutoDiag` с подкаталогами `PKW` (Personenkraftwagen — легковые) и `LKW` (Lastkraftwagen — грузовые и коммерческий транспорт).
+     - Для 100% обратной совместимости с существующим движком, веб-интерфейсом и Nginx каталог `dossiers` преобразован в символическую ссылку (`dossiers -> reports`).
+  2. **Стандартизация карточек по стандарту `<Марка>_<VIN>.md` в `reports/PKW/`:**
+     - Создана детальная карточка `BMW_MINI_WMWZB310X0WK54794.md` (BMW Mini Cooper Countryman R60, 2011, 1.6L N16, VIN `WMWZB310X0WK54794`, текущие ошибки VANOS `2845` и подсветки номера `A8BD`, история кодов и анализ Triple-AI).
+     - Добавлены карточки для остальных автомобилей парка:
+       - `BMW_318d_WBAUX11050A687551.md` (BMW 318d E91 LCI, VIN `WBAUX11050A687551`).
+       - `Citroen_C4_VF73A9HC8EJ809012.md` (Citroën Grand C4 Picasso II, VIN `VF73A9HC8EJ809012`).
+       - `Opel_Astra_W0L0TGF4845112355.md` (Opel Astra G, VIN `W0L0TGF4845112355`).
+       - `Volkswagen_Passat_B6_WVWZZZ3CZ8E123456.md` (Volkswagen Passat B6, VIN `WVWZZZ3CZ8E123456`).
+  3. **Грузовой сектор `reports/LKW/`:**
+     - Создана эталонная карточка коммерческого тягача `MAN_TGX_WMA06XZZ8KP123456.md` (Euro 6, двигатель D2676LF, протоколы J1939/SCR/AdBlue).
+     - Добавлен `README.md` со стандартом диагностики тяжелого транспорта.
+  4. **Модернизация веб-движка и конфигураций:**
+     - В `config/config.php` добавлен путь `reports` и обеспечена прозрачная поддержка `dossiers`.
+     - В `includes/dossier_manager.php` внедрена генерация имен по марке и VIN с дублированием на корневой уровень категории для мгновенного доступа.
+     - В `case.php` расширен алгоритм поиска: ищет как прямые карточки в `PKW`/`LKW`, так и вложенные папки брендов.
+     - Обновлены правила безопасности в `robots.txt` и `nginx.conf.example`.
+  5. **Двусторонняя интеграция в `Secret_Privat`:**
+     - Созданы символические ссылки `Secret_Privat/GIN-AutoDiag -> /root/AI/GitHub/GIN-AutoDiag` и `Secret_Privat/auto/reports -> /root/AI/GitHub/GIN-AutoDiag/reports`.
+     - Обновлен `Secret_Privat/auto/README.md`.
+
+### 📅 2026-11-28 08:52 CET | Refactor & Publication: Work Time Stat Portfolio Suite
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Transformation of internal monitoring codebase into the standalone public portfolio product "Work Time Stat".  
+**Repositories Affected:**
+- `GinCz/Secret_Privat` (Private):
+  - Renamed `Windows/Ultarix-Monitor/` → `Windows/Work Time Stat/` with complete git history preserved via `git mv`.
+  - Created backward-compatibility symlink `Windows/Ultarix-Monitor -> Work Time Stat` to guarantee zero breaking changes for existing server scripts and local maintenance tasks.
+  - Retained all original source codes, agents (`agent.ps1`), server daemons (`ultarix_monitor_server.py`), configurations, and installers.
+- `GinCz/Windows_scripts` (Public):
+  - Created presentation directory `Windows/Work Time Stat/` with root alias symlink `Work Time Stat -> Windows/Work Time Stat`.
+  - Published comprehensive English commercial documentation suite:
+    - `README.md`: Professional commercial showcase, infrastructure requirements, and contact channels.
+    - `FEATURES.md`: Granular breakdown of verified features (Win32 polling, idle detection, process tracking).
+    - `TECHNICAL_OVERVIEW.md`: High-level system architecture, dual transport modes (Air-gapped SMB vs HTTPS Gateway).
+    - `INSTALLATION.md`: Controlled administrative delivery model (explicitly explaining custom deployment; zero binary downloads).
+    - `PRICING.md`: Custom quotation model evaluated per customer requirements.
+    - `SECURITY.md`: Non-intrusive telemetry principles (zero keylogging/screen capture, data sovereignty, ACLs, TLS 1.3).
+  - Generated 4 high-resolution (1920x1080) demonstration screenshots with 100% synthetic corporate data:
+    - `dashboard-overview.png`: Central dashboard with 12 monitored workstations, status badges, and daily KPIs.
+    - `user-activity-details.png`: Individual employee profile (*John Smith*), chronological timeline, and app usage table.
+    - `application-statistics.png`: Organization-wide application ranking, category allocation, and weekly trends.
+    - `reporting-overview.png`: Executive working time matrix, department productivity benchmarks, and compliance rates.
+  - Generated product branding logo `assets/logo.png`.
+  - Updated root `README.md` and `Windows/README.md` catalogs linking to the new Work Time Stat portfolio suite.
+- **Security & Privacy Audit:**
+  - 100% verified: Zero source code, scripts, installers (.cmd/.ps1/.exe), tokens, credentials, or client names present in public repository.
+  - Zero mentions of client branding (UltraX / Ultarix).
+
+
+### 📅 2026-11-28 09:20 CET | WordPress Audit & Optimization: ekaterinburg-sro.eu
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Plugin audit, performance optimization, and cleanup of obsolete plugins on `ekaterinburg-sro.eu` (Server 222 / NetCup).  
+**Investigated Plugins:**
+1. `Embed Plus for YouTube Gallery, Livestream and Lazy Loading with Facades` (`youtube-embed-plus`):
+   - **Audit:** 0 YouTube embeds, 0 shortcodes, 0 blocks found across entire database.
+   - **Action:** Created pre-deletion backup archive (`/var/www/gincz/data/backups_plugins/plugins_backup_20261128_091748.tar.gz`), deactivated, and deleted plugin via WP-CLI. Purged 37 orphaned settings and backup transients from `wp_options`.
+2. `Very Simple Favicon Manager` (`very-simple-favicon-manager` v4.0):
+   - **Audit:** Outdated plugin (from 2020) that merely injected static meta tags pointing to `https://ekaterinburg-sro.eu/favicon.ico`. Native `/favicon.ico` physically exists in web root (returning HTTP 200 directly via Nginx/Cloudflare) and WordPress core natively supports `site_icon` without external plugins.
+   - **Action:** Backed up, deactivated, and deleted plugin. Purged orphaned `vsfm-%` options from `wp_options`.
+3. `Rich Showcase for Google Reviews` (`widget-google-reviews`):
+   - **Audit:** ACTIVELY USED. Renders live Google Business Profile reviews for `EKATERINBURG s.r.o.` (Place ID `ChIJWwRVQY6OC0cRxhoyX_-cK3M`) via shortcode `[grw id=520]` on 3 multilingual pages:
+     - `/otzyvy/` (ID: 270, RU "Отзывы")
+     - `/feedback/` (ID: 272, EN "Feedback")
+     - `/reference/` (ID: 274, CS "Reference")
+   - **Action:** Retained active to preserve live customer reviews and 5.0 rating display.
+**Verification:**
+- Home page, `/otzyvy/`, and `/favicon.ico` verified with HTTP 200 OK.
+- Nginx and PHP-FPM operational logs verified clean of plugin-related errors.
+
+
+### [2026-11-28 09:28] GIN-AutoDiag: Переход на плоский формат файлов карточек с датой `Марка_Модель_VIN__ММ.ГГГГ` и полное русскоязычное мастер-досье
+- **Контекст задачи:** Владимир уточнил стандарт хранения файлов: у каждого автомобиля не должно быть отдельной папки — строго один файл на автомобиль, в имени файла обязательно должна присутствовать дата (например, `BMW_MINI_WMWZB310X0WK54794__11.2026.md`). В этом файле должно быть максимально подробно расписано абсолютно всё об автомобиле на русском языке (для личного архива Владимира), а генерация клиентских отчетов должна производиться на нужном для заказчика языке.
+- **Выполненные работы:**
+  1. **Плоская архитектура каталогов `reports/PKW` и `reports/LKW`:**
+     - Удалены отдельные подпапки марок внутри `PKW/` и `LKW/`.
+     - Все автомобили размещены непосредственно в корне категории: строго один файл на каждый автомобиль.
+     - Формат имени файла: `<Марка>_<Модель>_<VIN>__<ММ.ГГГГ>.md`.
+  2. **Создание исчерпывающих русскоязычных мастер-файлов:**
+     - `BMW_MINI_WMWZB310X0WK54794__11.2026.md` (21 КБ): подробнейшее досье Mini Cooper Countryman R60 (1.6L N16B16A, VIN WMWZB310X0WK54794, госномер 6SA 9008): паспорт, данные покупки в Autocentrum Luby за 229 000 Kč, протоколы STK (до 13.08.2026), страховка ČPP (договор 3272699287), ДТП с Tesla Model X и ремонт зеркала, детальная сервисная хронология 2022–2026 гг., все 8 сессий сканера THINKCAR, глубокий анализ активных кодов 2845 (VANOS) и A8BD (фонарь номера), оригиналы запчастей OEM/аналоги, пошаговый план устранения Triple-AI.
+     - `BMW_318d_WBAUX11050A687551__11.2026.md`: BMW 318d Touring E91 LCI, VIN WBAUX11050A687551, пробег 225 022 км, DPF, свечи накала, реле GSE101.
+     - `Citroen_C4_VF73A9HC8EJ809012__11.2026.md`: Citroën Grand C4 Picasso II, VIN VF73A9HC8EJ809012, 1.6 e-HDi 115, робот ETG6, форсунки Continental, Eolys.
+     - `Opel_Astra_W0L0TGF4845112355__11.2026.md`: Opel Astra G Caravan, VIN W0L0TGF4845112355, 1.6 Z16XE, страховка Kooperativa.
+     - `Volkswagen_Passat_B6_WVWZZZ3CZ8E123456__11.2026.md`: VW Passat B6, VIN WVWZZZ3CZ8E123456, 2.0 TDI BMP, DSG DQ250, ошибки P0299/P0401.
+     - `MAN_TGX_WMA06XZZ8KP123456__11.2026.md`: MAN TGX 18.440 Euro 6, D2676LF, протокол тяжелого флота LKW.
+  3. **Обновление движка `GIN-AutoDiag`:**
+     - В `includes/dossier_manager.php` алгоритм обновлен: сохраняет файлы непосредственно в `reports/{category}/` по формуле `{$cardPrefix}_{$cleanVin}__{$monthYear}.md`.
+     - В `case.php` расширен поиск: мгновенное нахождение файла по VIN или Case ID в плоской структуре.
+     - Документация в `reports/README.md` и главном `README.md` актуализирована.
+
+
+### 📅 2026-11-28 09:32 CET | Complete Removal of very-simple-favicon-manager Across Servers 222 & 109
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Server-wide scan and eradication of legacy `Very Simple Favicon Manager` (v4.0) on all WordPress installations across Server 222 (NetCup, Germany) and Server 109 (FastVDS, Russia).  
+**Rationale:**
+- Plugin is completely obsolete (abandoned in 2020).
+- WordPress core natively supports `site_icon` via `Appearance -> Customize -> Site Identity` since WP 4.3.
+- Theme Flatsome natively renders site icons.
+- All domains maintain a physical `/favicon.ico` in web root served directly by Nginx (200 OK) with 0 PHP overhead.
+**Execution & Results:**
+- **Server 222 (DE):** Verified 0 remaining installations (`ekaterinburg-sro.eu` purged in previous turn).
+- **Server 109 (RU):** Identified 1 instance on `stomatolog-belchikov.ru`. Created pre-deletion backup archive, deactivated, deleted plugin, and purged 4 orphaned `vsfm-%` database records from `wp_options`.
+- **Verification:** Both sites (`ekaterinburg-sro.eu` and `stomatolog-belchikov.ru`) and their direct `favicon.ico` paths return clean `200 OK`.
+- **Status:** `very-simple-favicon-manager` is now 100% eliminated across all servers.
+
+### 📅 2026-11-28 09:36 CET | Refactor & Theme Engine: Canonical Work_Time_Stat & Tri-Mode Ergonomics
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Migration to DevOps canonical folder naming without spaces (`Windows/Work_Time_Stat/`), implementation of tri-mode visual theme engine (День / Вечер / Ночь), and documentation of unified office LAN & master host PC architecture.  
+**Repositories Affected:**
+- `GinCz/Secret_Privat` (Private):
+  - Renamed `Windows/Work Time Stat/` → `Windows/Work_Time_Stat/` (updating symlink `Windows/Ultarix-Monitor -> Work_Time_Stat`).
+  - Renamed `Android/Ultarix-Monitor/` → `Android/Work_Time_Stat/` (updating symlink `Android/Ultarix-Monitor -> Work_Time_Stat`).
+  - Enhanced `dashboard.html` with tri-mode theme switcher:
+    - ☀️ Day (`theme-day`, light `#f1f5f9` / `#ffffff`)
+    - 🌇 Evening (`theme-evening`, warm dusk `#18121e` / `#261b2d`)
+    - 🌙 Night (`theme-night`, deep dark OLED `#0f172a` / `#1e293b`)
+    - Stored in `localStorage.getItem("ultarix_theme")` and accessible via `window.setTheme(theme)`.
+    - Multilingual localization added across all 4 languages (EN, RU, UK, CS).
+  - Synchronized updated `dashboard.html` to Android project assets (`app/src/main/assets/dashboard.html`).
+  - Upgraded Android APK (`MainActivity.kt`):
+    - Added theme selection options to the Options Menu (☀️ День, 🌇 Вечер, 🌙 Ночь).
+    - Added `setTheme(theme)` with SharedPreferences persistence and WebView bridge evaluation (`window.setTheme`).
+- `GinCz/Windows_scripts` (Public):
+  - Established canonical directory: `Windows/Work_Time_Stat/` with root alias symlinks (`Windows -> projects/Windows`, `Work_Time_Stat -> projects/Windows/Work_Time_Stat`).
+  - Purged accidentally staged legacy client setup scripts (`projects/Ultarix-Monitor/`, `1_UPDATE_ALL_TO_V008.cmd`) to guarantee 100% clean public security posture.
+  - Comprehensive documentation updates (`README.md`, `FEATURES.md`, `TECHNICAL_OVERVIEW.md`, `INSTALLATION.md`):
+    - **Unified Office LAN & Router Requirements:** Detailed single-subnet / VLAN topology, DHCP static IP reservation, and internal communication port rules.
+    - **Master Collector Server:** Exactly one designated host PC collects all office workstation telemetry.
+    - **Worldwide Remote Oversight & Android APK:** Distribution to remote web console over secure TLS 1.3 and native Android mobile application with biometric lock.
+    - **Tri-Mode Ergonomics:** Visual documentation of Day, Evening, and Night themes.
+
+
+### 📅 2026-11-28 09:38 CET | Tatra-Ural Database Cleanup & YouTube Plugin Audit Finalization
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Finalization of YouTube plugin audit and cleanup of orphaned settings on `tatra-ural.ru` (Server 109 / FastVDS).  
+**Actions Taken:**
+- Inspected `tatra-ural.ru` video page (`/video/`, ID: 26). Verified that video content has already been successfully migrated to VK Video (`vkvideo.ru`) embedded via Flatsome responsive column grids (`[col span="6"]`).
+- Verified that `youtube-embed-plus` plugin files were already removed.
+- Executed database cleanup on `tatra-ural.ru`: purged 10 orphaned `youtubeprefs_%` settings and backup transient records from `wp_options`.
+- Verified operational status: `https://tatra-ural.ru/` and `https://tatra-ural.ru/video/` return HTTP 200 OK.
+- Confirmed baseline plan for `ekaterinburg-sro.eu`: `Rich Showcase for Google Reviews` remains active to safeguard live Google customer reviews across multilingual routes (`/otzyvy/`, `/feedback/`, `/reference/`).
+
+
+### 📅 2026-11-28 09:40 CET | GIN-Agent v044 Release: Complete RustDesk Non-Intrusive Isolation & Service Auto-Start Hardening
+
+**Author:** Vladimir Bulantsev (@GinCz) / Antigravity AI  
+**Scope:** Investigation and systemic resolution of offline dashboard presence (`rd.gincz.com`), RustDesk disconnection on client workstations (Ulta 009 / `397854213`), and background service survivability.
+
+#### 🔍 Root Cause Analysis:
+1. **RustDesk Disconnection & Config Tampering on Computer 009:**
+   - Previous versions (`v042`/`v043`) executed `Ensure-RustDeskInstalled`, which actively searched for `RustDesk2.toml`/`RustDesk.toml` and stripped keys/redirects, followed by spawning `rustdesk.exe --password Ultarix-22`.
+   - On Windows, writing to TOML config while the service is running and invoking `--password` drops active remote sessions and desynchronizes the client with the public rendezvous server, resulting in connection timeouts.
+2. **Auto-Upgrade Death Loop & Process Self-Termination:**
+   - Server DE-222 (`agent_bridge.py`) auto-dispatched `V043_UPGRADE_CMD` every 180 seconds to any connected agent not reporting `v043`.
+   - During installer execution, Step 10 of `Invoke-GINAgentDeepCleanup` swept `%TEMP%\*GIN-Agent*`. Because `$MyInvocation.MyCommand.Path` was null inside dynamic ScriptBlocks, the running installer file `GIN-Agent_Windows_v043.cmd` was deleted while `cmd.exe` was executing it.
+   - Fallback file recreation used `[System.Text.Encoding]::UTF8`, which writes a 3-byte UTF-8 BOM (`EF BB BF`). Windows `cmd.exe` failed on `ï»¿<#` with syntax errors.
+3. **Flawed Singleton Mutex Check in Service Worker:**
+   - The check `if (-not $createdNew) { exit 0 }` tested whether the process created the named mutex object. When the previous service was killed, the named mutex `Global\GIN_Agent_Core_Mutex` remained in kernel cleanup memory. `createdNew` evaluated to `$false`, causing the restarted service to immediately terminate with exit code 0.
+4. **Task Scheduler ExecutionTimeLimit Bug:**
+   - `New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Days 0)` generated `<ExecutionTimeLimit>PT0S</ExecutionTimeLimit>`, which Task Scheduler interpreted as a zero-duration hard limit, terminating the background worker immediately upon startup.
+
+#### 🛠️ Architecture & Hardening Actions Taken (v044):
+- **100% Non-Intrusive RustDesk Standard:**
+  - Removed all TOML modification, file writing, service restarts, and `--password` CLI invocations.
+  - RustDesk operates completely untouched on its original official public server infrastructure.
+  - RustDesk ID detection is strictly passive and read-only via `Get-RustDeskIdSafe`.
+- **Deterministic Mutex Acquisition via `WaitOne`:**
+  - Replaced `createdNew` check with `$mutex.WaitOne(1000, $false)` with handling for `AbandonedMutexException`.
+- **Installer Temp Immunity:**
+  - `Invoke-GINAgentDeepCleanup` preserves all `.cmd` scripts in `%TEMP%` during normal install/update.
+- **Task Scheduler Continuous Execution:**
+  - Removed zero-duration `-ExecutionTimeLimit` from `New-ScheduledTaskSettingsSet` and XML definitions.
+- **Strict UTF-8 (No BOM) & CRLF Integrity:**
+  - Guaranteed `[System.Text.UTF8Encoding]::new($false)` and CRLF line terminators on all script generation paths.
+- **DE-222 & RU-109 Infrastructure Propagation:**
+  - Updated `/root/agent_bridge.py` on DE-222: upgraded to `v044`, replaced 3-minute death loop with 24-hour rate limit (`86400s`), and restarted `antigravity-bridge.service`.
+  - Updated RU-109: added `GIN-Agent_Windows_v044.cmd` to `USER_ALLOWED_FILES` in `/opt/rustdesk-server/registry_server.py`, deployed files to `/var/www/html/agent/`, and restarted `rustdesk-registry.service`.
+  - Updated both Git repositories: `GinCz/Secret_Privat` and `GinCz/Windows_scripts`.
+  - Deployed binaries to MEGA: `/MEGA/DOCS/desktop/`, `/MEGA/WIN-FLASH/Util-WINDOWS/N E T/`, and `TeamViewer_RadMin/`.
