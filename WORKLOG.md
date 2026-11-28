@@ -7806,3 +7806,8 @@ etkvm) для виртуализации KVM/OCI.
   3. Зеркалирование экрана (MediaProjection) строго по отдельной кнопке (по умолчанию отключено).
   4. Автоматическое мгновенное Telegram-оповещение при подключении устройства к серверному мосту.
 - Документация создана в Secret_Privat (Android/GIN-Remote-Android/docs/DEVELOPMENT_PLAN.md) и публичном Android (GIN-Remote-Android/docs/DEVELOPMENT_PLAN.md).
+## [2026-11-28 11:22] GIN-Remote DEVICES: Регистрация профиля DOOGEE X3
+- В единый реестр устройств Android/GIN-Remote/DEVICES/README.md добавлена позиция №8: DOOGEE X3 (MediaTek MT6580, Android 5.1).
+- Создано детальное аппаратное и программное досье устройства: Android/GIN-Remote/DEVICES/DOOGEE_X3.md.
+- Зафиксированы все сетевые параметры (IP 192.168.33.184, MAC cc:73:14:03:85:aa, ADB S260C1ZS67024425), стек установленных шлюзов GIN-Telegram-Bot и GIN-SMS-Backup, и хронология оптимизации.
+- Изменения зафиксированы и отправлены на GitHub origin/main.
