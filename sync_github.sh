@@ -60,19 +60,19 @@ elif [ -d "/AI/skills" ] && [ -d "/AI/.agents/skills" ]; then
   find /AI/skills -mindepth 1 -maxdepth 1 -type d ! -name PROMPTS -exec cp -ru {} /AI/.agents/skills/ \; 2>/dev/null || true
 fi
 
-# Keep rules synchronized across .agents and ~/.gemini/config
+# Keep rules synchronized across ~/.gemini/config
 if [ -d "/AI/GitHub/AI/rules" ]; then
-  mkdir -p /root/.gemini/config/rules /AI/.agents/rules
-  cp -ru /AI/GitHub/AI/rules/* /root/.gemini/config/rules/ 2>/dev/null || true
-  cp -ru /AI/GitHub/AI/rules/* /AI/.agents/rules/ 2>/dev/null || true
-  if [ -f "/AI/GitHub/AI/rules/Antigravity/RULES.md" ]; then
-    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /root/.gemini/config/RULES.md 2>/dev/null || true
-    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /root/.gemini/config/GEMINI.md 2>/dev/null || true
-    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /AI/RULES.md 2>/dev/null || true
-    cp -u /AI/GitHub/AI/rules/Antigravity/RULES.md /AI/GEMINI.md 2>/dev/null || true
+  mkdir -p /root/.gemini/config/rules
+  # Copy only active modular rule files (<24KB) to avoid Antigravity truncation and duplicates
+  if [ -f "/AI/GitHub/AI/rules/01_BASE_RULES.md" ] && [ -f "/AI/GitHub/AI/rules/02_ANTIGRAVITY_RULES.md" ]; then
+    cp -u /AI/GitHub/AI/rules/01_BASE_RULES.md /root/.gemini/config/rules/ 2>/dev/null || true
+    cp -u /AI/GitHub/AI/rules/02_ANTIGRAVITY_RULES.md /root/.gemini/config/rules/ 2>/dev/null || true
+    # Remove oversized or legacy files that cause prompt truncation
+    rm -f /root/.gemini/config/rules/BASE_RULES.md /root/.gemini/config/rules/AI_RULES.md /root/.gemini/config/rules/ALL_AI_RULES.md 2>/dev/null || true
   fi
-  if [ -f "/AI/AGENTS.md" ]; then
-    cp -u /AI/AGENTS.md /root/.gemini/config/AGENTS.md 2>/dev/null || true
+  if [ -f "/AI/GitHub/AI/rules/BASE_RULES.md" ]; then
+    cp -u /AI/GitHub/AI/rules/BASE_RULES.md /AI/AGENTS.md 2>/dev/null || true
+    ln -sfn /AI/AGENTS.md /AI/RULES.md 2>/dev/null || true
   fi
 fi
 
