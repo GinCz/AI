@@ -7860,3 +7860,50 @@ etkvm) для виртуализации KVM/OCI.
   - *MEGA Cloud Flash:* `/MEGA/WIN-FLASH/ANDROID/GIN_APK/GIN-Remote-Android_v017.apk` (выгружено, v015 удален).
   - Отправлен алерт в Telegram через `notify_telegram.sh`.
 - **Статус:** 100% готов к установке и эксплуатации.
+
+
+### [2026-11-28 11:55:00] V-SaaP-Architecture: Релиз архитектурной версии v0.5 — Structured Ticket Knowledge Integration
+- **Контекст задачи:** Проведение запланированного релиза следующей версии в публичном репозитории `V-SaaP-Architecture` ([github.com/GinCz/V-SaaP-Architecture](https://github.com/GinCz/V-SaaP-Architecture)). Синхронизация концепта с приватной документацией `Secret_Privat/docs/V-SaaP_RUS_doc.md`.
+- **Выполненные изменения:**
+  1. *Разработка v0.5:* Создан официальный документ [`versions/v0.5-structured-ticket-knowledge-integration.md`](https://github.com/GinCz/V-SaaP-Architecture/blob/main/versions/v0.5-structured-ticket-knowledge-integration.md) на английском языке с канонической шапкой шириной ровно 90 символов.
+  2. *Архитектурный скоуп v0.5:*
+     - Интеграция корпоративных трекеров: REST API адаптеры для Jira Service Management / Software и Azure DevOps Work Items.
+     - Entity-aware моделирование тикетов: сохранение полной цепочки диагностики (Symptom + Investigation + Root Cause + Resolution) без разрыва токенными чанками.
+     - Фильтрация коммуникационного шума: очистка от подписей, OOO, спама автоботов и административных пингов перед векторизацией.
+     - Четырехуровневая таксономия доверия статусов: четкое разделение проверенных решений (`Resolved`) и предупреждений об активных сбоях (`Open`, `In_Progress`).
+     - Real-Time детектор дубликатов: вебхук-поиск похожих инцидентов при открытии тикета для ускорения MTTR.
+     - Расширение схемы Azure AI Search: добавлены 8 мета-полей тикетов (`ticket_id`, `issue_key`, `project_key`, `component`, `priority`, `assignee`, `root_cause_category`, `resolved_at`).
+     - Сбалансированная формула ранжирования (Authority Weight + Recency Decay).
+  3. *Наследование и непрерывность:* Включен раздел с полной кумулятивной преемственностью архитектуры версий v0.1, v0.2, v0.3, v0.4 и актуализированной дорожной картой до v1.0.
+  4. *Обновление метаданных:* Актуализированы [`README.md`](https://github.com/GinCz/V-SaaP-Architecture/blob/main/README.md) и [`CHANGELOG.md`](https://github.com/GinCz/V-SaaP-Architecture/blob/main/CHANGELOG.md), удален устаревший черновой стаб.
+  5. *WORKLOG репозитория:* Создан `WORKLOG.md` непосредственно внутри `V-SaaP-Architecture`.
+- **Статус:** Релиз v0.5 полностью оформлен, закоммичен и выгружен в GitHub.
+
+
+### [2026-11-28 11:58:00] GIN-SMS-Backup: Внедрение встроенной системы обновления (OTA) и кнопки VladiMIR+AI ||| v002
+- **Контекст задачи:** Проверка и реализация встроенного механизма ручного обновления приложения GIN-SMS-Backup по запросу Владимира. Поскольку фоновое автообновление через Google Play отключено, приложение обязано предоставлять возможность обновления из интерфейса по нажатию кнопки в настройках.
+- **Выполненные архитектурные изменения:**
+  1. *Модуль `UpdateManager.java`:*
+     - Независимый движок обновления без сторонних библиотек.
+     - Опрос версии через первичный сервер `https://gincz.com/gin_sms_backup_version.json` с автоматическим переключением на GitHub-зеркала (`Secret_Privat` и `Android`) при недоступности основного узла.
+     - Обязательные HTTP-заголовки антикэширования (`Cache-Control: no-cache, no-store, must-revalidate`, `Pragma: no-cache`) и временная метка `?t=...`.
+     - Загрузка APK в защищенную директорию кэша (`ginsms_update.apk`) с валидацией размера (> 20 КБ).
+     - Поддержка проверки разрешений `REQUEST_INSTALL_PACKAGES` для Android 8.0+ и запуск системного установщика пакетов через `Intent.ACTION_VIEW`.
+     - Информативные уведомления: при наличии новой версии — диалоговое окно с чейнджлогом и кнопками «Обновить»/«Позже»; если версия актуальна — уведомление «У вас установлена актуальная версия (v002)».
+  2. *Легковесный `UpdateFileProvider.java`:*
+     - Нативный `ContentProvider` без тяжелых библиотек AndroidX для безопасного предоставления дескриптора файла APK системному пакетному менеджеру (Android 7.0–15+).
+  3. *Конфигурация `AndroidManifest.xml`:*
+     - Зафиксированы атрибуты `android:versionCode="2"` и `android:versionName="v002"`.
+     - Добавлено разрешение `android.permission.REQUEST_INSTALL_PACKAGES`.
+     - Зарегистрирован провайдер `UpdateFileProvider` с authority `com.gincz.smsbackup.fileprovider`.
+  4. *Интерфейс `activity_main.xml` & `MainActivity.java`:*
+     - В блок настроек добавлена фирменная кнопка `btn_version` с текстом `VladiMIR+AI ||| v002` (идентификатор `@string/footer_signature`).
+     - Подключен обработчик нажатия, инициирующий ручную проверку и процесс обновления.
+  5. *Сборка и развертывание v002:*
+     - Скомпилирован и подписан `GIN-SMS-Backup_v002.apk` (73 КБ).
+     - Выгружен на сервер DE-222 FastPanel Web: `https://gincz.com/GIN-SMS-Backup_v002.apk` и `https://gincz.com/gin_sms_backup_version.json` (проверено через curl: HTTP 200).
+     - Выгружен в Samba DE-222: `\\s.gincz.com\user\APK\GIN-SMS-Backup_v002.apk` (ротация: строго 2 последние версии).
+     - Выгружен в облако MEGA Cloud: `/MEGA/WIN-FLASH/ANDROID/GIN_APK/GIN-SMS-Backup_v002.apk`.
+     - Синхронизирован с открытым репозиторием `GinCz/Android` (бинарник, манифест, README и CHANGELOG).
+     - Отправлено подтверждающее уведомление в Telegram (@GinCz).
+- **Статус:** 100% готов к установке и эксплуатации.
