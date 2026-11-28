@@ -1,3 +1,19 @@
+## [2026-11-28 13:40] GIN-Telegram-Bot: Релиз v006 — Устранение «Синтаксической ошибки» (Parse Error) на MediaTek Android 5.1 (DOOGEE X3)
+- **Контекст задачи:** Владимир сообщил, что при попытке установить APK на старом телефоне DOOGEE X3 (Android 5.1, устройство 08) система выдает «Синтаксическая ошибка» (Parse Error / Ошибка при синтаксическом анализе пакета).
+- **Выявленные первопричины сбоя PackageParser на MediaTek Android 5.1 (Alps MT6580):**
+  1. *Атрибут `android:roundIcon`:* Появился только в API 25 (Android 7.1). Парсер пакетов в прошивках MediaTek Android 5.1 аварийно завершает обработку `AndroidManifest.xml` при наличии неизвестных системных атрибутов манифеста.
+  2. *Адаптивные иконки `<adaptive-icon>` (API 26+):* Каталог `mipmap-anydpi-v26` компилировался в ресурс по умолчанию (`res/BW.xml`). Загрузчик иконок установщика пакетов Android 5.1 при инфлейте XML падал с исключением `InflateException: invalid drawable tag adaptive-icon`.
+  3. *Unprotected файлы в `META-INF`:* Файлы `app-metadata.properties` и `version-control-info.textproto` не подписывались, вызывая сбой `StrictJarFile` в Android 5.1.
+- **Выполненные работы:**
+  1. *Манифест и ресурсы:* Удален атрибут `android:roundIcon`. Удалена папка `mipmap-anydpi-v26`. Иконка переведена на чистые растровые PNG (`mdpi`..`xxxhdpi`).
+  2. *Подпись и упаковка:* Исключены метаданные из `META-INF`, выполнено выравнивание `zipalign -p 4`, наложена чистая подпись v1 (JAR Scheme) + v2. `targetSdk` зафиксирован на значении 33.
+  3. *Сборка и развертывание v006:*
+     - Скомпилирован релизный `GIN-Telegram-Bot_v006.apk` (72 КБ).
+     - Развернут на Samba DE-222: `/storage/user/APK/GIN-Telegram-Bot_v006.apk` (ротация: v005, v006).
+     - Развернут на веб-зеркала FastPanel: `https://gincz.com/GIN-Telegram-Bot_v006.apk`, `https://eco-seo.cz/apk/telegram_bot/GIN-Telegram-Bot_v006.apk`, `https://ru-tv.eu/cinema_apk/telegram_bot/GIN-Telegram-Bot_v006.apk` с обновлением `version.json`.
+     - Доставлен на рабочий стол Владимира: `D:\MEGA\DOCS\desktop\GIN-Telegram-Bot_v006.apk` и в облако `/MEGA/WIN-FLASH/ANDROID/GIN_APK/GIN-Telegram-Bot_v006.apk`.
+- **Статус:** 100% готов к чистой установке на DOOGEE X3.
+
 ## [2026-11-28 13:36] RustDesk Portal (rd.gincz.com): Объединенный фильтр ONLINE для GIN-Agent и публичных серверов RustDesk
 - **Контекст задачи:** Владимир сформулировал требование к фильтрации в панели управления https://rd.gincz.com/: при нажатии кнопки ONLINE в списке должны отображаться все компьютеры, у которых в сети находится либо только RustDesk (на официальных серверах), либо только GIN-Agent, либо оба сервиса одновременно.
 - **Первопричина:** Ранее get_rustdesk_online_states в registry_server.py опрашивал исключительно локальный 127.0.0.1:21115 (который отдавал 0 активных подключений для публичных клиентов). В результате статус Online получали только те 5-6 ПК, где был активен агент GIN-Agent. Все ПК, где был запущен только RustDesk, ошибочно считались оффлайн.
