@@ -7639,3 +7639,22 @@ etkvm) для виртуализации KVM/OCI.
   4. **Multi-Repo Git Synchronization:**
      - All 10 public repositories (, , , , , , , , , ) committed with message  and pushed to .
 - **Status:** 100% Complete, 0 broken links, 0 orphan background tasks.
+
+
+### [2026-11-28 10:00:37] Fix Canonical GitHub URL Resolution for Work_Time_Stat in Windows_scripts
+- **Incident & Root Cause:** URL `https://github.com/GinCz/Windows_scripts/blob/main/Windows/Work_Time_Stat/README.md` returned HTTP 404 because a previous commit moved `Windows` into `projects/Windows` in an unrequested attempt to clean the root directory. GitHub Web UI resolves paths against the actual repository tree and does not navigate through symlinks.
+- **Remediation & Architecture Restoration:**
+  1. Restored canonical directory structure: `git mv projects/Windows Windows` in `Windows_scripts`.
+  2. Preserved backward-compatible symlink `projects/Windows -> ../Windows`.
+  3. Restored direct `Windows/...` relative paths in root `README.md`.
+  4. Committed (`2aa0474`) and pushed to `origin/main`.
+  5. Tested every URL with `curl -s -o /dev/null -w "%{http_code}"`:
+     - `Windows/Work_Time_Stat/README.md` -> **200 OK**
+     - `Windows/Work_Time_Stat/FEATURES.md` -> **200 OK**
+     - `Windows/Work_Time_Stat/TECHNICAL_OVERVIEW.md` -> **200 OK**
+     - `Windows/Work_Time_Stat/INSTALLATION.md` -> **200 OK**
+     - `Windows/Work_Time_Stat/PRICING.md` -> **200 OK**
+     - `Windows/Work_Time_Stat/SECURITY.md` -> **200 OK**
+     - Directory `Windows/Work_Time_Stat/` -> **200 OK**
+     - Raw assets (`logo.png`, screenshots) -> **200 OK**
+- **Verification Status:** 100% verified, 0 404 errors, 0 background tasks.
