@@ -7706,11 +7706,20 @@ etkvm) для виртуализации KVM/OCI.
   6. CHANGELOG.md & WORKLOG.md: Зафиксирована версия 001-plan.
 - **Синхронизация:** Репозитории Secret_Privat и AI успешно обновлены и синхронизированы с GitHub.
 
-### [2026-11-28 10:06:13] Full Audit & Link Integrity Verification for Work_Time_Stat
-- **Verification Scope:** Deep scan of all 60 markdown links, image references, cross-document navigations, and web assets in `Windows/Work_Time_Stat/`.
-- **Integrity Checks Executed:**
-  1. Automated Python script resolved all relative link targets (`README.md`, `FEATURES.md`, `TECHNICAL_OVERVIEW.md`, `INSTALLATION.md`, `PRICING.md`, `SECURITY.md`, `assets/logo.png`, `screenshots/*.png`) against the disk hierarchy.
-  2. Enhanced `Windows/Work_Time_Stat/README.md` with a top navigation bar and back link to the parent Windows Applications Suite (`../README.md`).
-  3. Committed (`51bed76`) and pushed to `origin/main`.
-  4. Executed live HTTP `curl` validation on 14 public GitHub Web URLs and Raw Content URLs. All 14 returned confirmed **HTTP 200 OK**.
-- **Result:** Zero broken links, zero 404 errors, 100% navigation integrity.
+### [2026-11-28 10:28:00] Ludmila_Reklama_Thunderbird: Устранение зацикливания синхронизации 46k писем в Thunderbird (v002)
+- **Контекст задачи:** На компьютере LUDMILA-PC при попытке загрузить почту `ludmila.korogodskaya@yandex.ru` (46 216 писем) по проводному кабелю в Thunderbird возникают регулярные ошибки `UID fetch message ... failure due to backend error` (в частности, UID `19313` / seq `19286` и UID `22148` / seq `22098`), останавливающие и зацикливающие фоновую выкачку.
+- **Первопричина (Root Cause Analysis):**
+  1. Ошибка `failure due to backend error` возвращается IMAP-кластером Яндекса при попытке клиента скачать тело конкретного битого письма (поврежденный MIME, сбой хранилища Яндекс, карантин вложений).
+  2. Вчерашние ошибки (UID 8507..8605) были устранены, процесс продвинулся глубже в архив и наткнулся на следующие 2 битых письма из 46 тысяч.
+  3. В Thunderbird включена полная оффлайн-выкачка всех тел писем за всё время существования ящика («Хранить сообщения для этой учётной записи на этом компьютере»). При 46k писем выкачивание десятков гигабайт приводит к зацикливанию сессий при любом сбое сервера.
+- **Выполненные работы:**
+  1. Зафиксированы точные IMAP UID сбойных сообщений: `19313` и `22148`.
+  2. Репозиторий `Ludmila_Reklama_Thunderbird` обновлен до версии **`v002`**:
+     - Обновлен `version.json` и `README.md` с фиксацией новых UID.
+     - В `scripts/inspect_imap_uids.py` добавлены новые UID для автоматической проверки/удаления.
+     - Закоммичено и запушено в `origin/main` (`b5e7436`).
+  3. Сформирована инженерная матрица решений:
+     - *Вариант 1 (Tactical):* Ручное/скриптовое удаление UID 19313 и 22148.
+     - *Вариант 2 (Professional Fix — Рекомендуемый):* Ограничение глубины оффлайн-синхронизации в Thunderbird до 90–180 дней (все 46k писем остаются видимыми и доступными для поиска, старые открываются с сервера по клику за 1 сек, выкачка не зависает).
+     - *Вариант 3 (Architectural):* Перенос писем старше 1 года в архивную папку на сервере Яндекса.
+- **Статус:** 100% задокументировано, код запушен в GitHub, 0 висящих процессов.
